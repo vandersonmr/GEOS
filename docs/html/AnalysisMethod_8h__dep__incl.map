@@ -1,0 +1,11 @@
+<map id="AnalysisMethod.h" name="AnalysisMethod.h">
+<area shape="rect" id="node2" href="$FrequencyMethod_8cpp.html" title="This file contains the implementation of an basic block cost analysis. It uses the frequency of execu..." alt="" coords="5,80,153,107"/>
+<area shape="rect" id="node3" href="$HashMethod_8cpp.html" title="This file contains the implementation of an basic block cost analysis. It uses the execution frequenc..." alt="" coords="179,80,299,107"/>
+<area shape="rect" id="node4" href="$HashWeighted_8cpp.html" title="This file contains the implementation of an basic block cost analysis. It uses the execution frequenc..." alt="" coords="323,80,452,107"/>
+<area shape="rect" id="node5" href="$InstructionCost_8cpp.html" title="This file contains the implementation of an basic block cost analysis. It uses the execution frequenc..." alt="" coords="478,80,612,107"/>
+<area shape="rect" id="node6" href="$InstructionMethod_8cpp.html" title="This file contains the implementation of an basic block cost analysis. It uses the execution frequenc..." alt="" coords="637,80,787,107"/>
+<area shape="rect" id="node7" href="$InstructionPlusHashMethod_8cpp.html" title="This file contains the implementation of an basic block cost analysis. It uses the execution frequenc..." alt="" coords="811,80,1017,107"/>
+<area shape="rect" id="node8" href="$ProfMethod_8cpp.html" title="This file contains the implementation of an basic block cost analysis. It use information from progra..." alt="" coords="1042,80,1155,107"/>
+<area shape="rect" id="node9" href="$RandomMethod_8cpp.html" title="This file contains the implementation of an basic block cost analysis. It uses the execution frequenc..." alt="" coords="1179,80,1316,107"/>
+<area shape="rect" id="node10" href="$main_8cpp.html" title="This file contains the implementation of the program cost analyser. It uses the the AnalysisMethods t..." alt="" coords="1341,80,1415,107"/>
+</map>

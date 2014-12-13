@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classAnalysisMethod.html" title="Every execution time cost analysis must inherit from this class. " alt="" coords="5,183,120,209"/>
+<area shape="rect" id="node2" href="$classFrequencyMethod.html" title="This method uses just the frequency to evaluate the execution cost of the given function. " alt="" coords="197,5,323,32"/>
+<area shape="rect" id="node3" href="$classHashMethod.html" title="This method uses a weight given by the execution time of a similar basic block. For that it uses a da..." alt="" coords="212,56,308,83"/>
+<area shape="rect" id="node4" href="$classHashWeightedMethod.html" title="This method uses a weight given by the execution time of a similar basic block. For that it uses a da..." alt="" coords="185,107,335,133"/>
+<area shape="rect" id="node5" href="$classInstructionCostMethod.html" title="This method uses the sum of an estimate cost of each instruction in the function multiplied by the fr..." alt="" coords="183,157,337,184"/>
+<area shape="rect" id="node6" href="$classInstructionMethod.html" title="This method uses the number of instructions multiplied by the execution frequency to evaluate the exe..." alt="" coords="197,208,323,235"/>
+<area shape="rect" id="node7" href="$classInstructionPlusHashMethod.html" title="This method uses the sum of both estimations from HashMethod and InstructionMethod. " alt="" coords="169,259,351,285"/>
+<area shape="rect" id="node8" href="$classProfMethod.html" title="This method uses a similar approach as HashMethod. But instead searching in a database the cost of ea..." alt="" coords="215,309,305,336"/>
+<area shape="rect" id="node9" href="$classRandomMethod.html" title="This method uses a random number multiplied by the execution frequency to evaluate the execution cost..." alt="" coords="203,360,317,387"/>
+</map>
