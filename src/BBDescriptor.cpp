@@ -146,19 +146,26 @@ BBDescriptor::BBDescriptor(BasicBlock &BB) {
 }
 
 BBDescriptor::BBDescriptor(const StringRef &S) {
+  assert(!S.empty() 
+      && "The string representation of a BBDescriptor cannot be empty.");
+
   Descriptions.resize(Size);
 
   std::stringstream ss(S.str());
-  int d;
+  int  d;
   char p;
   for (int i = 0; i < Size; i++) {
     ss >> d;
     Descriptions[i] = d;
     ss >> p;
+
+    assert(d >= 0 && p == '-' 
+        && "The string representation of a BBDescriptor is in a bad format.");
   }
 }
 
 void BBDescriptor::set(Descriptor DescriptionId, int Value) {
+
   Descriptions[DescriptionId] = Value;
 }
 
