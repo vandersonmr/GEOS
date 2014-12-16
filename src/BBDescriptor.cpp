@@ -165,15 +165,23 @@ BBDescriptor::BBDescriptor(const StringRef &S) {
 }
 
 void BBDescriptor::set(Descriptor DescriptionId, int Value) {
+  assert((int) DescriptionId >= 0 && (int) DescriptionId < Size &&
+      "Trying to set an invalid descriptor.");
+
+  assert(Value >= 0 && "The value of an descriptor must be greater than 0.");
 
   Descriptions[DescriptionId] = Value;
 }
 
 void BBDescriptor::addUp(Descriptor DescriptionId, int N) { 
-  Descriptions[DescriptionId] += N;  
+  int NewValue = getDescription(DescriptionId) + N;
+  set(DescriptionId, NewValue);
 }
 
 int BBDescriptor::getDescription(Descriptor DescriptionId) {
+  assert((int) DescriptionId >= 0 && (int) DescriptionId < Size &&
+      "Trying to get the value of an invalid descriptor.");
+
   return Descriptions[DescriptionId];
 }
 
