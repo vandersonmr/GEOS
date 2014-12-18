@@ -1,0 +1,19 @@
+nguage: cpp
+compiler:
+  - gcc
+  - clang
+script: rake
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq llvm-dev
+branches:
+  only:
+    - master
+  notifications:
+    email:
+      recipients:
+        - vandersonmr2@gmail.com
+      on_success: change
+      on_failure: always
+os:
+  - linux
