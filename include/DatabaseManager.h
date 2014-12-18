@@ -11,7 +11,7 @@
 ///
 //===----------------------------------------------------------------------===//
 
-#include "BBDescriptor.h"
+#include "BBHash.h"
 
 #include <string>
 #include <unordered_map>
@@ -21,10 +21,10 @@
 /// use and manipulate it.
 class DatabaseManager {
   private:
-    /// \brief The database itself. Each element has a key, a string, that 
-    /// represents a BB hash and a double value linked with that represents the
-    /// execution time of this BB.
-    std::unordered_map<std::string, double> DB;
+    /// \brief The database itself. Each element has a key, a BBHash, that 
+    /// represents a BasicBlock and a double value which represents the 
+    /// execution time of this BasicBlock.
+    std::unordered_map<BBHash, double> DB;
 
     /// \brief Loads from a file, which the path is given as parameter, the 
     /// BB Hash Database.
@@ -36,24 +36,42 @@ class DatabaseManager {
 
     /// \brief Returns the number of different BB hashes which there are in the 
     /// database.
-    int size();
+    int size() const;
 
     /// \brief Returns the execution time found in the database for the given 
     /// Hash (BBDescritor). 
-    double getTime(BBDescriptor&);
+    double getTime(const BBHash&) const;
 
     /// \brief Returns true if and only if there is an exactly equal hash on
     /// the database.
-    bool hasHash(BBDescriptor&);
+    bool hasHash(const BBHash&) const;
 
-    /// \brief Given an another database this function merge them.
-    void unionWith(std::unordered_map<std::string, double>&);
+    /// \brief Insert a new value in the database. 
+    // 
+    /// \param The first parameter is the hash and the second is the execution
+    ///  time of this hash. 
+    void insert(BBHash, double);
+
+    /// \brief This function merge the database with the one given as parameter.
+    void unionWith(DatabaseManager&);
 
     /// \brief Prints all the database. Each new line contains a hash and its 
     /// execution time separated by space. 
-    void printDatabase();
+    void printDatabase() const;
 
     /// \brief Returns the most equally hash from the given parameter in the 
     /// database. 
-    BBDescriptor* getNearest(BBDescriptor&, bool);
+    BBHash* getNearest(const BBHash&, bool) const;
+
+    typedef std::unordered_map<BBHash, double>::iterator iterator;
+    typedef std::unordered_map<BBHash, double>::
+      const_iterator const_iterator;
+
+    iterator begin() { return DB.begin(); };
+
+    const_iterator cbegin() const { return DB.cbegin(); };
+
+    iterator end() { return DB.end(); };
+
+    const_iterator cend() const { return DB.cend(); };
 };

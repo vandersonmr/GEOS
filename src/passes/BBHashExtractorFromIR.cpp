@@ -13,7 +13,8 @@
 //
 //===----------------------------------------------------------------------===//
 
-#include "llvm/Analysis/BBDescriptor.h"
+#include "BBHash.h"
+
 #include "llvm/ADT/Statistic.h"
 #include "llvm/IR/Function.h"
 #include "llvm/IR/Module.h"
@@ -29,10 +30,10 @@ using namespace llvm;
 #define DEBUG_TYPE "bb-hash"
 
 namespace {
-  struct BBHash : public ModulePass {
+  struct BBHashExtractorFromIR : public ModulePass {
     private:
       StringRef generateHash(BasicBlock &BB) {
-        BBDescriptor BBHashGenerator(BB);
+        BBHash BBHashGenerator(BB);
 
         return BBHashGenerator.getString();
       }
@@ -50,7 +51,7 @@ namespace {
 
     public:
       static char ID; 
-      BBHash() : ModulePass(ID) {}
+      BBHashExtractorFromIR() : ModulePass(ID) {}
 
       bool runOnModule(Module &M) override {
         int i = 0;
@@ -63,5 +64,6 @@ namespace {
   };
 }
 
-char BBHash::ID = 0;
-static RegisterPass<BBHash> Y("bb-hash", "BB-Hash for Basic Block database");
+char BBHashExtractorFromIR::ID = 0;
+static RegisterPass<BBHashExtractorFromIR> 
+  Y("bb-hash", "BB-Hash for Basic Block database");

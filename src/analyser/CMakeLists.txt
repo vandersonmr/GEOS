@@ -6,6 +6,6 @@ add_executable (llvm-analyser main.cpp
 
 TARGET_LINK_LIBRARIES(llvm-analyser LLVMIRReader LLVMBitReader 
   LLVMAsmParser LLVMCore LLVMSupport rt dl tinfo atomic pthread z m 
-  DatabaseManager BBDescriptor) 
+  DatabaseManager BBHash) 
 
 INSTALL(TARGETS llvm-analyser RUNTIME DESTINATION bin)

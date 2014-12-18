@@ -33,7 +33,7 @@ estimateExecutionTime(Function *Func,
   double PerformanceMensurment = 0;
   auto MBB = Freq->block_begin(); 
   for (auto &BB : *Func) {
-    BBDescriptor Hash(BB);
+    BBHash Hash(BB);
     PerformanceMensurment += (*MBB)->getCount() * 
                    DBManager->getTime(*DBManager->getNearest(Hash, true));
     ++MBB;

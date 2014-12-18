@@ -25,6 +25,8 @@ void DatabaseManager::loadDatabase(StringRef Filename) {
   ErrorOr<std::unique_ptr<MemoryBuffer>> DatabaseFileBuffer = 
       MemoryBuffer::getFile(Filename);
 
+  assert(DatabaseFileBuffer && "Impossible to open the database file.");
+
   std::pair<StringRef, StringRef> LineAndTail =
       (*DatabaseFileBuffer)->getBuffer().split('\n');
 
@@ -32,9 +34,9 @@ void DatabaseManager::loadDatabase(StringRef Filename) {
     char   HashString[1000];
     double Time;
 
-    scanf(LineAndTail.first.str().c_str(), "%s %f", HashString, &Time); 
+    sscanf(LineAndTail.first.str().c_str(), "%s %lf", HashString, &Time); 
 
-    DB[std::string(HashString)] = Time;
+    DB[BBHash(StringRef(HashString))] = Time;
   
     LineAndTail = LineAndTail.second.split('\n'); 
   }
@@ -44,54 +46,57 @@ DatabaseManager::DatabaseManager(StringRef Filename) {
   loadDatabase(Filename); 
 }
 
-int DatabaseManager::size() {
+int DatabaseManager::size() const {
   return DB.size();
 }
 
-double DatabaseManager::getTime(BBDescriptor &Hash) {
+double DatabaseManager::getTime(const BBHash &Hash) const {
   if(hasHash(Hash))
-    return DB[Hash.getString()];
+    return DB.at(Hash);
   else 
     return 0.0;
 }
 
-bool DatabaseManager::hasHash(BBDescriptor &Hash) {
-  return DB.count(Hash.getString()) == 1;
+bool DatabaseManager::hasHash(const BBHash &Hash) const {
+  return DB.count(Hash) == 1;
 }
 
-BBDescriptor* 
-DatabaseManager::getNearest(BBDescriptor &Hash, bool Weight = false) {
-  auto SmallestDistance = 1000000000000;
+BBHash* DatabaseManager::
+getNearest(const BBHash &Hash, bool Weight = false) const {
+  double SmallestDistance = std::numeric_limits<double>::max();
   std::string Smallest = "";
 
   for (auto Elem : DB) {
-    BBDescriptor H(Elem.first);
-    auto Distance = 0;
-    if (Weight)
-      Distance = BBDescriptor::distance(H, Hash, true);
-    else
-      Distance = BBDescriptor::distance(H, Hash, false);
+    double Distance = 0;
+    Distance = BBHash::distance(Elem.first, Hash, Weight);
 
-    if (Distance == 0) { Smallest = Elem.first; break; }
+    if (Distance == 0) { Smallest = Elem.first.getString(); break; }
     if (Distance < SmallestDistance) {
       SmallestDistance = Distance;
-      Smallest         = Elem.first;
+      Smallest         = Elem.first.getString();
     }
   }
 
-  return new BBDescriptor(Smallest);
+  return new BBHash(Smallest);
 }
 
-void DatabaseManager::unionWith(std::unordered_map<std::string, double> &DB2) {
-  for (auto Elem : DB2) {
-    if (DB.count(Elem.first) == 0)
-      DB[Elem.first] = Elem.second;
-    else
-      DB[Elem.first] = (Elem.second + DB[Elem.first])/2;
-  }
+void DatabaseManager::insert(BBHash Hash, double Value) {
+  assert(Value > 0 && "Cannot insert in the database a negative value.");
+  
+  if (hasHash(Hash)) 
+    DB[Hash] = (Value + DB[Hash])/2;
+  else 
+    DB[Hash] = Value;
 }
 
-void DatabaseManager::printDatabase() {
+void DatabaseManager::unionWith(DatabaseManager &DB2) {
+  for (auto Elem : DB2)  
+    hasHash(Elem.first);
+  for (auto Elem : DB2)  
+    insert(Elem.first, Elem.second);
+}
+
+void DatabaseManager::printDatabase() const {
   for (auto i : DB)
-    outs() << i.first << " " << i.second << "\n";
+    outs() << i.first.getString() << " " << i.second << "\n";
 }

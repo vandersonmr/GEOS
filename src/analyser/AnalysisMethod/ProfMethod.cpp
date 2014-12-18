@@ -31,7 +31,7 @@ ProfMethod::ProfMethod(StringRef Filename) {
     int    Id;
     double Time;
 
-    scanf(LineAndTail.first.str().c_str(), "%d: %f", &Id, &Time); 
+    sscanf(LineAndTail.first.str().c_str(), "%d: %lf", &Id, &Time); 
     Times[Id] = Time;
 
     LineAndTail = LineAndTail.second.split('\n'); 

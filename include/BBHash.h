@@ -1,4 +1,4 @@
-//===---- include/BBDescriptor.h - Basic Block Hash Manager  -*- C++ -*----===//
+//===---- include/BBHash.h - Basic Block Hash Manager  -*- C++ -*----===//
 //
 //              The LLVM Time Cost Analyser Infrastructure
 //
@@ -24,7 +24,7 @@
 #include <vector>
 
 /// \brief Represent each item in the basic block's hash
-enum Descriptor {
+enum DescriptorKind {
   NumberOfInstructions = 0,
   GetElementPtr = 1,
   Ret  = 2,
@@ -63,52 +63,53 @@ enum Descriptor {
   Others = 35
 };
 
+
 /// \brief This class is responsible for representing BB's hashes in memory. 
 /// It can be constructed by a string (hash representation in the file) or by 
 /// a basic block that will serve as a base to create a new hash.
-class BBDescriptor {
+class BBHash {
   private:
     /// \brief size of the hash. Need to be the same size of the enum 
     /// Descriptor.
     const static int Size = 35;
     /// \brief representation of the hash itself. The hash is a vector of int 
-    /// separated by '-'. 
-    std::vector<int> Descriptions;
+    /// separated by '-'. Each int is called a descriptor. 
+    std::vector<int> Hash;
 
     /// \brief Fill the descriptios if informations about the basic block pass 
     /// as a parameter.
     void loadBB(llvm::BasicBlock&);
 
     /// \brief Returns a weight for each information in the hash.
-    static unsigned descriptorWeight(Descriptor d);
+    static unsigned descriptorWeight(DescriptorKind d);
 
   public:
     /// \brief Create an empty hash.
-    BBDescriptor();
+    BBHash();
 
     /// \brief Create a hash for the Basic Block given as parameter.
-    BBDescriptor(llvm::BasicBlock&);
+    BBHash(llvm::BasicBlock&);
 
     /// \brief Creates a memory representation of the hash from a string 
     /// representation of the hash. Useful when loading the hash from a file. 
-    BBDescriptor(const llvm::StringRef&); 
+    BBHash(const llvm::StringRef&); 
 
     /// \brief set an information in the hash with a new value given as 
     /// parameter.
-    void set(Descriptor, int);
+    void setDescriptor(DescriptorKind, int);
 
     /// \brief Sum 1 or n to the value of an information in the hash.
-    void addUp(Descriptor, int n = 1); 
+    void addUpDescriptor(DescriptorKind, int n = 1); 
 
     /// \brief get the value from an information in the hash.
-    int getDescription(Descriptor);
+    int getDescriptor(DescriptorKind) const;
 
     /// \brief returns a string that represents this hash. For instance:
     /// "25-0-1-0-0-1-7-4-2-0-1-0-0-0-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1"
     /// Where each position represents the amount of something in the basic
     /// block. For example, in this case the first number is the number of 
     /// instruction in the basic block. So this basic block had 25 instructions.
-    llvm::StringRef getString();
+    llvm::StringRef getString() const;
 
     /// \brief Calculates an Euclidian distance between two hashes.
     //
@@ -118,5 +119,24 @@ class BBDescriptor {
     //
     /// \returns it returns a double that represents how equally two basic 
     /// blocks are. 
-    static double distance(BBDescriptor&, BBDescriptor&, bool Weight = false);
+    static double 
+      distance(const BBHash&, const BBHash&, bool Weight = false);
+
+    bool operator==(const BBHash &Other) const { 
+      return distance(Other, *this) == 0;
+    }
 };
+
+namespace std {
+  /// \brief Define the hash function for the type BBHash. It uses the 
+  /// result of hash<string> applied in the getString from the BBHash.
+  template <> 
+    struct hash<BBHash> {
+      size_t operator()(const BBHash& K) const {
+        return BBHash::distance(K, BBHash(), true) *
+          K.getDescriptor(DescriptorKind::NumberOfInstructions);
+        //return hash<string>()(K.getString().str());
+      }
+    };
+} // namespace
+

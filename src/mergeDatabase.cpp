@@ -58,7 +58,7 @@ int main(int argc, char **argv) {
 
   DatabaseManager DBManager(DatabaseFilename);
 
-  std::unordered_map<int, BBDescriptor*> Hashs;
+  std::unordered_map<int, BBHash*> Hashs;
   std::unordered_map<int, double> Times;
 
   std::pair<StringRef, StringRef> HashLineAndTail =
@@ -68,9 +68,9 @@ int main(int argc, char **argv) {
     int Id;
     char HashString[1000];
 
-    scanf(HashLineAndTail.first.str().c_str(), "%d: %s", &Id, HashString); 
+    sscanf(HashLineAndTail.first.str().c_str(), "%d: %s", &Id, HashString); 
 
-    Hashs[Id] = new BBDescriptor(std::string(HashString));
+    Hashs[Id] = new BBHash(std::string(HashString));
     
     HashLineAndTail = HashLineAndTail.second.split('\n'); 
   }
@@ -82,24 +82,17 @@ int main(int argc, char **argv) {
     int Id;
     double Time; 
 
-    scanf(HashLineAndTail.first.str().c_str(), "%d: %f", &Id, &Time); 
+    sscanf(HashLineAndTail.first.str().c_str(), "%d: %lf", &Id, &Time); 
 
     Times[Id] = Time;
     
     ProfLineAndTail = ProfLineAndTail.second.split('\n'); 
   }
 
-  std::unordered_map<std::string, double> DB2;
-  for (auto i : Times) 
-    if (Hashs.count(i.first) != 0) {
-      if (DB2.count(Hashs[i.first]->getString()) == 0)
-        DB2[Hashs[i.first]->getString()] = i.second;
-      else
-        DB2[Hashs[i.first]->getString()] = (DB2[Hashs[i.first]->getString()] 
-                                              + i.second)/2;
-    }
-
-  DBManager.unionWith(DB2);  
+  for (auto i : Times) { 
+    if (Hashs.count(i.first) != 0) 
+      DBManager.insert(*Hashs[i.first], i.second);
+  }
 
   DBManager.printDatabase();
 
