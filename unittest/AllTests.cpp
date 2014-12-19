@@ -10,7 +10,7 @@ using namespace llvm;
 
 std::unique_ptr<Module> TestModule;
 
-#include "BBDescriptorTests.cpp"
+#include "BBHashTests.cpp"
 #include "DatabaseManagerTests.cpp"
 
 int main(int argc, char **argv) {

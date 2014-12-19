@@ -6,7 +6,7 @@ function create-database() {
   cd database/$2/HDB
   for h in $(ls *); do
     echo $h
-    ../../../merge -hs $h -p ../DB/$h -db ../../../$1 >> tmp
+    llvm-merge -hs $h -p ../DB/$h -db ../../../$1 >> tmp
     mv tmp ../../../$1
   done;
   cd ../../../

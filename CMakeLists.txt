@@ -16,5 +16,6 @@ add_library (BBHash ${PROJECT_SOURCE_DIR}/src/BBHash.cpp)
 
 add_subdirectory (src)
 add_subdirectory (src/analyser)
+
 add_subdirectory (src/passes)
 add_subdirectory (unittest)

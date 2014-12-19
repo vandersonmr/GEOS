@@ -31,9 +31,9 @@ for ll in $(ls ../benchmarks/llvm/); do
       cp $ll $1/tmp.ll 
     fi
 
-    opt -load ../../../build/lib/LLVMBBProf.so -bb-prof $1/tmp.ll -S -o tmp.ll 
-    opt -load ../../../build/lib/LLVMBBHash.so -bb-hash $1/tmp.ll -S -disable-output \
-                                                                       > htmp.ll
+    opt -load /usr/local/lib/libLLVMBBProf.so -bb-prof $1/tmp.ll -S -o tmp.ll 
+    opt -load /usr/local/lib/libLLVMBBHash.so -extract-bb-hash $1/tmp.ll -S \
+                                                     -disable-output > htmp.ll
     mv htmp.ll $1/HDB/${ll:19}
     clang++ tmp.ll ../src/PAPI.cpp -o tmp -lm -dl -lpapi -O0  
     time ./tmp 2> $1/DB/${ll:19}

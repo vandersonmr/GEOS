@@ -91,8 +91,6 @@ void DatabaseManager::insert(BBHash Hash, double Value) {
 
 void DatabaseManager::unionWith(DatabaseManager &DB2) {
   for (auto Elem : DB2)  
-    hasHash(Elem.first);
-  for (auto Elem : DB2)  
     insert(Elem.first, Elem.second);
 }
 

@@ -1,4 +1,4 @@
-//===- bb-prof.cpp - Add PAPI instructions in each basic block  -----------===//
+//== BBHashExtractorFromIR.cpp - Add PAPI instructions in each basic block  ==//
 //
 //                     The LLVM Compiler Infrastructure
 //
@@ -27,21 +27,19 @@
 
 using namespace llvm;
 
-#define DEBUG_TYPE "bb-hash"
+#define DEBUG_TYPE "extract-bb-hash"
 
 namespace {
   struct BBHashExtractorFromIR : public ModulePass {
     private:
       StringRef generateHash(BasicBlock &BB) {
         BBHash BBHashGenerator(BB);
-
         return BBHashGenerator.getString();
       }
 
       bool runOnBasicBlock(BasicBlock &BB, int id) {
-        if (BB.getInstList().size() > 3) {
+        if (BB.getInstList().size() > 3) 
           outs() << id << ": " << generateHash(BB) << "\n";
-        } 
         return false;
       }
 
@@ -58,12 +56,10 @@ namespace {
         for (auto &F : M) 
           for (auto &BB : F)
             runOnBasicBlock(BB, i++);
-
         return false;
       }
   };
 }
-
 char BBHashExtractorFromIR::ID = 0;
 static RegisterPass<BBHashExtractorFromIR> 
-  Y("bb-hash", "BB-Hash for Basic Block database");
+  Y("extract-bb-hash", "BB-Hash for Basic Block database");

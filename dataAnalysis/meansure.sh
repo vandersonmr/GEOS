@@ -16,10 +16,10 @@ function execution-time() {
   TIMEFORMAT='%3U'; (time ./a.out &> /dev/null) &>> stamp
   llvm-link-3.5 *.ll -S > linked.ll
   cd ..
-  ../analyser `for i in $(ls tmp/*.gcda); do echo "-ga $i"; done` \
-              `for i in $(ls tmp/*.gcno); do echo "-go $i"; done` \
-              -ll tmp/linked.ll -hashM -db ../database/intel-i5/data \
-              2> /dev/null >> tmp/stamp
+  llvm-analyser `for i in $(ls tmp/*.gcda); do echo "-ga $i"; done` \
+                `for i in $(ls tmp/*.gcno); do echo "-go $i"; done` \
+                 -ll tmp/linked.ll -hashM -db ../database/intel-i5/data \
+                 2> /dev/null >> tmp/stamp
   cat tmp/stamp | sed ':a;N;$!ba;s/\n/\t/g'
   rm -r tmp
 }

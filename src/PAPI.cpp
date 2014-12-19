@@ -65,7 +65,7 @@ void init_PAPI(int Size) {
 }
 
 double get_time_stamp() {
-  PAPI_stop_counters(values, 2);
+  PAPI_stop_counters(Values, 2);
   long long int Values2[2];
   Empty = getEmpty(Events, Values2);
   double Stamp = 1.0/((Values[1] - Empty) / ((double)Values[1]/Values[0]));
@@ -84,11 +84,11 @@ void start_measures(int Id) {
     }
   }
 
-  notFinished = true;
+  NotFinished = true;
 #endif
 
   ID = Id;
-  if (freq[Id] < TIME) {
+  if (Freq[Id] < TIME) {
     IDsStack.push(ID);
     Freq[Id]++;
     Empty = getEmpty(Events, Values);
@@ -110,7 +110,7 @@ void get_results() {
       IDsStack.pop();
 
       Empty = getEmpty(Events, Values);
-      PAPI_start_counters(events, 2);
+      PAPI_start_counters(Events, 2);
     }
 
     NotFinished = false;
@@ -120,6 +120,6 @@ void get_results() {
 
 void print_results() {
   for (int i = 0; i < SIZE; i++) 
-    if (freq[i] > 0 && value[i] > 0) 
-      fprintf(stderr, "%d: %d\n", i, (int) ceil(1.0/(value[i]/freq[i])));
+    if (Freq[i] > 0 && Value[i] > 0) 
+      fprintf(stderr, "%d: %d\n", i, (int) ceil(1.0/(Value[i]/Freq[i])));
 }

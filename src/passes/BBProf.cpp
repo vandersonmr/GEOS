@@ -1,4 +1,4 @@
-//===- bb-prof.cpp - Add PAPI instructions in each basic block  -----------===//
+//===------ BBProf.cpp - Add PAPI instructions in each basic block  -------===//
 //
 //                     The LLVM Compiler Infrastructure
 //
