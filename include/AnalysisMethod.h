@@ -12,6 +12,9 @@
 ///
 //===----------------------------------------------------------------------===//
 
+#ifndef ANALYSISMETHOD_H
+#define ANALYSISMETHOD_H
+
 #include "DatabaseManager.h"
 
 #include "llvm/IRReader/IRReader.h"   
@@ -33,18 +36,15 @@ class AnalysisMethod {
     ///
     /// \returns A double value that represents the execution cost of the LLVM 
     /// function (Function) when executed in the given frequency (GCOVFunction).
-    virtual double estimateExecutionTime(llvm::Function*, 
-        std::unique_ptr<llvm::GCOVFunction,
-        std::default_delete<llvm::GCOVFunction> >&) = 0;
+    virtual double 
+      estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*) = 0;
 };
 
 /// \brief This method uses the number of instructions multiplied by the 
 /// execution frequency to evaluate the execution cost of the given function.
 class InstructionMethod : public AnalysisMethod {
   public:
-    double estimateExecutionTime(llvm::Function*, 
-        std::unique_ptr<llvm::GCOVFunction, 
-        std::default_delete<llvm::GCOVFunction> >&); 
+    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
 };
 
 /// \brief This method uses a weight given by the execution time of a similar 
@@ -60,9 +60,7 @@ class HashMethod : public AnalysisMethod {
     /// file.
     HashMethod(llvm::StringRef);
 
-    double estimateExecutionTime(llvm::Function*, 
-        std::unique_ptr<llvm::GCOVFunction, 
-        std::default_delete<llvm::GCOVFunction> >&); 
+    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
 };
 
 /// \brief This method uses a weight given by the execution time of a similar 
@@ -79,27 +77,22 @@ class HashWeightedMethod : public AnalysisMethod {
     /// \brief The constructor needs a string with the path to the database 
     /// file.
     HashWeightedMethod(llvm::StringRef);
-    double estimateExecutionTime(llvm::Function*, 
-        std::unique_ptr<llvm::GCOVFunction, 
-        std::default_delete<llvm::GCOVFunction> >&); 
+
+    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
 };
 
 /// \brief This method uses a random number multiplied by the execution 
 /// frequency to evaluate the execution cost of the given function.
 class RandomMethod : public AnalysisMethod {
   public:
-    double estimateExecutionTime(llvm::Function*, 
-        std::unique_ptr<llvm::GCOVFunction, 
-        std::default_delete<llvm::GCOVFunction> >&); 
+    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
 };
 
 /// \brief This method uses just the frequency to evaluate the execution cost 
 /// of the given function.
 class FrequencyMethod : public AnalysisMethod {
   public:
-    double estimateExecutionTime(llvm::Function*, 
-        std::unique_ptr<llvm::GCOVFunction, 
-        std::default_delete<llvm::GCOVFunction> >&); 
+    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
 };
 
 /// \brief This method uses the sum of an estimate cost of each instruction in 
@@ -107,9 +100,7 @@ class FrequencyMethod : public AnalysisMethod {
 /// execution cost.
 class InstructionCostMethod : public AnalysisMethod {
   public:
-    double estimateExecutionTime(llvm::Function*, 
-        std::unique_ptr<llvm::GCOVFunction, 
-        std::default_delete<llvm::GCOVFunction> >&); 
+    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
 };
 
 /// \brief This method uses the sum of both estimations from HashMethod and 
@@ -124,9 +115,7 @@ class InstructionPlusHashMethod : public AnalysisMethod {
     /// constructor.
     InstructionPlusHashMethod(llvm::StringRef);
 
-    double estimateExecutionTime(llvm::Function*, 
-        std::unique_ptr<llvm::GCOVFunction, 
-        std::default_delete<llvm::GCOVFunction> >&); 
+    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
 };
 
 /// \brief This method uses a similar approach as HashMethod. But instead 
@@ -139,7 +128,7 @@ class ProfMethod : public AnalysisMethod {
     /// constructor.
     ProfMethod(llvm::StringRef);
 
-    double estimateExecutionTime(llvm::Function*, 
-        std::unique_ptr<llvm::GCOVFunction, 
-        std::default_delete<llvm::GCOVFunction> >&); 
+    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
 };
+
+#endif

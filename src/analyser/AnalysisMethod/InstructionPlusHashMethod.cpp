@@ -24,10 +24,7 @@ InstructionPlusHashMethod::InstructionPlusHashMethod(StringRef Filename) {
 }
 
 double InstructionPlusHashMethod::
-estimateExecutionTime(Function *Func, 
-    std::unique_ptr<GCOVFunction, 
-    std::default_delete<GCOVFunction> > &Freq) {
-
+estimateExecutionTime(llvm::Function* Func, llvm::GCOVFunction* Freq) { 
   return IM->estimateExecutionTime(Func, Freq) 
     + HM->estimateExecutionTime(Func, Freq);
 } 

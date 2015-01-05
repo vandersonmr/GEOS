@@ -15,6 +15,7 @@
 
 #include "AnalysisMethod.h"
 #include "CostEstimator.h"
+#include "GEOS.h"
 
 #include "llvm/Support/raw_ostream.h"
 
@@ -59,43 +60,6 @@ static cl::opt<std::string> DatabaseFilename("database",
 static cl::alias 
 dbAlias("db", cl::desc("Alias for -database"), cl::aliasopt(DatabaseFilename));
 
-std::vector<std::unique_ptr<GCOVFunction>>
-readFunctions(GCOVFile& GF, GCOVBuffer &GCNOBuffer, GCOVBuffer &GCDABuffer) {
-  GCOV::GCOVVersion Version;
-  std::vector<std::unique_ptr<GCOVFunction>> Functions; 
-  uint32_t Checksum;
-
-  GCOVOptions Options(true, true, true, true, true, true, false, false);
-  FileInfo FI(Options);
-
-  if (!GCNOBuffer.readGCNOFormat() || !GCDABuffer.readGCDAFormat()) 
-    return Functions;
-  if (!GCNOBuffer.readGCOVVersion(Version) || 
-      !GCDABuffer.readGCOVVersion(Version)) 
-    return Functions;
-
-  if (!GCNOBuffer.readInt(Checksum) || !GCDABuffer.readInt(Checksum)) 
-    return Functions;
-
-  while (true) {
-    if (!GCNOBuffer.readFunctionTag()) break;
-    if (!GCDABuffer.readFunctionTag()) break; 
-    auto GFun = make_unique<GCOVFunction>(GF);
-    if (!GFun->readGCNO(GCNOBuffer, Version) ||
-        !GFun->readGCDA(GCDABuffer, Version))
-      return Functions;
-
-    GFun->collectLineCounts(FI);
-
-    Functions.push_back(move(GFun));
-  }
-
-  FI.setRunCount(1);
-  FI.setProgramCount(1);
-
-  return Functions;
-}
-
 int main(int argc, char** argv) {
   LLVMContext Context;
   SMDiagnostic Error;
@@ -105,76 +69,24 @@ int main(int argc, char** argv) {
   std::unique_ptr<Module> MyModule = parseIRFile(LLVMFilename.c_str(),
       Error, Context);
 
-  AnalysisMethod *Analyser;
-
-  switch (OptAnalysisMethod) {
-    case hashM:
-      if (!DatabaseFilename.empty())
-        Analyser = new HashMethod(DatabaseFilename);
-      else
-        errs() 
-          << "For hashM you must pass a database filename with -database\n";
-      break;
-    case hashWM:
-      if (!DatabaseFilename.empty())
-        Analyser = new HashWeightedMethod(DatabaseFilename);
-      else
-        errs() 
-          << "For hashM you must pass a database filename with -database\n";
-      break;
-    case instM:
-      Analyser = new InstructionMethod();
-      break;
-    case instCostM:
-      Analyser = new InstructionCostMethod();
-      break;
-    case randM:
-      Analyser = new RandomMethod();
-      break;
-    case freqM:
-      Analyser = new FrequencyMethod();
-      break;
-    case hashPlusInstM:
-      if (!DatabaseFilename.empty())
-        Analyser = new InstructionPlusHashMethod(DatabaseFilename);
-      else
-        errs() << "For hashPlusInstM you must pass a database filename with" <<
-          " -database\n";
-      break;
-    default:
-      Analyser = new InstructionMethod();
-      break;
-  }
-
-  double PerformanceMensurment = 0;
+  std::list<MemoryBuffer*> GCNOList;
+  std::list<MemoryBuffer*> GCDAList;
 
   cl::list<std::string>::iterator iGCDA = GCDAFilename.begin();
   cl::list<std::string>::iterator iGCNO = GCNOFilename.begin();
   while (iGCDA != GCDAFilename.end() && iGCNO != GCNOFilename.end()) {
-    GCOVFile GF;
 
-    ErrorOr<std::unique_ptr<MemoryBuffer>> GCNO_Buff =
-      MemoryBuffer::getFileOrSTDIN(*iGCNO);
-    ErrorOr<std::unique_ptr<MemoryBuffer>> GCDA_Buff =
-      MemoryBuffer::getFileOrSTDIN(*iGCDA);
-
-    GCOVBuffer GCNO_GB(GCNO_Buff.get().get());
-    GCOVBuffer GCDA_GB(GCDA_Buff.get().get());
-
-    auto NewFuncs = readFunctions(GF, GCNO_GB, GCDA_GB);
-
-    for (auto &FreqFunc : NewFuncs) {
-      Function *LLVMFunc = MyModule->getFunction(FreqFunc->getName());
-
-      PerformanceMensurment += 
-        Analyser->estimateExecutionTime(LLVMFunc, FreqFunc);
-    }
+    GCNOList.push_back(MemoryBuffer::getFileOrSTDIN(*iGCNO).get().get());
+    GCDAList.push_back(MemoryBuffer::getFileOrSTDIN(*iGCDA).get().get());
 
     iGCDA++;
     iGCNO++;
   }
 
-  outs() << PerformanceMensurment << "\n";
+  ProfileModule PModule(&(*MyModule), GCDAList, GCNOList);
+
+  outs() << GEOS::analyseExecutionTime(PModule, 
+        (AnalysisMethods) OptAnalysisMethod, DatabaseFilename.c_str()) << "\n";
 
   return 0;
 }

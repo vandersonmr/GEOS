@@ -18,10 +18,7 @@
 using namespace llvm;
 
 double InstructionMethod::
-estimateExecutionTime(Function *Func, 
-    std::unique_ptr<GCOVFunction, 
-    std::default_delete<GCOVFunction> > &Freq) {
-
+estimateExecutionTime(llvm::Function* Func, llvm::GCOVFunction* Freq) { 
   double PerformanceMensurment = 0;
   auto MBB = Freq->block_begin(); 
   for (auto &BB : *Func) {

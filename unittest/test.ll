@@ -948,10 +948,3 @@ attributes #4 = { nounwind readonly "less-precise-fpmad"="false" "no-frame-point
 attributes #5 = { nounwind }
 attributes #6 = { noreturn nounwind }
 attributes #7 = { nounwind readonly }
-
-!llvm.ident = !{!0, !0}
-!llvm.module.flags = !{!1, !2}
-
-!0 = metadata !{metadata !"Ubuntu clang version 3.5-1ubuntu1 (trunk) (based on LLVM 3.5)"}
-!1 = metadata !{i32 2, metadata !"Dwarf Version", i32 4}
-!2 = metadata !{i32 1, metadata !"Debug Info Version", i32 1}
