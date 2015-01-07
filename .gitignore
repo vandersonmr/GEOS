@@ -30,3 +30,6 @@
 
 application
 build
+benchmarks/llvm
+
+*.bc

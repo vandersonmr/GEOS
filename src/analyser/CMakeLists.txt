@@ -8,7 +8,7 @@ add_library(Analyser AnalysisMethod/FrequencyMethod.cpp
 
 TARGET_LINK_LIBRARIES(llvm-analyser ProfileModule GEOS LLVMIRReader 
   LLVMBitReader LLVMAsmParser LLVMAnalysis LLVMCore LLVMScalarOpts LLVMSupport 
-  LLVMTarget LLVMTransformUtils LLVMAnalysis rt dl tinfo atomic pthread z m 
-  Analyser DatabaseManager BBHash)
+  LLVMTarget LLVMTransformUtils LLVMAnalysis LLVMInstCombine rt dl tinfo atomic 
+  pthread z m Analyser DatabaseManager BBHash)
 
 INSTALL(TARGETS llvm-analyser RUNTIME DESTINATION bin)

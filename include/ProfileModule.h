@@ -52,6 +52,7 @@ class ProfileModule {
                   std::list<llvm::MemoryBuffer*> GCDA, 
                   std::list<llvm::MemoryBuffer*> GCNO);
 
+
     /// \brief Returns its LLVM Module.
     llvm::Module* getLLVMModule() const;
     

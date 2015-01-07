@@ -74,14 +74,13 @@ int main(int argc, char** argv) {
 
   cl::list<std::string>::iterator iGCDA = GCDAFilename.begin();
   cl::list<std::string>::iterator iGCNO = GCNOFilename.begin();
-  while (iGCDA != GCDAFilename.end() && iGCNO != GCNOFilename.end()) {
-
-    GCNOList.push_back(MemoryBuffer::getFileOrSTDIN(*iGCNO).get().get());
-    GCDAList.push_back(MemoryBuffer::getFileOrSTDIN(*iGCDA).get().get());
-
-    iGCDA++;
-    iGCNO++;
-  }
+  // FIXME!
+//  while (iGCDA != GCDAFilename.end() && iGCNO != GCNOFilename.end()) {
+    auto GCNO = MemoryBuffer::getFileOrSTDIN(*iGCNO);
+    auto GCDA = MemoryBuffer::getFileOrSTDIN(*iGCDA);
+    GCNOList.push_back(GCNO.get().get());
+    GCDAList.push_back(GCDA.get().get());
+//  }
 
   ProfileModule PModule(&(*MyModule), GCDAList, GCNOList);
 

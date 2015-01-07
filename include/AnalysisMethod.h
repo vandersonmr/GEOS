@@ -108,8 +108,8 @@ class InstructionCostMethod : public AnalysisMethod {
 class InstructionPlusHashMethod : public AnalysisMethod {
   private:
     /// \brief Uses both InstructionMethod and HashMethod
-    InstructionMethod *IM;
-    HashMethod        *HM;
+    InstructionCostMethod *IM;
+    HashWeightedMethod *HM;
   public:
     /// \brief Needs the database path as parameter for the HashMethod 
     /// constructor.

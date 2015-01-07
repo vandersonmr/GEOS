@@ -21,7 +21,60 @@
 
 #include "llvm/PassManager.h"
 
-/// \brief This clss is responsable for apply passes into a ProfileModule, which
+enum OptimizationKind {
+  ConstantPropagation,
+  AlignmentFromAssumptions,
+  SCCP,
+  DeadInstElimination,
+  DeadCodeElimination,
+  DeadStoreElimination,
+  AggressiveDCE,
+  SROA,
+  ScalarReplAggregates,
+  InductionVariableSimplify,
+  InstructionCombining,
+  LICM,
+  LoopStrengthReduce,
+  LoopUnswitch,
+  LoopInstSimplify,
+  LoopUnroll,
+  LoopReroll,
+  LoopRotate,
+  LoopIdiom,
+  PromoteMemoryToRegister,
+  DemoteRegisterToMemory,
+  Reassociate,
+  JumpThreading,
+  CFGSimplification,
+  FlattenCFG,
+  CFGStructurization,
+  BreakCriticalEdges,
+  LoopSimplify,
+  TailCallElimination,
+  LowerSwitch,
+  LowerInvoke,
+  LCSSA,
+  EarlyCSE,
+  MergedLoadStoreMotion,
+  GVN,
+  MemCpyOpt,
+  LoopDeletion,
+  ConstantHoisting,
+  InstructionNamer,
+  Sink,
+  LowerAtomic,
+  ValuePropagation,
+  InstructionSimplifier,
+  LowerExpectInstrinsics,
+  PartiallyInlineLibCalls,
+  SampleProfilePass,
+  ScalarizerPass,
+  AddDiscriminators,
+  SeparateConstOffsetFromGEP,
+  LoadCombine
+};
+
+/// \brief This class is responsable for apply passes into a ProfileModule, which
 /// contatains the LLVM code and the profiling information, and also analyse its
 /// execution time. 
 class GEOS {
@@ -32,11 +85,14 @@ class GEOS {
     /// made in a copy. This copy is returned as parameter.
     static ProfileModule* 
       applyPasses(const ProfileModule&, llvm::FunctionPassManager&);
-   
+
     /// \brief analysis the execution time of a ProfileModule with the choosen
     /// method and returns it. 
     static double analyseExecutionTime(const ProfileModule&, AnalysisMethods,
         llvm::StringRef);
+    
+    /// \brief Returns the instanciation of the optimization choosed.
+    static llvm::Pass* getPass(OptimizationKind);
 };
 
 #endif

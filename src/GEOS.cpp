@@ -18,6 +18,8 @@
 #include "llvm/Support/MemoryBuffer.h"
 #include "llvm/Transforms/Scalar.h"
 
+#include <cstdlib>
+
 using namespace llvm;
 
 ProfileModule* 
@@ -89,4 +91,103 @@ GEOS::analyseExecutionTime(const ProfileModule& PModule, AnalysisMethods Method,
   }
 
   return PerformanceMensurment;
+}
+
+Pass* GEOS::getPass(OptimizationKind OptChoosed) {
+  switch(OptChoosed) {
+    case ConstantPropagation:
+      return createConstantPropagationPass();
+    case AlignmentFromAssumptions:
+      return createAlignmentFromAssumptionsPass();
+    //case SCCP:
+    //  return createSCCPPass();
+    case DeadInstElimination:
+      return createDeadInstEliminationPass();
+    case DeadCodeElimination:
+      return createDeadCodeEliminationPass();
+    case AggressiveDCE:
+      return createAggressiveDCEPass();
+    case SROA:
+      return createSROAPass();
+    case ScalarReplAggregates: 
+      return createScalarReplAggregatesPass(); //PreservesCFG
+    case InductionVariableSimplify:
+      return createIndVarSimplifyPass();
+    case InstructionCombining:
+      return createInstructionCombiningPass();
+    case LICM:
+      return createLICMPass();
+    //case LoopStrengthReduce:
+    //  return createLoopStrengthReducePass();
+    //case LoopUnswitch:
+    //  return createLoopUnswitchPass();
+    //case LoopInstSimplify:
+    //  return createLoopInstSimplifyPass();
+    //case LoopUnroll:
+    //  return createLoopUnrollPass();
+    //case LoopReroll:
+    //  return createLoopRerollPass();
+    //case LoopRotate:
+    //  return createLoopRotatePass();
+    //case LoopIdiom:
+    //  return createLoopIdiomPass();
+    case PromoteMemoryToRegister:
+      return createPromoteMemoryToRegisterPass();
+    //case DemoteRegisterToMemory:
+    //  return createDemoteRegisterToMemoryPass();
+    case Reassociate: 
+      return createReassociatePass(); // PreservesCFG
+    //case JumpThreading:
+    //  return createJumpThreadingPass();
+    //case CFGSimplification:
+    //  return createCFGSimplificationPass();
+    //case FlattenCFG:
+    //  return createFlattenCFGPass();
+    //case CFGStructurization:
+    //  return createStructurizeCFGPass();
+    //case BreakCriticalEdges:
+    //  return createBreakCriticalEdgesPass();
+    //case LoopSimplify:
+    //  return createLoopSimplifyPass();
+    //case TailCallElimination: // Maybe can change CFG
+    //  return createTailCallEliminationPass();
+    //case LowerSwitch: // Maybe can change CFG
+    //  return createLowerSwitchPass();
+    case LCSSA:
+      return createLCSSAPass(); // PreservesCFG
+    case EarlyCSE:
+      return createEarlyCSEPass();
+    case MergedLoadStoreMotion:
+      return createMergedLoadStoreMotionPass();
+    case GVN:
+      return createGVNPass();
+    case MemCpyOpt:
+      return createMemCpyOptPass();
+    //case LoopDeletion: // Maybe can change CFG
+    //  return createLoopDeletionPass();
+    case ConstantHoisting:
+      return createConstantHoistingPass();
+    case InstructionNamer:
+      return createInstructionNamerPass();
+    case Sink: 
+      return createSinkingPass();  // PreservesCFG
+    case LowerAtomic:
+      return createLowerAtomicPass(); // PreservesCFG
+    case ValuePropagation:
+      return createCorrelatedValuePropagationPass();
+    case InstructionSimplifier:
+      return createInstructionSimplifierPass();
+    //case PartiallyInlineLibCalls:
+    //  return createPartiallyInlineLibCallsPass();
+    //case ScalarizerPass: // Maybe can change CFG
+    //  return createScalarizerPass();
+    case AddDiscriminators:
+      return createAddDiscriminatorsPass();
+    //case SeparateConstOffsetFromGEP:  // Maybe can change CFG
+    //  return createSeparateConstOffsetFromGEPPass();
+    //case LoadCombine:
+    //  return createLoadCombinePass(); // PreserveCFG
+    default:
+      return nullptr;
+  }
 }

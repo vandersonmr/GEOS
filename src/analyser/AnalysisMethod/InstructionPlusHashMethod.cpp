@@ -19,8 +19,8 @@
 using namespace llvm;
 
 InstructionPlusHashMethod::InstructionPlusHashMethod(StringRef Filename) {
-  IM = new InstructionMethod();
-  HM = new HashMethod(Filename);
+  IM = new InstructionCostMethod();
+  HM = new HashWeightedMethod(Filename);
 }
 
 double InstructionPlusHashMethod::
