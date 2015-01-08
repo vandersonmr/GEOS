@@ -1,0 +1,12 @@
+1 : Reassociate expressions : 520.530740
+2 : Dead Instruction Elimination : 520.530740
+3 : MemCpy Optimization : 520.530740
+4 : MemCpy Optimization : 520.530740
+5 : Add DWARF path discriminators : 520.530740
+6 : Scalar Replacement of Aggregates (DT) : 327.361362
+7 : Lower atomic intrinsics to non-atomic form : 327.361362
+8 : Assign names to anonymous instructions : 327.361362
+9 : MergedLoadStoreMotion : 327.361362
+10 : Add DWARF path discriminators : 327.361362
+11 : Loop-Closed SSA Form Pass : 332.714353
+SpeedUp : 1.564497

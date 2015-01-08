@@ -1,0 +1,12 @@
+1 : MergedLoadStoreMotion : 79681.857635
+2 : Reassociate expressions : 79681.857635
+3 : Dead Instruction Elimination : 79681.857635
+4 : Loop Invariant Code Motion : 79681.857635
+5 : Loop-Closed SSA Form Pass : 79681.857635
+6 : MergedLoadStoreMotion : 79681.857635
+7 : Aggressive Dead Code Elimination : 79681.857635
+8 : Global Value Numbering : 79567.187322
+9 : Combine redundant instructions : 870.312635
+10 : Aggressive Dead Code Elimination : 870.312635
+11 : Scalar Replacement of Aggregates (DT) : 918.556337
+SpeedUp : 86.746838

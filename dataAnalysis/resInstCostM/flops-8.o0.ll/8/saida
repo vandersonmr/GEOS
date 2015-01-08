@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 346.874999
+2 : Dead Instruction Elimination : 346.874999
+3 : Dead Instruction Elimination : 346.874999
+4 : Scalar Replacement of Aggregates (DT) : 276.562499
+5 : Constant Hoisting : 276.562499
+6 : Induction Variable Simplification : 276.562499
+7 : Combine redundant instructions : 265.624999
+8 : Aggressive Dead Code Elimination : 265.624999
+9 : MemCpy Optimization : 265.624999
+10 : SROA : 265.624999
+11 : Remove redundant instructions : 265.624999
+12 : Loop-Closed SSA Form Pass : 265.624999
+13 : Code sinking : 265.624999
+14 : Aggressive Dead Code Elimination : 265.624999
+15 : Reassociate expressions : 265.624999
+16 : Early CSE : 264.062499
+17 : MemCpy Optimization : 264.062499
+18 : Promote Memory to Register : 264.062499
+19 : Add DWARF path discriminators : 264.062499
+20 : Scalar Replacement of Aggregates (DT) : 264.062499
+SpeedUp : 1.313609

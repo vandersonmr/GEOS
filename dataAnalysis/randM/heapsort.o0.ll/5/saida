@@ -1,0 +1,5 @@
+1 : Alignment from assumptions : 0.000001
+2 : Constant Hoisting : 0.000001
+3 : Reassociate expressions : 0.000001
+4 : Early CSE : 0.000001
+SpeedUp : 1.034188

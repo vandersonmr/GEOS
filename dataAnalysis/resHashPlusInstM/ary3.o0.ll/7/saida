@@ -1,0 +1,7 @@
+1 : Promote Memory to Register : 1647.327578
+2 : SROA : 1647.327578
+3 : Dead Instruction Elimination : 1647.327578
+4 : Dead Code Elimination : 1647.327578
+5 : Early CSE : 1557.465960
+6 : Loop Invariant Code Motion : 1557.599850
+SpeedUp : 1.211358

@@ -1,0 +1,10 @@
+1 : Aggressive Dead Code Elimination : 0.149048
+2 : Aggressive Dead Code Elimination : 0.149048
+3 : MemCpy Optimization : 0.149048
+4 : Dead Code Elimination : 0.149048
+5 : Code sinking : 0.149048
+6 : Promote Memory to Register : 0.077885
+7 : Aggressive Dead Code Elimination : 0.077885
+8 : Alignment from assumptions : 0.077885
+9 : Reassociate expressions : 0.078213
+SpeedUp : 1.905664

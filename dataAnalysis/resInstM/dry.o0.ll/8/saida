@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 533.000000
+2 : Value Propagation : 533.000000
+3 : Lower atomic intrinsics to non-atomic form : 533.000000
+4 : Value Propagation : 533.000000
+5 : Promote Memory to Register : 331.000000
+6 : Dead Instruction Elimination : 304.000000
+7 : Aggressive Dead Code Elimination : 304.000000
+8 : Scalar Replacement of Aggregates (DT) : 304.000000
+9 : Lower atomic intrinsics to non-atomic form : 304.000000
+10 : Reassociate expressions : 304.000000
+11 : Dead Instruction Elimination : 304.000000
+12 : Global Value Numbering : 249.000000
+13 : Scalar Replacement of Aggregates (DT) : 248.000000
+14 : MergedLoadStoreMotion : 248.000000
+15 : Dead Code Elimination : 248.000000
+16 : Value Propagation : 248.000000
+17 : MergedLoadStoreMotion : 248.000000
+18 : Induction Variable Simplification : 248.000000
+19 : Early CSE : 236.000000
+20 : Loop Invariant Code Motion : 237.000000
+SpeedUp : 2.248945

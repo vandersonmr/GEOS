@@ -1,0 +1,21 @@
+1 : Code sinking : 151.313482
+2 : Promote Memory to Register : 13.763008
+3 : Remove redundant instructions : 13.763008
+4 : Alignment from assumptions : 13.763008
+5 : Alignment from assumptions : 13.763008
+6 : Remove redundant instructions : 13.763008
+7 : Remove redundant instructions : 13.763008
+8 : Code sinking : 13.763008
+9 : Code sinking : 13.763008
+10 : Scalar Replacement of Aggregates (DT) : 13.763008
+11 : Alignment from assumptions : 13.763008
+12 : Promote Memory to Register : 13.763008
+13 : Loop Invariant Code Motion : 13.763008
+14 : Remove redundant instructions : 13.763008
+15 : Loop-Closed SSA Form Pass : 13.763008
+16 : Loop-Closed SSA Form Pass : 13.763008
+17 : Combine redundant instructions : 11.630695
+18 : Combine redundant instructions : 11.630695
+19 : Aggressive Dead Code Elimination : 11.630695
+20 : Assign names to anonymous instructions : 11.630695
+SpeedUp : 13.009841

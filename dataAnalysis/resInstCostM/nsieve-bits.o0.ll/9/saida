@@ -1,0 +1,10 @@
+1 : Aggressive Dead Code Elimination : 68.901436
+2 : Lower atomic intrinsics to non-atomic form : 68.901436
+3 : Global Value Numbering : 68.264612
+4 : Lower atomic intrinsics to non-atomic form : 68.264612
+5 : Add DWARF path discriminators : 68.264612
+6 : Promote Memory to Register : 40.683284
+7 : Aggressive Dead Code Elimination : 32.044229
+8 : Promote Memory to Register : 32.044229
+9 : Induction Variable Simplification : 33.487193
+SpeedUp : 2.057546

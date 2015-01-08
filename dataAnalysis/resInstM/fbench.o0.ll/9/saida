@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 25.150009
+2 : Loop Invariant Code Motion : 25.150009
+3 : MemCpy Optimization : 25.150009
+4 : Code sinking : 25.150009
+5 : MemCpy Optimization : 25.150009
+6 : Combine redundant instructions : 22.010007
+7 : Constant Hoisting : 22.010007
+8 : Reassociate expressions : 22.010007
+9 : Dead Instruction Elimination : 22.010007
+10 : SROA : 22.010007
+11 : Dead Instruction Elimination : 22.010007
+12 : Loop Invariant Code Motion : 22.010007
+13 : Alignment from assumptions : 22.010007
+14 : Induction Variable Simplification : 22.010007
+15 : Early CSE : 21.010007
+16 : Dead Instruction Elimination : 21.010007
+17 : Loop Invariant Code Motion : 21.010007
+18 : Loop Invariant Code Motion : 21.010007
+19 : Add DWARF path discriminators : 21.010007
+20 : Promote Memory to Register : 17.750006
+SpeedUp : 1.416901

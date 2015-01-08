@@ -1,0 +1,12 @@
+1 : Global Value Numbering : 97.166942
+2 : Combine redundant instructions : 94.901599
+3 : Add DWARF path discriminators : 94.901599
+4 : Early CSE : 93.851581
+5 : SROA : 93.851581
+6 : SROA : 93.851581
+7 : Lower atomic intrinsics to non-atomic form : 93.851581
+8 : Dead Instruction Elimination : 93.851581
+9 : Induction Variable Simplification : 93.851581
+10 : Scalar Replacement of Aggregates (DT) : 82.621867
+11 : Assign names to anonymous instructions : 100.526943
+SpeedUp : 2.646110

@@ -1,0 +1,8 @@
+1 : Lower atomic intrinsics to non-atomic form : 645.912995
+2 : Constant Hoisting : 645.912995
+3 : MergedLoadStoreMotion : 645.912995
+4 : Promote Memory to Register : 403.548191
+5 : Constant Hoisting : 403.548191
+6 : Induction Variable Simplification : 349.954514
+7 : Constant Hoisting : 349.974485
+SpeedUp : 1.845600

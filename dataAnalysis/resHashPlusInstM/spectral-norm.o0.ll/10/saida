@@ -1,0 +1,8 @@
+1 : Global Value Numbering : 335.949074
+2 : Dead Instruction Elimination : 335.949074
+3 : Remove redundant instructions : 335.949074
+4 : MemCpy Optimization : 335.949074
+5 : Dead Instruction Elimination : 335.949074
+6 : Dead Code Elimination : 335.949074
+7 : Early CSE : 406.760905
+SpeedUp : 0.872886

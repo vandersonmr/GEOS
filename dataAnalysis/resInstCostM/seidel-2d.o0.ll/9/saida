@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 18.735468
+2 : Induction Variable Simplification : 18.735468
+3 : Loop Invariant Code Motion : 18.735468
+4 : Add DWARF path discriminators : 18.735468
+5 : Promote Memory to Register : 12.273944
+6 : Constant Hoisting : 8.477934
+7 : Loop Invariant Code Motion : 8.477934
+8 : Aggressive Dead Code Elimination : 8.477934
+9 : Dead Instruction Elimination : 8.477934
+10 : Remove redundant instructions : 8.477934
+11 : Add DWARF path discriminators : 8.477934
+12 : Add DWARF path discriminators : 8.477934
+13 : Remove redundant instructions : 8.477934
+14 : Value Propagation : 8.477934
+15 : Add DWARF path discriminators : 8.477934
+16 : MergedLoadStoreMotion : 8.477934
+17 : Combine redundant instructions : 8.475926
+18 : Code sinking : 8.475926
+19 : Aggressive Dead Code Elimination : 8.475926
+20 : Early CSE : 7.877325
+SpeedUp : 2.378405

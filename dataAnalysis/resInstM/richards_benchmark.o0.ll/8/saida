@@ -1,0 +1,6 @@
+1 : Remove redundant instructions : 92.579429
+2 : Dead Instruction Elimination : 92.579429
+3 : SROA : 92.579429
+4 : Global Value Numbering : 92.357527
+5 : Induction Variable Simplification : 92.357527
+SpeedUp : 1.002403

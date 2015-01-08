@@ -1,0 +1,5 @@
+1 : Loop-Closed SSA Form Pass : 42.395444
+2 : Lower atomic intrinsics to non-atomic form : 42.395444
+3 : Constant Hoisting : 42.395444
+4 : Combine redundant instructions : 76.226570
+SpeedUp : 0.556177

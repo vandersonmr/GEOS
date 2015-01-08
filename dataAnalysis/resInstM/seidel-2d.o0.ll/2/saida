@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 21.577543
+2 : MergedLoadStoreMotion : 21.577543
+3 : Scalar Replacement of Aggregates (DT) : 15.116230
+4 : Scalar Replacement of Aggregates (DT) : 15.116230
+5 : Constant Hoisting : 15.116230
+6 : Dead Code Elimination : 15.116230
+7 : Alignment from assumptions : 15.116230
+8 : MemCpy Optimization : 15.116230
+9 : Add DWARF path discriminators : 15.116230
+10 : Loop-Closed SSA Form Pass : 15.116230
+11 : Loop Invariant Code Motion : 9.896805
+12 : Reassociate expressions : 9.896805
+13 : Aggressive Dead Code Elimination : 9.896805
+14 : Value Propagation : 9.896805
+15 : Loop Invariant Code Motion : 9.896805
+16 : Dead Code Elimination : 9.896805
+17 : Alignment from assumptions : 9.896805
+18 : Scalar Replacement of Aggregates (DT) : 9.896805
+19 : Scalar Replacement of Aggregates (DT) : 9.896805
+20 : Lower atomic intrinsics to non-atomic form : 9.896805
+SpeedUp : 2.180254

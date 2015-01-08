@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 12.324681
+2 : Remove redundant instructions : 12.324681
+3 : Value Propagation : 12.324681
+4 : Dead Code Elimination : 12.324681
+5 : Aggressive Dead Code Elimination : 12.324681
+6 : Alignment from assumptions : 12.324681
+7 : Promote Memory to Register : 8.323161
+8 : Induction Variable Simplification : 6.562881
+9 : Scalar Replacement of Aggregates (DT) : 6.562881
+10 : Induction Variable Simplification : 6.562881
+11 : MemCpy Optimization : 6.562881
+12 : Value Propagation : 6.562881
+13 : Lower atomic intrinsics to non-atomic form : 6.562881
+14 : Code sinking : 6.562881
+15 : Promote Memory to Register : 6.562881
+16 : Aggressive Dead Code Elimination : 6.562881
+17 : Loop Invariant Code Motion : 5.762841
+18 : MergedLoadStoreMotion : 5.762841
+19 : Induction Variable Simplification : 5.762841
+20 : Lower atomic intrinsics to non-atomic form : 5.762841
+SpeedUp : 2.388600

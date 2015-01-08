@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 543.307818
+2 : Aggressive Dead Code Elimination : 543.307818
+3 : Loop Invariant Code Motion : 517.742272
+4 : Reassociate expressions : 451.664722
+5 : Aggressive Dead Code Elimination : 451.664722
+6 : Lower atomic intrinsics to non-atomic form : 451.664722
+7 : Constant Hoisting : 451.664722
+8 : Induction Variable Simplification : 451.664722
+9 : Global Value Numbering : 426.486963
+10 : Value Propagation : 426.486963
+11 : Value Propagation : 426.486963
+12 : Remove redundant instructions : 426.486963
+13 : Loop Invariant Code Motion : 426.486963
+14 : Induction Variable Simplification : 426.486963
+15 : Combine redundant instructions : 410.582733
+16 : MergedLoadStoreMotion : 189.310439
+17 : Global Value Numbering : 189.310439
+18 : Scalar Replacement of Aggregates (DT) : 189.310439
+19 : Promote Memory to Register : 189.310439
+20 : Assign names to anonymous instructions : 189.310439
+SpeedUp : 4.779941

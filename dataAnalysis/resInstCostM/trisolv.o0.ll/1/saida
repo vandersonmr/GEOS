@@ -1,0 +1,17 @@
+1 : Early CSE : 4.081581
+2 : Alignment from assumptions : 4.081581
+3 : MergedLoadStoreMotion : 4.081581
+4 : Lower atomic intrinsics to non-atomic form : 4.081581
+5 : Remove redundant instructions : 4.081581
+6 : Dead Code Elimination : 4.081581
+7 : Dead Code Elimination : 4.081581
+8 : SROA : 4.081581
+9 : Constant Hoisting : 4.081581
+10 : Scalar Replacement of Aggregates (DT) : 2.960940
+11 : Add DWARF path discriminators : 2.800940
+12 : Remove redundant instructions : 2.800940
+13 : Promote Memory to Register : 2.800940
+14 : SROA : 2.800940
+15 : Add DWARF path discriminators : 2.800940
+16 : Global Value Numbering : 3.040920
+SpeedUp : 1.921123

@@ -1,0 +1,10 @@
+1 : Code sinking : 54.141359
+2 : Aggressive Dead Code Elimination : 54.141359
+3 : Loop-Closed SSA Form Pass : 54.141359
+4 : Value Propagation : 54.141359
+5 : Add DWARF path discriminators : 54.141359
+6 : Alignment from assumptions : 54.141359
+7 : MemCpy Optimization : 54.141359
+8 : Alignment from assumptions : 54.141359
+9 : Scalar Replacement of Aggregates (DT) : 54.613343
+SpeedUp : 0.991358

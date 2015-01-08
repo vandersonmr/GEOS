@@ -1,0 +1,6 @@
+1 : Value Propagation : 759.629860
+2 : Reassociate expressions : 759.629860
+3 : Code sinking : 759.629860
+4 : Code sinking : 759.629860
+5 : Scalar Replacement of Aggregates (DT) : 1739.950678
+SpeedUp : 0.436581

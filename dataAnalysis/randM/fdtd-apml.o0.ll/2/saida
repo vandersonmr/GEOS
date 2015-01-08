@@ -1,0 +1,4 @@
+1 : MemCpy Optimization : 0.000003
+2 : Induction Variable Simplification : 0.000002
+3 : Constant Hoisting : 0.000003
+SpeedUp : 1.070175

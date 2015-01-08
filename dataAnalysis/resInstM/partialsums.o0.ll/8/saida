@@ -1,0 +1,15 @@
+1 : Add DWARF path discriminators : 2.125003
+2 : Scalar Replacement of Aggregates (DT) : 1.100002
+3 : Scalar Replacement of Aggregates (DT) : 1.100002
+4 : Reassociate expressions : 1.100002
+5 : Constant Hoisting : 1.100002
+6 : Combine redundant instructions : 0.987501
+7 : Early CSE : 0.962501
+8 : Constant Hoisting : 0.962501
+9 : Code sinking : 0.962501
+10 : Early CSE : 0.962501
+11 : Promote Memory to Register : 0.962501
+12 : MemCpy Optimization : 0.962501
+13 : MergedLoadStoreMotion : 0.962501
+14 : Global Value Numbering : 0.987501
+SpeedUp : 2.151899

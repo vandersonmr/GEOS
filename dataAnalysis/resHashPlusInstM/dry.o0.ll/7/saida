@@ -1,0 +1,6 @@
+1 : Global Value Numbering : 17006.999343
+2 : Assign names to anonymous instructions : 17006.999343
+3 : Lower atomic intrinsics to non-atomic form : 17006.999343
+4 : Promote Memory to Register : 2616.552603
+5 : Constant Hoisting : 2668.521403
+SpeedUp : 6.524996

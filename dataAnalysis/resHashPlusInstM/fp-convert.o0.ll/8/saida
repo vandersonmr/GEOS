@@ -1,0 +1,12 @@
+1 : MergedLoadStoreMotion : 3140.620693
+2 : Loop-Closed SSA Form Pass : 3140.620693
+3 : Loop-Closed SSA Form Pass : 3140.620693
+4 : Add DWARF path discriminators : 3140.620693
+5 : Aggressive Dead Code Elimination : 3140.620693
+6 : Aggressive Dead Code Elimination : 3140.620693
+7 : Loop-Closed SSA Form Pass : 3140.620693
+8 : Code sinking : 3140.620693
+9 : Alignment from assumptions : 3140.620693
+10 : Aggressive Dead Code Elimination : 3140.620693
+11 : Global Value Numbering : 21907.393860
+SpeedUp : 0.143359

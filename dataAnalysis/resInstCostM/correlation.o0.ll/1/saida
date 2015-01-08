@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 105.760715
+2 : Reassociate expressions : 105.760715
+3 : Value Propagation : 105.760715
+4 : Add DWARF path discriminators : 105.760715
+5 : MemCpy Optimization : 105.760715
+6 : SROA : 105.760715
+7 : Value Propagation : 105.760715
+8 : Aggressive Dead Code Elimination : 105.760715
+9 : MergedLoadStoreMotion : 105.760715
+10 : Loop-Closed SSA Form Pass : 105.760715
+11 : Aggressive Dead Code Elimination : 105.760715
+12 : Promote Memory to Register : 105.760715
+13 : Lower atomic intrinsics to non-atomic form : 105.760715
+14 : Add DWARF path discriminators : 105.760715
+15 : Global Value Numbering : 0.320910
+16 : Global Value Numbering : 0.320910
+17 : Remove redundant instructions : 0.320910
+18 : Dead Instruction Elimination : 0.320910
+19 : Aggressive Dead Code Elimination : 0.320910
+20 : Promote Memory to Register : 0.320910
+SpeedUp : 596.120871

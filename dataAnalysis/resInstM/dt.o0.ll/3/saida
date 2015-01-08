@@ -1,0 +1,21 @@
+1 : Value Propagation : 42.977874
+2 : Promote Memory to Register : 26.862449
+3 : Loop-Closed SSA Form Pass : 26.862449
+4 : Induction Variable Simplification : 26.862449
+5 : Reassociate expressions : 26.862449
+6 : Promote Memory to Register : 26.862449
+7 : Lower atomic intrinsics to non-atomic form : 26.862449
+8 : Constant Hoisting : 26.862449
+9 : Induction Variable Simplification : 26.862449
+10 : Aggressive Dead Code Elimination : 26.862449
+11 : Dead Instruction Elimination : 26.862449
+12 : Value Propagation : 26.862449
+13 : SROA : 26.862449
+14 : MergedLoadStoreMotion : 26.862449
+15 : Promote Memory to Register : 26.862449
+16 : Alignment from assumptions : 26.862449
+17 : MemCpy Optimization : 26.862449
+18 : Dead Code Elimination : 26.862449
+19 : Dead Instruction Elimination : 26.862449
+20 : Add DWARF path discriminators : 26.862449
+SpeedUp : 1.599924

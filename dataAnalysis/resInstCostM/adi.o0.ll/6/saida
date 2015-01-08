@@ -1,0 +1,21 @@
+1 : Constant Hoisting : 139.453675
+2 : Add DWARF path discriminators : 139.453675
+3 : Remove redundant instructions : 139.453675
+4 : Induction Variable Simplification : 139.453675
+5 : Combine redundant instructions : 121.583336
+6 : Dead Code Elimination : 121.583336
+7 : Aggressive Dead Code Elimination : 121.583336
+8 : Dead Code Elimination : 121.583336
+9 : SROA : 121.583336
+10 : Lower atomic intrinsics to non-atomic form : 121.583336
+11 : Lower atomic intrinsics to non-atomic form : 121.583336
+12 : Assign names to anonymous instructions : 121.583336
+13 : Code sinking : 121.583336
+14 : Remove redundant instructions : 121.583336
+15 : Promote Memory to Register : 66.865131
+16 : Dead Instruction Elimination : 64.757494
+17 : Induction Variable Simplification : 64.757494
+18 : Code sinking : 64.757494
+19 : Induction Variable Simplification : 64.757494
+20 : Lower atomic intrinsics to non-atomic form : 64.757494
+SpeedUp : 2.153475

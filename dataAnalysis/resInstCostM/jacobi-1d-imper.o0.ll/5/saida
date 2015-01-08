@@ -1,0 +1,21 @@
+1 : Code sinking : 0.392267
+2 : MemCpy Optimization : 0.392267
+3 : Loop Invariant Code Motion : 0.392267
+4 : SROA : 0.392267
+5 : Early CSE : 0.311875
+6 : MergedLoadStoreMotion : 0.311875
+7 : Dead Instruction Elimination : 0.311875
+8 : MergedLoadStoreMotion : 0.311875
+9 : Dead Instruction Elimination : 0.311875
+10 : Add DWARF path discriminators : 0.311875
+11 : Assign names to anonymous instructions : 0.311875
+12 : Loop Invariant Code Motion : 0.311875
+13 : Aggressive Dead Code Elimination : 0.311875
+14 : Early CSE : 0.311875
+15 : Remove redundant instructions : 0.311875
+16 : Value Propagation : 0.311875
+17 : SROA : 0.311875
+18 : Early CSE : 0.311875
+19 : SROA : 0.311875
+20 : Promote Memory to Register : 0.221281
+SpeedUp : 1.772707

@@ -1,0 +1,21 @@
+1 : Value Propagation : 17.768402
+2 : Combine redundant instructions : 15.687282
+3 : Dead Code Elimination : 15.687282
+4 : Aggressive Dead Code Elimination : 15.687282
+5 : Lower atomic intrinsics to non-atomic form : 15.687282
+6 : Promote Memory to Register : 9.284281
+7 : Dead Code Elimination : 9.284281
+8 : SROA : 9.284281
+9 : Promote Memory to Register : 9.284281
+10 : MemCpy Optimization : 9.284281
+11 : SROA : 9.284281
+12 : Remove redundant instructions : 9.284281
+13 : Scalar Replacement of Aggregates (DT) : 9.284281
+14 : Loop Invariant Code Motion : 8.324281
+15 : Dead Code Elimination : 8.324281
+16 : MergedLoadStoreMotion : 8.324281
+17 : Aggressive Dead Code Elimination : 8.324281
+18 : Global Value Numbering : 5.603561
+19 : MemCpy Optimization : 5.603561
+20 : Dead Code Elimination : 5.603561
+SpeedUp : 3.170913

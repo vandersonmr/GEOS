@@ -1,0 +1,5 @@
+1 : Loop-Closed SSA Form Pass : 0.000004
+2 : Loop-Closed SSA Form Pass : 0.000004
+3 : Add DWARF path discriminators : 0.000004
+4 : MemCpy Optimization : 0.000004
+SpeedUp : 0.980874

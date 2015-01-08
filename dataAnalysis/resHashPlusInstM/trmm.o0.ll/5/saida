@@ -1,0 +1,4 @@
+1 : Scalar Replacement of Aggregates (DT) : 882.389058
+2 : Assign names to anonymous instructions : 882.389058
+3 : Early CSE : 919.207635
+SpeedUp : 1.021607

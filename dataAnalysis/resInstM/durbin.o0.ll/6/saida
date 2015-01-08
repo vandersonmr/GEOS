@@ -1,0 +1,9 @@
+1 : Value Propagation : 15.526641
+2 : Promote Memory to Register : 10.004380
+3 : Dead Instruction Elimination : 10.004380
+4 : Induction Variable Simplification : 8.243940
+5 : Induction Variable Simplification : 8.243940
+6 : Remove redundant instructions : 8.243900
+7 : Add DWARF path discriminators : 8.243900
+8 : Reassociate expressions : 8.403940
+SpeedUp : 1.847543

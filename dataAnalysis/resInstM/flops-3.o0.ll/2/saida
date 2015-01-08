@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 218.750000
+2 : Scalar Replacement of Aggregates (DT) : 218.750000
+3 : Loop Invariant Code Motion : 196.875000
+4 : MemCpy Optimization : 196.875000
+5 : MergedLoadStoreMotion : 196.875000
+6 : Promote Memory to Register : 196.875000
+7 : Constant Hoisting : 196.875000
+8 : Loop-Closed SSA Form Pass : 196.875000
+9 : Aggressive Dead Code Elimination : 196.875000
+10 : Dead Code Elimination : 196.875000
+11 : Lower atomic intrinsics to non-atomic form : 196.875000
+12 : Constant Hoisting : 196.875000
+13 : Loop Invariant Code Motion : 196.875000
+14 : MemCpy Optimization : 196.875000
+15 : Remove redundant instructions : 193.750000
+16 : Early CSE : 181.250000
+17 : Alignment from assumptions : 181.250000
+18 : Lower atomic intrinsics to non-atomic form : 181.250000
+19 : Add DWARF path discriminators : 181.250000
+20 : Global Value Numbering : 178.125000
+SpeedUp : 1.789474

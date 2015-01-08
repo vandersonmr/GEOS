@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 88.644636
+2 : Code sinking : 88.644636
+3 : Assign names to anonymous instructions : 88.644636
+4 : Constant Hoisting : 88.644636
+5 : Dead Instruction Elimination : 88.644636
+6 : Promote Memory to Register : 40.024830
+7 : Aggressive Dead Code Elimination : 37.923130
+8 : Loop Invariant Code Motion : 37.912830
+9 : Lower atomic intrinsics to non-atomic form : 37.912830
+10 : Dead Instruction Elimination : 37.912830
+11 : Early CSE : 37.912830
+12 : Alignment from assumptions : 37.912830
+13 : Dead Code Elimination : 37.912830
+14 : SROA : 37.912830
+15 : Reassociate expressions : 37.912830
+16 : Add DWARF path discriminators : 37.912830
+17 : Scalar Replacement of Aggregates (DT) : 37.912830
+18 : Reassociate expressions : 37.912830
+19 : Scalar Replacement of Aggregates (DT) : 37.912830
+20 : Induction Variable Simplification : 37.912830
+SpeedUp : 3.118654

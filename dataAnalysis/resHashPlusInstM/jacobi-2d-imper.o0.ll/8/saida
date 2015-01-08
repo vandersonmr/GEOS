@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 85.878537
+2 : Dead Instruction Elimination : 85.878537
+3 : Constant Hoisting : 85.878537
+4 : Loop Invariant Code Motion : 85.878537
+5 : Aggressive Dead Code Elimination : 85.878537
+6 : Dead Code Elimination : 85.878537
+7 : Promote Memory to Register : 80.735143
+8 : Constant Hoisting : 53.334977
+9 : Combine redundant instructions : 53.331186
+10 : Promote Memory to Register : 53.331186
+11 : Reassociate expressions : 53.331186
+12 : Constant Hoisting : 53.331186
+13 : MemCpy Optimization : 53.331186
+14 : Promote Memory to Register : 53.331186
+15 : Dead Instruction Elimination : 53.331186
+16 : Dead Instruction Elimination : 53.331186
+17 : Value Propagation : 53.331186
+18 : Dead Instruction Elimination : 53.331186
+19 : Combine redundant instructions : 53.331186
+20 : MergedLoadStoreMotion : 53.331186
+SpeedUp : 1.610287

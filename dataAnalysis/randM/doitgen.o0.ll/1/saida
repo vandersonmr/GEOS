@@ -1,0 +1,4 @@
+1 : Constant Hoisting : 0.000002
+2 : Alignment from assumptions : 0.000002
+3 : Dead Instruction Elimination : 0.000002
+SpeedUp : 1.121339

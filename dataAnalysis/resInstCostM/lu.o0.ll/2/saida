@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 22.009867
+2 : Combine redundant instructions : 11.172777
+3 : Reassociate expressions : 11.172777
+4 : MemCpy Optimization : 11.172777
+5 : Dead Code Elimination : 11.172777
+6 : Global Value Numbering : 11.172777
+7 : Loop-Closed SSA Form Pass : 11.172777
+8 : Loop Invariant Code Motion : 11.172777
+9 : Constant Hoisting : 11.172777
+10 : MergedLoadStoreMotion : 11.172777
+11 : Lower atomic intrinsics to non-atomic form : 11.172777
+12 : Global Value Numbering : 11.172777
+13 : Global Value Numbering : 11.172777
+14 : Reassociate expressions : 11.172777
+15 : Constant Hoisting : 11.172777
+16 : Value Propagation : 11.172777
+17 : Value Propagation : 11.172777
+18 : Loop-Closed SSA Form Pass : 11.172777
+19 : Loop Invariant Code Motion : 11.172777
+20 : Add DWARF path discriminators : 11.172777
+SpeedUp : 9.962622

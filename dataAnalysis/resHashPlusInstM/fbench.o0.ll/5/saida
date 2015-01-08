@@ -1,0 +1,4 @@
+1 : MemCpy Optimization : 759.629860
+2 : Remove redundant instructions : 759.629860
+3 : Combine redundant instructions : 1632.436585
+SpeedUp : 0.465335

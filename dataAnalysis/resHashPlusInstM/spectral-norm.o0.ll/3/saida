@@ -1,0 +1,12 @@
+1 : Assign names to anonymous instructions : 355.055734
+2 : Aggressive Dead Code Elimination : 355.055734
+3 : Reassociate expressions : 355.055734
+4 : Remove redundant instructions : 355.055734
+5 : Induction Variable Simplification : 355.055734
+6 : Remove redundant instructions : 355.055734
+7 : Constant Hoisting : 355.055734
+8 : Loop-Closed SSA Form Pass : 355.055734
+9 : Code sinking : 355.055734
+10 : MemCpy Optimization : 355.055734
+11 : Early CSE : 368.633694
+SpeedUp : 0.963167

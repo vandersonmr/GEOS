@@ -1,0 +1,11 @@
+1 : Constant Hoisting : 533.000000
+2 : Value Propagation : 533.000000
+3 : Dead Instruction Elimination : 533.000000
+4 : Loop-Closed SSA Form Pass : 533.000000
+5 : Early CSE : 470.000000
+6 : Promote Memory to Register : 315.000000
+7 : Code sinking : 279.000000
+8 : Lower atomic intrinsics to non-atomic form : 273.000000
+9 : Value Propagation : 270.000000
+10 : Induction Variable Simplification : 271.000000
+SpeedUp : 1.966790

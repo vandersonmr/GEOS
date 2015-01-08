@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 345.568718
+2 : Alignment from assumptions : 345.568718
+3 : Early CSE : 117.208290
+4 : SROA : 117.208290
+5 : MemCpy Optimization : 117.208290
+6 : Assign names to anonymous instructions : 117.208290
+7 : Early CSE : 117.208290
+8 : Loop Invariant Code Motion : 117.208290
+9 : Loop Invariant Code Motion : 117.208290
+10 : Aggressive Dead Code Elimination : 117.208290
+11 : Induction Variable Simplification : 117.208290
+12 : Aggressive Dead Code Elimination : 117.208290
+13 : Global Value Numbering : 117.208290
+14 : Remove redundant instructions : 117.208290
+15 : Alignment from assumptions : 117.208290
+16 : Value Propagation : 117.208290
+17 : Induction Variable Simplification : 117.208290
+18 : Scalar Replacement of Aggregates (DT) : 106.476706
+19 : Scalar Replacement of Aggregates (DT) : 86.564738
+20 : Alignment from assumptions : 86.564738
+SpeedUp : 4.893345

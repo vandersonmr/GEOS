@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 1.124692
+2 : Remove redundant instructions : 1.122227
+3 : SROA : 1.122227
+4 : Loop Invariant Code Motion : 1.122227
+5 : Remove redundant instructions : 1.122227
+6 : Combine redundant instructions : 1.102225
+7 : Scalar Replacement of Aggregates (DT) : 1.102225
+8 : Alignment from assumptions : 1.102225
+9 : Dead Instruction Elimination : 1.102225
+10 : Alignment from assumptions : 1.102225
+11 : Lower atomic intrinsics to non-atomic form : 1.102225
+12 : Remove redundant instructions : 1.102225
+13 : Aggressive Dead Code Elimination : 1.102225
+14 : Add DWARF path discriminators : 1.102225
+15 : Remove redundant instructions : 1.102225
+16 : Lower atomic intrinsics to non-atomic form : 1.102225
+17 : Reassociate expressions : 1.102225
+18 : Alignment from assumptions : 1.102225
+19 : Early CSE : 0.895839
+20 : Early CSE : 0.895839
+SpeedUp : 2.293016

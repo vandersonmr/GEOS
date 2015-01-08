@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 421.091408
+2 : Promote Memory to Register : 306.924749
+3 : Code sinking : 306.924749
+4 : Early CSE : 103.053709
+5 : Reassociate expressions : 98.155750
+6 : Dead Code Elimination : 96.281108
+7 : Assign names to anonymous instructions : 96.281108
+8 : Loop Invariant Code Motion : 86.833140
+9 : Loop-Closed SSA Form Pass : 86.830641
+10 : Early CSE : 86.830641
+11 : Aggressive Dead Code Elimination : 86.830641
+12 : Loop Invariant Code Motion : 86.830641
+13 : Loop-Closed SSA Form Pass : 86.830641
+14 : SROA : 86.830641
+15 : Alignment from assumptions : 86.830641
+16 : MergedLoadStoreMotion : 86.830641
+17 : Reassociate expressions : 86.830641
+18 : Loop Invariant Code Motion : 86.830641
+19 : Induction Variable Simplification : 86.830641
+20 : Early CSE : 86.830641
+SpeedUp : 4.849572

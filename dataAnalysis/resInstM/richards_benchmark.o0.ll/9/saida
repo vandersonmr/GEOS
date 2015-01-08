@@ -1,0 +1,19 @@
+1 : Constant Hoisting : 92.579429
+2 : Combine redundant instructions : 83.189465
+3 : Scalar Replacement of Aggregates (DT) : 66.726451
+4 : MergedLoadStoreMotion : 66.726451
+5 : Value Propagation : 66.726451
+6 : MergedLoadStoreMotion : 66.726451
+7 : SROA : 66.726451
+8 : Promote Memory to Register : 66.726451
+9 : SROA : 66.726451
+10 : Aggressive Dead Code Elimination : 66.726451
+11 : Dead Instruction Elimination : 66.726451
+12 : Aggressive Dead Code Elimination : 66.726451
+13 : Dead Instruction Elimination : 66.726451
+14 : Lower atomic intrinsics to non-atomic form : 66.726451
+15 : Dead Instruction Elimination : 66.726451
+16 : Scalar Replacement of Aggregates (DT) : 66.726451
+17 : Dead Instruction Elimination : 66.726451
+18 : Loop-Closed SSA Form Pass : 66.831151
+SpeedUp : 1.385274

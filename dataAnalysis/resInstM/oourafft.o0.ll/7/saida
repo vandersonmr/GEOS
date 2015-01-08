@@ -1,0 +1,5 @@
+1 : Early CSE : 1158.749112
+2 : MemCpy Optimization : 1158.749112
+3 : Value Propagation : 1158.749112
+4 : Reassociate expressions : 1158.749113
+SpeedUp : 1.061581

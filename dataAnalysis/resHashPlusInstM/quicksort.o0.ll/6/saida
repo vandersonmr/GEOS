@@ -1,0 +1,4 @@
+1 : Value Propagation : 12.113044
+2 : Remove redundant instructions : 12.113044
+3 : Reassociate expressions : 12.118045
+SpeedUp : 0.999587

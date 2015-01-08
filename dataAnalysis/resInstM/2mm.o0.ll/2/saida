@@ -1,0 +1,21 @@
+1 : SROA : 732.138416
+2 : Dead Instruction Elimination : 732.138416
+3 : Loop-Closed SSA Form Pass : 732.138416
+4 : Alignment from assumptions : 732.138416
+5 : Global Value Numbering : 452.262934
+6 : Scalar Replacement of Aggregates (DT) : 279.970806
+7 : Code sinking : 204.735397
+8 : Promote Memory to Register : 204.735397
+9 : Aggressive Dead Code Elimination : 204.735397
+10 : Lower atomic intrinsics to non-atomic form : 204.735397
+11 : Constant Hoisting : 204.735397
+12 : Induction Variable Simplification : 194.039932
+13 : Add DWARF path discriminators : 193.997958
+14 : MemCpy Optimization : 193.997958
+15 : Early CSE : 193.997958
+16 : Early CSE : 193.997958
+17 : Alignment from assumptions : 193.997958
+18 : Alignment from assumptions : 193.997958
+19 : Code sinking : 193.997958
+20 : Constant Hoisting : 193.997958
+SpeedUp : 3.773949

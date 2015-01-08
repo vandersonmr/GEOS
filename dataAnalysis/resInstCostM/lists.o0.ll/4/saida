@@ -1,0 +1,8 @@
+1 : Scalar Replacement of Aggregates (DT) : 915.300000
+2 : Aggressive Dead Code Elimination : 915.300000
+3 : Loop-Closed SSA Form Pass : 915.300000
+4 : MemCpy Optimization : 915.300000
+5 : Loop-Closed SSA Form Pass : 915.300000
+6 : Induction Variable Simplification : 915.300000
+7 : Add DWARF path discriminators : 921.300000
+SpeedUp : 2.021752

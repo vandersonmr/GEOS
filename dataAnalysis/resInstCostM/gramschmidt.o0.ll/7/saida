@@ -1,0 +1,21 @@
+1 : Code sinking : 39.205364
+2 : Assign names to anonymous instructions : 39.205364
+3 : Reassociate expressions : 39.205364
+4 : Induction Variable Simplification : 39.205364
+5 : MemCpy Optimization : 39.205364
+6 : Induction Variable Simplification : 39.205364
+7 : Code sinking : 39.205364
+8 : Assign names to anonymous instructions : 39.205364
+9 : Remove redundant instructions : 39.205364
+10 : Loop Invariant Code Motion : 39.205364
+11 : Lower atomic intrinsics to non-atomic form : 39.205364
+12 : Dead Code Elimination : 39.205364
+13 : Alignment from assumptions : 39.205364
+14 : Aggressive Dead Code Elimination : 39.205364
+15 : Global Value Numbering : 25.035380
+16 : Lower atomic intrinsics to non-atomic form : 25.035380
+17 : Add DWARF path discriminators : 25.035380
+18 : Aggressive Dead Code Elimination : 25.035380
+19 : Promote Memory to Register : 12.847987
+20 : Value Propagation : 10.149177
+SpeedUp : 3.862911

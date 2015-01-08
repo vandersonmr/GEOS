@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 33.600001
+2 : Dead Instruction Elimination : 33.600001
+3 : Dead Instruction Elimination : 33.600001
+4 : MemCpy Optimization : 33.600001
+5 : Alignment from assumptions : 33.600001
+6 : Promote Memory to Register : 16.800000
+7 : Combine redundant instructions : 16.000000
+8 : Reassociate expressions : 16.000000
+9 : Aggressive Dead Code Elimination : 16.000000
+10 : Assign names to anonymous instructions : 16.000000
+11 : Alignment from assumptions : 16.000000
+12 : Dead Code Elimination : 16.000000
+13 : Alignment from assumptions : 16.000000
+14 : Lower atomic intrinsics to non-atomic form : 16.000000
+15 : Remove redundant instructions : 16.000000
+16 : Dead Code Elimination : 16.000000
+17 : Induction Variable Simplification : 16.000000
+18 : Assign names to anonymous instructions : 16.000000
+19 : Global Value Numbering : 15.913150
+20 : Induction Variable Simplification : 15.913150
+SpeedUp : 2.111461

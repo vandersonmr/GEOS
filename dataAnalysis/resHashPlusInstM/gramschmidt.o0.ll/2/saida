@@ -1,0 +1,6 @@
+1 : Dead Code Elimination : 247.204441
+2 : MemCpy Optimization : 247.204441
+3 : Value Propagation : 247.204441
+4 : Loop-Closed SSA Form Pass : 247.204441
+5 : Remove redundant instructions : 247.204441
+SpeedUp : 1.000000

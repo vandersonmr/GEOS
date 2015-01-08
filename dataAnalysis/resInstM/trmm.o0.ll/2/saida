@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 123.894590
+2 : MergedLoadStoreMotion : 123.894590
+3 : Induction Variable Simplification : 91.661445
+4 : Add DWARF path discriminators : 91.661445
+5 : Remove redundant instructions : 91.661445
+6 : Early CSE : 91.577477
+7 : SROA : 91.577477
+8 : Constant Hoisting : 91.577477
+9 : Loop-Closed SSA Form Pass : 91.577477
+10 : SROA : 91.577477
+11 : Combine redundant instructions : 75.434660
+12 : Combine redundant instructions : 75.434660
+13 : Lower atomic intrinsics to non-atomic form : 75.434660
+14 : Remove redundant instructions : 75.434660
+15 : Assign names to anonymous instructions : 75.434660
+16 : Scalar Replacement of Aggregates (DT) : 75.434660
+17 : Promote Memory to Register : 75.434660
+18 : Remove redundant instructions : 75.434660
+19 : Constant Hoisting : 75.434660
+20 : Code sinking : 75.434660
+SpeedUp : 2.499512

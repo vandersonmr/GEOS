@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 43.266072
+2 : SROA : 43.266072
+3 : Promote Memory to Register : 27.715513
+4 : Promote Memory to Register : 27.715462
+5 : Scalar Replacement of Aggregates (DT) : 27.715462
+6 : Scalar Replacement of Aggregates (DT) : 27.715462
+7 : Code sinking : 27.715462
+8 : Combine redundant instructions : 27.715462
+9 : Code sinking : 27.715462
+10 : Dead Code Elimination : 27.715462
+11 : Global Value Numbering : 10.863601
+12 : Induction Variable Simplification : 10.189873
+13 : Lower atomic intrinsics to non-atomic form : 10.187252
+14 : Dead Code Elimination : 10.187252
+15 : Induction Variable Simplification : 10.187252
+16 : Alignment from assumptions : 10.187252
+17 : Reassociate expressions : 10.187252
+18 : Value Propagation : 10.184630
+19 : Dead Instruction Elimination : 10.184630
+20 : MemCpy Optimization : 10.184630
+SpeedUp : 4.911862

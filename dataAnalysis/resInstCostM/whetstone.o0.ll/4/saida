@@ -1,0 +1,6 @@
+1 : MemCpy Optimization : 78.440507
+2 : Value Propagation : 78.440507
+3 : Promote Memory to Register : 47.937503
+4 : Constant Hoisting : 47.937503
+5 : Reassociate expressions : 47.937503
+SpeedUp : 1.636308

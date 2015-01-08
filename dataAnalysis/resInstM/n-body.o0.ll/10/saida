@@ -1,0 +1,13 @@
+1 : Dead Code Elimination : 113.750028
+2 : Aggressive Dead Code Elimination : 113.750028
+3 : Promote Memory to Register : 69.100017
+4 : Combine redundant instructions : 67.200014
+5 : Loop Invariant Code Motion : 63.150014
+6 : Alignment from assumptions : 63.150014
+7 : Early CSE : 61.050013
+8 : Alignment from assumptions : 61.050013
+9 : MergedLoadStoreMotion : 61.050013
+10 : SROA : 61.050013
+11 : MemCpy Optimization : 61.050013
+12 : Loop-Closed SSA Form Pass : 61.050013
+SpeedUp : 1.863227

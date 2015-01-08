@@ -1,0 +1,10 @@
+1 : Add DWARF path discriminators : 1193.941651
+2 : Dead Code Elimination : 1193.941651
+3 : Code sinking : 1193.941651
+4 : Code sinking : 1193.941651
+5 : Combine redundant instructions : 896.184542
+6 : Aggressive Dead Code Elimination : 896.184542
+7 : Loop Invariant Code Motion : 896.184542
+8 : Add DWARF path discriminators : 896.184542
+9 : Scalar Replacement of Aggregates (DT) : 1006.920328
+SpeedUp : 1.185736

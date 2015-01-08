@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 12.645241
+2 : Add DWARF path discriminators : 12.645241
+3 : Constant Hoisting : 12.645241
+4 : MemCpy Optimization : 12.645241
+5 : Loop Invariant Code Motion : 12.645241
+6 : Assign names to anonymous instructions : 12.645241
+7 : Value Propagation : 12.645241
+8 : Aggressive Dead Code Elimination : 12.645241
+9 : Remove redundant instructions : 12.645241
+10 : MergedLoadStoreMotion : 12.645241
+11 : Reassociate expressions : 12.645241
+12 : Global Value Numbering : 1.604961
+13 : Remove redundant instructions : 1.604961
+14 : SROA : 1.604961
+15 : Loop-Closed SSA Form Pass : 1.604961
+16 : Loop Invariant Code Motion : 1.604961
+17 : Global Value Numbering : 1.604961
+18 : Global Value Numbering : 1.604961
+19 : MemCpy Optimization : 1.604961
+20 : Remove redundant instructions : 1.604961
+SpeedUp : 7.878844

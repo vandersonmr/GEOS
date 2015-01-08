@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 312.203705
+2 : Remove redundant instructions : 312.203705
+3 : MemCpy Optimization : 312.203705
+4 : Code sinking : 312.203705
+5 : Induction Variable Simplification : 312.203705
+6 : Alignment from assumptions : 312.203705
+7 : Loop-Closed SSA Form Pass : 312.203705
+8 : Value Propagation : 312.203705
+9 : Global Value Numbering : 32.968224
+10 : SROA : 32.968224
+11 : Induction Variable Simplification : 32.968224
+12 : Induction Variable Simplification : 32.968224
+13 : SROA : 32.968224
+14 : Early CSE : 32.873719
+15 : Add DWARF path discriminators : 32.873719
+16 : Loop-Closed SSA Form Pass : 32.873719
+17 : SROA : 32.873719
+18 : MergedLoadStoreMotion : 32.873719
+19 : Loop Invariant Code Motion : 32.873719
+20 : Scalar Replacement of Aggregates (DT) : 11.115377
+SpeedUp : 28.087550

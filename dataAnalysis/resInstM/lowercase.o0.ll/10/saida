@@ -1,0 +1,10 @@
+1 : Dead Code Elimination : 2405.600027
+2 : Value Propagation : 2405.600027
+3 : Loop Invariant Code Motion : 2405.600027
+4 : Early CSE : 2052.000024
+5 : Combine redundant instructions : 1524.000023
+6 : Scalar Replacement of Aggregates (DT) : 1122.400017
+7 : Aggressive Dead Code Elimination : 1119.200016
+8 : Reassociate expressions : 1119.200016
+9 : Induction Variable Simplification : 1168.800016
+SpeedUp : 2.058179

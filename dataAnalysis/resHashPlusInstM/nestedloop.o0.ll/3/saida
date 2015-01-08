@@ -1,0 +1,7 @@
+1 : Add DWARF path discriminators : 9969.309718
+2 : Remove redundant instructions : 9969.309718
+3 : Early CSE : 9969.309718
+4 : Alignment from assumptions : 9969.309718
+5 : MemCpy Optimization : 9969.309718
+6 : Combine redundant instructions : 10079.980160
+SpeedUp : 0.989021

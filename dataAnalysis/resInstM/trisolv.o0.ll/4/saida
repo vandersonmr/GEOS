@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 7.522641
+2 : Constant Hoisting : 7.522641
+3 : Induction Variable Simplification : 7.522641
+4 : Value Propagation : 7.522641
+5 : Code sinking : 7.522641
+6 : Value Propagation : 7.522641
+7 : Code sinking : 7.522641
+8 : Dead Instruction Elimination : 7.522641
+9 : Remove redundant instructions : 7.522641
+10 : Add DWARF path discriminators : 7.522641
+11 : Value Propagation : 7.522641
+12 : Promote Memory to Register : 4.801680
+13 : Global Value Numbering : 3.441220
+14 : Loop Invariant Code Motion : 3.201200
+15 : Constant Hoisting : 3.121220
+16 : Value Propagation : 3.121220
+17 : SROA : 3.121220
+18 : Dead Code Elimination : 3.121220
+19 : MemCpy Optimization : 3.121220
+20 : Dead Instruction Elimination : 3.121220
+SpeedUp : 2.410160

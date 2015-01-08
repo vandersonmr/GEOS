@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 39.205364
+2 : MemCpy Optimization : 39.205364
+3 : Remove redundant instructions : 39.205364
+4 : Constant Hoisting : 39.205364
+5 : Scalar Replacement of Aggregates (DT) : 21.619205
+6 : Assign names to anonymous instructions : 21.619205
+7 : Alignment from assumptions : 21.619205
+8 : Promote Memory to Register : 21.619205
+9 : Code sinking : 21.619205
+10 : Dead Code Elimination : 21.619205
+11 : Add DWARF path discriminators : 21.619205
+12 : Constant Hoisting : 21.619205
+13 : Dead Instruction Elimination : 21.619205
+14 : Assign names to anonymous instructions : 21.619205
+15 : Reassociate expressions : 21.619205
+16 : MemCpy Optimization : 21.619205
+17 : Aggressive Dead Code Elimination : 21.619205
+18 : Early CSE : 17.575616
+19 : Remove redundant instructions : 17.575616
+20 : MemCpy Optimization : 17.575616
+SpeedUp : 2.230668

@@ -1,0 +1,10 @@
+1 : Lower atomic intrinsics to non-atomic form : 35.838429
+2 : MemCpy Optimization : 35.838429
+3 : MergedLoadStoreMotion : 35.838429
+4 : Code sinking : 35.838429
+5 : Aggressive Dead Code Elimination : 35.838429
+6 : MergedLoadStoreMotion : 35.838429
+7 : Code sinking : 35.838429
+8 : Loop-Closed SSA Form Pass : 35.838429
+9 : Scalar Replacement of Aggregates (DT) : 39.878906
+SpeedUp : 0.898681

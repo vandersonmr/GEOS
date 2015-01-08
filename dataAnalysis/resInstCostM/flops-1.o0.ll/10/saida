@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 340.625000
+2 : Constant Hoisting : 340.625000
+3 : Value Propagation : 340.625000
+4 : Dead Instruction Elimination : 340.625000
+5 : SROA : 340.625000
+6 : Early CSE : 300.000000
+7 : Combine redundant instructions : 290.625000
+8 : Assign names to anonymous instructions : 290.625000
+9 : MergedLoadStoreMotion : 290.625000
+10 : Dead Instruction Elimination : 290.625000
+11 : Dead Code Elimination : 290.625000
+12 : Combine redundant instructions : 290.625000
+13 : Assign names to anonymous instructions : 290.625000
+14 : Promote Memory to Register : 256.250000
+15 : Lower atomic intrinsics to non-atomic form : 240.624999
+16 : Alignment from assumptions : 240.624999
+17 : Dead Instruction Elimination : 240.624999
+18 : Value Propagation : 240.624999
+19 : Dead Code Elimination : 240.624999
+20 : MemCpy Optimization : 240.624999
+SpeedUp : 1.415584

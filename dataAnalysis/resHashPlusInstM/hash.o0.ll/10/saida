@@ -1,0 +1,12 @@
+1 : MergedLoadStoreMotion : 802.947846
+2 : Remove redundant instructions : 802.947846
+3 : SROA : 802.947846
+4 : Constant Hoisting : 802.947846
+5 : Combine redundant instructions : 771.915169
+6 : Combine redundant instructions : 771.915169
+7 : Global Value Numbering : 619.622781
+8 : Value Propagation : 616.103852
+9 : Remove redundant instructions : 616.103852
+10 : Early CSE : 555.906423
+11 : Early CSE : 565.158596
+SpeedUp : 1.420748

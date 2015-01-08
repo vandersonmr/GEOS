@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 130.796125
+2 : Dead Code Elimination : 130.796125
+3 : Scalar Replacement of Aggregates (DT) : 77.771044
+4 : Remove redundant instructions : 77.771044
+5 : Assign names to anonymous instructions : 77.771044
+6 : Dead Code Elimination : 77.771044
+7 : Scalar Replacement of Aggregates (DT) : 77.771044
+8 : Constant Hoisting : 77.771044
+9 : Code sinking : 77.771044
+10 : Promote Memory to Register : 77.771044
+11 : MergedLoadStoreMotion : 77.771044
+12 : Combine redundant instructions : 61.953838
+13 : Global Value Numbering : 36.714754
+14 : Global Value Numbering : 36.209471
+15 : SROA : 36.209471
+16 : Scalar Replacement of Aggregates (DT) : 36.209471
+17 : Induction Variable Simplification : 36.209471
+18 : Global Value Numbering : 36.209471
+19 : Reassociate expressions : 36.209471
+20 : Promote Memory to Register : 36.209471
+SpeedUp : 3.612208

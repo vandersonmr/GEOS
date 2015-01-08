@@ -1,0 +1,9 @@
+1 : SROA : 86.965507
+2 : Promote Memory to Register : 56.462504
+3 : Remove redundant instructions : 56.462504
+4 : Assign names to anonymous instructions : 56.462504
+5 : MemCpy Optimization : 56.462504
+6 : Promote Memory to Register : 56.462504
+7 : Scalar Replacement of Aggregates (DT) : 56.462504
+8 : Induction Variable Simplification : 56.619504
+SpeedUp : 1.535964

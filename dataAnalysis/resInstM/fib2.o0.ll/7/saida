@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 189.380358
+2 : Early CSE : 168.338096
+3 : Scalar Replacement of Aggregates (DT) : 98.197223
+4 : Alignment from assumptions : 98.197223
+5 : MergedLoadStoreMotion : 98.197223
+6 : Aggressive Dead Code Elimination : 98.197223
+7 : Dead Code Elimination : 98.197223
+8 : Promote Memory to Register : 98.197223
+9 : Add DWARF path discriminators : 98.197223
+10 : MemCpy Optimization : 98.197223
+11 : SROA : 98.197223
+12 : Reassociate expressions : 98.197223
+13 : Combine redundant instructions : 98.197223
+14 : Assign names to anonymous instructions : 98.197223
+15 : Constant Hoisting : 98.197223
+16 : Promote Memory to Register : 98.197223
+17 : Add DWARF path discriminators : 98.197223
+18 : Add DWARF path discriminators : 98.197223
+19 : Lower atomic intrinsics to non-atomic form : 98.197223
+20 : Early CSE : 98.197223
+SpeedUp : 1.928571

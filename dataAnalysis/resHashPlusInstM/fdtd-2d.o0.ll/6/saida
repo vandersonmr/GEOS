@@ -1,0 +1,5 @@
+1 : SROA : 311.752339
+2 : Global Value Numbering : 111.266998
+3 : Value Propagation : 111.266998
+4 : Early CSE : 111.283095
+SpeedUp : 2.801435

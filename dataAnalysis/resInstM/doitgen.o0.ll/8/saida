@@ -1,0 +1,21 @@
+1 : Code sinking : 134.130473
+2 : MemCpy Optimization : 134.130473
+3 : Loop-Closed SSA Form Pass : 134.130473
+4 : Loop Invariant Code Motion : 134.130473
+5 : Assign names to anonymous instructions : 134.130473
+6 : MemCpy Optimization : 134.130473
+7 : Lower atomic intrinsics to non-atomic form : 134.130473
+8 : Reassociate expressions : 134.130473
+9 : Add DWARF path discriminators : 134.130473
+10 : Value Propagation : 134.130473
+11 : MemCpy Optimization : 134.130473
+12 : Combine redundant instructions : 112.233902
+13 : Early CSE : 65.989239
+14 : MergedLoadStoreMotion : 65.989239
+15 : Combine redundant instructions : 65.989239
+16 : Constant Hoisting : 65.989239
+17 : MergedLoadStoreMotion : 65.989239
+18 : Alignment from assumptions : 65.989239
+19 : Assign names to anonymous instructions : 65.989239
+20 : Alignment from assumptions : 65.989239
+SpeedUp : 2.032611

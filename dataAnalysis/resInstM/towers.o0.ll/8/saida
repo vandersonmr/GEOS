@@ -1,0 +1,6 @@
+1 : Dead Instruction Elimination : 2.604921
+2 : Value Propagation : 2.604921
+3 : Loop-Closed SSA Form Pass : 2.604921
+4 : Dead Code Elimination : 2.604921
+5 : Global Value Numbering : 2.621314
+SpeedUp : 0.993746

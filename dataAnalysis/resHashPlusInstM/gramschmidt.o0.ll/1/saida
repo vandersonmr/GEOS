@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 247.204441
+2 : Value Propagation : 247.204441
+3 : Induction Variable Simplification : 247.204441
+4 : Alignment from assumptions : 247.204441
+5 : Loop Invariant Code Motion : 247.204441
+6 : MemCpy Optimization : 247.204441
+7 : Loop-Closed SSA Form Pass : 247.204441
+8 : Lower atomic intrinsics to non-atomic form : 247.204441
+9 : MergedLoadStoreMotion : 247.204441
+10 : Dead Code Elimination : 247.204441
+11 : Combine redundant instructions : 224.145451
+12 : Reassociate expressions : 224.145451
+13 : Assign names to anonymous instructions : 224.145451
+14 : Reassociate expressions : 224.145451
+15 : Dead Code Elimination : 224.145451
+16 : Alignment from assumptions : 224.145451
+17 : Aggressive Dead Code Elimination : 224.145451
+18 : Alignment from assumptions : 224.145451
+19 : Reassociate expressions : 224.145451
+20 : Promote Memory to Register : 208.844310
+SpeedUp : 1.183678

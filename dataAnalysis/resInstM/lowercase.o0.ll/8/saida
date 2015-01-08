@@ -1,0 +1,7 @@
+1 : Aggressive Dead Code Elimination : 2405.600027
+2 : Dead Code Elimination : 2405.600027
+3 : Scalar Replacement of Aggregates (DT) : 1472.800015
+4 : SROA : 1472.800015
+5 : Alignment from assumptions : 1472.800015
+6 : Loop Invariant Code Motion : 1522.400014
+SpeedUp : 1.580137

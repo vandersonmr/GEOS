@@ -1,0 +1,4 @@
+1 : Code sinking : 71.865366
+2 : Dead Code Elimination : 71.865366
+3 : Remove redundant instructions : 71.865366
+SpeedUp : 1.000000

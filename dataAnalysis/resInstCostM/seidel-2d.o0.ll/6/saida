@@ -1,0 +1,14 @@
+1 : Scalar Replacement of Aggregates (DT) : 12.273944
+2 : Global Value Numbering : 9.292339
+3 : Dead Instruction Elimination : 9.292339
+4 : Constant Hoisting : 9.292339
+5 : Dead Code Elimination : 9.292339
+6 : Loop-Closed SSA Form Pass : 9.292339
+7 : SROA : 9.292339
+8 : SROA : 9.292339
+9 : Assign names to anonymous instructions : 9.292339
+10 : Dead Code Elimination : 9.292339
+11 : MergedLoadStoreMotion : 9.292339
+12 : Dead Instruction Elimination : 9.292339
+13 : Induction Variable Simplification : 9.292339
+SpeedUp : 2.016227

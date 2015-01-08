@@ -1,0 +1,5 @@
+1 : Dead Instruction Elimination : 0.000004
+2 : Assign names to anonymous instructions : 0.000004
+3 : Remove redundant instructions : 0.000004
+4 : Remove redundant instructions : 0.000004
+SpeedUp : 0.980874

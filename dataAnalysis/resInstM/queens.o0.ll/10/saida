@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 2.167418
+2 : Dead Code Elimination : 2.167418
+3 : Induction Variable Simplification : 2.167418
+4 : Remove redundant instructions : 2.167418
+5 : Remove redundant instructions : 2.167418
+6 : Early CSE : 2.054717
+7 : Lower atomic intrinsics to non-atomic form : 2.054717
+8 : Global Value Numbering : 2.054669
+9 : Induction Variable Simplification : 2.054669
+10 : Remove redundant instructions : 2.054669
+11 : Code sinking : 2.054669
+12 : Scalar Replacement of Aggregates (DT) : 1.361611
+13 : Loop Invariant Code Motion : 1.132361
+14 : Alignment from assumptions : 1.132361
+15 : Code sinking : 1.132361
+16 : Value Propagation : 1.132361
+17 : Induction Variable Simplification : 1.132361
+18 : MergedLoadStoreMotion : 1.132361
+19 : Alignment from assumptions : 1.132361
+20 : Remove redundant instructions : 1.132361
+SpeedUp : 1.914070

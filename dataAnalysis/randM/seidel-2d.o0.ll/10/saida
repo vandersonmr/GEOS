@@ -1,0 +1,4 @@
+1 : Dead Code Elimination : 0.000001
+2 : MemCpy Optimization : 0.000001
+3 : Reassociate expressions : 0.000001
+SpeedUp : 1.253968

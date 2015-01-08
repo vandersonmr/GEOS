@@ -1,0 +1,11 @@
+1 : MemCpy Optimization : 5664.510111
+2 : Dead Code Elimination : 5664.510111
+3 : Add DWARF path discriminators : 5664.510111
+4 : Loop-Closed SSA Form Pass : 5664.510111
+5 : Induction Variable Simplification : 5664.510111
+6 : Lower atomic intrinsics to non-atomic form : 5664.510111
+7 : Code sinking : 5664.510111
+8 : Value Propagation : 5664.510111
+9 : Reassociate expressions : 5664.510111
+10 : Global Value Numbering : 3037.673500
+11 : Early CSE : 2804.985911

@@ -1,0 +1,14 @@
+1 : Constant Hoisting : 502.112500
+2 : Lower atomic intrinsics to non-atomic form : 502.112500
+3 : Early CSE : 450.882500
+4 : Loop Invariant Code Motion : 430.402500
+5 : SROA : 430.402500
+6 : Combine redundant instructions : 409.918500
+7 : Promote Memory to Register : 286.915000
+8 : Remove redundant instructions : 256.150000
+9 : Reassociate expressions : 256.150000
+10 : Early CSE : 256.150000
+11 : Dead Code Elimination : 256.150000
+12 : Scalar Replacement of Aggregates (DT) : 256.150000
+13 : Global Value Numbering : 276.655000
+SpeedUp : 1.814941

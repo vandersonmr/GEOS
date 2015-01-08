@@ -1,0 +1,17 @@
+1 : Aggressive Dead Code Elimination : 904.892661
+2 : Promote Memory to Register : 543.307818
+3 : Global Value Numbering : 429.968084
+4 : Assign names to anonymous instructions : 429.030723
+5 : Constant Hoisting : 429.030723
+6 : Reassociate expressions : 429.030723
+7 : Dead Instruction Elimination : 429.030723
+8 : Remove redundant instructions : 429.030723
+9 : Value Propagation : 429.030723
+10 : MemCpy Optimization : 429.030723
+11 : Scalar Replacement of Aggregates (DT) : 429.030723
+12 : Remove redundant instructions : 429.030723
+13 : MergedLoadStoreMotion : 429.030723
+14 : Lower atomic intrinsics to non-atomic form : 429.030723
+15 : Constant Hoisting : 429.030723
+16 : SROA : 429.030723
+17 : Early CSE : 280.385387

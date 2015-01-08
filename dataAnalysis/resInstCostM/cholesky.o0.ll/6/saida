@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 61.134199
+2 : Dead Code Elimination : 61.134199
+3 : Constant Hoisting : 61.134199
+4 : Reassociate expressions : 61.134199
+5 : Induction Variable Simplification : 61.134199
+6 : Lower atomic intrinsics to non-atomic form : 61.134199
+7 : Constant Hoisting : 61.134199
+8 : Remove redundant instructions : 61.134198
+9 : Induction Variable Simplification : 61.134198
+10 : MergedLoadStoreMotion : 61.134198
+11 : Constant Hoisting : 61.134198
+12 : Dead Code Elimination : 61.134198
+13 : Assign names to anonymous instructions : 61.134198
+14 : Lower atomic intrinsics to non-atomic form : 61.134198
+15 : Dead Instruction Elimination : 61.134198
+16 : Assign names to anonymous instructions : 61.134198
+17 : Value Propagation : 61.134198
+18 : Constant Hoisting : 61.134198
+19 : Reassociate expressions : 61.134198
+20 : Reassociate expressions : 61.134198
+SpeedUp : 1.000000

@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 101.221056
+2 : Dead Instruction Elimination : 101.221056
+3 : Early CSE : 68.545129
+4 : Loop-Closed SSA Form Pass : 68.545129
+5 : Alignment from assumptions : 68.545129
+6 : Dead Instruction Elimination : 68.545129
+7 : Aggressive Dead Code Elimination : 68.545129
+8 : Alignment from assumptions : 68.545129
+9 : Remove redundant instructions : 68.545129
+10 : Dead Instruction Elimination : 68.545129
+11 : Constant Hoisting : 68.545129
+12 : Code sinking : 68.545129
+13 : Promote Memory to Register : 46.520583
+14 : Dead Instruction Elimination : 38.404604
+15 : Induction Variable Simplification : 38.404604
+16 : Constant Hoisting : 38.404604
+17 : Alignment from assumptions : 38.404604
+18 : Early CSE : 38.404604
+19 : Induction Variable Simplification : 38.404604
+20 : Dead Code Elimination : 38.404604
+SpeedUp : 2.635649

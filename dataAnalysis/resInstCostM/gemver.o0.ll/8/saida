@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 17.768402
+2 : SROA : 17.768402
+3 : Aggressive Dead Code Elimination : 17.768402
+4 : Promote Memory to Register : 10.084481
+5 : Assign names to anonymous instructions : 10.084481
+6 : Alignment from assumptions : 10.084481
+7 : Global Value Numbering : 6.243761
+8 : Aggressive Dead Code Elimination : 6.243761
+9 : Value Propagation : 6.243761
+10 : Add DWARF path discriminators : 6.243761
+11 : Assign names to anonymous instructions : 6.243761
+12 : MergedLoadStoreMotion : 6.243761
+13 : Scalar Replacement of Aggregates (DT) : 6.243761
+14 : MergedLoadStoreMotion : 6.243761
+15 : MergedLoadStoreMotion : 6.243761
+16 : Reassociate expressions : 6.243761
+17 : Combine redundant instructions : 5.923601
+18 : Early CSE : 5.923601
+19 : Constant Hoisting : 5.923601
+20 : Scalar Replacement of Aggregates (DT) : 5.923601
+SpeedUp : 2.999595

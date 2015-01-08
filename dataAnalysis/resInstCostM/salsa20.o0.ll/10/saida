@@ -1,0 +1,8 @@
+1 : Lower atomic intrinsics to non-atomic form : 2291.200886
+2 : Scalar Replacement of Aggregates (DT) : 2162.436405
+3 : Reassociate expressions : 2157.057210
+4 : Scalar Replacement of Aggregates (DT) : 2157.057210
+5 : Remove redundant instructions : 2157.057210
+6 : Early CSE : 1180.397111
+7 : Loop Invariant Code Motion : 1207.293086
+SpeedUp : 1.897800

@@ -1,0 +1,9 @@
+1 : Dead Instruction Elimination : 0.144960
+2 : Loop Invariant Code Motion : 0.144960
+3 : Alignment from assumptions : 0.144960
+4 : SROA : 0.144960
+5 : Constant Hoisting : 0.144960
+6 : MemCpy Optimization : 0.144960
+7 : Loop-Closed SSA Form Pass : 0.144960
+8 : Reassociate expressions : 0.144961
+SpeedUp : 0.999992

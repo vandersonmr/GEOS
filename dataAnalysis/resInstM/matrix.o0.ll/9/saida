@@ -1,0 +1,4 @@
+1 : Scalar Replacement of Aggregates (DT) : 792.300044
+2 : Constant Hoisting : 792.300044
+3 : Global Value Numbering : 815.310039
+SpeedUp : 1.534754

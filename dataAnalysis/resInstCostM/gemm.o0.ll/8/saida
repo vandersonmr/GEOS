@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 269.233010
+2 : Aggressive Dead Code Elimination : 269.233010
+3 : Code sinking : 269.233010
+4 : Aggressive Dead Code Elimination : 269.233010
+5 : Loop Invariant Code Motion : 269.233010
+6 : Constant Hoisting : 269.233010
+7 : Loop-Closed SSA Form Pass : 269.233010
+8 : MergedLoadStoreMotion : 269.233010
+9 : Loop Invariant Code Motion : 269.233010
+10 : Loop Invariant Code Motion : 269.233010
+11 : Assign names to anonymous instructions : 269.233010
+12 : Remove redundant instructions : 269.233010
+13 : Reassociate expressions : 269.233010
+14 : Induction Variable Simplification : 269.233010
+15 : MergedLoadStoreMotion : 269.233010
+16 : SROA : 269.233010
+17 : Add DWARF path discriminators : 269.233010
+18 : Dead Code Elimination : 269.233010
+19 : Add DWARF path discriminators : 269.233010
+20 : Early CSE : 226.167922
+SpeedUp : 1.381010

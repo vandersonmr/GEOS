@@ -1,0 +1,6 @@
+1 : Promote Memory to Register : 1279.800000
+2 : MergedLoadStoreMotion : 1279.800000
+3 : Combine redundant instructions : 1189.440000
+4 : Add DWARF path discriminators : 1189.440000
+5 : Loop-Closed SSA Form Pass : 1219.500000
+SpeedUp : 1.815793

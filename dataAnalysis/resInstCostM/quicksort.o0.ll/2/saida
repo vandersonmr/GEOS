@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 1.358479
+2 : Code sinking : 1.358479
+3 : SROA : 1.358479
+4 : Loop Invariant Code Motion : 1.358479
+5 : Remove redundant instructions : 1.358479
+6 : Early CSE : 1.115242
+7 : Value Propagation : 1.115242
+8 : Remove redundant instructions : 1.115242
+9 : Dead Instruction Elimination : 1.115242
+10 : Promote Memory to Register : 0.543439
+11 : MergedLoadStoreMotion : 0.448022
+12 : Early CSE : 0.448022
+13 : SROA : 0.448022
+14 : Loop-Closed SSA Form Pass : 0.448022
+15 : Dead Instruction Elimination : 0.448022
+16 : Code sinking : 0.448022
+17 : Early CSE : 0.448022
+18 : Alignment from assumptions : 0.448022
+19 : Dead Instruction Elimination : 0.448022
+20 : Code sinking : 0.448022
+SpeedUp : 3.032170

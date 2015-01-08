@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 143.637873
+2 : Loop-Closed SSA Form Pass : 143.637873
+3 : Lower atomic intrinsics to non-atomic form : 143.637873
+4 : Code sinking : 143.637873
+5 : Dead Code Elimination : 143.637873
+6 : MemCpy Optimization : 143.637873
+7 : Dead Code Elimination : 143.637873
+8 : Dead Code Elimination : 143.637873
+9 : MergedLoadStoreMotion : 143.637873
+10 : MemCpy Optimization : 143.637873
+11 : Reassociate expressions : 143.637873
+12 : Global Value Numbering : 32.883682
+13 : MemCpy Optimization : 32.883682
+14 : Promote Memory to Register : 18.320584
+15 : Constant Hoisting : 14.652304
+16 : Loop Invariant Code Motion : 14.568469
+17 : Global Value Numbering : 14.547508
+18 : Dead Code Elimination : 14.547508
+19 : Promote Memory to Register : 14.547508
+20 : Add DWARF path discriminators : 14.547508
+SpeedUp : 9.873710

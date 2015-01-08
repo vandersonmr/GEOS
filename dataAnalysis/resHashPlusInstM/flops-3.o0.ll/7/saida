@@ -1,0 +1,8 @@
+1 : Dead Instruction Elimination : 109705.295037
+2 : MemCpy Optimization : 109705.295037
+3 : Loop-Closed SSA Form Pass : 109705.295037
+4 : MergedLoadStoreMotion : 109705.295037
+5 : Constant Hoisting : 109705.295037
+6 : Dead Code Elimination : 109705.295037
+7 : Promote Memory to Register : 132169.554375
+SpeedUp : 0.830035

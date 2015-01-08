@@ -1,0 +1,8 @@
+1 : Remove redundant instructions : 2067.011333
+2 : Alignment from assumptions : 2067.011333
+3 : Constant Hoisting : 2067.011333
+4 : Promote Memory to Register : 1273.619493
+5 : Code sinking : 1270.619425
+6 : MemCpy Optimization : 1270.619425
+7 : Loop Invariant Code Motion : 1371.162520
+SpeedUp : 1.507488

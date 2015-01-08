@@ -1,0 +1,19 @@
+1 : SROA : 111.875617
+2 : Combine redundant instructions : 96.675566
+3 : Combine redundant instructions : 96.675566
+4 : Add DWARF path discriminators : 96.675566
+5 : Induction Variable Simplification : 96.675566
+6 : Combine redundant instructions : 96.675566
+7 : Loop Invariant Code Motion : 96.675556
+8 : Value Propagation : 96.675556
+9 : Loop Invariant Code Motion : 96.675556
+10 : Dead Code Elimination : 96.675556
+11 : Constant Hoisting : 96.675556
+12 : Value Propagation : 96.675556
+13 : Reassociate expressions : 96.675556
+14 : Dead Code Elimination : 96.675556
+15 : Promote Memory to Register : 56.225324
+16 : Early CSE : 51.150264
+17 : Global Value Numbering : 46.075324
+18 : Loop-Closed SSA Form Pass : 51.075344
+SpeedUp : 2.190404

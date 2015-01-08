@@ -1,0 +1,21 @@
+1 : Loop Invariant Code Motion : 4.390489
+2 : Lower atomic intrinsics to non-atomic form : 4.390489
+3 : Assign names to anonymous instructions : 4.390489
+4 : Aggressive Dead Code Elimination : 4.390489
+5 : Value Propagation : 4.390489
+6 : Constant Hoisting : 4.390489
+7 : Code sinking : 4.390489
+8 : Scalar Replacement of Aggregates (DT) : 2.420506
+9 : Scalar Replacement of Aggregates (DT) : 2.340506
+10 : Constant Hoisting : 2.340506
+11 : Induction Variable Simplification : 2.340506
+12 : Scalar Replacement of Aggregates (DT) : 2.340506
+13 : Loop Invariant Code Motion : 2.340506
+14 : Global Value Numbering : 1.988510
+15 : Induction Variable Simplification : 1.988510
+16 : Constant Hoisting : 1.988510
+17 : Scalar Replacement of Aggregates (DT) : 1.988510
+18 : Global Value Numbering : 1.988510
+19 : SROA : 1.988510
+20 : Lower atomic intrinsics to non-atomic form : 1.988510
+SpeedUp : 2.208432

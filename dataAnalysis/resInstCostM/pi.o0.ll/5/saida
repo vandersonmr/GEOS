@@ -1,0 +1,21 @@
+1 : SROA : 33.600001
+2 : Induction Variable Simplification : 33.600001
+3 : Scalar Replacement of Aggregates (DT) : 16.800000
+4 : Reassociate expressions : 16.800000
+5 : Scalar Replacement of Aggregates (DT) : 16.800000
+6 : Value Propagation : 16.800000
+7 : Alignment from assumptions : 16.800000
+8 : Aggressive Dead Code Elimination : 16.800000
+9 : Combine redundant instructions : 16.000000
+10 : Loop Invariant Code Motion : 16.000000
+11 : Alignment from assumptions : 16.000000
+12 : Dead Code Elimination : 16.000000
+13 : MemCpy Optimization : 16.000000
+14 : Constant Hoisting : 16.000000
+15 : Scalar Replacement of Aggregates (DT) : 16.000000
+16 : Lower atomic intrinsics to non-atomic form : 16.000000
+17 : Combine redundant instructions : 16.000000
+18 : Combine redundant instructions : 16.000000
+19 : Remove redundant instructions : 16.000000
+20 : Promote Memory to Register : 16.000000
+SpeedUp : 2.100000

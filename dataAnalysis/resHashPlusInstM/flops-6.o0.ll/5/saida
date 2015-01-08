@@ -1,0 +1,3 @@
+1 : Code sinking : 40048.741226
+2 : Assign names to anonymous instructions : 40048.741226
+3 : Combine redundant instructions : 130209.045032

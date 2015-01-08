@@ -1,0 +1,18 @@
+1 : Reassociate expressions : 156.190721
+2 : Alignment from assumptions : 156.190721
+3 : MemCpy Optimization : 156.190721
+4 : Loop Invariant Code Motion : 156.190721
+5 : Loop Invariant Code Motion : 156.190721
+6 : Alignment from assumptions : 156.190721
+7 : Aggressive Dead Code Elimination : 156.190721
+8 : Loop Invariant Code Motion : 156.190721
+9 : Scalar Replacement of Aggregates (DT) : 91.524956
+10 : Alignment from assumptions : 70.029210
+11 : Lower atomic intrinsics to non-atomic form : 70.029210
+12 : Code sinking : 70.029210
+13 : Loop Invariant Code Motion : 70.029210
+14 : Add DWARF path discriminators : 70.029210
+15 : Dead Instruction Elimination : 70.029210
+16 : Aggressive Dead Code Elimination : 70.029210
+17 : Induction Variable Simplification : 70.029220
+SpeedUp : 2.230365

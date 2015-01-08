@@ -1,0 +1,20 @@
+1 : Constant Hoisting : 346.874999
+2 : Remove redundant instructions : 346.874999
+3 : Alignment from assumptions : 346.874999
+4 : MergedLoadStoreMotion : 346.874999
+5 : Value Propagation : 346.874999
+6 : Scalar Replacement of Aggregates (DT) : 276.562499
+7 : Dead Code Elimination : 276.562499
+8 : Early CSE : 265.624999
+9 : Lower atomic intrinsics to non-atomic form : 265.624999
+10 : Induction Variable Simplification : 265.624999
+11 : Combine redundant instructions : 264.062499
+12 : Code sinking : 264.062499
+13 : Aggressive Dead Code Elimination : 264.062499
+14 : Dead Instruction Elimination : 264.062499
+15 : Alignment from assumptions : 264.062499
+16 : Lower atomic intrinsics to non-atomic form : 264.062499
+17 : Early CSE : 264.062499
+18 : Reassociate expressions : 264.062499
+19 : Global Value Numbering : 264.062499
+SpeedUp : 1.313609

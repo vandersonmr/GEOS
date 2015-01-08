@@ -1,0 +1,20 @@
+1 : Reassociate expressions : 71.865366
+2 : Loop Invariant Code Motion : 71.865366
+3 : Reassociate expressions : 71.865366
+4 : MergedLoadStoreMotion : 71.865366
+5 : Alignment from assumptions : 71.865366
+6 : MemCpy Optimization : 71.865366
+7 : Constant Hoisting : 71.865366
+8 : Lower atomic intrinsics to non-atomic form : 71.865366
+9 : Add DWARF path discriminators : 71.865366
+10 : Add DWARF path discriminators : 71.865366
+11 : Code sinking : 71.865366
+12 : Reassociate expressions : 71.865366
+13 : Assign names to anonymous instructions : 71.865366
+14 : Aggressive Dead Code Elimination : 71.865366
+15 : Assign names to anonymous instructions : 71.865366
+16 : Aggressive Dead Code Elimination : 71.865366
+17 : MemCpy Optimization : 71.865366
+18 : Dead Instruction Elimination : 71.865366
+19 : Early CSE : 72.545296
+SpeedUp : 0.990628

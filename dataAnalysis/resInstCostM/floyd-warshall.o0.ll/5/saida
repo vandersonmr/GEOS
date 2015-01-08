@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 472.845333
+2 : Lower atomic intrinsics to non-atomic form : 472.845333
+3 : Value Propagation : 472.845333
+4 : Assign names to anonymous instructions : 472.845333
+5 : Combine redundant instructions : 397.620409
+6 : Add DWARF path discriminators : 397.620409
+7 : Remove redundant instructions : 397.620409
+8 : Dead Instruction Elimination : 397.620409
+9 : Lower atomic intrinsics to non-atomic form : 397.620409
+10 : Promote Memory to Register : 193.441505
+11 : Assign names to anonymous instructions : 193.441505
+12 : Constant Hoisting : 193.441505
+13 : Constant Hoisting : 193.441505
+14 : MergedLoadStoreMotion : 193.441505
+15 : Scalar Replacement of Aggregates (DT) : 193.441505
+16 : Constant Hoisting : 193.441505
+17 : Early CSE : 107.584000
+18 : MemCpy Optimization : 107.584000
+19 : Combine redundant instructions : 107.584000
+20 : Code sinking : 107.584000
+SpeedUp : 4.395127

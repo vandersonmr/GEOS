@@ -1,0 +1,14 @@
+1 : Early CSE : 839.565058
+2 : Loop-Closed SSA Form Pass : 839.565058
+3 : Reassociate expressions : 839.565058
+4 : Assign names to anonymous instructions : 839.565058
+5 : Alignment from assumptions : 839.565058
+6 : Reassociate expressions : 839.565058
+7 : Global Value Numbering : 430.767280
+8 : Lower atomic intrinsics to non-atomic form : 430.767280
+9 : Remove redundant instructions : 430.767280
+10 : Promote Memory to Register : 280.023440
+11 : Reassociate expressions : 237.031732
+12 : Add DWARF path discriminators : 237.031732
+13 : Loop Invariant Code Motion : 258.454150
+SpeedUp : 4.122352

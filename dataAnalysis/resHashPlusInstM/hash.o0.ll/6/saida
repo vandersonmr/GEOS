@@ -1,0 +1,6 @@
+1 : Induction Variable Simplification : 802.947846
+2 : MergedLoadStoreMotion : 802.947846
+3 : Combine redundant instructions : 771.915169
+4 : Value Propagation : 771.915169
+5 : Scalar Replacement of Aggregates (DT) : 3866.556448
+SpeedUp : 0.207665

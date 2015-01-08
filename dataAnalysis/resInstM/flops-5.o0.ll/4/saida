@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 245.312500
+2 : Dead Code Elimination : 245.312500
+3 : Value Propagation : 245.312500
+4 : Induction Variable Simplification : 245.312500
+5 : Lower atomic intrinsics to non-atomic form : 245.312500
+6 : Lower atomic intrinsics to non-atomic form : 245.312500
+7 : Loop-Closed SSA Form Pass : 245.312500
+8 : MemCpy Optimization : 245.312500
+9 : Global Value Numbering : 243.750000
+10 : MergedLoadStoreMotion : 243.750000
+11 : Loop-Closed SSA Form Pass : 243.750000
+12 : Code sinking : 243.750000
+13 : Combine redundant instructions : 189.062500
+14 : Scalar Replacement of Aggregates (DT) : 165.625000
+15 : Aggressive Dead Code Elimination : 165.625000
+16 : Code sinking : 165.625000
+17 : Loop Invariant Code Motion : 145.312500
+18 : Reassociate expressions : 145.312500
+19 : Dead Instruction Elimination : 145.312500
+20 : Code sinking : 145.312500
+SpeedUp : 1.688172

@@ -1,0 +1,5 @@
+1 : Constant Hoisting : 12.113044
+2 : Induction Variable Simplification : 12.113044
+3 : Lower atomic intrinsics to non-atomic form : 12.113044
+4 : Combine redundant instructions : 12.252245
+SpeedUp : 0.988639

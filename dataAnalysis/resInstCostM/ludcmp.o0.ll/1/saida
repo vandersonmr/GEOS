@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 119.178759
+2 : Alignment from assumptions : 119.178759
+3 : Constant Hoisting : 119.178759
+4 : MemCpy Optimization : 119.178759
+5 : Add DWARF path discriminators : 119.178759
+6 : Assign names to anonymous instructions : 119.178759
+7 : Aggressive Dead Code Elimination : 119.178759
+8 : Remove redundant instructions : 119.178739
+9 : Aggressive Dead Code Elimination : 119.178739
+10 : Combine redundant instructions : 101.130641
+11 : Global Value Numbering : 74.223910
+12 : Lower atomic intrinsics to non-atomic form : 72.434342
+13 : Value Propagation : 70.644774
+14 : SROA : 70.644774
+15 : Remove redundant instructions : 70.644774
+16 : Assign names to anonymous instructions : 70.644774
+17 : Global Value Numbering : 70.644774
+18 : Global Value Numbering : 70.644774
+19 : Aggressive Dead Code Elimination : 70.644774
+20 : Assign names to anonymous instructions : 70.644774
+SpeedUp : 1.687015

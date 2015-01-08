@@ -1,0 +1,6 @@
+1 : Promote Memory to Register : 394.045401
+2 : MergedLoadStoreMotion : 394.045401
+3 : Assign names to anonymous instructions : 394.045401
+4 : Early CSE : 393.345708
+5 : Remove redundant instructions : 393.345708
+SpeedUp : 1.168653

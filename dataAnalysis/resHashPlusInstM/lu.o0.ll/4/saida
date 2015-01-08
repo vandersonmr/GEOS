@@ -1,0 +1,17 @@
+1 : Reassociate expressions : 679.753833
+2 : Aggressive Dead Code Elimination : 679.753833
+3 : Loop-Closed SSA Form Pass : 679.753833
+4 : Scalar Replacement of Aggregates (DT) : 534.649352
+5 : SROA : 534.649352
+6 : Scalar Replacement of Aggregates (DT) : 534.649352
+7 : MemCpy Optimization : 534.649352
+8 : Loop Invariant Code Motion : 521.981485
+9 : Code sinking : 521.981485
+10 : Value Propagation : 521.981485
+11 : Add DWARF path discriminators : 521.981485
+12 : Assign names to anonymous instructions : 521.981485
+13 : Reassociate expressions : 521.981485
+14 : Loop Invariant Code Motion : 521.981485
+15 : Code sinking : 521.981485
+16 : Combine redundant instructions : 554.753469
+SpeedUp : 1.225326

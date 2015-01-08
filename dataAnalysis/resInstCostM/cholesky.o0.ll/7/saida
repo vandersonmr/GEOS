@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 61.134199
+2 : Loop Invariant Code Motion : 61.134199
+3 : Combine redundant instructions : 52.133858
+4 : Reassociate expressions : 52.133858
+5 : Dead Code Elimination : 52.133858
+6 : Dead Code Elimination : 52.133858
+7 : Code sinking : 52.133858
+8 : Combine redundant instructions : 52.133858
+9 : Code sinking : 52.133858
+10 : Promote Memory to Register : 26.953841
+11 : Loop Invariant Code Motion : 25.111752
+12 : Global Value Numbering : 10.905273
+13 : Lower atomic intrinsics to non-atomic form : 10.900025
+14 : Value Propagation : 10.900025
+15 : Combine redundant instructions : 10.900025
+16 : Loop Invariant Code Motion : 10.900025
+17 : Dead Code Elimination : 10.900025
+18 : Alignment from assumptions : 10.900025
+19 : Loop Invariant Code Motion : 10.900025
+20 : MemCpy Optimization : 10.900025
+SpeedUp : 5.608629

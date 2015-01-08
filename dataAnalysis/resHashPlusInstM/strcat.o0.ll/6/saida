@@ -1,0 +1,19 @@
+1 : Dead Code Elimination : 1436315.569525
+2 : Induction Variable Simplification : 1436315.569525
+3 : Loop-Closed SSA Form Pass : 1436315.569525
+4 : MergedLoadStoreMotion : 1436315.569525
+5 : Reassociate expressions : 1436315.569525
+6 : Constant Hoisting : 1436315.569525
+7 : Remove redundant instructions : 1436315.569525
+8 : Combine redundant instructions : 1436244.078955
+9 : Dead Code Elimination : 1436244.078955
+10 : Constant Hoisting : 1436244.078955
+11 : Induction Variable Simplification : 1436244.078955
+12 : Loop Invariant Code Motion : 1436244.078955
+13 : Code sinking : 1436244.078955
+14 : Code sinking : 1436244.078955
+15 : MergedLoadStoreMotion : 1436244.078955
+16 : Code sinking : 1436244.078955
+17 : Promote Memory to Register : 152.963303
+18 : SROA : 1551243.166472
+SpeedUp : 0.925913

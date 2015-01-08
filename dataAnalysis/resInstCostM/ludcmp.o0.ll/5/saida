@@ -1,0 +1,9 @@
+1 : Scalar Replacement of Aggregates (DT) : 63.192142
+2 : SROA : 63.192142
+3 : Remove redundant instructions : 63.192121
+4 : Alignment from assumptions : 63.192121
+5 : Assign names to anonymous instructions : 63.192121
+6 : MergedLoadStoreMotion : 63.192121
+7 : Assign names to anonymous instructions : 63.192121
+8 : Reassociate expressions : 63.192121
+SpeedUp : 1.885975

@@ -1,0 +1,21 @@
+1 : SROA : 26.140006
+2 : Promote Memory to Register : 20.930004
+3 : Dead Instruction Elimination : 20.930004
+4 : Loop-Closed SSA Form Pass : 20.930004
+5 : Scalar Replacement of Aggregates (DT) : 20.930004
+6 : Reassociate expressions : 20.930004
+7 : Dead Code Elimination : 20.930004
+8 : Value Propagation : 20.930004
+9 : Lower atomic intrinsics to non-atomic form : 20.930004
+10 : Add DWARF path discriminators : 20.930004
+11 : Remove redundant instructions : 20.210004
+12 : Scalar Replacement of Aggregates (DT) : 20.210004
+13 : Add DWARF path discriminators : 20.210004
+14 : Dead Code Elimination : 20.210004
+15 : Reassociate expressions : 20.210004
+16 : Remove redundant instructions : 20.210004
+17 : Remove redundant instructions : 20.210004
+18 : SROA : 20.210004
+19 : Add DWARF path discriminators : 20.210004
+20 : Code sinking : 20.210004
+SpeedUp : 1.293419

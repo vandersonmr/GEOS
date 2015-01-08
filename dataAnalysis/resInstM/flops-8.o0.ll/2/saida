@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 250.000000
+2 : Code sinking : 250.000000
+3 : Dead Code Elimination : 250.000000
+4 : Loop Invariant Code Motion : 250.000000
+5 : Lower atomic intrinsics to non-atomic form : 250.000000
+6 : MemCpy Optimization : 250.000000
+7 : Alignment from assumptions : 250.000000
+8 : Aggressive Dead Code Elimination : 250.000000
+9 : Promote Memory to Register : 179.687500
+10 : Assign names to anonymous instructions : 159.375000
+11 : Promote Memory to Register : 159.375000
+12 : SROA : 159.375000
+13 : Assign names to anonymous instructions : 159.375000
+14 : Add DWARF path discriminators : 159.375000
+15 : Early CSE : 148.437500
+16 : Promote Memory to Register : 148.437500
+17 : Remove redundant instructions : 148.437500
+18 : Alignment from assumptions : 148.437500
+19 : Value Propagation : 148.437500
+20 : Dead Code Elimination : 148.437500
+SpeedUp : 1.694737

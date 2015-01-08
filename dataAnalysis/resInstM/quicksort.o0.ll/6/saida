@@ -1,0 +1,5 @@
+1 : Loop-Closed SSA Form Pass : 1.791738
+2 : Dead Code Elimination : 1.791738
+3 : Scalar Replacement of Aggregates (DT) : 1.075993
+4 : Dead Code Elimination : 1.159626
+SpeedUp : 1.545100

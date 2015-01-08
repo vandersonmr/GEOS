@@ -1,0 +1,21 @@
+1 : SROA : 1877.907038
+2 : Constant Hoisting : 1877.907038
+3 : Loop Invariant Code Motion : 1877.907038
+4 : SROA : 1877.907038
+5 : MergedLoadStoreMotion : 1877.907038
+6 : Scalar Replacement of Aggregates (DT) : 1764.353222
+7 : Dead Instruction Elimination : 1576.911041
+8 : Aggressive Dead Code Elimination : 1576.911041
+9 : Code sinking : 1576.911041
+10 : Code sinking : 1576.911041
+11 : Promote Memory to Register : 1576.911041
+12 : Assign names to anonymous instructions : 1576.911041
+13 : Assign names to anonymous instructions : 1576.911041
+14 : Alignment from assumptions : 1576.911041
+15 : Loop-Closed SSA Form Pass : 1576.911041
+16 : SROA : 1576.911041
+17 : Dead Instruction Elimination : 1576.911041
+18 : Aggressive Dead Code Elimination : 1576.911041
+19 : Global Value Numbering : 733.972713
+20 : Remove redundant instructions : 733.972713
+SpeedUp : 2.558552

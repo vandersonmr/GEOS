@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 839.354963
+2 : Dead Code Elimination : 839.354963
+3 : MemCpy Optimization : 839.354963
+4 : Aggressive Dead Code Elimination : 839.354963
+5 : Induction Variable Simplification : 839.354963
+6 : Add DWARF path discriminators : 839.354963
+7 : Promote Memory to Register : 484.149064
+8 : Dead Instruction Elimination : 484.138578
+9 : Combine redundant instructions : 387.333970
+10 : Dead Code Elimination : 387.333970
+11 : Loop Invariant Code Motion : 355.121746
+12 : MemCpy Optimization : 355.121746
+13 : Combine redundant instructions : 355.121746
+14 : Lower atomic intrinsics to non-atomic form : 355.121746
+15 : Dead Instruction Elimination : 355.121746
+16 : Reassociate expressions : 355.121746
+17 : Early CSE : 355.090258
+18 : Assign names to anonymous instructions : 355.090258
+19 : Assign names to anonymous instructions : 355.090258
+20 : Reassociate expressions : 355.090258
+SpeedUp : 2.363779

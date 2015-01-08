@@ -1,0 +1,8 @@
+1 : Scalar Replacement of Aggregates (DT) : 252.537918
+2 : Aggressive Dead Code Elimination : 252.537918
+3 : Reassociate expressions : 252.537918
+4 : Promote Memory to Register : 252.537918
+5 : Add DWARF path discriminators : 252.537918
+6 : Assign names to anonymous instructions : 252.537918
+7 : Loop-Closed SSA Form Pass : 256.754018
+SpeedUp : 1.774300

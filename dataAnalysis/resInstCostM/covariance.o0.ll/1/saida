@@ -1,0 +1,21 @@
+1 : SROA : 190.920971
+2 : Remove redundant instructions : 190.920971
+3 : Loop-Closed SSA Form Pass : 190.920971
+4 : Combine redundant instructions : 150.770771
+5 : Constant Hoisting : 150.770771
+6 : Alignment from assumptions : 150.770771
+7 : Reassociate expressions : 150.770771
+8 : Scalar Replacement of Aggregates (DT) : 80.435395
+9 : Loop Invariant Code Motion : 75.420405
+10 : Dead Code Elimination : 75.420405
+11 : Reassociate expressions : 75.420405
+12 : Alignment from assumptions : 75.420405
+13 : Remove redundant instructions : 75.420405
+14 : Value Propagation : 75.420405
+15 : Early CSE : 70.400380
+16 : Constant Hoisting : 70.400380
+17 : Aggressive Dead Code Elimination : 70.400380
+18 : Reassociate expressions : 70.400380
+19 : Loop Invariant Code Motion : 70.400380
+20 : Dead Code Elimination : 70.400380
+SpeedUp : 2.711931

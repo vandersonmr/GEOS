@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 33.600001
+2 : SROA : 33.600001
+3 : Remove redundant instructions : 33.600001
+4 : Assign names to anonymous instructions : 33.600001
+5 : MemCpy Optimization : 33.600001
+6 : Loop-Closed SSA Form Pass : 33.600001
+7 : Value Propagation : 33.600001
+8 : Loop-Closed SSA Form Pass : 33.600001
+9 : Dead Code Elimination : 33.600001
+10 : Code sinking : 33.600001
+11 : Loop Invariant Code Motion : 33.600001
+12 : Code sinking : 33.600001
+13 : Early CSE : 28.000001
+14 : Dead Code Elimination : 28.000001
+15 : Promote Memory to Register : 16.800000
+16 : Reassociate expressions : 16.800000
+17 : Alignment from assumptions : 16.800000
+18 : Promote Memory to Register : 16.800000
+19 : Dead Code Elimination : 16.800000
+20 : Aggressive Dead Code Elimination : 16.800000
+SpeedUp : 2.000000

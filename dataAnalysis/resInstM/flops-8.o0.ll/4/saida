@@ -1,0 +1,16 @@
+1 : Global Value Numbering : 250.000000
+2 : MergedLoadStoreMotion : 250.000000
+3 : Loop-Closed SSA Form Pass : 250.000000
+4 : Add DWARF path discriminators : 250.000000
+5 : Combine redundant instructions : 196.875000
+6 : Code sinking : 196.875000
+7 : Global Value Numbering : 196.875000
+8 : Assign names to anonymous instructions : 196.875000
+9 : MemCpy Optimization : 196.875000
+10 : Reassociate expressions : 196.875000
+11 : Remove redundant instructions : 196.875000
+12 : MemCpy Optimization : 196.875000
+13 : Loop-Closed SSA Form Pass : 196.875000
+14 : Promote Memory to Register : 168.750000
+15 : Dead Code Elimination : 170.312500
+SpeedUp : 1.477064

@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 398.366066
+2 : Dead Instruction Elimination : 398.366066
+3 : Combine redundant instructions : 312.235747
+4 : Global Value Numbering : 312.235747
+5 : Dead Code Elimination : 312.235747
+6 : Reassociate expressions : 312.235747
+7 : Global Value Numbering : 312.235747
+8 : Remove redundant instructions : 312.235747
+9 : Dead Code Elimination : 312.235747
+10 : Scalar Replacement of Aggregates (DT) : 161.470844
+11 : Combine redundant instructions : 150.722909
+12 : Dead Instruction Elimination : 150.722909
+13 : Remove redundant instructions : 150.722909
+14 : Scalar Replacement of Aggregates (DT) : 150.722909
+15 : Value Propagation : 150.722909
+16 : Loop Invariant Code Motion : 150.722909
+17 : Reassociate expressions : 150.722909
+18 : Value Propagation : 150.722909
+19 : Lower atomic intrinsics to non-atomic form : 150.722909
+20 : SROA : 150.722909
+SpeedUp : 5.568861

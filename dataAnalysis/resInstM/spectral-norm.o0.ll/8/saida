@@ -1,0 +1,11 @@
+1 : Code sinking : 65.627435
+2 : Loop-Closed SSA Form Pass : 65.627435
+3 : Aggressive Dead Code Elimination : 65.627435
+4 : Constant Hoisting : 65.627435
+5 : Dead Instruction Elimination : 65.627435
+6 : Combine redundant instructions : 49.626432
+7 : Scalar Replacement of Aggregates (DT) : 38.417405
+8 : Global Value Numbering : 35.213786
+9 : Dead Code Elimination : 35.213786
+10 : Loop-Closed SSA Form Pass : 35.213786
+SpeedUp : 1.863686

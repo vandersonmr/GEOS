@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 1600.800021
+2 : Dead Instruction Elimination : 1600.800021
+3 : Code sinking : 1594.800021
+4 : SROA : 1594.800021
+5 : Dead Instruction Elimination : 1594.800021
+6 : Lower atomic intrinsics to non-atomic form : 1594.800021
+7 : Add DWARF path discriminators : 1594.800021
+8 : Code sinking : 1594.800021
+9 : Alignment from assumptions : 1594.800021
+10 : Early CSE : 1390.000018
+11 : Reassociate expressions : 1390.000018
+12 : Dead Code Elimination : 1390.000018
+13 : Code sinking : 1390.000018
+14 : Aggressive Dead Code Elimination : 1390.000018
+15 : Dead Instruction Elimination : 1390.000018
+16 : Reassociate expressions : 1390.000018
+17 : Loop Invariant Code Motion : 1390.000018
+18 : Dead Code Elimination : 1390.000018
+19 : Add DWARF path discriminators : 1390.000018
+20 : Remove redundant instructions : 1390.000018
+SpeedUp : 1.151655

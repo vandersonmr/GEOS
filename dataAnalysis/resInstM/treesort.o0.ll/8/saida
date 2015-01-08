@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 1.708604
+2 : Scalar Replacement of Aggregates (DT) : 1.708604
+3 : Dead Code Elimination : 1.708604
+4 : MergedLoadStoreMotion : 1.708604
+5 : Assign names to anonymous instructions : 1.708604
+6 : Assign names to anonymous instructions : 1.708604
+7 : Early CSE : 1.474752
+8 : Scalar Replacement of Aggregates (DT) : 1.474752
+9 : Aggressive Dead Code Elimination : 1.474752
+10 : Induction Variable Simplification : 1.464751
+11 : Lower atomic intrinsics to non-atomic form : 1.464751
+12 : MergedLoadStoreMotion : 1.464751
+13 : Loop-Closed SSA Form Pass : 1.464751
+14 : Dead Code Elimination : 1.464751
+15 : Scalar Replacement of Aggregates (DT) : 1.464751
+16 : MergedLoadStoreMotion : 1.464751
+17 : Remove redundant instructions : 1.464751
+18 : Loop Invariant Code Motion : 1.464751
+19 : Global Value Numbering : 1.464744
+20 : Early CSE : 1.464744
+SpeedUp : 1.794228

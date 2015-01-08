@@ -1,0 +1,21 @@
+1 : SROA : 147.295834
+2 : Aggressive Dead Code Elimination : 147.295834
+3 : Reassociate expressions : 147.295834
+4 : Loop Invariant Code Motion : 147.295834
+5 : Global Value Numbering : 147.295834
+6 : Scalar Replacement of Aggregates (DT) : 49.098611
+7 : Loop-Closed SSA Form Pass : 49.098611
+8 : Dead Instruction Elimination : 49.098611
+9 : Add DWARF path discriminators : 49.098611
+10 : Global Value Numbering : 49.098611
+11 : Dead Code Elimination : 49.098611
+12 : Loop Invariant Code Motion : 49.098611
+13 : SROA : 49.098611
+14 : Early CSE : 49.098611
+15 : Alignment from assumptions : 49.098611
+16 : Loop-Closed SSA Form Pass : 49.098611
+17 : Induction Variable Simplification : 49.098611
+18 : Reassociate expressions : 49.098611
+19 : Loop Invariant Code Motion : 49.098611
+20 : Scalar Replacement of Aggregates (DT) : 49.098611
+SpeedUp : 3.000000

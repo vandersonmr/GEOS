@@ -1,0 +1,9 @@
+1 : Loop Invariant Code Motion : 40.230808
+2 : MemCpy Optimization : 40.230808
+3 : Combine redundant instructions : 38.622954
+4 : Promote Memory to Register : 22.284801
+5 : Scalar Replacement of Aggregates (DT) : 22.074801
+6 : Scalar Replacement of Aggregates (DT) : 22.074801
+7 : Alignment from assumptions : 22.074801
+8 : Global Value Numbering : 22.089649
+SpeedUp : 1.824421

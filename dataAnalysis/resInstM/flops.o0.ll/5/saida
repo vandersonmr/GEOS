@@ -1,0 +1,5 @@
+1 : Constant Hoisting : 875.499222
+2 : Scalar Replacement of Aggregates (DT) : 634.351466
+3 : Assign names to anonymous instructions : 634.351466
+4 : Loop-Closed SSA Form Pass : 643.202440
+SpeedUp : 1.361157

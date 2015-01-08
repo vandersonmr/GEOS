@@ -1,0 +1,5 @@
+1 : Value Propagation : 220228.838327
+2 : Add DWARF path discriminators : 220228.838327
+3 : Early CSE : 219984.826873
+4 : Global Value Numbering : 223002.037989
+SpeedUp : 0.987564

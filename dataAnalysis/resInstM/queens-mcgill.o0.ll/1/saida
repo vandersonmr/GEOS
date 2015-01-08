@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 115.262554
+2 : Scalar Replacement of Aggregates (DT) : 60.722527
+3 : Loop-Closed SSA Form Pass : 60.722527
+4 : Lower atomic intrinsics to non-atomic form : 60.722527
+5 : Early CSE : 60.168612
+6 : Reassociate expressions : 60.168612
+7 : Scalar Replacement of Aggregates (DT) : 60.168612
+8 : Global Value Numbering : 45.876965
+9 : Dead Instruction Elimination : 45.876965
+10 : Code sinking : 45.876965
+11 : Promote Memory to Register : 45.876965
+12 : Induction Variable Simplification : 45.876964
+13 : Assign names to anonymous instructions : 45.876964
+14 : MergedLoadStoreMotion : 45.876964
+15 : Loop-Closed SSA Form Pass : 45.876964
+16 : MemCpy Optimization : 45.876964
+17 : Scalar Replacement of Aggregates (DT) : 45.876964
+18 : Scalar Replacement of Aggregates (DT) : 45.876964
+19 : Reassociate expressions : 45.876964
+20 : Remove redundant instructions : 45.876964
+SpeedUp : 2.512428

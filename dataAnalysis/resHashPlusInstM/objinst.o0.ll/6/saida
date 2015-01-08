@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 1352.458698
+2 : SROA : 1352.458698
+3 : Value Propagation : 1352.458698
+4 : MemCpy Optimization : 1352.458698
+5 : Code sinking : 1352.458698
+6 : Value Propagation : 1352.458698
+7 : Add DWARF path discriminators : 1352.458698
+8 : SROA : 1352.458698
+9 : Dead Code Elimination : 1352.458698
+10 : Promote Memory to Register : 682.908279
+11 : Aggressive Dead Code Elimination : 682.908279
+12 : SROA : 682.908279
+13 : SROA : 682.908279
+14 : Aggressive Dead Code Elimination : 682.908279
+15 : Promote Memory to Register : 682.908279
+16 : Alignment from assumptions : 682.908279
+17 : Dead Code Elimination : 682.908279
+18 : Dead Code Elimination : 682.908279
+19 : MemCpy Optimization : 682.908279
+20 : Value Propagation : 682.908279
+SpeedUp : 1.980440

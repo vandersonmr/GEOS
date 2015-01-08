@@ -1,0 +1,10 @@
+1 : Combine redundant instructions : 59.563015
+2 : Loop-Closed SSA Form Pass : 59.563015
+3 : Dead Instruction Elimination : 59.563015
+4 : Loop-Closed SSA Form Pass : 59.563015
+5 : Assign names to anonymous instructions : 59.563015
+6 : SROA : 59.563015
+7 : Global Value Numbering : 58.261824
+8 : Reassociate expressions : 58.181764
+9 : Remove redundant instructions : 58.261784
+SpeedUp : 1.071470

@@ -1,0 +1,8 @@
+1 : Scalar Replacement of Aggregates (DT) : 356.666667
+2 : Remove redundant instructions : 356.666667
+3 : Aggressive Dead Code Elimination : 356.666667
+4 : SROA : 356.666667
+5 : SROA : 356.666667
+6 : SROA : 356.666667
+7 : Loop-Closed SSA Form Pass : 366.666667
+SpeedUp : 1.495455

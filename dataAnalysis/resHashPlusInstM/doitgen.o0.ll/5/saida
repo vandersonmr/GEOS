@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 572.772726
+2 : Combine redundant instructions : 502.192995
+3 : Alignment from assumptions : 502.192995
+4 : Remove redundant instructions : 502.192995
+5 : Reassociate expressions : 502.192995
+6 : Combine redundant instructions : 502.192995
+7 : Loop Invariant Code Motion : 502.192995
+8 : Code sinking : 502.192995
+9 : Code sinking : 502.192995
+10 : Scalar Replacement of Aggregates (DT) : 438.520285
+11 : Loop Invariant Code Motion : 311.382548
+12 : Constant Hoisting : 311.382548
+13 : Alignment from assumptions : 311.382548
+14 : SROA : 311.382548
+15 : Alignment from assumptions : 311.382548
+16 : Dead Instruction Elimination : 311.382548
+17 : Global Value Numbering : 300.896668
+18 : Combine redundant instructions : 300.896668
+19 : Aggressive Dead Code Elimination : 300.896668
+20 : Value Propagation : 300.896668
+SpeedUp : 1.903553

@@ -1,0 +1,21 @@
+1 : Code sinking : 13.765121
+2 : Code sinking : 13.765121
+3 : Lower atomic intrinsics to non-atomic form : 13.765121
+4 : Lower atomic intrinsics to non-atomic form : 13.765121
+5 : Value Propagation : 13.765121
+6 : Reassociate expressions : 13.765121
+7 : SROA : 13.765121
+8 : Global Value Numbering : 6.564081
+9 : Reassociate expressions : 6.564081
+10 : Aggressive Dead Code Elimination : 6.564081
+11 : Dead Instruction Elimination : 6.564081
+12 : Dead Instruction Elimination : 6.564081
+13 : Aggressive Dead Code Elimination : 6.564081
+14 : Value Propagation : 6.564081
+15 : Add DWARF path discriminators : 6.564081
+16 : Aggressive Dead Code Elimination : 6.564081
+17 : MergedLoadStoreMotion : 6.564081
+18 : Combine redundant instructions : 5.763761
+19 : Lower atomic intrinsics to non-atomic form : 5.443761
+20 : MergedLoadStoreMotion : 5.443761
+SpeedUp : 2.528605

@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 73.636733
+2 : Dead Instruction Elimination : 73.636733
+3 : Reassociate expressions : 73.636733
+4 : MemCpy Optimization : 73.636733
+5 : Loop-Closed SSA Form Pass : 73.636733
+6 : Dead Instruction Elimination : 73.636733
+7 : Combine redundant instructions : 62.873985
+8 : Loop-Closed SSA Form Pass : 62.873985
+9 : Induction Variable Simplification : 62.873985
+10 : Reassociate expressions : 62.873985
+11 : Code sinking : 62.873985
+12 : Loop-Closed SSA Form Pass : 62.873985
+13 : Loop Invariant Code Motion : 62.873985
+14 : Lower atomic intrinsics to non-atomic form : 62.873985
+15 : Dead Instruction Elimination : 62.873985
+16 : Remove redundant instructions : 62.873985
+17 : Scalar Replacement of Aggregates (DT) : 32.812880
+18 : Constant Hoisting : 31.169003
+19 : Scalar Replacement of Aggregates (DT) : 31.169003
+20 : Dead Code Elimination : 31.169003
+SpeedUp : 2.362499

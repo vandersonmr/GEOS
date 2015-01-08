@@ -1,0 +1,17 @@
+1 : Loop-Closed SSA Form Pass : 54416.232888
+2 : Early CSE : 630.295388
+3 : Lower atomic intrinsics to non-atomic form : 630.295388
+4 : Lower atomic intrinsics to non-atomic form : 630.295388
+5 : Lower atomic intrinsics to non-atomic form : 630.295388
+6 : Induction Variable Simplification : 630.295388
+7 : Value Propagation : 630.295388
+8 : MemCpy Optimization : 630.295388
+9 : Remove redundant instructions : 630.295388
+10 : Constant Hoisting : 630.295388
+11 : Loop-Closed SSA Form Pass : 630.295388
+12 : Loop Invariant Code Motion : 630.295388
+13 : Dead Instruction Elimination : 630.295388
+14 : Early CSE : 630.295388
+15 : Dead Code Elimination : 630.295388
+16 : Combine redundant instructions : 1211.840967
+SpeedUp : 44.903774

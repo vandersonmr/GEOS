@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 1251.300070
+2 : Dead Instruction Elimination : 1251.300070
+3 : Reassociate expressions : 1251.300070
+4 : Early CSE : 1152.150070
+5 : MergedLoadStoreMotion : 1152.150070
+6 : MergedLoadStoreMotion : 1152.150070
+7 : Lower atomic intrinsics to non-atomic form : 1152.150070
+8 : Constant Hoisting : 1152.150070
+9 : Loop-Closed SSA Form Pass : 1152.150070
+10 : Code sinking : 1152.150070
+11 : SROA : 1152.150070
+12 : MergedLoadStoreMotion : 1152.150070
+13 : Add DWARF path discriminators : 1152.150070
+14 : Promote Memory to Register : 759.240044
+15 : Value Propagation : 603.300036
+16 : Alignment from assumptions : 603.300036
+17 : Add DWARF path discriminators : 603.300036
+18 : Promote Memory to Register : 603.300036
+19 : SROA : 603.300036
+20 : Induction Variable Simplification : 633.330036
+SpeedUp : 1.975747

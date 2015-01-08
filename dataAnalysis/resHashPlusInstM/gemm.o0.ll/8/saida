@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 1764.771423
+2 : Assign names to anonymous instructions : 1764.771423
+3 : MemCpy Optimization : 1764.771423
+4 : Reassociate expressions : 1764.771423
+5 : Dead Code Elimination : 1764.771423
+6 : Dead Instruction Elimination : 1764.771423
+7 : Assign names to anonymous instructions : 1764.771423
+8 : Constant Hoisting : 1764.771423
+9 : MemCpy Optimization : 1764.771423
+10 : Dead Instruction Elimination : 1764.771423
+11 : MergedLoadStoreMotion : 1764.771423
+12 : Code sinking : 1764.771423
+13 : Promote Memory to Register : 1764.771423
+14 : Remove redundant instructions : 1764.771415
+15 : SROA : 1764.771415
+16 : MergedLoadStoreMotion : 1764.771415
+17 : Dead Instruction Elimination : 1764.771415
+18 : Promote Memory to Register : 1764.771415
+19 : MergedLoadStoreMotion : 1764.771415
+20 : Induction Variable Simplification : 1281.072266
+SpeedUp : 1.466132

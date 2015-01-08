@@ -1,0 +1,21 @@
+1 : Code sinking : 312.340153
+2 : Lower atomic intrinsics to non-atomic form : 312.340153
+3 : Promote Memory to Register : 183.039785
+4 : Constant Hoisting : 183.039785
+5 : Dead Instruction Elimination : 183.039785
+6 : SROA : 183.039785
+7 : Combine redundant instructions : 150.754089
+8 : Promote Memory to Register : 150.754089
+9 : Remove redundant instructions : 150.754089
+10 : Alignment from assumptions : 150.754089
+11 : Combine redundant instructions : 150.754089
+12 : Scalar Replacement of Aggregates (DT) : 150.754089
+13 : Loop Invariant Code Motion : 140.016681
+14 : Dead Instruction Elimination : 140.016681
+15 : MemCpy Optimization : 140.016681
+16 : Dead Instruction Elimination : 140.016681
+17 : Reassociate expressions : 140.016681
+18 : SROA : 140.016681
+19 : MemCpy Optimization : 140.016681
+20 : Add DWARF path discriminators : 140.016681
+SpeedUp : 2.230735

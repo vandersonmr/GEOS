@@ -1,0 +1,5 @@
+1 : Early CSE : 115.610201
+2 : Assign names to anonymous instructions : 115.610201
+3 : Aggressive Dead Code Elimination : 115.610201
+4 : Loop Invariant Code Motion : 119.205092
+SpeedUp : 1.227084

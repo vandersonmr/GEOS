@@ -1,0 +1,17 @@
+1 : Scalar Replacement of Aggregates (DT) : 20.100007
+2 : Promote Memory to Register : 20.100007
+3 : Promote Memory to Register : 20.100007
+4 : MergedLoadStoreMotion : 20.100007
+5 : Constant Hoisting : 20.100007
+6 : Reassociate expressions : 20.100007
+7 : Induction Variable Simplification : 19.340005
+8 : SROA : 19.340005
+9 : Alignment from assumptions : 19.340005
+10 : Alignment from assumptions : 19.340005
+11 : Loop Invariant Code Motion : 19.100005
+12 : Remove redundant instructions : 18.740005
+13 : Assign names to anonymous instructions : 18.740005
+14 : Aggressive Dead Code Elimination : 18.740005
+15 : MergedLoadStoreMotion : 18.740005
+16 : Loop Invariant Code Motion : 18.740005
+SpeedUp : 1.342049

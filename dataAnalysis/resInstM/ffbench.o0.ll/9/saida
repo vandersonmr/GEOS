@@ -1,0 +1,3 @@
+1 : Lower atomic intrinsics to non-atomic form : 76.560016
+2 : Reassociate expressions : 76.676288
+SpeedUp : 0.998484

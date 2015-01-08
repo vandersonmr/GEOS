@@ -1,0 +1,5 @@
+1 : Combine redundant instructions : 0.000004
+2 : MemCpy Optimization : 0.000004
+3 : Assign names to anonymous instructions : 0.000004
+4 : Scalar Replacement of Aggregates (DT) : 0.000004
+SpeedUp : 0.980874

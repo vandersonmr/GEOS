@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 311.752339
+2 : MergedLoadStoreMotion : 311.752339
+3 : Global Value Numbering : 111.266998
+4 : Combine redundant instructions : 111.202555
+5 : MemCpy Optimization : 111.202555
+6 : Add DWARF path discriminators : 111.202555
+7 : Loop Invariant Code Motion : 111.202555
+8 : Dead Code Elimination : 111.202555
+9 : Induction Variable Simplification : 111.202555
+10 : Global Value Numbering : 111.202555
+11 : SROA : 111.202555
+12 : MemCpy Optimization : 111.202555
+13 : Aggressive Dead Code Elimination : 111.202555
+14 : Value Propagation : 111.202555
+15 : Reassociate expressions : 111.202555
+16 : Loop-Closed SSA Form Pass : 111.202555
+17 : Alignment from assumptions : 111.202555
+18 : MergedLoadStoreMotion : 111.202555
+19 : Alignment from assumptions : 111.202555
+20 : Alignment from assumptions : 111.202555
+SpeedUp : 2.803464

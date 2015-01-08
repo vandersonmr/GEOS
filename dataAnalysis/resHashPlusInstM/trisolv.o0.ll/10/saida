@@ -1,0 +1,5 @@
+1 : MergedLoadStoreMotion : 35.838429
+2 : Code sinking : 35.838429
+3 : Alignment from assumptions : 35.838429
+4 : Promote Memory to Register : 39.878906
+SpeedUp : 0.898681

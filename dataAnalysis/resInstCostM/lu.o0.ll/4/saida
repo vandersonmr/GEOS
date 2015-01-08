@@ -1,0 +1,12 @@
+1 : MemCpy Optimization : 111.310152
+2 : MemCpy Optimization : 111.310152
+3 : Early CSE : 68.266046
+4 : Reassociate expressions : 68.266046
+5 : Global Value Numbering : 21.852539
+6 : SROA : 21.852539
+7 : Promote Memory to Register : 7.404805
+8 : Assign names to anonymous instructions : 3.815163
+9 : Early CSE : 3.815163
+10 : Alignment from assumptions : 3.815163
+11 : Induction Variable Simplification : 7.389061
+SpeedUp : 15.064181

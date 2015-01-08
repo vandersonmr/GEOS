@@ -1,0 +1,7 @@
+1 : Loop Invariant Code Motion : 0.000001
+2 : Early CSE : 0.000000
+3 : Dead Code Elimination : 0.000001
+4 : Global Value Numbering : 0.000000
+5 : Promote Memory to Register : 0.000000
+6 : SROA : 0.000000
+SpeedUp : 1.244444

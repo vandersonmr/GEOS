@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 251.562500
+2 : Code sinking : 251.562500
+3 : Scalar Replacement of Aggregates (DT) : 181.250000
+4 : Global Value Numbering : 179.687500
+5 : Aggressive Dead Code Elimination : 179.687500
+6 : Reassociate expressions : 179.687500
+7 : Reassociate expressions : 179.687500
+8 : MemCpy Optimization : 179.687500
+9 : Scalar Replacement of Aggregates (DT) : 179.687500
+10 : Promote Memory to Register : 179.687500
+11 : Global Value Numbering : 179.687500
+12 : Dead Instruction Elimination : 179.687500
+13 : Add DWARF path discriminators : 179.687500
+14 : Add DWARF path discriminators : 179.687500
+15 : Code sinking : 179.687500
+16 : Aggressive Dead Code Elimination : 179.687500
+17 : Add DWARF path discriminators : 179.687500
+18 : Aggressive Dead Code Elimination : 179.687500
+19 : Value Propagation : 179.687500
+20 : Dead Code Elimination : 179.687500
+SpeedUp : 1.400000

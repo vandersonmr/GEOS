@@ -1,0 +1,10 @@
+1 : Lower atomic intrinsics to non-atomic form : 1.109713
+2 : Value Propagation : 1.109713
+3 : Loop-Closed SSA Form Pass : 1.109713
+4 : Early CSE : 1.027435
+5 : Dead Instruction Elimination : 1.027435
+6 : MergedLoadStoreMotion : 1.027435
+7 : Loop Invariant Code Motion : 1.027435
+8 : Dead Code Elimination : 1.027435
+9 : Scalar Replacement of Aggregates (DT) : 4.432939
+SpeedUp : 0.250333

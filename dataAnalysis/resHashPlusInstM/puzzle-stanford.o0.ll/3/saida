@@ -1,0 +1,5 @@
+1 : Remove redundant instructions : 143.595148
+2 : Early CSE : 139.387771
+3 : Lower atomic intrinsics to non-atomic form : 139.387771
+4 : Loop Invariant Code Motion : 142.284174
+SpeedUp : 1.009214

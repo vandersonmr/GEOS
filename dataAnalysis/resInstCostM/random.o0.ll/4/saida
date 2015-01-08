@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 52.000000
+2 : Lower atomic intrinsics to non-atomic form : 52.000000
+3 : Loop Invariant Code Motion : 52.000000
+4 : Lower atomic intrinsics to non-atomic form : 52.000000
+5 : Aggressive Dead Code Elimination : 52.000000
+6 : Global Value Numbering : 52.000000
+7 : Promote Memory to Register : 52.000000
+8 : Scalar Replacement of Aggregates (DT) : 52.000000
+9 : Global Value Numbering : 52.000000
+10 : Promote Memory to Register : 52.000000
+11 : Reassociate expressions : 52.000000
+12 : Constant Hoisting : 52.000000
+13 : Induction Variable Simplification : 52.000000
+14 : Loop Invariant Code Motion : 52.000000
+15 : Loop-Closed SSA Form Pass : 52.000000
+16 : Induction Variable Simplification : 52.000000
+17 : Assign names to anonymous instructions : 52.000000
+18 : Value Propagation : 52.000000
+19 : Loop Invariant Code Motion : 52.000000
+20 : Early CSE : 48.000000
+SpeedUp : 1.333333

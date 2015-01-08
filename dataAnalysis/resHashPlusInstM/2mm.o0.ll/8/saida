@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 3406.290133
+2 : Induction Variable Simplification : 3406.290133
+3 : Loop Invariant Code Motion : 3406.290133
+4 : MergedLoadStoreMotion : 3406.290133
+5 : Reassociate expressions : 3406.290133
+6 : Code sinking : 3406.290133
+7 : Code sinking : 3406.290133
+8 : MemCpy Optimization : 3406.290133
+9 : SROA : 3406.290133
+10 : MergedLoadStoreMotion : 3406.290133
+11 : Remove redundant instructions : 3406.290133
+12 : Early CSE : 2968.239082
+13 : SROA : 2968.239082
+14 : Loop-Closed SSA Form Pass : 2968.239082
+15 : Lower atomic intrinsics to non-atomic form : 2968.239082
+16 : Remove redundant instructions : 2968.239082
+17 : Combine redundant instructions : 2968.239082
+18 : Value Propagation : 2968.239082
+19 : MergedLoadStoreMotion : 2968.239082
+20 : Dead Instruction Elimination : 2968.239082
+SpeedUp : 1.268783

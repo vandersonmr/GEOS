@@ -1,0 +1,19 @@
+1 : Combine redundant instructions : 145.312500
+2 : Add DWARF path discriminators : 145.312500
+3 : Code sinking : 145.312500
+4 : Remove redundant instructions : 145.312500
+5 : Induction Variable Simplification : 145.312500
+6 : Loop-Closed SSA Form Pass : 145.312500
+7 : MemCpy Optimization : 145.312500
+8 : Early CSE : 137.500000
+9 : Remove redundant instructions : 131.250000
+10 : Assign names to anonymous instructions : 128.125000
+11 : Loop-Closed SSA Form Pass : 128.125000
+12 : Remove redundant instructions : 128.125000
+13 : MergedLoadStoreMotion : 128.125000
+14 : Assign names to anonymous instructions : 128.125000
+15 : MemCpy Optimization : 128.125000
+16 : Early CSE : 128.125000
+17 : Remove redundant instructions : 128.125000
+18 : Global Value Numbering : 128.125000
+SpeedUp : 1.402439

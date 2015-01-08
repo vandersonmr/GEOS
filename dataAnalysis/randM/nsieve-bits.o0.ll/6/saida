@@ -1,0 +1,4 @@
+1 : Aggressive Dead Code Elimination : 0.000001
+2 : Loop-Closed SSA Form Pass : 0.000001
+3 : Assign names to anonymous instructions : 0.000001
+SpeedUp : 1.044444

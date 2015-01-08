@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 634.074512
+2 : Promote Memory to Register : 419.137188
+3 : Dead Instruction Elimination : 419.137188
+4 : SROA : 419.137188
+5 : Early CSE : 204.409651
+6 : Value Propagation : 204.409651
+7 : Add DWARF path discriminators : 204.409651
+8 : Reassociate expressions : 204.409651
+9 : Aggressive Dead Code Elimination : 204.409651
+10 : MemCpy Optimization : 204.409651
+11 : Early CSE : 204.409651
+12 : Reassociate expressions : 204.409651
+13 : Reassociate expressions : 204.409651
+14 : Add DWARF path discriminators : 204.409651
+15 : Reassociate expressions : 204.409651
+16 : Add DWARF path discriminators : 204.409651
+17 : Constant Hoisting : 204.409651
+18 : Remove redundant instructions : 204.409651
+19 : Code sinking : 204.409651
+20 : Scalar Replacement of Aggregates (DT) : 204.409651
+SpeedUp : 3.101979

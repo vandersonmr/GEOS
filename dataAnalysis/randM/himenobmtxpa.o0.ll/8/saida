@@ -1,0 +1,5 @@
+1 : Global Value Numbering : 0.000003
+2 : MemCpy Optimization : 0.000003
+3 : Lower atomic intrinsics to non-atomic form : 0.000003
+4 : Early CSE : 0.000003
+SpeedUp : 1.291845

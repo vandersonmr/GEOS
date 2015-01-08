@@ -1,0 +1,4 @@
+1 : Early CSE : 0.000001
+2 : Aggressive Dead Code Elimination : 0.000001
+3 : Alignment from assumptions : 0.000001
+SpeedUp : 0.962264

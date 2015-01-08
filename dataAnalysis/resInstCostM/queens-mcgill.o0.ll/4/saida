@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 96.400683
+2 : Alignment from assumptions : 96.400683
+3 : Assign names to anonymous instructions : 96.400683
+4 : Reassociate expressions : 96.400683
+5 : Aggressive Dead Code Elimination : 96.400683
+6 : Constant Hoisting : 96.400683
+7 : Reassociate expressions : 96.400683
+8 : Value Propagation : 96.400683
+9 : Scalar Replacement of Aggregates (DT) : 40.780938
+10 : Value Propagation : 40.780938
+11 : MemCpy Optimization : 40.780938
+12 : Add DWARF path discriminators : 40.780938
+13 : Aggressive Dead Code Elimination : 40.780938
+14 : Constant Hoisting : 40.780938
+15 : Loop-Closed SSA Form Pass : 40.780938
+16 : Aggressive Dead Code Elimination : 40.780938
+17 : Value Propagation : 40.780938
+18 : Loop Invariant Code Motion : 39.680423
+19 : Loop Invariant Code Motion : 39.680423
+20 : Promote Memory to Register : 39.680423
+SpeedUp : 2.429427

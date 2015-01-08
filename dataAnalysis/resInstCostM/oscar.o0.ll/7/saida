@@ -1,0 +1,5 @@
+1 : Add DWARF path discriminators : 0.144960
+2 : Remove redundant instructions : 0.144960
+3 : SROA : 0.144960
+4 : Global Value Numbering : 0.251031
+SpeedUp : 0.577457

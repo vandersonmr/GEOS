@@ -1,0 +1,11 @@
+1 : Reassociate expressions : 884.176172
+2 : Assign names to anonymous instructions : 884.176172
+3 : Value Propagation : 884.176172
+4 : Loop-Closed SSA Form Pass : 884.176172
+5 : Remove redundant instructions : 884.176172
+6 : Induction Variable Simplification : 884.176172
+7 : Alignment from assumptions : 884.176172
+8 : Dead Instruction Elimination : 884.176172
+9 : MemCpy Optimization : 884.176172
+10 : Global Value Numbering : 1465.076338
+SpeedUp : 0.603502

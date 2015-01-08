@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 5.841981
+2 : Loop-Closed SSA Form Pass : 5.841981
+3 : MergedLoadStoreMotion : 5.841981
+4 : Induction Variable Simplification : 5.841981
+5 : Promote Memory to Register : 3.120940
+6 : Code sinking : 3.120940
+7 : MemCpy Optimization : 3.120940
+8 : Combine redundant instructions : 2.800900
+9 : Promote Memory to Register : 2.800900
+10 : Scalar Replacement of Aggregates (DT) : 2.800900
+11 : MergedLoadStoreMotion : 2.800900
+12 : Combine redundant instructions : 2.800900
+13 : Early CSE : 2.480900
+14 : Combine redundant instructions : 2.480900
+15 : Add DWARF path discriminators : 2.480900
+16 : SROA : 2.480900
+17 : Add DWARF path discriminators : 2.480900
+18 : Lower atomic intrinsics to non-atomic form : 2.480900
+19 : Induction Variable Simplification : 2.480900
+20 : Dead Code Elimination : 2.480900
+SpeedUp : 2.354783

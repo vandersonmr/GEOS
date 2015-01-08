@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 279.447877
+2 : Loop-Closed SSA Form Pass : 279.447877
+3 : Add DWARF path discriminators : 279.447877
+4 : Aggressive Dead Code Elimination : 279.447877
+5 : Loop Invariant Code Motion : 279.447877
+6 : Dead Code Elimination : 279.447877
+7 : Add DWARF path discriminators : 279.447877
+8 : Reassociate expressions : 279.447877
+9 : Add DWARF path discriminators : 279.447877
+10 : Loop-Closed SSA Form Pass : 279.447877
+11 : Alignment from assumptions : 279.447877
+12 : Scalar Replacement of Aggregates (DT) : 111.779157
+13 : Dead Instruction Elimination : 111.779157
+14 : Remove redundant instructions : 111.779157
+15 : MemCpy Optimization : 111.779157
+16 : Dead Instruction Elimination : 111.779157
+17 : Code sinking : 111.779157
+18 : Early CSE : 102.814550
+19 : Value Propagation : 102.814550
+20 : Scalar Replacement of Aggregates (DT) : 102.814550
+SpeedUp : 2.717980

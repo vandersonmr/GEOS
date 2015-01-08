@@ -1,0 +1,10 @@
+1 : Promote Memory to Register : 0.000002
+2 : Combine redundant instructions : 0.000002
+3 : Dead Instruction Elimination : 0.000002
+4 : Dead Code Elimination : 0.000002
+5 : Global Value Numbering : 0.000002
+6 : Constant Hoisting : 0.000001
+7 : Global Value Numbering : 0.000002
+8 : Dead Instruction Elimination : 0.000001
+9 : Dead Code Elimination : 0.000002
+SpeedUp : 1.833333

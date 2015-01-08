@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 81.795036
+2 : Assign names to anonymous instructions : 81.795036
+3 : Reassociate expressions : 81.795036
+4 : MemCpy Optimization : 81.795036
+5 : Alignment from assumptions : 81.795036
+6 : Loop-Closed SSA Form Pass : 81.795036
+7 : MergedLoadStoreMotion : 81.795036
+8 : Loop-Closed SSA Form Pass : 81.795036
+9 : Assign names to anonymous instructions : 81.795036
+10 : Aggressive Dead Code Elimination : 81.795036
+11 : Combine redundant instructions : 67.700265
+12 : Alignment from assumptions : 67.700265
+13 : Add DWARF path discriminators : 67.700265
+14 : Combine redundant instructions : 67.700265
+15 : Dead Code Elimination : 67.700265
+16 : Remove redundant instructions : 67.700265
+17 : Dead Instruction Elimination : 67.700265
+18 : Assign names to anonymous instructions : 67.700265
+19 : Early CSE : 61.330807
+20 : MergedLoadStoreMotion : 56.859011
+SpeedUp : 1.438559

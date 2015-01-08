@@ -1,0 +1,15 @@
+1 : SROA : 459.684477
+2 : Lower atomic intrinsics to non-atomic form : 459.684477
+3 : Constant Hoisting : 459.684477
+4 : Reassociate expressions : 459.684477
+5 : Reassociate expressions : 459.684477
+6 : SROA : 459.684477
+7 : Promote Memory to Register : 394.045401
+8 : Value Propagation : 394.045401
+9 : Alignment from assumptions : 394.045401
+10 : MemCpy Optimization : 394.045401
+11 : Reassociate expressions : 394.045401
+12 : Dead Code Elimination : 394.045401
+13 : Global Value Numbering : 366.740330
+14 : Loop Invariant Code Motion : 393.965325
+SpeedUp : 1.166815

@@ -1,0 +1,6 @@
+1 : Loop-Closed SSA Form Pass : 0.000003
+2 : Dead Code Elimination : 0.000003
+3 : MemCpy Optimization : 0.000002
+4 : Code sinking : 0.000003
+5 : MergedLoadStoreMotion : 0.000003
+SpeedUp : 0.992308

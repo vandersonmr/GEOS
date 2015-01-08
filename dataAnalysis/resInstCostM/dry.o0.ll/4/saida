@@ -1,0 +1,13 @@
+1 : Loop-Closed SSA Form Pass : 419.000000
+2 : Assign names to anonymous instructions : 419.000000
+3 : MemCpy Optimization : 419.000000
+4 : SROA : 419.000000
+5 : Scalar Replacement of Aggregates (DT) : 210.000000
+6 : Remove redundant instructions : 185.000000
+7 : Constant Hoisting : 185.000000
+8 : Assign names to anonymous instructions : 185.000000
+9 : Add DWARF path discriminators : 185.000000
+10 : Assign names to anonymous instructions : 185.000000
+11 : MergedLoadStoreMotion : 185.000000
+12 : Induction Variable Simplification : 186.000000
+SpeedUp : 2.252688

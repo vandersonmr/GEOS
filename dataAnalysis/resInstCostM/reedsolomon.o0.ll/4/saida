@@ -1,0 +1,11 @@
+1 : Combine redundant instructions : 454.570519
+2 : Aggressive Dead Code Elimination : 454.570519
+3 : Remove redundant instructions : 454.570519
+4 : Value Propagation : 454.570519
+5 : Induction Variable Simplification : 454.570519
+6 : MemCpy Optimization : 454.570519
+7 : Promote Memory to Register : 338.525259
+8 : Alignment from assumptions : 338.244541
+9 : Dead Instruction Elimination : 332.687042
+10 : Reassociate expressions : 332.938632
+SpeedUp : 1.527838

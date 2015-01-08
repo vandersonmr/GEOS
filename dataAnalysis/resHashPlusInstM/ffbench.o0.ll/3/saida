@@ -1,0 +1,7 @@
+1 : SROA : 266.005330
+2 : Constant Hoisting : 266.005330
+3 : Promote Memory to Register : 198.894825
+4 : SROA : 198.894825
+5 : Add DWARF path discriminators : 198.894825
+6 : Induction Variable Simplification : 199.916510
+SpeedUp : 1.330582

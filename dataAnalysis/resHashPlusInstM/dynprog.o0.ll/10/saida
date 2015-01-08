@@ -1,0 +1,11 @@
+1 : Reassociate expressions : 591.823013
+2 : Lower atomic intrinsics to non-atomic form : 591.823013
+3 : Value Propagation : 591.823013
+4 : Aggressive Dead Code Elimination : 591.823013
+5 : Early CSE : 414.722301
+6 : MemCpy Optimization : 414.722301
+7 : Lower atomic intrinsics to non-atomic form : 414.722301
+8 : MergedLoadStoreMotion : 414.722301
+9 : Reassociate expressions : 414.722301
+10 : Loop-Closed SSA Form Pass : 428.417801
+SpeedUp : 1.381416

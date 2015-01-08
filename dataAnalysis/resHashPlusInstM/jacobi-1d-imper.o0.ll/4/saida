@@ -1,0 +1,6 @@
+1 : SROA : 2.843890
+2 : MergedLoadStoreMotion : 2.843890
+3 : Lower atomic intrinsics to non-atomic form : 2.843890
+4 : Promote Memory to Register : 2.388804
+5 : Global Value Numbering : 2.416028
+SpeedUp : 1.177093

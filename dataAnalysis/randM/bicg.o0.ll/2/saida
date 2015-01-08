@@ -1,0 +1,4 @@
+1 : Scalar Replacement of Aggregates (DT) : 0.000001
+2 : Dead Instruction Elimination : 0.000001
+3 : Assign names to anonymous instructions : 0.000001
+SpeedUp : 1.381579

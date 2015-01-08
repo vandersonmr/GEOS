@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 577.138100
+2 : Global Value Numbering : 420.510300
+3 : Global Value Numbering : 420.510300
+4 : SROA : 420.510300
+5 : Remove redundant instructions : 420.510300
+6 : Alignment from assumptions : 420.510300
+7 : Value Propagation : 420.510300
+8 : Value Propagation : 420.510300
+9 : Remove redundant instructions : 420.510300
+10 : Promote Memory to Register : 155.845800
+11 : Lower atomic intrinsics to non-atomic form : 155.845800
+12 : MemCpy Optimization : 155.845800
+13 : Induction Variable Simplification : 155.845800
+14 : Assign names to anonymous instructions : 155.845800
+15 : SROA : 155.845800
+16 : Assign names to anonymous instructions : 155.845800
+17 : Assign names to anonymous instructions : 155.845800
+18 : MergedLoadStoreMotion : 155.845800
+19 : Add DWARF path discriminators : 155.845800
+20 : SROA : 155.845800
+SpeedUp : 3.703264

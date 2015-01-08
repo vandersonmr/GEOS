@@ -1,0 +1,11 @@
+1 : Assign names to anonymous instructions : 146.875001
+2 : Alignment from assumptions : 146.875001
+3 : Constant Hoisting : 146.875001
+4 : Combine redundant instructions : 120.312501
+5 : Early CSE : 118.750001
+6 : Reassociate expressions : 118.750001
+7 : Code sinking : 118.750001
+8 : Dead Instruction Elimination : 118.750001
+9 : Add DWARF path discriminators : 118.750001
+10 : Loop-Closed SSA Form Pass : 120.312501
+SpeedUp : 1.220779

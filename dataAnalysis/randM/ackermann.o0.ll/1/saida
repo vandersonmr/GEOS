@@ -1,0 +1,5 @@
+1 : Code sinking : 0.000000
+2 : Remove redundant instructions : 0.000000
+3 : Value Propagation : 0.000001
+4 : MergedLoadStoreMotion : 0.000000
+SpeedUp : 1.181818

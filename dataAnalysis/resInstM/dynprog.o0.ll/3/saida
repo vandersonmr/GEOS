@@ -1,0 +1,16 @@
+1 : MergedLoadStoreMotion : 160.971994
+2 : Aggressive Dead Code Elimination : 160.971994
+3 : Lower atomic intrinsics to non-atomic form : 160.971994
+4 : SROA : 160.971994
+5 : Scalar Replacement of Aggregates (DT) : 105.829661
+6 : Loop Invariant Code Motion : 70.844961
+7 : Assign names to anonymous instructions : 70.844961
+8 : Loop Invariant Code Motion : 70.844961
+9 : Global Value Numbering : 19.251959
+10 : Remove redundant instructions : 19.251959
+11 : Alignment from assumptions : 19.251959
+12 : Value Propagation : 19.251959
+13 : Reassociate expressions : 19.251959
+14 : Alignment from assumptions : 19.251959
+15 : Loop Invariant Code Motion : 21.211959
+SpeedUp : 7.588738

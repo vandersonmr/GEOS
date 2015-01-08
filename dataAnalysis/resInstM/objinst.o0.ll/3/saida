@@ -1,0 +1,6 @@
+1 : Induction Variable Simplification : 73.500009
+2 : Loop Invariant Code Motion : 73.500009
+3 : Assign names to anonymous instructions : 73.500009
+4 : Promote Memory to Register : 35.700006
+5 : Loop Invariant Code Motion : 38.500005
+SpeedUp : 1.909091

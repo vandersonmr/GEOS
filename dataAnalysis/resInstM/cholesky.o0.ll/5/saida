@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 73.750483
+2 : Dead Instruction Elimination : 73.750483
+3 : Remove redundant instructions : 73.750483
+4 : Alignment from assumptions : 73.750483
+5 : Alignment from assumptions : 73.750483
+6 : MemCpy Optimization : 73.750483
+7 : Loop Invariant Code Motion : 73.750483
+8 : Reassociate expressions : 73.750483
+9 : Reassociate expressions : 73.750483
+10 : Reassociate expressions : 73.750483
+11 : Loop Invariant Code Motion : 73.750483
+12 : Remove redundant instructions : 73.750483
+13 : Value Propagation : 73.750483
+14 : Dead Code Elimination : 73.750483
+15 : Aggressive Dead Code Elimination : 73.750483
+16 : Assign names to anonymous instructions : 73.750483
+17 : Global Value Numbering : 43.495435
+18 : Remove redundant instructions : 43.495435
+19 : Dead Code Elimination : 43.495435
+20 : Dead Code Elimination : 43.495435
+SpeedUp : 1.695591

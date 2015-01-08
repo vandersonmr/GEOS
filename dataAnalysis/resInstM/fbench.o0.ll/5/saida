@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 25.150009
+2 : Remove redundant instructions : 25.150009
+3 : Code sinking : 25.150009
+4 : Combine redundant instructions : 22.010007
+5 : Remove redundant instructions : 22.010007
+6 : Dead Instruction Elimination : 22.010007
+7 : MemCpy Optimization : 22.010007
+8 : SROA : 22.010007
+9 : Code sinking : 22.010007
+10 : Add DWARF path discriminators : 22.010007
+11 : Induction Variable Simplification : 22.010007
+12 : Loop-Closed SSA Form Pass : 22.010007
+13 : Induction Variable Simplification : 22.010007
+14 : Dead Instruction Elimination : 22.010007
+15 : Lower atomic intrinsics to non-atomic form : 22.010007
+16 : Combine redundant instructions : 22.010007
+17 : Value Propagation : 22.010007
+18 : Lower atomic intrinsics to non-atomic form : 22.010007
+19 : Reassociate expressions : 22.010007
+20 : Dead Instruction Elimination : 22.010007
+SpeedUp : 1.142662

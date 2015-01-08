@@ -1,0 +1,12 @@
+1 : Combine redundant instructions : 120.312501
+2 : Loop Invariant Code Motion : 120.312501
+3 : Promote Memory to Register : 79.687500
+4 : Global Value Numbering : 54.687501
+5 : Remove redundant instructions : 54.687501
+6 : Value Propagation : 54.687501
+7 : Assign names to anonymous instructions : 54.687501
+8 : Promote Memory to Register : 54.687501
+9 : Reassociate expressions : 54.687501
+10 : Dead Code Elimination : 54.687501
+11 : Loop-Closed SSA Form Pass : 59.375001
+SpeedUp : 2.473684

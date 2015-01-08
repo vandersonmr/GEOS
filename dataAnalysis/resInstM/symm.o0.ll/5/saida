@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 520.530740
+2 : Reassociate expressions : 520.530740
+3 : Induction Variable Simplification : 520.530740
+4 : Promote Memory to Register : 327.361362
+5 : SROA : 236.255683
+6 : Remove redundant instructions : 230.902692
+7 : Alignment from assumptions : 230.902692
+8 : Scalar Replacement of Aggregates (DT) : 230.902692
+9 : MergedLoadStoreMotion : 230.902692
+10 : Early CSE : 209.385780
+11 : Loop Invariant Code Motion : 182.516030
+12 : Add DWARF path discriminators : 177.163019
+13 : Loop-Closed SSA Form Pass : 177.163019
+14 : Alignment from assumptions : 177.163019
+15 : SROA : 177.163019
+16 : Loop-Closed SSA Form Pass : 177.163019
+17 : Promote Memory to Register : 177.163019
+18 : Dead Instruction Elimination : 177.163019
+19 : Code sinking : 177.163019
+20 : Dead Code Elimination : 177.163019
+SpeedUp : 2.938146

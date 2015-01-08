@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 4.339421
+2 : Aggressive Dead Code Elimination : 4.339421
+3 : Assign names to anonymous instructions : 4.339421
+4 : Induction Variable Simplification : 4.339421
+5 : Dead Instruction Elimination : 4.339421
+6 : Aggressive Dead Code Elimination : 4.339421
+7 : Constant Hoisting : 4.339421
+8 : Loop-Closed SSA Form Pass : 4.339421
+9 : Alignment from assumptions : 4.339421
+10 : Value Propagation : 4.339421
+11 : Alignment from assumptions : 4.339421
+12 : SROA : 4.339421
+13 : Induction Variable Simplification : 4.339421
+14 : Code sinking : 4.339421
+15 : Promote Memory to Register : 3.523201
+16 : Aggressive Dead Code Elimination : 2.458488
+17 : MemCpy Optimization : 2.457486
+18 : Promote Memory to Register : 2.457486
+19 : Reassociate expressions : 2.457486
+20 : Remove redundant instructions : 2.457486
+SpeedUp : 1.945846

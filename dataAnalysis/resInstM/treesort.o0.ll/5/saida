@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 2.628085
+2 : Dead Instruction Elimination : 2.628085
+3 : Dead Code Elimination : 2.628085
+4 : Scalar Replacement of Aggregates (DT) : 1.708604
+5 : Loop-Closed SSA Form Pass : 1.708604
+6 : Remove redundant instructions : 1.706139
+7 : Loop Invariant Code Motion : 1.706139
+8 : Induction Variable Simplification : 1.681137
+9 : Add DWARF path discriminators : 1.681137
+10 : Constant Hoisting : 1.681137
+11 : Induction Variable Simplification : 1.681137
+12 : Combine redundant instructions : 1.656132
+13 : MemCpy Optimization : 1.656132
+14 : SROA : 1.656132
+15 : Code sinking : 1.656132
+16 : Alignment from assumptions : 1.656132
+17 : Alignment from assumptions : 1.656132
+18 : Loop-Closed SSA Form Pass : 1.656132
+19 : Aggressive Dead Code Elimination : 1.656132
+20 : MergedLoadStoreMotion : 1.656132
+SpeedUp : 1.586881

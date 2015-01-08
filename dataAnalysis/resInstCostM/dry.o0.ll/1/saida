@@ -1,0 +1,11 @@
+1 : Code sinking : 419.000000
+2 : Loop-Closed SSA Form Pass : 419.000000
+3 : Loop-Closed SSA Form Pass : 419.000000
+4 : Scalar Replacement of Aggregates (DT) : 210.000000
+5 : Scalar Replacement of Aggregates (DT) : 210.000000
+6 : Lower atomic intrinsics to non-atomic form : 210.000000
+7 : Loop-Closed SSA Form Pass : 210.000000
+8 : Remove redundant instructions : 185.000000
+9 : Assign names to anonymous instructions : 185.000000
+10 : Induction Variable Simplification : 186.000000
+SpeedUp : 2.252688

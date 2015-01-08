@@ -1,0 +1,13 @@
+1 : Code sinking : 2.125003
+2 : SROA : 2.125003
+3 : Code sinking : 2.125003
+4 : Scalar Replacement of Aggregates (DT) : 1.100002
+5 : Global Value Numbering : 0.962502
+6 : Value Propagation : 0.962502
+7 : Assign names to anonymous instructions : 0.962502
+8 : Reassociate expressions : 0.962502
+9 : Early CSE : 0.962502
+10 : MergedLoadStoreMotion : 0.962502
+11 : Lower atomic intrinsics to non-atomic form : 0.962502
+12 : Combine redundant instructions : 0.987502
+SpeedUp : 2.151899

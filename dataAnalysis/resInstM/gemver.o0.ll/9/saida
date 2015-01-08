@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 21.450203
+2 : Aggressive Dead Code Elimination : 21.450203
+3 : Induction Variable Simplification : 21.450203
+4 : Early CSE : 15.368123
+5 : Aggressive Dead Code Elimination : 15.368123
+6 : MergedLoadStoreMotion : 15.368123
+7 : Constant Hoisting : 15.368123
+8 : Reassociate expressions : 15.368123
+9 : Constant Hoisting : 15.368123
+10 : Early CSE : 15.368123
+11 : Add DWARF path discriminators : 15.368123
+12 : Value Propagation : 15.368123
+13 : Lower atomic intrinsics to non-atomic form : 15.368123
+14 : Dead Code Elimination : 15.368123
+15 : Alignment from assumptions : 15.368123
+16 : MemCpy Optimization : 15.368123
+17 : Lower atomic intrinsics to non-atomic form : 15.368123
+18 : SROA : 15.368123
+19 : Lower atomic intrinsics to non-atomic form : 15.368123
+20 : Early CSE : 15.368123
+SpeedUp : 1.395759

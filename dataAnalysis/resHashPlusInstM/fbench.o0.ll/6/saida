@@ -1,0 +1,4 @@
+1 : Lower atomic intrinsics to non-atomic form : 759.629860
+2 : Remove redundant instructions : 759.629860
+3 : Promote Memory to Register : 1739.950678
+SpeedUp : 0.436581

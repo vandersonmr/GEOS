@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 146.875001
+2 : Value Propagation : 146.875001
+3 : Combine redundant instructions : 120.312501
+4 : MergedLoadStoreMotion : 120.312501
+5 : Aggressive Dead Code Elimination : 120.312501
+6 : Add DWARF path discriminators : 120.312501
+7 : Dead Code Elimination : 120.312501
+8 : Value Propagation : 120.312501
+9 : Dead Instruction Elimination : 120.312501
+10 : Global Value Numbering : 81.250001
+11 : Aggressive Dead Code Elimination : 81.250001
+12 : Remove redundant instructions : 81.250001
+13 : Combine redundant instructions : 81.250001
+14 : Code sinking : 81.250001
+15 : Early CSE : 79.687501
+16 : Global Value Numbering : 79.687501
+17 : Scalar Replacement of Aggregates (DT) : 67.187501
+18 : Lower atomic intrinsics to non-atomic form : 54.687501
+19 : Promote Memory to Register : 54.687501
+20 : Loop Invariant Code Motion : 59.375001
+SpeedUp : 2.473684

@@ -1,0 +1,10 @@
+1 : Combine redundant instructions : 623.669076
+2 : Reassociate expressions : 623.669076
+3 : SROA : 623.669076
+4 : Global Value Numbering : 407.065575
+5 : Loop-Closed SSA Form Pass : 407.065575
+6 : Reassociate expressions : 407.065575
+7 : Value Propagation : 407.065575
+8 : Scalar Replacement of Aggregates (DT) : 367.001672
+9 : Combine redundant instructions : 367.221023
+SpeedUp : 1.851075

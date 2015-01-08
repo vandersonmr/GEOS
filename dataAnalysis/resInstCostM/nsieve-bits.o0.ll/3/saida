@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 40.638614
+2 : Global Value Numbering : 32.044229
+3 : Promote Memory to Register : 32.044229
+4 : Constant Hoisting : 32.044229
+5 : Aggressive Dead Code Elimination : 32.044229
+6 : SROA : 32.044229
+7 : Code sinking : 32.044229
+8 : Aggressive Dead Code Elimination : 32.044229
+9 : Scalar Replacement of Aggregates (DT) : 32.044229
+10 : Constant Hoisting : 32.044229
+11 : Alignment from assumptions : 32.044229
+12 : Add DWARF path discriminators : 32.044229
+13 : Loop-Closed SSA Form Pass : 32.044229
+14 : Scalar Replacement of Aggregates (DT) : 32.044229
+15 : MergedLoadStoreMotion : 32.044229
+16 : Dead Code Elimination : 32.044229
+17 : Add DWARF path discriminators : 32.044229
+18 : Combine redundant instructions : 32.044229
+19 : Alignment from assumptions : 32.044229
+20 : Promote Memory to Register : 32.044229
+SpeedUp : 2.150198

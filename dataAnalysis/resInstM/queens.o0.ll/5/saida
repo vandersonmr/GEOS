@@ -1,0 +1,19 @@
+1 : Loop-Closed SSA Form Pass : 2.167418
+2 : Global Value Numbering : 2.167370
+3 : Loop-Closed SSA Form Pass : 2.167370
+4 : Add DWARF path discriminators : 2.167370
+5 : Assign names to anonymous instructions : 2.167370
+6 : Lower atomic intrinsics to non-atomic form : 2.167370
+7 : SROA : 2.167370
+8 : Dead Code Elimination : 2.167370
+9 : Global Value Numbering : 2.167370
+10 : Code sinking : 2.167370
+11 : Promote Memory to Register : 1.361611
+12 : MemCpy Optimization : 1.203211
+13 : Promote Memory to Register : 1.203211
+14 : Code sinking : 1.203211
+15 : Promote Memory to Register : 1.203211
+16 : Loop Invariant Code Motion : 1.184161
+17 : Code sinking : 1.184161
+18 : Reassociate expressions : 1.200961
+SpeedUp : 1.804736

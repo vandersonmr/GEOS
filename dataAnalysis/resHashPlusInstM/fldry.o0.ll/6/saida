@@ -1,0 +1,14 @@
+1 : Loop-Closed SSA Form Pass : 17789.001314
+2 : SROA : 17789.001314
+3 : Constant Hoisting : 17789.001314
+4 : Code sinking : 17789.001314
+5 : Dead Instruction Elimination : 17789.001274
+6 : Remove redundant instructions : 17789.001274
+7 : Value Propagation : 17789.001274
+8 : Remove redundant instructions : 17789.001274
+9 : Combine redundant instructions : 9628.723503
+10 : Remove redundant instructions : 9628.723503
+11 : Combine redundant instructions : 9628.723503
+12 : Add DWARF path discriminators : 9628.723503
+13 : Promote Memory to Register : 15657.359548
+SpeedUp : 1.136143

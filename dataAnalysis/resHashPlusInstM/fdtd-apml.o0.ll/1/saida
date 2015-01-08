@@ -1,0 +1,14 @@
+1 : Aggressive Dead Code Elimination : 399.469605
+2 : Global Value Numbering : 286.300002
+3 : Add DWARF path discriminators : 286.300002
+4 : MergedLoadStoreMotion : 286.300002
+5 : Promote Memory to Register : 244.361920
+6 : Add DWARF path discriminators : 140.866309
+7 : Value Propagation : 140.866309
+8 : Constant Hoisting : 140.866309
+9 : Dead Instruction Elimination : 140.866309
+10 : Assign names to anonymous instructions : 140.866309
+11 : Reassociate expressions : 140.866309
+12 : Induction Variable Simplification : 106.237779
+13 : Reassociate expressions : 106.250886
+SpeedUp : 3.759683

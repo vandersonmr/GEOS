@@ -1,0 +1,5 @@
+1 : MemCpy Optimization : 0.000001
+2 : Dead Instruction Elimination : 0.000001
+3 : MergedLoadStoreMotion : 0.000001
+4 : Aggressive Dead Code Elimination : 0.000001
+SpeedUp : 1.076923

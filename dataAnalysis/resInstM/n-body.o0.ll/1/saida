@@ -1,0 +1,11 @@
+1 : Dead Instruction Elimination : 113.750028
+2 : Constant Hoisting : 113.750028
+3 : Reassociate expressions : 113.750028
+4 : Loop-Closed SSA Form Pass : 113.750028
+5 : Add DWARF path discriminators : 113.750028
+6 : Induction Variable Simplification : 113.750028
+7 : Global Value Numbering : 113.500029
+8 : Promote Memory to Register : 68.000017
+9 : Add DWARF path discriminators : 64.250015
+10 : Loop-Closed SSA Form Pass : 64.250015
+SpeedUp : 1.770428

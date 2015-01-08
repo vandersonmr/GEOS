@@ -1,0 +1,13 @@
+1 : Add DWARF path discriminators : 73.750483
+2 : Aggressive Dead Code Elimination : 73.750483
+3 : Promote Memory to Register : 44.980823
+4 : Remove redundant instructions : 44.980823
+5 : Dead Code Elimination : 44.980823
+6 : SROA : 44.980823
+7 : Add DWARF path discriminators : 44.980823
+8 : Alignment from assumptions : 44.980823
+9 : Alignment from assumptions : 44.980823
+10 : Assign names to anonymous instructions : 44.980823
+11 : Add DWARF path discriminators : 44.980823
+12 : Loop-Closed SSA Form Pass : 46.770391
+SpeedUp : 1.576863

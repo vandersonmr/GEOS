@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 12.645241
+2 : Loop Invariant Code Motion : 12.645241
+3 : Lower atomic intrinsics to non-atomic form : 12.645241
+4 : Induction Variable Simplification : 12.645241
+5 : Dead Instruction Elimination : 12.645241
+6 : Loop Invariant Code Motion : 12.645241
+7 : Dead Code Elimination : 12.645241
+8 : Alignment from assumptions : 12.645241
+9 : Dead Code Elimination : 12.645241
+10 : Assign names to anonymous instructions : 12.645241
+11 : Value Propagation : 12.645241
+12 : MemCpy Optimization : 12.645241
+13 : Global Value Numbering : 1.604961
+14 : MemCpy Optimization : 1.604961
+15 : Combine redundant instructions : 1.284641
+16 : Alignment from assumptions : 1.284641
+17 : Scalar Replacement of Aggregates (DT) : 0.962961
+18 : Dead Code Elimination : 0.962281
+19 : Combine redundant instructions : 0.962281
+20 : Aggressive Dead Code Elimination : 0.962281
+SpeedUp : 13.140906

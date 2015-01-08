@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 35.739784
+2 : Dead Instruction Elimination : 35.739784
+3 : MergedLoadStoreMotion : 35.739784
+4 : Dead Code Elimination : 35.739784
+5 : Code sinking : 35.739784
+6 : Loop-Closed SSA Form Pass : 35.739784
+7 : Loop-Closed SSA Form Pass : 35.739784
+8 : Combine redundant instructions : 28.712256
+9 : Loop-Closed SSA Form Pass : 28.712256
+10 : Loop Invariant Code Motion : 27.712756
+11 : SROA : 27.712756
+12 : Constant Hoisting : 27.712756
+13 : Assign names to anonymous instructions : 27.712756
+14 : Add DWARF path discriminators : 27.712756
+15 : Scalar Replacement of Aggregates (DT) : 27.712756
+16 : Scalar Replacement of Aggregates (DT) : 27.712756
+17 : Early CSE : 25.703757
+18 : MemCpy Optimization : 25.703757
+19 : Scalar Replacement of Aggregates (DT) : 25.703757
+20 : Dead Code Elimination : 25.703757
+SpeedUp : 2.331919

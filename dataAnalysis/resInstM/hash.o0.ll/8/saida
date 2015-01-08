@@ -1,0 +1,12 @@
+1 : Loop-Closed SSA Form Pass : 50.519497
+2 : Reassociate expressions : 50.519497
+3 : Global Value Numbering : 49.744406
+4 : Assign names to anonymous instructions : 49.744406
+5 : SROA : 49.744406
+6 : Dead Instruction Elimination : 49.744406
+7 : Aggressive Dead Code Elimination : 49.744406
+8 : Dead Code Elimination : 49.744406
+9 : Promote Memory to Register : 31.806058
+10 : Alignment from assumptions : 31.737311
+11 : Loop Invariant Code Motion : 35.606397
+SpeedUp : 1.418832

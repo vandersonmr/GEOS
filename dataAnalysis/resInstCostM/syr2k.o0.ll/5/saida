@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 591.785657
+2 : Promote Memory to Register : 355.006249
+3 : Global Value Numbering : 11.293809
+4 : Remove redundant instructions : 11.293809
+5 : Value Propagation : 11.293809
+6 : Code sinking : 11.293809
+7 : Promote Memory to Register : 11.293809
+8 : Scalar Replacement of Aggregates (DT) : 11.293809
+9 : Loop Invariant Code Motion : 11.199437
+10 : Loop-Closed SSA Form Pass : 11.199437
+11 : Remove redundant instructions : 11.199437
+12 : Global Value Numbering : 11.199437
+13 : Value Propagation : 11.199437
+14 : Scalar Replacement of Aggregates (DT) : 11.199437
+15 : Combine redundant instructions : 11.199345
+16 : Code sinking : 11.199345
+17 : Combine redundant instructions : 11.199345
+18 : Code sinking : 11.199345
+19 : Value Propagation : 11.199345
+20 : Add DWARF path discriminators : 11.199345
+SpeedUp : 52.841096

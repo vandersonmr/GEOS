@@ -1,0 +1,4 @@
+1 : MergedLoadStoreMotion : 0.000003
+2 : Assign names to anonymous instructions : 0.000002
+3 : Early CSE : 0.000003
+SpeedUp : 1.070175

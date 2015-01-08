@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 134.130473
+2 : Loop Invariant Code Motion : 134.130473
+3 : Code sinking : 134.130473
+4 : Value Propagation : 134.130473
+5 : Aggressive Dead Code Elimination : 134.130473
+6 : Alignment from assumptions : 134.130473
+7 : Early CSE : 82.453857
+8 : Remove redundant instructions : 82.453857
+9 : Assign names to anonymous instructions : 82.453857
+10 : Remove redundant instructions : 82.453857
+11 : Dead Code Elimination : 82.453857
+12 : Value Propagation : 82.453857
+13 : MergedLoadStoreMotion : 82.453857
+14 : Scalar Replacement of Aggregates (DT) : 60.450778
+15 : Loop-Closed SSA Form Pass : 38.428240
+16 : Assign names to anonymous instructions : 38.428240
+17 : Remove redundant instructions : 38.428240
+18 : Alignment from assumptions : 38.428240
+19 : Combine redundant instructions : 35.722413
+20 : MergedLoadStoreMotion : 35.722413
+SpeedUp : 3.754799

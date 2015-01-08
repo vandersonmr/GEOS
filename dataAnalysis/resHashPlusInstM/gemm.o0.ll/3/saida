@@ -1,0 +1,4 @@
+1 : Dead Code Elimination : 1878.221205
+2 : Code sinking : 1878.221205
+3 : Remove redundant instructions : 1878.221205
+SpeedUp : 1.000000

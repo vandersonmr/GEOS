@@ -1,0 +1,21 @@
+1 : Constant Hoisting : 113.750028
+2 : Add DWARF path discriminators : 113.750028
+3 : Global Value Numbering : 113.500029
+4 : MergedLoadStoreMotion : 113.500029
+5 : Scalar Replacement of Aggregates (DT) : 68.000017
+6 : Induction Variable Simplification : 64.550015
+7 : Alignment from assumptions : 64.250015
+8 : Lower atomic intrinsics to non-atomic form : 64.250015
+9 : Assign names to anonymous instructions : 64.250015
+10 : Loop Invariant Code Motion : 61.100015
+11 : SROA : 61.100015
+12 : Combine redundant instructions : 59.800013
+13 : Dead Instruction Elimination : 59.800013
+14 : Assign names to anonymous instructions : 59.800013
+15 : Global Value Numbering : 59.800013
+16 : Remove redundant instructions : 59.800013
+17 : Dead Code Elimination : 59.800013
+18 : Scalar Replacement of Aggregates (DT) : 59.800013
+19 : MergedLoadStoreMotion : 59.800013
+20 : Value Propagation : 59.800013
+SpeedUp : 1.902174

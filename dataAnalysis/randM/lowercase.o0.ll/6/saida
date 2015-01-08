@@ -1,0 +1,4 @@
+1 : MergedLoadStoreMotion : 0.000001
+2 : SROA : 0.000001
+3 : Constant Hoisting : 0.000001
+SpeedUp : 0.971014

@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 688.737302
+2 : Assign names to anonymous instructions : 688.737302
+3 : Constant Hoisting : 688.737302
+4 : MergedLoadStoreMotion : 688.737302
+5 : SROA : 688.737302
+6 : Combine redundant instructions : 591.901165
+7 : Induction Variable Simplification : 591.901165
+8 : Combine redundant instructions : 591.901165
+9 : Dead Code Elimination : 591.901165
+10 : Scalar Replacement of Aggregates (DT) : 387.439012
+11 : Value Propagation : 258.443234
+12 : Constant Hoisting : 258.443234
+13 : Lower atomic intrinsics to non-atomic form : 258.443234
+14 : MemCpy Optimization : 258.443234
+15 : Dead Instruction Elimination : 258.443234
+16 : SROA : 258.443234
+17 : Global Value Numbering : 32.758273
+18 : Alignment from assumptions : 32.758273
+19 : Lower atomic intrinsics to non-atomic form : 32.758273
+20 : Loop Invariant Code Motion : 32.726795
+SpeedUp : 21.045058

@@ -1,0 +1,21 @@
+1 : Loop Invariant Code Motion : 2.500002
+2 : Alignment from assumptions : 2.500002
+3 : MergedLoadStoreMotion : 2.500002
+4 : Early CSE : 2.200002
+5 : Lower atomic intrinsics to non-atomic form : 2.200002
+6 : Scalar Replacement of Aggregates (DT) : 1.100001
+7 : Aggressive Dead Code Elimination : 1.000001
+8 : Aggressive Dead Code Elimination : 1.000001
+9 : Loop Invariant Code Motion : 1.000001
+10 : Reassociate expressions : 1.000001
+11 : Remove redundant instructions : 1.000001
+12 : Aggressive Dead Code Elimination : 1.000001
+13 : Induction Variable Simplification : 1.000001
+14 : Loop Invariant Code Motion : 1.000001
+15 : Alignment from assumptions : 1.000001
+16 : Assign names to anonymous instructions : 1.000001
+17 : Value Propagation : 1.000001
+18 : Alignment from assumptions : 1.000001
+19 : Loop Invariant Code Motion : 1.000001
+20 : Loop Invariant Code Motion : 1.000001
+SpeedUp : 2.499999

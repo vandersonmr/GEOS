@@ -1,0 +1,4 @@
+1 : Loop Invariant Code Motion : 0.000000
+2 : SROA : 0.000000
+3 : MemCpy Optimization : 0.000000
+SpeedUp : 1.250000

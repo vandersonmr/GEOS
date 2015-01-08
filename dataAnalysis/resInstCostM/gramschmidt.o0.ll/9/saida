@@ -1,0 +1,21 @@
+1 : Value Propagation : 39.205364
+2 : Global Value Numbering : 25.035380
+3 : Dead Code Elimination : 25.035380
+4 : Induction Variable Simplification : 25.035380
+5 : Global Value Numbering : 25.035380
+6 : Assign names to anonymous instructions : 25.035380
+7 : Assign names to anonymous instructions : 25.035380
+8 : Add DWARF path discriminators : 25.035380
+9 : Early CSE : 18.965318
+10 : MergedLoadStoreMotion : 18.965318
+11 : Reassociate expressions : 18.965318
+12 : Loop Invariant Code Motion : 18.965318
+13 : Code sinking : 18.965318
+14 : Code sinking : 18.965318
+15 : Combine redundant instructions : 14.907237
+16 : Aggressive Dead Code Elimination : 14.907237
+17 : Combine redundant instructions : 14.907237
+18 : Combine redundant instructions : 14.907237
+19 : Remove redundant instructions : 14.907237
+20 : Loop Invariant Code Motion : 14.907237
+SpeedUp : 2.629955

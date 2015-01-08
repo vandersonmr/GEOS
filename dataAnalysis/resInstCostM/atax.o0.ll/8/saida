@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 10.883921
+2 : Combine redundant instructions : 9.443361
+3 : Alignment from assumptions : 9.443361
+4 : Constant Hoisting : 9.443361
+5 : Remove redundant instructions : 9.443361
+6 : Reassociate expressions : 9.443361
+7 : Assign names to anonymous instructions : 9.443361
+8 : Constant Hoisting : 9.443361
+9 : Dead Instruction Elimination : 9.443361
+10 : Scalar Replacement of Aggregates (DT) : 5.441840
+11 : Assign names to anonymous instructions : 5.281840
+12 : Early CSE : 4.641680
+13 : Combine redundant instructions : 4.641680
+14 : Add DWARF path discriminators : 4.641680
+15 : Dead Code Elimination : 4.641680
+16 : Early CSE : 4.641680
+17 : Lower atomic intrinsics to non-atomic form : 4.641680
+18 : SROA : 4.641680
+19 : SROA : 4.641680
+20 : Promote Memory to Register : 4.641680
+SpeedUp : 2.344823

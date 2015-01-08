@@ -1,0 +1,8 @@
+1 : Assign names to anonymous instructions : 32.100803
+2 : Dead Code Elimination : 32.100803
+3 : Code sinking : 32.100803
+4 : Alignment from assumptions : 32.100803
+5 : Constant Hoisting : 32.100803
+6 : SROA : 32.100803
+7 : Reassociate expressions : 32.105804
+SpeedUp : 0.999844

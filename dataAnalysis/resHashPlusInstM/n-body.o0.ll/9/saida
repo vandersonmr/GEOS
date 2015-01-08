@@ -1,0 +1,10 @@
+1 : Combine redundant instructions : 446.760249
+2 : Induction Variable Simplification : 446.760249
+3 : Alignment from assumptions : 446.760249
+4 : Alignment from assumptions : 446.760249
+5 : Dead Code Elimination : 446.760249
+6 : Lower atomic intrinsics to non-atomic form : 446.760249
+7 : Combine redundant instructions : 446.760249
+8 : Code sinking : 446.760249
+9 : Aggressive Dead Code Elimination : 446.760249
+SpeedUp : 1.028929

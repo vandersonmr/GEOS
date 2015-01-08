@@ -1,0 +1,4 @@
+1 : Code sinking : 0.000000
+2 : Aggressive Dead Code Elimination : 0.000000
+3 : Induction Variable Simplification : 0.000001
+SpeedUp : 1.000000

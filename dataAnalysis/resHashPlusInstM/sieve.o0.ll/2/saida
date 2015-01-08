@@ -1,0 +1,5 @@
+1 : Code sinking : 6884.016552
+2 : Combine redundant instructions : 6659.481713
+3 : Combine redundant instructions : 6659.481713
+4 : Global Value Numbering : 8879.305583
+SpeedUp : 0.775288

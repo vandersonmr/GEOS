@@ -1,0 +1,9 @@
+1 : Dead Code Elimination : 0.144960
+2 : Code sinking : 0.144960
+3 : Scalar Replacement of Aggregates (DT) : 0.074669
+4 : Alignment from assumptions : 0.074669
+5 : Add DWARF path discriminators : 0.074669
+6 : Aggressive Dead Code Elimination : 0.074669
+7 : MemCpy Optimization : 0.074669
+8 : Reassociate expressions : 0.074669
+SpeedUp : 1.941369

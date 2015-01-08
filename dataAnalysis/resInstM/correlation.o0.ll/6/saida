@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 246.551826
+2 : Value Propagation : 246.551826
+3 : Dead Code Elimination : 246.551826
+4 : Reassociate expressions : 246.551826
+5 : Dead Instruction Elimination : 246.551826
+6 : Assign names to anonymous instructions : 246.551826
+7 : Add DWARF path discriminators : 246.551826
+8 : Reassociate expressions : 246.551826
+9 : Dead Instruction Elimination : 246.551826
+10 : Dead Instruction Elimination : 246.551826
+11 : Dead Code Elimination : 246.551826
+12 : MemCpy Optimization : 246.551826
+13 : Dead Code Elimination : 246.551826
+14 : Assign names to anonymous instructions : 246.551826
+15 : Dead Instruction Elimination : 246.551826
+16 : Promote Memory to Register : 161.016175
+17 : MergedLoadStoreMotion : 161.016175
+18 : Remove redundant instructions : 161.016175
+19 : Scalar Replacement of Aggregates (DT) : 161.016175
+20 : SROA : 161.016175
+SpeedUp : 1.531224

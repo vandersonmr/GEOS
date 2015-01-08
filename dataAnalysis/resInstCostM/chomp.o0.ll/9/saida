@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 35.857058
+2 : Assign names to anonymous instructions : 35.857058
+3 : Code sinking : 35.857058
+4 : Dead Instruction Elimination : 35.857058
+5 : Add DWARF path discriminators : 35.857058
+6 : Global Value Numbering : 35.812236
+7 : Scalar Replacement of Aggregates (DT) : 16.827694
+8 : Alignment from assumptions : 16.708695
+9 : Dead Code Elimination : 16.708695
+10 : Lower atomic intrinsics to non-atomic form : 16.708695
+11 : MemCpy Optimization : 16.708695
+12 : Aggressive Dead Code Elimination : 16.708695
+13 : Combine redundant instructions : 15.757118
+14 : Alignment from assumptions : 15.757118
+15 : Reassociate expressions : 15.757118
+16 : Value Propagation : 15.757118
+17 : SROA : 15.757118
+18 : Promote Memory to Register : 15.757118
+19 : Loop-Closed SSA Form Pass : 15.757118
+20 : Alignment from assumptions : 15.757118
+SpeedUp : 2.275610

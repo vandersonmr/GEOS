@@ -1,0 +1,7 @@
+1 : Scalar Replacement of Aggregates (DT) : 0.000002
+2 : Dead Instruction Elimination : 0.000002
+3 : SROA : 0.000002
+4 : MemCpy Optimization : 0.000002
+5 : Lower atomic intrinsics to non-atomic form : 0.000002
+6 : Scalar Replacement of Aggregates (DT) : 0.000002
+SpeedUp : 1.192708

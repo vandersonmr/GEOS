@@ -1,0 +1,21 @@
+1 : Loop Invariant Code Motion : 12211.589782
+2 : Early CSE : 12174.389781
+3 : SROA : 12174.389781
+4 : MemCpy Optimization : 12174.389781
+5 : Lower atomic intrinsics to non-atomic form : 12174.389781
+6 : Alignment from assumptions : 12174.389781
+7 : Constant Hoisting : 12174.389781
+8 : Dead Code Elimination : 12174.389781
+9 : MergedLoadStoreMotion : 12174.389781
+10 : Constant Hoisting : 12174.389781
+11 : Alignment from assumptions : 12174.389781
+12 : MemCpy Optimization : 12174.389781
+13 : Aggressive Dead Code Elimination : 12174.389781
+14 : Constant Hoisting : 12174.389781
+15 : Loop-Closed SSA Form Pass : 12174.389781
+16 : Global Value Numbering : 12160.829279
+17 : Loop Invariant Code Motion : 12160.829279
+18 : Alignment from assumptions : 12160.829279
+19 : Value Propagation : 12160.829279
+20 : Scalar Replacement of Aggregates (DT) : 17098.568816
+SpeedUp : 0.714188

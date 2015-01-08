@@ -1,0 +1,12 @@
+1 : Constant Hoisting : 1.627812
+2 : Constant Hoisting : 1.627812
+3 : Scalar Replacement of Aggregates (DT) : 0.816354
+4 : Dead Code Elimination : 0.816354
+5 : Combine redundant instructions : 0.816354
+6 : Loop Invariant Code Motion : 0.803654
+7 : Promote Memory to Register : 0.803654
+8 : Combine redundant instructions : 0.803654
+9 : Constant Hoisting : 0.803654
+10 : Scalar Replacement of Aggregates (DT) : 0.803654
+11 : Reassociate expressions : 0.853104
+SpeedUp : 1.908105

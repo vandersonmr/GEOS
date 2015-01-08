@@ -1,0 +1,16 @@
+1 : Promote Memory to Register : 105.060170
+2 : Remove redundant instructions : 105.060160
+3 : Dead Instruction Elimination : 105.060160
+4 : Constant Hoisting : 105.060160
+5 : Combine redundant instructions : 90.060160
+6 : Remove redundant instructions : 90.060160
+7 : MemCpy Optimization : 90.060160
+8 : Combine redundant instructions : 90.060160
+9 : Loop Invariant Code Motion : 90.060160
+10 : Constant Hoisting : 90.060160
+11 : Value Propagation : 90.060160
+12 : Promote Memory to Register : 90.060160
+13 : Dead Code Elimination : 90.060160
+14 : MemCpy Optimization : 90.060160
+15 : Global Value Numbering : 120.060090
+SpeedUp : 1.625439

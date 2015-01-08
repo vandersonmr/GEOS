@@ -1,0 +1,4 @@
+1 : MergedLoadStoreMotion : 0.000002
+2 : Scalar Replacement of Aggregates (DT) : 0.000002
+3 : Lower atomic intrinsics to non-atomic form : 0.000001
+SpeedUp : 1.244275

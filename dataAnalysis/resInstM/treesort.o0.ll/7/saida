@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 2.628085
+2 : Promote Memory to Register : 1.708604
+3 : Global Value Numbering : 1.552607
+4 : Induction Variable Simplification : 1.542606
+5 : Lower atomic intrinsics to non-atomic form : 1.542606
+6 : Induction Variable Simplification : 1.542606
+7 : Combine redundant instructions : 1.522602
+8 : Early CSE : 1.459741
+9 : Promote Memory to Register : 1.459741
+10 : Scalar Replacement of Aggregates (DT) : 1.459741
+11 : Promote Memory to Register : 1.459741
+12 : Constant Hoisting : 1.459741
+13 : Assign names to anonymous instructions : 1.459741
+14 : Induction Variable Simplification : 1.459741
+15 : Combine redundant instructions : 1.459741
+16 : Dead Code Elimination : 1.459741
+17 : Alignment from assumptions : 1.459741
+18 : Aggressive Dead Code Elimination : 1.459741
+19 : Early CSE : 1.459741
+20 : Value Propagation : 1.459741
+SpeedUp : 1.800378

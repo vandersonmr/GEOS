@@ -1,0 +1,21 @@
+1 : Early CSE : 71.242300
+2 : Reassociate expressions : 71.242300
+3 : Constant Hoisting : 71.242300
+4 : Code sinking : 70.348170
+5 : Scalar Replacement of Aggregates (DT) : 35.056637
+6 : Early CSE : 35.056637
+7 : Constant Hoisting : 35.056637
+8 : Assign names to anonymous instructions : 35.056637
+9 : Loop Invariant Code Motion : 35.056637
+10 : MergedLoadStoreMotion : 35.056637
+11 : Remove redundant instructions : 35.056637
+12 : MemCpy Optimization : 35.056637
+13 : Dead Code Elimination : 35.056637
+14 : Code sinking : 35.056637
+15 : Alignment from assumptions : 35.056637
+16 : Remove redundant instructions : 35.056637
+17 : MergedLoadStoreMotion : 35.056637
+18 : Constant Hoisting : 35.056637
+19 : Loop-Closed SSA Form Pass : 35.056637
+20 : Alignment from assumptions : 35.056637
+SpeedUp : 2.333225

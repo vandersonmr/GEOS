@@ -1,0 +1,4 @@
+1 : Alignment from assumptions : 92.579429
+2 : Lower atomic intrinsics to non-atomic form : 92.579429
+3 : Loop Invariant Code Motion : 92.579429
+SpeedUp : 1.000000

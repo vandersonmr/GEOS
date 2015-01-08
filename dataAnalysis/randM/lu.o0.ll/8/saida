@@ -1,0 +1,4 @@
+1 : Combine redundant instructions : 0.000002
+2 : Scalar Replacement of Aggregates (DT) : 0.000002
+3 : Aggressive Dead Code Elimination : 0.000001
+SpeedUp : 1.244275

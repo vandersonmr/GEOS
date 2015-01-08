@@ -1,0 +1,16 @@
+1 : Loop Invariant Code Motion : 533.000000
+2 : SROA : 533.000000
+3 : Dead Instruction Elimination : 533.000000
+4 : Scalar Replacement of Aggregates (DT) : 331.000000
+5 : SROA : 307.000000
+6 : SROA : 304.000000
+7 : Global Value Numbering : 248.000000
+8 : Add DWARF path discriminators : 245.000000
+9 : Reassociate expressions : 245.000000
+10 : Aggressive Dead Code Elimination : 245.000000
+11 : Early CSE : 236.000000
+12 : Scalar Replacement of Aggregates (DT) : 236.000000
+13 : Value Propagation : 236.000000
+14 : Global Value Numbering : 236.000000
+15 : Loop-Closed SSA Form Pass : 238.000000
+SpeedUp : 2.239496

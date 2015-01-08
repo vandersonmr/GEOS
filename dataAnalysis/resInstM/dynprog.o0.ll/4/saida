@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 160.971994
+2 : Alignment from assumptions : 160.971994
+3 : SROA : 160.971994
+4 : Code sinking : 160.971994
+5 : Assign names to anonymous instructions : 160.971994
+6 : Code sinking : 160.971994
+7 : Add DWARF path discriminators : 160.971994
+8 : Combine redundant instructions : 131.512216
+9 : Assign names to anonymous instructions : 131.512216
+10 : MergedLoadStoreMotion : 131.512216
+11 : Value Propagation : 131.512216
+12 : Dead Instruction Elimination : 131.512216
+13 : Combine redundant instructions : 131.512216
+14 : MemCpy Optimization : 131.512216
+15 : Code sinking : 131.512216
+16 : Loop-Closed SSA Form Pass : 131.512216
+17 : Loop Invariant Code Motion : 131.512216
+18 : Dead Instruction Elimination : 131.512216
+19 : MergedLoadStoreMotion : 131.512216
+20 : Dead Instruction Elimination : 131.512216
+SpeedUp : 1.224008

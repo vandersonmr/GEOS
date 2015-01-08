@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 246.181316
+2 : Assign names to anonymous instructions : 246.181316
+3 : SROA : 246.181316
+4 : Add DWARF path discriminators : 246.181316
+5 : Early CSE : 175.971146
+6 : MemCpy Optimization : 175.971146
+7 : Alignment from assumptions : 175.971146
+8 : Early CSE : 175.971146
+9 : Lower atomic intrinsics to non-atomic form : 175.971146
+10 : Aggressive Dead Code Elimination : 175.971146
+11 : Dead Code Elimination : 175.971146
+12 : Lower atomic intrinsics to non-atomic form : 175.971146
+13 : Remove redundant instructions : 175.971146
+14 : SROA : 175.971146
+15 : Combine redundant instructions : 150.866016
+16 : Induction Variable Simplification : 150.866016
+17 : Alignment from assumptions : 150.866016
+18 : Code sinking : 150.866016
+19 : Constant Hoisting : 150.866016
+20 : Dead Code Elimination : 150.866016
+SpeedUp : 1.631788

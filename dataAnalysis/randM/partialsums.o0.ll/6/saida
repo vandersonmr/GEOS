@@ -1,0 +1,5 @@
+1 : Lower atomic intrinsics to non-atomic form : 0.000000
+2 : Value Propagation : 0.000000
+3 : Scalar Replacement of Aggregates (DT) : 0.000000
+4 : Dead Instruction Elimination : 0.000001
+SpeedUp : 0.900000

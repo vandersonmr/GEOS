@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 318.750000
+2 : Reassociate expressions : 318.750000
+3 : Dead Code Elimination : 318.750000
+4 : Loop-Closed SSA Form Pass : 318.750000
+5 : SROA : 318.750000
+6 : Loop-Closed SSA Form Pass : 318.750000
+7 : Reassociate expressions : 318.750000
+8 : Lower atomic intrinsics to non-atomic form : 318.750000
+9 : Value Propagation : 318.750000
+10 : Loop-Closed SSA Form Pass : 318.750000
+11 : Constant Hoisting : 318.750000
+12 : Alignment from assumptions : 318.750000
+13 : Early CSE : 253.125000
+14 : Loop Invariant Code Motion : 253.125000
+15 : Global Value Numbering : 250.000000
+16 : Constant Hoisting : 250.000000
+17 : Early CSE : 250.000000
+18 : Value Propagation : 250.000000
+19 : Alignment from assumptions : 250.000000
+20 : SROA : 250.000000
+SpeedUp : 1.275000

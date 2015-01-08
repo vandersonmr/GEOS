@@ -1,0 +1,5 @@
+1 : Scalar Replacement of Aggregates (DT) : 0.000000
+2 : Promote Memory to Register : 0.000000
+3 : MemCpy Optimization : 0.000001
+4 : Assign names to anonymous instructions : 0.000000
+SpeedUp : 1.181818

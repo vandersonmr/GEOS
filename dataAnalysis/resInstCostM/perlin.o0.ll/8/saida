@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 279.447877
+2 : Reassociate expressions : 279.447877
+3 : Dead Instruction Elimination : 279.447877
+4 : Code sinking : 279.447877
+5 : Induction Variable Simplification : 279.447877
+6 : Promote Memory to Register : 111.779157
+7 : Promote Memory to Register : 111.779157
+8 : Promote Memory to Register : 111.779157
+9 : Loop-Closed SSA Form Pass : 111.779157
+10 : Global Value Numbering : 105.994993
+11 : Loop Invariant Code Motion : 105.994993
+12 : MemCpy Optimization : 105.994993
+13 : Remove redundant instructions : 105.994993
+14 : Scalar Replacement of Aggregates (DT) : 105.994993
+15 : Remove redundant instructions : 105.994993
+16 : Value Propagation : 105.994993
+17 : MergedLoadStoreMotion : 105.994993
+18 : Value Propagation : 105.994993
+19 : Scalar Replacement of Aggregates (DT) : 105.994993
+20 : SROA : 105.994993
+SpeedUp : 2.636425

@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 188.549858
+2 : Remove redundant instructions : 188.549858
+3 : Dead Code Elimination : 188.549858
+4 : Assign names to anonymous instructions : 188.549858
+5 : Early CSE : 140.121406
+6 : Early CSE : 140.121406
+7 : MergedLoadStoreMotion : 140.121406
+8 : Loop-Closed SSA Form Pass : 140.121406
+9 : Remove redundant instructions : 140.121406
+10 : Dead Code Elimination : 140.121406
+11 : Scalar Replacement of Aggregates (DT) : 107.772764
+12 : Loop-Closed SSA Form Pass : 107.699292
+13 : MergedLoadStoreMotion : 107.699292
+14 : MemCpy Optimization : 107.699292
+15 : Induction Variable Simplification : 91.587973
+16 : Promote Memory to Register : 91.577488
+17 : MergedLoadStoreMotion : 91.577488
+18 : Value Propagation : 91.577488
+19 : Reassociate expressions : 91.577488
+20 : MergedLoadStoreMotion : 91.577488
+SpeedUp : 2.058911

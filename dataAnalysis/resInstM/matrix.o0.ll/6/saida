@@ -1,0 +1,8 @@
+1 : Value Propagation : 1251.300070
+2 : Remove redundant instructions : 1251.240070
+3 : Dead Code Elimination : 1251.240070
+4 : Value Propagation : 1251.240070
+5 : Loop Invariant Code Motion : 1251.240070
+6 : MergedLoadStoreMotion : 1251.240070
+7 : Global Value Numbering : 1429.410081
+SpeedUp : 0.875396

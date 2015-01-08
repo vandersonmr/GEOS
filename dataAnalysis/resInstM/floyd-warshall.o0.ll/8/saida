@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 634.074512
+2 : Scalar Replacement of Aggregates (DT) : 419.137188
+3 : Dead Instruction Elimination : 419.137188
+4 : Loop-Closed SSA Form Pass : 419.137188
+5 : Value Propagation : 419.137188
+6 : MemCpy Optimization : 419.137188
+7 : Lower atomic intrinsics to non-atomic form : 419.137188
+8 : Global Value Numbering : 258.065265
+9 : Loop-Closed SSA Form Pass : 258.065265
+10 : SROA : 258.065265
+11 : Loop-Closed SSA Form Pass : 258.065265
+12 : Aggressive Dead Code Elimination : 258.065265
+13 : Lower atomic intrinsics to non-atomic form : 258.065265
+14 : Value Propagation : 258.065265
+15 : Global Value Numbering : 258.065265
+16 : Lower atomic intrinsics to non-atomic form : 258.065265
+17 : Reassociate expressions : 258.065265
+18 : Add DWARF path discriminators : 258.065265
+19 : Dead Code Elimination : 258.065265
+20 : Constant Hoisting : 258.065265
+SpeedUp : 2.457032

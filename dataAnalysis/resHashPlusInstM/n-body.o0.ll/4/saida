@@ -1,0 +1,11 @@
+1 : Constant Hoisting : 459.684477
+2 : MemCpy Optimization : 459.684477
+3 : MergedLoadStoreMotion : 459.684477
+4 : Scalar Replacement of Aggregates (DT) : 394.045401
+5 : Dead Instruction Elimination : 394.045401
+6 : Promote Memory to Register : 394.045401
+7 : Lower atomic intrinsics to non-atomic form : 394.045401
+8 : Alignment from assumptions : 394.045401
+9 : MemCpy Optimization : 394.045401
+10 : Loop Invariant Code Motion : 430.907885
+SpeedUp : 1.066781

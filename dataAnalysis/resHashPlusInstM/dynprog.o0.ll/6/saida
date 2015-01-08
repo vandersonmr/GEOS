@@ -1,0 +1,11 @@
+1 : Assign names to anonymous instructions : 591.823013
+2 : SROA : 591.823013
+3 : Value Propagation : 591.823013
+4 : MergedLoadStoreMotion : 591.823013
+5 : Alignment from assumptions : 591.823013
+6 : Early CSE : 414.722301
+7 : Early CSE : 414.722301
+8 : Combine redundant instructions : 374.777740
+9 : Constant Hoisting : 374.777740
+10 : Scalar Replacement of Aggregates (DT) : 386.474582
+SpeedUp : 1.531337

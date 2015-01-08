@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 1878.221205
+2 : Early CSE : 1646.577930
+3 : Aggressive Dead Code Elimination : 1646.577930
+4 : MemCpy Optimization : 1646.577930
+5 : Dead Code Elimination : 1646.577930
+6 : Remove redundant instructions : 1646.577930
+7 : Value Propagation : 1646.577930
+8 : Assign names to anonymous instructions : 1646.577930
+9 : Loop-Closed SSA Form Pass : 1646.577930
+10 : Remove redundant instructions : 1646.577930
+11 : Alignment from assumptions : 1646.577930
+12 : Value Propagation : 1646.577930
+13 : Combine redundant instructions : 1474.809777
+14 : MergedLoadStoreMotion : 1474.809777
+15 : Lower atomic intrinsics to non-atomic form : 1474.809777
+16 : Early CSE : 1474.809777
+17 : Value Propagation : 1474.809777
+18 : Reassociate expressions : 1474.809777
+19 : Dead Instruction Elimination : 1474.809777
+20 : Early CSE : 1474.809777
+SpeedUp : 1.273535

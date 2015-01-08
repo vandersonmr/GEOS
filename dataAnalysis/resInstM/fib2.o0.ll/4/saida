@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 189.380358
+2 : SROA : 189.380358
+3 : SROA : 189.380358
+4 : Global Value Numbering : 189.380358
+5 : Remove redundant instructions : 189.380358
+6 : Dead Code Elimination : 189.380358
+7 : Reassociate expressions : 189.380358
+8 : Constant Hoisting : 189.380358
+9 : Combine redundant instructions : 140.281747
+10 : Dead Instruction Elimination : 140.281747
+11 : Loop-Closed SSA Form Pass : 140.281747
+12 : Promote Memory to Register : 98.197223
+13 : Dead Code Elimination : 98.197223
+14 : MemCpy Optimization : 98.197223
+15 : Value Propagation : 98.197223
+16 : Loop Invariant Code Motion : 98.197223
+17 : Assign names to anonymous instructions : 98.197223
+18 : Dead Code Elimination : 98.197223
+19 : Alignment from assumptions : 98.197223
+20 : Constant Hoisting : 98.197223
+SpeedUp : 1.928571

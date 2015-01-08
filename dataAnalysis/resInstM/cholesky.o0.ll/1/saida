@@ -1,0 +1,21 @@
+1 : SROA : 73.750483
+2 : Combine redundant instructions : 64.755411
+3 : MergedLoadStoreMotion : 64.755411
+4 : Value Propagation : 64.755411
+5 : Code sinking : 64.755411
+6 : Remove redundant instructions : 64.755411
+7 : Promote Memory to Register : 39.580642
+8 : Constant Hoisting : 39.528162
+9 : Reassociate expressions : 39.528162
+10 : Remove redundant instructions : 39.528162
+11 : Combine redundant instructions : 39.528162
+12 : Assign names to anonymous instructions : 39.528162
+13 : MergedLoadStoreMotion : 39.528162
+14 : Promote Memory to Register : 39.528162
+15 : Code sinking : 39.528162
+16 : Lower atomic intrinsics to non-atomic form : 39.528162
+17 : Value Propagation : 39.528162
+18 : Code sinking : 39.528162
+19 : Scalar Replacement of Aggregates (DT) : 39.528162
+20 : Value Propagation : 39.528162
+SpeedUp : 1.865771

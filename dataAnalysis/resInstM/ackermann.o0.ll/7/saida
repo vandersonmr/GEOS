@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 0.473803
+2 : Dead Code Elimination : 0.473803
+3 : MergedLoadStoreMotion : 0.473803
+4 : Combine redundant instructions : 0.445923
+5 : MergedLoadStoreMotion : 0.445923
+6 : Scalar Replacement of Aggregates (DT) : 0.209042
+7 : Lower atomic intrinsics to non-atomic form : 0.209042
+8 : Code sinking : 0.209042
+9 : Combine redundant instructions : 0.209042
+10 : Value Propagation : 0.209042
+11 : Dead Instruction Elimination : 0.209042
+12 : Add DWARF path discriminators : 0.209042
+13 : Aggressive Dead Code Elimination : 0.209042
+14 : Dead Code Elimination : 0.209042
+15 : Alignment from assumptions : 0.209042
+16 : Dead Code Elimination : 0.209042
+17 : Remove redundant instructions : 0.209042
+18 : Induction Variable Simplification : 0.209042
+19 : MergedLoadStoreMotion : 0.209042
+20 : SROA : 0.209042
+SpeedUp : 2.266550

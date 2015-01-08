@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 2.312502
+2 : Value Propagation : 2.312502
+3 : Promote Memory to Register : 1.475002
+4 : Reassociate expressions : 1.450001
+5 : Remove redundant instructions : 1.450001
+6 : Value Propagation : 1.450001
+7 : Reassociate expressions : 1.450001
+8 : Dead Instruction Elimination : 1.450001
+9 : Dead Instruction Elimination : 1.450001
+10 : Promote Memory to Register : 1.450001
+11 : Alignment from assumptions : 1.450001
+12 : Add DWARF path discriminators : 1.450001
+13 : Dead Code Elimination : 1.450001
+14 : Lower atomic intrinsics to non-atomic form : 1.450001
+15 : Dead Code Elimination : 1.450001
+16 : Dead Code Elimination : 1.450001
+17 : Constant Hoisting : 1.450001
+18 : Dead Code Elimination : 1.450001
+19 : MergedLoadStoreMotion : 1.450001
+20 : Reassociate expressions : 1.450001
+SpeedUp : 1.784484

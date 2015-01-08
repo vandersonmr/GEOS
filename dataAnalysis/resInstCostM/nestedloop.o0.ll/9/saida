@@ -1,0 +1,6 @@
+1 : Constant Hoisting : 589.420269
+2 : SROA : 589.420269
+3 : Alignment from assumptions : 589.420269
+4 : Reassociate expressions : 589.420269
+5 : Global Value Numbering : 1170.322424
+SpeedUp : 0.503639

@@ -1,0 +1,21 @@
+1 : SROA : 10.244081
+2 : MemCpy Optimization : 10.244081
+3 : Induction Variable Simplification : 10.244081
+4 : MergedLoadStoreMotion : 10.244081
+5 : Aggressive Dead Code Elimination : 10.244081
+6 : Aggressive Dead Code Elimination : 10.244081
+7 : Promote Memory to Register : 5.762080
+8 : Dead Code Elimination : 5.602080
+9 : Dead Instruction Elimination : 5.602080
+10 : Remove redundant instructions : 5.602080
+11 : Add DWARF path discriminators : 5.602080
+12 : Value Propagation : 5.602080
+13 : SROA : 5.602080
+14 : MergedLoadStoreMotion : 5.602080
+15 : Reassociate expressions : 5.602080
+16 : Dead Code Elimination : 5.602080
+17 : Assign names to anonymous instructions : 5.602080
+18 : Alignment from assumptions : 5.602080
+19 : Dead Code Elimination : 5.602080
+20 : Induction Variable Simplification : 5.602080
+SpeedUp : 1.828621

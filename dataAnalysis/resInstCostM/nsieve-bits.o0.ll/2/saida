@@ -1,0 +1,14 @@
+1 : Assign names to anonymous instructions : 68.901436
+2 : SROA : 68.901436
+3 : Loop-Closed SSA Form Pass : 68.901436
+4 : Aggressive Dead Code Elimination : 68.901436
+5 : Assign names to anonymous instructions : 68.901436
+6 : Code sinking : 68.901436
+7 : Add DWARF path discriminators : 68.901436
+8 : Dead Instruction Elimination : 68.901436
+9 : Early CSE : 44.347260
+10 : Loop-Closed SSA Form Pass : 44.347260
+11 : Aggressive Dead Code Elimination : 44.347260
+12 : Loop-Closed SSA Form Pass : 44.347260
+13 : Global Value Numbering : 44.382566
+SpeedUp : 1.552444

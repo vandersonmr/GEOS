@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 73.636733
+2 : Add DWARF path discriminators : 73.636733
+3 : Code sinking : 73.636733
+4 : Alignment from assumptions : 73.636733
+5 : Value Propagation : 73.636733
+6 : Add DWARF path discriminators : 73.636733
+7 : Scalar Replacement of Aggregates (DT) : 32.492880
+8 : Loop-Closed SSA Form Pass : 32.492880
+9 : Aggressive Dead Code Elimination : 32.492880
+10 : Reassociate expressions : 32.492880
+11 : Induction Variable Simplification : 32.492880
+12 : SROA : 32.492880
+13 : Dead Code Elimination : 32.492880
+14 : Lower atomic intrinsics to non-atomic form : 32.492880
+15 : Code sinking : 32.492880
+16 : MemCpy Optimization : 32.492880
+17 : Promote Memory to Register : 32.492880
+18 : MergedLoadStoreMotion : 32.492880
+19 : MemCpy Optimization : 32.492880
+20 : Combine redundant instructions : 32.492880
+SpeedUp : 2.266242

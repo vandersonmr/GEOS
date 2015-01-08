@@ -1,0 +1,21 @@
+1 : Early CSE : 8.003281
+2 : Assign names to anonymous instructions : 8.003281
+3 : Aggressive Dead Code Elimination : 8.003281
+4 : Combine redundant instructions : 7.202841
+5 : Reassociate expressions : 7.202841
+6 : Dead Code Elimination : 7.202841
+7 : Remove redundant instructions : 7.202841
+8 : MemCpy Optimization : 7.202841
+9 : MemCpy Optimization : 7.202841
+10 : Remove redundant instructions : 7.202841
+11 : Loop-Closed SSA Form Pass : 7.202841
+12 : Global Value Numbering : 0.642921
+13 : Scalar Replacement of Aggregates (DT) : 0.321801
+14 : Alignment from assumptions : 0.321681
+15 : Add DWARF path discriminators : 0.321681
+16 : Constant Hoisting : 0.321681
+17 : Dead Instruction Elimination : 0.321681
+18 : MergedLoadStoreMotion : 0.321681
+19 : SROA : 0.321681
+20 : MemCpy Optimization : 0.321681
+SpeedUp : 31.845511

@@ -1,0 +1,21 @@
+1 : Early CSE : 82.453857
+2 : Loop-Closed SSA Form Pass : 82.453857
+3 : Combine redundant instructions : 65.989239
+4 : Add DWARF path discriminators : 65.989239
+5 : Scalar Replacement of Aggregates (DT) : 46.754900
+6 : Combine redundant instructions : 35.933595
+7 : Lower atomic intrinsics to non-atomic form : 35.933595
+8 : Dead Instruction Elimination : 35.933595
+9 : Reassociate expressions : 35.933595
+10 : Remove redundant instructions : 35.933595
+11 : MemCpy Optimization : 35.933595
+12 : Add DWARF path discriminators : 35.933595
+13 : Dead Code Elimination : 35.933595
+14 : Scalar Replacement of Aggregates (DT) : 35.933595
+15 : Remove redundant instructions : 35.933595
+16 : Value Propagation : 35.933595
+17 : Add DWARF path discriminators : 35.933595
+18 : Lower atomic intrinsics to non-atomic form : 35.933595
+19 : Code sinking : 35.933595
+20 : Scalar Replacement of Aggregates (DT) : 35.933595
+SpeedUp : 3.732732

@@ -1,0 +1,21 @@
+1 : Code sinking : 8.337617
+2 : MemCpy Optimization : 8.337617
+3 : Reassociate expressions : 8.337617
+4 : Scalar Replacement of Aggregates (DT) : 4.232708
+5 : Alignment from assumptions : 4.232708
+6 : Early CSE : 3.026007
+7 : MemCpy Optimization : 3.026007
+8 : Aggressive Dead Code Elimination : 3.026007
+9 : Loop Invariant Code Motion : 2.341306
+10 : MergedLoadStoreMotion : 2.341306
+11 : SROA : 2.341306
+12 : SROA : 2.341306
+13 : Loop-Closed SSA Form Pass : 2.341306
+14 : Loop Invariant Code Motion : 2.341306
+15 : Value Propagation : 2.341306
+16 : Combine redundant instructions : 2.327906
+17 : Assign names to anonymous instructions : 2.327906
+18 : Promote Memory to Register : 2.327906
+19 : Value Propagation : 2.327906
+20 : Dead Code Elimination : 2.327906
+SpeedUp : 3.581595

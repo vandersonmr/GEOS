@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 448.000000
+2 : Assign names to anonymous instructions : 448.000000
+3 : Lower atomic intrinsics to non-atomic form : 448.000000
+4 : Dead Code Elimination : 448.000000
+5 : Induction Variable Simplification : 448.000000
+6 : Add DWARF path discriminators : 448.000000
+7 : Add DWARF path discriminators : 448.000000
+8 : Scalar Replacement of Aggregates (DT) : 239.000000
+9 : Value Propagation : 207.000000
+10 : Add DWARF path discriminators : 207.000000
+11 : Assign names to anonymous instructions : 207.000000
+12 : Loop-Closed SSA Form Pass : 207.000000
+13 : Combine redundant instructions : 195.000000
+14 : SROA : 195.000000
+15 : Loop Invariant Code Motion : 195.000000
+16 : Induction Variable Simplification : 195.000000
+17 : Remove redundant instructions : 195.000000
+18 : Alignment from assumptions : 195.000000
+19 : MemCpy Optimization : 195.000000
+20 : Dead Code Elimination : 195.000000
+SpeedUp : 2.297436

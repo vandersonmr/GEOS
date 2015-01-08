@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 18.245041
+2 : Promote Memory to Register : 11.523201
+3 : Promote Memory to Register : 11.523201
+4 : Add DWARF path discriminators : 11.523201
+5 : Induction Variable Simplification : 9.442801
+6 : Constant Hoisting : 9.442801
+7 : Dead Code Elimination : 9.442801
+8 : MergedLoadStoreMotion : 9.442801
+9 : MergedLoadStoreMotion : 9.442801
+10 : Loop Invariant Code Motion : 7.202681
+11 : Induction Variable Simplification : 7.202681
+12 : Loop-Closed SSA Form Pass : 7.202681
+13 : Lower atomic intrinsics to non-atomic form : 7.202681
+14 : Dead Instruction Elimination : 7.202681
+15 : Dead Instruction Elimination : 7.202681
+16 : Alignment from assumptions : 7.202681
+17 : Value Propagation : 7.202681
+18 : Loop-Closed SSA Form Pass : 7.202681
+19 : SROA : 7.202681
+20 : Alignment from assumptions : 7.202681
+SpeedUp : 2.533090

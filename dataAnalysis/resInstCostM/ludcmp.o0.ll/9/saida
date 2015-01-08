@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 119.178759
+2 : Lower atomic intrinsics to non-atomic form : 119.178759
+3 : Induction Variable Simplification : 119.178759
+4 : Assign names to anonymous instructions : 119.178759
+5 : Dead Instruction Elimination : 119.178759
+6 : Dead Code Elimination : 119.178759
+7 : Add DWARF path discriminators : 119.178759
+8 : Scalar Replacement of Aggregates (DT) : 63.192142
+9 : Alignment from assumptions : 63.165871
+10 : Constant Hoisting : 63.165871
+11 : Scalar Replacement of Aggregates (DT) : 63.165871
+12 : Promote Memory to Register : 63.165871
+13 : Early CSE : 48.765277
+14 : Aggressive Dead Code Elimination : 48.765277
+15 : Reassociate expressions : 48.765277
+16 : Global Value Numbering : 43.375397
+17 : Global Value Numbering : 43.375397
+18 : Remove redundant instructions : 43.375397
+19 : Reassociate expressions : 43.375397
+20 : Constant Hoisting : 43.375397
+SpeedUp : 2.747612

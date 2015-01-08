@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 81.795036
+2 : Promote Memory to Register : 35.950767
+3 : Dead Instruction Elimination : 35.950767
+4 : MergedLoadStoreMotion : 35.950767
+5 : Global Value Numbering : 35.950767
+6 : Reassociate expressions : 35.950767
+7 : Loop-Closed SSA Form Pass : 35.950767
+8 : Scalar Replacement of Aggregates (DT) : 35.950767
+9 : Loop-Closed SSA Form Pass : 35.950767
+10 : MemCpy Optimization : 35.950767
+11 : Value Propagation : 35.950767
+12 : MergedLoadStoreMotion : 35.950767
+13 : Induction Variable Simplification : 35.950767
+14 : Loop-Closed SSA Form Pass : 35.950767
+15 : MergedLoadStoreMotion : 35.950767
+16 : Dead Code Elimination : 35.950767
+17 : Early CSE : 35.950767
+18 : Loop-Closed SSA Form Pass : 35.950767
+19 : Dead Code Elimination : 35.950767
+20 : Add DWARF path discriminators : 35.950767
+SpeedUp : 2.275196

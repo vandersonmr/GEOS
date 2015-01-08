@@ -1,0 +1,19 @@
+1 : Loop-Closed SSA Form Pass : 151.313482
+2 : Induction Variable Simplification : 151.313482
+3 : Alignment from assumptions : 151.313482
+4 : Scalar Replacement of Aggregates (DT) : 13.763008
+5 : Assign names to anonymous instructions : 13.763008
+6 : Early CSE : 10.909182
+7 : Code sinking : 10.909182
+8 : Dead Code Elimination : 10.909182
+9 : Lower atomic intrinsics to non-atomic form : 10.909182
+10 : Reassociate expressions : 10.815742
+11 : Aggressive Dead Code Elimination : 10.815742
+12 : Lower atomic intrinsics to non-atomic form : 10.815742
+13 : Dead Code Elimination : 10.815742
+14 : Dead Instruction Elimination : 10.815742
+15 : SROA : 10.815742
+16 : Reassociate expressions : 10.815742
+17 : Assign names to anonymous instructions : 10.815742
+18 : Global Value Numbering : 10.817310
+SpeedUp : 13.988087

@@ -1,0 +1,7 @@
+1 : SROA : 0.165341
+2 : MergedLoadStoreMotion : 0.165341
+3 : Induction Variable Simplification : 0.165341
+4 : Aggressive Dead Code Elimination : 0.165341
+5 : Combine redundant instructions : 0.139000
+6 : Reassociate expressions : 0.139001
+SpeedUp : 1.189492

@@ -1,0 +1,5 @@
+1 : Lower atomic intrinsics to non-atomic form : 0.000000
+2 : Add DWARF path discriminators : 0.000000
+3 : Loop Invariant Code Motion : 0.000000
+4 : Early CSE : 0.000001
+SpeedUp : 0.900000

@@ -1,0 +1,14 @@
+1 : MemCpy Optimization : 54416.232888
+2 : Aggressive Dead Code Elimination : 54416.232888
+3 : MemCpy Optimization : 54416.232888
+4 : Aggressive Dead Code Elimination : 54416.232888
+5 : Dead Instruction Elimination : 54416.232888
+6 : Constant Hoisting : 54416.232888
+7 : Dead Code Elimination : 54416.232888
+8 : MergedLoadStoreMotion : 54416.232888
+9 : Scalar Replacement of Aggregates (DT) : 556.199934
+10 : Lower atomic intrinsics to non-atomic form : 458.543684
+11 : Alignment from assumptions : 458.543684
+12 : Aggressive Dead Code Elimination : 458.543684
+13 : Induction Variable Simplification : 1053.929465
+SpeedUp : 51.631760

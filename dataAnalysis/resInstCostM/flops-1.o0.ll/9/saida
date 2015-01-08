@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 340.625000
+2 : Constant Hoisting : 340.625000
+3 : Combine redundant instructions : 300.000000
+4 : Remove redundant instructions : 300.000000
+5 : Early CSE : 293.750000
+6 : Code sinking : 290.625000
+7 : MemCpy Optimization : 290.625000
+8 : Induction Variable Simplification : 290.625000
+9 : SROA : 290.625000
+10 : Promote Memory to Register : 256.250000
+11 : SROA : 240.624999
+12 : Loop Invariant Code Motion : 225.000000
+13 : Value Propagation : 225.000000
+14 : Code sinking : 225.000000
+15 : Promote Memory to Register : 225.000000
+16 : Combine redundant instructions : 225.000000
+17 : Dead Code Elimination : 225.000000
+18 : Induction Variable Simplification : 225.000000
+19 : Loop Invariant Code Motion : 225.000000
+20 : MergedLoadStoreMotion : 225.000000
+SpeedUp : 1.513889

@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 59.222512
+2 : Aggressive Dead Code Elimination : 59.222512
+3 : Loop-Closed SSA Form Pass : 59.222512
+4 : Combine redundant instructions : 43.220709
+5 : Code sinking : 43.220709
+6 : Loop-Closed SSA Form Pass : 43.220709
+7 : Early CSE : 40.019029
+8 : Dead Code Elimination : 40.019029
+9 : Early CSE : 40.019029
+10 : Scalar Replacement of Aggregates (DT) : 30.411642
+11 : MemCpy Optimization : 28.810802
+12 : SROA : 28.810802
+13 : Reassociate expressions : 28.810802
+14 : Code sinking : 28.810802
+15 : Combine redundant instructions : 28.810802
+16 : Aggressive Dead Code Elimination : 28.810802
+17 : Dead Code Elimination : 28.810802
+18 : MemCpy Optimization : 28.810802
+19 : Dead Instruction Elimination : 28.810802
+20 : Dead Code Elimination : 28.810802
+SpeedUp : 2.055566

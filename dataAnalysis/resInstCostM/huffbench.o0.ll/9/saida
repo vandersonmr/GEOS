@@ -1,0 +1,9 @@
+1 : Assign names to anonymous instructions : 1632.534717
+2 : MemCpy Optimization : 1632.534717
+3 : Dead Instruction Elimination : 1632.534717
+4 : Dead Code Elimination : 1632.534717
+5 : Aggressive Dead Code Elimination : 1632.534717
+6 : Promote Memory to Register : 739.009948
+7 : Reassociate expressions : 736.009948
+8 : Loop Invariant Code Motion : 736.010179
+SpeedUp : 2.218087

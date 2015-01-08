@@ -1,0 +1,21 @@
+1 : Loop Invariant Code Motion : 0.198101
+2 : Assign names to anonymous instructions : 0.198101
+3 : Aggressive Dead Code Elimination : 0.198101
+4 : Loop Invariant Code Motion : 0.198101
+5 : Promote Memory to Register : 0.127111
+6 : Lower atomic intrinsics to non-atomic form : 0.106951
+7 : Combine redundant instructions : 0.099239
+8 : Global Value Numbering : 0.087667
+9 : Constant Hoisting : 0.087667
+10 : MemCpy Optimization : 0.087667
+11 : Loop Invariant Code Motion : 0.087667
+12 : Combine redundant instructions : 0.087667
+13 : Global Value Numbering : 0.087667
+14 : Early CSE : 0.087667
+15 : SROA : 0.087667
+16 : Scalar Replacement of Aggregates (DT) : 0.087667
+17 : Lower atomic intrinsics to non-atomic form : 0.087667
+18 : SROA : 0.087667
+19 : Constant Hoisting : 0.087667
+20 : Promote Memory to Register : 0.087667
+SpeedUp : 2.259704

@@ -1,0 +1,5 @@
+1 : MemCpy Optimization : 0.000001
+2 : Aggressive Dead Code Elimination : 0.000000
+3 : Dead Instruction Elimination : 0.000001
+4 : Add DWARF path discriminators : 0.000000
+SpeedUp : 1.166667

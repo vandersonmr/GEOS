@@ -1,0 +1,16 @@
+1 : Aggressive Dead Code Elimination : 2.843890
+2 : SROA : 2.843890
+3 : Constant Hoisting : 2.843890
+4 : Add DWARF path discriminators : 2.843890
+5 : Aggressive Dead Code Elimination : 2.843890
+6 : SROA : 2.843890
+7 : SROA : 2.843890
+8 : Alignment from assumptions : 2.843890
+9 : Add DWARF path discriminators : 2.843890
+10 : SROA : 2.843890
+11 : Add DWARF path discriminators : 2.843890
+12 : Lower atomic intrinsics to non-atomic form : 2.843890
+13 : Reassociate expressions : 2.843890
+14 : Induction Variable Simplification : 2.843890
+15 : Remove redundant instructions : 2.843890
+SpeedUp : 1.000000

@@ -1,0 +1,8 @@
+1 : Aggressive Dead Code Elimination : 6884.016552
+2 : MemCpy Optimization : 6884.016552
+3 : Loop Invariant Code Motion : 6884.016552
+4 : SROA : 6884.016552
+5 : Dead Instruction Elimination : 6884.016552
+6 : MergedLoadStoreMotion : 6884.016552
+7 : Early CSE : 7141.965246
+SpeedUp : 0.963883

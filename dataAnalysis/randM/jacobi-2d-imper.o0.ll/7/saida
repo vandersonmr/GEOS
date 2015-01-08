@@ -1,0 +1,8 @@
+1 : Add DWARF path discriminators : 0.000001
+2 : Early CSE : 0.000001
+3 : Early CSE : 0.000001
+4 : Early CSE : 0.000001
+5 : Induction Variable Simplification : 0.000001
+6 : Lower atomic intrinsics to non-atomic form : 0.000001
+7 : Dead Instruction Elimination : 0.000001
+SpeedUp : 0.844444

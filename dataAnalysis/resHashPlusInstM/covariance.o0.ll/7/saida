@@ -1,0 +1,8 @@
+1 : Add DWARF path discriminators : 1193.941651
+2 : Loop Invariant Code Motion : 1193.941651
+3 : Dead Code Elimination : 1193.941651
+4 : Assign names to anonymous instructions : 1193.941651
+5 : Dead Instruction Elimination : 1193.941651
+6 : Loop-Closed SSA Form Pass : 1193.941651
+7 : Remove redundant instructions : 1193.941651
+SpeedUp : 1.000000

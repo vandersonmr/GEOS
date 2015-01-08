@@ -1,0 +1,14 @@
+1 : Dead Instruction Elimination : 266.005330
+2 : Constant Hoisting : 266.005330
+3 : Code sinking : 266.005330
+4 : Global Value Numbering : 97.166942
+5 : Aggressive Dead Code Elimination : 97.166942
+6 : MemCpy Optimization : 97.166942
+7 : MemCpy Optimization : 97.166942
+8 : Alignment from assumptions : 97.166942
+9 : Loop-Closed SSA Form Pass : 97.166942
+10 : Remove redundant instructions : 97.166942
+11 : Induction Variable Simplification : 97.166942
+12 : Scalar Replacement of Aggregates (DT) : 82.371757
+13 : Value Propagation : 99.146740
+SpeedUp : 2.682946

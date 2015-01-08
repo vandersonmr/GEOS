@@ -1,0 +1,4 @@
+1 : Add DWARF path discriminators : 40048.741226
+2 : Remove redundant instructions : 40048.741226
+3 : Global Value Numbering : 39982.812320
+4 : Early CSE : 62001.562572

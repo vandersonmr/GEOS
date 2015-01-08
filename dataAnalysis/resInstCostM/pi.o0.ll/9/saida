@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 24.000001
+2 : Aggressive Dead Code Elimination : 24.000001
+3 : Scalar Replacement of Aggregates (DT) : 16.000000
+4 : Induction Variable Simplification : 16.000000
+5 : Aggressive Dead Code Elimination : 16.000000
+6 : Alignment from assumptions : 16.000000
+7 : Dead Instruction Elimination : 16.000000
+8 : Dead Code Elimination : 16.000000
+9 : Loop-Closed SSA Form Pass : 16.000000
+10 : Assign names to anonymous instructions : 16.000000
+11 : Assign names to anonymous instructions : 16.000000
+12 : Dead Instruction Elimination : 16.000000
+13 : Loop Invariant Code Motion : 16.000000
+14 : Combine redundant instructions : 16.000000
+15 : Constant Hoisting : 16.000000
+16 : Constant Hoisting : 16.000000
+17 : Reassociate expressions : 16.000000
+18 : Lower atomic intrinsics to non-atomic form : 16.000000
+19 : Remove redundant instructions : 16.000000
+20 : Alignment from assumptions : 16.000000
+SpeedUp : 2.100000

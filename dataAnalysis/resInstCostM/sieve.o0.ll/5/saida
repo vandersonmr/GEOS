@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 577.138100
+2 : MemCpy Optimization : 577.138100
+3 : MemCpy Optimization : 577.138100
+4 : Lower atomic intrinsics to non-atomic form : 577.138100
+5 : Global Value Numbering : 420.510300
+6 : Induction Variable Simplification : 420.510300
+7 : SROA : 420.510300
+8 : Promote Memory to Register : 155.845800
+9 : Add DWARF path discriminators : 155.845800
+10 : Scalar Replacement of Aggregates (DT) : 155.845800
+11 : Induction Variable Simplification : 155.845800
+12 : Loop-Closed SSA Form Pass : 155.845800
+13 : Add DWARF path discriminators : 155.845800
+14 : Early CSE : 155.845800
+15 : Alignment from assumptions : 155.845800
+16 : Loop Invariant Code Motion : 155.845800
+17 : Induction Variable Simplification : 155.845800
+18 : MergedLoadStoreMotion : 155.845800
+19 : Scalar Replacement of Aggregates (DT) : 155.845800
+20 : Aggressive Dead Code Elimination : 155.845800
+SpeedUp : 3.703264

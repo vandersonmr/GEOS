@@ -1,0 +1,20 @@
+1 : Remove redundant instructions : 62.425687
+2 : Code sinking : 62.425687
+3 : Aggressive Dead Code Elimination : 62.425687
+4 : Add DWARF path discriminators : 62.425687
+5 : MemCpy Optimization : 62.425687
+6 : Alignment from assumptions : 62.425687
+7 : Promote Memory to Register : 61.884019
+8 : Code sinking : 61.884019
+9 : Loop Invariant Code Motion : 50.543403
+10 : MemCpy Optimization : 50.543403
+11 : Scalar Replacement of Aggregates (DT) : 50.543403
+12 : Early CSE : 49.347498
+13 : Assign names to anonymous instructions : 49.347498
+14 : Remove redundant instructions : 49.347498
+15 : Constant Hoisting : 49.347498
+16 : Loop Invariant Code Motion : 49.347498
+17 : Dead Code Elimination : 49.347498
+18 : Global Value Numbering : 48.551647
+19 : Induction Variable Simplification : 55.582964
+SpeedUp : 1.123109

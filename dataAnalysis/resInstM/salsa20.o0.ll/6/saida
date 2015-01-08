@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 2275.063301
+2 : Global Value Numbering : 329.811896
+3 : Add DWARF path discriminators : 329.811896
+4 : Scalar Replacement of Aggregates (DT) : 329.811896
+5 : Promote Memory to Register : 329.811896
+6 : Loop-Closed SSA Form Pass : 329.811896
+7 : Lower atomic intrinsics to non-atomic form : 329.811896
+8 : Reassociate expressions : 324.432701
+9 : Dead Code Elimination : 324.432701
+10 : Constant Hoisting : 324.432701
+11 : Scalar Replacement of Aggregates (DT) : 324.432701
+12 : Loop-Closed SSA Form Pass : 324.432701
+13 : Induction Variable Simplification : 315.355310
+14 : Global Value Numbering : 315.355309
+15 : Combine redundant instructions : 285.433537
+16 : Alignment from assumptions : 274.675147
+17 : MemCpy Optimization : 274.675147
+18 : Dead Code Elimination : 274.675147
+19 : Aggressive Dead Code Elimination : 274.675147
+20 : Scalar Replacement of Aggregates (DT) : 274.675147
+SpeedUp : 8.747858

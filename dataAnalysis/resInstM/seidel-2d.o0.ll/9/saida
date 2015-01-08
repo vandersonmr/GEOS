@@ -1,0 +1,16 @@
+1 : Loop Invariant Code Motion : 21.577543
+2 : Reassociate expressions : 21.577543
+3 : Dead Instruction Elimination : 21.577543
+4 : Alignment from assumptions : 21.577543
+5 : Dead Code Elimination : 21.577543
+6 : Early CSE : 9.972280
+7 : Dead Code Elimination : 9.972280
+8 : Value Propagation : 9.972280
+9 : Dead Code Elimination : 9.972280
+10 : Constant Hoisting : 9.972280
+11 : Loop Invariant Code Motion : 9.972280
+12 : Constant Hoisting : 9.972280
+13 : Aggressive Dead Code Elimination : 9.972280
+14 : Remove redundant instructions : 9.972280
+15 : Global Value Numbering : 11.197264
+SpeedUp : 1.927037

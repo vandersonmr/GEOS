@@ -1,0 +1,7 @@
+1 : Add DWARF path discriminators : 78.440507
+2 : Promote Memory to Register : 47.937503
+3 : Early CSE : 42.401503
+4 : MergedLoadStoreMotion : 42.401503
+5 : Add DWARF path discriminators : 42.401503
+6 : Reassociate expressions : 42.401503
+SpeedUp : 1.849946

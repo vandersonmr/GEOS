@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 472.845333
+2 : SROA : 472.845333
+3 : Remove redundant instructions : 472.845333
+4 : Dead Instruction Elimination : 472.845333
+5 : MergedLoadStoreMotion : 472.845333
+6 : Scalar Replacement of Aggregates (DT) : 257.897503
+7 : Scalar Replacement of Aggregates (DT) : 257.897503
+8 : Promote Memory to Register : 257.897503
+9 : Global Value Numbering : 193.483397
+10 : Loop-Closed SSA Form Pass : 193.483397
+11 : Lower atomic intrinsics to non-atomic form : 193.483397
+12 : Loop Invariant Code Motion : 161.239716
+13 : Add DWARF path discriminators : 161.229230
+14 : MergedLoadStoreMotion : 161.229230
+15 : Early CSE : 107.584000
+16 : Code sinking : 107.584000
+17 : Induction Variable Simplification : 107.584000
+18 : Dead Code Elimination : 107.584000
+19 : MergedLoadStoreMotion : 107.584000
+20 : Value Propagation : 107.584000
+SpeedUp : 4.395127

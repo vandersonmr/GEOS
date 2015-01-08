@@ -1,0 +1,10 @@
+1 : Value Propagation : 1436315.569525
+2 : Constant Hoisting : 1436315.569525
+3 : Lower atomic intrinsics to non-atomic form : 1436315.569525
+4 : Value Propagation : 1436315.569525
+5 : SROA : 1436315.569525
+6 : Early CSE : 1436245.769495
+7 : Global Value Numbering : 1436242.400035
+8 : Scalar Replacement of Aggregates (DT) : 150.487601
+9 : Loop Invariant Code Motion : 1551239.687559
+SpeedUp : 0.925915

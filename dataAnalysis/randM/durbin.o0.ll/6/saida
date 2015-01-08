@@ -1,0 +1,7 @@
+1 : MergedLoadStoreMotion : 0.000001
+2 : Assign names to anonymous instructions : 0.000001
+3 : Induction Variable Simplification : 0.000001
+4 : Dead Code Elimination : 0.000001
+5 : Add DWARF path discriminators : 0.000001
+6 : Scalar Replacement of Aggregates (DT) : 0.000001
+SpeedUp : 1.119565

@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 376.880150
+2 : SROA : 376.880150
+3 : Global Value Numbering : 54.621585
+4 : Alignment from assumptions : 54.621585
+5 : Promote Memory to Register : 32.768789
+6 : Dead Code Elimination : 32.737301
+7 : Dead Instruction Elimination : 32.737301
+8 : Reassociate expressions : 32.737301
+9 : Promote Memory to Register : 32.737301
+10 : Scalar Replacement of Aggregates (DT) : 32.737301
+11 : Aggressive Dead Code Elimination : 32.737301
+12 : SROA : 32.737301
+13 : Add DWARF path discriminators : 32.737301
+14 : Combine redundant instructions : 32.684811
+15 : Early CSE : 32.684811
+16 : Alignment from assumptions : 32.684811
+17 : MergedLoadStoreMotion : 32.684811
+18 : Value Propagation : 32.684811
+19 : Combine redundant instructions : 32.684811
+20 : Value Propagation : 32.684811
+SpeedUp : 11.530743

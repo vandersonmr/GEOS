@@ -1,0 +1,20 @@
+1 : Early CSE : 9.043941
+2 : MergedLoadStoreMotion : 9.043941
+3 : Alignment from assumptions : 9.043941
+4 : Assign names to anonymous instructions : 9.043941
+5 : Aggressive Dead Code Elimination : 9.043941
+6 : Add DWARF path discriminators : 9.043941
+7 : Induction Variable Simplification : 9.043941
+8 : Add DWARF path discriminators : 9.043941
+9 : Dead Code Elimination : 9.043941
+10 : Add DWARF path discriminators : 9.043941
+11 : Lower atomic intrinsics to non-atomic form : 9.043941
+12 : MemCpy Optimization : 9.043941
+13 : Lower atomic intrinsics to non-atomic form : 9.043941
+14 : Induction Variable Simplification : 9.043941
+15 : Dead Instruction Elimination : 9.043941
+16 : Lower atomic intrinsics to non-atomic form : 9.043941
+17 : Remove redundant instructions : 9.043941
+18 : Combine redundant instructions : 7.763581
+19 : Reassociate expressions : 7.923621
+SpeedUp : 1.565625

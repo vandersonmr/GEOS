@@ -1,0 +1,17 @@
+1 : Code sinking : 634.074512
+2 : Aggressive Dead Code Elimination : 634.074512
+3 : Scalar Replacement of Aggregates (DT) : 419.137188
+4 : Constant Hoisting : 419.137188
+5 : Loop-Closed SSA Form Pass : 419.137188
+6 : SROA : 419.137188
+7 : SROA : 419.137188
+8 : Promote Memory to Register : 419.137188
+9 : Promote Memory to Register : 419.137188
+10 : Assign names to anonymous instructions : 419.137188
+11 : Early CSE : 204.409651
+12 : Lower atomic intrinsics to non-atomic form : 204.409651
+13 : MemCpy Optimization : 204.409651
+14 : Add DWARF path discriminators : 204.409651
+15 : SROA : 204.409651
+16 : Global Value Numbering : 215.146988
+SpeedUp : 2.947169

@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 0.392267
+2 : Reassociate expressions : 0.392267
+3 : Assign names to anonymous instructions : 0.392267
+4 : Loop-Closed SSA Form Pass : 0.392267
+5 : Dead Code Elimination : 0.392267
+6 : Assign names to anonymous instructions : 0.392267
+7 : Code sinking : 0.392267
+8 : Combine redundant instructions : 0.331974
+9 : Induction Variable Simplification : 0.331974
+10 : Dead Instruction Elimination : 0.331974
+11 : Induction Variable Simplification : 0.331974
+12 : Reassociate expressions : 0.331974
+13 : Promote Memory to Register : 0.221281
+14 : Loop Invariant Code Motion : 0.211281
+15 : Induction Variable Simplification : 0.211281
+16 : Aggressive Dead Code Elimination : 0.211281
+17 : Early CSE : 0.211281
+18 : Alignment from assumptions : 0.211281
+19 : Alignment from assumptions : 0.211281
+20 : Value Propagation : 0.211281
+SpeedUp : 1.856609

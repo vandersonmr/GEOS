@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 0.473803
+2 : MemCpy Optimization : 0.473803
+3 : Combine redundant instructions : 0.445923
+4 : Assign names to anonymous instructions : 0.445923
+5 : Add DWARF path discriminators : 0.445923
+6 : Remove redundant instructions : 0.445923
+7 : Remove redundant instructions : 0.445923
+8 : Global Value Numbering : 0.445923
+9 : Dead Instruction Elimination : 0.445923
+10 : Remove redundant instructions : 0.445923
+11 : SROA : 0.445923
+12 : Loop-Closed SSA Form Pass : 0.445923
+13 : Add DWARF path discriminators : 0.445923
+14 : Dead Code Elimination : 0.445923
+15 : Loop Invariant Code Motion : 0.445923
+16 : Add DWARF path discriminators : 0.445923
+17 : Induction Variable Simplification : 0.445923
+18 : MemCpy Optimization : 0.445923
+19 : MergedLoadStoreMotion : 0.445923
+20 : Dead Code Elimination : 0.445923
+SpeedUp : 1.062523

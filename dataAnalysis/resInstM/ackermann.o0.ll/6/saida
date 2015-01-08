@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 0.473803
+2 : Induction Variable Simplification : 0.473803
+3 : Combine redundant instructions : 0.445923
+4 : Value Propagation : 0.445923
+5 : MergedLoadStoreMotion : 0.445923
+6 : Loop Invariant Code Motion : 0.445923
+7 : MemCpy Optimization : 0.445923
+8 : Alignment from assumptions : 0.445923
+9 : MemCpy Optimization : 0.445923
+10 : Dead Code Elimination : 0.445923
+11 : Loop Invariant Code Motion : 0.445923
+12 : Reassociate expressions : 0.445923
+13 : Global Value Numbering : 0.445923
+14 : Scalar Replacement of Aggregates (DT) : 0.209042
+15 : Promote Memory to Register : 0.209042
+16 : MergedLoadStoreMotion : 0.209042
+17 : Promote Memory to Register : 0.209042
+18 : Combine redundant instructions : 0.209042
+19 : MergedLoadStoreMotion : 0.209042
+20 : Early CSE : 0.209042
+SpeedUp : 2.266550

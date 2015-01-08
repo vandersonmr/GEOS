@@ -1,0 +1,21 @@
+1 : Early CSE : 129.894694
+2 : Remove redundant instructions : 124.895649
+3 : Assign names to anonymous instructions : 124.895649
+4 : SROA : 124.895649
+5 : MemCpy Optimization : 124.895649
+6 : Combine redundant instructions : 120.548379
+7 : Global Value Numbering : 106.465463
+8 : Add DWARF path discriminators : 106.465463
+9 : Value Propagation : 106.465463
+10 : Promote Memory to Register : 99.079146
+11 : Code sinking : 93.932074
+12 : Value Propagation : 93.932074
+13 : MemCpy Optimization : 93.932074
+14 : Constant Hoisting : 93.932074
+15 : Constant Hoisting : 93.932074
+16 : Value Propagation : 93.932074
+17 : Code sinking : 93.932074
+18 : Lower atomic intrinsics to non-atomic form : 93.932074
+19 : Dead Instruction Elimination : 93.932074
+20 : Assign names to anonymous instructions : 93.932074
+SpeedUp : 4.509547

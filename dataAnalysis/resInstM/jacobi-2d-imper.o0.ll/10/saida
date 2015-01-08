@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 11.648142
+2 : Loop-Closed SSA Form Pass : 11.648142
+3 : MemCpy Optimization : 11.648142
+4 : Add DWARF path discriminators : 11.648142
+5 : Aggressive Dead Code Elimination : 11.648142
+6 : Add DWARF path discriminators : 11.648142
+7 : Combine redundant instructions : 10.032919
+8 : Assign names to anonymous instructions : 10.032919
+9 : MemCpy Optimization : 10.032919
+10 : Add DWARF path discriminators : 10.032919
+11 : SROA : 10.032919
+12 : Reassociate expressions : 10.032919
+13 : Remove redundant instructions : 10.032919
+14 : Lower atomic intrinsics to non-atomic form : 10.032919
+15 : SROA : 10.032919
+16 : Lower atomic intrinsics to non-atomic form : 10.032919
+17 : Assign names to anonymous instructions : 10.032919
+18 : Dead Instruction Elimination : 10.032919
+19 : MergedLoadStoreMotion : 10.032919
+20 : Promote Memory to Register : 10.032919
+SpeedUp : 1.731551

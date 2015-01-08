@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 4.391489
+2 : MemCpy Optimization : 4.391489
+3 : Dead Instruction Elimination : 4.391489
+4 : Assign names to anonymous instructions : 4.391489
+5 : Aggressive Dead Code Elimination : 4.391489
+6 : Lower atomic intrinsics to non-atomic form : 4.391489
+7 : Early CSE : 4.212985
+8 : Alignment from assumptions : 4.212985
+9 : Early CSE : 4.212985
+10 : MergedLoadStoreMotion : 4.212985
+11 : Scalar Replacement of Aggregates (DT) : 2.420506
+12 : Alignment from assumptions : 2.361498
+13 : Dead Instruction Elimination : 2.361498
+14 : Code sinking : 2.361498
+15 : Add DWARF path discriminators : 2.361498
+16 : Value Propagation : 2.361498
+17 : Aggressive Dead Code Elimination : 2.361498
+18 : Lower atomic intrinsics to non-atomic form : 2.361498
+19 : Dead Instruction Elimination : 2.361498
+20 : MemCpy Optimization : 2.361498
+SpeedUp : 1.859620

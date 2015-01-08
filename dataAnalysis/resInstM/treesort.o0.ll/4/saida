@@ -1,0 +1,21 @@
+1 : Loop Invariant Code Motion : 2.628085
+2 : MemCpy Optimization : 2.628085
+3 : Alignment from assumptions : 2.628085
+4 : Global Value Numbering : 2.628070
+5 : Loop-Closed SSA Form Pass : 2.628070
+6 : Global Value Numbering : 2.628070
+7 : Promote Memory to Register : 1.708597
+8 : Early CSE : 1.474745
+9 : SROA : 1.474745
+10 : Aggressive Dead Code Elimination : 1.474745
+11 : MergedLoadStoreMotion : 1.474745
+12 : Constant Hoisting : 1.474745
+13 : Dead Instruction Elimination : 1.474745
+14 : Code sinking : 1.474745
+15 : Add DWARF path discriminators : 1.474745
+16 : Promote Memory to Register : 1.474745
+17 : Promote Memory to Register : 1.474745
+18 : Remove redundant instructions : 1.474745
+19 : Scalar Replacement of Aggregates (DT) : 1.474745
+20 : Alignment from assumptions : 1.474745
+SpeedUp : 1.782061

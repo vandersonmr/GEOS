@@ -1,0 +1,4 @@
+1 : Loop Invariant Code Motion : 1.791738
+2 : Assign names to anonymous instructions : 1.791738
+3 : Global Value Numbering : 1.828378
+SpeedUp : 0.979960

@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 50.025499
+2 : Dead Code Elimination : 50.025499
+3 : Dead Code Elimination : 50.025499
+4 : Code sinking : 50.025499
+5 : Dead Instruction Elimination : 50.025499
+6 : Loop Invariant Code Motion : 50.025499
+7 : Loop-Closed SSA Form Pass : 50.025499
+8 : Aggressive Dead Code Elimination : 50.025499
+9 : Constant Hoisting : 50.025499
+10 : Induction Variable Simplification : 50.025499
+11 : Code sinking : 50.025499
+12 : Constant Hoisting : 50.025499
+13 : Loop-Closed SSA Form Pass : 50.025499
+14 : Constant Hoisting : 50.025499
+15 : MemCpy Optimization : 50.025499
+16 : Dead Instruction Elimination : 50.025499
+17 : Alignment from assumptions : 50.025499
+18 : Loop-Closed SSA Form Pass : 50.025499
+19 : Induction Variable Simplification : 50.025499
+20 : Promote Memory to Register : 32.441987
+SpeedUp : 1.541999

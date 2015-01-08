@@ -1,0 +1,10 @@
+1 : Scalar Replacement of Aggregates (DT) : 181.250000
+2 : Loop Invariant Code Motion : 160.937500
+3 : Assign names to anonymous instructions : 160.937500
+4 : Dead Code Elimination : 160.937500
+5 : Lower atomic intrinsics to non-atomic form : 160.937500
+6 : Combine redundant instructions : 148.437500
+7 : Aggressive Dead Code Elimination : 148.437500
+8 : Lower atomic intrinsics to non-atomic form : 148.437500
+9 : Induction Variable Simplification : 150.000000
+SpeedUp : 1.677083

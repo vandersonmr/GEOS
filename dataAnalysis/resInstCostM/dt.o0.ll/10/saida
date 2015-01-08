@@ -1,0 +1,21 @@
+1 : SROA : 37.603840
+2 : Value Propagation : 37.603840
+3 : Alignment from assumptions : 37.603840
+4 : Loop Invariant Code Motion : 37.603840
+5 : Remove redundant instructions : 37.603820
+6 : Value Propagation : 37.603820
+7 : Scalar Replacement of Aggregates (DT) : 21.487084
+8 : Induction Variable Simplification : 21.487084
+9 : Lower atomic intrinsics to non-atomic form : 21.487084
+10 : SROA : 21.487084
+11 : Early CSE : 21.487084
+12 : Aggressive Dead Code Elimination : 21.487084
+13 : Aggressive Dead Code Elimination : 21.487084
+14 : Promote Memory to Register : 21.487084
+15 : Loop Invariant Code Motion : 21.487084
+16 : MemCpy Optimization : 21.487084
+17 : Remove redundant instructions : 21.487084
+18 : Code sinking : 21.487084
+19 : Promote Memory to Register : 21.487084
+20 : Remove redundant instructions : 21.487084
+SpeedUp : 1.750067

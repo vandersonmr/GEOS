@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 1637.113271
+2 : Constant Hoisting : 1637.113271
+3 : Global Value Numbering : 1614.835912
+4 : Aggressive Dead Code Elimination : 1614.835912
+5 : Constant Hoisting : 1614.835912
+6 : Loop Invariant Code Motion : 1614.835912
+7 : Reassociate expressions : 1614.835912
+8 : Assign names to anonymous instructions : 1614.835912
+9 : SROA : 1614.835912
+10 : Loop Invariant Code Motion : 1614.835912
+11 : Aggressive Dead Code Elimination : 1614.835912
+12 : MemCpy Optimization : 1614.835912
+13 : Loop Invariant Code Motion : 1614.835912
+14 : Lower atomic intrinsics to non-atomic form : 1614.835912
+15 : Promote Memory to Register : 1494.491442
+16 : Code sinking : 1443.104353
+17 : Dead Instruction Elimination : 1429.721625
+18 : Loop-Closed SSA Form Pass : 1429.721625
+19 : Early CSE : 1379.537337
+20 : Induction Variable Simplification : 1293.753927
+SpeedUp : 1.265398

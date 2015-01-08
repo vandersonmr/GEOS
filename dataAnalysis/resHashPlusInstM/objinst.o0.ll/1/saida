@@ -1,0 +1,6 @@
+1 : Value Propagation : 1352.458698
+2 : Loop-Closed SSA Form Pass : 1352.458698
+3 : Reassociate expressions : 1352.458698
+4 : Promote Memory to Register : 682.908279
+5 : Global Value Numbering : 730.179491
+SpeedUp : 1.852228

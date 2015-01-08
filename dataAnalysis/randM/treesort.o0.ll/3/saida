@@ -1,0 +1,7 @@
+1 : Alignment from assumptions : 0.000001
+2 : Remove redundant instructions : 0.000001
+3 : Early CSE : 0.000001
+4 : Early CSE : 0.000001
+5 : Promote Memory to Register : 0.000001
+6 : MergedLoadStoreMotion : 0.000001
+SpeedUp : 0.897059

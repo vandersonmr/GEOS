@@ -1,0 +1,4 @@
+1 : Aggressive Dead Code Elimination : 0.000001
+2 : Dead Code Elimination : 0.000001
+3 : Add DWARF path discriminators : 0.000001
+SpeedUp : 0.962264

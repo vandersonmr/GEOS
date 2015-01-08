@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 101.221056
+2 : Loop-Closed SSA Form Pass : 101.221056
+3 : Constant Hoisting : 101.221056
+4 : Value Propagation : 101.221056
+5 : Loop-Closed SSA Form Pass : 101.221056
+6 : Reassociate expressions : 101.221056
+7 : Remove redundant instructions : 101.221056
+8 : Alignment from assumptions : 101.221056
+9 : Dead Code Elimination : 101.221056
+10 : Combine redundant instructions : 79.303018
+11 : Constant Hoisting : 79.303018
+12 : Assign names to anonymous instructions : 79.303018
+13 : Scalar Replacement of Aggregates (DT) : 35.530030
+14 : MemCpy Optimization : 35.530030
+15 : Early CSE : 30.119378
+16 : Dead Instruction Elimination : 30.119378
+17 : Assign names to anonymous instructions : 30.119378
+18 : Lower atomic intrinsics to non-atomic form : 30.119378
+19 : Dead Instruction Elimination : 30.119378
+20 : Add DWARF path discriminators : 30.119378
+SpeedUp : 3.360662

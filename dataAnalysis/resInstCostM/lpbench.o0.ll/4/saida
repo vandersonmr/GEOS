@@ -1,0 +1,7 @@
+1 : Constant Hoisting : 564.830609
+2 : Assign names to anonymous instructions : 564.830609
+3 : MergedLoadStoreMotion : 564.830609
+4 : Reassociate expressions : 564.830609
+5 : Scalar Replacement of Aggregates (DT) : 322.445328
+6 : Induction Variable Simplification : 322.465275
+SpeedUp : 1.751601

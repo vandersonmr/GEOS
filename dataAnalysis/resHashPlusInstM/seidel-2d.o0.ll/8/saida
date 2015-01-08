@@ -1,0 +1,18 @@
+1 : Promote Memory to Register : 57.214028
+2 : Loop-Closed SSA Form Pass : 57.214028
+3 : Value Propagation : 57.214028
+4 : Constant Hoisting : 57.214028
+5 : Reassociate expressions : 57.214028
+6 : Early CSE : 40.899940
+7 : Reassociate expressions : 40.899940
+8 : Global Value Numbering : 37.258751
+9 : Aggressive Dead Code Elimination : 37.258751
+10 : MergedLoadStoreMotion : 37.258751
+11 : Reassociate expressions : 37.258751
+12 : Remove redundant instructions : 37.258751
+13 : Remove redundant instructions : 37.258751
+14 : Early CSE : 37.258751
+15 : Dead Instruction Elimination : 37.258751
+16 : Scalar Replacement of Aggregates (DT) : 37.258751
+17 : Loop Invariant Code Motion : 51.619482
+SpeedUp : 1.488157

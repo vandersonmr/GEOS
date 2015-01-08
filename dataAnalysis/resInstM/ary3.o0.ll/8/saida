@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 270.210411
+2 : Dead Code Elimination : 270.210411
+3 : Dead Code Elimination : 270.210411
+4 : Loop-Closed SSA Form Pass : 270.210411
+5 : Assign names to anonymous instructions : 270.210411
+6 : Early CSE : 225.180360
+7 : Scalar Replacement of Aggregates (DT) : 165.120260
+8 : Add DWARF path discriminators : 165.105260
+9 : Remove redundant instructions : 165.105260
+10 : Promote Memory to Register : 165.105260
+11 : Lower atomic intrinsics to non-atomic form : 165.105260
+12 : Dead Instruction Elimination : 165.105260
+13 : Induction Variable Simplification : 150.150240
+14 : Promote Memory to Register : 150.150240
+15 : Promote Memory to Register : 150.150240
+16 : Remove redundant instructions : 150.150240
+17 : MemCpy Optimization : 150.150240
+18 : MemCpy Optimization : 150.150240
+19 : Alignment from assumptions : 150.150240
+20 : Dead Code Elimination : 150.150240
+SpeedUp : 1.799600

@@ -1,0 +1,10 @@
+1 : Induction Variable Simplification : 533.000000
+2 : Code sinking : 533.000000
+3 : Value Propagation : 533.000000
+4 : Combine redundant instructions : 384.000000
+5 : Dead Instruction Elimination : 384.000000
+6 : MergedLoadStoreMotion : 384.000000
+7 : MergedLoadStoreMotion : 384.000000
+8 : Induction Variable Simplification : 384.000000
+9 : Loop Invariant Code Motion : 385.000000
+SpeedUp : 1.384416

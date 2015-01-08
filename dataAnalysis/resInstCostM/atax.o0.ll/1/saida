@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 10.883921
+2 : Dead Instruction Elimination : 10.883921
+3 : Aggressive Dead Code Elimination : 10.883921
+4 : Code sinking : 10.883921
+5 : Scalar Replacement of Aggregates (DT) : 5.921960
+6 : Lower atomic intrinsics to non-atomic form : 5.921960
+7 : Loop-Closed SSA Form Pass : 5.921960
+8 : Global Value Numbering : 2.241360
+9 : Aggressive Dead Code Elimination : 2.241360
+10 : Promote Memory to Register : 2.241360
+11 : Dead Code Elimination : 2.241360
+12 : Assign names to anonymous instructions : 2.241360
+13 : Code sinking : 2.241360
+14 : Loop-Closed SSA Form Pass : 2.241360
+15 : Remove redundant instructions : 2.241360
+16 : Scalar Replacement of Aggregates (DT) : 2.241360
+17 : Remove redundant instructions : 2.241360
+18 : Early CSE : 2.241360
+19 : Promote Memory to Register : 2.241360
+20 : Lower atomic intrinsics to non-atomic form : 2.241360
+SpeedUp : 4.855944

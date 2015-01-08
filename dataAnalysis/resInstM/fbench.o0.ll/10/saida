@@ -1,0 +1,21 @@
+1 : Code sinking : 25.150009
+2 : MergedLoadStoreMotion : 25.150009
+3 : Constant Hoisting : 25.150009
+4 : Promote Memory to Register : 20.100007
+5 : Reassociate expressions : 20.100007
+6 : Dead Code Elimination : 20.100007
+7 : Dead Instruction Elimination : 20.100007
+8 : Dead Instruction Elimination : 20.100007
+9 : Induction Variable Simplification : 19.340005
+10 : Induction Variable Simplification : 19.340005
+11 : Assign names to anonymous instructions : 19.340005
+12 : Lower atomic intrinsics to non-atomic form : 19.340005
+13 : Combine redundant instructions : 17.270005
+14 : Loop Invariant Code Motion : 17.030005
+15 : Dead Instruction Elimination : 17.030005
+16 : Remove redundant instructions : 17.030005
+17 : Aggressive Dead Code Elimination : 17.030005
+18 : Value Propagation : 17.030005
+19 : Aggressive Dead Code Elimination : 17.030005
+20 : Scalar Replacement of Aggregates (DT) : 17.030005
+SpeedUp : 1.476806

@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 134.130473
+2 : Dead Code Elimination : 134.130473
+3 : Dead Code Elimination : 134.130473
+4 : MemCpy Optimization : 134.130473
+5 : Lower atomic intrinsics to non-atomic form : 134.130473
+6 : Lower atomic intrinsics to non-atomic form : 134.130473
+7 : SROA : 134.130473
+8 : Promote Memory to Register : 87.567445
+9 : Assign names to anonymous instructions : 87.567445
+10 : Assign names to anonymous instructions : 87.567445
+11 : Promote Memory to Register : 87.567445
+12 : Code sinking : 87.567445
+13 : Global Value Numbering : 46.982781
+14 : Reassociate expressions : 46.982781
+15 : MergedLoadStoreMotion : 46.982781
+16 : Aggressive Dead Code Elimination : 46.982781
+17 : MergedLoadStoreMotion : 46.982781
+18 : Promote Memory to Register : 46.982781
+19 : Lower atomic intrinsics to non-atomic form : 46.982781
+20 : MemCpy Optimization : 46.982781
+SpeedUp : 2.854886

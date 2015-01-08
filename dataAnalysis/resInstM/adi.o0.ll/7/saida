@@ -1,0 +1,21 @@
+1 : SROA : 167.861750
+2 : Add DWARF path discriminators : 167.861750
+3 : Loop Invariant Code Motion : 167.861750
+4 : Add DWARF path discriminators : 167.861750
+5 : MergedLoadStoreMotion : 167.861750
+6 : MergedLoadStoreMotion : 167.861750
+7 : SROA : 167.861750
+8 : MemCpy Optimization : 167.861750
+9 : Lower atomic intrinsics to non-atomic form : 167.861750
+10 : Dead Instruction Elimination : 167.861750
+11 : Combine redundant instructions : 149.993471
+12 : Scalar Replacement of Aggregates (DT) : 95.275266
+13 : Loop-Closed SSA Form Pass : 71.088721
+14 : Global Value Numbering : 27.040295
+15 : Value Propagation : 26.515495
+16 : Add DWARF path discriminators : 26.515495
+17 : Value Propagation : 26.515495
+18 : SROA : 26.515495
+19 : MergedLoadStoreMotion : 26.515495
+20 : Global Value Numbering : 26.515495
+SpeedUp : 6.330704

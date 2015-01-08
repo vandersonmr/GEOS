@@ -1,0 +1,20 @@
+1 : Loop-Closed SSA Form Pass : 2.587503
+2 : Promote Memory to Register : 1.562501
+3 : Code sinking : 1.562501
+4 : Loop Invariant Code Motion : 1.562501
+5 : Reassociate expressions : 1.562501
+6 : Lower atomic intrinsics to non-atomic form : 1.562501
+7 : Aggressive Dead Code Elimination : 1.562501
+8 : Constant Hoisting : 1.562501
+9 : Loop Invariant Code Motion : 1.562501
+10 : Global Value Numbering : 1.100002
+11 : Add DWARF path discriminators : 1.100002
+12 : Reassociate expressions : 1.100002
+13 : Alignment from assumptions : 1.100002
+14 : Induction Variable Simplification : 1.100002
+15 : Promote Memory to Register : 1.100002
+16 : Lower atomic intrinsics to non-atomic form : 1.100002
+17 : Dead Code Elimination : 1.100002
+18 : Loop-Closed SSA Form Pass : 1.100002
+19 : Combine redundant instructions : 1.125002
+SpeedUp : 2.299999

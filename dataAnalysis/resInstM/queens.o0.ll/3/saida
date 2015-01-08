@@ -1,0 +1,11 @@
+1 : Constant Hoisting : 2.167418
+2 : Loop-Closed SSA Form Pass : 2.167418
+3 : Scalar Replacement of Aggregates (DT) : 1.361661
+4 : Assign names to anonymous instructions : 1.361661
+5 : Aggressive Dead Code Elimination : 1.361661
+6 : Code sinking : 1.361661
+7 : Induction Variable Simplification : 1.290961
+8 : Loop Invariant Code Motion : 1.271911
+9 : Remove redundant instructions : 1.271911
+10 : Reassociate expressions : 1.321361
+SpeedUp : 1.640292

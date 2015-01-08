@@ -1,0 +1,18 @@
+1 : Early CSE : 5.315971
+2 : Combine redundant instructions : 4.880971
+3 : SROA : 4.879971
+4 : Combine redundant instructions : 4.879971
+5 : Loop Invariant Code Motion : 4.879971
+6 : Value Propagation : 4.879971
+7 : Loop-Closed SSA Form Pass : 4.879971
+8 : MergedLoadStoreMotion : 4.879971
+9 : Induction Variable Simplification : 4.879971
+10 : Value Propagation : 4.879971
+11 : Promote Memory to Register : 3.476483
+12 : Code sinking : 3.387482
+13 : Assign names to anonymous instructions : 3.387482
+14 : Constant Hoisting : 3.387482
+15 : Global Value Numbering : 2.921495
+16 : Aggressive Dead Code Elimination : 2.921495
+17 : Induction Variable Simplification : 3.197487
+SpeedUp : 1.718373

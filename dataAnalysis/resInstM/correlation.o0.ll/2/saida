@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 246.551826
+2 : Lower atomic intrinsics to non-atomic form : 246.551826
+3 : Value Propagation : 246.551826
+4 : Dead Instruction Elimination : 246.551826
+5 : Loop Invariant Code Motion : 246.551826
+6 : Constant Hoisting : 246.551826
+7 : Combine redundant instructions : 206.421616
+8 : SROA : 206.421616
+9 : Constant Hoisting : 206.421616
+10 : Dead Instruction Elimination : 206.421616
+11 : Loop Invariant Code Motion : 206.421616
+12 : Scalar Replacement of Aggregates (DT) : 135.956110
+13 : Loop-Closed SSA Form Pass : 100.826206
+14 : Alignment from assumptions : 100.826206
+15 : MergedLoadStoreMotion : 100.826206
+16 : Induction Variable Simplification : 80.701011
+17 : Scalar Replacement of Aggregates (DT) : 80.630971
+18 : Alignment from assumptions : 80.630971
+19 : Induction Variable Simplification : 80.630971
+20 : Global Value Numbering : 0.410991
+SpeedUp : 599.896275

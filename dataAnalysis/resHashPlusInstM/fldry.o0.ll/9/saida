@@ -1,0 +1,5 @@
+1 : Add DWARF path discriminators : 17789.001314
+2 : Promote Memory to Register : 9320.846503
+3 : MergedLoadStoreMotion : 9320.846503
+4 : Aggressive Dead Code Elimination : 30540.308348
+SpeedUp : 0.582476

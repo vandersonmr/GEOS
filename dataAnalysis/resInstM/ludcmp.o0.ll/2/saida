@@ -1,0 +1,19 @@
+1 : Scalar Replacement of Aggregates (DT) : 90.309080
+2 : Dead Code Elimination : 90.309080
+3 : Dead Code Elimination : 90.309080
+4 : Scalar Replacement of Aggregates (DT) : 90.309080
+5 : Dead Code Elimination : 90.309080
+6 : SROA : 90.309080
+7 : Promote Memory to Register : 90.309080
+8 : Promote Memory to Register : 90.309080
+9 : Constant Hoisting : 90.309080
+10 : Loop Invariant Code Motion : 66.929281
+11 : MemCpy Optimization : 66.929281
+12 : Alignment from assumptions : 66.929281
+13 : Code sinking : 66.929281
+14 : SROA : 66.929281
+15 : MergedLoadStoreMotion : 66.929281
+16 : Global Value Numbering : 45.243951
+17 : Combine redundant instructions : 41.643772
+18 : Reassociate expressions : 41.643782
+SpeedUp : 3.512520

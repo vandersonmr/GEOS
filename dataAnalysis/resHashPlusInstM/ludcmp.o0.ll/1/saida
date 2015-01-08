@@ -1,0 +1,5 @@
+1 : MergedLoadStoreMotion : 644.602284
+2 : Loop Invariant Code Motion : 644.602284
+3 : Dead Instruction Elimination : 644.602284
+4 : Reassociate expressions : 644.670620
+SpeedUp : 0.999894

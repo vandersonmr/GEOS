@@ -1,0 +1,4 @@
+1 : Value Propagation : 2494.943098
+2 : MergedLoadStoreMotion : 2494.943098
+3 : Scalar Replacement of Aggregates (DT) : 4193.941816
+SpeedUp : 0.594892

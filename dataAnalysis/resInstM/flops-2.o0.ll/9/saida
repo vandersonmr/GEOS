@@ -1,0 +1,18 @@
+1 : Assign names to anonymous instructions : 146.875001
+2 : Add DWARF path discriminators : 146.875001
+3 : SROA : 146.875001
+4 : Code sinking : 146.875001
+5 : Dead Instruction Elimination : 146.875001
+6 : Combine redundant instructions : 120.312501
+7 : Value Propagation : 120.312501
+8 : Code sinking : 120.312501
+9 : Dead Code Elimination : 120.312501
+10 : Induction Variable Simplification : 120.312501
+11 : Scalar Replacement of Aggregates (DT) : 79.687500
+12 : Loop-Closed SSA Form Pass : 70.312500
+13 : Reassociate expressions : 70.312500
+14 : Dead Code Elimination : 70.312500
+15 : Combine redundant instructions : 65.625000
+16 : Dead Code Elimination : 65.625000
+17 : Induction Variable Simplification : 70.312500
+SpeedUp : 2.088889

@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 318.750000
+2 : MergedLoadStoreMotion : 318.750000
+3 : Remove redundant instructions : 318.750000
+4 : Alignment from assumptions : 318.750000
+5 : Loop Invariant Code Motion : 318.750000
+6 : Lower atomic intrinsics to non-atomic form : 318.750000
+7 : Combine redundant instructions : 246.875000
+8 : Remove redundant instructions : 246.875000
+9 : Combine redundant instructions : 246.875000
+10 : Dead Code Elimination : 246.875000
+11 : MemCpy Optimization : 246.875000
+12 : Loop-Closed SSA Form Pass : 246.875000
+13 : Dead Code Elimination : 246.875000
+14 : Dead Instruction Elimination : 246.875000
+15 : Constant Hoisting : 246.875000
+16 : Remove redundant instructions : 246.875000
+17 : Reassociate expressions : 246.875000
+18 : Combine redundant instructions : 246.875000
+19 : Global Value Numbering : 243.750000
+20 : Induction Variable Simplification : 243.750000
+SpeedUp : 1.307692

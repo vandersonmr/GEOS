@@ -1,0 +1,6 @@
+1 : Remove redundant instructions : 0.000001
+2 : Reassociate expressions : 0.000001
+3 : Constant Hoisting : 0.000001
+4 : Reassociate expressions : 0.000001
+5 : MemCpy Optimization : 0.000001
+SpeedUp : 0.990826

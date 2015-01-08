@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 1632.534717
+2 : Alignment from assumptions : 1632.534717
+3 : MergedLoadStoreMotion : 1632.534717
+4 : Assign names to anonymous instructions : 1632.534717
+5 : Scalar Replacement of Aggregates (DT) : 739.009948
+6 : Reassociate expressions : 736.009948
+7 : Early CSE : 642.425748
+8 : Add DWARF path discriminators : 642.425748
+9 : Promote Memory to Register : 642.425748
+10 : Reassociate expressions : 642.425748
+11 : Value Propagation : 642.425748
+12 : MemCpy Optimization : 642.425748
+13 : Add DWARF path discriminators : 642.425748
+14 : Global Value Numbering : 401.227694
+15 : Early CSE : 401.227694
+16 : Add DWARF path discriminators : 401.227694
+17 : MemCpy Optimization : 401.227694
+18 : Value Propagation : 401.227694
+19 : SROA : 401.227694
+20 : Scalar Replacement of Aggregates (DT) : 401.227694
+SpeedUp : 4.068849

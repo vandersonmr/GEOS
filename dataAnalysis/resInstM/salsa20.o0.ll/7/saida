@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 1696.463634
+2 : Dead Instruction Elimination : 1696.463634
+3 : Remove redundant instructions : 1696.463634
+4 : Lower atomic intrinsics to non-atomic form : 1696.463634
+5 : Scalar Replacement of Aggregates (DT) : 1618.465306
+6 : Loop-Closed SSA Form Pass : 1613.086112
+7 : Loop-Closed SSA Form Pass : 1613.086112
+8 : Value Propagation : 1613.086112
+9 : Alignment from assumptions : 1613.086112
+10 : Dead Code Elimination : 1613.086112
+11 : Constant Hoisting : 1613.086112
+12 : Early CSE : 1270.498627
+13 : Alignment from assumptions : 1270.498627
+14 : SROA : 1270.498627
+15 : Alignment from assumptions : 1270.498627
+16 : Promote Memory to Register : 1270.498627
+17 : Induction Variable Simplification : 1259.067838
+18 : Dead Instruction Elimination : 1259.067838
+19 : Induction Variable Simplification : 1259.067838
+20 : Dead Instruction Elimination : 1259.067838
+SpeedUp : 1.908411

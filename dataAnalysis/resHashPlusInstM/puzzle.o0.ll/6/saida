@@ -1,0 +1,6 @@
+1 : Lower atomic intrinsics to non-atomic form : 685.582385
+2 : Loop-Closed SSA Form Pass : 685.582385
+3 : Scalar Replacement of Aggregates (DT) : 595.613768
+4 : Dead Code Elimination : 563.573592
+5 : Early CSE : 641.830557
+SpeedUp : 1.068167

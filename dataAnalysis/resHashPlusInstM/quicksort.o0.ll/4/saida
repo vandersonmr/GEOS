@@ -1,0 +1,17 @@
+1 : Value Propagation : 12.113044
+2 : Loop-Closed SSA Form Pass : 12.113044
+3 : Code sinking : 12.113044
+4 : Constant Hoisting : 12.113044
+5 : Constant Hoisting : 12.113044
+6 : SROA : 12.113044
+7 : Aggressive Dead Code Elimination : 12.113044
+8 : Constant Hoisting : 12.113044
+9 : Constant Hoisting : 12.113044
+10 : SROA : 12.113044
+11 : Value Propagation : 12.113044
+12 : Aggressive Dead Code Elimination : 12.113044
+13 : Alignment from assumptions : 12.113044
+14 : Lower atomic intrinsics to non-atomic form : 12.113044
+15 : Aggressive Dead Code Elimination : 12.113044
+16 : Scalar Replacement of Aggregates (DT) : 12.418121
+SpeedUp : 0.975433

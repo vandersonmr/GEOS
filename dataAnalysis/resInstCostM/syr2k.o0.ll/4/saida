@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 591.785657
+2 : Constant Hoisting : 591.785657
+3 : SROA : 591.785657
+4 : Dead Code Elimination : 591.785657
+5 : Reassociate expressions : 591.785657
+6 : Dead Code Elimination : 591.785657
+7 : Lower atomic intrinsics to non-atomic form : 591.785657
+8 : MemCpy Optimization : 591.785657
+9 : Lower atomic intrinsics to non-atomic form : 591.785657
+10 : MergedLoadStoreMotion : 591.785657
+11 : Loop Invariant Code Motion : 591.785657
+12 : MergedLoadStoreMotion : 591.785657
+13 : Remove redundant instructions : 591.785657
+14 : Loop Invariant Code Motion : 591.785657
+15 : Global Value Numbering : 33.377568
+16 : Dead Code Elimination : 33.377568
+17 : Constant Hoisting : 33.377568
+18 : Constant Hoisting : 33.377568
+19 : Lower atomic intrinsics to non-atomic form : 33.377568
+20 : Code sinking : 33.377568
+SpeedUp : 17.730041

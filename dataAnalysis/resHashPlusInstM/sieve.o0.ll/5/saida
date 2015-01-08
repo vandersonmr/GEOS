@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 6884.016552
+2 : Dead Instruction Elimination : 6884.016552
+3 : Code sinking : 6884.016552
+4 : MergedLoadStoreMotion : 6884.016552
+5 : SROA : 6884.016552
+6 : Reassociate expressions : 6884.016552
+7 : Lower atomic intrinsics to non-atomic form : 6884.016552
+8 : Value Propagation : 6884.016552
+9 : Loop-Closed SSA Form Pass : 6884.016552
+10 : Remove redundant instructions : 6884.016552
+11 : Alignment from assumptions : 6884.016552
+12 : Code sinking : 6884.016552
+13 : Assign names to anonymous instructions : 6884.016552
+14 : Code sinking : 6884.016552
+15 : Remove redundant instructions : 6884.016552
+16 : Dead Instruction Elimination : 6884.016552
+17 : Code sinking : 6884.016552
+18 : Alignment from assumptions : 6884.016552
+19 : Induction Variable Simplification : 6884.016552
+20 : Early CSE : 7141.965246
+SpeedUp : 0.963883

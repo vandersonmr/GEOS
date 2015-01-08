@@ -1,0 +1,4 @@
+1 : Assign names to anonymous instructions : 0.000001
+2 : Dead Instruction Elimination : 0.000001
+3 : Dead Instruction Elimination : 0.000001
+SpeedUp : 1.521739

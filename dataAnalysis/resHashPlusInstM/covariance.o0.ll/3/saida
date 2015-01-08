@@ -1,0 +1,6 @@
+1 : Lower atomic intrinsics to non-atomic form : 1193.941651
+2 : Combine redundant instructions : 896.184542
+3 : Dead Code Elimination : 896.184542
+4 : Lower atomic intrinsics to non-atomic form : 896.184542
+5 : Promote Memory to Register : 1006.920328
+SpeedUp : 1.185736

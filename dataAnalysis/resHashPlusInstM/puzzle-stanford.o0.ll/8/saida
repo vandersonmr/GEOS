@@ -1,0 +1,10 @@
+1 : Loop-Closed SSA Form Pass : 143.595148
+2 : Value Propagation : 143.595148
+3 : Constant Hoisting : 143.595148
+4 : Lower atomic intrinsics to non-atomic form : 143.595148
+5 : SROA : 143.595148
+6 : Add DWARF path discriminators : 143.595148
+7 : Assign names to anonymous instructions : 143.595148
+8 : Dead Code Elimination : 143.595148
+9 : Promote Memory to Register : 143.678342
+SpeedUp : 0.999421

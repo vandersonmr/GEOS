@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 0.074669
+2 : Aggressive Dead Code Elimination : 0.074669
+3 : Dead Instruction Elimination : 0.074669
+4 : Dead Code Elimination : 0.074669
+5 : Alignment from assumptions : 0.074669
+6 : Scalar Replacement of Aggregates (DT) : 0.074669
+7 : Add DWARF path discriminators : 0.074669
+8 : Remove redundant instructions : 0.074669
+9 : Scalar Replacement of Aggregates (DT) : 0.074669
+10 : Constant Hoisting : 0.074669
+11 : SROA : 0.074669
+12 : Scalar Replacement of Aggregates (DT) : 0.074669
+13 : Promote Memory to Register : 0.074669
+14 : Alignment from assumptions : 0.074669
+15 : Aggressive Dead Code Elimination : 0.074669
+16 : Aggressive Dead Code Elimination : 0.074669
+17 : Constant Hoisting : 0.074669
+18 : Dead Instruction Elimination : 0.074669
+19 : Loop-Closed SSA Form Pass : 0.074669
+20 : Reassociate expressions : 0.074669
+SpeedUp : 1.941369

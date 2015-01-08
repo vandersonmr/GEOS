@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 9.072988
+2 : MemCpy Optimization : 9.072988
+3 : Lower atomic intrinsics to non-atomic form : 9.072988
+4 : Early CSE : 8.409733
+5 : MergedLoadStoreMotion : 8.409733
+6 : Alignment from assumptions : 8.409733
+7 : Combine redundant instructions : 7.637080
+8 : Dead Instruction Elimination : 7.637080
+9 : Combine redundant instructions : 7.637080
+10 : Remove redundant instructions : 7.637080
+11 : Alignment from assumptions : 7.637080
+12 : Add DWARF path discriminators : 7.637080
+13 : Assign names to anonymous instructions : 7.637080
+14 : Loop Invariant Code Motion : 7.637080
+15 : Global Value Numbering : 6.963387
+16 : Alignment from assumptions : 6.963387
+17 : Lower atomic intrinsics to non-atomic form : 6.963387
+18 : Assign names to anonymous instructions : 6.963387
+19 : Value Propagation : 6.963387
+20 : Loop-Closed SSA Form Pass : 6.963387
+SpeedUp : 2.217005

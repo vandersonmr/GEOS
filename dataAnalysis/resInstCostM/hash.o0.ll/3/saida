@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 40.300808
+2 : Value Propagation : 40.300808
+3 : Remove redundant instructions : 40.300808
+4 : Early CSE : 34.698458
+5 : Reassociate expressions : 34.698458
+6 : Combine redundant instructions : 33.083518
+7 : Induction Variable Simplification : 33.083518
+8 : Assign names to anonymous instructions : 33.083518
+9 : MergedLoadStoreMotion : 33.083518
+10 : Dead Code Elimination : 33.083518
+11 : Dead Code Elimination : 33.083518
+12 : Assign names to anonymous instructions : 33.083518
+13 : Dead Instruction Elimination : 33.083518
+14 : Lower atomic intrinsics to non-atomic form : 33.083518
+15 : Remove redundant instructions : 33.083518
+16 : Dead Code Elimination : 33.083518
+17 : Loop Invariant Code Motion : 32.587531
+18 : Global Value Numbering : 32.510973
+19 : Dead Code Elimination : 32.510973
+20 : Reassociate expressions : 32.510973
+SpeedUp : 1.239606

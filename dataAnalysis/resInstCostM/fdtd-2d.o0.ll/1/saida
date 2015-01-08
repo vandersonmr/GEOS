@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 59.939074
+2 : Early CSE : 39.876488
+3 : Loop Invariant Code Motion : 39.876488
+4 : Value Propagation : 39.876488
+5 : Induction Variable Simplification : 39.876488
+6 : Aggressive Dead Code Elimination : 39.876488
+7 : SROA : 39.876488
+8 : Assign names to anonymous instructions : 39.876488
+9 : Dead Instruction Elimination : 39.876488
+10 : Dead Code Elimination : 39.876488
+11 : Alignment from assumptions : 39.876488
+12 : MergedLoadStoreMotion : 39.876488
+13 : Dead Instruction Elimination : 39.876488
+14 : Reassociate expressions : 39.876488
+15 : MemCpy Optimization : 39.876488
+16 : Code sinking : 39.876488
+17 : Dead Instruction Elimination : 39.876488
+18 : Global Value Numbering : 8.068548
+19 : MergedLoadStoreMotion : 8.068548
+20 : Constant Hoisting : 8.068548
+SpeedUp : 7.428732

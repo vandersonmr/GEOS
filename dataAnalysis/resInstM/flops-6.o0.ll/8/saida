@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 245.312500
+2 : Lower atomic intrinsics to non-atomic form : 245.312500
+3 : Reassociate expressions : 245.312500
+4 : Assign names to anonymous instructions : 245.312500
+5 : Scalar Replacement of Aggregates (DT) : 176.562500
+6 : Combine redundant instructions : 167.187499
+7 : Loop Invariant Code Motion : 146.874999
+8 : Assign names to anonymous instructions : 146.874999
+9 : Add DWARF path discriminators : 146.874999
+10 : Loop Invariant Code Motion : 146.874999
+11 : MergedLoadStoreMotion : 146.874999
+12 : Reassociate expressions : 146.874999
+13 : Combine redundant instructions : 145.312499
+14 : Dead Instruction Elimination : 145.312499
+15 : Combine redundant instructions : 145.312499
+16 : Add DWARF path discriminators : 145.312499
+17 : Assign names to anonymous instructions : 145.312499
+18 : Constant Hoisting : 145.312499
+19 : Global Value Numbering : 143.750000
+20 : Constant Hoisting : 143.750000
+SpeedUp : 1.706522

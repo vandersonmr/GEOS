@@ -1,0 +1,4 @@
+1 : Induction Variable Simplification : 220228.768213
+2 : Lower atomic intrinsics to non-atomic form : 220228.768213
+3 : Loop Invariant Code Motion : 220228.788865
+SpeedUp : 1.000000

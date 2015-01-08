@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 592.090144
+2 : Loop Invariant Code Motion : 592.090144
+3 : Loop-Closed SSA Form Pass : 592.090144
+4 : Dead Instruction Elimination : 592.090144
+5 : Value Propagation : 592.090144
+6 : MemCpy Optimization : 592.090144
+7 : Aggressive Dead Code Elimination : 592.090144
+8 : Induction Variable Simplification : 592.090144
+9 : Induction Variable Simplification : 592.090144
+10 : Global Value Numbering : 376.807016
+11 : Reassociate expressions : 376.807016
+12 : Alignment from assumptions : 376.807016
+13 : MemCpy Optimization : 376.807016
+14 : SROA : 376.807016
+15 : Reassociate expressions : 376.807016
+16 : Constant Hoisting : 376.807016
+17 : Assign names to anonymous instructions : 376.807016
+18 : Loop-Closed SSA Form Pass : 376.807016
+19 : Aggressive Dead Code Elimination : 376.807016
+20 : Loop Invariant Code Motion : 376.807016
+SpeedUp : 1.571335

@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 688.737302
+2 : Value Propagation : 688.737302
+3 : Reassociate expressions : 688.737302
+4 : SROA : 688.737302
+5 : Loop-Closed SSA Form Pass : 688.737302
+6 : Code sinking : 688.737302
+7 : Dead Code Elimination : 688.737302
+8 : Assign names to anonymous instructions : 688.737302
+9 : Add DWARF path discriminators : 688.737302
+10 : Early CSE : 548.909590
+11 : Remove redundant instructions : 548.909590
+12 : Add DWARF path discriminators : 548.909590
+13 : Loop Invariant Code Motion : 548.909590
+14 : Alignment from assumptions : 548.909590
+15 : SROA : 548.909590
+16 : MergedLoadStoreMotion : 548.909590
+17 : Value Propagation : 548.909590
+18 : MergedLoadStoreMotion : 548.909590
+19 : Reassociate expressions : 548.909590
+20 : MergedLoadStoreMotion : 548.909590
+SpeedUp : 1.254737

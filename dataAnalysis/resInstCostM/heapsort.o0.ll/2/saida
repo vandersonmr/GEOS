@@ -1,0 +1,20 @@
+1 : MergedLoadStoreMotion : 73.636733
+2 : Loop-Closed SSA Form Pass : 73.636733
+3 : Add DWARF path discriminators : 73.636733
+4 : Induction Variable Simplification : 73.636733
+5 : Induction Variable Simplification : 73.636733
+6 : Value Propagation : 73.636733
+7 : MergedLoadStoreMotion : 73.636733
+8 : Combine redundant instructions : 62.873985
+9 : Scalar Replacement of Aggregates (DT) : 32.812880
+10 : Remove redundant instructions : 32.812880
+11 : Add DWARF path discriminators : 32.812880
+12 : Reassociate expressions : 32.812880
+13 : Code sinking : 32.812880
+14 : Combine redundant instructions : 32.812880
+15 : Induction Variable Simplification : 32.812880
+16 : Value Propagation : 32.812880
+17 : Early CSE : 27.557557
+18 : Promote Memory to Register : 27.557557
+19 : Global Value Numbering : 27.557557
+SpeedUp : 2.672107

@@ -1,0 +1,5 @@
+1 : Loop Invariant Code Motion : 270.210411
+2 : Value Propagation : 270.210411
+3 : Promote Memory to Register : 180.120280
+4 : Loop-Closed SSA Form Pass : 180.135270
+SpeedUp : 1.500042

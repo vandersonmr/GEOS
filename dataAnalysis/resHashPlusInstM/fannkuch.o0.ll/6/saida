@@ -1,0 +1,13 @@
+1 : Add DWARF path discriminators : 2238.450727
+2 : Aggressive Dead Code Elimination : 2238.450727
+3 : Global Value Numbering : 1742.606387
+4 : Loop Invariant Code Motion : 1742.606387
+5 : Reassociate expressions : 1742.606387
+6 : Constant Hoisting : 1742.606387
+7 : Value Propagation : 1742.606387
+8 : Loop Invariant Code Motion : 1742.606387
+9 : Induction Variable Simplification : 1742.606387
+10 : Constant Hoisting : 1742.606387
+11 : Lower atomic intrinsics to non-atomic form : 1742.606387
+12 : Early CSE : 1789.592568
+SpeedUp : 1.250816

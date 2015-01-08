@@ -1,0 +1,10 @@
+1 : Loop-Closed SSA Form Pass : 557.000000
+2 : Loop-Closed SSA Form Pass : 557.000000
+3 : Early CSE : 485.000000
+4 : Aggressive Dead Code Elimination : 485.000000
+5 : Lower atomic intrinsics to non-atomic form : 485.000000
+6 : Value Propagation : 485.000000
+7 : Assign names to anonymous instructions : 485.000000
+8 : MemCpy Optimization : 485.000000
+9 : Loop-Closed SSA Form Pass : 488.000000
+SpeedUp : 1.141393

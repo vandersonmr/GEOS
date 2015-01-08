@@ -1,0 +1,8 @@
+1 : MemCpy Optimization : 51.603458
+2 : MergedLoadStoreMotion : 51.603458
+3 : Global Value Numbering : 51.528443
+4 : Induction Variable Simplification : 51.406740
+5 : Reassociate expressions : 51.406740
+6 : Scalar Replacement of Aggregates (DT) : 33.658737
+7 : Promote Memory to Register : 34.679580
+SpeedUp : 1.488007

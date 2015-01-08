@@ -1,0 +1,9 @@
+1 : SROA : 9969.309718
+2 : Assign names to anonymous instructions : 9969.309718
+3 : Induction Variable Simplification : 9969.309718
+4 : Loop-Closed SSA Form Pass : 9969.309718
+5 : Lower atomic intrinsics to non-atomic form : 9969.309718
+6 : Lower atomic intrinsics to non-atomic form : 9969.309718
+7 : Promote Memory to Register : 8206.984264
+8 : Early CSE : 9102.649535
+SpeedUp : 1.095210

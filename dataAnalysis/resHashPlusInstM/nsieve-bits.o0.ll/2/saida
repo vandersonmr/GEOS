@@ -1,0 +1,7 @@
+1 : Code sinking : 7344.689624
+2 : Loop Invariant Code Motion : 7344.689624
+3 : SROA : 7344.689624
+4 : MergedLoadStoreMotion : 7344.689624
+5 : Early CSE : 7297.795946
+6 : Reassociate expressions : 7299.229546
+SpeedUp : 1.006228

@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 10.244081
+2 : MemCpy Optimization : 10.244081
+3 : Remove redundant instructions : 10.244081
+4 : Constant Hoisting : 10.244081
+5 : Lower atomic intrinsics to non-atomic form : 10.244081
+6 : Reassociate expressions : 10.244081
+7 : Alignment from assumptions : 10.244081
+8 : Alignment from assumptions : 10.244081
+9 : Dead Code Elimination : 10.244081
+10 : Aggressive Dead Code Elimination : 10.244081
+11 : Constant Hoisting : 10.244081
+12 : Scalar Replacement of Aggregates (DT) : 5.762080
+13 : Lower atomic intrinsics to non-atomic form : 5.762080
+14 : Global Value Numbering : 0.321760
+15 : Global Value Numbering : 0.321760
+16 : Loop Invariant Code Motion : 0.321640
+17 : Add DWARF path discriminators : 0.321640
+18 : Constant Hoisting : 0.321640
+19 : MergedLoadStoreMotion : 0.321640
+20 : Scalar Replacement of Aggregates (DT) : 0.321640
+SpeedUp : 31.849488

@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 564.830609
+2 : Add DWARF path discriminators : 564.830609
+3 : Loop Invariant Code Motion : 564.830130
+4 : Constant Hoisting : 564.830130
+5 : Scalar Replacement of Aggregates (DT) : 322.445168
+6 : Remove redundant instructions : 322.365212
+7 : Value Propagation : 322.365212
+8 : Constant Hoisting : 322.365212
+9 : Constant Hoisting : 322.365212
+10 : Global Value Numbering : 1.544952
+11 : Scalar Replacement of Aggregates (DT) : 1.544952
+12 : Code sinking : 1.544952
+13 : MergedLoadStoreMotion : 1.544952
+14 : Constant Hoisting : 1.544952
+15 : Promote Memory to Register : 1.544952
+16 : MergedLoadStoreMotion : 1.544952
+17 : Loop-Closed SSA Form Pass : 1.544952
+18 : Dead Code Elimination : 1.544952
+19 : Reassociate expressions : 1.544952
+20 : Lower atomic intrinsics to non-atomic form : 1.544952
+SpeedUp : 365.597497

@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 26.140006
+2 : Code sinking : 26.140006
+3 : Remove redundant instructions : 26.140006
+4 : Loop Invariant Code Motion : 26.140006
+5 : Combine redundant instructions : 22.720005
+6 : Early CSE : 22.080004
+7 : MergedLoadStoreMotion : 22.080004
+8 : Lower atomic intrinsics to non-atomic form : 22.080004
+9 : Loop Invariant Code Motion : 22.080004
+10 : Dead Code Elimination : 22.080004
+11 : Loop Invariant Code Motion : 22.080004
+12 : MergedLoadStoreMotion : 22.080004
+13 : Add DWARF path discriminators : 22.080004
+14 : Early CSE : 22.080004
+15 : Loop Invariant Code Motion : 22.080004
+16 : Add DWARF path discriminators : 22.080004
+17 : Global Value Numbering : 21.960005
+18 : Aggressive Dead Code Elimination : 21.960005
+19 : MergedLoadStoreMotion : 21.960005
+20 : Promote Memory to Register : 18.680004
+SpeedUp : 1.399358

@@ -1,0 +1,5 @@
+1 : Assign names to anonymous instructions : 0.000001
+2 : Early CSE : 0.000001
+3 : Combine redundant instructions : 0.000001
+4 : Dead Instruction Elimination : 0.000001
+SpeedUp : 1.034188

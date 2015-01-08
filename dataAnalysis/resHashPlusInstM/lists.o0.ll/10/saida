@@ -1,0 +1,15 @@
+1 : Induction Variable Simplification : 3459547.252725
+2 : Assign names to anonymous instructions : 3459547.252725
+3 : Constant Hoisting : 3459547.252725
+4 : Induction Variable Simplification : 3459547.252725
+5 : MergedLoadStoreMotion : 3459547.252725
+6 : Add DWARF path discriminators : 3459547.252725
+7 : Assign names to anonymous instructions : 3459547.252725
+8 : Value Propagation : 3459547.252725
+9 : Remove redundant instructions : 3459133.252725
+10 : Value Propagation : 3459133.252725
+11 : Induction Variable Simplification : 3459133.252725
+12 : Scalar Replacement of Aggregates (DT) : 42913.732816
+13 : Loop Invariant Code Motion : 14959.112824
+14 : Combine redundant instructions : 16960.315774
+SpeedUp : 203.978941

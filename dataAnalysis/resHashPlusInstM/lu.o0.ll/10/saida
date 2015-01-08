@@ -1,0 +1,11 @@
+1 : Early CSE : 513.014388
+2 : Dead Code Elimination : 513.014388
+3 : Combine redundant instructions : 485.457574
+4 : Alignment from assumptions : 485.457574
+5 : SROA : 485.457574
+6 : Value Propagation : 485.457574
+7 : Constant Hoisting : 485.457574
+8 : SROA : 485.457574
+9 : Lower atomic intrinsics to non-atomic form : 485.457574
+10 : Promote Memory to Register : 554.916095
+SpeedUp : 1.224967

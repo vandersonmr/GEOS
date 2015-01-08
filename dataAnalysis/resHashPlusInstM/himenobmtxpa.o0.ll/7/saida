@@ -1,0 +1,12 @@
+1 : Promote Memory to Register : 543.307818
+2 : Loop Invariant Code Motion : 517.742272
+3 : Value Propagation : 517.742272
+4 : Constant Hoisting : 517.742272
+5 : Reassociate expressions : 451.664722
+6 : Lower atomic intrinsics to non-atomic form : 451.664722
+7 : Add DWARF path discriminators : 451.664722
+8 : Alignment from assumptions : 451.664722
+9 : Induction Variable Simplification : 451.664722
+10 : Code sinking : 451.664722
+11 : Dead Instruction Elimination : 451.664722
+12 : Early CSE : 296.607616

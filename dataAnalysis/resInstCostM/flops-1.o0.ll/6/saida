@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 340.625000
+2 : Early CSE : 300.000000
+3 : Aggressive Dead Code Elimination : 300.000000
+4 : Combine redundant instructions : 290.625000
+5 : Loop-Closed SSA Form Pass : 290.625000
+6 : Assign names to anonymous instructions : 290.625000
+7 : Scalar Replacement of Aggregates (DT) : 256.250000
+8 : Assign names to anonymous instructions : 240.624999
+9 : Constant Hoisting : 240.624999
+10 : Value Propagation : 240.624999
+11 : Early CSE : 240.624999
+12 : Induction Variable Simplification : 240.624999
+13 : Code sinking : 240.624999
+14 : Lower atomic intrinsics to non-atomic form : 240.624999
+15 : Lower atomic intrinsics to non-atomic form : 240.624999
+16 : Reassociate expressions : 240.624999
+17 : Assign names to anonymous instructions : 240.624999
+18 : Early CSE : 240.624999
+19 : Early CSE : 240.624999
+20 : Remove redundant instructions : 240.624999
+SpeedUp : 1.415584

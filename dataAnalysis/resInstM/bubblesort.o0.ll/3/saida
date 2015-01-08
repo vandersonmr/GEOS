@@ -1,0 +1,21 @@
+1 : Constant Hoisting : 4.781890
+2 : Lower atomic intrinsics to non-atomic form : 4.781890
+3 : MemCpy Optimization : 4.781890
+4 : Scalar Replacement of Aggregates (DT) : 3.649453
+5 : Combine redundant instructions : 3.523201
+6 : Alignment from assumptions : 3.523201
+7 : Constant Hoisting : 3.523201
+8 : Value Propagation : 3.523201
+9 : Scalar Replacement of Aggregates (DT) : 3.523201
+10 : Lower atomic intrinsics to non-atomic form : 3.523201
+11 : Scalar Replacement of Aggregates (DT) : 3.523201
+12 : Loop Invariant Code Motion : 3.523201
+13 : Loop-Closed SSA Form Pass : 3.523201
+14 : Dead Code Elimination : 3.523201
+15 : Alignment from assumptions : 3.523201
+16 : Remove redundant instructions : 3.523201
+17 : SROA : 3.523201
+18 : Loop Invariant Code Motion : 3.523201
+19 : Promote Memory to Register : 3.523201
+20 : Reassociate expressions : 3.523201
+SpeedUp : 1.357257

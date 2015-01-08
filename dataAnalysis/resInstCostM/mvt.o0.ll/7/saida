@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 10.404641
+2 : Dead Code Elimination : 10.404641
+3 : Dead Code Elimination : 10.404641
+4 : SROA : 10.404641
+5 : Scalar Replacement of Aggregates (DT) : 5.762440
+6 : Dead Instruction Elimination : 5.762440
+7 : Assign names to anonymous instructions : 5.762440
+8 : Dead Instruction Elimination : 5.762440
+9 : MergedLoadStoreMotion : 5.762440
+10 : Global Value Numbering : 3.682401
+11 : Aggressive Dead Code Elimination : 3.682401
+12 : MergedLoadStoreMotion : 3.682401
+13 : Alignment from assumptions : 3.682401
+14 : Value Propagation : 3.682401
+15 : Dead Instruction Elimination : 3.682401
+16 : Constant Hoisting : 3.682401
+17 : Alignment from assumptions : 3.682401
+18 : Early CSE : 3.682401
+19 : Constant Hoisting : 3.682401
+20 : Reassociate expressions : 3.682401
+SpeedUp : 2.825505

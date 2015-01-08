@@ -1,0 +1,4 @@
+1 : Dead Instruction Elimination : 220228.838327
+2 : Scalar Replacement of Aggregates (DT) : 12513.039598
+3 : Combine redundant instructions : 13421.500493
+SpeedUp : 16.408660

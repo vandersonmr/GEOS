@@ -1,0 +1,21 @@
+1 : Early CSE : 28.000001
+2 : Code sinking : 28.000001
+3 : Assign names to anonymous instructions : 28.000001
+4 : Dead Code Elimination : 28.000001
+5 : Constant Hoisting : 28.000001
+6 : Early CSE : 28.000001
+7 : Early CSE : 28.000001
+8 : Lower atomic intrinsics to non-atomic form : 28.000001
+9 : Early CSE : 28.000001
+10 : Early CSE : 28.000001
+11 : Promote Memory to Register : 16.800000
+12 : Dead Code Elimination : 16.800000
+13 : Dead Instruction Elimination : 16.800000
+14 : MergedLoadStoreMotion : 16.800000
+15 : Lower atomic intrinsics to non-atomic form : 16.800000
+16 : Code sinking : 16.800000
+17 : Alignment from assumptions : 16.800000
+18 : Induction Variable Simplification : 16.800000
+19 : Remove redundant instructions : 16.800000
+20 : Constant Hoisting : 16.800000
+SpeedUp : 2.000000

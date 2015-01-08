@@ -1,0 +1,5 @@
+1 : Dead Code Elimination : 0.198101
+2 : Loop Invariant Code Motion : 0.198101
+3 : Constant Hoisting : 0.198101
+4 : Reassociate expressions : 0.198429
+SpeedUp : 0.998347

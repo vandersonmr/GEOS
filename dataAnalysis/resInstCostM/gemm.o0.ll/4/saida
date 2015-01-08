@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 312.340153
+2 : Add DWARF path discriminators : 312.340153
+3 : Aggressive Dead Code Elimination : 312.340153
+4 : Assign names to anonymous instructions : 312.340153
+5 : Loop-Closed SSA Form Pass : 312.340153
+6 : MemCpy Optimization : 312.340153
+7 : Code sinking : 312.340153
+8 : Loop-Closed SSA Form Pass : 312.340153
+9 : Constant Hoisting : 312.340153
+10 : Promote Memory to Register : 183.039785
+11 : Reassociate expressions : 183.039785
+12 : Global Value Numbering : 182.872013
+13 : Global Value Numbering : 182.872013
+14 : Lower atomic intrinsics to non-atomic form : 182.872013
+15 : Promote Memory to Register : 182.872013
+16 : MemCpy Optimization : 182.872013
+17 : MergedLoadStoreMotion : 182.872013
+18 : Constant Hoisting : 182.872013
+19 : Loop-Closed SSA Form Pass : 182.872013
+20 : Scalar Replacement of Aggregates (DT) : 182.872013
+SpeedUp : 1.707971

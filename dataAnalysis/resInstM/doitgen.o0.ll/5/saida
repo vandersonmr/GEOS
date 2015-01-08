@@ -1,0 +1,8 @@
+1 : Aggressive Dead Code Elimination : 134.130473
+2 : Aggressive Dead Code Elimination : 134.130473
+3 : MergedLoadStoreMotion : 134.130473
+4 : Early CSE : 82.453857
+5 : Loop-Closed SSA Form Pass : 82.453857
+6 : MemCpy Optimization : 82.453857
+7 : Global Value Numbering : 93.395881
+SpeedUp : 1.436150

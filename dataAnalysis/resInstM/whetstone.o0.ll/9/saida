@@ -1,0 +1,12 @@
+1 : Remove redundant instructions : 86.965507
+2 : Aggressive Dead Code Elimination : 86.965507
+3 : MergedLoadStoreMotion : 86.965507
+4 : Add DWARF path discriminators : 86.965507
+5 : MemCpy Optimization : 86.965507
+6 : Alignment from assumptions : 86.965507
+7 : Value Propagation : 86.965507
+8 : Value Propagation : 86.965507
+9 : Loop Invariant Code Motion : 86.965507
+10 : Induction Variable Simplification : 86.965507
+11 : Reassociate expressions : 86.965507
+SpeedUp : 1.000000

@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 111.310152
+2 : MemCpy Optimization : 111.310152
+3 : Loop Invariant Code Motion : 111.310152
+4 : Promote Memory to Register : 61.029013
+5 : Alignment from assumptions : 43.117630
+6 : Lower atomic intrinsics to non-atomic form : 43.117630
+7 : Loop-Closed SSA Form Pass : 43.117630
+8 : Early CSE : 39.496510
+9 : Alignment from assumptions : 39.496510
+10 : Alignment from assumptions : 39.496510
+11 : Value Propagation : 39.496510
+12 : Assign names to anonymous instructions : 39.496510
+13 : Global Value Numbering : 3.757537
+14 : Dead Code Elimination : 3.757537
+15 : Loop-Closed SSA Form Pass : 3.757537
+16 : Alignment from assumptions : 3.757537
+17 : Loop-Closed SSA Form Pass : 3.757537
+18 : Lower atomic intrinsics to non-atomic form : 3.757537
+19 : Alignment from assumptions : 3.757537
+20 : Induction Variable Simplification : 7.331436
+SpeedUp : 15.182586

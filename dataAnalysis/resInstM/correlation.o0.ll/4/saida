@@ -1,0 +1,13 @@
+1 : SROA : 246.551826
+2 : Alignment from assumptions : 246.551826
+3 : Combine redundant instructions : 206.421616
+4 : Loop Invariant Code Motion : 206.421616
+5 : Assign names to anonymous instructions : 206.421616
+6 : Combine redundant instructions : 206.421616
+7 : MemCpy Optimization : 206.421616
+8 : Assign names to anonymous instructions : 206.421616
+9 : SROA : 206.421616
+10 : Reassociate expressions : 206.421616
+11 : Early CSE : 151.181341
+12 : Induction Variable Simplification : 151.181351
+SpeedUp : 1.630835

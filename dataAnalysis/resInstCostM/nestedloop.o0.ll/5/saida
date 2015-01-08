@@ -1,0 +1,6 @@
+1 : Induction Variable Simplification : 589.420269
+2 : Reassociate expressions : 589.420269
+3 : Scalar Replacement of Aggregates (DT) : 195.756367
+4 : Reassociate expressions : 98.953770
+5 : Induction Variable Simplification : 98.953771
+SpeedUp : 5.956522

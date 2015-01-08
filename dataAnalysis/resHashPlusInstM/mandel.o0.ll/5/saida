@@ -1,0 +1,6 @@
+1 : Constant Hoisting : 176.547122
+2 : Scalar Replacement of Aggregates (DT) : 100.167997
+3 : MergedLoadStoreMotion : 100.167997
+4 : Constant Hoisting : 100.167997
+5 : Combine redundant instructions : 113.887515
+SpeedUp : 1.550189

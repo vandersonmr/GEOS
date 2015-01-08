@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 337.499999
+2 : Remove redundant instructions : 337.499999
+3 : Constant Hoisting : 337.499999
+4 : Add DWARF path discriminators : 337.499999
+5 : Promote Memory to Register : 268.749999
+6 : MemCpy Optimization : 268.749999
+7 : Assign names to anonymous instructions : 268.749999
+8 : Loop Invariant Code Motion : 246.874999
+9 : Assign names to anonymous instructions : 246.874999
+10 : Loop-Closed SSA Form Pass : 246.874999
+11 : Value Propagation : 246.874999
+12 : Early CSE : 239.062499
+13 : Aggressive Dead Code Elimination : 239.062499
+14 : MergedLoadStoreMotion : 239.062499
+15 : Reassociate expressions : 239.062499
+16 : Scalar Replacement of Aggregates (DT) : 239.062499
+17 : SROA : 239.062499
+18 : SROA : 239.062499
+19 : Constant Hoisting : 239.062499
+20 : Lower atomic intrinsics to non-atomic form : 239.062499
+SpeedUp : 1.411765

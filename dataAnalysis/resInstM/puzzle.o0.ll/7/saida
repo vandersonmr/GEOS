@@ -1,0 +1,21 @@
+1 : SROA : 111.875617
+2 : Assign names to anonymous instructions : 111.875617
+3 : Promote Memory to Register : 56.175314
+4 : Dead Code Elimination : 56.175314
+5 : Remove redundant instructions : 56.150314
+6 : Reassociate expressions : 56.150314
+7 : Assign names to anonymous instructions : 56.150314
+8 : Constant Hoisting : 56.150314
+9 : SROA : 56.150314
+10 : Reassociate expressions : 56.150314
+11 : SROA : 56.150314
+12 : Aggressive Dead Code Elimination : 56.150314
+13 : Code sinking : 56.150314
+14 : MergedLoadStoreMotion : 56.150314
+15 : SROA : 56.150314
+16 : Dead Instruction Elimination : 56.150314
+17 : Lower atomic intrinsics to non-atomic form : 56.150314
+18 : Add DWARF path discriminators : 56.150314
+19 : Add DWARF path discriminators : 56.150314
+20 : Loop-Closed SSA Form Pass : 61.150334
+SpeedUp : 1.829518

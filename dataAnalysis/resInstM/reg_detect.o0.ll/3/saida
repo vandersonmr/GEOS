@@ -1,0 +1,12 @@
+1 : MemCpy Optimization : 11.752421
+2 : Code sinking : 11.752421
+3 : Induction Variable Simplification : 11.752421
+4 : Aggressive Dead Code Elimination : 11.752421
+5 : Scalar Replacement of Aggregates (DT) : 7.653812
+6 : Dead Instruction Elimination : 5.214610
+7 : MergedLoadStoreMotion : 5.214610
+8 : Assign names to anonymous instructions : 5.214610
+9 : Alignment from assumptions : 5.214610
+10 : Early CSE : 3.873610
+11 : MergedLoadStoreMotion : 3.873610
+SpeedUp : 3.033971

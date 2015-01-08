@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 96.400683
+2 : Code sinking : 96.400683
+3 : Scalar Replacement of Aggregates (DT) : 40.780938
+4 : Promote Memory to Register : 40.780938
+5 : Scalar Replacement of Aggregates (DT) : 40.780938
+6 : Dead Instruction Elimination : 40.780938
+7 : Global Value Numbering : 26.759222
+8 : Aggressive Dead Code Elimination : 26.759222
+9 : MemCpy Optimization : 26.759222
+10 : Loop-Closed SSA Form Pass : 26.759222
+11 : Global Value Numbering : 26.759222
+12 : Scalar Replacement of Aggregates (DT) : 26.759222
+13 : Code sinking : 26.759222
+14 : Loop Invariant Code Motion : 25.658707
+15 : Combine redundant instructions : 25.658707
+16 : SROA : 25.658707
+17 : Lower atomic intrinsics to non-atomic form : 25.658707
+18 : Remove redundant instructions : 25.658707
+19 : Aggressive Dead Code Elimination : 25.658707
+20 : Promote Memory to Register : 25.658707
+SpeedUp : 3.757036

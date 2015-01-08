@@ -1,0 +1,5 @@
+1 : Assign names to anonymous instructions : 0.000002
+2 : Lower atomic intrinsics to non-atomic form : 0.000002
+3 : Add DWARF path discriminators : 0.000001
+4 : Loop-Closed SSA Form Pass : 0.000001
+SpeedUp : 1.177778

@@ -1,0 +1,7 @@
+1 : MergedLoadStoreMotion : 0.000001
+2 : Combine redundant instructions : 0.000001
+3 : SROA : 0.000001
+4 : Remove redundant instructions : 0.000001
+5 : Aggressive Dead Code Elimination : 0.000001
+6 : Lower atomic intrinsics to non-atomic form : 0.000001
+SpeedUp : 1.119565

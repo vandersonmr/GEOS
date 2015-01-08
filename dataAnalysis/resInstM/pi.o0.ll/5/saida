@@ -1,0 +1,13 @@
+1 : Dead Code Elimination : 37.913151
+2 : Induction Variable Simplification : 37.913151
+3 : Code sinking : 37.913151
+4 : Loop Invariant Code Motion : 37.913151
+5 : Early CSE : 32.313150
+6 : Scalar Replacement of Aggregates (DT) : 21.426300
+7 : Assign names to anonymous instructions : 19.826300
+8 : MemCpy Optimization : 19.826300
+9 : Dead Instruction Elimination : 19.826300
+10 : Dead Instruction Elimination : 19.826300
+11 : Global Value Numbering : 19.339450
+12 : Loop-Closed SSA Form Pass : 20.539450
+SpeedUp : 1.845870

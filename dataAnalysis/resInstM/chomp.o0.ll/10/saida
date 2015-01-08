@@ -1,0 +1,9 @@
+1 : Alignment from assumptions : 51.603458
+2 : Reassociate expressions : 51.603458
+3 : Loop Invariant Code Motion : 51.481755
+4 : Dead Code Elimination : 51.481755
+5 : Alignment from assumptions : 51.481755
+6 : Add DWARF path discriminators : 51.481755
+7 : Scalar Replacement of Aggregates (DT) : 33.699942
+8 : Induction Variable Simplification : 34.924768
+SpeedUp : 1.477561

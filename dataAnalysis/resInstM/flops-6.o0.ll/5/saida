@@ -1,0 +1,4 @@
+1 : Scalar Replacement of Aggregates (DT) : 176.562500
+2 : Alignment from assumptions : 176.562500
+3 : Induction Variable Simplification : 178.125000
+SpeedUp : 1.377193

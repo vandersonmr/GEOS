@@ -1,0 +1,5 @@
+1 : Reassociate expressions : 0.000001
+2 : Alignment from assumptions : 0.000001
+3 : Dead Instruction Elimination : 0.000001
+4 : MemCpy Optimization : 0.000001
+SpeedUp : 0.864865

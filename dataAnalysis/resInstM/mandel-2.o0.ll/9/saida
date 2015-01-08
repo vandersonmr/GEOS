@@ -1,0 +1,10 @@
+1 : Loop-Closed SSA Form Pass : 100.384673
+2 : Aggressive Dead Code Elimination : 94.110871
+3 : Loop Invariant Code Motion : 81.563508
+4 : Remove redundant instructions : 81.563385
+5 : Loop Invariant Code Motion : 81.563385
+6 : Loop Invariant Code Motion : 81.563385
+7 : Dead Code Elimination : 81.563385
+8 : Scalar Replacement of Aggregates (DT) : 65.878597
+9 : Induction Variable Simplification : 67.446804
+SpeedUp : 1.488353

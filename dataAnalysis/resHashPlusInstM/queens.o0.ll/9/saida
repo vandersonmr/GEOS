@@ -1,0 +1,3 @@
+1 : Loop-Closed SSA Form Pass : 15.044312
+2 : Scalar Replacement of Aggregates (DT) : 88.536873
+SpeedUp : 0.169921

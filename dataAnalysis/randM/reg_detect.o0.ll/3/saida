@@ -1,0 +1,6 @@
+1 : Loop Invariant Code Motion : 0.000001
+2 : Dead Instruction Elimination : 0.000001
+3 : Constant Hoisting : 0.000001
+4 : Promote Memory to Register : 0.000001
+5 : Loop-Closed SSA Form Pass : 0.000001
+SpeedUp : 0.990826

@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 1.646318
+2 : Loop Invariant Code Motion : 1.646318
+3 : Scalar Replacement of Aggregates (DT) : 1.646318
+4 : Aggressive Dead Code Elimination : 1.646318
+5 : Scalar Replacement of Aggregates (DT) : 1.646318
+6 : Global Value Numbering : 1.343126
+7 : Alignment from assumptions : 1.343126
+8 : Loop-Closed SSA Form Pass : 1.343126
+9 : Aggressive Dead Code Elimination : 1.343126
+10 : Aggressive Dead Code Elimination : 1.343126
+11 : Induction Variable Simplification : 1.343126
+12 : Aggressive Dead Code Elimination : 1.343126
+13 : Value Propagation : 1.343126
+14 : Assign names to anonymous instructions : 1.343126
+15 : Global Value Numbering : 1.343126
+16 : Combine redundant instructions : 1.211987
+17 : Value Propagation : 1.195604
+18 : Global Value Numbering : 1.195604
+19 : Dead Instruction Elimination : 1.195604
+20 : Value Propagation : 1.195604
+SpeedUp : 2.178749

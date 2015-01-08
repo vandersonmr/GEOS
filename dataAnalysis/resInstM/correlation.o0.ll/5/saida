@@ -1,0 +1,21 @@
+1 : SROA : 246.551826
+2 : Scalar Replacement of Aggregates (DT) : 161.016175
+3 : Remove redundant instructions : 161.016175
+4 : Promote Memory to Register : 161.016175
+5 : Reassociate expressions : 161.016175
+6 : Add DWARF path discriminators : 161.016175
+7 : SROA : 161.016175
+8 : MergedLoadStoreMotion : 161.016175
+9 : MemCpy Optimization : 161.016175
+10 : Reassociate expressions : 161.016175
+11 : SROA : 161.016175
+12 : Value Propagation : 161.016175
+13 : MemCpy Optimization : 161.016175
+14 : Induction Variable Simplification : 110.816045
+15 : Assign names to anonymous instructions : 110.816045
+16 : Loop-Closed SSA Form Pass : 110.816045
+17 : SROA : 110.816045
+18 : Aggressive Dead Code Elimination : 110.816045
+19 : Constant Hoisting : 110.816045
+20 : Reassociate expressions : 110.816045
+SpeedUp : 2.224875

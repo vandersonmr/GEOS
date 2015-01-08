@@ -1,0 +1,19 @@
+1 : Alignment from assumptions : 17789.001314
+2 : MemCpy Optimization : 17789.001314
+3 : Reassociate expressions : 17789.001274
+4 : Dead Code Elimination : 17789.001274
+5 : Remove redundant instructions : 17789.001274
+6 : Reassociate expressions : 17789.001274
+7 : Alignment from assumptions : 17789.001274
+8 : Lower atomic intrinsics to non-atomic form : 17789.001274
+9 : Reassociate expressions : 17789.001274
+10 : Alignment from assumptions : 17789.001274
+11 : Induction Variable Simplification : 17789.001274
+12 : Early CSE : 17395.172875
+13 : MemCpy Optimization : 17395.172875
+14 : MemCpy Optimization : 17395.172875
+15 : MergedLoadStoreMotion : 17395.172875
+16 : SROA : 17395.172875
+17 : Remove redundant instructions : 17395.172875
+18 : Induction Variable Simplification : 17405.172875
+SpeedUp : 1.022053

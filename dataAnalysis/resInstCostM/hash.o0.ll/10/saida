@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 40.300808
+2 : Code sinking : 40.300808
+3 : Constant Hoisting : 40.300808
+4 : Induction Variable Simplification : 40.300808
+5 : Reassociate expressions : 40.300808
+6 : Global Value Numbering : 40.091336
+7 : MergedLoadStoreMotion : 40.091336
+8 : Add DWARF path discriminators : 40.091336
+9 : MemCpy Optimization : 40.091336
+10 : Induction Variable Simplification : 40.091336
+11 : Early CSE : 34.593986
+12 : Global Value Numbering : 34.593986
+13 : Combine redundant instructions : 33.006960
+14 : Reassociate expressions : 33.006960
+15 : Assign names to anonymous instructions : 33.006960
+16 : Aggressive Dead Code Elimination : 33.006960
+17 : Alignment from assumptions : 33.006960
+18 : Dead Instruction Elimination : 33.006960
+19 : Early CSE : 33.006960
+20 : Promote Memory to Register : 21.530488
+SpeedUp : 1.871802

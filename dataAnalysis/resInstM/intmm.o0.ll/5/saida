@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 0.198101
+2 : SROA : 0.198101
+3 : Aggressive Dead Code Elimination : 0.198101
+4 : MergedLoadStoreMotion : 0.198101
+5 : Alignment from assumptions : 0.198101
+6 : MergedLoadStoreMotion : 0.198101
+7 : Combine redundant instructions : 0.175140
+8 : MergedLoadStoreMotion : 0.175140
+9 : Constant Hoisting : 0.175140
+10 : MemCpy Optimization : 0.175140
+11 : Promote Memory to Register : 0.112519
+12 : Add DWARF path discriminators : 0.112519
+13 : Reassociate expressions : 0.112519
+14 : SROA : 0.112519
+15 : Loop Invariant Code Motion : 0.099239
+16 : Remove redundant instructions : 0.099239
+17 : Scalar Replacement of Aggregates (DT) : 0.099239
+18 : Assign names to anonymous instructions : 0.099239
+19 : Aggressive Dead Code Elimination : 0.099239
+20 : Alignment from assumptions : 0.099239
+SpeedUp : 1.996203

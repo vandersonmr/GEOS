@@ -1,0 +1,12 @@
+1 : MergedLoadStoreMotion : 195.150310
+2 : Combine redundant instructions : 150.105260
+3 : Add DWARF path discriminators : 150.105260
+4 : Reassociate expressions : 150.105260
+5 : Scalar Replacement of Aggregates (DT) : 120.075210
+6 : Remove redundant instructions : 120.075210
+7 : Assign names to anonymous instructions : 120.075210
+8 : Loop Invariant Code Motion : 120.075210
+9 : Assign names to anonymous instructions : 120.075210
+10 : Add DWARF path discriminators : 120.075210
+11 : Global Value Numbering : 165.075110
+SpeedUp : 1.182191

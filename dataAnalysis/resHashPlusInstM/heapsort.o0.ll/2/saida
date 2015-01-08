@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 547.549296
+2 : MergedLoadStoreMotion : 547.549296
+3 : Alignment from assumptions : 547.549296
+4 : Remove redundant instructions : 547.549296
+5 : Constant Hoisting : 547.549296
+6 : Add DWARF path discriminators : 547.549296
+7 : Aggressive Dead Code Elimination : 547.549296
+8 : Remove redundant instructions : 547.549296
+9 : SROA : 547.549296
+10 : Alignment from assumptions : 547.549296
+11 : Early CSE : 508.427039
+12 : Remove redundant instructions : 508.427039
+13 : Add DWARF path discriminators : 508.427039
+14 : Add DWARF path discriminators : 508.427039
+15 : Loop Invariant Code Motion : 508.427039
+16 : Value Propagation : 508.427039
+17 : Value Propagation : 508.427039
+18 : Lower atomic intrinsics to non-atomic form : 508.427039
+19 : Reassociate expressions : 508.427039
+20 : Value Propagation : 508.427039
+SpeedUp : 1.076948

@@ -1,0 +1,4 @@
+1 : MemCpy Optimization : 0.000001
+2 : Remove redundant instructions : 0.000001
+3 : Scalar Replacement of Aggregates (DT) : 0.000001
+SpeedUp : 1.069767

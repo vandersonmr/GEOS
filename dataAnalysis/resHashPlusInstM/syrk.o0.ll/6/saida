@@ -1,0 +1,16 @@
+1 : Early CSE : 1774.927174
+2 : Combine redundant instructions : 1463.851518
+3 : Dead Code Elimination : 1463.851518
+4 : Dead Instruction Elimination : 1463.851518
+5 : Reassociate expressions : 1463.851518
+6 : MemCpy Optimization : 1463.851518
+7 : MergedLoadStoreMotion : 1463.851518
+8 : Dead Instruction Elimination : 1463.851518
+9 : Constant Hoisting : 1463.851518
+10 : Reassociate expressions : 1463.851518
+11 : Code sinking : 1463.851518
+12 : Dead Instruction Elimination : 1463.851518
+13 : Dead Code Elimination : 1463.851518
+14 : Aggressive Dead Code Elimination : 1463.851518
+15 : Promote Memory to Register : 1914.540411
+SpeedUp : 0.980866

@@ -1,0 +1,6 @@
+1 : Constant Hoisting : 700.576343
+2 : Remove redundant instructions : 700.576343
+3 : Assign names to anonymous instructions : 700.576343
+4 : Early CSE : 553.761111
+5 : Reassociate expressions : 553.990383
+SpeedUp : 1.264600

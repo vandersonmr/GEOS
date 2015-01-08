@@ -1,0 +1,5 @@
+1 : Promote Memory to Register : 84.699885
+2 : Constant Hoisting : 84.699885
+3 : Global Value Numbering : 62.741027
+4 : Loop Invariant Code Motion : 64.309111
+SpeedUp : 1.560971

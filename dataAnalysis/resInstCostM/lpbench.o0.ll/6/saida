@@ -1,0 +1,5 @@
+1 : Promote Memory to Register : 322.445328
+2 : Alignment from assumptions : 322.445328
+3 : Loop Invariant Code Motion : 322.365212
+4 : Induction Variable Simplification : 322.365331
+SpeedUp : 1.752144

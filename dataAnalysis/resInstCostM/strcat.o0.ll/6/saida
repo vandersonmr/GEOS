@@ -1,0 +1,21 @@
+1 : Value Propagation : 2.500002
+2 : Lower atomic intrinsics to non-atomic form : 2.500002
+3 : MemCpy Optimization : 2.500002
+4 : Aggressive Dead Code Elimination : 2.500002
+5 : Dead Instruction Elimination : 2.500002
+6 : SROA : 2.500002
+7 : Loop Invariant Code Motion : 2.500002
+8 : Remove redundant instructions : 2.500002
+9 : Early CSE : 2.200002
+10 : Dead Instruction Elimination : 2.200002
+11 : Lower atomic intrinsics to non-atomic form : 2.200002
+12 : Combine redundant instructions : 2.100002
+13 : Loop-Closed SSA Form Pass : 2.100002
+14 : Lower atomic intrinsics to non-atomic form : 2.100002
+15 : Loop-Closed SSA Form Pass : 2.100002
+16 : Dead Instruction Elimination : 2.100002
+17 : Aggressive Dead Code Elimination : 2.100002
+18 : Dead Instruction Elimination : 2.100002
+19 : MemCpy Optimization : 2.100002
+20 : Remove redundant instructions : 2.100002
+SpeedUp : 1.190476

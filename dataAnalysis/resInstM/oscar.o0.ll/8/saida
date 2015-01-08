@@ -1,0 +1,21 @@
+1 : Loop Invariant Code Motion : 0.165341
+2 : Add DWARF path discriminators : 0.165341
+3 : Dead Instruction Elimination : 0.165341
+4 : MemCpy Optimization : 0.165341
+5 : Loop-Closed SSA Form Pass : 0.165341
+6 : Lower atomic intrinsics to non-atomic form : 0.165341
+7 : Constant Hoisting : 0.165341
+8 : Promote Memory to Register : 0.095659
+9 : Aggressive Dead Code Elimination : 0.089325
+10 : Aggressive Dead Code Elimination : 0.089325
+11 : Alignment from assumptions : 0.089325
+12 : Scalar Replacement of Aggregates (DT) : 0.089325
+13 : MemCpy Optimization : 0.089325
+14 : Loop Invariant Code Motion : 0.089325
+15 : Assign names to anonymous instructions : 0.089325
+16 : MemCpy Optimization : 0.089325
+17 : Constant Hoisting : 0.089325
+18 : Aggressive Dead Code Elimination : 0.089325
+19 : Aggressive Dead Code Elimination : 0.089325
+20 : Induction Variable Simplification : 0.082187
+SpeedUp : 2.011761

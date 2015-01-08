@@ -1,0 +1,7 @@
+1 : Aggressive Dead Code Elimination : 111.875617
+2 : Value Propagation : 111.875617
+3 : MemCpy Optimization : 111.875617
+4 : MemCpy Optimization : 111.875617
+5 : Promote Memory to Register : 56.175314
+6 : Induction Variable Simplification : 56.175334
+SpeedUp : 1.991543

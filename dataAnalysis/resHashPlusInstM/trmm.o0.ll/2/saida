@@ -1,0 +1,8 @@
+1 : Dead Instruction Elimination : 939.068850
+2 : Reassociate expressions : 939.068850
+3 : Loop-Closed SSA Form Pass : 939.068850
+4 : Early CSE : 828.849254
+5 : Alignment from assumptions : 828.849254
+6 : Dead Instruction Elimination : 828.849254
+7 : Scalar Replacement of Aggregates (DT) : 920.006642
+SpeedUp : 1.020720

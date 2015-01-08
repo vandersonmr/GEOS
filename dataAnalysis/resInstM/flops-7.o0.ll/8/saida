@@ -1,0 +1,16 @@
+1 : Early CSE : 101.562500
+2 : Value Propagation : 101.562500
+3 : Constant Hoisting : 101.562500
+4 : Aggressive Dead Code Elimination : 101.562500
+5 : Assign names to anonymous instructions : 101.562500
+6 : Global Value Numbering : 100.000000
+7 : Dead Instruction Elimination : 100.000000
+8 : Scalar Replacement of Aggregates (DT) : 73.437500
+9 : Global Value Numbering : 62.500000
+10 : Value Propagation : 62.500000
+11 : Alignment from assumptions : 62.500000
+12 : SROA : 62.500000
+13 : Global Value Numbering : 62.500000
+14 : Reassociate expressions : 62.500000
+15 : Loop-Closed SSA Form Pass : 64.062500
+SpeedUp : 2.219512

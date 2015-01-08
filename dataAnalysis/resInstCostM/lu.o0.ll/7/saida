@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 111.310152
+2 : SROA : 111.310152
+3 : Assign names to anonymous instructions : 111.310152
+4 : Dead Code Elimination : 111.310152
+5 : Constant Hoisting : 111.310152
+6 : Code sinking : 111.310152
+7 : Induction Variable Simplification : 111.310152
+8 : Loop Invariant Code Motion : 111.310152
+9 : Loop-Closed SSA Form Pass : 111.310152
+10 : Dead Code Elimination : 111.310152
+11 : Add DWARF path discriminators : 111.310152
+12 : Early CSE : 68.266046
+13 : Scalar Replacement of Aggregates (DT) : 50.275861
+14 : Code sinking : 39.496520
+15 : Dead Instruction Elimination : 39.496520
+16 : Alignment from assumptions : 39.496520
+17 : Dead Code Elimination : 39.496520
+18 : Lower atomic intrinsics to non-atomic form : 39.496520
+19 : Induction Variable Simplification : 39.496520
+20 : SROA : 39.496520
+SpeedUp : 2.818227

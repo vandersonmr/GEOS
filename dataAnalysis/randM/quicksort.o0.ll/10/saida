@@ -1,0 +1,5 @@
+1 : Reassociate expressions : 0.000001
+2 : Lower atomic intrinsics to non-atomic form : 0.000000
+3 : Combine redundant instructions : 0.000001
+4 : Reassociate expressions : 0.000000
+SpeedUp : 1.166667

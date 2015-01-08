@@ -1,0 +1,8 @@
+1 : Add DWARF path discriminators : 100.384673
+2 : Value Propagation : 100.384673
+3 : MergedLoadStoreMotion : 100.384673
+4 : Aggressive Dead Code Elimination : 94.110871
+5 : Reassociate expressions : 94.110871
+6 : Scalar Replacement of Aggregates (DT) : 78.426083
+7 : Loop-Closed SSA Form Pass : 79.994473
+SpeedUp : 1.254895

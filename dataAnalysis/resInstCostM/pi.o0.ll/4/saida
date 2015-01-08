@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 33.600001
+2 : Induction Variable Simplification : 33.600001
+3 : SROA : 33.600001
+4 : Code sinking : 33.600001
+5 : Code sinking : 33.600001
+6 : Remove redundant instructions : 33.600001
+7 : Assign names to anonymous instructions : 33.600001
+8 : Remove redundant instructions : 33.600001
+9 : Value Propagation : 33.600001
+10 : Scalar Replacement of Aggregates (DT) : 16.800000
+11 : Early CSE : 16.800000
+12 : SROA : 16.800000
+13 : Global Value Numbering : 16.713150
+14 : Lower atomic intrinsics to non-atomic form : 16.713150
+15 : Combine redundant instructions : 15.913150
+16 : Loop Invariant Code Motion : 15.913150
+17 : Aggressive Dead Code Elimination : 15.913150
+18 : Reassociate expressions : 15.913150
+19 : SROA : 15.913150
+20 : SROA : 15.913150
+SpeedUp : 2.111461

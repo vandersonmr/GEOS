@@ -1,0 +1,21 @@
+1 : Constant Hoisting : 170.312501
+2 : Code sinking : 170.312501
+3 : Combine redundant instructions : 143.750001
+4 : Assign names to anonymous instructions : 143.750001
+5 : SROA : 143.750001
+6 : Alignment from assumptions : 143.750001
+7 : Add DWARF path discriminators : 143.750001
+8 : Global Value Numbering : 92.187501
+9 : Loop-Closed SSA Form Pass : 92.187501
+10 : Reassociate expressions : 92.187501
+11 : Code sinking : 92.187501
+12 : MemCpy Optimization : 92.187501
+13 : Scalar Replacement of Aggregates (DT) : 70.312501
+14 : Alignment from assumptions : 57.812501
+15 : MergedLoadStoreMotion : 57.812501
+16 : Promote Memory to Register : 57.812501
+17 : Code sinking : 57.812501
+18 : Combine redundant instructions : 57.812501
+19 : MergedLoadStoreMotion : 57.812501
+20 : Assign names to anonymous instructions : 57.812501
+SpeedUp : 2.945946

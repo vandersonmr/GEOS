@@ -1,0 +1,5 @@
+1 : Induction Variable Simplification : 160.971994
+2 : Add DWARF path discriminators : 160.971994
+3 : Early CSE : 99.192367
+4 : Induction Variable Simplification : 103.117267
+SpeedUp : 1.561058

@@ -1,0 +1,6 @@
+1 : Dead Instruction Elimination : 0.000001
+2 : Early CSE : 0.000001
+3 : Loop-Closed SSA Form Pass : 0.000001
+4 : Code sinking : 0.000001
+5 : Early CSE : 0.000001
+SpeedUp : 0.768519

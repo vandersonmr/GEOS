@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 19.369243
+2 : Value Propagation : 19.369243
+3 : Remove redundant instructions : 19.369243
+4 : MemCpy Optimization : 19.369243
+5 : Remove redundant instructions : 19.369243
+6 : Loop-Closed SSA Form Pass : 19.369243
+7 : Dead Code Elimination : 19.369243
+8 : Add DWARF path discriminators : 19.369243
+9 : Aggressive Dead Code Elimination : 19.369243
+10 : Lower atomic intrinsics to non-atomic form : 19.369243
+11 : Promote Memory to Register : 12.966242
+12 : Lower atomic intrinsics to non-atomic form : 12.966242
+13 : Value Propagation : 12.966242
+14 : Value Propagation : 12.966242
+15 : MergedLoadStoreMotion : 12.966242
+16 : Remove redundant instructions : 12.966242
+17 : Alignment from assumptions : 12.966242
+18 : Early CSE : 10.244641
+19 : Induction Variable Simplification : 9.284681
+20 : Dead Code Elimination : 9.124561
+SpeedUp : 2.350820

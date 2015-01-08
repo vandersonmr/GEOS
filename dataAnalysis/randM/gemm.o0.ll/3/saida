@@ -1,0 +1,7 @@
+1 : Reassociate expressions : 0.000002
+2 : Promote Memory to Register : 0.000002
+3 : Aggressive Dead Code Elimination : 0.000002
+4 : Assign names to anonymous instructions : 0.000002
+5 : Code sinking : 0.000002
+6 : Remove redundant instructions : 0.000002
+SpeedUp : 1.192708

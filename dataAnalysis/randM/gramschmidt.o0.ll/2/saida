@@ -1,0 +1,4 @@
+1 : Induction Variable Simplification : 0.000003
+2 : SROA : 0.000003
+3 : Assign names to anonymous instructions : 0.000003
+SpeedUp : 0.941406

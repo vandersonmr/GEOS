@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 167.861750
+2 : SROA : 167.861750
+3 : Assign names to anonymous instructions : 167.861750
+4 : Global Value Numbering : 62.647047
+5 : Lower atomic intrinsics to non-atomic form : 62.647047
+6 : Add DWARF path discriminators : 62.647047
+7 : Remove redundant instructions : 62.647047
+8 : Lower atomic intrinsics to non-atomic form : 62.647047
+9 : Loop Invariant Code Motion : 62.647047
+10 : Dead Code Elimination : 62.647047
+11 : Value Propagation : 62.647047
+12 : Constant Hoisting : 62.647047
+13 : Loop-Closed SSA Form Pass : 62.647047
+14 : Code sinking : 62.647047
+15 : Scalar Replacement of Aggregates (DT) : 40.878855
+16 : Assign names to anonymous instructions : 31.755847
+17 : Combine redundant instructions : 26.515495
+18 : MergedLoadStoreMotion : 26.515495
+19 : Early CSE : 26.515495
+20 : Value Propagation : 26.515495
+SpeedUp : 6.330704

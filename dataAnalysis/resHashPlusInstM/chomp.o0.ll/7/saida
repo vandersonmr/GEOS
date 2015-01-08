@@ -1,0 +1,15 @@
+1 : SROA : 414.080246
+2 : Early CSE : 408.760719
+3 : Reassociate expressions : 408.760719
+4 : Global Value Numbering : 408.485921
+5 : Scalar Replacement of Aggregates (DT) : 401.610832
+6 : MergedLoadStoreMotion : 399.806665
+7 : Constant Hoisting : 399.806665
+8 : Dead Instruction Elimination : 399.806665
+9 : Dead Code Elimination : 399.806665
+10 : MemCpy Optimization : 399.806665
+11 : MergedLoadStoreMotion : 399.806665
+12 : Remove redundant instructions : 399.806665
+13 : Reassociate expressions : 399.806665
+14 : Combine redundant instructions : 1034.871979
+SpeedUp : 0.400127

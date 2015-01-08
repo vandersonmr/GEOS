@@ -1,0 +1,4 @@
+1 : Reassociate expressions : 0.000002
+2 : Induction Variable Simplification : 0.000002
+3 : MemCpy Optimization : 0.000002
+SpeedUp : 1.000000

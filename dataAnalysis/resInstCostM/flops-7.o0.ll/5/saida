@@ -1,0 +1,5 @@
+1 : Scalar Replacement of Aggregates (DT) : 117.187500
+2 : Combine redundant instructions : 101.562500
+3 : Remove redundant instructions : 101.562500
+4 : Global Value Numbering : 101.562500
+SpeedUp : 1.769231

@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 142.187500
+2 : Alignment from assumptions : 142.187500
+3 : Promote Memory to Register : 79.687500
+4 : Constant Hoisting : 79.687500
+5 : Alignment from assumptions : 79.687500
+6 : Dead Instruction Elimination : 78.125000
+7 : Loop-Closed SSA Form Pass : 78.125000
+8 : Dead Code Elimination : 70.312500
+9 : Add DWARF path discriminators : 70.312500
+10 : MemCpy Optimization : 70.312500
+11 : Induction Variable Simplification : 70.312500
+12 : Lower atomic intrinsics to non-atomic form : 70.312500
+13 : Scalar Replacement of Aggregates (DT) : 70.312500
+14 : Value Propagation : 68.750000
+15 : Assign names to anonymous instructions : 68.750000
+16 : Assign names to anonymous instructions : 68.750000
+17 : Assign names to anonymous instructions : 68.750000
+18 : Dead Code Elimination : 68.750000
+19 : Reassociate expressions : 68.750000
+20 : Code sinking : 68.750000
+SpeedUp : 2.068182

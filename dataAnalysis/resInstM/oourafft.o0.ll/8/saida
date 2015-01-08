@@ -1,0 +1,11 @@
+1 : Dead Code Elimination : 1230.106588
+2 : Add DWARF path discriminators : 1230.106588
+3 : Alignment from assumptions : 1230.106588
+4 : MergedLoadStoreMotion : 1230.106588
+5 : Scalar Replacement of Aggregates (DT) : 662.964034
+6 : Promote Memory to Register : 662.959534
+7 : Code sinking : 662.959534
+8 : Combine redundant instructions : 661.157956
+9 : Induction Variable Simplification : 561.475967
+10 : Loop Invariant Code Motion : 561.655978
+SpeedUp : 2.190142

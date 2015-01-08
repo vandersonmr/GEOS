@@ -1,0 +1,7 @@
+1 : Induction Variable Simplification : 0.000001
+2 : Loop-Closed SSA Form Pass : 0.000001
+3 : Code sinking : 0.000001
+4 : Promote Memory to Register : 0.000001
+5 : Reassociate expressions : 0.000001
+6 : Code sinking : 0.000001
+SpeedUp : 0.891566

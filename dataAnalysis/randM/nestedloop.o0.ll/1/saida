@@ -1,0 +1,4 @@
+1 : Remove redundant instructions : 0.000001
+2 : Loop-Closed SSA Form Pass : 0.000001
+3 : Dead Instruction Elimination : 0.000001
+SpeedUp : 1.029412

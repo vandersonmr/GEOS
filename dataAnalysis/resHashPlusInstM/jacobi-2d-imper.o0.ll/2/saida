@@ -1,0 +1,11 @@
+1 : Scalar Replacement of Aggregates (DT) : 80.735143
+2 : Global Value Numbering : 54.321078
+3 : Induction Variable Simplification : 45.580898
+4 : Lower atomic intrinsics to non-atomic form : 45.580898
+5 : MergedLoadStoreMotion : 45.580898
+6 : Induction Variable Simplification : 45.580898
+7 : Lower atomic intrinsics to non-atomic form : 45.580898
+8 : Value Propagation : 45.580898
+9 : Code sinking : 45.580898
+10 : Combine redundant instructions : 59.087186
+SpeedUp : 1.453421

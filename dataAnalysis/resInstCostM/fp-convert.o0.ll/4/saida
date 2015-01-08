@@ -1,0 +1,9 @@
+1 : Add DWARF path discriminators : 430.381500
+2 : Alignment from assumptions : 430.381500
+3 : Remove redundant instructions : 430.381500
+4 : MergedLoadStoreMotion : 430.381500
+5 : Dead Instruction Elimination : 430.381500
+6 : Remove redundant instructions : 430.381500
+7 : Induction Variable Simplification : 430.381500
+8 : Global Value Numbering : 481.586500
+SpeedUp : 0.893674

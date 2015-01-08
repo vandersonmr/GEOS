@@ -1,0 +1,18 @@
+1 : Dead Instruction Elimination : 2067.011333
+2 : Lower atomic intrinsics to non-atomic form : 2067.011333
+3 : MemCpy Optimization : 2067.011333
+4 : Assign names to anonymous instructions : 2067.011333
+5 : Remove redundant instructions : 2067.011333
+6 : Reassociate expressions : 2067.011333
+7 : Constant Hoisting : 2067.011333
+8 : Early CSE : 1738.927090
+9 : Lower atomic intrinsics to non-atomic form : 1738.927090
+10 : Early CSE : 1738.927090
+11 : Aggressive Dead Code Elimination : 1738.927090
+12 : Assign names to anonymous instructions : 1738.927090
+13 : Remove redundant instructions : 1738.927090
+14 : Early CSE : 1738.927090
+15 : Dead Code Elimination : 1738.927090
+16 : Code sinking : 1738.927090
+17 : Loop Invariant Code Motion : 1893.548562
+SpeedUp : 1.091607

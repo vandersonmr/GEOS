@@ -1,0 +1,9 @@
+1 : Constant Hoisting : 2.477279
+2 : Value Propagation : 2.477279
+3 : Assign names to anonymous instructions : 2.477279
+4 : MemCpy Optimization : 2.477279
+5 : MemCpy Optimization : 2.477279
+6 : Aggressive Dead Code Elimination : 2.477279
+7 : Value Propagation : 2.477279
+8 : Global Value Numbering : 2.513467
+SpeedUp : 0.985602

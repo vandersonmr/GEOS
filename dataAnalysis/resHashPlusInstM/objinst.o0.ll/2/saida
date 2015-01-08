@@ -1,0 +1,14 @@
+1 : Loop Invariant Code Motion : 1352.458698
+2 : Induction Variable Simplification : 1352.458698
+3 : Promote Memory to Register : 682.908279
+4 : Induction Variable Simplification : 654.295929
+5 : Remove redundant instructions : 654.295929
+6 : Assign names to anonymous instructions : 654.295929
+7 : Loop Invariant Code Motion : 654.295929
+8 : Lower atomic intrinsics to non-atomic form : 654.295929
+9 : Induction Variable Simplification : 654.295929
+10 : Alignment from assumptions : 654.295929
+11 : Dead Instruction Elimination : 654.295929
+12 : Lower atomic intrinsics to non-atomic form : 654.295929
+13 : Combine redundant instructions : 19013.195991
+SpeedUp : 0.071133

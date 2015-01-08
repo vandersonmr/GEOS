@@ -1,0 +1,21 @@
+1 : Code sinking : 118.237015
+2 : Early CSE : 76.919787
+3 : Loop-Closed SSA Form Pass : 76.919787
+4 : Alignment from assumptions : 76.919787
+5 : Aggressive Dead Code Elimination : 76.919787
+6 : Global Value Numbering : 39.769062
+7 : Promote Memory to Register : 18.681406
+8 : Global Value Numbering : 14.129006
+9 : Add DWARF path discriminators : 14.129006
+10 : Assign names to anonymous instructions : 14.129006
+11 : Constant Hoisting : 14.129006
+12 : Loop-Closed SSA Form Pass : 14.129006
+13 : Dead Instruction Elimination : 14.129006
+14 : Loop-Closed SSA Form Pass : 14.129006
+15 : Dead Code Elimination : 14.129006
+16 : Global Value Numbering : 14.129006
+17 : MemCpy Optimization : 14.129006
+18 : Add DWARF path discriminators : 14.129006
+19 : Code sinking : 14.129006
+20 : Early CSE : 14.129006
+SpeedUp : 8.368389

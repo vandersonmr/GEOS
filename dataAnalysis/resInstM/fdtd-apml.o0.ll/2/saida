@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 152.011698
+2 : Loop Invariant Code Motion : 152.011698
+3 : Constant Hoisting : 152.011698
+4 : Combine redundant instructions : 133.167330
+5 : Alignment from assumptions : 133.167330
+6 : Remove redundant instructions : 133.167330
+7 : MemCpy Optimization : 133.167330
+8 : Loop Invariant Code Motion : 133.167330
+9 : SROA : 133.167330
+10 : Early CSE : 83.211006
+11 : Scalar Replacement of Aggregates (DT) : 58.292612
+12 : Induction Variable Simplification : 33.029541
+13 : Constant Hoisting : 33.029533
+14 : Reassociate expressions : 33.029533
+15 : Reassociate expressions : 33.029533
+16 : Reassociate expressions : 33.029533
+17 : Dead Code Elimination : 33.029533
+18 : Assign names to anonymous instructions : 33.029533
+19 : MemCpy Optimization : 33.029533
+20 : Scalar Replacement of Aggregates (DT) : 33.029533
+SpeedUp : 4.602296

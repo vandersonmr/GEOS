@@ -1,0 +1,14 @@
+1 : Code sinking : 96.456822
+2 : Add DWARF path discriminators : 96.456822
+3 : Remove redundant instructions : 96.456822
+4 : Value Propagation : 96.456822
+5 : Early CSE : 62.502122
+6 : MemCpy Optimization : 62.502122
+7 : Scalar Replacement of Aggregates (DT) : 48.083997
+8 : Assign names to anonymous instructions : 48.083997
+9 : Promote Memory to Register : 48.083997
+10 : Lower atomic intrinsics to non-atomic form : 48.083997
+11 : Alignment from assumptions : 48.083997
+12 : Aggressive Dead Code Elimination : 48.083997
+13 : Global Value Numbering : 51.677361
+SpeedUp : 1.866520

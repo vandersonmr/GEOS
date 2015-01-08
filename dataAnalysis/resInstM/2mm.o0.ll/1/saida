@@ -1,0 +1,21 @@
+1 : Early CSE : 581.510320
+2 : Assign names to anonymous instructions : 581.510320
+3 : MergedLoadStoreMotion : 581.510320
+4 : Loop Invariant Code Motion : 581.510320
+5 : Add DWARF path discriminators : 581.510320
+6 : Loop Invariant Code Motion : 581.510320
+7 : Add DWARF path discriminators : 581.510320
+8 : Aggressive Dead Code Elimination : 581.510320
+9 : Dead Instruction Elimination : 581.510320
+10 : Reassociate expressions : 581.510320
+11 : MergedLoadStoreMotion : 581.510320
+12 : Add DWARF path discriminators : 581.510320
+13 : Dead Code Elimination : 581.510320
+14 : Scalar Replacement of Aggregates (DT) : 419.997686
+15 : Induction Variable Simplification : 290.781727
+16 : Value Propagation : 290.781666
+17 : Alignment from assumptions : 290.781666
+18 : Aggressive Dead Code Elimination : 290.781666
+19 : Reassociate expressions : 290.781666
+20 : Constant Hoisting : 290.781666
+SpeedUp : 2.517829

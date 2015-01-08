@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 268.750000
+2 : MemCpy Optimization : 268.750000
+3 : MemCpy Optimization : 268.750000
+4 : Induction Variable Simplification : 268.750000
+5 : Induction Variable Simplification : 268.750000
+6 : Loop-Closed SSA Form Pass : 268.750000
+7 : Promote Memory to Register : 209.375000
+8 : Combine redundant instructions : 165.625000
+9 : MergedLoadStoreMotion : 165.625000
+10 : Reassociate expressions : 165.625000
+11 : Combine redundant instructions : 165.625000
+12 : SROA : 165.625000
+13 : Promote Memory to Register : 165.625000
+14 : Value Propagation : 165.625000
+15 : SROA : 165.625000
+16 : Dead Code Elimination : 165.625000
+17 : MergedLoadStoreMotion : 165.625000
+18 : Dead Instruction Elimination : 165.625000
+19 : Combine redundant instructions : 165.625000
+20 : Scalar Replacement of Aggregates (DT) : 165.625000
+SpeedUp : 1.622642

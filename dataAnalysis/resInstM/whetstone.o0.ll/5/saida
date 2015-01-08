@@ -1,0 +1,5 @@
+1 : Aggressive Dead Code Elimination : 86.965507
+2 : Loop Invariant Code Motion : 86.965507
+3 : Promote Memory to Register : 56.462504
+4 : Reassociate expressions : 56.619504
+SpeedUp : 1.535964

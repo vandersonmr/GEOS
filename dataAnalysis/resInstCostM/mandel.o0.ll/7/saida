@@ -1,0 +1,5 @@
+1 : Combine redundant instructions : 19.751600
+2 : Value Propagation : 19.751600
+3 : Remove redundant instructions : 19.751600
+4 : Induction Variable Simplification : 22.501600
+SpeedUp : 1.100013

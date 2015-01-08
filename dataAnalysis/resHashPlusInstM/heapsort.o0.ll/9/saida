@@ -1,0 +1,7 @@
+1 : MemCpy Optimization : 547.549296
+2 : Add DWARF path discriminators : 547.549296
+3 : Value Propagation : 547.549296
+4 : Reassociate expressions : 547.549296
+5 : Remove redundant instructions : 547.549296
+6 : Promote Memory to Register : 910.422251
+SpeedUp : 0.601423

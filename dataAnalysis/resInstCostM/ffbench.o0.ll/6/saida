@@ -1,0 +1,21 @@
+1 : SROA : 73.443919
+2 : Induction Variable Simplification : 73.443919
+3 : Loop-Closed SSA Form Pass : 73.443919
+4 : MemCpy Optimization : 73.443919
+5 : Global Value Numbering : 11.133551
+6 : Add DWARF path discriminators : 11.133551
+7 : Code sinking : 11.133551
+8 : Dead Code Elimination : 11.133551
+9 : Loop-Closed SSA Form Pass : 11.133551
+10 : Lower atomic intrinsics to non-atomic form : 11.133551
+11 : SROA : 11.133551
+12 : Value Propagation : 11.133551
+13 : Code sinking : 11.133551
+14 : Lower atomic intrinsics to non-atomic form : 11.133551
+15 : Dead Code Elimination : 11.133551
+16 : Loop Invariant Code Motion : 11.133551
+17 : Add DWARF path discriminators : 11.133551
+18 : Assign names to anonymous instructions : 11.133551
+19 : Dead Code Elimination : 11.133551
+20 : Promote Memory to Register : 4.171840
+SpeedUp : 17.604682

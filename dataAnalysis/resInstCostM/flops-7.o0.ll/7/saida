@@ -1,0 +1,21 @@
+1 : SROA : 179.687500
+2 : Code sinking : 179.687500
+3 : Dead Code Elimination : 179.687500
+4 : Remove redundant instructions : 179.687500
+5 : Early CSE : 139.062500
+6 : Combine redundant instructions : 128.125000
+7 : Dead Instruction Elimination : 128.125000
+8 : Lower atomic intrinsics to non-atomic form : 128.125000
+9 : Early CSE : 128.125000
+10 : Early CSE : 128.125000
+11 : Promote Memory to Register : 112.500000
+12 : Induction Variable Simplification : 101.562500
+13 : Alignment from assumptions : 101.562500
+14 : Add DWARF path discriminators : 101.562500
+15 : Scalar Replacement of Aggregates (DT) : 101.562500
+16 : Loop-Closed SSA Form Pass : 101.562500
+17 : MergedLoadStoreMotion : 101.562500
+18 : Scalar Replacement of Aggregates (DT) : 101.562500
+19 : Remove redundant instructions : 101.562500
+20 : Remove redundant instructions : 101.562500
+SpeedUp : 1.769231

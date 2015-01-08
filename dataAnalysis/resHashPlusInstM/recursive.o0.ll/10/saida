@@ -1,0 +1,5 @@
+1 : Add DWARF path discriminators : 605.674785
+2 : Aggressive Dead Code Elimination : 605.674785
+3 : Aggressive Dead Code Elimination : 605.674785
+4 : Combine redundant instructions : 637.695571
+SpeedUp : 0.949787

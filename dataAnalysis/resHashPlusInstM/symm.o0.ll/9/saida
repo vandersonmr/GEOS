@@ -1,0 +1,6 @@
+1 : Reassociate expressions : 1637.113271
+2 : Early CSE : 1471.065609
+3 : Dead Instruction Elimination : 1471.065609
+4 : Combine redundant instructions : 1257.919776
+5 : Induction Variable Simplification : 1402.450526
+SpeedUp : 1.167323

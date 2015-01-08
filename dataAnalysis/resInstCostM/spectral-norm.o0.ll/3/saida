@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 59.222512
+2 : Remove redundant instructions : 59.222512
+3 : SROA : 59.222512
+4 : MergedLoadStoreMotion : 59.222512
+5 : MergedLoadStoreMotion : 59.222512
+6 : Early CSE : 49.620792
+7 : MemCpy Optimization : 49.620792
+8 : Loop-Closed SSA Form Pass : 49.620792
+9 : Add DWARF path discriminators : 49.620792
+10 : Loop-Closed SSA Form Pass : 49.620792
+11 : Scalar Replacement of Aggregates (DT) : 30.411663
+12 : Global Value Numbering : 30.410484
+13 : Remove redundant instructions : 30.410484
+14 : Assign names to anonymous instructions : 30.410484
+15 : Add DWARF path discriminators : 30.410484
+16 : Loop-Closed SSA Form Pass : 30.410484
+17 : Induction Variable Simplification : 30.410484
+18 : SROA : 30.410484
+19 : Aggressive Dead Code Elimination : 30.410484
+20 : Alignment from assumptions : 30.410484
+SpeedUp : 1.947437

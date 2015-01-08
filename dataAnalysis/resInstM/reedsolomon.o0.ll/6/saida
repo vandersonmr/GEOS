@@ -1,0 +1,8 @@
+1 : Alignment from assumptions : 700.576343
+2 : Induction Variable Simplification : 700.576343
+3 : Alignment from assumptions : 700.576343
+4 : Scalar Replacement of Aggregates (DT) : 542.062308
+5 : Early CSE : 416.325302
+6 : Alignment from assumptions : 416.325302
+7 : Reassociate expressions : 416.554574
+SpeedUp : 1.681836

@@ -1,0 +1,5 @@
+1 : Induction Variable Simplification : 39416.709980
+2 : Remove redundant instructions : 39416.709980
+3 : Induction Variable Simplification : 39416.709980
+4 : Constant Hoisting : 39416.709980
+5 : Scalar Replacement of Aggregates (DT) : 122875.401751

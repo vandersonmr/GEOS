@@ -1,0 +1,11 @@
+1 : Scalar Replacement of Aggregates (DT) : 403.548191
+2 : Assign names to anonymous instructions : 403.548191
+3 : SROA : 403.548191
+4 : Value Propagation : 403.548191
+5 : Alignment from assumptions : 403.548191
+6 : Dead Code Elimination : 403.548191
+7 : Dead Instruction Elimination : 403.548191
+8 : SROA : 403.548191
+9 : Reassociate expressions : 403.548191
+10 : Loop-Closed SSA Form Pass : 403.568181
+SpeedUp : 1.600505

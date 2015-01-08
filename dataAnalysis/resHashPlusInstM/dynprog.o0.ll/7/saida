@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 591.823013
+2 : Aggressive Dead Code Elimination : 591.823013
+3 : Add DWARF path discriminators : 591.823013
+4 : SROA : 591.823013
+5 : Value Propagation : 591.823013
+6 : Add DWARF path discriminators : 591.823013
+7 : Dead Instruction Elimination : 591.823013
+8 : Remove redundant instructions : 591.774013
+9 : Assign names to anonymous instructions : 591.774013
+10 : MemCpy Optimization : 591.774013
+11 : SROA : 591.774013
+12 : MergedLoadStoreMotion : 591.774013
+13 : Loop Invariant Code Motion : 591.774013
+14 : Alignment from assumptions : 591.774013
+15 : Combine redundant instructions : 547.531940
+16 : MemCpy Optimization : 547.531940
+17 : Alignment from assumptions : 547.531940
+18 : MemCpy Optimization : 547.531940
+19 : Loop Invariant Code Motion : 547.531940
+20 : Code sinking : 547.531940
+SpeedUp : 1.080892

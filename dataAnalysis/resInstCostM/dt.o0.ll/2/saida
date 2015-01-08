@@ -1,0 +1,20 @@
+1 : Induction Variable Simplification : 37.603840
+2 : Loop-Closed SSA Form Pass : 37.603840
+3 : Aggressive Dead Code Elimination : 37.603840
+4 : Induction Variable Simplification : 37.603840
+5 : Induction Variable Simplification : 37.603840
+6 : Add DWARF path discriminators : 37.603840
+7 : Add DWARF path discriminators : 37.603840
+8 : Code sinking : 37.603840
+9 : Early CSE : 32.232469
+10 : MemCpy Optimization : 32.232469
+11 : MemCpy Optimization : 32.232469
+12 : Lower atomic intrinsics to non-atomic form : 32.232469
+13 : SROA : 32.232469
+14 : Early CSE : 32.232469
+15 : Scalar Replacement of Aggregates (DT) : 21.487084
+16 : Early CSE : 21.487084
+17 : SROA : 21.487084
+18 : Early CSE : 21.487084
+19 : Global Value Numbering : 24.171438
+SpeedUp : 1.555714

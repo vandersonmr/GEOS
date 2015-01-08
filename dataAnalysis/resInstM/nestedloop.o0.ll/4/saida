@@ -1,0 +1,4 @@
+1 : Lower atomic intrinsics to non-atomic form : 884.176172
+2 : Dead Code Elimination : 884.176172
+3 : Global Value Numbering : 1465.076338
+SpeedUp : 0.603502

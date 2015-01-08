@@ -1,0 +1,5 @@
+1 : Assign names to anonymous instructions : 645.912995
+2 : Loop-Closed SSA Form Pass : 645.912995
+3 : Global Value Numbering : 57.605466
+4 : Induction Variable Simplification : 57.605526
+SpeedUp : 11.212692

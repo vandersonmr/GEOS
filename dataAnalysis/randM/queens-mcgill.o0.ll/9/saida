@@ -1,0 +1,5 @@
+1 : MergedLoadStoreMotion : 0.000002
+2 : Scalar Replacement of Aggregates (DT) : 0.000002
+3 : SROA : 0.000002
+4 : Loop Invariant Code Motion : 0.000002
+SpeedUp : 1.068571

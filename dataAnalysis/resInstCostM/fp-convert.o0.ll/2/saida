@@ -1,0 +1,16 @@
+1 : MemCpy Optimization : 430.381500
+2 : MemCpy Optimization : 430.381500
+3 : Value Propagation : 430.381500
+4 : Lower atomic intrinsics to non-atomic form : 430.381500
+5 : Scalar Replacement of Aggregates (DT) : 235.648000
+6 : MergedLoadStoreMotion : 235.648000
+7 : Dead Code Elimination : 235.648000
+8 : Combine redundant instructions : 215.138000
+9 : Scalar Replacement of Aggregates (DT) : 215.138000
+10 : Reassociate expressions : 215.138000
+11 : Lower atomic intrinsics to non-atomic form : 215.138000
+12 : Dead Instruction Elimination : 215.138000
+13 : Remove redundant instructions : 215.138000
+14 : Alignment from assumptions : 215.138000
+15 : Global Value Numbering : 256.128000
+SpeedUp : 1.680338

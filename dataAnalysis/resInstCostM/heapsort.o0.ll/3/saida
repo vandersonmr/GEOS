@@ -1,0 +1,15 @@
+1 : Combine redundant instructions : 62.873985
+2 : MergedLoadStoreMotion : 62.873985
+3 : Add DWARF path discriminators : 62.873985
+4 : Constant Hoisting : 62.873985
+5 : Reassociate expressions : 62.873985
+6 : Remove redundant instructions : 62.873985
+7 : Reassociate expressions : 62.873985
+8 : Remove redundant instructions : 62.873985
+9 : SROA : 62.873985
+10 : Reassociate expressions : 62.873985
+11 : Code sinking : 62.873985
+12 : Reassociate expressions : 62.873985
+13 : Lower atomic intrinsics to non-atomic form : 62.873985
+14 : Global Value Numbering : 62.873985
+SpeedUp : 1.171180

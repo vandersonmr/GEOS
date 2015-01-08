@@ -1,0 +1,6 @@
+1 : MergedLoadStoreMotion : 0.000003
+2 : Aggressive Dead Code Elimination : 0.000004
+3 : SROA : 0.000004
+4 : Scalar Replacement of Aggregates (DT) : 0.000004
+5 : Early CSE : 0.000004
+SpeedUp : 1.139665

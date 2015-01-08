@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 732.138416
+2 : MergedLoadStoreMotion : 732.138416
+3 : Add DWARF path discriminators : 732.138416
+4 : MergedLoadStoreMotion : 732.138416
+5 : Add DWARF path discriminators : 732.138416
+6 : Combine redundant instructions : 646.039646
+7 : Loop-Closed SSA Form Pass : 646.039646
+8 : Aggressive Dead Code Elimination : 646.039646
+9 : Loop-Closed SSA Form Pass : 646.039646
+10 : Aggressive Dead Code Elimination : 646.039646
+11 : Constant Hoisting : 646.039646
+12 : Loop Invariant Code Motion : 646.039646
+13 : Aggressive Dead Code Elimination : 646.039646
+14 : Assign names to anonymous instructions : 646.039646
+15 : Loop-Closed SSA Form Pass : 646.039646
+16 : Early CSE : 495.422046
+17 : Early CSE : 495.422046
+18 : SROA : 495.422046
+19 : Constant Hoisting : 495.422046
+20 : Early CSE : 495.422046
+SpeedUp : 1.477808

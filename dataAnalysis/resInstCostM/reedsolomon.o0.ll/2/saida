@@ -1,0 +1,5 @@
+1 : Combine redundant instructions : 454.570519
+2 : Code sinking : 454.570519
+3 : Scalar Replacement of Aggregates (DT) : 338.525259
+4 : Value Propagation : 338.525261
+SpeedUp : 1.502624

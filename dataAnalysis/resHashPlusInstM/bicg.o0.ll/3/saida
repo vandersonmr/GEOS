@@ -1,0 +1,11 @@
+1 : MemCpy Optimization : 54.141359
+2 : Alignment from assumptions : 54.141359
+3 : MemCpy Optimization : 54.141359
+4 : Dead Instruction Elimination : 54.141359
+5 : Alignment from assumptions : 54.141359
+6 : Assign names to anonymous instructions : 54.141359
+7 : Alignment from assumptions : 54.141359
+8 : Alignment from assumptions : 54.141359
+9 : MemCpy Optimization : 54.141359
+10 : Promote Memory to Register : 54.613343
+SpeedUp : 0.991358

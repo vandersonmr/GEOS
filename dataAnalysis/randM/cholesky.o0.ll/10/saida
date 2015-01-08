@@ -1,0 +1,4 @@
+1 : Induction Variable Simplification : 0.000002
+2 : Loop-Closed SSA Form Pass : 0.000002
+3 : Reassociate expressions : 0.000001
+SpeedUp : 1.244275

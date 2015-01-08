@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 170.312501
+2 : Reassociate expressions : 170.312501
+3 : Early CSE : 154.687501
+4 : Value Propagation : 154.687501
+5 : Global Value Numbering : 98.437501
+6 : Code sinking : 98.437501
+7 : Constant Hoisting : 98.437501
+8 : Dead Instruction Elimination : 98.437501
+9 : MemCpy Optimization : 98.437501
+10 : Promote Memory to Register : 73.437501
+11 : Scalar Replacement of Aggregates (DT) : 64.062501
+12 : Aggressive Dead Code Elimination : 64.062501
+13 : Remove redundant instructions : 64.062501
+14 : Assign names to anonymous instructions : 64.062501
+15 : Lower atomic intrinsics to non-atomic form : 64.062501
+16 : Global Value Numbering : 64.062501
+17 : Combine redundant instructions : 57.812501
+18 : Combine redundant instructions : 57.812501
+19 : Induction Variable Simplification : 57.812501
+20 : Loop-Closed SSA Form Pass : 57.812501
+SpeedUp : 2.945946

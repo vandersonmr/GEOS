@@ -1,0 +1,21 @@
+1 : Code sinking : 142.187500
+2 : Loop-Closed SSA Form Pass : 142.187500
+3 : Loop Invariant Code Motion : 142.187500
+4 : Alignment from assumptions : 142.187500
+5 : MergedLoadStoreMotion : 142.187500
+6 : Reassociate expressions : 142.187500
+7 : Code sinking : 142.187500
+8 : Alignment from assumptions : 142.187500
+9 : Dead Instruction Elimination : 142.187500
+10 : Lower atomic intrinsics to non-atomic form : 142.187500
+11 : Constant Hoisting : 142.187500
+12 : Combine redundant instructions : 107.812500
+13 : Aggressive Dead Code Elimination : 107.812500
+14 : Value Propagation : 107.812500
+15 : Induction Variable Simplification : 107.812500
+16 : MemCpy Optimization : 107.812500
+17 : Loop Invariant Code Motion : 107.812500
+18 : Add DWARF path discriminators : 107.812500
+19 : Induction Variable Simplification : 107.812500
+20 : Induction Variable Simplification : 107.812500
+SpeedUp : 1.318841

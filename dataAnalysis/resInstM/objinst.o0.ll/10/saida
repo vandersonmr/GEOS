@@ -1,0 +1,7 @@
+1 : Combine redundant instructions : 54.600007
+2 : Combine redundant instructions : 54.600007
+3 : MemCpy Optimization : 54.600007
+4 : Promote Memory to Register : 36.400006
+5 : Induction Variable Simplification : 36.400006
+6 : Global Value Numbering : 37.100005
+SpeedUp : 1.981132

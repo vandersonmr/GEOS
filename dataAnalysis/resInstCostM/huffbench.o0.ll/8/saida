@@ -1,0 +1,9 @@
+1 : Loop Invariant Code Motion : 1632.534703
+2 : Add DWARF path discriminators : 1632.534703
+3 : Dead Code Elimination : 1632.534703
+4 : Constant Hoisting : 1632.534703
+5 : Constant Hoisting : 1632.534703
+6 : Scalar Replacement of Aggregates (DT) : 739.010023
+7 : Loop-Closed SSA Form Pass : 736.010179
+8 : Induction Variable Simplification : 736.010217
+SpeedUp : 2.218087

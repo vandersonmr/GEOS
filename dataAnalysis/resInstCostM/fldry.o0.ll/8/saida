@@ -1,0 +1,17 @@
+1 : Global Value Numbering : 383.000000
+2 : SROA : 383.000000
+3 : Value Propagation : 383.000000
+4 : SROA : 383.000000
+5 : Alignment from assumptions : 383.000000
+6 : Remove redundant instructions : 383.000000
+7 : Combine redundant instructions : 274.000000
+8 : Combine redundant instructions : 272.000000
+9 : Dead Code Elimination : 272.000000
+10 : SROA : 272.000000
+11 : MemCpy Optimization : 272.000000
+12 : Scalar Replacement of Aggregates (DT) : 172.000000
+13 : Early CSE : 159.000000
+14 : MemCpy Optimization : 159.000000
+15 : Constant Hoisting : 159.000000
+16 : Loop Invariant Code Motion : 160.000000
+SpeedUp : 2.800000

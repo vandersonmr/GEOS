@@ -1,0 +1,9 @@
+1 : Induction Variable Simplification : 783.664483
+2 : Aggressive Dead Code Elimination : 783.664483
+3 : Add DWARF path discriminators : 783.664483
+4 : Global Value Numbering : 756.349683
+5 : MergedLoadStoreMotion : 756.349683
+6 : Scalar Replacement of Aggregates (DT) : 7.621989
+7 : MergedLoadStoreMotion : 7.271989
+8 : Loop Invariant Code Motion : 584.369580
+SpeedUp : 1.341043

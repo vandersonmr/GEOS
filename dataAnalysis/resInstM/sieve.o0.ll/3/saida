@@ -1,0 +1,11 @@
+1 : Early CSE : 685.960200
+2 : Add DWARF path discriminators : 685.960200
+3 : Lower atomic intrinsics to non-atomic form : 685.960200
+4 : Loop Invariant Code Motion : 685.960200
+5 : Dead Code Elimination : 685.960200
+6 : SROA : 685.960200
+7 : Early CSE : 685.960200
+8 : Code sinking : 685.960200
+9 : Scalar Replacement of Aggregates (DT) : 445.291200
+10 : Induction Variable Simplification : 473.142300
+SpeedUp : 1.638372

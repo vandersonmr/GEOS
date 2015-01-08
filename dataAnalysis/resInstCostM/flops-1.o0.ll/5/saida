@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 340.625000
+2 : Value Propagation : 340.625000
+3 : Remove redundant instructions : 340.625000
+4 : Loop-Closed SSA Form Pass : 340.625000
+5 : Remove redundant instructions : 340.625000
+6 : Remove redundant instructions : 340.625000
+7 : Loop Invariant Code Motion : 340.625000
+8 : Lower atomic intrinsics to non-atomic form : 340.625000
+9 : Aggressive Dead Code Elimination : 340.625000
+10 : Lower atomic intrinsics to non-atomic form : 340.625000
+11 : Loop-Closed SSA Form Pass : 340.625000
+12 : Remove redundant instructions : 340.625000
+13 : Loop-Closed SSA Form Pass : 340.625000
+14 : Code sinking : 340.625000
+15 : MemCpy Optimization : 340.625000
+16 : MergedLoadStoreMotion : 340.625000
+17 : Loop-Closed SSA Form Pass : 340.625000
+18 : Scalar Replacement of Aggregates (DT) : 281.250000
+19 : Loop-Closed SSA Form Pass : 246.875000
+20 : Assign names to anonymous instructions : 246.875000
+SpeedUp : 1.379747

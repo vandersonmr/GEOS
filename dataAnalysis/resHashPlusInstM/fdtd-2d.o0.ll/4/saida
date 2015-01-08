@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 111.266998
+2 : Alignment from assumptions : 111.266998
+3 : MemCpy Optimization : 111.266998
+4 : Combine redundant instructions : 111.202555
+5 : Loop-Closed SSA Form Pass : 111.202555
+6 : Add DWARF path discriminators : 111.202555
+7 : Promote Memory to Register : 94.471684
+8 : Loop-Closed SSA Form Pass : 94.454603
+9 : Lower atomic intrinsics to non-atomic form : 94.454603
+10 : Promote Memory to Register : 94.454603
+11 : Promote Memory to Register : 94.454603
+12 : Constant Hoisting : 94.454603
+13 : Add DWARF path discriminators : 94.454603
+14 : Global Value Numbering : 94.454603
+15 : MergedLoadStoreMotion : 94.454603
+16 : Lower atomic intrinsics to non-atomic form : 94.454603
+17 : Scalar Replacement of Aggregates (DT) : 94.454603
+18 : SROA : 94.454603
+19 : Code sinking : 94.454603
+20 : Value Propagation : 94.454603
+SpeedUp : 3.300552

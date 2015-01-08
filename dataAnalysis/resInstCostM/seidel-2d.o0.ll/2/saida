@@ -1,0 +1,5 @@
+1 : Early CSE : 9.921810
+2 : Code sinking : 9.921810
+3 : Dead Instruction Elimination : 9.921810
+4 : Global Value Numbering : 11.147014
+SpeedUp : 1.680761

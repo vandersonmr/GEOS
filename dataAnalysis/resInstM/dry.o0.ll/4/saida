@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 533.000000
+2 : Global Value Numbering : 471.000000
+3 : Induction Variable Simplification : 471.000000
+4 : Dead Instruction Elimination : 471.000000
+5 : SROA : 471.000000
+6 : Dead Code Elimination : 471.000000
+7 : MergedLoadStoreMotion : 471.000000
+8 : SROA : 471.000000
+9 : Scalar Replacement of Aggregates (DT) : 279.000000
+10 : MemCpy Optimization : 248.000000
+11 : Remove redundant instructions : 243.000000
+12 : MemCpy Optimization : 243.000000
+13 : Reassociate expressions : 243.000000
+14 : MemCpy Optimization : 243.000000
+15 : Aggressive Dead Code Elimination : 243.000000
+16 : MergedLoadStoreMotion : 243.000000
+17 : SROA : 243.000000
+18 : Alignment from assumptions : 243.000000
+19 : Remove redundant instructions : 243.000000
+20 : Value Propagation : 243.000000
+SpeedUp : 2.193416

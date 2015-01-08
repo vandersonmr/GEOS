@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 115.762332
+2 : Loop Invariant Code Motion : 115.762332
+3 : SROA : 115.762332
+4 : Add DWARF path discriminators : 115.762332
+5 : SROA : 115.762332
+6 : Early CSE : 95.882631
+7 : Lower atomic intrinsics to non-atomic form : 95.882631
+8 : Add DWARF path discriminators : 95.882631
+9 : Assign names to anonymous instructions : 95.882631
+10 : Promote Memory to Register : 61.554981
+11 : Constant Hoisting : 45.243951
+12 : Constant Hoisting : 45.243951
+13 : Combine redundant instructions : 41.643772
+14 : SROA : 41.643772
+15 : Alignment from assumptions : 41.643772
+16 : Dead Code Elimination : 41.643772
+17 : Value Propagation : 41.643772
+18 : Add DWARF path discriminators : 41.643772
+19 : SROA : 41.643772
+20 : Scalar Replacement of Aggregates (DT) : 41.643772
+SpeedUp : 3.512521

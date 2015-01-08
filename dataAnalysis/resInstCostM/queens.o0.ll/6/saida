@@ -1,0 +1,8 @@
+1 : Dead Instruction Elimination : 1.627812
+2 : Value Propagation : 1.627812
+3 : Aggressive Dead Code Elimination : 1.627812
+4 : Early CSE : 1.515111
+5 : Loop Invariant Code Motion : 1.515111
+6 : Dead Instruction Elimination : 1.515111
+7 : Reassociate expressions : 1.549511
+SpeedUp : 1.050533

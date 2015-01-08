@@ -1,0 +1,5 @@
+1 : Scalar Replacement of Aggregates (DT) : 0.000001
+2 : Add DWARF path discriminators : 0.000001
+3 : Constant Hoisting : 0.000001
+4 : Add DWARF path discriminators : 0.000001
+SpeedUp : 0.921053

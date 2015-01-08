@@ -1,0 +1,11 @@
+1 : Global Value Numbering : 605.674785
+2 : Global Value Numbering : 605.674785
+3 : MemCpy Optimization : 605.674785
+4 : Loop-Closed SSA Form Pass : 605.674785
+5 : SROA : 605.674785
+6 : Dead Instruction Elimination : 605.674785
+7 : Dead Instruction Elimination : 605.674785
+8 : Constant Hoisting : 605.674785
+9 : Constant Hoisting : 605.674785
+10 : Scalar Replacement of Aggregates (DT) : 1161.618558
+SpeedUp : 0.521406

@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 431.666668
+2 : Aggressive Dead Code Elimination : 431.666668
+3 : Early CSE : 371.666668
+4 : Scalar Replacement of Aggregates (DT) : 230.000000
+5 : Lower atomic intrinsics to non-atomic form : 225.000000
+6 : Assign names to anonymous instructions : 225.000000
+7 : Global Value Numbering : 195.000000
+8 : Dead Code Elimination : 195.000000
+9 : Code sinking : 195.000000
+10 : Lower atomic intrinsics to non-atomic form : 195.000000
+11 : Code sinking : 195.000000
+12 : Code sinking : 195.000000
+13 : Dead Instruction Elimination : 195.000000
+14 : Promote Memory to Register : 195.000000
+15 : Value Propagation : 195.000000
+16 : Assign names to anonymous instructions : 195.000000
+17 : Scalar Replacement of Aggregates (DT) : 195.000000
+18 : Aggressive Dead Code Elimination : 195.000000
+19 : Global Value Numbering : 195.000000
+20 : Dead Instruction Elimination : 195.000000
+SpeedUp : 2.213675

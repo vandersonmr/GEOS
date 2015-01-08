@@ -1,0 +1,10 @@
+1 : Reassociate expressions : 146.875001
+2 : Value Propagation : 146.875001
+3 : Dead Code Elimination : 146.875001
+4 : MemCpy Optimization : 146.875001
+5 : MemCpy Optimization : 146.875001
+6 : Promote Memory to Register : 89.062500
+7 : Global Value Numbering : 67.187501
+8 : Add DWARF path discriminators : 67.187501
+9 : Loop Invariant Code Motion : 71.875001
+SpeedUp : 2.043478

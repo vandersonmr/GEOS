@@ -1,0 +1,7 @@
+1 : Scalar Replacement of Aggregates (DT) : 181.250000
+2 : SROA : 181.250000
+3 : Scalar Replacement of Aggregates (DT) : 181.250000
+4 : Assign names to anonymous instructions : 181.250000
+5 : Lower atomic intrinsics to non-atomic form : 181.250000
+6 : Induction Variable Simplification : 182.812500
+SpeedUp : 1.376068

@@ -1,0 +1,13 @@
+1 : Global Value Numbering : 471.100663
+2 : Value Propagation : 471.100663
+3 : Early CSE : 361.873829
+4 : Constant Hoisting : 361.873829
+5 : Constant Hoisting : 361.873829
+6 : Promote Memory to Register : 279.337818
+7 : Combine redundant instructions : 252.557556
+8 : Dead Code Elimination : 252.200458
+9 : Loop Invariant Code Motion : 252.133486
+10 : Code sinking : 251.969232
+11 : Induction Variable Simplification : 251.881870
+12 : Alignment from assumptions : 252.117231
+SpeedUp : 2.017618

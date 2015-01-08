@@ -1,0 +1,7 @@
+1 : Induction Variable Simplification : 5.494476
+2 : Scalar Replacement of Aggregates (DT) : 3.669483
+3 : Global Value Numbering : 3.031494
+4 : Add DWARF path discriminators : 3.031494
+5 : Early CSE : 3.029494
+6 : Loop-Closed SSA Form Pass : 3.305487
+SpeedUp : 1.662229

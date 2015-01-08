@@ -1,0 +1,10 @@
+1 : Remove redundant instructions : 21.251700
+2 : Code sinking : 21.251700
+3 : Lower atomic intrinsics to non-atomic form : 21.251700
+4 : Combine redundant instructions : 17.751550
+5 : Remove redundant instructions : 17.751550
+6 : SROA : 17.751550
+7 : Early CSE : 15.501500
+8 : Aggressive Dead Code Elimination : 15.501500
+9 : Induction Variable Simplification : 17.751500
+SpeedUp : 1.225350

@@ -1,0 +1,11 @@
+1 : Alignment from assumptions : 1637.113271
+2 : Combine redundant instructions : 1514.411921
+3 : Induction Variable Simplification : 1514.411921
+4 : Induction Variable Simplification : 1514.411921
+5 : Code sinking : 1514.411921
+6 : Assign names to anonymous instructions : 1514.411921
+7 : Aggressive Dead Code Elimination : 1514.411921
+8 : Induction Variable Simplification : 1514.411921
+9 : Remove redundant instructions : 1514.411921
+10 : Global Value Numbering : 1631.231419
+SpeedUp : 1.003606

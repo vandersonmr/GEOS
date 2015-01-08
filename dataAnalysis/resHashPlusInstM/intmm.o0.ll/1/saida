@@ -1,0 +1,5 @@
+1 : Code sinking : 1.100201
+2 : Early CSE : 1.069009
+3 : Dead Instruction Elimination : 1.069009
+4 : Reassociate expressions : 1.094675
+SpeedUp : 1.005048

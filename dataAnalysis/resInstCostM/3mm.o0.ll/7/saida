@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 839.354963
+2 : MemCpy Optimization : 839.354963
+3 : Loop-Closed SSA Form Pass : 839.354963
+4 : Combine redundant instructions : 710.222522
+5 : Combine redundant instructions : 710.222522
+6 : MemCpy Optimization : 710.222522
+7 : Add DWARF path discriminators : 710.222522
+8 : Dead Code Elimination : 710.222522
+9 : Lower atomic intrinsics to non-atomic form : 710.222522
+10 : Add DWARF path discriminators : 710.222522
+11 : Dead Code Elimination : 710.222522
+12 : Dead Code Elimination : 710.222522
+13 : Induction Variable Simplification : 710.222522
+14 : Promote Memory to Register : 387.344456
+15 : Dead Code Elimination : 387.333970
+16 : Dead Instruction Elimination : 387.333970
+17 : Value Propagation : 387.333970
+18 : Dead Code Elimination : 387.333970
+19 : Loop-Closed SSA Form Pass : 387.333970
+20 : Value Propagation : 387.333970
+SpeedUp : 2.167006

@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 1437.840000
+2 : MergedLoadStoreMotion : 1437.840000
+3 : Remove redundant instructions : 1437.840000
+4 : Remove redundant instructions : 1437.840000
+5 : Constant Hoisting : 1437.840000
+6 : Dead Code Elimination : 1437.840000
+7 : MemCpy Optimization : 1437.840000
+8 : MergedLoadStoreMotion : 1437.840000
+9 : Loop Invariant Code Motion : 1437.840000
+10 : Assign names to anonymous instructions : 1437.840000
+11 : Constant Hoisting : 1437.840000
+12 : Dead Instruction Elimination : 1437.840000
+13 : Value Propagation : 1437.840000
+14 : Constant Hoisting : 1437.840000
+15 : Loop-Closed SSA Form Pass : 1437.840000
+16 : Loop Invariant Code Motion : 1437.840000
+17 : Aggressive Dead Code Elimination : 1437.840000
+18 : Dead Code Elimination : 1437.840000
+19 : Combine redundant instructions : 1437.840000
+20 : Combine redundant instructions : 1437.840000
+SpeedUp : 1.295443

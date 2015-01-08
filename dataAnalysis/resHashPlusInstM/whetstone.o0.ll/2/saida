@@ -1,0 +1,5 @@
+1 : MergedLoadStoreMotion : 4345.034890
+2 : Scalar Replacement of Aggregates (DT) : 479.031349
+3 : Induction Variable Simplification : 477.897102
+4 : Global Value Numbering : 2138.187525
+SpeedUp : 2.032111

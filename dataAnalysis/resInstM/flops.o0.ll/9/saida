@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 875.499222
+2 : Early CSE : 734.857830
+3 : Combine redundant instructions : 708.347768
+4 : Loop Invariant Code Motion : 324.579281
+5 : Remove redundant instructions : 324.579281
+6 : Assign names to anonymous instructions : 324.579281
+7 : Add DWARF path discriminators : 324.579281
+8 : Promote Memory to Register : 252.340222
+9 : Remove redundant instructions : 198.626676
+10 : Constant Hoisting : 198.626676
+11 : Aggressive Dead Code Elimination : 198.626676
+12 : Early CSE : 198.626676
+13 : Constant Hoisting : 198.626676
+14 : Add DWARF path discriminators : 198.626676
+15 : Assign names to anonymous instructions : 198.626676
+16 : Dead Code Elimination : 198.626676
+17 : Early CSE : 198.626676
+18 : Promote Memory to Register : 198.626676
+19 : Assign names to anonymous instructions : 198.626676
+20 : Remove redundant instructions : 198.626676
+SpeedUp : 4.407763

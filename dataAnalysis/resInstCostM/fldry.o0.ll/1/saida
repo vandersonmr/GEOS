@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 448.000000
+2 : Dead Code Elimination : 448.000000
+3 : Constant Hoisting : 448.000000
+4 : Aggressive Dead Code Elimination : 448.000000
+5 : Alignment from assumptions : 448.000000
+6 : Dead Instruction Elimination : 448.000000
+7 : Combine redundant instructions : 329.000000
+8 : MemCpy Optimization : 329.000000
+9 : Constant Hoisting : 329.000000
+10 : Assign names to anonymous instructions : 329.000000
+11 : Combine redundant instructions : 329.000000
+12 : SROA : 329.000000
+13 : Add DWARF path discriminators : 329.000000
+14 : Induction Variable Simplification : 329.000000
+15 : Alignment from assumptions : 329.000000
+16 : Induction Variable Simplification : 329.000000
+17 : MemCpy Optimization : 329.000000
+18 : MemCpy Optimization : 329.000000
+19 : Constant Hoisting : 329.000000
+20 : Scalar Replacement of Aggregates (DT) : 220.000000
+SpeedUp : 2.036364

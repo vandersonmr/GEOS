@@ -1,0 +1,9 @@
+1 : Aggressive Dead Code Elimination : 78.440507
+2 : Aggressive Dead Code Elimination : 78.440507
+3 : Induction Variable Simplification : 78.440507
+4 : Add DWARF path discriminators : 78.440507
+5 : Loop-Closed SSA Form Pass : 78.440507
+6 : Scalar Replacement of Aggregates (DT) : 47.937503
+7 : Promote Memory to Register : 47.937503
+8 : Global Value Numbering : 70.088002
+SpeedUp : 1.119172

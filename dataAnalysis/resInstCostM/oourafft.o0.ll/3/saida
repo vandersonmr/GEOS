@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 1226.677115
+2 : Code sinking : 1226.677115
+3 : Dead Code Elimination : 1226.677115
+4 : Promote Memory to Register : 659.179058
+5 : Lower atomic intrinsics to non-atomic form : 659.170057
+6 : Loop Invariant Code Motion : 658.996055
+7 : Constant Hoisting : 658.996055
+8 : Add DWARF path discriminators : 658.996055
+9 : Alignment from assumptions : 658.996055
+10 : Dead Instruction Elimination : 658.996055
+11 : Global Value Numbering : 321.727017
+12 : Lower atomic intrinsics to non-atomic form : 321.727017
+13 : Constant Hoisting : 321.727017
+14 : Remove redundant instructions : 321.727017
+15 : Loop Invariant Code Motion : 321.727017
+16 : Scalar Replacement of Aggregates (DT) : 321.727017
+17 : SROA : 321.727017
+18 : MergedLoadStoreMotion : 321.727017
+19 : SROA : 321.727017
+20 : Scalar Replacement of Aggregates (DT) : 321.727017
+SpeedUp : 3.812789

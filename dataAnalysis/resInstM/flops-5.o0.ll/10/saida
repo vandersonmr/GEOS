@@ -1,0 +1,5 @@
+1 : Loop-Closed SSA Form Pass : 245.312500
+2 : SROA : 245.312500
+3 : Scalar Replacement of Aggregates (DT) : 176.562500
+4 : SROA : 178.125000
+SpeedUp : 1.377193

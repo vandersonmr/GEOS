@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 11.046280
+2 : SROA : 11.046280
+3 : Assign names to anonymous instructions : 11.046280
+4 : Dead Instruction Elimination : 11.046280
+5 : SROA : 11.046280
+6 : Induction Variable Simplification : 11.046280
+7 : Alignment from assumptions : 11.046280
+8 : Constant Hoisting : 11.046280
+9 : Combine redundant instructions : 8.965320
+10 : Assign names to anonymous instructions : 8.965240
+11 : SROA : 8.965240
+12 : Assign names to anonymous instructions : 8.965240
+13 : Loop-Closed SSA Form Pass : 8.965240
+14 : Alignment from assumptions : 8.965240
+15 : Combine redundant instructions : 8.965240
+16 : Value Propagation : 8.965240
+17 : Aggressive Dead Code Elimination : 8.965240
+18 : Global Value Numbering : 8.965240
+19 : Alignment from assumptions : 8.965240
+20 : Constant Hoisting : 8.965240
+SpeedUp : 1.383724

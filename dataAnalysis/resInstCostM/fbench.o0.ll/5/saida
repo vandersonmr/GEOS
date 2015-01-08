@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 26.140006
+2 : Dead Instruction Elimination : 26.140006
+3 : Combine redundant instructions : 22.720005
+4 : Lower atomic intrinsics to non-atomic form : 22.720005
+5 : Constant Hoisting : 22.720005
+6 : Early CSE : 22.080004
+7 : Remove redundant instructions : 22.080004
+8 : SROA : 22.080004
+9 : Add DWARF path discriminators : 22.080004
+10 : Dead Instruction Elimination : 22.080004
+11 : MergedLoadStoreMotion : 22.080004
+12 : Reassociate expressions : 22.080004
+13 : Value Propagation : 22.080004
+14 : Aggressive Dead Code Elimination : 22.080004
+15 : Combine redundant instructions : 22.080004
+16 : Loop-Closed SSA Form Pass : 22.080004
+17 : Value Propagation : 22.080004
+18 : Induction Variable Simplification : 22.080004
+19 : Promote Memory to Register : 18.820003
+20 : Value Propagation : 17.820003
+SpeedUp : 1.466891

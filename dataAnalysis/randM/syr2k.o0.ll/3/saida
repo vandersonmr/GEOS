@@ -1,0 +1,5 @@
+1 : MemCpy Optimization : 0.000002
+2 : Global Value Numbering : 0.000002
+3 : Add DWARF path discriminators : 0.000002
+4 : Add DWARF path discriminators : 0.000001
+SpeedUp : 1.615385

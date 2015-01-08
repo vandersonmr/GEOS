@@ -1,0 +1,21 @@
+1 : Constant Hoisting : 839.354963
+2 : Induction Variable Simplification : 839.354963
+3 : Dead Code Elimination : 839.354963
+4 : Remove redundant instructions : 839.354963
+5 : Reassociate expressions : 839.354963
+6 : Early CSE : 710.212179
+7 : Dead Code Elimination : 710.212179
+8 : Promote Memory to Register : 484.149064
+9 : MemCpy Optimization : 419.651154
+10 : Value Propagation : 419.651154
+11 : Add DWARF path discriminators : 419.651154
+12 : Combine redundant instructions : 355.090258
+13 : Early CSE : 355.090258
+14 : Promote Memory to Register : 355.090258
+15 : Loop-Closed SSA Form Pass : 355.090258
+16 : Constant Hoisting : 355.090258
+17 : Code sinking : 355.090258
+18 : Aggressive Dead Code Elimination : 355.090258
+19 : Scalar Replacement of Aggregates (DT) : 355.090258
+20 : Add DWARF path discriminators : 355.090258
+SpeedUp : 2.363779

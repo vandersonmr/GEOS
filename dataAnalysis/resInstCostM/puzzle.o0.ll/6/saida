@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 91.525496
+2 : Aggressive Dead Code Elimination : 91.525496
+3 : Code sinking : 91.525496
+4 : Alignment from assumptions : 91.525496
+5 : Scalar Replacement of Aggregates (DT) : 35.825172
+6 : Early CSE : 30.700162
+7 : SROA : 30.700162
+8 : Loop Invariant Code Motion : 30.700162
+9 : Loop Invariant Code Motion : 30.700162
+10 : Global Value Numbering : 30.675172
+11 : MergedLoadStoreMotion : 30.675172
+12 : Scalar Replacement of Aggregates (DT) : 30.675172
+13 : Scalar Replacement of Aggregates (DT) : 30.675172
+14 : Dead Instruction Elimination : 30.675172
+15 : Constant Hoisting : 30.675172
+16 : Early CSE : 30.675172
+17 : Value Propagation : 30.675172
+18 : MergedLoadStoreMotion : 30.675172
+19 : Combine redundant instructions : 30.675172
+20 : Early CSE : 30.675172
+SpeedUp : 2.983699

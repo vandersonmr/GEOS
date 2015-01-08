@@ -1,0 +1,8 @@
+1 : Add DWARF path discriminators : 1.627812
+2 : Dead Instruction Elimination : 1.627812
+3 : Dead Code Elimination : 1.627812
+4 : Code sinking : 1.627812
+5 : Loop Invariant Code Motion : 1.627812
+6 : Dead Instruction Elimination : 1.627812
+7 : Reassociate expressions : 1.662212
+SpeedUp : 0.979305

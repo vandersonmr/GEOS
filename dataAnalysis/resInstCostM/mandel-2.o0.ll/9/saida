@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 98.816480
+2 : Lower atomic intrinsics to non-atomic form : 98.816480
+3 : Induction Variable Simplification : 98.816480
+4 : Value Propagation : 98.816480
+5 : Value Propagation : 98.816480
+6 : Promote Memory to Register : 81.563217
+7 : Aggressive Dead Code Elimination : 81.563217
+8 : Loop-Closed SSA Form Pass : 81.563217
+9 : Loop-Closed SSA Form Pass : 81.563217
+10 : Add DWARF path discriminators : 81.563217
+11 : Promote Memory to Register : 81.563217
+12 : Dead Instruction Elimination : 81.563217
+13 : Combine redundant instructions : 75.288679
+14 : Lower atomic intrinsics to non-atomic form : 75.288679
+15 : Lower atomic intrinsics to non-atomic form : 75.288679
+16 : Induction Variable Simplification : 75.288679
+17 : Alignment from assumptions : 75.288679
+18 : Combine redundant instructions : 75.288679
+19 : Promote Memory to Register : 75.288679
+20 : Alignment from assumptions : 75.288679
+SpeedUp : 1.395831

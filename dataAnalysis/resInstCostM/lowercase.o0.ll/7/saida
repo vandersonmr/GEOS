@@ -1,0 +1,21 @@
+1 : Early CSE : 1346.400018
+2 : Promote Memory to Register : 661.600008
+3 : Lower atomic intrinsics to non-atomic form : 661.600007
+4 : Global Value Numbering : 658.400008
+5 : Reassociate expressions : 658.400007
+6 : Dead Code Elimination : 658.400007
+7 : Induction Variable Simplification : 658.400007
+8 : Add DWARF path discriminators : 658.400007
+9 : MemCpy Optimization : 658.400007
+10 : Early CSE : 658.400007
+11 : Global Value Numbering : 658.400007
+12 : Induction Variable Simplification : 658.400007
+13 : Combine redundant instructions : 608.800007
+14 : Scalar Replacement of Aggregates (DT) : 608.800007
+15 : Reassociate expressions : 608.800007
+16 : Assign names to anonymous instructions : 608.800007
+17 : Dead Instruction Elimination : 608.800007
+18 : Add DWARF path discriminators : 608.800007
+19 : Dead Instruction Elimination : 608.800007
+20 : Add DWARF path discriminators : 608.800007
+SpeedUp : 2.629435

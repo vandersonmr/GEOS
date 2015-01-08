@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 645.912356
+2 : Dead Instruction Elimination : 645.912356
+3 : Early CSE : 591.958252
+4 : MemCpy Optimization : 591.958252
+5 : Reassociate expressions : 591.958252
+6 : Lower atomic intrinsics to non-atomic form : 591.958252
+7 : MergedLoadStoreMotion : 591.958252
+8 : Constant Hoisting : 591.958252
+9 : Assign names to anonymous instructions : 591.958252
+10 : Add DWARF path discriminators : 591.958252
+11 : Code sinking : 591.958252
+12 : Aggressive Dead Code Elimination : 591.958252
+13 : Alignment from assumptions : 591.958252
+14 : Loop Invariant Code Motion : 591.958252
+15 : Reassociate expressions : 591.958252
+16 : Loop Invariant Code Motion : 591.958252
+17 : Aggressive Dead Code Elimination : 591.958252
+18 : Alignment from assumptions : 591.958252
+19 : Early CSE : 591.958252
+20 : Assign names to anonymous instructions : 591.958252
+SpeedUp : 1.091146

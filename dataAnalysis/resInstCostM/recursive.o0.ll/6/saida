@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 69.706230
+2 : Add DWARF path discriminators : 69.706230
+3 : Dead Code Elimination : 69.706230
+4 : MemCpy Optimization : 69.706230
+5 : Alignment from assumptions : 69.706230
+6 : Promote Memory to Register : 21.576020
+7 : SROA : 21.576020
+8 : MergedLoadStoreMotion : 21.576020
+9 : Lower atomic intrinsics to non-atomic form : 21.576020
+10 : Dead Instruction Elimination : 21.576020
+11 : Lower atomic intrinsics to non-atomic form : 21.576020
+12 : Dead Instruction Elimination : 21.576020
+13 : Global Value Numbering : 21.576020
+14 : Scalar Replacement of Aggregates (DT) : 21.576020
+15 : Assign names to anonymous instructions : 21.576020
+16 : MergedLoadStoreMotion : 21.576020
+17 : Code sinking : 20.681890
+18 : Promote Memory to Register : 20.681890
+19 : Remove redundant instructions : 20.681890
+20 : Lower atomic intrinsics to non-atomic form : 20.681890
+SpeedUp : 3.370399

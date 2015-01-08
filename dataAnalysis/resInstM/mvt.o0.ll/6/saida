@@ -1,0 +1,13 @@
+1 : SROA : 13.125762
+2 : Early CSE : 9.764681
+3 : Scalar Replacement of Aggregates (DT) : 7.203361
+4 : Induction Variable Simplification : 6.242921
+5 : Promote Memory to Register : 6.082881
+6 : Loop Invariant Code Motion : 5.442841
+7 : Value Propagation : 5.442841
+8 : Assign names to anonymous instructions : 5.442841
+9 : Remove redundant instructions : 5.442841
+10 : Loop Invariant Code Motion : 5.442841
+11 : Remove redundant instructions : 5.442841
+12 : Code sinking : 5.602841
+SpeedUp : 2.342698

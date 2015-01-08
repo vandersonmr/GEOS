@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 131.512216
+2 : Add DWARF path discriminators : 131.512216
+3 : Alignment from assumptions : 131.512216
+4 : Code sinking : 131.512216
+5 : Add DWARF path discriminators : 131.512216
+6 : MergedLoadStoreMotion : 131.512216
+7 : Remove redundant instructions : 131.512216
+8 : MergedLoadStoreMotion : 131.512216
+9 : Induction Variable Simplification : 131.512216
+10 : Dead Instruction Elimination : 131.512216
+11 : Aggressive Dead Code Elimination : 131.512216
+12 : Loop-Closed SSA Form Pass : 131.512216
+13 : Loop-Closed SSA Form Pass : 131.512216
+14 : Constant Hoisting : 131.512216
+15 : Loop-Closed SSA Form Pass : 131.512216
+16 : Combine redundant instructions : 131.512216
+17 : Remove redundant instructions : 131.512216
+18 : Value Propagation : 131.512216
+19 : SROA : 131.512216
+20 : Promote Memory to Register : 82.892410
+SpeedUp : 1.941939

@@ -1,0 +1,4 @@
+1 : Promote Memory to Register : 0.000002
+2 : Induction Variable Simplification : 0.000002
+3 : Early CSE : 0.000002
+SpeedUp : 0.953757

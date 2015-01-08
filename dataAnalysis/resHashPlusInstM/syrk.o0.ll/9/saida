@@ -1,0 +1,12 @@
+1 : Reassociate expressions : 1877.907038
+2 : MemCpy Optimization : 1877.907038
+3 : Loop-Closed SSA Form Pass : 1877.907038
+4 : Assign names to anonymous instructions : 1877.907038
+5 : Aggressive Dead Code Elimination : 1877.907038
+6 : Promote Memory to Register : 1764.353222
+7 : Constant Hoisting : 1764.353222
+8 : MemCpy Optimization : 1764.353222
+9 : Dead Code Elimination : 1764.353222
+10 : Combine redundant instructions : 1457.754558
+11 : Loop Invariant Code Motion : 1576.906469
+SpeedUp : 1.190880

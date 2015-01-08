@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 143.637873
+2 : Aggressive Dead Code Elimination : 143.637873
+3 : Induction Variable Simplification : 143.637873
+4 : Constant Hoisting : 143.637873
+5 : Loop-Closed SSA Form Pass : 143.637873
+6 : Scalar Replacement of Aggregates (DT) : 93.362002
+7 : Promote Memory to Register : 64.681723
+8 : Loop-Closed SSA Form Pass : 64.681723
+9 : Global Value Numbering : 21.784387
+10 : Loop-Closed SSA Form Pass : 21.784387
+11 : Combine redundant instructions : 21.758167
+12 : Alignment from assumptions : 21.758167
+13 : Scalar Replacement of Aggregates (DT) : 21.758167
+14 : Value Propagation : 21.758167
+15 : Constant Hoisting : 21.758167
+16 : Add DWARF path discriminators : 21.758167
+17 : Global Value Numbering : 21.758167
+18 : Remove redundant instructions : 21.758167
+19 : Loop Invariant Code Motion : 21.705749
+20 : Early CSE : 21.695263
+SpeedUp : 6.620702

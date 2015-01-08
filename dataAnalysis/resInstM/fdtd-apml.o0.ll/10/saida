@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 152.011698
+2 : Alignment from assumptions : 152.011698
+3 : Remove redundant instructions : 152.011698
+4 : Lower atomic intrinsics to non-atomic form : 152.011698
+5 : SROA : 152.011698
+6 : Scalar Replacement of Aggregates (DT) : 98.988594
+7 : Reassociate expressions : 98.988594
+8 : Aggressive Dead Code Elimination : 98.988594
+9 : Loop-Closed SSA Form Pass : 98.988594
+10 : Aggressive Dead Code Elimination : 98.988594
+11 : Induction Variable Simplification : 75.612566
+12 : Value Propagation : 75.612566
+13 : Add DWARF path discriminators : 75.612566
+14 : Promote Memory to Register : 75.612566
+15 : Loop Invariant Code Motion : 44.136304
+16 : SROA : 44.136304
+17 : Value Propagation : 44.136304
+18 : Code sinking : 44.136304
+19 : Dead Instruction Elimination : 44.136304
+20 : Promote Memory to Register : 44.136304
+SpeedUp : 3.444142

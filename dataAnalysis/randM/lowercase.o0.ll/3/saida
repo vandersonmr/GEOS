@@ -1,0 +1,4 @@
+1 : SROA : 0.000001
+2 : MemCpy Optimization : 0.000001
+3 : Assign names to anonymous instructions : 0.000001
+SpeedUp : 0.971014

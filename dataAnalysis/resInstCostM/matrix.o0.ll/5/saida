@@ -1,0 +1,5 @@
+1 : Combine redundant instructions : 915.510046
+2 : Dead Instruction Elimination : 915.510046
+3 : Aggressive Dead Code Elimination : 915.510046
+4 : Global Value Numbering : 1037.610055
+SpeedUp : 0.918091

@@ -1,0 +1,5 @@
+1 : Assign names to anonymous instructions : 266.005330
+2 : Code sinking : 266.005330
+3 : Aggressive Dead Code Elimination : 266.005330
+4 : Reassociate expressions : 266.123965
+SpeedUp : 0.999554

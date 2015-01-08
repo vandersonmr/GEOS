@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 0.762001
+2 : Global Value Numbering : 0.762001
+3 : Constant Hoisting : 0.762001
+4 : Dead Instruction Elimination : 0.762001
+5 : Induction Variable Simplification : 0.762001
+6 : Loop Invariant Code Motion : 0.762001
+7 : Dead Instruction Elimination : 0.762001
+8 : Constant Hoisting : 0.762001
+9 : Promote Memory to Register : 0.371061
+10 : Code sinking : 0.310920
+11 : Remove redundant instructions : 0.300920
+12 : Value Propagation : 0.300920
+13 : Constant Hoisting : 0.300920
+14 : Remove redundant instructions : 0.300920
+15 : Value Propagation : 0.300920
+16 : Scalar Replacement of Aggregates (DT) : 0.300920
+17 : Constant Hoisting : 0.300920
+18 : Reassociate expressions : 0.300920
+19 : Add DWARF path discriminators : 0.300920
+20 : Loop-Closed SSA Form Pass : 0.300920
+SpeedUp : 635.720893

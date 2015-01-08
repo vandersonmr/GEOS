@@ -1,0 +1,9 @@
+1 : MergedLoadStoreMotion : 42.395444
+2 : Add DWARF path discriminators : 42.395444
+3 : Dead Code Elimination : 42.395444
+4 : Aggressive Dead Code Elimination : 42.395444
+5 : SROA : 42.395444
+6 : SROA : 42.395444
+7 : Constant Hoisting : 42.395444
+8 : Combine redundant instructions : 76.226570
+SpeedUp : 0.556177

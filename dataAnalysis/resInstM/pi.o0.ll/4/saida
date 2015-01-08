@@ -1,0 +1,7 @@
+1 : Reassociate expressions : 37.913151
+2 : Induction Variable Simplification : 37.913151
+3 : Reassociate expressions : 37.913151
+4 : Aggressive Dead Code Elimination : 37.913151
+5 : Promote Memory to Register : 21.426300
+6 : Dead Code Elimination : 22.626300
+SpeedUp : 1.675623

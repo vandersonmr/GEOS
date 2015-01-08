@@ -1,0 +1,10 @@
+1 : Aggressive Dead Code Elimination : 423.591104
+2 : Early CSE : 129.894694
+3 : Dead Code Elimination : 124.895649
+4 : Scalar Replacement of Aggregates (DT) : 114.767745
+5 : Add DWARF path discriminators : 102.124645
+6 : Remove redundant instructions : 102.124645
+7 : Assign names to anonymous instructions : 102.124645
+8 : Aggressive Dead Code Elimination : 102.124645
+9 : Loop-Closed SSA Form Pass : 102.437126
+SpeedUp : 4.135133

@@ -1,0 +1,4 @@
+1 : Aggressive Dead Code Elimination : 59.222512
+2 : Add DWARF path discriminators : 59.222512
+3 : Global Value Numbering : 64.021794
+SpeedUp : 0.925037

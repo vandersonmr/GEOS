@@ -1,0 +1,21 @@
+1 : Early CSE : 4.081581
+2 : Combine redundant instructions : 3.521401
+3 : SROA : 3.521401
+4 : Early CSE : 3.521401
+5 : Code sinking : 3.521401
+6 : Value Propagation : 3.521401
+7 : Alignment from assumptions : 3.521401
+8 : Alignment from assumptions : 3.521401
+9 : Code sinking : 3.521401
+10 : Promote Memory to Register : 2.640900
+11 : Alignment from assumptions : 2.480900
+12 : Induction Variable Simplification : 2.480900
+13 : Aggressive Dead Code Elimination : 2.480900
+14 : MemCpy Optimization : 2.480900
+15 : Dead Code Elimination : 2.480900
+16 : Assign names to anonymous instructions : 2.480900
+17 : Promote Memory to Register : 2.480900
+18 : Induction Variable Simplification : 2.480900
+19 : Lower atomic intrinsics to non-atomic form : 2.480900
+20 : Constant Hoisting : 2.480900
+SpeedUp : 2.354783

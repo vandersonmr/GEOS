@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 328.125000
+2 : Lower atomic intrinsics to non-atomic form : 328.125000
+3 : Code sinking : 328.125000
+4 : Global Value Numbering : 328.125000
+5 : Dead Instruction Elimination : 328.125000
+6 : MergedLoadStoreMotion : 328.125000
+7 : Dead Instruction Elimination : 328.125000
+8 : Reassociate expressions : 328.125000
+9 : Aggressive Dead Code Elimination : 328.125000
+10 : Global Value Numbering : 328.125000
+11 : Dead Instruction Elimination : 328.125000
+12 : Add DWARF path discriminators : 328.125000
+13 : Combine redundant instructions : 312.500000
+14 : MemCpy Optimization : 312.500000
+15 : Value Propagation : 312.500000
+16 : Loop Invariant Code Motion : 287.500000
+17 : Combine redundant instructions : 287.500000
+18 : Remove redundant instructions : 287.500000
+19 : Reassociate expressions : 287.500000
+20 : Assign names to anonymous instructions : 287.500000
+SpeedUp : 1.489130

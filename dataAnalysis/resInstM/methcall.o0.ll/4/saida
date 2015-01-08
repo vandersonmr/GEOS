@@ -1,0 +1,17 @@
+1 : MergedLoadStoreMotion : 548.333335
+2 : Loop-Closed SSA Form Pass : 548.333335
+3 : Dead Code Elimination : 548.333335
+4 : MemCpy Optimization : 548.333335
+5 : Assign names to anonymous instructions : 548.333335
+6 : Code sinking : 548.333335
+7 : Aggressive Dead Code Elimination : 548.333335
+8 : Constant Hoisting : 548.333335
+9 : MergedLoadStoreMotion : 548.333335
+10 : Code sinking : 548.333335
+11 : Loop-Closed SSA Form Pass : 548.333335
+12 : Assign names to anonymous instructions : 548.333335
+13 : Aggressive Dead Code Elimination : 548.333335
+14 : Loop Invariant Code Motion : 548.333335
+15 : Scalar Replacement of Aggregates (DT) : 356.666667
+16 : Dead Instruction Elimination : 361.666667
+SpeedUp : 1.516129

@@ -1,0 +1,15 @@
+1 : MemCpy Optimization : 37.603840
+2 : Dead Instruction Elimination : 37.603840
+3 : Assign names to anonymous instructions : 37.603840
+4 : Aggressive Dead Code Elimination : 37.603840
+5 : Code sinking : 37.603840
+6 : Lower atomic intrinsics to non-atomic form : 37.603840
+7 : Lower atomic intrinsics to non-atomic form : 37.603840
+8 : Dead Instruction Elimination : 37.603840
+9 : MergedLoadStoreMotion : 37.603840
+10 : Scalar Replacement of Aggregates (DT) : 21.487104
+11 : Code sinking : 21.487104
+12 : Alignment from assumptions : 21.487104
+13 : Early CSE : 21.487084
+14 : Global Value Numbering : 24.171438
+SpeedUp : 1.555714

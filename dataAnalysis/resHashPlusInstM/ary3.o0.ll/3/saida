@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 1886.811228
+2 : Assign names to anonymous instructions : 1886.811228
+3 : Aggressive Dead Code Elimination : 1886.811228
+4 : Loop Invariant Code Motion : 1886.811228
+5 : Lower atomic intrinsics to non-atomic form : 1886.811228
+6 : Add DWARF path discriminators : 1886.811228
+7 : Loop-Closed SSA Form Pass : 1886.811228
+8 : Code sinking : 1886.811228
+9 : MergedLoadStoreMotion : 1886.811228
+10 : Combine redundant instructions : 1828.526091
+11 : Value Propagation : 1828.526091
+12 : Assign names to anonymous instructions : 1828.526091
+13 : Constant Hoisting : 1828.526091
+14 : Loop-Closed SSA Form Pass : 1828.526091
+15 : Add DWARF path discriminators : 1828.526091
+16 : Dead Instruction Elimination : 1828.526091
+17 : Reassociate expressions : 1828.526091
+18 : Loop-Closed SSA Form Pass : 1828.526091
+19 : Alignment from assumptions : 1828.526091
+20 : Loop Invariant Code Motion : 1828.526091
+SpeedUp : 1.031875

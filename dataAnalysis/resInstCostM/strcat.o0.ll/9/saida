@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 2.500002
+2 : Combine redundant instructions : 2.200002
+3 : Loop Invariant Code Motion : 2.200002
+4 : Lower atomic intrinsics to non-atomic form : 2.200002
+5 : Induction Variable Simplification : 2.200002
+6 : Aggressive Dead Code Elimination : 2.200002
+7 : Early CSE : 2.100002
+8 : Assign names to anonymous instructions : 2.100002
+9 : Loop-Closed SSA Form Pass : 2.100002
+10 : Loop Invariant Code Motion : 2.100002
+11 : SROA : 2.100002
+12 : Global Value Numbering : 1.900003
+13 : Induction Variable Simplification : 1.900003
+14 : SROA : 1.900003
+15 : Alignment from assumptions : 1.900003
+16 : Aggressive Dead Code Elimination : 1.900003
+17 : Global Value Numbering : 1.900003
+18 : Aggressive Dead Code Elimination : 1.900003
+19 : Constant Hoisting : 1.900003
+20 : Global Value Numbering : 1.900003
+SpeedUp : 1.315789

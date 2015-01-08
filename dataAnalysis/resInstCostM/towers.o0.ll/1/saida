@@ -1,0 +1,10 @@
+1 : Add DWARF path discriminators : 2.064423
+2 : SROA : 2.064423
+3 : Loop Invariant Code Motion : 2.064423
+4 : Loop Invariant Code Motion : 2.064423
+5 : MergedLoadStoreMotion : 2.064423
+6 : MemCpy Optimization : 2.064423
+7 : MergedLoadStoreMotion : 2.064423
+8 : Dead Instruction Elimination : 2.064423
+9 : Reassociate expressions : 2.080807
+SpeedUp : 0.992126

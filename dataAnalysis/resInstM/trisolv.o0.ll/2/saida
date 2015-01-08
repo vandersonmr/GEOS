@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 7.522641
+2 : Combine redundant instructions : 6.642461
+3 : Constant Hoisting : 6.642461
+4 : Loop-Closed SSA Form Pass : 6.642461
+5 : Aggressive Dead Code Elimination : 6.642461
+6 : Combine redundant instructions : 6.642461
+7 : Scalar Replacement of Aggregates (DT) : 4.481641
+8 : SROA : 3.761581
+9 : MergedLoadStoreMotion : 3.761581
+10 : Promote Memory to Register : 3.761581
+11 : Assign names to anonymous instructions : 3.761581
+12 : Dead Code Elimination : 3.761581
+13 : Dead Instruction Elimination : 3.761581
+14 : Add DWARF path discriminators : 3.761581
+15 : Dead Code Elimination : 3.761581
+16 : Combine redundant instructions : 3.761581
+17 : MemCpy Optimization : 3.761581
+18 : Add DWARF path discriminators : 3.761581
+19 : Loop Invariant Code Motion : 3.121541
+20 : Dead Code Elimination : 3.121541
+SpeedUp : 2.409913

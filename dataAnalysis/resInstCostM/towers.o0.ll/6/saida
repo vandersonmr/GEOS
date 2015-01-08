@@ -1,0 +1,9 @@
+1 : SROA : 2.064423
+2 : Induction Variable Simplification : 2.064423
+3 : Induction Variable Simplification : 2.064423
+4 : Loop Invariant Code Motion : 2.064423
+5 : Alignment from assumptions : 2.064423
+6 : Alignment from assumptions : 2.064423
+7 : Add DWARF path discriminators : 2.064423
+8 : Reassociate expressions : 2.080807
+SpeedUp : 0.992126

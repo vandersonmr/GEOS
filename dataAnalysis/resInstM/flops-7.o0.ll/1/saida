@@ -1,0 +1,17 @@
+1 : Value Propagation : 142.187500
+2 : Lower atomic intrinsics to non-atomic form : 142.187500
+3 : Remove redundant instructions : 142.187500
+4 : Lower atomic intrinsics to non-atomic form : 142.187500
+5 : MemCpy Optimization : 142.187500
+6 : Value Propagation : 142.187500
+7 : Assign names to anonymous instructions : 142.187500
+8 : MemCpy Optimization : 142.187500
+9 : Lower atomic intrinsics to non-atomic form : 142.187500
+10 : Assign names to anonymous instructions : 142.187500
+11 : Scalar Replacement of Aggregates (DT) : 79.687500
+12 : SROA : 68.750000
+13 : MergedLoadStoreMotion : 68.750000
+14 : Promote Memory to Register : 68.750000
+15 : Alignment from assumptions : 68.750000
+16 : Loop Invariant Code Motion : 70.312500
+SpeedUp : 2.022222

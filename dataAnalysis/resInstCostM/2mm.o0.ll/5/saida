@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 344.415806
+2 : Induction Variable Simplification : 344.405320
+3 : Aggressive Dead Code Elimination : 344.405320
+4 : Lower atomic intrinsics to non-atomic form : 344.405320
+5 : Value Propagation : 344.405320
+6 : Assign names to anonymous instructions : 344.405320
+7 : Lower atomic intrinsics to non-atomic form : 344.405320
+8 : Dead Code Elimination : 344.405320
+9 : Lower atomic intrinsics to non-atomic form : 344.405320
+10 : Early CSE : 301.413704
+11 : Code sinking : 301.413704
+12 : Scalar Replacement of Aggregates (DT) : 301.413704
+13 : Reassociate expressions : 301.413704
+14 : Loop-Closed SSA Form Pass : 301.413704
+15 : Remove redundant instructions : 301.413704
+16 : Dead Code Elimination : 301.413704
+17 : Constant Hoisting : 301.413704
+18 : Lower atomic intrinsics to non-atomic form : 301.413704
+19 : Assign names to anonymous instructions : 301.413704
+20 : Scalar Replacement of Aggregates (DT) : 301.413704
+SpeedUp : 1.964377

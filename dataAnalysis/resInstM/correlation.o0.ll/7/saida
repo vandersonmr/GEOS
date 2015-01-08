@@ -1,0 +1,21 @@
+1 : Value Propagation : 246.551826
+2 : Remove redundant instructions : 246.551826
+3 : Assign names to anonymous instructions : 246.551826
+4 : Loop Invariant Code Motion : 246.551826
+5 : Dead Code Elimination : 246.551826
+6 : Combine redundant instructions : 206.421616
+7 : Alignment from assumptions : 206.421616
+8 : Code sinking : 206.421616
+9 : Value Propagation : 206.421616
+10 : SROA : 206.421616
+11 : MemCpy Optimization : 206.421616
+12 : Code sinking : 206.421616
+13 : Induction Variable Simplification : 206.421616
+14 : Aggressive Dead Code Elimination : 206.421616
+15 : Value Propagation : 206.421616
+16 : Induction Variable Simplification : 206.421616
+17 : Dead Instruction Elimination : 206.421616
+18 : Constant Hoisting : 206.421616
+19 : Reassociate expressions : 206.421616
+20 : Value Propagation : 206.421616
+SpeedUp : 1.194409

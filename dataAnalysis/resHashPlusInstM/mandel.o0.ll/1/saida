@@ -1,0 +1,7 @@
+1 : Promote Memory to Register : 100.167997
+2 : Constant Hoisting : 100.167997
+3 : Value Propagation : 100.167997
+4 : Reassociate expressions : 100.167997
+5 : Reassociate expressions : 100.167997
+6 : Early CSE : 113.762515
+SpeedUp : 1.551892

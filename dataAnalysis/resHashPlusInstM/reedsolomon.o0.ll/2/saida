@@ -1,0 +1,14 @@
+1 : SROA : 7183.798785
+2 : Value Propagation : 7183.798785
+3 : Add DWARF path discriminators : 7183.798785
+4 : Early CSE : 6919.632303
+5 : SROA : 6919.632303
+6 : Constant Hoisting : 6919.632303
+7 : Dead Code Elimination : 6919.632303
+8 : Alignment from assumptions : 6919.632303
+9 : MemCpy Optimization : 6919.632303
+10 : Add DWARF path discriminators : 6919.632303
+11 : Add DWARF path discriminators : 6919.632303
+12 : Dead Code Elimination : 6919.632303
+13 : Induction Variable Simplification : 6920.152927
+SpeedUp : 1.038098

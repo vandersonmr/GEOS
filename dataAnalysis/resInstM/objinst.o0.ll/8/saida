@@ -1,0 +1,7 @@
+1 : Combine redundant instructions : 54.600007
+2 : MemCpy Optimization : 54.600007
+3 : Constant Hoisting : 54.600007
+4 : Combine redundant instructions : 54.600007
+5 : Reassociate expressions : 54.600007
+6 : Loop Invariant Code Motion : 55.300007
+SpeedUp : 1.329114

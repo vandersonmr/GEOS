@@ -1,0 +1,13 @@
+1 : MemCpy Optimization : 64.737929
+2 : Add DWARF path discriminators : 64.737929
+3 : Aggressive Dead Code Elimination : 64.737929
+4 : Add DWARF path discriminators : 64.737929
+5 : Alignment from assumptions : 64.737929
+6 : Alignment from assumptions : 64.737929
+7 : Aggressive Dead Code Elimination : 64.737929
+8 : Loop Invariant Code Motion : 64.737929
+9 : Aggressive Dead Code Elimination : 64.737929
+10 : Dead Instruction Elimination : 64.737929
+11 : Dead Code Elimination : 64.737929
+12 : Global Value Numbering : 79.550621
+SpeedUp : 0.813795

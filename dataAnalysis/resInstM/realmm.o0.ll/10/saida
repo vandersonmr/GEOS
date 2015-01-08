@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 0.198757
+2 : Lower atomic intrinsics to non-atomic form : 0.198757
+3 : Loop-Closed SSA Form Pass : 0.198757
+4 : Dead Code Elimination : 0.198757
+5 : Induction Variable Simplification : 0.198757
+6 : Combine redundant instructions : 0.175796
+7 : Promote Memory to Register : 0.113175
+8 : Remove redundant instructions : 0.099399
+9 : Alignment from assumptions : 0.099399
+10 : Combine redundant instructions : 0.099399
+11 : Assign names to anonymous instructions : 0.099399
+12 : Lower atomic intrinsics to non-atomic form : 0.099399
+13 : Loop Invariant Code Motion : 0.086439
+14 : Induction Variable Simplification : 0.086439
+15 : Add DWARF path discriminators : 0.086439
+16 : Early CSE : 0.086431
+17 : Dead Instruction Elimination : 0.086431
+18 : Value Propagation : 0.086431
+19 : Add DWARF path discriminators : 0.086431
+20 : Alignment from assumptions : 0.086431
+SpeedUp : 2.299611

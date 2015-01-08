@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 81.795036
+2 : Alignment from assumptions : 81.795036
+3 : Loop-Closed SSA Form Pass : 81.795036
+4 : Assign names to anonymous instructions : 81.795036
+5 : Remove redundant instructions : 81.795036
+6 : Aggressive Dead Code Elimination : 81.795036
+7 : Dead Instruction Elimination : 81.795036
+8 : Loop-Closed SSA Form Pass : 81.795036
+9 : Reassociate expressions : 81.795036
+10 : Loop Invariant Code Motion : 81.795036
+11 : MergedLoadStoreMotion : 81.795036
+12 : Add DWARF path discriminators : 81.795036
+13 : Combine redundant instructions : 67.700265
+14 : Dead Instruction Elimination : 67.700265
+15 : Scalar Replacement of Aggregates (DT) : 35.950767
+16 : Lower atomic intrinsics to non-atomic form : 35.950767
+17 : Alignment from assumptions : 35.950767
+18 : Global Value Numbering : 35.950767
+19 : Scalar Replacement of Aggregates (DT) : 35.950767
+20 : Combine redundant instructions : 35.950767
+SpeedUp : 2.275196

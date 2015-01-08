@@ -1,0 +1,10 @@
+1 : Aggressive Dead Code Elimination : 1878.221205
+2 : Reassociate expressions : 1878.221205
+3 : Reassociate expressions : 1878.221205
+4 : Scalar Replacement of Aggregates (DT) : 1764.771423
+5 : Add DWARF path discriminators : 1764.771423
+6 : Remove redundant instructions : 1764.771415
+7 : Dead Code Elimination : 1764.771415
+8 : Code sinking : 1764.771415
+9 : Global Value Numbering : 1836.128063
+SpeedUp : 1.022925

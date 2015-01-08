@@ -1,0 +1,4 @@
+1 : Lower atomic intrinsics to non-atomic form : 1352.458698
+2 : Constant Hoisting : 1352.458698
+3 : Early CSE : 4643.858741
+SpeedUp : 0.291236

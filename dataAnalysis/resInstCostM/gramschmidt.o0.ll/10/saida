@@ -1,0 +1,17 @@
+1 : Alignment from assumptions : 39.205364
+2 : Loop Invariant Code Motion : 39.205364
+3 : MergedLoadStoreMotion : 39.205364
+4 : Alignment from assumptions : 39.205364
+5 : Loop-Closed SSA Form Pass : 39.205364
+6 : Scalar Replacement of Aggregates (DT) : 21.619205
+7 : Value Propagation : 19.604629
+8 : SROA : 19.604629
+9 : Early CSE : 17.567752
+10 : Dead Instruction Elimination : 17.567752
+11 : Code sinking : 17.567752
+12 : Value Propagation : 17.567752
+13 : Aggressive Dead Code Elimination : 17.567752
+14 : Code sinking : 17.567752
+15 : SROA : 17.567752
+16 : Induction Variable Simplification : 17.567757
+SpeedUp : 2.231666

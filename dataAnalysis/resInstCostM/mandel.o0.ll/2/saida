@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 24.752050
+2 : Aggressive Dead Code Elimination : 24.752050
+3 : MemCpy Optimization : 24.752050
+4 : Promote Memory to Register : 22.251700
+5 : Early CSE : 17.501500
+6 : Loop Invariant Code Motion : 16.751300
+7 : Add DWARF path discriminators : 16.751300
+8 : Loop Invariant Code Motion : 16.751300
+9 : Add DWARF path discriminators : 16.751300
+10 : Add DWARF path discriminators : 16.751300
+11 : MergedLoadStoreMotion : 16.751300
+12 : Dead Instruction Elimination : 16.751300
+13 : Dead Code Elimination : 16.751300
+14 : Early CSE : 16.751300
+15 : Value Propagation : 16.751300
+16 : Scalar Replacement of Aggregates (DT) : 16.751300
+17 : SROA : 16.751300
+18 : Loop Invariant Code Motion : 16.751300
+19 : Alignment from assumptions : 16.751300
+20 : Aggressive Dead Code Elimination : 16.751300
+SpeedUp : 1.477620

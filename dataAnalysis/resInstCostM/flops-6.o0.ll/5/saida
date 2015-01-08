@@ -1,0 +1,17 @@
+1 : Dead Instruction Elimination : 337.499999
+2 : Early CSE : 285.937499
+3 : Aggressive Dead Code Elimination : 285.937499
+4 : Loop Invariant Code Motion : 285.937499
+5 : Early CSE : 285.937499
+6 : Assign names to anonymous instructions : 285.937499
+7 : Value Propagation : 285.937499
+8 : Loop Invariant Code Motion : 285.937499
+9 : Dead Code Elimination : 285.937499
+10 : Loop-Closed SSA Form Pass : 285.937499
+11 : Value Propagation : 285.937499
+12 : Assign names to anonymous instructions : 285.937499
+13 : Aggressive Dead Code Elimination : 285.937499
+14 : MergedLoadStoreMotion : 285.937499
+15 : Remove redundant instructions : 285.937499
+16 : Global Value Numbering : 285.937499
+SpeedUp : 1.180328

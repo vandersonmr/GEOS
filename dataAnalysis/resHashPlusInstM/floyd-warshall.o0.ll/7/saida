@@ -1,0 +1,21 @@
+1 : Constant Hoisting : 3017.152974
+2 : Scalar Replacement of Aggregates (DT) : 2876.679045
+3 : Add DWARF path discriminators : 2876.679045
+4 : Dead Instruction Elimination : 2876.679045
+5 : MemCpy Optimization : 2876.679045
+6 : Constant Hoisting : 2876.679045
+7 : Constant Hoisting : 2876.679045
+8 : Lower atomic intrinsics to non-atomic form : 2876.679045
+9 : Lower atomic intrinsics to non-atomic form : 2876.679045
+10 : Combine redundant instructions : 2792.431277
+11 : Loop Invariant Code Motion : 2106.569236
+12 : Value Propagation : 2106.569236
+13 : Add DWARF path discriminators : 2106.569236
+14 : Promote Memory to Register : 2106.569236
+15 : Add DWARF path discriminators : 2106.569236
+16 : Loop Invariant Code Motion : 2106.569236
+17 : Lower atomic intrinsics to non-atomic form : 2106.569236
+18 : Combine redundant instructions : 2106.569236
+19 : Loop Invariant Code Motion : 2106.569236
+20 : Aggressive Dead Code Elimination : 2106.569236
+SpeedUp : 1.432259

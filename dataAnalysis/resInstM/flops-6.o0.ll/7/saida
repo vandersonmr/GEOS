@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 245.312500
+2 : Induction Variable Simplification : 245.312500
+3 : Early CSE : 193.750000
+4 : Scalar Replacement of Aggregates (DT) : 168.750000
+5 : Reassociate expressions : 167.187500
+6 : Global Value Numbering : 165.625000
+7 : Dead Code Elimination : 165.625000
+8 : SROA : 165.625000
+9 : Early CSE : 165.625000
+10 : Value Propagation : 165.625000
+11 : Value Propagation : 165.625000
+12 : Code sinking : 165.625000
+13 : MemCpy Optimization : 165.625000
+14 : Code sinking : 165.625000
+15 : Loop Invariant Code Motion : 146.875000
+16 : Dead Instruction Elimination : 146.875000
+17 : MergedLoadStoreMotion : 146.875000
+18 : Promote Memory to Register : 146.875000
+19 : MemCpy Optimization : 146.875000
+20 : Value Propagation : 145.312500
+SpeedUp : 1.688172

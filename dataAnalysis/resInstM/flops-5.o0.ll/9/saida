@@ -1,0 +1,21 @@
+1 : Code sinking : 245.312500
+2 : MemCpy Optimization : 245.312500
+3 : Constant Hoisting : 245.312500
+4 : Remove redundant instructions : 245.312500
+5 : Reassociate expressions : 245.312500
+6 : Loop Invariant Code Motion : 245.312500
+7 : Reassociate expressions : 245.312500
+8 : Promote Memory to Register : 176.562500
+9 : Lower atomic intrinsics to non-atomic form : 156.250000
+10 : Aggressive Dead Code Elimination : 156.250000
+11 : MemCpy Optimization : 156.250000
+12 : Value Propagation : 154.687500
+13 : SROA : 154.687500
+14 : Global Value Numbering : 153.125000
+15 : Global Value Numbering : 153.125000
+16 : SROA : 153.125000
+17 : Assign names to anonymous instructions : 153.125000
+18 : Code sinking : 153.125000
+19 : MergedLoadStoreMotion : 153.125000
+20 : Global Value Numbering : 153.125000
+SpeedUp : 1.602041

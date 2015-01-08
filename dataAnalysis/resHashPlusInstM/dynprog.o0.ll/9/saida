@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 591.823013
+2 : MemCpy Optimization : 591.823013
+3 : Aggressive Dead Code Elimination : 591.823013
+4 : Constant Hoisting : 591.823013
+5 : Assign names to anonymous instructions : 591.823013
+6 : Loop-Closed SSA Form Pass : 591.823013
+7 : Dead Code Elimination : 591.823013
+8 : Add DWARF path discriminators : 591.823013
+9 : Remove redundant instructions : 591.774013
+10 : Dead Instruction Elimination : 591.774013
+11 : Combine redundant instructions : 547.531940
+12 : Constant Hoisting : 547.531940
+13 : Early CSE : 374.777740
+14 : Assign names to anonymous instructions : 374.777740
+15 : Constant Hoisting : 374.777740
+16 : Reassociate expressions : 374.777740
+17 : Aggressive Dead Code Elimination : 374.777740
+18 : MergedLoadStoreMotion : 374.777740
+19 : MemCpy Optimization : 374.777740
+20 : Early CSE : 374.777740
+SpeedUp : 1.579131

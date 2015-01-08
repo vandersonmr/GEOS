@@ -1,0 +1,17 @@
+1 : Loop Invariant Code Motion : 279.687499
+2 : Reassociate expressions : 279.687499
+3 : Scalar Replacement of Aggregates (DT) : 218.749999
+4 : Constant Hoisting : 207.812499
+5 : Dead Instruction Elimination : 207.812499
+6 : Assign names to anonymous instructions : 207.812499
+7 : Value Propagation : 207.812499
+8 : Dead Instruction Elimination : 207.812499
+9 : Combine redundant instructions : 199.999999
+10 : Code sinking : 199.999999
+11 : Combine redundant instructions : 199.999999
+12 : Induction Variable Simplification : 199.999999
+13 : Scalar Replacement of Aggregates (DT) : 199.999999
+14 : Early CSE : 199.999999
+15 : Early CSE : 199.999999
+16 : Global Value Numbering : 199.999999
+SpeedUp : 1.398438

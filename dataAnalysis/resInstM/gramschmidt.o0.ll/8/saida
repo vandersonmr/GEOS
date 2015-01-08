@@ -1,0 +1,16 @@
+1 : Constant Hoisting : 50.025499
+2 : Remove redundant instructions : 50.025499
+3 : Global Value Numbering : 31.802784
+4 : Loop Invariant Code Motion : 31.802784
+5 : Loop-Closed SSA Form Pass : 31.802784
+6 : Global Value Numbering : 31.802784
+7 : Assign names to anonymous instructions : 31.802784
+8 : Combine redundant instructions : 27.743394
+9 : Scalar Replacement of Aggregates (DT) : 16.920515
+10 : Remove redundant instructions : 10.845231
+11 : Value Propagation : 10.845231
+12 : Scalar Replacement of Aggregates (DT) : 10.845231
+13 : SROA : 10.845231
+14 : Remove redundant instructions : 10.845231
+15 : Loop-Closed SSA Form Pass : 10.847852
+SpeedUp : 4.611558

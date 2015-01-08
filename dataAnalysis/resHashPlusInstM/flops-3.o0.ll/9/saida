@@ -1,0 +1,10 @@
+1 : Alignment from assumptions : 109705.295037
+2 : MemCpy Optimization : 109705.295037
+3 : Alignment from assumptions : 109705.295037
+4 : Dead Instruction Elimination : 109705.295037
+5 : Constant Hoisting : 109705.295037
+6 : SROA : 109705.295037
+7 : Dead Code Elimination : 109705.295037
+8 : MergedLoadStoreMotion : 109705.295037
+9 : Promote Memory to Register : 132169.554375
+SpeedUp : 0.830035

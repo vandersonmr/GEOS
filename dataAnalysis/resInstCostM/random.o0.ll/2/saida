@@ -1,0 +1,7 @@
+1 : Code sinking : 64.000000
+2 : Dead Instruction Elimination : 64.000000
+3 : Alignment from assumptions : 64.000000
+4 : Value Propagation : 64.000000
+5 : Scalar Replacement of Aggregates (DT) : 52.000000
+6 : Constant Hoisting : 56.000000
+SpeedUp : 1.142857

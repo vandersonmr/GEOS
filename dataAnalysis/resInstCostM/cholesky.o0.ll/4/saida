@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 61.134199
+2 : Early CSE : 50.339001
+3 : Promote Memory to Register : 32.338279
+4 : Aggressive Dead Code Elimination : 28.727644
+5 : Lower atomic intrinsics to non-atomic form : 28.727644
+6 : Loop-Closed SSA Form Pass : 28.727644
+7 : Add DWARF path discriminators : 28.727644
+8 : MergedLoadStoreMotion : 28.727644
+9 : Assign names to anonymous instructions : 28.727644
+10 : Reassociate expressions : 28.727644
+11 : Promote Memory to Register : 28.727644
+12 : Dead Code Elimination : 28.727644
+13 : Loop Invariant Code Motion : 26.932818
+14 : Constant Hoisting : 25.148488
+15 : Scalar Replacement of Aggregates (DT) : 25.148488
+16 : MergedLoadStoreMotion : 25.148488
+17 : Add DWARF path discriminators : 25.148488
+18 : SROA : 25.148488
+19 : Dead Code Elimination : 25.148488
+20 : MergedLoadStoreMotion : 25.148488
+SpeedUp : 2.430929

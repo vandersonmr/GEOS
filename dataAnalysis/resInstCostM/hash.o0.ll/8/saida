@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 40.300808
+2 : Global Value Numbering : 40.091336
+3 : Reassociate expressions : 40.091336
+4 : Aggressive Dead Code Elimination : 40.091336
+5 : Loop-Closed SSA Form Pass : 40.091336
+6 : Lower atomic intrinsics to non-atomic form : 40.091336
+7 : Dead Code Elimination : 40.091336
+8 : Reassociate expressions : 40.091336
+9 : Loop-Closed SSA Form Pass : 40.091336
+10 : Lower atomic intrinsics to non-atomic form : 40.091336
+11 : Early CSE : 34.593986
+12 : Reassociate expressions : 34.593986
+13 : Code sinking : 34.593986
+14 : Dead Instruction Elimination : 34.593986
+15 : Constant Hoisting : 34.593986
+16 : Loop-Closed SSA Form Pass : 34.593986
+17 : Scalar Replacement of Aggregates (DT) : 21.205311
+18 : Dead Instruction Elimination : 21.170938
+19 : Early CSE : 21.170938
+20 : Alignment from assumptions : 21.170938
+SpeedUp : 1.903591

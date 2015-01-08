@@ -1,0 +1,11 @@
+1 : Add DWARF path discriminators : 1632.534717
+2 : Scalar Replacement of Aggregates (DT) : 739.009948
+3 : Dead Instruction Elimination : 736.009948
+4 : Code sinking : 736.009880
+5 : Value Propagation : 736.009880
+6 : Value Propagation : 736.009880
+7 : MemCpy Optimization : 736.009880
+8 : Alignment from assumptions : 736.009880
+9 : SROA : 736.009880
+10 : Loop Invariant Code Motion : 736.010111
+SpeedUp : 2.218087
