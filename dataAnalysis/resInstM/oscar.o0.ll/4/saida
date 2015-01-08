@@ -1,5 +1,0 @@
-1 : Aggressive Dead Code Elimination : 0.165341
-2 : Assign names to anonymous instructions : 0.165341
-3 : SROA : 0.165341
-4 : Global Value Numbering : 0.275371
-SpeedUp : 0.600429

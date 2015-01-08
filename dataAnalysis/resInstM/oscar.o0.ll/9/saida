@@ -1,7 +1,0 @@
-1 : MemCpy Optimization : 0.165341
-2 : Lower atomic intrinsics to non-atomic form : 0.165341
-3 : Loop-Closed SSA Form Pass : 0.165341
-4 : Assign names to anonymous instructions : 0.165341
-5 : Value Propagation : 0.165341
-6 : Global Value Numbering : 0.275371
-SpeedUp : 0.600429

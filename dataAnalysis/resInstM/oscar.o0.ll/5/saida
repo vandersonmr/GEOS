@@ -1,7 +1,0 @@
-1 : Aggressive Dead Code Elimination : 0.165341
-2 : Dead Code Elimination : 0.165341
-3 : Induction Variable Simplification : 0.165341
-4 : Code sinking : 0.165341
-5 : Aggressive Dead Code Elimination : 0.165341
-6 : Reassociate expressions : 0.165342
-SpeedUp : 0.999993

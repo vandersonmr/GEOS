@@ -1,4 +1,0 @@
-1 : MergedLoadStoreMotion : 0.144960
-2 : Combine redundant instructions : 0.118607
-3 : Reassociate expressions : 0.118608
-SpeedUp : 1.222176
