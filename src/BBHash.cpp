@@ -159,6 +159,10 @@ BBHash::BBHash(const StringRef &S) {
     Hash[i] = d;
     ss >> p;
 
+    if (!(d >= 0 && p == '-')) {
+      printf("%s\n", S.str().c_str());
+    }
+
     assert(d >= 0 && p == '-' 
         && "The string representation of a BBHash is in a bad format.");
   }
@@ -186,23 +190,47 @@ int BBHash::getDescriptor(DescriptorKind DescriptionId) const {
 }
 
 StringRef BBHash::getString() const {
-  std::stringstream SSTM;
+  std::stringstream* SSTM = new std::stringstream;
   for (int i=0; i < Size-1; i++) 
-    SSTM << Hash[i] << "-";
-  SSTM << Hash[Size-1];
-  return SSTM.str();
+    (*SSTM) << Hash[i] << "-";
+  (*SSTM) << Hash[Size-1];
+  return SSTM->str();
 }
 
 double BBHash::
-distance(const BBHash &a, const BBHash &b, bool Weight) {
+distance(const BBHash &a, const BBHash &b) {
   double Distance = 0;
   for (int i=0; i < Size; i++) 
     Distance += pow(a.getDescriptor((DescriptorKind) i) - 
-        b.getDescriptor((DescriptorKind) i), 2) 
-      * (Weight ? descriptorWeight((DescriptorKind) i) : 1);
+        b.getDescriptor((DescriptorKind) i), 2) *
+        descriptorWeight((DescriptorKind) i);
 
   return sqrt(Distance);
 }
+
+int BBHash::dotProduct(const BBHash &a, const BBHash &b) {
+  int DotProduct = 0;
+  for (int i=0; i < Size; i++) 
+    DotProduct += a.getDescriptor((DescriptorKind) i) *
+        b.getDescriptor((DescriptorKind) i) *
+        descriptorWeight((DescriptorKind) i);
+
+  return DotProduct;
+}
+
+BBHash* BBHash::getRandomHash() {
+  std::random_device Rd;
+  std::mt19937 Gen(Rd());
+  std::uniform_real_distribution<> Dis(1, 2);
+
+  BBHash* RandomHash = new BBHash;
+  
+  for(int i = 0; i < Size; i++) 
+    RandomHash->setDescriptor((DescriptorKind) i, Dis(Gen));
+
+  return RandomHash;
+}
+
 
 unsigned BBHash::descriptorWeight(DescriptorKind d) {
   switch (d) {
@@ -225,3 +253,5 @@ unsigned BBHash::descriptorWeight(DescriptorKind d) {
       return 1;
   }
 }
+
+

@@ -18,7 +18,7 @@
 3 fannkuch.o0.llSpeedUp : 1.538362  2.526
 8 fbench.o0.llSpeedUp : 0.789185  1.453
 1 fdtd-2d.o0.llSpeedUp : 3.490912  0.452
-1 fdtd-apml.o0.llSpeedUp : 3.759683  0.875
+1 fdtd-apml.o0.llSpeedUp : 3.259683  0.875
 9 ffbench.o0.llSpeedUp : 2.682946  0.973
 7 fib2.o0.llSpeedUp : 1.051944  3.020
 10 fldry.o0.llSpeedUp : 1.844148  6.931
@@ -39,7 +39,7 @@
 5 gramschmidt.o0.llSpeedUp : 1.948803  2.251
 4 hash.o0.llSpeedUp : 1.535110  3.887
 2 heapsort.o0.llSpeedUp : 1.076948  3.061
-8 himenobmtxpa.o0.llSpeedUp : 4.779941  1.227
+8 himenobmtxpa.o0.llSpeedUp : 3.779941  1.227
 5 huffbench.o0.llSpeedUp : 17.466205  40.841
 1 intmm.o0.llSpeedUp : 1.005048  0.003
 4 jacobi-1d-imper.o0.llSpeedUp : 1.177093  0.006

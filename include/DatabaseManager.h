@@ -25,6 +25,12 @@ class DatabaseManager {
     /// represents a BasicBlock and a double value which represents the 
     /// execution time of this BasicBlock.
     std::unordered_map<BBHash, double> DB;
+    
+    /// \brief Buckets for nearest hashes. Each BBHash readed is applied to a
+    /// locality-sensitive hash that returns the same int for near points. So 
+    /// when looking for a nearest hash it just need to look into the specified
+    /// bucket, saving time.
+    std::unordered_map<int, std::vector<BBHash>> CDB;
 
     /// \brief Loads from a file, which the path is given as parameter, the 
     /// BB Hash Database.
@@ -61,7 +67,7 @@ class DatabaseManager {
 
     /// \brief Returns the most equally hash from the given parameter in the 
     /// database. 
-    BBHash* getNearest(const BBHash&, bool) const;
+    BBHash* getNearest(const BBHash&) const;
 
     typedef std::unordered_map<BBHash, double>::iterator iterator;
     typedef std::unordered_map<BBHash, double>::

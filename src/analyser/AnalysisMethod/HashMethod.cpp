@@ -29,7 +29,7 @@ estimateExecutionTime(llvm::Function* Func, llvm::GCOVFunction* Freq) {
   for (auto &BB : *Func) {
     BBHash Hash(BB);
     PerformanceMensurment += (*MBB)->getCount() * 
-                   DBManager->getTime(*DBManager->getNearest(Hash, false));
+                   DBManager->getTime(*DBManager->getNearest(Hash));
     ++MBB;
   } 
 

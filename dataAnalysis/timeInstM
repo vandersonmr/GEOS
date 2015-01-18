@@ -41,7 +41,7 @@
 4 heapsort.o0.llSpeedUp : 1.968379  2.319
 2 himenobmtxpa.o0.llSpeedUp : 4.913690  1.255
 7 huffbench.o0.llSpeedUp : 2.497414  39.147
-8 intmm.o0.llSpeedUp : 2.309335  0.000
+8 intmm.o0.llSpeedUp : 2.309335  0.001
 3 jacobi-1d-imper.o0.llSpeedUp : 2.284876  0.005
 4 jacobi-2d-imper.o0.llSpeedUp : 3.341859  0.093
 8 lists.o0.llSpeedUp : 2.058568  8.313

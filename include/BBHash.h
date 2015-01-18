@@ -112,15 +112,19 @@ class BBHash {
     llvm::StringRef getString() const;
 
     /// \brief Calculates an Euclidian distance between two hashes.
-    //
-    /// \param weight when true it activates the use of weights for different 
-    /// information in the hash. The weight comes from the DescriptorWeight 
-    /// function.
-    //
+    ///
     /// \returns it returns a double that represents how equally two basic 
     /// blocks are. 
     static double 
-      distance(const BBHash&, const BBHash&, bool Weight = false);
+      distance(const BBHash&, const BBHash&);
+
+    /// \brief Calculates the dot product between two hashes.
+    ///
+    /// \returns it returns a double from the result of the dot product. 
+    static int dotProduct(const BBHash&, const BBHash&);
+
+    /// \brief Generates a randomic Hash.
+    static BBHash* getRandomHash();
 
     bool operator==(const BBHash &Other) const { 
       return distance(Other, *this) == 0;
@@ -133,9 +137,8 @@ namespace std {
   template <> 
     struct hash<BBHash> {
       size_t operator()(const BBHash& K) const {
-        return BBHash::distance(K, BBHash(), true) *
+        return BBHash::distance(K, BBHash()) *
           K.getDescriptor(DescriptorKind::NumberOfInstructions);
-        //return hash<string>()(K.getString().str());
       }
     };
 } // namespace

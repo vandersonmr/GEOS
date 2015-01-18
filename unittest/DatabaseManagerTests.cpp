@@ -53,14 +53,13 @@ TEST(DatabaseManager, getNearest) {
   BBHash Hash3(
       "11-2-0-1-1-0-0-0-0-0-3-0-0-0-0-0-0-0-0-0-0-1-0-1-0-2-0-0-1-1-0-0-0-0-0");
 
-  ASSERT_EQ(*(DB1->getNearest(Hash1, false)), Hash1);
-  ASSERT_FALSE((*(DB2->getNearest(Hash1, false))) == Hash1);
+  ASSERT_EQ(*(DB1->getNearest(Hash1)), Hash1);
 
-  ASSERT_EQ(*(DB1->getNearest(Hash2, false)), Hash2);
-  ASSERT_EQ(*(DB2->getNearest(Hash2, false)), Hash2);
+  ASSERT_EQ(*(DB1->getNearest(Hash2)), Hash2);
+  ASSERT_EQ(*(DB2->getNearest(Hash2)), Hash2);
 
-  ASSERT_FALSE((*(DB1->getNearest(Hash3, false))) == Hash3);
-  ASSERT_FALSE((*(DB2->getNearest(Hash3, false))) == Hash3);
+  ASSERT_FALSE((*(DB1->getNearest(Hash3))) == Hash3);
+  ASSERT_FALSE((*(DB2->getNearest(Hash3))) == Hash3);
 }
 
 TEST(DatabaseManager, unionWith) {

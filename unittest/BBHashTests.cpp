@@ -118,36 +118,36 @@ TEST(BBHash, calculatingDistances) {
   ASSERT_EQ(BBHash::distance(*DescriptorOfBasicBlock,
         *DescriptorOfBasicBlock), 0);
 
-  ASSERT_DOUBLE_EQ(BBHash::distance(*DescriptorWithoutArguments,
+/*  ASSERT_DOUBLE_EQ(BBHash::distance(*DescriptorWithoutArguments,
         *DescriptorFromString), 31.827660925679098);
   ASSERT_DOUBLE_EQ(BBHash::distance(*DescriptorFromString,
-        *DescriptorOfBasicBlock), 31.685959035509718);
-  ASSERT_DOUBLE_EQ(BBHash::distance(*DescriptorOfBasicBlock,
-        *DescriptorWithoutArguments), 26.362852652928137);
+        *DescriptorOfBasicBlock), 31.685959035509718);*/
+/*  ASSERT_DOUBLE_EQ(BBHash::distance(*DescriptorOfBasicBlock,
+        *DescriptorWithoutArguments), 26.362852652928137);*/
 
   ASSERT_DOUBLE_EQ(
       BBHash::distance(*DescriptorFromString  , *DescriptorOfBasicBlock),
       BBHash::distance(*DescriptorOfBasicBlock, *DescriptorFromString));
 
   ASSERT_EQ(BBHash::distance(*DescriptorWithoutArguments,
-        *DescriptorWithoutArguments, true), 0);
+        *DescriptorWithoutArguments), 0);
   ASSERT_EQ(BBHash::distance(*DescriptorFromString,
-        *DescriptorFromString, true), 0);
+        *DescriptorFromString), 0);
   ASSERT_EQ(BBHash::distance(*DescriptorOfBasicBlock,
-        *DescriptorOfBasicBlock, true), 0);
+        *DescriptorOfBasicBlock), 0);
 
   ASSERT_DOUBLE_EQ(BBHash::distance(*DescriptorWithoutArguments,
-        *DescriptorFromString, true), 43.405068828421413);
+        *DescriptorFromString), 43.405068828421413);
   ASSERT_DOUBLE_EQ(BBHash::distance(*DescriptorFromString,
-        *DescriptorOfBasicBlock, true), 41.158231254513353);
+        *DescriptorOfBasicBlock), 41.158231254513353);
   ASSERT_DOUBLE_EQ(BBHash::distance(*DescriptorOfBasicBlock,
-        *DescriptorWithoutArguments, true), 26.720778431774775);
+        *DescriptorWithoutArguments), 26.720778431774775);
 
   ASSERT_DOUBLE_EQ(
       BBHash::distance(*DescriptorFromString, 
-        *DescriptorOfBasicBlock, true),
+        *DescriptorOfBasicBlock),
       BBHash::distance(*DescriptorOfBasicBlock, 
-        *DescriptorFromString, true));
+        *DescriptorFromString));
 
   TestModule.release();
 }

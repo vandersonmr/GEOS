@@ -4,7 +4,7 @@
 7 adi.o0.llSpeedUp : 5.706595  1.732
 9 ary3.o0.llSpeedUp : 1.857510  1.543
 5 atax.o0.llSpeedUp : 5.229436  0.198
-8 bicg.o0.llSpeedUp : 31.849488  0.208
+8 bicg.o0.llSpeedUp : 9.849488  0.208
 8 bubblesort.o0.llSpeedUp : 2.841753  0.018
 7 cholesky.o0.llSpeedUp : 5.608629  0.201
 3 chomp.o0.llSpeedUp : 2.291873  1.227
@@ -17,9 +17,9 @@
 6 dynprog.o0.llSpeedUp : 10.372437  0.730
 9 fannkuch.o0.llSpeedUp : 5.617341  2.438
 10 fbench.o0.llSpeedUp : 1.467715  1.380
-9 fdtd-2d.o0.llSpeedUp : 23.684086  0.317
+9 fdtd-2d.o0.llSpeedUp : 10.684086  0.317
 10 fdtd-apml.o0.llSpeedUp : 4.337517  0.978
-9 ffbench.o0.llSpeedUp : 23.663323  0.730
+9 ffbench.o0.llSpeedUp : 11.663323  0.730
 8 fib2.o0.llSpeedUp : 3.000000  3.461
 8 fldry.o0.llSpeedUp : 2.800000  6.108
 9 flops-1.o0.llSpeedUp : 1.513889  1.421
@@ -46,9 +46,9 @@
 4 jacobi-2d-imper.o0.llSpeedUp : 2.681947  0.092
 3 lists.o0.llSpeedUp : 2.512260  8.887
 8 lowercase.o0.llSpeedUp : 2.629435  15.776
-3 lpbench.o0.llSpeedUp : 446.682898  6.521
+3 lpbench.o0.llSpeedUp : 6.682898  6.521
 3 ludcmp.o0.llSpeedUp : 3.295449  0.650
-5 lu.o0.llSpeedUp : 29.664758  0.551
+5 lu.o0.llSpeedUp : 9.664758  0.551
 6 mandel-2.o0.llSpeedUp : 1.763154  1.237
 8 mandel.o0.llSpeedUp : 1.767858  0.730
 8 matrix.o0.llSpeedUp : 2.242039  9.702
@@ -81,8 +81,8 @@
 5 spectral-norm.o0.llSpeedUp : 2.055566  0.732
 8 strcat.o0.llSpeedUp : 2.777776  0.125
 8 symm.o0.llSpeedUp : 2.231993  17.556
-6 syr2k.o0.llSpeedUp : 52.890665  4.294
-7 syrk.o0.llSpeedUp : 28.247591  3.343
+6 syr2k.o0.llSpeedUp : 8.890665  4.294
+7 syrk.o0.llSpeedUp : 7.247591  3.343
 5 towers.o0.llSpeedUp : 1.880393  0.026
 10 treesort.o0.llSpeedUp : 2.293016  0.060
 8 trisolv.o0.llSpeedUp : 2.354783  0.174

@@ -22,6 +22,7 @@
 
 #include <stack>
 #include <limits>
+#include <random>
 
 using namespace llvm;
 
@@ -64,11 +65,6 @@ static cl::opt<std::string> DatabaseFilename("database",
 static cl::alias 
 dbAlias("db", cl::desc("Alias for -database"), cl::aliasopt(DatabaseFilename));
 
-OptimizationKind getRandomPass() {
-   return (OptimizationKind) 
-        ((rand() % OptimizationKind::LoadCombine)+ 1);
-}
-
 void printModule(ProfileModule* P, int Id) {
   char FileName[20];
   sprintf(FileName, "%d.ll", Id);
@@ -81,8 +77,11 @@ void printModule(ProfileModule* P, int Id) {
 }
 
 int main(int argc, char** argv) {
-  unsigned int time_ui = time(NULL) ;
-  srand( time_ui );
+  std::random_device rd;
+  std::mt19937 gen(rd());
+  std::uniform_int_distribution<> 
+    getRandomPass(1, OptimizationKind::LoadCombine);
+
   LLVMContext &Context = getGlobalContext();
   SMDiagnostic Error;
 
@@ -118,7 +117,7 @@ int main(int argc, char** argv) {
   int i = 0;
 
   while (i < 20) {
-    OptimizationKind OptChoosed = getRandomPass();
+    OptimizationKind OptChoosed = (OptimizationKind) getRandomPass(gen);
     if (GEOS::getPass(OptChoosed) == nullptr) continue;
     
     Optimizations.push_back(OptChoosed);

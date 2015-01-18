@@ -21,14 +21,30 @@
 
 using namespace llvm;
 
+// For the next values read the paper:
+//    Locality-Sensitive Hashing for Finding Nearest Neighbors 
+//    by Malcolm Slaney and Michael Casey; 2008.
+
+// w constant is related with the size of each bucket. Smaller values creates
+// buckets with less Hashes, but also decrease the precision.
+constexpr int w = 5;
+
+// PrimeNumber define the largest locality-sensitive hash number. 
+// In other words, it defines the size of CDB.
+constexpr int PrimeNumber = 101;
+
+// A randomic hash used to calculate the locality-sensitive hash using 
+// dotProduct to reduce the dimensions to a scalar.
+BBHash* RandomHash;
+
 void DatabaseManager::loadDatabase(StringRef Filename) {
   ErrorOr<std::unique_ptr<MemoryBuffer>> DatabaseFileBuffer = 
-      MemoryBuffer::getFile(Filename);
+    MemoryBuffer::getFile(Filename);
 
   assert(DatabaseFileBuffer && "Impossible to open the database file.");
 
   std::pair<StringRef, StringRef> LineAndTail =
-      (*DatabaseFileBuffer)->getBuffer().split('\n');
+    (*DatabaseFileBuffer)->getBuffer().split('\n');
 
   while (!LineAndTail.first.empty()) {
     char   HashString[1000];
@@ -36,13 +52,14 @@ void DatabaseManager::loadDatabase(StringRef Filename) {
 
     sscanf(LineAndTail.first.str().c_str(), "%s %lf", HashString, &Time); 
 
-    DB[BBHash(StringRef(HashString))] = Time;
-  
+    insert(BBHash(StringRef(HashString)), Time);
+
     LineAndTail = LineAndTail.second.split('\n'); 
   }
 }
 
 DatabaseManager::DatabaseManager(StringRef Filename) {
+  RandomHash = BBHash::getRandomHash();
   loadDatabase(Filename); 
 }
 
@@ -61,28 +78,40 @@ bool DatabaseManager::hasHash(const BBHash &Hash) const {
   return DB.count(Hash) == 1;
 }
 
+std::unordered_map<BBHash, BBHash*> Nearest;
+
 BBHash* DatabaseManager::
-getNearest(const BBHash &Hash, bool Weight = false) const {
-  double SmallestDistance = std::numeric_limits<double>::max();
-  std::string Smallest = "";
+getNearest(const BBHash &Hash) const {
+  if (Nearest.count(Hash) == 0) {
+    double SmallestDistance = std::numeric_limits<double>::max();
+    StringRef Smallest = "";
 
-  for (auto Elem : DB) {
-    double Distance = 0;
-    Distance = BBHash::distance(Elem.first, Hash, Weight);
+    int dotProduct = BBHash::dotProduct(Hash, *RandomHash);
+    auto Hashes = CDB.at((dotProduct/w) % PrimeNumber);
 
-    if (Distance == 0) { Smallest = Elem.first.getString(); break; }
-    if (Distance < SmallestDistance) {
-      SmallestDistance = Distance;
-      Smallest         = Elem.first.getString();
+    for (auto Elem : Hashes) {
+      double Distance = 0;
+      Distance = BBHash::distance(Elem, Hash);
+
+      if (Distance == 0) { Smallest = Elem.getString(); break; }
+      if (Distance < SmallestDistance) {
+        SmallestDistance = Distance;
+        Smallest         = Elem.getString();
+      }
     }
+
+    Nearest[Hash] = new BBHash(Smallest);
   }
 
-  return new BBHash(Smallest);
+  return Nearest[Hash];
 }
 
 void DatabaseManager::insert(BBHash Hash, double Value) {
   assert(Value > 0 && "Cannot insert in the database a negative value.");
-  
+
+  CDB[(BBHash::dotProduct(Hash, *RandomHash)/w) % PrimeNumber]
+    .push_back(Hash);
+
   if (hasHash(Hash)) 
     DB[Hash] = (Value + DB[Hash])/2;
   else 
