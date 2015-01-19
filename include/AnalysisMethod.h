@@ -25,7 +25,7 @@
 
 /// \brief An enumeration to represent each different type of time cost analysis
 enum AnalysisMethods {
-  instM, hashM, randM, hashPlusInstM, freqM, instCostM, hashWM
+  instM, randM, hashPlusInstM, freqM, instCostM, hashWM
 };
 
 /// \brief Every execution time cost analysis must inherit from this class
@@ -44,22 +44,6 @@ class AnalysisMethod {
 /// execution frequency to evaluate the execution cost of the given function.
 class InstructionMethod : public AnalysisMethod {
   public:
-    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
-};
-
-/// \brief This method uses a weight given by the execution time of a similar 
-/// basic block. For that it uses a database of basic blocks and their execution
-///  time. This weight is multiplied by the execution frequency 
-///  to evaluate the execution cost of the given function.
-class HashMethod : public AnalysisMethod {
-  private:
-    /// \brief It needs a basic block database.
-    DatabaseManager *DBManager;
-  public:
-    /// \brief The constructor needs a string with the path to the database 
-    /// file.
-    HashMethod(llvm::StringRef);
-
     double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
 };
 

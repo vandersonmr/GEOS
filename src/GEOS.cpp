@@ -39,13 +39,6 @@ GEOS::analyseExecutionTime(const ProfileModule& PModule, AnalysisMethods Method,
   AnalysisMethod *Analyser;
 
   switch (Method) {
-    case hashM:
-      if (!DatabaseFilename.empty())
-        Analyser = new HashMethod(DatabaseFilename);
-      else
-        errs() 
-          << "For hashM you must pass a database filename with -database\n";
-      break;
     case hashWM:
       if (!DatabaseFilename.empty())
         Analyser = new HashWeightedMethod(DatabaseFilename);
