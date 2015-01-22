@@ -1,0 +1,7 @@
+#!/bin/bash
+ulimit -v 1000000
+sudo cpufreq-set -c 3 -d 3GHz -u 3GHz root
+su -c "cset shield -c 3" root
+su -c "cset shield -e -- $1" root
+su -c "cset shield --unshield" root
+sudo cpufreq-set -c 3 -d 1.2GHz -u 1.2GHz root

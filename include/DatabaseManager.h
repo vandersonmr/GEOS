@@ -65,7 +65,7 @@ class DatabaseManager {
     /// execution time separated by space. 
     void printDatabase() const;
 
-    /// \brief Returns the most equally hash from the given parameter in the 
+    /// \brief Returns the nearest BBHash from the given parameter in the 
     /// database. 
     BBHash* getNearest(const BBHash&) const;
 

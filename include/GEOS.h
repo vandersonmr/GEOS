@@ -79,20 +79,41 @@ enum OptimizationKind {
 /// execution time. 
 class GEOS {
   public:
+    /// \brief Instantiates the specificated AnlysisMethod.
+    ///
+    /// \param First is the AnalysisMethod kind and the second is the database 
+    /// file path.
+    static AnalysisMethod* getAnalyser(AnalysisMethodKind, llvm::StringRef);
+
+    /// \brief Returns the instanciation of the optimization choosed.
+    static llvm::Pass* getPass(OptimizationKind);
+
+    /// \brief Like applyPasses this function apply a set of passes to the 
+    /// llvm module. However, it just apply those to an specific function. 
+    ///
+    /// \param the first param is the function name that the passes should be 
+    /// applied. 
+    static ProfileModule* applyPassesOnFunction(llvm::StringRef,
+        const ProfileModule&, llvm::FunctionPassManager&);
+
     /// \brief Apply Passes (Transformations) into a ProfileModule. Also ensures
     /// that its profiling information ramains consistent. The ProfileModule 
     /// given as parameter isn't modified, actualy all the modifications are
     /// made in a copy. This copy is returned as parameter.
-    static ProfileModule* 
-      applyPasses(const ProfileModule&, llvm::FunctionPassManager&);
+    static ProfileModule* applyPasses(const ProfileModule&, 
+        llvm::FunctionPassManager&);
 
-    /// \brief analysis the execution time of a ProfileModule with the choosen
-    /// method and returns it. 
-    static double analyseExecutionTime(const ProfileModule&, AnalysisMethods,
-        llvm::StringRef);
-    
-    /// \brief Returns the instanciation of the optimization choosed.
-    static llvm::Pass* getPass(OptimizationKind);
+    /// \brief Estimate the execution time of a function from the ProfileModule
+    /// with the given AnalysisMethod and returns it.
+    ///
+    /// \param The first param is the name of the function that the analysis 
+    /// should be done. 
+    static double analyseFunctionExecutionTime(llvm::StringRef, 
+        const ProfileModule&, AnalysisMethod*);
+
+    /// \brief Estimate the execution time of a ProfileModule with the given 
+    /// AnalysisMethod and returns it. 
+    static double analyseExecutionTime(const ProfileModule&, AnalysisMethod*);
 };
 
 #endif

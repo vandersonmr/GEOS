@@ -151,7 +151,7 @@ BBHash::BBHash(const StringRef &S) {
 
   Hash.resize(Size);
 
-  std::stringstream ss(S.str());
+  std::stringstream ss(S);
   int  d;
   char p;
   for (int i = 0; i < Size; i++) {
@@ -189,11 +189,12 @@ int BBHash::getDescriptor(DescriptorKind DescriptionId) const {
   return Hash[DescriptionId];
 }
 
+
 StringRef BBHash::getString() const {
-  std::stringstream* SSTM = new std::stringstream;
-  for (int i=0; i < Size-1; i++) 
-    (*SSTM) << Hash[i] << "-";
-  (*SSTM) << Hash[Size-1];
+  std::stringstream *SSTM = new std::stringstream;
+    for (int i=0; i < Size-1; i++) 
+      (*SSTM) << Hash[i] << "-";
+    (*SSTM) << Hash[Size-1];
   return SSTM->str();
 }
 
@@ -253,5 +254,4 @@ unsigned BBHash::descriptorWeight(DescriptorKind d) {
       return 1;
   }
 }
-
 

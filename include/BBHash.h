@@ -72,6 +72,7 @@ class BBHash {
     /// \brief size of the hash. Need to be the same size of the enum 
     /// Descriptor.
     const static int Size = 35;
+
     /// \brief representation of the hash itself. The hash is a vector of int 
     /// separated by '-'. Each int is called a descriptor. 
     std::vector<int> Hash;
@@ -82,7 +83,6 @@ class BBHash {
 
     /// \brief Returns a weight for each information in the hash.
     static unsigned descriptorWeight(DescriptorKind d);
-
   public:
     /// \brief Create an empty hash.
     BBHash();

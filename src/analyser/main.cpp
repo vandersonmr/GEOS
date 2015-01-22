@@ -40,7 +40,7 @@ GCDAFilename("gcda", cl::desc("One or more GCOV GCDA files"),
 static cl::alias 
 gaAlias("ga", cl::desc("Alias for -gcda"), cl::aliasopt(GCDAFilename));
 
-static cl::opt<AnalysisMethods> 
+static cl::opt<AnalysisMethodKind> 
 OptAnalysisMethod(cl::desc("Choose an analysis method:"),
     cl::values(
       clEnumVal(instM, "Basic blocks are weighed by their number of instruction"),
@@ -79,11 +79,13 @@ int main(int argc, char** argv) {
     GCNOList.push_back(GCNO.get().get());
     GCDAList.push_back(GCDA.get().get());
 //  }
+  AnalysisMethod *Analyser = 
+    GEOS::getAnalyser((AnalysisMethodKind) OptAnalysisMethod, 
+      DatabaseFilename.c_str());
 
   ProfileModule PModule(&(*MyModule), GCDAList, GCNOList);
 
-  outs() << GEOS::analyseExecutionTime(PModule, 
-        (AnalysisMethods) OptAnalysisMethod, DatabaseFilename.c_str()) << "\n";
+  outs() << GEOS::analyseExecutionTime(PModule, Analyser) << "\n";
 
   return 0;
 }

@@ -24,7 +24,7 @@
 #include <vector>
 
 /// \brief An enumeration to represent each different type of time cost analysis
-enum AnalysisMethods {
+enum AnalysisMethodKind {
   instM, randM, hashPlusInstM, freqM, instCostM, hashWM
 };
 
@@ -38,6 +38,8 @@ class AnalysisMethod {
     /// function (Function) when executed in the given frequency (GCOVFunction).
     virtual double 
       estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*) = 0;
+
+    virtual ~AnalysisMethod() {};
 };
 
 /// \brief This method uses the number of instructions multiplied by the 
@@ -45,6 +47,8 @@ class AnalysisMethod {
 class InstructionMethod : public AnalysisMethod {
   public:
     double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
+
+    ~InstructionMethod() {};
 };
 
 /// \brief This method uses a weight given by the execution time of a similar 
@@ -62,6 +66,8 @@ class HashWeightedMethod : public AnalysisMethod {
     /// file.
     HashWeightedMethod(llvm::StringRef);
 
+    ~HashWeightedMethod() { delete DBManager; };
+
     double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
 };
 
@@ -70,6 +76,8 @@ class HashWeightedMethod : public AnalysisMethod {
 class RandomMethod : public AnalysisMethod {
   public:
     double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
+
+    ~RandomMethod() {};
 };
 
 /// \brief This method uses just the frequency to evaluate the execution cost 
@@ -77,6 +85,8 @@ class RandomMethod : public AnalysisMethod {
 class FrequencyMethod : public AnalysisMethod {
   public:
     double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
+
+    ~FrequencyMethod() {};
 };
 
 /// \brief This method uses the sum of an estimate cost of each instruction in 
@@ -85,6 +95,8 @@ class FrequencyMethod : public AnalysisMethod {
 class InstructionCostMethod : public AnalysisMethod {
   public:
     double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
+
+    ~InstructionCostMethod() {};
 };
 
 /// \brief This method uses the sum of both estimations from HashMethod and 
@@ -98,6 +110,11 @@ class InstructionPlusHashMethod : public AnalysisMethod {
     /// \brief Needs the database path as parameter for the HashMethod 
     /// constructor.
     InstructionPlusHashMethod(llvm::StringRef);
+
+    ~InstructionPlusHashMethod() {
+      delete IM;
+      delete HM;
+    };
 
     double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
 };

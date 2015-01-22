@@ -36,6 +36,8 @@ ProfileModule::ProfileModule(Module* M,
     GCOVBuffer GCDA_GB(*iGCDA);
 
     Profiles = readFunctions(GF, GCNO_GB, GCDA_GB);
+    for (auto &Func : Profiles) 
+      ProfilesByName[Func->getName()] =  Func;
     break;
     // FIXME!
   
@@ -48,9 +50,14 @@ Module* ProfileModule::getLLVMModule() const {
   return LLVMModule;
 }
 
-std::vector<llvm::GCOVFunction*> 
+std::vector<GCOVFunction*> 
 ProfileModule::getProfile() const {
   return Profiles;
+}
+
+GCOVFunction*
+ProfileModule::getFunctionProfile(StringRef FuncName) const {
+  return ProfilesByName.at(FuncName.str());
 }
     
 std::vector<std::pair<Function*, uint64_t>> 

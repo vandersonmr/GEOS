@@ -84,17 +84,19 @@ BBHash* DatabaseManager::
 getNearest(const BBHash &Hash) const {
   if (Nearest.count(Hash) == 0) {
     double SmallestDistance = std::numeric_limits<double>::max();
-    StringRef Smallest = "";
+    llvm::StringRef Smallest ="";
 
     int dotProduct = BBHash::dotProduct(Hash, *RandomHash);
-    auto Hashes = CDB.at((dotProduct/w) % PrimeNumber);
+    auto Hashes    = CDB.at((dotProduct/w) % PrimeNumber);
 
-    for (auto Elem : Hashes) {
+    for (auto &Elem : Hashes) {
       double Distance = 0;
       Distance = BBHash::distance(Elem, Hash);
 
-      if (Distance == 0) { Smallest = Elem.getString(); break; }
-      if (Distance < SmallestDistance) {
+      if (Distance == 0) { 
+        Smallest = Elem.getString(); 
+        break; 
+      } if (Distance < SmallestDistance) {
         SmallestDistance = Distance;
         Smallest         = Elem.getString();
       }

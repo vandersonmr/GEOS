@@ -88,6 +88,9 @@ int main(int argc, char** argv) {
   Module *MyModule = 
     parseIRFile(LLVMFilename.c_str(), Error, Context).release();
 
+  Module *MyModule2 = 
+    parseIRFile(LLVMFilename.c_str(), Error, Context).release();
+
   std::list<MemoryBuffer*> GCNOList;
   std::list<MemoryBuffer*> GCDAList;
 
@@ -101,66 +104,61 @@ int main(int argc, char** argv) {
   GCDAList.push_back(GCDA.get().get());
   //}
 
-  ProfileModule  *PModule   = new ProfileModule(MyModule, GCDAList, GCNOList);
-  ProfileModule  *Optimized = PModule;
+  ProfileModule *PModule   = new ProfileModule(MyModule, GCDAList, GCNOList);
+  ProfileModule *Optimized = PModule;
   AnalysisMethod *Analyser = 
     GEOS::getAnalyser((AnalysisMethodKind) OptAnalysisMethod, 
-        DatabaseFilename.c_str());
+      DatabaseFilename.c_str());
 
   double StartTime = GEOS::analyseExecutionTime(*Optimized, 
       Analyser) / 100000000.0;
 
-  double BestValue = std::numeric_limits<double>::max();
-  std::vector<OptimizationKind> Optimizations;
-  int Try = 30;
-  int i = 0;
-  while (i < 30) {
-    OptimizationKind OptChoosed = (OptimizationKind) getRandomPass(gen);
-    if (GEOS::getPass(OptChoosed) == nullptr) continue;
+  for (auto &Func : *MyModule2) {
+    double BestValue = std::numeric_limits<double>::max();
+    std::vector<OptimizationKind> Optimizations;
+    int Try = 30;
+    int i = 0;
+    while (i < 30) {
+      OptimizationKind OptChoosed = (OptimizationKind) getRandomPass(gen);
+      if (GEOS::getPass(OptChoosed) == nullptr) continue;
 
-    Optimizations.push_back(OptChoosed);
+      Optimizations.push_back(OptChoosed);
 
-    FunctionPassManager FPM(Optimized->getLLVMModule());
+      FunctionPassManager FPM(Optimized->getLLVMModule());
 
-    for (auto OptKind : Optimizations) { 
-      Pass *Aux = GEOS::getPass(OptKind);
-      FPM.add(Aux);
-    }
+      for (auto OptKind : Optimizations) { 
+        Pass *Aux = GEOS::getPass(OptKind);
+        FPM.add(Aux);
+      }
 
-    FPM.doInitialization();
-    ProfileModule* Candidate = 
-      GEOS::applyPasses(*Optimized, FPM);
-    FPM.doFinalization();
+      FPM.doInitialization();
+      ProfileModule* Candidate = 
+        GEOS::applyPassesOnFunction(Func.getName(), *Optimized, FPM);
+      FPM.doFinalization();
 
-    double ExecutionTime = GEOS::analyseExecutionTime(*Optimized, Analyser);
+      double ExecutionTime = GEOS::analyseExecutionTime(*Optimized, Analyser);
 
-    if (ExecutionTime <= BestValue) {
-      i++;
-      delete Optimized;
-      printf("%d : %s : ", i, GEOS::getPass(OptChoosed)->getPassName());
-      BestValue = ExecutionTime;
-      Optimized = Candidate;
-      printModule(Optimized, i);
-
-      printf("%lf\n", 
-          GEOS::analyseExecutionTime(*Optimized, Analyser) / 100000000.0);
-    } else {
-      delete Candidate;
-      Optimizations.pop_back(); 
-      Try--;
-      if (Try == 0) { 
-        printf("SpeedUp : %lf\n", 
-          StartTime / (GEOS::analyseExecutionTime(*Optimized, Analyser) 
-          / 100000000.0));
-
-        return 0;
+      if (ExecutionTime <= BestValue) {
+        i++;
+        delete Optimized;
+        BestValue = ExecutionTime;
+        Optimized = Candidate;
+      } else {
+        delete Candidate;
+        Optimizations.pop_back(); 
+        Try--;
+        if (Try == 0) break;
       }
     }
+    //printModule(Optimized, i);
+
+    printf("%s %lf\n", Func.getName().str().c_str(), 
+        GEOS::analyseExecutionTime(*Optimized, Analyser) / 100000000.0);
+
   }
 
-  printf("SpeedUp : %lf\n", 
-          StartTime / (GEOS::analyseExecutionTime(*Optimized, Analyser) 
-          / 100000000.0));
+  printf("SpeedUp : %lf\n", StartTime / 
+      (GEOS::analyseExecutionTime(*Optimized, Analyser) / 100000000.0));
 
   return 0;
 }

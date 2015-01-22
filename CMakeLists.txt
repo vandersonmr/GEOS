@@ -20,3 +20,5 @@ add_subdirectory (src/heuristics)
 
 add_subdirectory (src/passes)
 add_subdirectory (unittest)
+
+INSTALL(FILES benchmarks/saferun DESTINATION bin)

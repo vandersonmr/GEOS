@@ -22,20 +22,8 @@
 
 using namespace llvm;
 
-ProfileModule* 
-GEOS::applyPasses(const ProfileModule& PModule, FunctionPassManager& PM) {
-  ProfileModule *ModuleCopy = PModule.getCopy();
-  Module        *MyModule   = ModuleCopy->getLLVMModule();
-
-  for (auto& Func : *MyModule)
-    PM.run(Func);
-
-  return ModuleCopy; 
-}
-
-double 
-GEOS::analyseExecutionTime(const ProfileModule& PModule, AnalysisMethods Method, 
-    StringRef DatabaseFilename = "") {
+AnalysisMethod*
+GEOS::getAnalyser(AnalysisMethodKind Method, StringRef DatabaseFilename = "") {
   AnalysisMethod *Analyser;
 
   switch (Method) {
@@ -70,20 +58,7 @@ GEOS::analyseExecutionTime(const ProfileModule& PModule, AnalysisMethods Method,
       break;
   }
 
-  double PerformanceMensurment = 0;
-
-  Module *MyModule = PModule.getLLVMModule();
-
-  for (auto &FreqFunc : PModule.getProfile()) {
-    Function *LLVMFunc = MyModule->getFunction(FreqFunc->getName());
-    assert(LLVMFunc != nullptr 
-        && "Trying to access a LLVM Function that don't exist!");
-
-    PerformanceMensurment += 
-      Analyser->estimateExecutionTime(LLVMFunc, FreqFunc);
-  }
-
-  return PerformanceMensurment;
+  return Analyser;
 }
 
 Pass* GEOS::getPass(OptimizationKind OptChoosed) {
@@ -184,3 +159,67 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return nullptr;
   }
 }
+
+ProfileModule* 
+GEOS::applyPassesOnFunction(StringRef FuncName, const ProfileModule& PModule, 
+    FunctionPassManager& PM) {
+
+  assert(PModule.getLLVMModule()->getFunction(FuncName) != nullptr && 
+      "There is no function with this name in the Module.");
+
+  ProfileModule *ModuleCopy = PModule.getCopy();
+  Module        *MyModule   = ModuleCopy->getLLVMModule();
+
+  PM.run(*(MyModule->getFunction(FuncName)));
+
+  return ModuleCopy; 
+}
+
+ProfileModule* 
+GEOS::applyPasses(const ProfileModule& PModule, FunctionPassManager& PM) {
+  ProfileModule *ModuleCopy = PModule.getCopy();
+  Module        *MyModule   = ModuleCopy->getLLVMModule();
+
+  for (auto& Func : *MyModule)
+    PM.run(Func);
+
+  return ModuleCopy; 
+}
+
+double 
+GEOS::analyseFunctionExecutionTime(StringRef FuncName, 
+    const ProfileModule& PModule, AnalysisMethod *Analyser) {
+
+  assert(PModule.getLLVMModule()->getFunction(FuncName) != nullptr && 
+      "There is no function with this name in the Module.");
+
+  Module *MyModule = PModule.getLLVMModule();
+
+  Function     *LLVMFunc = MyModule->getFunction(FuncName);
+  GCOVFunction *FreqFunc = PModule.getFunctionProfile(FuncName);
+  assert(LLVMFunc != nullptr 
+      && "Trying to access a LLVM Function that don't exist!");
+
+  double Estimation = Analyser->estimateExecutionTime(LLVMFunc, FreqFunc);
+
+  return Estimation;
+}
+
+double 
+GEOS::analyseExecutionTime(const ProfileModule& PModule, 
+    AnalysisMethod *Analyser) {
+
+  double PerformanceMensurment = 0;
+
+  for (auto &FreqFunc : PModule.getProfile()) {
+    Function *LLVMFunc = 
+      PModule.getLLVMModule()->getFunction(FreqFunc->getName());
+    assert(LLVMFunc != nullptr
+        && "Trying to access a LLVM Function that don't exist!");
+    PerformanceMensurment +=
+      Analyser->estimateExecutionTime(LLVMFunc, FreqFunc);
+  }
+
+  return PerformanceMensurment;
+}
+

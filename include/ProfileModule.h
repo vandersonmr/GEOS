@@ -15,6 +15,7 @@
 #include "llvm/IR/Module.h"
 #include "llvm/Support/GCOV.h"
 
+#include <unordered_map>
 #include <list>
 #include <vector>
 
@@ -27,6 +28,9 @@ class ProfileModule {
 
     /// \brief The Profiling information of each function.
     std::vector<llvm::GCOVFunction*> Profiles;
+
+    /// \brief 
+    std::unordered_map<std::string, llvm::GCOVFunction*> ProfilesByName;
 
     /// \brief This function loads from files (GCDA and GCNO) the GCOV profiling
     /// information.
@@ -58,6 +62,8 @@ class ProfileModule {
     
     /// \brief Returns its profiling information.
     std::vector<llvm::GCOVFunction*> getProfile() const;
+
+    llvm::GCOVFunction* getFunctionProfile(llvm::StringRef) const;
 
     /// \brief Returns a list of pairs of llvm::function and its execution 
     /// frequency.
