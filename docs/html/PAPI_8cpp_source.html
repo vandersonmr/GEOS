@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -155,7 +156,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="PAPI_8cpp.html#a55995c266cf6b88f45fed6f5c8c20ff6">   67</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="PAPI_8cpp.html#a55995c266cf6b88f45fed6f5c8c20ff6">get_time_stamp</a>() {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  PAPI_stop_counters(values, 2);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  PAPI_stop_counters(Values, 2);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> Values2[2];</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  Empty = <a class="code" href="PAPI_8cpp.html#aff2f32626188d3420bf5ad53258190e8">getEmpty</a>(Events, Values2);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">double</span> Stamp = 1.0/((Values[1] - Empty) / ((<span class="keywordtype">double</span>)Values[1]/Values[0]));</div>
@@ -174,11 +175,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  notFinished = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  NotFinished = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="PAPI_8cpp.html#af180e926633cde08a05ccbc3af397ee4">ID</a> = Id;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">if</span> (freq[Id] &lt; <a class="code" href="PAPI_8cpp.html#a078b6c12f1ac6819cecef90ab5870276">TIME</a>) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="PAPI_8cpp.html#af9d22b8c6cb19e5b0e44b8a78d1cd3d9">Freq</a>[Id] &lt; <a class="code" href="PAPI_8cpp.html#a078b6c12f1ac6819cecef90ab5870276">TIME</a>) {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    IDsStack.push(<a class="code" href="PAPI_8cpp.html#af180e926633cde08a05ccbc3af397ee4">ID</a>);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="PAPI_8cpp.html#af9d22b8c6cb19e5b0e44b8a78d1cd3d9">Freq</a>[Id]++;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    Empty = <a class="code" href="PAPI_8cpp.html#aff2f32626188d3420bf5ad53258190e8">getEmpty</a>(Events, Values);</div>
@@ -200,7 +201,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      IDsStack.pop();</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      Empty = <a class="code" href="PAPI_8cpp.html#aff2f32626188d3420bf5ad53258190e8">getEmpty</a>(Events, Values);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      PAPI_start_counters(events, 2);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      PAPI_start_counters(Events, 2);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    NotFinished = <span class="keyword">false</span>;</div>
@@ -210,8 +211,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
 <div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="PAPI_8cpp.html#ad058227fc490e93e440cb97b1c2051f5">  121</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="PAPI_8cpp.html#ad058227fc490e93e440cb97b1c2051f5">print_results</a>() {</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="PAPI_8cpp.html#a121b8bab5c0ceda3e33140d406f4887e">SIZE</a>; i++) </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> (freq[i] &gt; 0 &amp;&amp; value[i] &gt; 0) </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      fprintf(stderr, <span class="stringliteral">&quot;%d: %d\n&quot;</span>, i, (<span class="keywordtype">int</span>) ceil(1.0/(value[i]/freq[i])));</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="PAPI_8cpp.html#af9d22b8c6cb19e5b0e44b8a78d1cd3d9">Freq</a>[i] &gt; 0 &amp;&amp; <a class="code" href="PAPI_8cpp.html#a42cb93d8be68257caf6880d0661c1541">Value</a>[i] &gt; 0) </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      fprintf(stderr, <span class="stringliteral">&quot;%d: %d\n&quot;</span>, i, (<span class="keywordtype">int</span>) ceil(1.0/(<a class="code" href="PAPI_8cpp.html#a42cb93d8be68257caf6880d0661c1541">Value</a>[i]/<a class="code" href="PAPI_8cpp.html#af9d22b8c6cb19e5b0e44b8a78d1cd3d9">Freq</a>[i])));</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
 <div class="ttc" id="PAPI_8cpp_html_a1b644c5a45b31fdd325203a8e057294f"><div class="ttname"><a href="PAPI_8cpp.html#a1b644c5a45b31fdd325203a8e057294f">init_PAPI</a></div><div class="ttdeci">void init_PAPI(int Size)</div><div class="ttdef"><b>Definition:</b> <a href="PAPI_8cpp_source.html#l00051">PAPI.cpp:51</a></div></div>
 <div class="ttc" id="PAPI_8cpp_html_a44ecf5a0e2ef488d96bf3144e3b30417"><div class="ttname"><a href="PAPI_8cpp.html#a44ecf5a0e2ef488d96bf3144e3b30417">start_measures</a></div><div class="ttdeci">void start_measures(int Id)</div><div class="ttdef"><b>Definition:</b> <a href="PAPI_8cpp_source.html#l00079">PAPI.cpp:79</a></div></div>
@@ -227,7 +228,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 13 2014 16:17:30 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 29 2015 00:47:18 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['size',['SIZE',['../PAPI_8cpp.html#a121b8bab5c0ceda3e33140d406f4887e',1,'PAPI.cpp']]]
+  ['nearest',['Nearest',['../DatabaseManager_8cpp.html#aca6f2d85806b1fc1f834c30cea7a834c',1,'DatabaseManager.cpp']]]
 ];

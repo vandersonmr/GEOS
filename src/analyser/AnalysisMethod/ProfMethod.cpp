@@ -39,25 +39,24 @@ ProfMethod::ProfMethod(StringRef Filename) {
 }
 
 double ProfMethod::
-estimateExecutionTime(llvm::Function* Func, llvm::GCOVFunction* Freq) { 
+estimateExecutionTime(llvm::Function* Func, const ProfileModule &Freq) const { 
   double PerformanceMensurment = 0;
-  auto MBB = Freq->block_begin(); 
+
   int i = 0;
   for (auto &BB : *Func) {
     auto BBCost = 0;
-    for (auto &I : BB) {
-      BBCost += CostEstimator::getInstructionCost(&I);
-    }
 
-    if (BB.getInstList().size() <= 3) { 
-      PerformanceMensurment +=  (((*MBB)->getCount()+1) * 100); //BBCost);// BB.getInstList().size());
-      /*  cout << "a: " << (sqrt((*MBB)->getCount()/4) * BBCost) << endl;*/
-    } else {
-      PerformanceMensurment += ((*MBB)->getCount()+1) * pow(Times[i],2);//BB.getInstList().size());//* pow(Times[i], 2));
-      /*      cout << "b: " <<  (sqrt((*MBB)->getCount()/4) * pow(Times[i],2)/100) << endl;*/
-    }
+    for (auto &I : BB) 
+      BBCost += CostEstimator::getInstructionCost(&I);
+
+    if (BB.getInstList().size() <= 3)  
+      PerformanceMensurment += 
+        (Freq.getBasicBlockFrequency(&BB) + 1) * 100;
+    else 
+      PerformanceMensurment += 
+        (Freq.getBasicBlockFrequency(&BB) + 1) * pow(Times[i], 2);
+
     i++;
-    ++MBB;
   } 
 
   return PerformanceMensurment;

@@ -15,69 +15,202 @@
 #include "ProfileModule.h"
 
 #include "llvm/Transforms/Utils/Cloning.h"
+#include "llvm/IR/Instructions.h"
+#include "llvm/IR/IntrinsicInst.h"
+#include "llvm/IR/Type.h"
+#include "llvm/IR/CFG.h"
+
+#include <stack>
 
 using namespace llvm;
 
+int I = 0;
 ProfileModule::ProfileModule(Module* M, 
     std::list<MemoryBuffer*> GCDA, 
     std::list<MemoryBuffer*> GCNO) {
 
-  LGCNO = GCNO;
-  LGCDA = GCDA;
   LLVMModule = M;
+
+  for (auto &Func : *LLVMModule) {
+    for (auto &BB : Func) {
+      BB.setName(std::to_string(I));
+      I++;
+    }
+  }
 
   std::list<MemoryBuffer*>::iterator iGCDA = GCDA.begin();
   std::list<MemoryBuffer*>::iterator iGCNO = GCNO.begin();
+
   while (iGCDA != GCDA.end() && iGCNO != GCNO.end()) {
     llvm::GCOVFile GF;
 
-    // FIXME! Using only one file. The last.
     GCOVBuffer GCNO_GB(*iGCNO);
     GCOVBuffer GCDA_GB(*iGCDA);
 
-    Profiles = readFunctions(GF, GCNO_GB, GCDA_GB);
-    for (auto &Func : Profiles) 
-      ProfilesByName[Func->getName()] =  Func;
-    break;
-    // FIXME!
-  
+    std::vector<GCOVFunction*> Profiles = readFunctions(GF, GCNO_GB, GCDA_GB);
+    for (auto &FreqFunc : Profiles) {
+      Function *LLVMFunc = LLVMModule->getFunction(FreqFunc->getName());
+      assert(LLVMFunc != nullptr
+          && "Trying to access a LLVM Function that don't exist!");
+
+      auto MBB = FreqFunc->block_begin(); 
+      ++MBB;
+      for(auto &BB : *LLVMFunc) {
+        BasicBlockFrequency[BB.getName()] = (*MBB).get()->getCount();
+        ++MBB;
+      }
+    }
+
     iGCDA++;
     iGCNO++;
   }
+}
+
+ProfileModule::ProfileModule(Module *M, 
+    const std::unordered_map<std::string, uint64_t>& BBFrequnecy) {
+  LLVMModule = M;
+
+  for (auto I : BBFrequnecy) 
+    BasicBlockFrequency[I.first] = I.second;
 }
 
 Module* ProfileModule::getLLVMModule() const {
   return LLVMModule;
 }
 
-std::vector<GCOVFunction*> 
-ProfileModule::getProfile() const {
-  return Profiles;
+bool ProfileModule::hasBasicBlockFrequency(const BasicBlock *BB) const {
+  assert(BB->hasName() && "Trying to use a BasicBlock without a name.");
+  return BasicBlockFrequency.count(BB->getName().str()) > 0;
 }
 
-GCOVFunction*
-ProfileModule::getFunctionProfile(StringRef FuncName) const {
-  return ProfilesByName.at(FuncName.str());
+uint64_t ProfileModule::getBasicBlockFrequency(const BasicBlock *BB) const {
+  assert(BB->hasName() && "Trying to use a BasicBlock without a name.");
+  if (hasBasicBlockFrequency(BB))
+    return BasicBlockFrequency.at(BB->getName().str());
+  else return 0;
 }
-    
-std::vector<std::pair<Function*, uint64_t>> 
-ProfileModule::getFuncsAndFreqs() const {
 
-  std::vector<std::pair<Function*, uint64_t>> FuncsAndFreqs;
+void 
+ProfileModule::setBasicBlockFrequency(const BasicBlock *BB, uint64_t Freq) {
+  assert(BB->hasName() && "Trying to use a BasicBlock without a name.");
+  BasicBlockFrequency[BB->getName().str()] = Freq;
+}
 
-  for(auto& FreqFunc : Profiles) {
-    Function* Func = LLVMModule->getFunction(FreqFunc->getName());
-    uint64_t Freq = FreqFunc->getEntryCount();
-    FuncsAndFreqs.push_back(
-        std::pair<Function*, uint64_t>(Func, Freq));
+uint64_t 
+ProfileModule::getExecutionFreqUsingPredecessors(BasicBlock* BB) {
+  uint64_t PredecessorsWeight = 0;
+  for (auto IT = pred_begin(BB), ET = pred_end(BB); IT != ET; ++IT) {
+    BasicBlock* Predecessor = *IT;
+    auto Terminator = Predecessor->getTerminator();
+
+    if (BB != Predecessor) { 
+      if (isa<BranchInst>(Terminator)) {
+        if (cast<BranchInst>(Terminator)->isUnconditional()) {
+
+          PredecessorsWeight += getBasicBlockFrequency(Predecessor);
+
+        } else {
+
+          uint64_t EdgeWeight = getBasicBlockFrequency(Predecessor);
+          for (unsigned J = 0; J < Terminator->getNumSuccessors(); ++J) {
+            auto SuccPred = Terminator->getSuccessor(J);
+            if (SuccPred != BB) {
+              if (!hasBasicBlockFrequency(SuccPred) || 
+                  SuccPred->getUniquePredecessor() == nullptr ||
+                  EdgeWeight < getBasicBlockFrequency(SuccPred)) {
+                EdgeWeight = 0;
+                break;
+              } else {
+                EdgeWeight -= getBasicBlockFrequency(SuccPred);
+              }
+            }
+          }
+
+          PredecessorsWeight += EdgeWeight;
+        }
+      }
+    }
+
   }
 
-  return FuncsAndFreqs;
+  return PredecessorsWeight;
+}
+
+uint64_t 
+ProfileModule::getExecutionFreqUsingSuccessors(BasicBlock* BB) {
+  uint64_t SuccessorsWeight = 0;
+  auto Terminator = BB->getTerminator();
+  for (unsigned E = 0; E < Terminator->getNumSuccessors(); ++E) {
+    BasicBlock* Successor = Terminator->getSuccessor(E);
+
+    if (BB != Successor) { 
+      if (Successor->getSinglePredecessor() == BB) {
+
+        SuccessorsWeight += getBasicBlockFrequency(Successor);
+
+      } else {
+
+        uint64_t EdgeWeight = getBasicBlockFrequency(Successor);
+        for (auto IT = pred_begin(Successor); IT != pred_end(Successor); ++IT) {
+          BasicBlock* PredSucc = *IT;
+
+          if (PredSucc != BB) {
+            auto PredSuccTerminator = PredSucc->getTerminator();
+
+            if (isa<BranchInst>(PredSuccTerminator) &&
+                cast<BranchInst>(PredSuccTerminator)->isUnconditional() &&
+                hasBasicBlockFrequency(PredSucc) && 
+                EdgeWeight >= getBasicBlockFrequency(PredSucc)) {
+
+              EdgeWeight -= getBasicBlockFrequency(PredSucc);
+            } else {
+              EdgeWeight = 0;
+              break;
+            }
+          }
+        }
+        SuccessorsWeight += EdgeWeight; 
+      }
+
+    }
+  }
+
+
+  return SuccessorsWeight;
+}
+
+
+void ProfileModule::repairFunctionProfiling(Function *Func) {
+  bool changed = true;
+  while(changed) {
+    changed = false;
+    for (auto &BB : *Func) {
+      if (!BB.hasName()) 
+        BB.setName(std::to_string(++I));
+
+      uint64_t PredecessorsWeight = getExecutionFreqUsingPredecessors(&BB);
+      uint64_t SuccessorsWeight   = getExecutionFreqUsingSuccessors(&BB);
+
+      uint64_t ExecutionFreq = std::max(PredecessorsWeight, SuccessorsWeight);
+
+      if (ExecutionFreq > getBasicBlockFrequency(&BB) &&
+          ExecutionFreq != 0) { 
+        setBasicBlockFrequency(&BB, ExecutionFreq);
+        changed = true;
+      }
+    }
+  }
+}
+
+void ProfileModule::repairProfiling() {
+  for (auto &Func : *LLVMModule) {
+    repairFunctionProfiling(&Func);
+  }
 }
 
 ProfileModule* ProfileModule::getCopy() const {
   Module *NewModule = CloneModule(getLLVMModule());
-  return new ProfileModule(NewModule, LGCDA, LGCNO); 
+  return new ProfileModule(NewModule, BasicBlockFrequency); 
 }
 
 std::vector<GCOVFunction*>

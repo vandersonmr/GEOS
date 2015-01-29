@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -115,32 +116,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  DBManager = <span class="keyword">new</span> <a class="code" href="classDatabaseManager.html">DatabaseManager</a>(Filename);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">double</span> <a class="code" href="classHashWeightedMethod.html#a99710b1c96f50946df91654c72c824f4">HashWeightedMethod::</a></div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classHashWeightedMethod.html#a99710b1c96f50946df91654c72c824f4">   29</a></span>&#160;<a class="code" href="classHashWeightedMethod.html#a99710b1c96f50946df91654c72c824f4">estimateExecutionTime</a>(Function *Func, </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::unique_ptr&lt;GCOVFunction, </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::default_delete&lt;GCOVFunction&gt; &gt; &amp;<a class="code" href="PAPI_8cpp.html#af9d22b8c6cb19e5b0e44b8a78d1cd3d9">Freq</a>) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">double</span> PerformanceMensurment = 0;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">auto</span> MBB = <a class="code" href="PAPI_8cpp.html#af9d22b8c6cb19e5b0e44b8a78d1cd3d9">Freq</a>-&gt;block_begin(); </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;BB : *Func) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classBBDescriptor.html">BBDescriptor</a> Hash(BB);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    PerformanceMensurment += (*MBB)-&gt;getCount() * </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                   DBManager-&gt;getTime(*DBManager-&gt;getNearest(Hash, <span class="keyword">true</span>));</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    ++MBB;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  } </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">return</span> PerformanceMensurment;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} </div>
-<div class="ttc" id="classBBDescriptor_html"><div class="ttname"><a href="classBBDescriptor.html">BBDescriptor</a></div><div class="ttdoc">This class is responsible for representing BB&#39;s hashes in memory. It can be constructed by a string (...</div><div class="ttdef"><b>Definition:</b> <a href="BBDescriptor_8h_source.html#l00069">BBDescriptor.h:69</a></div></div>
-<div class="ttc" id="classHashWeightedMethod_html_a99710b1c96f50946df91654c72c824f4"><div class="ttname"><a href="classHashWeightedMethod.html#a99710b1c96f50946df91654c72c824f4">HashWeightedMethod::estimateExecutionTime</a></div><div class="ttdeci">double estimateExecutionTime(llvm::Function *, std::unique_ptr&lt; llvm::GCOVFunction, std::default_delete&lt; llvm::GCOVFunction &gt; &gt; &amp;)</div><div class="ttdoc">This function is responsible for calculating the cost of a LLVM function. This cost must reflect on t...</div><div class="ttdef"><b>Definition:</b> <a href="HashWeighted_8cpp_source.html#l00029">HashWeighted.cpp:29</a></div></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">double</span> <a class="code" href="classHashWeightedMethod.html#a8001089ccb3cb34ec6a07825f1727102">HashWeightedMethod::</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classHashWeightedMethod.html#a8001089ccb3cb34ec6a07825f1727102">   29</a></span>&#160;<a class="code" href="classHashWeightedMethod.html#a8001089ccb3cb34ec6a07825f1727102">estimateExecutionTime</a>(llvm::Function* Func, <span class="keyword">const</span> <a class="code" href="classProfileModule.html">ProfileModule</a> &amp;<a class="code" href="PAPI_8cpp.html#af9d22b8c6cb19e5b0e44b8a78d1cd3d9">Freq</a>)<span class="keyword"> const </span>{ </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">double</span> PerformanceMensurment = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;BB : *Func) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classBBHash.html">BBHash</a> Hash(BB);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    PerformanceMensurment += Freq.<a class="code" href="classProfileModule.html#aec52f07d61cdacf8d7dfa4a52efbe819">getBasicBlockFrequency</a>(&amp;BB) * </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                   DBManager-&gt;getTime(*DBManager-&gt;getNearest(Hash)) * 0.15;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  } </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">return</span> PerformanceMensurment;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} </div>
+<div class="ttc" id="classProfileModule_html_aec52f07d61cdacf8d7dfa4a52efbe819"><div class="ttname"><a href="classProfileModule.html#aec52f07d61cdacf8d7dfa4a52efbe819">ProfileModule::getBasicBlockFrequency</a></div><div class="ttdeci">uint64_t getBasicBlockFrequency(const llvm::BasicBlock *) const </div><div class="ttdoc">Returns the execution frequency of the given BasicBlock, if it doesn&#39;t have the frequency it will ret...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00086">ProfileModule.cpp:86</a></div></div>
+<div class="ttc" id="classProfileModule_html"><div class="ttname"><a href="classProfileModule.html">ProfileModule</a></div><div class="ttdoc">This class is responsable for encapsulating, copying, and mantaing consistency of a LLVM Module and i...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8h_source.html#l00024">ProfileModule.h:24</a></div></div>
+<div class="ttc" id="classBBHash_html"><div class="ttname"><a href="classBBHash.html">BBHash</a></div><div class="ttdoc">This class is responsible for representing BB&#39;s hashes in memory. It can be constructed by a string (...</div><div class="ttdef"><b>Definition:</b> <a href="BBHash_8h_source.html#l00070">BBHash.h:70</a></div></div>
 <div class="ttc" id="classDatabaseManager_html"><div class="ttname"><a href="classDatabaseManager.html">DatabaseManager</a></div><div class="ttdoc">This class is responsible for loading and saving hashes databases. It is a representation in memory o...</div><div class="ttdef"><b>Definition:</b> <a href="DatabaseManager_8h_source.html#l00022">DatabaseManager.h:22</a></div></div>
 <div class="ttc" id="PAPI_8cpp_html_af9d22b8c6cb19e5b0e44b8a78d1cd3d9"><div class="ttname"><a href="PAPI_8cpp.html#af9d22b8c6cb19e5b0e44b8a78d1cd3d9">Freq</a></div><div class="ttdeci">int * Freq</div><div class="ttdef"><b>Definition:</b> <a href="PAPI_8cpp_source.html#l00030">PAPI.cpp:30</a></div></div>
 <div class="ttc" id="classHashWeightedMethod_html_af93c7d3bc87656111b93bfa1a022755c"><div class="ttname"><a href="classHashWeightedMethod.html#af93c7d3bc87656111b93bfa1a022755c">HashWeightedMethod::HashWeightedMethod</a></div><div class="ttdeci">HashWeightedMethod(llvm::StringRef)</div><div class="ttdoc">The constructor needs a string with the path to the database file. </div><div class="ttdef"><b>Definition:</b> <a href="HashWeighted_8cpp_source.html#l00024">HashWeighted.cpp:24</a></div></div>
 <div class="ttc" id="AnalysisMethod_8h_html"><div class="ttname"><a href="AnalysisMethod_8h.html">AnalysisMethod.h</a></div><div class="ttdoc">This file contains declarations of every method for analysis the execution cost of a LLVM function...</div></div>
+<div class="ttc" id="classHashWeightedMethod_html_a8001089ccb3cb34ec6a07825f1727102"><div class="ttname"><a href="classHashWeightedMethod.html#a8001089ccb3cb34ec6a07825f1727102">HashWeightedMethod::estimateExecutionTime</a></div><div class="ttdeci">double estimateExecutionTime(llvm::Function *, const ProfileModule &amp;) const </div><div class="ttdoc">This function is responsible for calculating the cost of a LLVM function. This cost must reflect on t...</div><div class="ttdef"><b>Definition:</b> <a href="HashWeighted_8cpp_source.html#l00029">HashWeighted.cpp:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 13 2014 16:17:30 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 29 2015 00:47:18 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

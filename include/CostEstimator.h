@@ -26,7 +26,7 @@ namespace {
 
   enum Cost {
     High   = 4,
-    Medium = 2,
+    Medium = 1,
     Low    = 1,
     None   = 0
   };

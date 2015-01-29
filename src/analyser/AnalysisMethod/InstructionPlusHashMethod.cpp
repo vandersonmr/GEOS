@@ -24,7 +24,7 @@ InstructionPlusHashMethod::InstructionPlusHashMethod(StringRef Filename) {
 }
 
 double InstructionPlusHashMethod::
-estimateExecutionTime(llvm::Function* Func, llvm::GCOVFunction* Freq) { 
-  return IM->estimateExecutionTime(Func, Freq) 
-    + HM->estimateExecutionTime(Func, Freq);
+estimateExecutionTime(llvm::Function* Func, const ProfileModule &Freq) const { 
+  return    (IM->estimateExecutionTime(Func, Freq) + 
+             HM->estimateExecutionTime(Func, Freq)) / 2;
 } 

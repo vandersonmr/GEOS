@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['descriptor',['Descriptor',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45',1,'BBDescriptor.h']]]
+  ['descriptorkind',['DescriptorKind',['../BBHash_8h.html#a1cac54f1961199852455d1cdf18e8525',1,'BBHash.h']]]
 ];

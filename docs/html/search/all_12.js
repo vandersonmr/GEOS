@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['value',['Value',['../PAPI_8cpp.html#a42cb93d8be68257caf6880d0661c1541',1,'PAPI.cpp']]]
+  ['udiv',['UDiv',['../BBHash_8h.html#a1cac54f1961199852455d1cdf18e8525a450e6aabe3299214f6227faeee262109',1,'BBHash.h']]],
+  ['unionwith',['unionWith',['../classDatabaseManager.html#aafc4eab876b4ea38c1a7cbcd3a018ec3',1,'DatabaseManager']]],
+  ['urem',['URem',['../BBHash_8h.html#a1cac54f1961199852455d1cdf18e8525aa5ab66ee6d990657209434c5c244b015',1,'BBHash.h']]]
 ];

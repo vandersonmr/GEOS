@@ -19,7 +19,8 @@
 
 #include "llvm/IRReader/IRReader.h"   
 #include "llvm/Support/SourceMgr.h"       
-#include "llvm/Support/GCOV.h"
+
+#include "ProfileModule.h"
 
 #include <vector>
 
@@ -37,7 +38,7 @@ class AnalysisMethod {
     /// \returns A double value that represents the execution cost of the LLVM 
     /// function (Function) when executed in the given frequency (GCOVFunction).
     virtual double 
-      estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*) = 0;
+      estimateExecutionTime(llvm::Function*, const ProfileModule&) const = 0;
 
     virtual ~AnalysisMethod() {};
 };
@@ -46,7 +47,7 @@ class AnalysisMethod {
 /// execution frequency to evaluate the execution cost of the given function.
 class InstructionMethod : public AnalysisMethod {
   public:
-    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
+    double estimateExecutionTime(llvm::Function*, const ProfileModule&) const; 
 
     ~InstructionMethod() {};
 };
@@ -68,14 +69,14 @@ class HashWeightedMethod : public AnalysisMethod {
 
     ~HashWeightedMethod() { delete DBManager; };
 
-    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
+    double estimateExecutionTime(llvm::Function*, const ProfileModule&) const; 
 };
 
 /// \brief This method uses a random number multiplied by the execution 
 /// frequency to evaluate the execution cost of the given function.
 class RandomMethod : public AnalysisMethod {
   public:
-    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
+    double estimateExecutionTime(llvm::Function*, const ProfileModule&) const; 
 
     ~RandomMethod() {};
 };
@@ -84,7 +85,7 @@ class RandomMethod : public AnalysisMethod {
 /// of the given function.
 class FrequencyMethod : public AnalysisMethod {
   public:
-    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
+    double estimateExecutionTime(llvm::Function*, const ProfileModule&) const; 
 
     ~FrequencyMethod() {};
 };
@@ -94,7 +95,7 @@ class FrequencyMethod : public AnalysisMethod {
 /// execution cost.
 class InstructionCostMethod : public AnalysisMethod {
   public:
-    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
+    double estimateExecutionTime(llvm::Function*, const ProfileModule&) const; 
 
     ~InstructionCostMethod() {};
 };
@@ -116,7 +117,7 @@ class InstructionPlusHashMethod : public AnalysisMethod {
       delete HM;
     };
 
-    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
+    double estimateExecutionTime(llvm::Function*, const ProfileModule&) const; 
 };
 
 /// \brief This method uses a similar approach as HashMethod. But instead 
@@ -129,7 +130,7 @@ class ProfMethod : public AnalysisMethod {
     /// constructor.
     ProfMethod(llvm::StringRef);
 
-    double estimateExecutionTime(llvm::Function*, llvm::GCOVFunction*); 
+    double estimateExecutionTime(llvm::Function*, const ProfileModule&) const; 
 };
 
 #endif

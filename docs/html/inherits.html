@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,31 +92,57 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><table border="0" cellspacing="10" cellpadding="0">
 <tr><td><img src="inherit_graph_0.png" border="0" alt="" usemap="#AnalysisMethod"/>
 <map name="AnalysisMethod" id="AnalysisMethod">
-<area shape="rect" id="node1" href="classAnalysisMethod.html" title="Every execution time cost analysis must inherit from this class. " alt="" coords="5,183,120,209"/><area shape="rect" id="node2" href="classFrequencyMethod.html" title="This method uses just the frequency to evaluate the execution cost of the given function. " alt="" coords="197,5,323,32"/><area shape="rect" id="node3" href="classHashMethod.html" title="This method uses a weight given by the execution time of a similar basic block. For that it uses a da..." alt="" coords="212,56,308,83"/><area shape="rect" id="node4" href="classHashWeightedMethod.html" title="This method uses a weight given by the execution time of a similar basic block. For that it uses a da..." alt="" coords="185,107,335,133"/><area shape="rect" id="node5" href="classInstructionCostMethod.html" title="This method uses the sum of an estimate cost of each instruction in the function multiplied by the fr..." alt="" coords="183,157,337,184"/><area shape="rect" id="node6" href="classInstructionMethod.html" title="This method uses the number of instructions multiplied by the execution frequency to evaluate the exe..." alt="" coords="197,208,323,235"/><area shape="rect" id="node7" href="classInstructionPlusHashMethod.html" title="This method uses the sum of both estimations from HashMethod and InstructionMethod. " alt="" coords="169,259,351,285"/><area shape="rect" id="node8" href="classProfMethod.html" title="This method uses a similar approach as HashMethod. But instead searching in a database the cost of ea..." alt="" coords="215,309,305,336"/><area shape="rect" id="node9" href="classRandomMethod.html" title="This method uses a random number multiplied by the execution frequency to evaluate the execution cost..." alt="" coords="203,360,317,387"/></map>
+<area shape="rect" id="node1" href="classAnalysisMethod.html" title="Every execution time cost analysis must inherit from this class. " alt="" coords="5,157,120,184"/><area shape="rect" id="node2" href="classFrequencyMethod.html" title="This method uses just the frequency to evaluate the execution cost of the given function. " alt="" coords="197,5,323,32"/><area shape="rect" id="node3" href="classHashWeightedMethod.html" title="This method uses a weight given by the execution time of a similar basic block. For that it uses a da..." alt="" coords="185,56,335,83"/><area shape="rect" id="node4" href="classInstructionCostMethod.html" title="This method uses the sum of an estimate cost of each instruction in the function multiplied by the fr..." alt="" coords="183,107,337,133"/><area shape="rect" id="node5" href="classInstructionMethod.html" title="This method uses the number of instructions multiplied by the execution frequency to evaluate the exe..." alt="" coords="197,157,323,184"/><area shape="rect" id="node6" href="classInstructionPlusHashMethod.html" title="This method uses the sum of both estimations from HashMethod and InstructionMethod. " alt="" coords="169,208,351,235"/><area shape="rect" id="node7" href="classProfMethod.html" title="This method uses a similar approach as HashMethod. But instead searching in a database the cost of ea..." alt="" coords="215,259,305,285"/><area shape="rect" id="node8" href="classRandomMethod.html" title="This method uses a random number multiplied by the execution frequency to evaluate the execution cost..." alt="" coords="203,309,317,336"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_1.png" border="0" alt="" usemap="#BBDescriptor"/>
-<map name="BBDescriptor" id="BBDescriptor">
-<area shape="rect" id="node1" href="classBBDescriptor.html" title="This class is responsible for representing BB&#39;s hashes in memory. It can be constructed by a string (..." alt="" coords="5,5,104,32"/></map>
+<tr><td><img src="inherit_graph_1.png" border="0" alt="" usemap="#BBHash"/>
+<map name="BBHash" id="BBHash">
+<area shape="rect" id="node1" href="classBBHash.html" title="This class is responsible for representing BB&#39;s hashes in memory. It can be constructed by a string (..." alt="" coords="6,5,77,32"/></map>
 </td></tr>
 <tr><td><img src="inherit_graph_2.png" border="0" alt="" usemap="#DatabaseManager"/>
 <map name="DatabaseManager" id="DatabaseManager">
 <area shape="rect" id="node1" href="classDatabaseManager.html" title="This class is responsible for loading and saving hashes databases. It is a representation in memory o..." alt="" coords="6,5,133,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_3.png" border="0" alt="" usemap="#static_01const_01int"/>
-</td></tr>
-<tr><td><img src="inherit_graph_4.png" border="0" alt="" usemap="#unordered__map_3_01std_1_1string_00_01double_01_4"/>
-<map name="unordered__map_3_01std_1_1string_00_01double_01_4" id="unordered__map_3_01std_1_1string_00_01double_01_4">
+<tr><td><img src="inherit_graph_3.png" border="0" alt="" usemap="#Module_01_5"/>
+<map name="Module_01_5" id="Module_01_5">
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_5.png" border="0" alt="" usemap="#vector_3_01double_01_4"/>
+<tr><td><img src="inherit_graph_4.png" border="0" alt="" usemap="#ProfileModule"/>
+<map name="ProfileModule" id="ProfileModule">
+<area shape="rect" id="node1" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing consistency of a LLVM Module and i..." alt="" coords="6,5,106,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_6.png" border="0" alt="" usemap="#vector_3_01int_01_4"/>
+<tr><td><img src="inherit_graph_5.png" border="0" alt="" usemap="#static_01const_01int"/>
+<map name="static_01const_01int" id="static_01const_01int">
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_6.png" border="0" alt="" usemap="#std_1_1hash_3_01BBHash_01_4"/>
+<map name="std_1_1hash_3_01BBHash_01_4" id="std_1_1hash_3_01BBHash_01_4">
+<area shape="rect" id="node1" href="structstd_1_1hash_3_01BBHash_01_4.html" title="Define the hash function for the type BBHash. It uses the result of hash&lt;string&gt; applied in the getSt..." alt="" coords="6,5,151,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_7.png" border="0" alt="" usemap="#unordered__map_3_01BBHash_00_01double_01_4"/>
+<map name="unordered__map_3_01BBHash_00_01double_01_4" id="unordered__map_3_01BBHash_00_01double_01_4">
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_8.png" border="0" alt="" usemap="#unordered__map_3_01int_00_01std_1_1vector_3_01BBHash_01_4_01_4"/>
+<map name="unordered__map_3_01int_00_01std_1_1vector_3_01BBHash_01_4_01_4" id="unordered__map_3_01int_00_01std_1_1vector_3_01BBHash_01_4_01_4">
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_9.png" border="0" alt="" usemap="#unordered__map_3_01std_1_1string_00_01uint64__t_01_4"/>
+<map name="unordered__map_3_01std_1_1string_00_01uint64__t_01_4" id="unordered__map_3_01std_1_1string_00_01uint64__t_01_4">
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_10.png" border="0" alt="" usemap="#vector_3_01double_01_4"/>
+<map name="vector_3_01double_01_4" id="vector_3_01double_01_4">
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_11.png" border="0" alt="" usemap="#vector_3_01int_01_4"/>
+<map name="vector_3_01int_01_4" id="vector_3_01int_01_4">
+</map>
 </td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 13 2014 16:17:30 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 29 2015 00:47:20 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

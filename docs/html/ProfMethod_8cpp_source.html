@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -121,41 +122,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span>    Id;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">double</span> Time;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    scanf(LineAndTail.first.str().c_str(), <span class="stringliteral">&quot;%d: %f&quot;</span>, &amp;Id, &amp;Time); </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    sscanf(LineAndTail.first.str().c_str(), <span class="stringliteral">&quot;%d: %lf&quot;</span>, &amp;Id, &amp;Time); </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Times[Id] = Time;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    LineAndTail = LineAndTail.second.split(<span class="charliteral">&#39;\n&#39;</span>); </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">double</span> <a class="code" href="classProfMethod.html#a2467f5eb2c3b371a8a4ee98169328089">ProfMethod::</a></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classProfMethod.html#a2467f5eb2c3b371a8a4ee98169328089">   42</a></span>&#160;<a class="code" href="classProfMethod.html#a2467f5eb2c3b371a8a4ee98169328089">estimateExecutionTime</a>(Function *Func, </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::unique_ptr&lt;GCOVFunction, </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::default_delete&lt;GCOVFunction&gt; &gt; &amp;<a class="code" href="PAPI_8cpp.html#af9d22b8c6cb19e5b0e44b8a78d1cd3d9">Freq</a>) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">double</span> PerformanceMensurment = 0;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">auto</span> MBB = <a class="code" href="PAPI_8cpp.html#af9d22b8c6cb19e5b0e44b8a78d1cd3d9">Freq</a>-&gt;block_begin(); </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">int</span> i = 0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;BB : *Func) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">auto</span> BBCost = 0;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;I : BB) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      BBCost += CostEstimator::getInstructionCost(&amp;I);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span> (BB.getInstList().size() &lt;= 3) { </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      PerformanceMensurment +=  (((*MBB)-&gt;getCount()+1) * 100); <span class="comment">//BBCost);// BB.getInstList().size());</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="comment">/*  cout &lt;&lt; &quot;a: &quot; &lt;&lt; (sqrt((*MBB)-&gt;getCount()/4) * BBCost) &lt;&lt; endl;*/</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      PerformanceMensurment += ((*MBB)-&gt;getCount()+1) * pow(Times[i],2);<span class="comment">//BB.getInstList().size());//* pow(Times[i], 2));</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="comment">/*      cout &lt;&lt; &quot;b: &quot; &lt;&lt;  (sqrt((*MBB)-&gt;getCount()/4) * pow(Times[i],2)/100) &lt;&lt; endl;*/</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    i++;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    ++MBB;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  } </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">return</span> PerformanceMensurment;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;} </div>
-<div class="ttc" id="classProfMethod_html_a2467f5eb2c3b371a8a4ee98169328089"><div class="ttname"><a href="classProfMethod.html#a2467f5eb2c3b371a8a4ee98169328089">ProfMethod::estimateExecutionTime</a></div><div class="ttdeci">double estimateExecutionTime(llvm::Function *, std::unique_ptr&lt; llvm::GCOVFunction, std::default_delete&lt; llvm::GCOVFunction &gt; &gt; &amp;)</div><div class="ttdoc">This function is responsible for calculating the cost of a LLVM function. This cost must reflect on t...</div><div class="ttdef"><b>Definition:</b> <a href="ProfMethod_8cpp_source.html#l00042">ProfMethod.cpp:42</a></div></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">double</span> <a class="code" href="classProfMethod.html#ab0505bfd5a287c0fe042dd0efac159b7">ProfMethod::</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classProfMethod.html#ab0505bfd5a287c0fe042dd0efac159b7">   42</a></span>&#160;<a class="code" href="classProfMethod.html#ab0505bfd5a287c0fe042dd0efac159b7">estimateExecutionTime</a>(llvm::Function* Func, <span class="keyword">const</span> <a class="code" href="classProfileModule.html">ProfileModule</a> &amp;<a class="code" href="PAPI_8cpp.html#af9d22b8c6cb19e5b0e44b8a78d1cd3d9">Freq</a>)<span class="keyword"> const </span>{ </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">double</span> PerformanceMensurment = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;BB : *Func) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">auto</span> BBCost = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;<a class="code" href="ProfileModule_8cpp.html#a352bbbeb589f233b0c128127bae07005">I</a> : BB) </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      BBCost += CostEstimator::getInstructionCost(&amp;<a class="code" href="ProfileModule_8cpp.html#a352bbbeb589f233b0c128127bae07005">I</a>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (BB.getInstList().size() &lt;= 3)  </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      PerformanceMensurment += </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        (Freq.<a class="code" href="classProfileModule.html#aec52f07d61cdacf8d7dfa4a52efbe819">getBasicBlockFrequency</a>(&amp;BB) + 1) * 100;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">else</span> </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      PerformanceMensurment += </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        (Freq.<a class="code" href="classProfileModule.html#aec52f07d61cdacf8d7dfa4a52efbe819">getBasicBlockFrequency</a>(&amp;BB) + 1) * pow(Times[i], 2);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    i++;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  } </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">return</span> PerformanceMensurment;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} </div>
+<div class="ttc" id="ProfileModule_8cpp_html_a352bbbeb589f233b0c128127bae07005"><div class="ttname"><a href="ProfileModule_8cpp.html#a352bbbeb589f233b0c128127bae07005">I</a></div><div class="ttdeci">int I</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00027">ProfileModule.cpp:27</a></div></div>
+<div class="ttc" id="classProfileModule_html_aec52f07d61cdacf8d7dfa4a52efbe819"><div class="ttname"><a href="classProfileModule.html#aec52f07d61cdacf8d7dfa4a52efbe819">ProfileModule::getBasicBlockFrequency</a></div><div class="ttdeci">uint64_t getBasicBlockFrequency(const llvm::BasicBlock *) const </div><div class="ttdoc">Returns the execution frequency of the given BasicBlock, if it doesn&#39;t have the frequency it will ret...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00086">ProfileModule.cpp:86</a></div></div>
+<div class="ttc" id="classProfMethod_html_ab0505bfd5a287c0fe042dd0efac159b7"><div class="ttname"><a href="classProfMethod.html#ab0505bfd5a287c0fe042dd0efac159b7">ProfMethod::estimateExecutionTime</a></div><div class="ttdeci">double estimateExecutionTime(llvm::Function *, const ProfileModule &amp;) const </div><div class="ttdoc">This function is responsible for calculating the cost of a LLVM function. This cost must reflect on t...</div><div class="ttdef"><b>Definition:</b> <a href="ProfMethod_8cpp_source.html#l00042">ProfMethod.cpp:42</a></div></div>
+<div class="ttc" id="classProfileModule_html"><div class="ttname"><a href="classProfileModule.html">ProfileModule</a></div><div class="ttdoc">This class is responsable for encapsulating, copying, and mantaing consistency of a LLVM Module and i...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8h_source.html#l00024">ProfileModule.h:24</a></div></div>
 <div class="ttc" id="PAPI_8cpp_html_af9d22b8c6cb19e5b0e44b8a78d1cd3d9"><div class="ttname"><a href="PAPI_8cpp.html#af9d22b8c6cb19e5b0e44b8a78d1cd3d9">Freq</a></div><div class="ttdeci">int * Freq</div><div class="ttdef"><b>Definition:</b> <a href="PAPI_8cpp_source.html#l00030">PAPI.cpp:30</a></div></div>
 <div class="ttc" id="AnalysisMethod_8h_html"><div class="ttname"><a href="AnalysisMethod_8h.html">AnalysisMethod.h</a></div><div class="ttdoc">This file contains declarations of every method for analysis the execution cost of a LLVM function...</div></div>
 <div class="ttc" id="CostEstimator_8h_html"><div class="ttname"><a href="CostEstimator_8h.html">CostEstimator.h</a></div><div class="ttdoc">This file contains declarations and implementation of a LLVM llvm::Instruction Cost Estimator...</div></div>
@@ -163,7 +163,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 13 2014 16:17:30 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 29 2015 00:47:18 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

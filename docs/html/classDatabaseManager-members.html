@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,17 +90,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classDatabaseManager.html">DatabaseManager</a>, including all inherited members.</p>
 <table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="classDatabaseManager.html#abd49cc8529cdb5c2de4e1801e3c64da8">begin</a>()</td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classDatabaseManager.html#aedcb40a7a47600b1c1deb63f47f3f77e">cbegin</a>() const </td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDatabaseManager.html#a2e63a17205dd1f37ab4268fe84018f6f">cend</a>() const </td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classDatabaseManager.html#afaeaf7bb6a3607445fb70a0b1652127d">const_iterator</a> typedef</td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDatabaseManager.html#a88c96f35ec87bc4bd76bd81c70c4f37b">DatabaseManager</a>(llvm::StringRef)</td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classDatabaseManager.html#a6190b253fa31271f30875006d7f68bee">getNearest</a>(BBDescriptor &amp;, bool)</td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classDatabaseManager.html#af5c10c7108f1777fe3a69271ec21d6ed">getTime</a>(BBDescriptor &amp;)</td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classDatabaseManager.html#a052cea344b5655586be600fc289f6d11">hasHash</a>(BBDescriptor &amp;)</td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classDatabaseManager.html#ac711f40f94f061e86ed996e827bd6ae9">printDatabase</a>()</td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classDatabaseManager.html#a944e5c55baec8255fb4b2bd48f3ac6eb">size</a>()</td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classDatabaseManager.html#adcb78991e5ec49d04551d6edf04741c1">unionWith</a>(std::unordered_map&lt; std::string, double &gt; &amp;)</td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDatabaseManager.html#ac6471007268f46e16e531730ece1cbe9">end</a>()</td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDatabaseManager.html#aca5446aa25db9caa7b218daab7933d58">getNearest</a>(const BBHash &amp;) const </td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDatabaseManager.html#aa4d00f4e14b0618ec9aa6768669cbe27">getTime</a>(const BBHash &amp;) const </td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDatabaseManager.html#a2dcb3dcd91736442f20e71c73b82ef68">hasHash</a>(const BBHash &amp;) const </td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDatabaseManager.html#a2a26f10fb144de273aa8e50a27896dbb">insert</a>(BBHash, double)</td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDatabaseManager.html#a919739e08f1249f1ec242a55e13fa7b6">iterator</a> typedef</td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDatabaseManager.html#ad7bb44ea2911e16f090c176a84e92ed2">printDatabase</a>() const </td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDatabaseManager.html#aa862ee94fbe4124adb856abcf0e4f159">size</a>() const </td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDatabaseManager.html#aafc4eab876b4ea38c1a7cbcd3a018ec3">unionWith</a>(DatabaseManager &amp;)</td><td class="entry"><a class="el" href="classDatabaseManager.html">DatabaseManager</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 13 2014 16:17:30 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 29 2015 00:47:19 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,14 +1,13 @@
 var searchData=
 [
-  ['sdiv',['SDiv',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45a0a42815c96e082b2d600f6cd5f553e91',1,'BBDescriptor.h']]],
-  ['set',['set',['../classBBDescriptor.html#a0f1629d26b54d997594e86d3170d3a18',1,'BBDescriptor']]],
-  ['shl',['Shl',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45ada89cb9eb438de663a3cc3083e0e8e4a',1,'BBDescriptor.h']]],
-  ['shufflevector',['ShuffleVector',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45af15d4290da98fa835a47cecc79858b9e',1,'BBDescriptor.h']]],
-  ['size',['size',['../classDatabaseManager.html#a944e5c55baec8255fb4b2bd48f3ac6eb',1,'DatabaseManager::size()'],['../PAPI_8cpp.html#a121b8bab5c0ceda3e33140d406f4887e',1,'SIZE():&#160;PAPI.cpp']]],
-  ['sqrt',['Sqrt',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45a98095238a325acc3b59341ba5367172d',1,'BBDescriptor.h']]],
-  ['srem',['SRem',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45aa5af2c83c184717144ccd1c4cfc1122a',1,'BBDescriptor.h']]],
-  ['stack',['STACK',['../PAPI_8cpp.html#a2cc8f2d83039de1aef6590f9782921ee',1,'PAPI.cpp']]],
-  ['start_5fmeasures',['start_measures',['../PAPI_8cpp.html#a44ecf5a0e2ef488d96bf3144e3b30417',1,'PAPI.cpp']]],
-  ['store',['Store',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45a9e1df3f1049c7d326da72b0f9145c005',1,'BBDescriptor.h']]],
-  ['sub',['Sub',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45a3e53f06234367d0e453fa5ea0ad2ab34',1,'BBDescriptor.h']]]
+  ['randm',['randM',['../AnalysisMethod_8h.html#a65b6de1fe68e7de9c7ec0bb36c7c71e2a0778eb7d3fcfd6dc25c466524284acf0',1,'AnalysisMethod.h']]],
+  ['random_2ecpp',['Random.cpp',['../Random_8cpp.html',1,'']]],
+  ['randomhash',['RandomHash',['../DatabaseManager_8cpp.html#a696b18841830e71dfa7fb6c9a0cef7a4',1,'DatabaseManager.cpp']]],
+  ['randommethod',['RandomMethod',['../classRandomMethod.html',1,'']]],
+  ['randommethod_2ecpp',['RandomMethod.cpp',['../RandomMethod_8cpp.html',1,'']]],
+  ['randomonfunction_2ecpp',['RandomOnFunction.cpp',['../RandomOnFunction_8cpp.html',1,'']]],
+  ['reassociate',['Reassociate',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a6f69c0907f02545fafb02f83689814e4',1,'GEOS.h']]],
+  ['repairfunctionprofiling',['repairFunctionProfiling',['../classProfileModule.html#a17cad3a7d951ee78efd7b30cc3a423ce',1,'ProfileModule']]],
+  ['repairprofiling',['repairProfiling',['../classProfileModule.html#acc69d694de56150b427b9a97218010f4',1,'ProfileModule']]],
+  ['ret',['Ret',['../BBHash_8h.html#a1cac54f1961199852455d1cdf18e8525a25d7142d3b1514bc4f4b4ac596862449',1,'BBHash.h']]]
 ];

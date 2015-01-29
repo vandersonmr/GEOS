@@ -19,17 +19,14 @@
 using namespace llvm;
 
 double InstructionCostMethod::
-estimateExecutionTime(llvm::Function* Func, llvm::GCOVFunction* Freq) { 
+estimateExecutionTime(llvm::Function* Func, const ProfileModule &Freq) const { 
   double PerformanceMensurment = 0;
-  auto MBB = Freq->block_begin(); 
 
   for (auto &BB : *Func) {
     auto BBCost = 0;
-    for(auto &I : BB) {
+    for (auto &I : BB) 
       BBCost += CostEstimator::getInstructionCost(&I);
-    }
-    PerformanceMensurment += (*MBB)->getCount() * BBCost;
-    ++MBB;
+    PerformanceMensurment += Freq.getBasicBlockFrequency(&BB) * BBCost * 1.2;
   } 
 
   return PerformanceMensurment;

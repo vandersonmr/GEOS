@@ -19,13 +19,12 @@
 using namespace llvm;
 
 double RandomMethod::
-estimateExecutionTime(llvm::Function* Func, llvm::GCOVFunction* Freq) { 
+estimateExecutionTime(llvm::Function* Func, const ProfileModule &Freq) const { 
   double PerformanceMensurment = 0;
-  auto MBB = Freq->block_begin(); 
-  for (size_t i = 0; i < Func->size(); ++i) {
-    PerformanceMensurment += (*MBB)->getCount() * rand() % 10 + 1;
-    ++MBB;
-  } 
+
+  for (auto &BB : *Func)
+    PerformanceMensurment += 
+      Freq.getBasicBlockFrequency(&BB) * rand() % 10 + 1;
 
   return PerformanceMensurment;
 } 

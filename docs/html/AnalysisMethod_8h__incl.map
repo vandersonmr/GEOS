@@ -1,4 +1,5 @@
 <map id="AnalysisMethod.h" name="AnalysisMethod.h">
-<area shape="rect" id="node2" href="$DatabaseManager_8h.html" title="This file contains declarations of the Basic Block Database Manager. " alt="" coords="579,80,716,107"/>
-<area shape="rect" id="node3" href="$BBDescriptor_8h.html" title="This file contains declarations of a Basic Block Hash representation. Which is responsable for creati..." alt="" coords="576,155,685,181"/>
+<area shape="rect" id="node2" href="$DatabaseManager_8h.html" title="This file contains declarations of the Basic Block Database Manager. " alt="" coords="537,80,673,107"/>
+<area shape="rect" id="node15" href="$ProfileModule_8h.html" title="This file contains implementation of the Profile Module. Which encapsulate a LLVMModule and also the ..." alt="" coords="971,155,1081,181"/>
+<area shape="rect" id="node3" href="$BBHash_8h.html" title="This file contains declarations of a Basic Block Hash representation. Which is responsable for creati..." alt="" coords="482,155,563,181"/>
 </map>

@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classDatabaseManager-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -95,35 +97,85 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="DatabaseManager_8h_source.html">DatabaseManager.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a919739e08f1249f1ec242a55e13fa7b6"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map<br class="typebreak"/>
+&lt; <a class="el" href="classBBHash.html">BBHash</a>, double &gt;::<a class="el" href="classDatabaseManager.html#a919739e08f1249f1ec242a55e13fa7b6">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#a919739e08f1249f1ec242a55e13fa7b6">iterator</a></td></tr>
+<tr class="separator:a919739e08f1249f1ec242a55e13fa7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaeaf7bb6a3607445fb70a0b1652127d"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map<br class="typebreak"/>
+&lt; <a class="el" href="classBBHash.html">BBHash</a>, double &gt;<br class="typebreak"/>
+::<a class="el" href="classDatabaseManager.html#afaeaf7bb6a3607445fb70a0b1652127d">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#afaeaf7bb6a3607445fb70a0b1652127d">const_iterator</a></td></tr>
+<tr class="separator:afaeaf7bb6a3607445fb70a0b1652127d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a88c96f35ec87bc4bd76bd81c70c4f37b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#a88c96f35ec87bc4bd76bd81c70c4f37b">DatabaseManager</a> (llvm::StringRef)</td></tr>
 <tr class="memdesc:a88c96f35ec87bc4bd76bd81c70c4f37b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a database loading it from a file.  <a href="#a88c96f35ec87bc4bd76bd81c70c4f37b">More...</a><br/></td></tr>
 <tr class="separator:a88c96f35ec87bc4bd76bd81c70c4f37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a944e5c55baec8255fb4b2bd48f3ac6eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#a944e5c55baec8255fb4b2bd48f3ac6eb">size</a> ()</td></tr>
-<tr class="memdesc:a944e5c55baec8255fb4b2bd48f3ac6eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of different BB hashes which there are in the database.  <a href="#a944e5c55baec8255fb4b2bd48f3ac6eb">More...</a><br/></td></tr>
-<tr class="separator:a944e5c55baec8255fb4b2bd48f3ac6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5c10c7108f1777fe3a69271ec21d6ed"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#af5c10c7108f1777fe3a69271ec21d6ed">getTime</a> (<a class="el" href="classBBDescriptor.html">BBDescriptor</a> &amp;)</td></tr>
-<tr class="memdesc:af5c10c7108f1777fe3a69271ec21d6ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the execution time found in the database for the given Hash (BBDescritor).  <a href="#af5c10c7108f1777fe3a69271ec21d6ed">More...</a><br/></td></tr>
-<tr class="separator:af5c10c7108f1777fe3a69271ec21d6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a052cea344b5655586be600fc289f6d11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#a052cea344b5655586be600fc289f6d11">hasHash</a> (<a class="el" href="classBBDescriptor.html">BBDescriptor</a> &amp;)</td></tr>
-<tr class="memdesc:a052cea344b5655586be600fc289f6d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if and only if there is an exactly equal hash on the database.  <a href="#a052cea344b5655586be600fc289f6d11">More...</a><br/></td></tr>
-<tr class="separator:a052cea344b5655586be600fc289f6d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcb78991e5ec49d04551d6edf04741c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#adcb78991e5ec49d04551d6edf04741c1">unionWith</a> (std::unordered_map&lt; std::string, double &gt; &amp;)</td></tr>
-<tr class="memdesc:adcb78991e5ec49d04551d6edf04741c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an another database this function merge them.  <a href="#adcb78991e5ec49d04551d6edf04741c1">More...</a><br/></td></tr>
-<tr class="separator:adcb78991e5ec49d04551d6edf04741c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac711f40f94f061e86ed996e827bd6ae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#ac711f40f94f061e86ed996e827bd6ae9">printDatabase</a> ()</td></tr>
-<tr class="memdesc:ac711f40f94f061e86ed996e827bd6ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all the database. Each new line contains a hash and its execution time separated by space.  <a href="#ac711f40f94f061e86ed996e827bd6ae9">More...</a><br/></td></tr>
-<tr class="separator:ac711f40f94f061e86ed996e827bd6ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6190b253fa31271f30875006d7f68bee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBBDescriptor.html">BBDescriptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#a6190b253fa31271f30875006d7f68bee">getNearest</a> (<a class="el" href="classBBDescriptor.html">BBDescriptor</a> &amp;, bool)</td></tr>
-<tr class="memdesc:a6190b253fa31271f30875006d7f68bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the most equally hash from the given parameter in the database.  <a href="#a6190b253fa31271f30875006d7f68bee">More...</a><br/></td></tr>
-<tr class="separator:a6190b253fa31271f30875006d7f68bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa862ee94fbe4124adb856abcf0e4f159"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#aa862ee94fbe4124adb856abcf0e4f159">size</a> () const </td></tr>
+<tr class="memdesc:aa862ee94fbe4124adb856abcf0e4f159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of different BB hashes which there are in the database.  <a href="#aa862ee94fbe4124adb856abcf0e4f159">More...</a><br/></td></tr>
+<tr class="separator:aa862ee94fbe4124adb856abcf0e4f159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d00f4e14b0618ec9aa6768669cbe27"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#aa4d00f4e14b0618ec9aa6768669cbe27">getTime</a> (const <a class="el" href="classBBHash.html">BBHash</a> &amp;) const </td></tr>
+<tr class="memdesc:aa4d00f4e14b0618ec9aa6768669cbe27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the execution time found in the database for the given Hash (BBDescritor).  <a href="#aa4d00f4e14b0618ec9aa6768669cbe27">More...</a><br/></td></tr>
+<tr class="separator:aa4d00f4e14b0618ec9aa6768669cbe27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dcb3dcd91736442f20e71c73b82ef68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#a2dcb3dcd91736442f20e71c73b82ef68">hasHash</a> (const <a class="el" href="classBBHash.html">BBHash</a> &amp;) const </td></tr>
+<tr class="memdesc:a2dcb3dcd91736442f20e71c73b82ef68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if and only if there is an exactly equal hash on the database.  <a href="#a2dcb3dcd91736442f20e71c73b82ef68">More...</a><br/></td></tr>
+<tr class="separator:a2dcb3dcd91736442f20e71c73b82ef68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a26f10fb144de273aa8e50a27896dbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#a2a26f10fb144de273aa8e50a27896dbb">insert</a> (<a class="el" href="classBBHash.html">BBHash</a>, double)</td></tr>
+<tr class="memdesc:a2a26f10fb144de273aa8e50a27896dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a new value in the database.  <a href="#a2a26f10fb144de273aa8e50a27896dbb">More...</a><br/></td></tr>
+<tr class="separator:a2a26f10fb144de273aa8e50a27896dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc4eab876b4ea38c1a7cbcd3a018ec3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#aafc4eab876b4ea38c1a7cbcd3a018ec3">unionWith</a> (<a class="el" href="classDatabaseManager.html">DatabaseManager</a> &amp;)</td></tr>
+<tr class="memdesc:aafc4eab876b4ea38c1a7cbcd3a018ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function merge the database with the one given as parameter.  <a href="#aafc4eab876b4ea38c1a7cbcd3a018ec3">More...</a><br/></td></tr>
+<tr class="separator:aafc4eab876b4ea38c1a7cbcd3a018ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7bb44ea2911e16f090c176a84e92ed2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#ad7bb44ea2911e16f090c176a84e92ed2">printDatabase</a> () const </td></tr>
+<tr class="memdesc:ad7bb44ea2911e16f090c176a84e92ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all the database. Each new line contains a hash and its execution time separated by space.  <a href="#ad7bb44ea2911e16f090c176a84e92ed2">More...</a><br/></td></tr>
+<tr class="separator:ad7bb44ea2911e16f090c176a84e92ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca5446aa25db9caa7b218daab7933d58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBBHash.html">BBHash</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#aca5446aa25db9caa7b218daab7933d58">getNearest</a> (const <a class="el" href="classBBHash.html">BBHash</a> &amp;) const </td></tr>
+<tr class="memdesc:aca5446aa25db9caa7b218daab7933d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the nearest <a class="el" href="classBBHash.html" title="This class is responsible for representing BB&#39;s hashes in memory. It can be constructed by a string (...">BBHash</a> from the given parameter in the database.  <a href="#aca5446aa25db9caa7b218daab7933d58">More...</a><br/></td></tr>
+<tr class="separator:aca5446aa25db9caa7b218daab7933d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd49cc8529cdb5c2de4e1801e3c64da8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDatabaseManager.html#a919739e08f1249f1ec242a55e13fa7b6">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#abd49cc8529cdb5c2de4e1801e3c64da8">begin</a> ()</td></tr>
+<tr class="separator:abd49cc8529cdb5c2de4e1801e3c64da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedcb40a7a47600b1c1deb63f47f3f77e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDatabaseManager.html#afaeaf7bb6a3607445fb70a0b1652127d">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#aedcb40a7a47600b1c1deb63f47f3f77e">cbegin</a> () const </td></tr>
+<tr class="separator:aedcb40a7a47600b1c1deb63f47f3f77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6471007268f46e16e531730ece1cbe9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDatabaseManager.html#a919739e08f1249f1ec242a55e13fa7b6">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#ac6471007268f46e16e531730ece1cbe9">end</a> ()</td></tr>
+<tr class="separator:ac6471007268f46e16e531730ece1cbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e63a17205dd1f37ab4268fe84018f6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDatabaseManager.html#afaeaf7bb6a3607445fb70a0b1652127d">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabaseManager.html#a2e63a17205dd1f37ab4268fe84018f6f">cend</a> () const </td></tr>
+<tr class="separator:a2e63a17205dd1f37ab4268fe84018f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is responsible for loading and saving hashes databases. It is a representation in memory of a hash database and has functions to use and manipulate it. </p>
 
 <p>Definition at line <a class="el" href="DatabaseManager_8h_source.html#l00022">22</a> of file <a class="el" href="DatabaseManager_8h_source.html">DatabaseManager.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="afaeaf7bb6a3607445fb70a0b1652127d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::unordered_map&lt;<a class="el" href="classBBHash.html">BBHash</a>, double&gt;:: <a class="el" href="classDatabaseManager.html#afaeaf7bb6a3607445fb70a0b1652127d">const_iterator</a> <a class="el" href="classDatabaseManager.html#afaeaf7bb6a3607445fb70a0b1652127d">DatabaseManager::const_iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DatabaseManager_8h_source.html#l00074">74</a> of file <a class="el" href="DatabaseManager_8h_source.html">DatabaseManager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a919739e08f1249f1ec242a55e13fa7b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::unordered_map&lt;<a class="el" href="classBBHash.html">BBHash</a>, double&gt;::<a class="el" href="classDatabaseManager.html#a919739e08f1249f1ec242a55e13fa7b6">iterator</a> <a class="el" href="classDatabaseManager.html#a919739e08f1249f1ec242a55e13fa7b6">DatabaseManager::iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DatabaseManager_8h_source.html#l00072">72</a> of file <a class="el" href="DatabaseManager_8h_source.html">DatabaseManager.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a88c96f35ec87bc4bd76bd81c70c4f37b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -140,26 +192,190 @@ Public Member Functions</h2></td></tr>
 
 <p>Creates a database loading it from a file. </p>
 
-<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00043">43</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00061">61</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
+
+<p>References <a class="el" href="BBHash_8cpp_source.html#l00222">BBHash::getRandomHash()</a>, and <a class="el" href="DatabaseManager_8cpp_source.html#l00038">RandomHash</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6190b253fa31271f30875006d7f68bee"></a>
+<a class="anchor" id="abd49cc8529cdb5c2de4e1801e3c64da8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDatabaseManager.html#a919739e08f1249f1ec242a55e13fa7b6">iterator</a> DatabaseManager::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DatabaseManager_8h_source.html#l00076">76</a> of file <a class="el" href="DatabaseManager_8h_source.html">DatabaseManager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aedcb40a7a47600b1c1deb63f47f3f77e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDatabaseManager.html#afaeaf7bb6a3607445fb70a0b1652127d">const_iterator</a> DatabaseManager::cbegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DatabaseManager_8h_source.html#l00078">78</a> of file <a class="el" href="DatabaseManager_8h_source.html">DatabaseManager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e63a17205dd1f37ab4268fe84018f6f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDatabaseManager.html#afaeaf7bb6a3607445fb70a0b1652127d">const_iterator</a> DatabaseManager::cend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DatabaseManager_8h_source.html#l00082">82</a> of file <a class="el" href="DatabaseManager_8h_source.html">DatabaseManager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6471007268f46e16e531730ece1cbe9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDatabaseManager.html#a919739e08f1249f1ec242a55e13fa7b6">iterator</a> DatabaseManager::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DatabaseManager_8h_source.html#l00080">80</a> of file <a class="el" href="DatabaseManager_8h_source.html">DatabaseManager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca5446aa25db9caa7b218daab7933d58"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classBBDescriptor.html">BBDescriptor</a> * DatabaseManager::getNearest </td>
+          <td class="memname"><a class="el" href="classBBHash.html">BBHash</a> * DatabaseManager::getNearest </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classBBDescriptor.html">BBDescriptor</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classBBHash.html">BBHash</a> &amp;&#160;</td>
+          <td class="paramname"><em>Hash</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the nearest <a class="el" href="classBBHash.html" title="This class is responsible for representing BB&#39;s hashes in memory. It can be constructed by a string (...">BBHash</a> from the given parameter in the database. </p>
+
+<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00084">84</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
+
+<p>References <a class="el" href="BBHash_8cpp_source.html#l00202">BBHash::distance()</a>, <a class="el" href="BBHash_8cpp_source.html#l00212">BBHash::dotProduct()</a>, <a class="el" href="DatabaseManager_8cpp_source.html#l00081">Nearest</a>, <a class="el" href="DatabaseManager_8cpp_source.html#l00034">PrimeNumber</a>, <a class="el" href="DatabaseManager_8cpp_source.html#l00038">RandomHash</a>, and <a class="el" href="DatabaseManager_8cpp_source.html#l00030">w</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4d00f4e14b0618ec9aa6768669cbe27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DatabaseManager::getTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classBBHash.html">BBHash</a> &amp;&#160;</td>
+          <td class="paramname"><em>Hash</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the execution time found in the database for the given Hash (BBDescritor). </p>
+
+<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00070">70</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2dcb3dcd91736442f20e71c73b82ef68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DatabaseManager::hasHash </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classBBHash.html">BBHash</a> &amp;&#160;</td>
+          <td class="paramname"><em>Hash</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if and only if there is an exactly equal hash on the database. </p>
+
+<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00077">77</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a26f10fb144de273aa8e50a27896dbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DatabaseManager::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBBHash.html">BBHash</a>&#160;</td>
           <td class="paramname"><em>Hash</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>Weight</em> = <code>false</code>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -169,59 +385,23 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the most equally hash from the given parameter in the database. </p>
+<p>Insert a new value in the database. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td>first parameter is the hash and the second is the execution time of this hash. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00063">63</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00111">111</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
 
-<p>References <a class="el" href="BBDescriptor_8cpp_source.html#l00182">BBDescriptor::distance()</a>.</p>
+<p>References <a class="el" href="BBHash_8cpp_source.html#l00212">BBHash::dotProduct()</a>, <a class="el" href="DatabaseManager_8cpp_source.html#l00034">PrimeNumber</a>, <a class="el" href="DatabaseManager_8cpp_source.html#l00038">RandomHash</a>, <a class="el" href="PAPI_8cpp_source.html#l00031">Value</a>, and <a class="el" href="DatabaseManager_8cpp_source.html#l00030">w</a>.</p>
 
-</div>
-</div>
-<a class="anchor" id="af5c10c7108f1777fe3a69271ec21d6ed"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double DatabaseManager::getTime </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classBBDescriptor.html">BBDescriptor</a> &amp;&#160;</td>
-          <td class="paramname"><em>Hash</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the execution time found in the database for the given Hash (BBDescritor). </p>
-
-<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00051">51</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
-
-<p>References <a class="el" href="BBDescriptor_8cpp_source.html#l00173">BBDescriptor::getString()</a>.</p>
+<p>Referenced by <a class="el" href="mergeDatabase_8cpp_source.html#l00050">main()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a052cea344b5655586be600fc289f6d11"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DatabaseManager::hasHash </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classBBDescriptor.html">BBDescriptor</a> &amp;&#160;</td>
-          <td class="paramname"><em>Hash</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns true if and only if there is an exactly equal hash on the database. </p>
-
-<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00058">58</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
-
-<p>References <a class="el" href="BBDescriptor_8cpp_source.html#l00173">BBDescriptor::getString()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac711f40f94f061e86ed996e827bd6ae9"></a>
+<a class="anchor" id="ad7bb44ea2911e16f090c176a84e92ed2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -229,20 +409,20 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void DatabaseManager::printDatabase </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Prints all the database. Each new line contains a hash and its execution time separated by space. </p>
 
-<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00094">94</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00128">128</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="mergeDatabase_8cpp_source.html#l00050">main()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a944e5c55baec8255fb4b2bd48f3ac6eb"></a>
+<a class="anchor" id="aa862ee94fbe4124adb856abcf0e4f159"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -250,36 +430,34 @@ Public Member Functions</h2></td></tr>
           <td class="memname">int DatabaseManager::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Returns the number of different BB hashes which there are in the database. </p>
 
-<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00047">47</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00066">66</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="adcb78991e5ec49d04551d6edf04741c1"></a>
+<a class="anchor" id="aafc4eab876b4ea38c1a7cbcd3a018ec3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void DatabaseManager::unionWith </td>
           <td>(</td>
-          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classDatabaseManager.html">DatabaseManager</a> &amp;&#160;</td>
           <td class="paramname"><em>DB2</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Given an another database this function merge them. </p>
+<p>This function merge the database with the one given as parameter. </p>
 
-<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00085">85</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
-
-<p>Referenced by <a class="el" href="mergeDatabase_8cpp_source.html#l00050">main()</a>.</p>
+<p>Definition at line <a class="el" href="DatabaseManager_8cpp_source.html#l00123">123</a> of file <a class="el" href="DatabaseManager_8cpp_source.html">DatabaseManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -290,7 +468,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 13 2014 16:17:30 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 29 2015 00:47:19 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

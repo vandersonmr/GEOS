@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bbdescriptor',['BBDescriptor',['../classBBDescriptor.html',1,'']]]
+  ['bbhash',['BBHash',['../classBBHash.html',1,'']]]
 ];

@@ -85,42 +85,42 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createInstructionCombiningPass();
     case LICM:
       return createLICMPass();
-    //case LoopStrengthReduce:
-    //  return createLoopStrengthReducePass();
-    //case LoopUnswitch:
-    //  return createLoopUnswitchPass();
+    case LoopStrengthReduce:
+      return createLoopStrengthReducePass();
+    case LoopUnswitch:
+      return createLoopUnswitchPass();
     //case LoopInstSimplify:
     //  return createLoopInstSimplifyPass();
-    //case LoopUnroll:
-    //  return createLoopUnrollPass();
-    //case LoopReroll:
-    //  return createLoopRerollPass();
-    //case LoopRotate:
-    //  return createLoopRotatePass();
-    //case LoopIdiom:
-    //  return createLoopIdiomPass();
+    case LoopUnroll:
+      return createLoopUnrollPass();
+    case LoopReroll:
+      return createLoopRerollPass();
+    case LoopRotate:
+      return createLoopRotatePass();
+    case LoopIdiom:
+      return createLoopIdiomPass();
     case PromoteMemoryToRegister:
       return createPromoteMemoryToRegisterPass();
-    //case DemoteRegisterToMemory:
-    //  return createDemoteRegisterToMemoryPass();
+    case DemoteRegisterToMemory:
+      return createDemoteRegisterToMemoryPass();
     case Reassociate: 
       return createReassociatePass(); // PreservesCFG
-    //case JumpThreading:
-    //  return createJumpThreadingPass();
-    //case CFGSimplification:
-    //  return createCFGSimplificationPass();
-    //case FlattenCFG:
-    //  return createFlattenCFGPass();
-    //case CFGStructurization:
-    //  return createStructurizeCFGPass();
-    //case BreakCriticalEdges:
-    //  return createBreakCriticalEdgesPass();
-    //case LoopSimplify:
-    //  return createLoopSimplifyPass();
-    //case TailCallElimination: // Maybe can change CFG
-    //  return createTailCallEliminationPass();
-    //case LowerSwitch: // Maybe can change CFG
-    //  return createLowerSwitchPass();
+    case JumpThreading:
+      return createJumpThreadingPass();
+    case CFGSimplification:
+      return createCFGSimplificationPass();
+    case FlattenCFG:
+      return createFlattenCFGPass();
+    case CFGStructurization:
+      return createStructurizeCFGPass();
+    case BreakCriticalEdges:
+      return createBreakCriticalEdgesPass();
+    case LoopSimplify:
+      return createLoopSimplifyPass();
+    case TailCallElimination: // Maybe can change CFG
+      return createTailCallEliminationPass();
+    case LowerSwitch: // Maybe can change CFG
+      return createLowerSwitchPass();
     case LCSSA:
       return createLCSSAPass(); // PreservesCFG
     case EarlyCSE:
@@ -131,8 +131,8 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createGVNPass();
     case MemCpyOpt:
       return createMemCpyOptPass();
-    //case LoopDeletion: // Maybe can change CFG
-    //  return createLoopDeletionPass();
+    case LoopDeletion: // Maybe can change CFG
+      return createLoopDeletionPass();
     case ConstantHoisting:
       return createConstantHoistingPass();
     case InstructionNamer:
@@ -147,12 +147,12 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createInstructionSimplifierPass();
     //case PartiallyInlineLibCalls:
     //  return createPartiallyInlineLibCallsPass();
-    //case ScalarizerPass: // Maybe can change CFG
-    //  return createScalarizerPass();
+    case ScalarizerPass: // Maybe can change CFG
+      return createScalarizerPass();
     case AddDiscriminators:
       return createAddDiscriminatorsPass();
-    //case SeparateConstOffsetFromGEP:  // Maybe can change CFG
-    //  return createSeparateConstOffsetFromGEPPass();
+    case SeparateConstOffsetFromGEP:  // Maybe can change CFG
+      return createSeparateConstOffsetFromGEPPass();
     //case LoadCombine:
     //  return createLoadCombinePass(); // PreserveCFG
     default:
@@ -170,7 +170,11 @@ GEOS::applyPassesOnFunction(StringRef FuncName, const ProfileModule& PModule,
   ProfileModule *ModuleCopy = PModule.getCopy();
   Module        *MyModule   = ModuleCopy->getLLVMModule();
 
-  PM.run(*(MyModule->getFunction(FuncName)));
+  Function *Func = MyModule->getFunction(FuncName);
+
+  PM.run(*Func);
+
+  ModuleCopy->repairFunctionProfiling(Func);
 
   return ModuleCopy; 
 }
@@ -182,6 +186,8 @@ GEOS::applyPasses(const ProfileModule& PModule, FunctionPassManager& PM) {
 
   for (auto& Func : *MyModule)
     PM.run(Func);
+
+  ModuleCopy->repairProfiling();
 
   return ModuleCopy; 
 }
@@ -196,11 +202,10 @@ GEOS::analyseFunctionExecutionTime(StringRef FuncName,
   Module *MyModule = PModule.getLLVMModule();
 
   Function     *LLVMFunc = MyModule->getFunction(FuncName);
-  GCOVFunction *FreqFunc = PModule.getFunctionProfile(FuncName);
   assert(LLVMFunc != nullptr 
       && "Trying to access a LLVM Function that don't exist!");
 
-  double Estimation = Analyser->estimateExecutionTime(LLVMFunc, FreqFunc);
+  double Estimation = Analyser->estimateExecutionTime(LLVMFunc, PModule);
 
   return Estimation;
 }
@@ -210,15 +215,9 @@ GEOS::analyseExecutionTime(const ProfileModule& PModule,
     AnalysisMethod *Analyser) {
 
   double PerformanceMensurment = 0;
-
-  for (auto &FreqFunc : PModule.getProfile()) {
-    Function *LLVMFunc = 
-      PModule.getLLVMModule()->getFunction(FreqFunc->getName());
-    assert(LLVMFunc != nullptr
-        && "Trying to access a LLVM Function that don't exist!");
+  for (auto &LLVMFunc : *PModule.getLLVMModule()) 
     PerformanceMensurment +=
-      Analyser->estimateExecutionTime(LLVMFunc, FreqFunc);
-  }
+      Analyser->estimateExecutionTime(&LLVMFunc, PModule);
 
   return PerformanceMensurment;
 }

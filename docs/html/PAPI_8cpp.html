@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -281,7 +282,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="PAPI_8cpp_source.html#l00121">121</a> of file <a class="el" href="PAPI_8cpp_source.html">PAPI.cpp</a>.</p>
 
-<p>References <a class="el" href="PAPI_8cpp_source.html#l00032">SIZE</a>.</p>
+<p>References <a class="el" href="PAPI_8cpp_source.html#l00030">Freq</a>, <a class="el" href="PAPI_8cpp_source.html#l00032">SIZE</a>, and <a class="el" href="PAPI_8cpp_source.html#l00031">Value</a>.</p>
 
 </div>
 </div>
@@ -318,7 +319,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="PAPI_8cpp_source.html#l00030">30</a> of file <a class="el" href="PAPI_8cpp_source.html">PAPI.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="InstructionMethod_8cpp_source.html#l00021">InstructionMethod::estimateExecutionTime()</a>, <a class="el" href="HashMethod_8cpp_source.html#l00026">HashMethod::estimateExecutionTime()</a>, <a class="el" href="HashWeighted_8cpp_source.html#l00029">HashWeightedMethod::estimateExecutionTime()</a>, <a class="el" href="RandomMethod_8cpp_source.html#l00022">RandomMethod::estimateExecutionTime()</a>, <a class="el" href="FrequencyMethod_8cpp_source.html#l00021">FrequencyMethod::estimateExecutionTime()</a>, <a class="el" href="InstructionCost_8cpp_source.html#l00022">InstructionCostMethod::estimateExecutionTime()</a>, <a class="el" href="InstructionPlusHashMethod_8cpp_source.html#l00027">InstructionPlusHashMethod::estimateExecutionTime()</a>, <a class="el" href="ProfMethod_8cpp_source.html#l00042">ProfMethod::estimateExecutionTime()</a>, <a class="el" href="PAPI_8cpp_source.html#l00051">init_PAPI()</a>, and <a class="el" href="PAPI_8cpp_source.html#l00079">start_measures()</a>.</p>
+<p>Referenced by <a class="el" href="PAPI_8cpp_source.html#l00051">init_PAPI()</a>, <a class="el" href="PAPI_8cpp_source.html#l00121">print_results()</a>, <a class="el" href="ProfileModule_8cpp_source.html#l00094">ProfileModule::setBasicBlockFrequency()</a>, and <a class="el" href="PAPI_8cpp_source.html#l00079">start_measures()</a>.</p>
 
 </div>
 </div>
@@ -366,14 +367,14 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="PAPI_8cpp_source.html#l00031">31</a> of file <a class="el" href="PAPI_8cpp_source.html">PAPI.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="PAPI_8cpp_source.html#l00100">get_results()</a>, <a class="el" href="PAPI_8cpp_source.html#l00051">init_PAPI()</a>, <a class="el" href="BBDescriptor_8cpp_source.html#l00161">BBDescriptor::set()</a>, and <a class="el" href="PAPI_8cpp_source.html#l00079">start_measures()</a>.</p>
+<p>Referenced by <a class="el" href="PAPI_8cpp_source.html#l00100">get_results()</a>, <a class="el" href="PAPI_8cpp_source.html#l00051">init_PAPI()</a>, <a class="el" href="DatabaseManager_8cpp_source.html#l00111">DatabaseManager::insert()</a>, <a class="el" href="PAPI_8cpp_source.html#l00121">print_results()</a>, <a class="el" href="BBHash_8cpp_source.html#l00171">BBHash::setDescriptor()</a>, and <a class="el" href="PAPI_8cpp_source.html#l00079">start_measures()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 13 2014 16:17:30 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 29 2015 00:47:19 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

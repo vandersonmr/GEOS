@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,13 +96,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="AnalysisMethod_8h_source.html">AnalysisMethod.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="CostEstimator_8h_source.html">CostEstimator.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="GEOS_8h_source.html">GEOS.h</a>&quot;</code><br/>
 <code>#include &quot;llvm/Support/raw_ostream.h&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#main_8cpp" alt=""/></div>
 <map name="main_8cpp" id="main_8cpp">
-<area shape="rect" id="node2" href="AnalysisMethod_8h.html" title="This file contains declarations of every method for analysis the execution cost of a LLVM function..." alt="" coords="858,80,981,107"/><area shape="rect" id="node17" href="CostEstimator_8h.html" title="This file contains declarations and implementation of a LLVM llvm::Instruction Cost Estimator..." alt="" coords="341,80,456,107"/><area shape="rect" id="node3" href="DatabaseManager_8h.html" title="This file contains declarations of the Basic Block Database Manager. " alt="" coords="798,155,935,181"/><area shape="rect" id="node4" href="BBDescriptor_8h.html" title="This file contains declarations of a Basic Block Hash representation. Which is responsable for creati..." alt="" coords="776,229,885,256"/></map>
+<area shape="rect" id="node2" href="AnalysisMethod_8h.html" title="This file contains declarations of every method for analysis the execution cost of a LLVM function..." alt="" coords="541,155,664,181"/><area shape="rect" id="node19" href="CostEstimator_8h.html" title="This file contains declarations and implementation of a LLVM llvm::Instruction Cost Estimator..." alt="" coords="944,80,1059,107"/><area shape="rect" id="node23" href="GEOS_8h.html" title="This file contains declarations of GEOS main functions. Which are responsable for interfacing with he..." alt="" coords="724,80,793,107"/><area shape="rect" id="node3" href="DatabaseManager_8h.html" title="This file contains declarations of the Basic Block Database Manager. " alt="" coords="542,229,679,256"/><area shape="rect" id="node16" href="ProfileModule_8h.html" title="This file contains implementation of the Profile Module. Which encapsulate a LLVMModule and also the ..." alt="" coords="269,304,379,331"/><area shape="rect" id="node4" href="BBHash_8h.html" title="This file contains declarations of a Basic Block Hash representation. Which is responsable for creati..." alt="" coords="686,304,767,331"/></map>
 </div>
 </div>
 <p><a href="main_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -110,25 +112,23 @@ Include dependency graph for main.cpp:</div>
 Functions</h2></td></tr>
 <tr class="memitem:a0f07d0807dfe80397edbe03d9748479c"><td class="memItemLeft" align="right" valign="top">static cl::opt&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0f07d0807dfe80397edbe03d9748479c">LLVMFilename</a> (&quot;llvm-file&quot;, cl::desc(&quot;LLVM file to do time analysis&quot;), cl::value_desc(&quot;filename.ll&quot;), cl::Required)</td></tr>
 <tr class="separator:a0f07d0807dfe80397edbe03d9748479c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a176f4c81087bd5ba2953134ff727f117"><td class="memItemLeft" align="right" valign="top">static cl::alias&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a176f4c81087bd5ba2953134ff727f117">llAlias</a> (&quot;ll&quot;, cl::desc(&quot;Alias for -llvm-file&quot;), cl::aliasopt(<a class="el" href="main_8cpp.html#a0f07d0807dfe80397edbe03d9748479c">LLVMFilename</a>))</td></tr>
+<tr class="memitem:a176f4c81087bd5ba2953134ff727f117"><td class="memItemLeft" align="right" valign="top">static cl::alias&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a176f4c81087bd5ba2953134ff727f117">llAlias</a> (&quot;ll&quot;, cl::desc(&quot;Alias for -llvm-file&quot;), cl::aliasopt(<a class="el" href="Test_8cpp.html#a0f07d0807dfe80397edbe03d9748479c">LLVMFilename</a>))</td></tr>
 <tr class="separator:a176f4c81087bd5ba2953134ff727f117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afde90c2f2f6772fe5d8bb5ea1a3a382e"><td class="memItemLeft" align="right" valign="top">static cl::list&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#afde90c2f2f6772fe5d8bb5ea1a3a382e">GCNOFilename</a> (&quot;gcno&quot;, cl::desc(&quot;One or more GCOV GCNO files&quot;), cl::value_desc(&quot;filename.gcno&quot;), cl::OneOrMore)</td></tr>
 <tr class="separator:afde90c2f2f6772fe5d8bb5ea1a3a382e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a21d35d8ae37eb80e05b9460db34bc5"><td class="memItemLeft" align="right" valign="top">static cl::alias&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a1a21d35d8ae37eb80e05b9460db34bc5">goAlias</a> (&quot;go&quot;, cl::desc(&quot;Alias for -gcno&quot;), cl::aliasopt(<a class="el" href="main_8cpp.html#afde90c2f2f6772fe5d8bb5ea1a3a382e">GCNOFilename</a>))</td></tr>
+<tr class="memitem:a1a21d35d8ae37eb80e05b9460db34bc5"><td class="memItemLeft" align="right" valign="top">static cl::alias&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a1a21d35d8ae37eb80e05b9460db34bc5">goAlias</a> (&quot;go&quot;, cl::desc(&quot;Alias for -gcno&quot;), cl::aliasopt(<a class="el" href="Test_8cpp.html#afde90c2f2f6772fe5d8bb5ea1a3a382e">GCNOFilename</a>))</td></tr>
 <tr class="separator:a1a21d35d8ae37eb80e05b9460db34bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcc5b62c9e3c67074392d5b80b93aa2a"><td class="memItemLeft" align="right" valign="top">static cl::list&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#abcc5b62c9e3c67074392d5b80b93aa2a">GCDAFilename</a> (&quot;gcda&quot;, cl::desc(&quot;One or more GCOV GCDA files&quot;), cl::value_desc(&quot;filename.gcda&quot;), cl::OneOrMore)</td></tr>
 <tr class="separator:abcc5b62c9e3c67074392d5b80b93aa2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eb79acc3135c46195a18be4fa261b7c"><td class="memItemLeft" align="right" valign="top">static cl::alias&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7eb79acc3135c46195a18be4fa261b7c">gaAlias</a> (&quot;ga&quot;, cl::desc(&quot;Alias for -gcda&quot;), cl::aliasopt(<a class="el" href="main_8cpp.html#abcc5b62c9e3c67074392d5b80b93aa2a">GCDAFilename</a>))</td></tr>
+<tr class="memitem:a7eb79acc3135c46195a18be4fa261b7c"><td class="memItemLeft" align="right" valign="top">static cl::alias&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7eb79acc3135c46195a18be4fa261b7c">gaAlias</a> (&quot;ga&quot;, cl::desc(&quot;Alias for -gcda&quot;), cl::aliasopt(<a class="el" href="Test_8cpp.html#abcc5b62c9e3c67074392d5b80b93aa2a">GCDAFilename</a>))</td></tr>
 <tr class="separator:a7eb79acc3135c46195a18be4fa261b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cb44724ee4f6225a185ac67496bcd7f"><td class="memItemLeft" align="right" valign="top">static cl::opt&lt; <a class="el" href="AnalysisMethod_8h.html#a88390169e5d39c5fd976861475b0996a">AnalysisMethods</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a9cb44724ee4f6225a185ac67496bcd7f">OptAnalysisMethod</a> (cl::desc(&quot;Choose an analysis method:&quot;), cl::values(clEnumVal(<a class="el" href="AnalysisMethod_8h.html#a88390169e5d39c5fd976861475b0996aa4d8b3be116dc4b19938940cfdc6fad20">instM</a>,&quot;Basic blocks are weighed by their number of instruction&quot;), clEnumVal(<a class="el" href="AnalysisMethod_8h.html#a88390169e5d39c5fd976861475b0996aa1797b01df81cb4e30b8bbd34d5b337bb">instCostM</a>,&quot;Basic blocks are weighed by the sum up of all instruction cost&quot;), clEnumVal(<a class="el" href="AnalysisMethod_8h.html#a88390169e5d39c5fd976861475b0996aaaeccf4a50c89a8159f5e938eb341a718">hashM</a>,&quot;Basic blocks are weighed by similar basic block in the DB&quot;), clEnumVal(<a class="el" href="AnalysisMethod_8h.html#a88390169e5d39c5fd976861475b0996aa3770f49b78f18f6ef54eb4ed2a5522be">hashWM</a>,&quot;Basic blocks are weighed by similar basic block where which dimension has also a weight in the DB&quot;), clEnumVal(<a class="el" href="AnalysisMethod_8h.html#a88390169e5d39c5fd976861475b0996aa0778eb7d3fcfd6dc25c466524284acf0">randM</a>,&quot;Basic blocks are weighed randomicly&quot;), clEnumVal(<a class="el" href="AnalysisMethod_8h.html#a88390169e5d39c5fd976861475b0996aa80220be0d669ac4264f7e49fe8f96369">freqM</a>,&quot;No weight to basic blocks&quot;), clEnumVal(<a class="el" href="AnalysisMethod_8h.html#a88390169e5d39c5fd976861475b0996aa09b606c549042b5f90315e677e9b1b64">hashPlusInstM</a>,&quot;Sum of the inst weight and hash weight&quot;), clEnumValEnd))</td></tr>
-<tr class="separator:a9cb44724ee4f6225a185ac67496bcd7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d2acf75e673f8cce2423576cce2e49d"><td class="memItemLeft" align="right" valign="top">static cl::opt&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a6d2acf75e673f8cce2423576cce2e49d">DatabaseFilename</a> (&quot;database&quot;, cl::desc(&quot;Hashs database to <a class="el" href="AnalysisMethod_8h.html#a88390169e5d39c5fd976861475b0996aaaeccf4a50c89a8159f5e938eb341a718">hashM</a> analysis&quot;), cl::value_desc(&quot;filename&quot;))</td></tr>
+<tr class="memitem:a96ab926f273e28a0ef8f12bee34bf174"><td class="memItemLeft" align="right" valign="top">static cl::opt<br class="typebreak"/>
+&lt; <a class="el" href="AnalysisMethod_8h.html#a65b6de1fe68e7de9c7ec0bb36c7c71e2">AnalysisMethodKind</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a96ab926f273e28a0ef8f12bee34bf174">OptAnalysisMethod</a> (cl::desc(&quot;Choose an analysis method:&quot;), cl::values(clEnumVal(<a class="el" href="AnalysisMethod_8h.html#a65b6de1fe68e7de9c7ec0bb36c7c71e2a4d8b3be116dc4b19938940cfdc6fad20">instM</a>,&quot;Basic blocks are weighed by their number of instruction&quot;), clEnumVal(<a class="el" href="AnalysisMethod_8h.html#a65b6de1fe68e7de9c7ec0bb36c7c71e2a1797b01df81cb4e30b8bbd34d5b337bb">instCostM</a>,&quot;Basic blocks are weighed by the sum up of all instruction cost&quot;), clEnumVal(<a class="el" href="AnalysisMethod_8h.html#a65b6de1fe68e7de9c7ec0bb36c7c71e2a3770f49b78f18f6ef54eb4ed2a5522be">hashWM</a>,&quot;Basic blocks are weighed by similar basic block where which dimension has also a weight in the DB&quot;), clEnumVal(<a class="el" href="AnalysisMethod_8h.html#a65b6de1fe68e7de9c7ec0bb36c7c71e2a0778eb7d3fcfd6dc25c466524284acf0">randM</a>,&quot;Basic blocks are weighed randomicly&quot;), clEnumVal(<a class="el" href="AnalysisMethod_8h.html#a65b6de1fe68e7de9c7ec0bb36c7c71e2a80220be0d669ac4264f7e49fe8f96369">freqM</a>,&quot;No weight to basic blocks&quot;), clEnumVal(<a class="el" href="AnalysisMethod_8h.html#a65b6de1fe68e7de9c7ec0bb36c7c71e2a09b606c549042b5f90315e677e9b1b64">hashPlusInstM</a>,&quot;Sum of the inst weight and hash weight&quot;), clEnumValEnd))</td></tr>
+<tr class="separator:a96ab926f273e28a0ef8f12bee34bf174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d2acf75e673f8cce2423576cce2e49d"><td class="memItemLeft" align="right" valign="top">static cl::opt&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a6d2acf75e673f8cce2423576cce2e49d">DatabaseFilename</a> (&quot;database&quot;, cl::desc(&quot;Hashs database to hashM analysis&quot;), cl::value_desc(&quot;filename&quot;))</td></tr>
 <tr class="separator:a6d2acf75e673f8cce2423576cce2e49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf94f51298fad86b4c6764bcbcca1326"><td class="memItemLeft" align="right" valign="top">static cl::alias&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#acf94f51298fad86b4c6764bcbcca1326">dbAlias</a> (&quot;db&quot;, cl::desc(&quot;Alias for -database&quot;), cl::aliasopt(<a class="el" href="mergeDatabase_8cpp.html#a55b7f43cf34c884a1c549502b46685e2">DatabaseFilename</a>))</td></tr>
 <tr class="separator:acf94f51298fad86b4c6764bcbcca1326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d76d3ea942f7ba91043a6afa685116a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr<br class="typebreak"/>
-&lt; GCOVFunction &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7d76d3ea942f7ba91043a6afa685116a">readFunctions</a> (GCOVFile &amp;GF, GCOVBuffer &amp;GCNOBuffer, GCOVBuffer &amp;GCDABuffer)</td></tr>
-<tr class="separator:a7d76d3ea942f7ba91043a6afa685116a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -175,7 +175,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00099">main()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00061">main()</a>.</p>
 
 </div>
 </div>
@@ -303,7 +303,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00099">main()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00061">main()</a>.</p>
 
 </div>
 </div>
@@ -351,7 +351,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00099">main()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00061">main()</a>.</p>
 
 </div>
 </div>
@@ -479,7 +479,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00099">main()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00061">main()</a>.</p>
 
 </div>
 </div>
@@ -507,13 +507,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00099">99</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00061">61</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
-<p>References <a class="el" href="main_8cpp.html#a6d2acf75e673f8cce2423576cce2e49d">DatabaseFilename()</a>, <a class="el" href="AnalysisMethod_8h_source.html#l00025">freqM</a>, <a class="el" href="main_8cpp.html#abcc5b62c9e3c67074392d5b80b93aa2a">GCDAFilename()</a>, <a class="el" href="main_8cpp.html#afde90c2f2f6772fe5d8bb5ea1a3a382e">GCNOFilename()</a>, <a class="el" href="AnalysisMethod_8h_source.html#l00025">hashM</a>, <a class="el" href="AnalysisMethod_8h_source.html#l00025">hashPlusInstM</a>, <a class="el" href="AnalysisMethod_8h_source.html#l00025">hashWM</a>, <a class="el" href="AnalysisMethod_8h_source.html#l00025">instCostM</a>, <a class="el" href="AnalysisMethod_8h_source.html#l00025">instM</a>, <a class="el" href="main_8cpp.html#a0f07d0807dfe80397edbe03d9748479c">LLVMFilename()</a>, <a class="el" href="main_8cpp.html#a9cb44724ee4f6225a185ac67496bcd7f">OptAnalysisMethod()</a>, <a class="el" href="AnalysisMethod_8h_source.html#l00025">randM</a>, and <a class="el" href="main_8cpp_source.html#l00063">readFunctions()</a>.</p>
+<p>References <a class="el" href="GEOS_8cpp_source.html#l00214">GEOS::analyseExecutionTime()</a>, <a class="el" href="main_8cpp.html#a6d2acf75e673f8cce2423576cce2e49d">DatabaseFilename()</a>, <a class="el" href="main_8cpp.html#abcc5b62c9e3c67074392d5b80b93aa2a">GCDAFilename()</a>, <a class="el" href="main_8cpp.html#afde90c2f2f6772fe5d8bb5ea1a3a382e">GCNOFilename()</a>, <a class="el" href="namespaceGEOS.html#a43f40b362cd1c6ad3ec96a4b4d1eb182">GEOS::getAnalyser()</a>, <a class="el" href="main_8cpp.html#a0f07d0807dfe80397edbe03d9748479c">LLVMFilename()</a>, and <a class="el" href="main_8cpp.html#a96ab926f273e28a0ef8f12bee34bf174">OptAnalysisMethod()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9cb44724ee4f6225a185ac67496bcd7f"></a>
+<a class="anchor" id="a96ab926f273e28a0ef8f12bee34bf174"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -521,7 +521,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static cl::opt&lt;<a class="el" href="AnalysisMethod_8h.html#a88390169e5d39c5fd976861475b0996a">AnalysisMethods</a>&gt; OptAnalysisMethod </td>
+          <td class="memname">static cl::opt&lt;<a class="el" href="AnalysisMethod_8h.html#a65b6de1fe68e7de9c7ec0bb36c7c71e2">AnalysisMethodKind</a>&gt; OptAnalysisMethod </td>
           <td>(</td>
           <td class="paramtype">cl::&#160;</td>
           <td class="paramname"><em>desc</em>&quot;Choose an analysis method:&quot;, </td>
@@ -530,7 +530,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">cl::&#160;</td>
-          <td class="paramname"><em>values</em>clEnumVal(instM,&quot;Basic blocks are weighed by their number of instruction&quot;), clEnumVal(instCostM,&quot;Basic blocks are weighed by the sum up of all instruction cost&quot;), clEnumVal(hashM,&quot;Basic blocks are weighed by similar basic block in the DB&quot;), clEnumVal(hashWM,&quot;Basic blocks are weighed by similar basic block where which dimension has also a weight in the DB&quot;), clEnumVal(randM,&quot;Basic blocks are weighed randomicly&quot;), clEnumVal(freqM,&quot;No weight to basic blocks&quot;), clEnumVal(hashPlusInstM,&quot;Sum of the inst weight and hash weight&quot;), clEnumValEnd&#160;</td>
+          <td class="paramname"><em>values</em>clEnumVal(instM,&quot;Basic blocks are weighed by their number of instruction&quot;), clEnumVal(instCostM,&quot;Basic blocks are weighed by the sum up of all instruction cost&quot;), clEnumVal(hashWM,&quot;Basic blocks are weighed by similar basic block where which dimension has also a weight in the DB&quot;), clEnumVal(randM,&quot;Basic blocks are weighed randomicly&quot;), clEnumVal(freqM,&quot;No weight to basic blocks&quot;), clEnumVal(hashPlusInstM,&quot;Sum of the inst weight and hash weight&quot;), clEnumValEnd&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -545,50 +545,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00099">main()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7d76d3ea942f7ba91043a6afa685116a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::unique_ptr&lt;GCOVFunction&gt; &gt; readFunctions </td>
-          <td>(</td>
-          <td class="paramtype">GCOVFile &amp;&#160;</td>
-          <td class="paramname"><em>GF</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GCOVBuffer &amp;&#160;</td>
-          <td class="paramname"><em>GCNOBuffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GCOVBuffer &amp;&#160;</td>
-          <td class="paramname"><em>GCDABuffer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00063">63</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
-
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00099">main()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00061">main()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 13 2014 16:17:30 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 29 2015 00:47:19 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

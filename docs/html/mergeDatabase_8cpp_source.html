@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -148,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classDatabaseManager.html">DatabaseManager</a> DBManager(<a class="code" href="mergeDatabase_8cpp.html#a55b7f43cf34c884a1c549502b46685e2">DatabaseFilename</a>);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  std::unordered_map&lt;int, BBDescriptor*&gt; Hashs;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  std::unordered_map&lt;int, BBHash*&gt; Hashs;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  std::unordered_map&lt;int, double&gt; Times;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  std::pair&lt;StringRef, StringRef&gt; HashLineAndTail =</div>
@@ -158,9 +159,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> Id;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">char</span> HashString[1000];</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    scanf(HashLineAndTail.first.str().c_str(), <span class="stringliteral">&quot;%d: %s&quot;</span>, &amp;Id, HashString); </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    sscanf(HashLineAndTail.first.str().c_str(), <span class="stringliteral">&quot;%d: %s&quot;</span>, &amp;Id, HashString); </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    Hashs[Id] = <span class="keyword">new</span> <a class="code" href="classBBDescriptor.html">BBDescriptor</a>(std::string(HashString));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    Hashs[Id] = <span class="keyword">new</span> <a class="code" href="classBBHash.html">BBHash</a>(std::string(HashString));</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    HashLineAndTail = HashLineAndTail.second.split(<span class="charliteral">&#39;\n&#39;</span>); </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
@@ -172,45 +173,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> Id;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">double</span> Time; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    scanf(HashLineAndTail.first.str().c_str(), <span class="stringliteral">&quot;%d: %f&quot;</span>, &amp;Id, &amp;Time); </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    sscanf(HashLineAndTail.first.str().c_str(), <span class="stringliteral">&quot;%d: %lf&quot;</span>, &amp;Id, &amp;Time); </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    Times[Id] = Time;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    ProfLineAndTail = ProfLineAndTail.second.split(<span class="charliteral">&#39;\n&#39;</span>); </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  std::unordered_map&lt;std::string, double&gt; DB2;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : Times) </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (Hashs.count(i.first) != 0) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">if</span> (DB2.count(Hashs[i.first]-&gt;getString()) == 0)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        DB2[Hashs[i.first]-&gt;getString()] = i.second;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        DB2[Hashs[i.first]-&gt;getString()] = (DB2[Hashs[i.first]-&gt;getString()] </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                              + i.second)/2;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  DBManager.<a class="code" href="classDatabaseManager.html#adcb78991e5ec49d04551d6edf04741c1">unionWith</a>(DB2);  </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  DBManager.<a class="code" href="classDatabaseManager.html#ac711f40f94f061e86ed996e827bd6ae9">printDatabase</a>();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
-<div class="ttc" id="classDatabaseManager_html_ac711f40f94f061e86ed996e827bd6ae9"><div class="ttname"><a href="classDatabaseManager.html#ac711f40f94f061e86ed996e827bd6ae9">DatabaseManager::printDatabase</a></div><div class="ttdeci">void printDatabase()</div><div class="ttdoc">Prints all the database. Each new line contains a hash and its execution time separated by space...</div><div class="ttdef"><b>Definition:</b> <a href="DatabaseManager_8cpp_source.html#l00094">DatabaseManager.cpp:94</a></div></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : Times) { </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span> (Hashs.count(i.first) != 0) </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      DBManager.<a class="code" href="classDatabaseManager.html#a2a26f10fb144de273aa8e50a27896dbb">insert</a>(*Hashs[i.first], i.second);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  DBManager.<a class="code" href="classDatabaseManager.html#ad7bb44ea2911e16f090c176a84e92ed2">printDatabase</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="ttc" id="mergeDatabase_8cpp_html_abea0037e7534e741dea8f00a26aac0a9"><div class="ttname"><a href="mergeDatabase_8cpp.html#abea0037e7534e741dea8f00a26aac0a9">HashFilename</a></div><div class="ttdeci">static cl::opt&lt; std::string &gt; HashFilename(&quot;hash&quot;, cl::desc(&quot;Hash filename&quot;), cl::value_desc(&quot;filename&quot;), cl::Required)</div></div>
+<div class="ttc" id="classDatabaseManager_html_ad7bb44ea2911e16f090c176a84e92ed2"><div class="ttname"><a href="classDatabaseManager.html#ad7bb44ea2911e16f090c176a84e92ed2">DatabaseManager::printDatabase</a></div><div class="ttdeci">void printDatabase() const </div><div class="ttdoc">Prints all the database. Each new line contains a hash and its execution time separated by space...</div><div class="ttdef"><b>Definition:</b> <a href="DatabaseManager_8cpp_source.html#l00128">DatabaseManager.cpp:128</a></div></div>
 <div class="ttc" id="DatabaseManager_8h_html"><div class="ttname"><a href="DatabaseManager_8h.html">DatabaseManager.h</a></div><div class="ttdoc">This file contains declarations of the Basic Block Database Manager. </div></div>
 <div class="ttc" id="mergeDatabase_8cpp_html_aadb1ba8554c12536ac3b2b590a7f711a"><div class="ttname"><a href="mergeDatabase_8cpp.html#aadb1ba8554c12536ac3b2b590a7f711a">ProfFilename</a></div><div class="ttdeci">static cl::opt&lt; std::string &gt; ProfFilename(&quot;profile&quot;, cl::desc(&quot;Profile filename&quot;), cl::value_desc(&quot;filename&quot;), cl::Required)</div></div>
-<div class="ttc" id="classBBDescriptor_html"><div class="ttname"><a href="classBBDescriptor.html">BBDescriptor</a></div><div class="ttdoc">This class is responsible for representing BB&#39;s hashes in memory. It can be constructed by a string (...</div><div class="ttdef"><b>Definition:</b> <a href="BBDescriptor_8h_source.html#l00069">BBDescriptor.h:69</a></div></div>
+<div class="ttc" id="classDatabaseManager_html_a2a26f10fb144de273aa8e50a27896dbb"><div class="ttname"><a href="classDatabaseManager.html#a2a26f10fb144de273aa8e50a27896dbb">DatabaseManager::insert</a></div><div class="ttdeci">void insert(BBHash, double)</div><div class="ttdoc">Insert a new value in the database. </div><div class="ttdef"><b>Definition:</b> <a href="DatabaseManager_8cpp_source.html#l00111">DatabaseManager.cpp:111</a></div></div>
+<div class="ttc" id="classBBHash_html"><div class="ttname"><a href="classBBHash.html">BBHash</a></div><div class="ttdoc">This class is responsible for representing BB&#39;s hashes in memory. It can be constructed by a string (...</div><div class="ttdef"><b>Definition:</b> <a href="BBHash_8h_source.html#l00070">BBHash.h:70</a></div></div>
 <div class="ttc" id="mergeDatabase_8cpp_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="mergeDatabase_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="mergeDatabase_8cpp_source.html#l00050">mergeDatabase.cpp:50</a></div></div>
 <div class="ttc" id="mergeDatabase_8cpp_html_a76ed812fd13d79ebbdd92a2fc9517b08"><div class="ttname"><a href="mergeDatabase_8cpp.html#a76ed812fd13d79ebbdd92a2fc9517b08">hsAlias</a></div><div class="ttdeci">cl::alias hsAlias(&quot;hs&quot;, cl::desc(&quot;Alias for -hash&quot;), cl::aliasopt(HashFilename))</div></div>
 <div class="ttc" id="classDatabaseManager_html"><div class="ttname"><a href="classDatabaseManager.html">DatabaseManager</a></div><div class="ttdoc">This class is responsible for loading and saving hashes databases. It is a representation in memory o...</div><div class="ttdef"><b>Definition:</b> <a href="DatabaseManager_8h_source.html#l00022">DatabaseManager.h:22</a></div></div>
 <div class="ttc" id="mergeDatabase_8cpp_html_a1004dc53c71c8c8ef925f1c1c09fa45e"><div class="ttname"><a href="mergeDatabase_8cpp.html#a1004dc53c71c8c8ef925f1c1c09fa45e">pAlias</a></div><div class="ttdeci">cl::alias pAlias(&quot;p&quot;, cl::desc(&quot;Alias for -profile&quot;), cl::aliasopt(ProfFilename))</div></div>
 <div class="ttc" id="mergeDatabase_8cpp_html_a910759309abebd439c64e4a08ccd9549"><div class="ttname"><a href="mergeDatabase_8cpp.html#a910759309abebd439c64e4a08ccd9549">dbAlias</a></div><div class="ttdeci">cl::alias dbAlias(&quot;db&quot;, cl::desc(&quot;Alias for -database&quot;), cl::aliasopt(DatabaseFilename))</div></div>
-<div class="ttc" id="classDatabaseManager_html_adcb78991e5ec49d04551d6edf04741c1"><div class="ttname"><a href="classDatabaseManager.html#adcb78991e5ec49d04551d6edf04741c1">DatabaseManager::unionWith</a></div><div class="ttdeci">void unionWith(std::unordered_map&lt; std::string, double &gt; &amp;)</div><div class="ttdoc">Given an another database this function merge them. </div><div class="ttdef"><b>Definition:</b> <a href="DatabaseManager_8cpp_source.html#l00085">DatabaseManager.cpp:85</a></div></div>
 <div class="ttc" id="mergeDatabase_8cpp_html_a55b7f43cf34c884a1c549502b46685e2"><div class="ttname"><a href="mergeDatabase_8cpp.html#a55b7f43cf34c884a1c549502b46685e2">DatabaseFilename</a></div><div class="ttdeci">static cl::opt&lt; std::string &gt; DatabaseFilename(&quot;database&quot;, cl::desc(&quot;Database filename to check for duplicates&quot;), cl::value_desc(&quot;filename&quot;), cl::Required)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 13 2014 16:17:30 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 29 2015 00:47:18 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

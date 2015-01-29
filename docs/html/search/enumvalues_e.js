@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['sdiv',['SDiv',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45a0a42815c96e082b2d600f6cd5f553e91',1,'BBDescriptor.h']]],
-  ['shl',['Shl',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45ada89cb9eb438de663a3cc3083e0e8e4a',1,'BBDescriptor.h']]],
-  ['shufflevector',['ShuffleVector',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45af15d4290da98fa835a47cecc79858b9e',1,'BBDescriptor.h']]],
-  ['sqrt',['Sqrt',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45a98095238a325acc3b59341ba5367172d',1,'BBDescriptor.h']]],
-  ['srem',['SRem',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45aa5af2c83c184717144ccd1c4cfc1122a',1,'BBDescriptor.h']]],
-  ['store',['Store',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45a9e1df3f1049c7d326da72b0f9145c005',1,'BBDescriptor.h']]],
-  ['sub',['Sub',['../BBDescriptor_8h.html#ae18c0fc5ff8f471116a0d6bd00447a45a3e53f06234367d0e453fa5ea0ad2ab34',1,'BBDescriptor.h']]]
+  ['partiallyinlinelibcalls',['PartiallyInlineLibCalls',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a05079b1e604d6658999fd3fd9d93ae01',1,'GEOS.h']]],
+  ['phi',['Phi',['../BBHash_8h.html#a1cac54f1961199852455d1cdf18e8525a2080ec0fb32affa9961922fadd7ad95e',1,'BBHash.h']]],
+  ['pow',['Pow',['../BBHash_8h.html#a1cac54f1961199852455d1cdf18e8525a54cc8639b2ae32fad159203ab1b7aa4a',1,'BBHash.h']]],
+  ['printf',['Printf',['../BBHash_8h.html#a1cac54f1961199852455d1cdf18e8525a9d1256d31c3c650658176f4203795bd8',1,'BBHash.h']]],
+  ['promotememorytoregister',['PromoteMemoryToRegister',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5aea6c57bb843155160c2e78843349ba1c',1,'GEOS.h']]]
 ];

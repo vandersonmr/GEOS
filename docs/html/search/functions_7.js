@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['llalias',['llAlias',['../main_8cpp.html#a176f4c81087bd5ba2953134ff727f117',1,'main.cpp']]],
-  ['llvmfilename',['LLVMFilename',['../main_8cpp.html#a0f07d0807dfe80397edbe03d9748479c',1,'main.cpp']]]
+  ['init_5fpapi',['init_PAPI',['../PAPI_8cpp.html#a1b644c5a45b31fdd325203a8e057294f',1,'PAPI.cpp']]],
+  ['insert',['insert',['../classDatabaseManager.html#a2a26f10fb144de273aa8e50a27896dbb',1,'DatabaseManager']]],
+  ['instructionplushashmethod',['InstructionPlusHashMethod',['../classInstructionPlusHashMethod.html#a09f57efa6a544d49e0ec90ae686a8ef8',1,'InstructionPlusHashMethod']]]
 ];

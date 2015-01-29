@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,21 +100,49 @@ Inheritance diagram for AnalysisMethod:</div>
 <div class="dyncontent">
 <div class="center"><img src="classAnalysisMethod__inherit__graph.png" border="0" usemap="#AnalysisMethod_inherit__map" alt="Inheritance graph"/></div>
 <map name="AnalysisMethod_inherit__map" id="AnalysisMethod_inherit__map">
-<area shape="rect" id="node2" href="classFrequencyMethod.html" title="This method uses just the frequency to evaluate the execution cost of the given function. " alt="" coords="197,5,323,32"/><area shape="rect" id="node3" href="classHashMethod.html" title="This method uses a weight given by the execution time of a similar basic block. For that it uses a da..." alt="" coords="212,56,308,83"/><area shape="rect" id="node4" href="classHashWeightedMethod.html" title="This method uses a weight given by the execution time of a similar basic block. For that it uses a da..." alt="" coords="185,107,335,133"/><area shape="rect" id="node5" href="classInstructionCostMethod.html" title="This method uses the sum of an estimate cost of each instruction in the function multiplied by the fr..." alt="" coords="183,157,337,184"/><area shape="rect" id="node6" href="classInstructionMethod.html" title="This method uses the number of instructions multiplied by the execution frequency to evaluate the exe..." alt="" coords="197,208,323,235"/><area shape="rect" id="node7" href="classInstructionPlusHashMethod.html" title="This method uses the sum of both estimations from HashMethod and InstructionMethod. " alt="" coords="169,259,351,285"/><area shape="rect" id="node8" href="classProfMethod.html" title="This method uses a similar approach as HashMethod. But instead searching in a database the cost of ea..." alt="" coords="215,309,305,336"/><area shape="rect" id="node9" href="classRandomMethod.html" title="This method uses a random number multiplied by the execution frequency to evaluate the execution cost..." alt="" coords="203,360,317,387"/></map>
+<area shape="rect" id="node2" href="classFrequencyMethod.html" title="This method uses just the frequency to evaluate the execution cost of the given function. " alt="" coords="197,5,323,32"/><area shape="rect" id="node3" href="classHashWeightedMethod.html" title="This method uses a weight given by the execution time of a similar basic block. For that it uses a da..." alt="" coords="185,56,335,83"/><area shape="rect" id="node4" href="classInstructionCostMethod.html" title="This method uses the sum of an estimate cost of each instruction in the function multiplied by the fr..." alt="" coords="183,107,337,133"/><area shape="rect" id="node5" href="classInstructionMethod.html" title="This method uses the number of instructions multiplied by the execution frequency to evaluate the exe..." alt="" coords="197,157,323,184"/><area shape="rect" id="node6" href="classInstructionPlusHashMethod.html" title="This method uses the sum of both estimations from HashMethod and InstructionMethod. " alt="" coords="169,208,351,235"/><area shape="rect" id="node7" href="classProfMethod.html" title="This method uses a similar approach as HashMethod. But instead searching in a database the cost of ea..." alt="" coords="215,259,305,285"/><area shape="rect" id="node8" href="classRandomMethod.html" title="This method uses a random number multiplied by the execution frequency to evaluate the execution cost..." alt="" coords="203,309,317,336"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af176b859b2823ae6bed1aa8855ccca54"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnalysisMethod.html#af176b859b2823ae6bed1aa8855ccca54">estimateExecutionTime</a> (llvm::Function *, std::unique_ptr&lt; llvm::GCOVFunction, std::default_delete&lt; llvm::GCOVFunction &gt; &gt; &amp;)=0</td></tr>
-<tr class="memdesc:af176b859b2823ae6bed1aa8855ccca54"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is responsible for calculating the cost of a LLVM function. This cost must reflect on the execution time of this function.  <a href="#af176b859b2823ae6bed1aa8855ccca54">More...</a><br/></td></tr>
-<tr class="separator:af176b859b2823ae6bed1aa8855ccca54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5a51fbd8aec6dd39f51155805e9b38"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnalysisMethod.html#afd5a51fbd8aec6dd39f51155805e9b38">estimateExecutionTime</a> (llvm::Function *, const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;) const =0</td></tr>
+<tr class="memdesc:afd5a51fbd8aec6dd39f51155805e9b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is responsible for calculating the cost of a LLVM function. This cost must reflect on the execution time of this function.  <a href="#afd5a51fbd8aec6dd39f51155805e9b38">More...</a><br/></td></tr>
+<tr class="separator:afd5a51fbd8aec6dd39f51155805e9b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980f19ac6d6978ab68c8a1f0f1587309"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnalysisMethod.html#a980f19ac6d6978ab68c8a1f0f1587309">~AnalysisMethod</a> ()</td></tr>
+<tr class="separator:a980f19ac6d6978ab68c8a1f0f1587309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Every execution time cost analysis must inherit from this class. </p>
 
-<p>Definition at line <a class="el" href="AnalysisMethod_8h_source.html#l00029">29</a> of file <a class="el" href="AnalysisMethod_8h_source.html">AnalysisMethod.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af176b859b2823ae6bed1aa8855ccca54"></a>
+<p>Definition at line <a class="el" href="AnalysisMethod_8h_source.html#l00033">33</a> of file <a class="el" href="AnalysisMethod_8h_source.html">AnalysisMethod.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a980f19ac6d6978ab68c8a1f0f1587309"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AnalysisMethod::~AnalysisMethod </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="AnalysisMethod_8h_source.html#l00043">43</a> of file <a class="el" href="AnalysisMethod_8h_source.html">AnalysisMethod.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="afd5a51fbd8aec6dd39f51155805e9b38"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -129,13 +158,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unique_ptr&lt; llvm::GCOVFunction, std::default_delete&lt; llvm::GCOVFunction &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -148,7 +177,9 @@ Public Member Functions</h2></td></tr>
 <p>This function is responsible for calculating the cost of a LLVM function. This cost must reflect on the execution time of this function. </p>
 <dl class="section return"><dt>Returns</dt><dd>A double value that represents the execution cost of the LLVM function (Function) when executed in the given frequency (GCOVFunction). </dd></dl>
 
-<p>Implemented in <a class="el" href="classProfMethod.html#a2467f5eb2c3b371a8a4ee98169328089">ProfMethod</a>, <a class="el" href="classInstructionPlusHashMethod.html#a24cbf17fc13aacc96e8abc68dcb7db30">InstructionPlusHashMethod</a>, <a class="el" href="classInstructionCostMethod.html#a34076f4b3ca2aa9880639032568b5c4c">InstructionCostMethod</a>, <a class="el" href="classFrequencyMethod.html#ab488437a257f86a9f4ebb674eff4d9e1">FrequencyMethod</a>, <a class="el" href="classRandomMethod.html#a58bcdda64b1ede268cd7656f8bee7e2c">RandomMethod</a>, <a class="el" href="classHashWeightedMethod.html#a99710b1c96f50946df91654c72c824f4">HashWeightedMethod</a>, <a class="el" href="classHashMethod.html#ae1e33b75ec5e86d4edf5f263b0c87f8a">HashMethod</a>, and <a class="el" href="classInstructionMethod.html#a8395458c16daa98bedee147adeb51cfd">InstructionMethod</a>.</p>
+<p>Implemented in <a class="el" href="classProfMethod.html#ab0505bfd5a287c0fe042dd0efac159b7">ProfMethod</a>, <a class="el" href="classInstructionPlusHashMethod.html#abbac8b450ee415c8f03cfb99575b8c82">InstructionPlusHashMethod</a>, <a class="el" href="classInstructionCostMethod.html#a1f2097ab2874ee073714ceeb50045a30">InstructionCostMethod</a>, <a class="el" href="classFrequencyMethod.html#a3596e36d5837f5d20671089dfab07c73">FrequencyMethod</a>, <a class="el" href="classRandomMethod.html#ac1c0379dcdd48bbeaf287e38838ad03d">RandomMethod</a>, <a class="el" href="classHashWeightedMethod.html#a8001089ccb3cb34ec6a07825f1727102">HashWeightedMethod</a>, and <a class="el" href="classInstructionMethod.html#a65b25c5582210ff6f9a6ce5f1f6838bc">InstructionMethod</a>.</p>
+
+<p>Referenced by <a class="el" href="GEOS_8cpp_source.html#l00214">GEOS::analyseExecutionTime()</a>.</p>
 
 </div>
 </div>
@@ -158,7 +189,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 13 2014 16:17:30 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 29 2015 00:47:19 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

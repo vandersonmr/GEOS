@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['papi_2ecpp',['PAPI.cpp',['../PAPI_8cpp.html',1,'']]],
-  ['profmethod_2ecpp',['ProfMethod.cpp',['../ProfMethod_8cpp.html',1,'']]]
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mergedatabase_2ecpp',['mergeDatabase.cpp',['../mergeDatabase_8cpp.html',1,'']]]
 ];

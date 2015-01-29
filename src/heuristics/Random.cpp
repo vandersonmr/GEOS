@@ -118,8 +118,6 @@ int main(int argc, char** argv) {
     OptimizationKind OptChoosed = (OptimizationKind) getRandomPass(gen);
     if (GEOS::getPass(OptChoosed) == nullptr) continue;
 
-    Optimizations.push_back(OptChoosed);
-
     FunctionPassManager FPM(Optimized->getLLVMModule());
 
     for (auto OptKind : Optimizations) { 

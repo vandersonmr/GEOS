@@ -26,14 +26,13 @@ HashWeightedMethod::HashWeightedMethod(StringRef Filename) {
 }
 
 double HashWeightedMethod::
-estimateExecutionTime(llvm::Function* Func, llvm::GCOVFunction* Freq) { 
+estimateExecutionTime(llvm::Function* Func, const ProfileModule &Freq) const { 
   double PerformanceMensurment = 0;
-  auto MBB = Freq->block_begin(); 
+
   for (auto &BB : *Func) {
     BBHash Hash(BB);
-    PerformanceMensurment += (*MBB)->getCount() * 
-                   DBManager->getTime(*DBManager->getNearest(Hash));
-    ++MBB;
+    PerformanceMensurment += Freq.getBasicBlockFrequency(&BB) * 
+                   DBManager->getTime(*DBManager->getNearest(Hash)) * 0.15;
   } 
 
   return PerformanceMensurment;
