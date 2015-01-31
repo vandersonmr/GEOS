@@ -1,0 +1,8 @@
+1 : Alignment from assumptions : 685.582385
+2 : Loop Invariant Code Motion : 685.582385
+3 : Combine redundant instructions : 675.669869
+4 : Dead Code Elimination : 675.623003
+5 : Value Propagation : 675.623003
+6 : Scalar Replacement of Aggregates (DT) : 595.534566
+7 : Induction Variable Simplification : 609.500623
+SpeedUp : 1.124826

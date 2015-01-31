@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 26.140006
+2 : Value Propagation : 26.140006
+3 : Global Value Numbering : 25.990007
+4 : Promote Memory to Register : 20.720004
+5 : Add DWARF path discriminators : 19.180005
+6 : Dead Instruction Elimination : 18.940005
+7 : Lower atomic intrinsics to non-atomic form : 18.940005
+8 : Global Value Numbering : 18.940005
+9 : Induction Variable Simplification : 18.940005
+10 : MemCpy Optimization : 18.940005
+11 : Promote Memory to Register : 18.940005
+12 : Add DWARF path discriminators : 18.940005
+13 : MergedLoadStoreMotion : 18.940005
+14 : Reassociate expressions : 18.940005
+15 : Dead Instruction Elimination : 18.940005
+16 : Promote Memory to Register : 18.940005
+17 : Loop Invariant Code Motion : 18.820005
+18 : Assign names to anonymous instructions : 18.820005
+19 : Dead Code Elimination : 18.820005
+20 : Constant Hoisting : 18.820005
+SpeedUp : 1.388948

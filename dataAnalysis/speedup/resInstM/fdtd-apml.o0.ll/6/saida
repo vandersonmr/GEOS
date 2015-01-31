@@ -1,0 +1,21 @@
+1 : SROA : 152.011698
+2 : Combine redundant instructions : 133.167330
+3 : Code sinking : 133.167330
+4 : Constant Hoisting : 133.167330
+5 : Scalar Replacement of Aggregates (DT) : 83.171388
+6 : Loop-Closed SSA Form Pass : 83.171388
+7 : Scalar Replacement of Aggregates (DT) : 83.171388
+8 : SROA : 83.171388
+9 : Alignment from assumptions : 83.171388
+10 : Loop-Closed SSA Form Pass : 83.171388
+11 : Assign names to anonymous instructions : 83.171388
+12 : Loop Invariant Code Motion : 52.378729
+13 : Loop Invariant Code Motion : 52.378729
+14 : Remove redundant instructions : 52.378729
+15 : Code sinking : 52.378729
+16 : Loop-Closed SSA Form Pass : 52.378729
+17 : Dead Code Elimination : 52.378729
+18 : Dead Instruction Elimination : 52.378729
+19 : Lower atomic intrinsics to non-atomic form : 52.378729
+20 : Global Value Numbering : 25.275518
+SpeedUp : 6.014187

@@ -1,0 +1,5 @@
+1 : Dead Instruction Elimination : 78.440507
+2 : Loop Invariant Code Motion : 78.440507
+3 : Lower atomic intrinsics to non-atomic form : 78.440507
+4 : Global Value Numbering : 109.130006
+SpeedUp : 0.718780

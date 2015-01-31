@@ -1,0 +1,21 @@
+1 : Constant Hoisting : 100.384673
+2 : Dead Code Elimination : 94.110871
+3 : MemCpy Optimization : 94.110871
+4 : Combine redundant instructions : 75.288854
+5 : SROA : 75.288854
+6 : MergedLoadStoreMotion : 75.288854
+7 : Loop-Closed SSA Form Pass : 75.288854
+8 : Global Value Numbering : 61.172615
+9 : Loop-Closed SSA Form Pass : 61.172615
+10 : Constant Hoisting : 61.172615
+11 : Scalar Replacement of Aggregates (DT) : 58.035431
+12 : Aggressive Dead Code Elimination : 56.466981
+13 : Remove redundant instructions : 54.898591
+14 : Dead Instruction Elimination : 54.898591
+15 : Reassociate expressions : 54.898591
+16 : Early CSE : 54.898591
+17 : Add DWARF path discriminators : 54.898591
+18 : Reassociate expressions : 54.898591
+19 : Early CSE : 54.898591
+20 : Constant Hoisting : 54.898591
+SpeedUp : 1.828547

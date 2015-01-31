@@ -1,0 +1,21 @@
+1 : Early CSE : 71.242300
+2 : Promote Memory to Register : 35.950767
+3 : Combine redundant instructions : 35.950767
+4 : Induction Variable Simplification : 35.950767
+5 : Scalar Replacement of Aggregates (DT) : 35.950767
+6 : Loop Invariant Code Motion : 35.950767
+7 : Value Propagation : 35.950767
+8 : Loop-Closed SSA Form Pass : 35.950767
+9 : Assign names to anonymous instructions : 35.950767
+10 : Loop-Closed SSA Form Pass : 35.950767
+11 : Loop Invariant Code Motion : 35.950767
+12 : Constant Hoisting : 35.950767
+13 : Promote Memory to Register : 35.950767
+14 : Promote Memory to Register : 35.950767
+15 : Promote Memory to Register : 35.950767
+16 : Loop-Closed SSA Form Pass : 35.950767
+17 : Early CSE : 35.950767
+18 : Reassociate expressions : 35.950767
+19 : Add DWARF path discriminators : 35.950767
+20 : MergedLoadStoreMotion : 35.950767
+SpeedUp : 2.275196

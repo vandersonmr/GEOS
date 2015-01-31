@@ -1,0 +1,21 @@
+1 : Code sinking : 246.181316
+2 : Lower atomic intrinsics to non-atomic form : 246.181316
+3 : Alignment from assumptions : 246.181316
+4 : Code sinking : 246.181316
+5 : Loop Invariant Code Motion : 246.181316
+6 : Scalar Replacement of Aggregates (DT) : 160.775845
+7 : Alignment from assumptions : 115.625911
+8 : Constant Hoisting : 115.625911
+9 : Value Propagation : 115.625911
+10 : Constant Hoisting : 115.625911
+11 : Dead Code Elimination : 115.625911
+12 : Early CSE : 90.545755
+13 : Value Propagation : 90.545755
+14 : Loop-Closed SSA Form Pass : 90.545755
+15 : Code sinking : 90.545755
+16 : Code sinking : 90.545755
+17 : Combine redundant instructions : 80.520710
+18 : Value Propagation : 80.520710
+19 : Early CSE : 80.520710
+20 : MergedLoadStoreMotion : 80.520710
+SpeedUp : 3.057366

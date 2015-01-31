@@ -1,0 +1,6 @@
+1 : Early CSE : 42.054796
+2 : Constant Hoisting : 42.054796
+3 : SROA : 42.054796
+4 : Loop Invariant Code Motion : 41.260996
+5 : Scalar Replacement of Aggregates (DT) : 46.437314
+SpeedUp : 1.115000

@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 276.562499
+2 : Early CSE : 265.624999
+3 : Dead Code Elimination : 265.624999
+4 : MergedLoadStoreMotion : 265.624999
+5 : MemCpy Optimization : 265.624999
+6 : Early CSE : 265.624999
+7 : Code sinking : 265.624999
+8 : Constant Hoisting : 265.624999
+9 : Early CSE : 265.624999
+10 : Reassociate expressions : 265.624999
+11 : MemCpy Optimization : 265.624999
+12 : Constant Hoisting : 265.624999
+13 : Aggressive Dead Code Elimination : 265.624999
+14 : Dead Instruction Elimination : 265.624999
+15 : Code sinking : 265.624999
+16 : Aggressive Dead Code Elimination : 265.624999
+17 : Aggressive Dead Code Elimination : 265.624999
+18 : Reassociate expressions : 265.624999
+19 : Induction Variable Simplification : 265.624999
+20 : Code sinking : 265.624999
+SpeedUp : 1.305882

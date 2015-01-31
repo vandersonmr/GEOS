@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 494.938994
+2 : Reassociate expressions : 494.938994
+3 : Dead Code Elimination : 494.938994
+4 : Constant Hoisting : 494.938994
+5 : Loop Invariant Code Motion : 494.938994
+6 : Dead Code Elimination : 494.938994
+7 : SROA : 494.938994
+8 : Promote Memory to Register : 290.476841
+9 : Global Value Numbering : 11.199345
+10 : Lower atomic intrinsics to non-atomic form : 11.199345
+11 : Assign names to anonymous instructions : 11.199345
+12 : Reassociate expressions : 11.199345
+13 : Add DWARF path discriminators : 11.199345
+14 : SROA : 11.199345
+15 : Combine redundant instructions : 11.199345
+16 : Loop-Closed SSA Form Pass : 11.199345
+17 : Dead Code Elimination : 11.199345
+18 : Alignment from assumptions : 11.199345
+19 : Global Value Numbering : 11.199345
+20 : Value Propagation : 11.199345
+SpeedUp : 52.841095

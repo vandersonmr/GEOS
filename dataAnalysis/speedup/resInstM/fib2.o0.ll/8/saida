@@ -1,0 +1,21 @@
+1 : SROA : 189.380358
+2 : Alignment from assumptions : 189.380358
+3 : Code sinking : 189.380358
+4 : Assign names to anonymous instructions : 189.380358
+5 : MergedLoadStoreMotion : 189.380358
+6 : Reassociate expressions : 189.380358
+7 : MemCpy Optimization : 189.380358
+8 : Lower atomic intrinsics to non-atomic form : 189.380358
+9 : Loop-Closed SSA Form Pass : 189.380358
+10 : Alignment from assumptions : 189.380358
+11 : Assign names to anonymous instructions : 189.380358
+12 : Combine redundant instructions : 140.281747
+13 : Add DWARF path discriminators : 140.281747
+14 : Early CSE : 133.267659
+15 : Lower atomic intrinsics to non-atomic form : 133.267659
+16 : Alignment from assumptions : 133.267659
+17 : Remove redundant instructions : 133.267659
+18 : Aggressive Dead Code Elimination : 133.267659
+19 : Dead Instruction Elimination : 133.267659
+20 : Remove redundant instructions : 133.267659
+SpeedUp : 1.421053

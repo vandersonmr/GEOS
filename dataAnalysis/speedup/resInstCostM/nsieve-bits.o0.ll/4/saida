@@ -1,0 +1,11 @@
+1 : Remove redundant instructions : 68.901436
+2 : Promote Memory to Register : 40.638614
+3 : Early CSE : 29.839796
+4 : Loop Invariant Code Motion : 29.839796
+5 : Lower atomic intrinsics to non-atomic form : 29.839796
+6 : Aggressive Dead Code Elimination : 29.839796
+7 : Assign names to anonymous instructions : 29.839796
+8 : Dead Code Elimination : 29.839796
+9 : Value Propagation : 29.839796
+10 : Induction Variable Simplification : 31.282759
+SpeedUp : 2.202537

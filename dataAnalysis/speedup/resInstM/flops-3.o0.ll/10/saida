@@ -1,0 +1,11 @@
+1 : Promote Memory to Register : 218.750000
+2 : Remove redundant instructions : 218.750000
+3 : Promote Memory to Register : 218.750000
+4 : Scalar Replacement of Aggregates (DT) : 218.750000
+5 : Loop Invariant Code Motion : 196.875000
+6 : Global Value Numbering : 190.625000
+7 : Value Propagation : 190.625000
+8 : Add DWARF path discriminators : 190.625000
+9 : Value Propagation : 190.625000
+10 : Induction Variable Simplification : 193.750000
+SpeedUp : 1.645161

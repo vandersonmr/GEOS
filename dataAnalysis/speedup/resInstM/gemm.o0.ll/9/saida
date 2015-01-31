@@ -1,0 +1,9 @@
+1 : Aggressive Dead Code Elimination : 377.048086
+2 : Aggressive Dead Code Elimination : 377.048086
+3 : Code sinking : 377.048086
+4 : Lower atomic intrinsics to non-atomic form : 377.048086
+5 : Code sinking : 377.048086
+6 : MergedLoadStoreMotion : 377.048086
+7 : Alignment from assumptions : 377.048086
+8 : Global Value Numbering : 441.126483
+SpeedUp : 0.854739

@@ -1,0 +1,8 @@
+1 : Early CSE : 83.806469
+2 : Dead Instruction Elimination : 83.806469
+3 : Scalar Replacement of Aggregates (DT) : 66.896618
+4 : MergedLoadStoreMotion : 61.119480
+5 : SROA : 61.119480
+6 : Aggressive Dead Code Elimination : 61.119480
+7 : Reassociate expressions : 61.643256
+SpeedUp : 2.262270

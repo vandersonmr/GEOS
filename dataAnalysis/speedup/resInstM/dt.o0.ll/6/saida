@@ -1,0 +1,7 @@
+1 : Assign names to anonymous instructions : 42.977874
+2 : Induction Variable Simplification : 42.977874
+3 : Reassociate expressions : 42.977874
+4 : MergedLoadStoreMotion : 42.977874
+5 : Add DWARF path discriminators : 42.977874
+6 : Global Value Numbering : 51.028276
+SpeedUp : 0.842236

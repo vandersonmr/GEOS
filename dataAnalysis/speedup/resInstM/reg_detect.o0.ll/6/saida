@@ -1,0 +1,21 @@
+1 : Value Propagation : 11.752421
+2 : Scalar Replacement of Aggregates (DT) : 7.653812
+3 : Assign names to anonymous instructions : 7.653812
+4 : Remove redundant instructions : 7.652412
+5 : Alignment from assumptions : 7.652412
+6 : Global Value Numbering : 3.710610
+7 : Loop Invariant Code Motion : 2.906108
+8 : Constant Hoisting : 2.898608
+9 : MemCpy Optimization : 2.898608
+10 : Aggressive Dead Code Elimination : 2.898608
+11 : Global Value Numbering : 2.898608
+12 : MemCpy Optimization : 2.898608
+13 : Remove redundant instructions : 2.898608
+14 : Add DWARF path discriminators : 2.898608
+15 : SROA : 2.898608
+16 : Assign names to anonymous instructions : 2.898608
+17 : Induction Variable Simplification : 2.623109
+18 : Induction Variable Simplification : 2.623109
+19 : Aggressive Dead Code Elimination : 2.623109
+20 : Induction Variable Simplification : 2.623109
+SpeedUp : 4.480341

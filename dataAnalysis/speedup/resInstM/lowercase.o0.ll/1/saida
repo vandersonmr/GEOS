@@ -1,0 +1,8 @@
+1 : Lower atomic intrinsics to non-atomic form : 2405.600027
+2 : Dead Instruction Elimination : 2405.600027
+3 : Code sinking : 2393.600027
+4 : Early CSE : 2139.200024
+5 : Scalar Replacement of Aggregates (DT) : 1417.200014
+6 : Scalar Replacement of Aggregates (DT) : 1373.600014
+7 : Loop Invariant Code Motion : 1423.200014
+SpeedUp : 1.690275

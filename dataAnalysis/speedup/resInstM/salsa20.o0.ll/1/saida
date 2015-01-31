@@ -1,0 +1,18 @@
+1 : Loop-Closed SSA Form Pass : 2402.819183
+2 : Value Propagation : 2402.819183
+3 : Induction Variable Simplification : 2402.819183
+4 : Promote Memory to Register : 2275.063301
+5 : Add DWARF path discriminators : 2246.486328
+6 : Combine redundant instructions : 1584.509138
+7 : Loop-Closed SSA Form Pass : 1584.509138
+8 : Constant Hoisting : 1584.509138
+9 : Dead Code Elimination : 1584.509138
+10 : Early CSE : 1259.067838
+11 : Lower atomic intrinsics to non-atomic form : 1259.067838
+12 : Add DWARF path discriminators : 1259.067838
+13 : Dead Code Elimination : 1259.067838
+14 : MergedLoadStoreMotion : 1259.067838
+15 : Promote Memory to Register : 1259.067838
+16 : MergedLoadStoreMotion : 1259.067838
+17 : Loop Invariant Code Motion : 1285.963813
+SpeedUp : 1.868497

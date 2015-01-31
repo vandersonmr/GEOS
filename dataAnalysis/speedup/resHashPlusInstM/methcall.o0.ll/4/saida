@@ -1,0 +1,5 @@
+1 : MergedLoadStoreMotion : 133682.475345
+2 : Scalar Replacement of Aggregates (DT) : 13741.906704
+3 : Constant Hoisting : 13741.906704
+4 : Early CSE : 25957.531729
+SpeedUp : 5.150046

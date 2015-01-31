@@ -1,0 +1,11 @@
+1 : Code sinking : 502.112500
+2 : Scalar Replacement of Aggregates (DT) : 307.395000
+3 : Aggressive Dead Code Elimination : 307.395000
+4 : Dead Code Elimination : 307.395000
+5 : Value Propagation : 307.395000
+6 : Lower atomic intrinsics to non-atomic form : 307.395000
+7 : Lower atomic intrinsics to non-atomic form : 307.395000
+8 : Early CSE : 286.905000
+9 : Combine redundant instructions : 276.630000
+10 : Induction Variable Simplification : 286.875000
+SpeedUp : 1.750283

@@ -1,0 +1,8 @@
+1 : Combine redundant instructions : 0.000001
+2 : SROA : 0.000001
+3 : Reassociate expressions : 0.000001
+4 : Loop Invariant Code Motion : 0.000001
+5 : Dead Code Elimination : 0.000001
+6 : Constant Hoisting : 0.000001
+7 : SROA : 0.000001
+SpeedUp : 0.844444

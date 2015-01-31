@@ -1,0 +1,6 @@
+1 : Alignment from assumptions : 0.000001
+2 : Global Value Numbering : 0.000001
+3 : Aggressive Dead Code Elimination : 0.000001
+4 : Scalar Replacement of Aggregates (DT) : 0.000001
+5 : Induction Variable Simplification : 0.000001
+SpeedUp : 2.142857

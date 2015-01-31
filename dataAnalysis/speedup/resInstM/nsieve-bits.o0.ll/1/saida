@@ -1,0 +1,12 @@
+1 : Loop Invariant Code Motion : 96.456822
+2 : Dead Instruction Elimination : 96.456822
+3 : MemCpy Optimization : 96.456822
+4 : Alignment from assumptions : 96.456822
+5 : Aggressive Dead Code Elimination : 96.456822
+6 : Constant Hoisting : 96.456822
+7 : MemCpy Optimization : 96.456822
+8 : Assign names to anonymous instructions : 96.456822
+9 : SROA : 96.456822
+10 : Add DWARF path discriminators : 96.456822
+11 : Global Value Numbering : 96.536798
+SpeedUp : 0.999172

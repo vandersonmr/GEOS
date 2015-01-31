@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 142.373172
+2 : Scalar Replacement of Aggregates (DT) : 138.363475
+3 : Lower atomic intrinsics to non-atomic form : 138.363475
+4 : Combine redundant instructions : 138.363475
+5 : Code sinking : 138.363475
+6 : Add DWARF path discriminators : 138.363475
+7 : Value Propagation : 138.363475
+8 : Dead Instruction Elimination : 138.363475
+9 : Dead Instruction Elimination : 138.363475
+10 : Loop Invariant Code Motion : 128.951535
+11 : Early CSE : 126.090222
+12 : Combine redundant instructions : 126.090222
+13 : Loop Invariant Code Motion : 126.090222
+14 : Alignment from assumptions : 126.090222
+15 : Add DWARF path discriminators : 126.090222
+16 : Remove redundant instructions : 126.090222
+17 : Code sinking : 126.090222
+18 : MergedLoadStoreMotion : 126.090222
+19 : MergedLoadStoreMotion : 126.090222
+20 : Scalar Replacement of Aggregates (DT) : 126.090222
+SpeedUp : 1.138829

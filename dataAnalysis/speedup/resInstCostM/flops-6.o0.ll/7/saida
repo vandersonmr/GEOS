@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 337.499999
+2 : Promote Memory to Register : 268.749999
+3 : Scalar Replacement of Aggregates (DT) : 268.749999
+4 : Early CSE : 259.374999
+5 : MergedLoadStoreMotion : 259.374999
+6 : Scalar Replacement of Aggregates (DT) : 259.374999
+7 : Loop-Closed SSA Form Pass : 259.374999
+8 : Alignment from assumptions : 259.374999
+9 : Loop Invariant Code Motion : 239.062499
+10 : MemCpy Optimization : 239.062499
+11 : Constant Hoisting : 239.062499
+12 : Code sinking : 239.062499
+13 : Early CSE : 239.062499
+14 : Value Propagation : 239.062499
+15 : Early CSE : 239.062499
+16 : Value Propagation : 239.062499
+17 : Promote Memory to Register : 239.062499
+18 : Dead Code Elimination : 239.062499
+19 : Code sinking : 239.062499
+20 : Alignment from assumptions : 239.062499
+SpeedUp : 1.411765

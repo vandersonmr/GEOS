@@ -1,0 +1,4 @@
+1 : Constant Hoisting : 0.000001
+2 : Remove redundant instructions : 0.000001
+3 : Loop Invariant Code Motion : 0.000001
+SpeedUp : 1.521739

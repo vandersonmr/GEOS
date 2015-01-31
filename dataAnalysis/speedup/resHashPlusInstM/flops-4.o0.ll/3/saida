@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 54554.991137
+2 : Value Propagation : 54554.991137
+3 : Add DWARF path discriminators : 54554.991137
+4 : Induction Variable Simplification : 54554.991137
+5 : Constant Hoisting : 54554.991137
+6 : Remove redundant instructions : 54554.991137
+7 : Remove redundant instructions : 54554.991137
+8 : SROA : 54554.991137
+9 : Constant Hoisting : 54554.991137
+10 : Dead Instruction Elimination : 54554.991137
+11 : Add DWARF path discriminators : 54554.991137
+12 : MergedLoadStoreMotion : 54554.991137
+13 : SROA : 54554.991137
+14 : Code sinking : 54554.991137
+15 : Alignment from assumptions : 54554.991137
+16 : Loop-Closed SSA Form Pass : 54554.991137
+17 : Combine redundant instructions : 50405.920603
+18 : Code sinking : 50405.920603
+19 : Dead Instruction Elimination : 50405.920603
+20 : SROA : 50405.920603
+SpeedUp : 1.082313

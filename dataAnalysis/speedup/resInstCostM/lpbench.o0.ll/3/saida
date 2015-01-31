@@ -1,0 +1,20 @@
+1 : Combine redundant instructions : 537.561918
+2 : Assign names to anonymous instructions : 537.561918
+3 : Combine redundant instructions : 537.561918
+4 : Loop-Closed SSA Form Pass : 537.561918
+5 : Assign names to anonymous instructions : 537.561918
+6 : Dead Code Elimination : 537.561918
+7 : Early CSE : 483.888168
+8 : Assign names to anonymous instructions : 483.807703
+9 : Loop Invariant Code Motion : 483.807223
+10 : Aggressive Dead Code Elimination : 483.807223
+11 : Loop-Closed SSA Form Pass : 483.807223
+12 : Early CSE : 483.807223
+13 : Loop-Closed SSA Form Pass : 483.807223
+14 : Scalar Replacement of Aggregates (DT) : 322.164257
+15 : Aggressive Dead Code Elimination : 322.044100
+16 : Global Value Numbering : 1.264380
+17 : Promote Memory to Register : 1.264380
+18 : Dead Instruction Elimination : 1.264380
+19 : Induction Variable Simplification : 1.264500
+SpeedUp : 446.682898

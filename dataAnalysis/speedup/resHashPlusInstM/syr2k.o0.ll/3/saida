@@ -1,0 +1,21 @@
+1 : Constant Hoisting : 2494.943098
+2 : SROA : 2494.943098
+3 : Loop-Closed SSA Form Pass : 2494.943098
+4 : Code sinking : 2494.943098
+5 : Reassociate expressions : 2494.943098
+6 : Dead Code Elimination : 2494.943098
+7 : Dead Instruction Elimination : 2494.943098
+8 : Dead Code Elimination : 2494.943098
+9 : Reassociate expressions : 2494.943098
+10 : Loop-Closed SSA Form Pass : 2494.943098
+11 : Reassociate expressions : 2494.943098
+12 : Global Value Numbering : 832.011041
+13 : Value Propagation : 832.011041
+14 : Assign names to anonymous instructions : 832.011041
+15 : Assign names to anonymous instructions : 832.011041
+16 : Reassociate expressions : 832.011041
+17 : Lower atomic intrinsics to non-atomic form : 832.011041
+18 : Alignment from assumptions : 832.011041
+19 : Aggressive Dead Code Elimination : 832.011041
+20 : Value Propagation : 832.011041
+SpeedUp : 2.998690

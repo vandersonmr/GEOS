@@ -1,0 +1,21 @@
+1 : Loop Invariant Code Motion : 12.645241
+2 : Induction Variable Simplification : 12.645241
+3 : Assign names to anonymous instructions : 12.645241
+4 : Combine redundant instructions : 11.844801
+5 : MemCpy Optimization : 11.844801
+6 : Induction Variable Simplification : 11.844801
+7 : SROA : 11.844801
+8 : Remove redundant instructions : 11.844801
+9 : Combine redundant instructions : 11.844801
+10 : Induction Variable Simplification : 11.844801
+11 : Combine redundant instructions : 11.844801
+12 : Promote Memory to Register : 7.683201
+13 : Add DWARF path discriminators : 4.962881
+14 : Value Propagation : 4.962881
+15 : Dead Code Elimination : 4.962881
+16 : Dead Instruction Elimination : 4.962881
+17 : Dead Code Elimination : 4.962881
+18 : SROA : 4.962881
+19 : Scalar Replacement of Aggregates (DT) : 4.962881
+20 : Value Propagation : 4.962881
+SpeedUp : 2.547964

@@ -1,0 +1,15 @@
+1 : Assign names to anonymous instructions : 0.149048
+2 : Promote Memory to Register : 0.077885
+3 : MemCpy Optimization : 0.077885
+4 : Aggressive Dead Code Elimination : 0.077885
+5 : Aggressive Dead Code Elimination : 0.077885
+6 : Dead Code Elimination : 0.077885
+7 : Alignment from assumptions : 0.077885
+8 : Dead Code Elimination : 0.077885
+9 : Code sinking : 0.077885
+10 : Code sinking : 0.077885
+11 : Constant Hoisting : 0.077885
+12 : Aggressive Dead Code Elimination : 0.077885
+13 : Loop Invariant Code Motion : 0.071005
+14 : Reassociate expressions : 0.071333
+SpeedUp : 2.089455

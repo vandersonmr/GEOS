@@ -1,0 +1,21 @@
+1 : SROA : 591.785657
+2 : Code sinking : 591.785657
+3 : Constant Hoisting : 591.785657
+4 : Lower atomic intrinsics to non-atomic form : 591.785657
+5 : Loop Invariant Code Motion : 591.785657
+6 : Scalar Replacement of Aggregates (DT) : 355.006249
+7 : Early CSE : 258.222705
+8 : Add DWARF path discriminators : 258.222705
+9 : Lower atomic intrinsics to non-atomic form : 258.222705
+10 : Combine redundant instructions : 258.201641
+11 : Alignment from assumptions : 258.201641
+12 : MemCpy Optimization : 258.201641
+13 : Global Value Numbering : 11.188849
+14 : Value Propagation : 11.188849
+15 : Value Propagation : 11.188849
+16 : Remove redundant instructions : 11.188849
+17 : Induction Variable Simplification : 11.188849
+18 : MergedLoadStoreMotion : 11.188849
+19 : Global Value Numbering : 11.188849
+20 : Aggressive Dead Code Elimination : 11.188849
+SpeedUp : 52.890665

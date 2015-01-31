@@ -1,0 +1,13 @@
+1 : MergedLoadStoreMotion : 17.372513
+2 : Code sinking : 17.372513
+3 : Combine redundant instructions : 15.348279
+4 : SROA : 15.348279
+5 : Add DWARF path discriminators : 15.348279
+6 : Global Value Numbering : 12.779050
+7 : Constant Hoisting : 12.779050
+8 : Remove redundant instructions : 12.779050
+9 : Promote Memory to Register : 8.449294
+10 : Combine redundant instructions : 7.012652
+11 : Reassociate expressions : 7.012652
+12 : Loop-Closed SSA Form Pass : 7.211853
+SpeedUp : 2.408884

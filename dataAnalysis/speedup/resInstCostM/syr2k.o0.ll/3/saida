@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 591.785657
+2 : Early CSE : 516.445369
+3 : Dead Instruction Elimination : 516.445369
+4 : Assign names to anonymous instructions : 516.445369
+5 : MergedLoadStoreMotion : 516.445369
+6 : Reassociate expressions : 516.445369
+7 : Reassociate expressions : 516.445369
+8 : Scalar Replacement of Aggregates (DT) : 355.006249
+9 : Scalar Replacement of Aggregates (DT) : 322.720553
+10 : MergedLoadStoreMotion : 322.720553
+11 : Constant Hoisting : 322.720553
+12 : Lower atomic intrinsics to non-atomic form : 322.720553
+13 : Induction Variable Simplification : 322.720553
+14 : Alignment from assumptions : 322.720553
+15 : Reassociate expressions : 322.720553
+16 : Aggressive Dead Code Elimination : 322.720553
+17 : Early CSE : 322.720553
+18 : Value Propagation : 322.720553
+19 : Reassociate expressions : 322.720553
+20 : Remove redundant instructions : 322.720553
+SpeedUp : 1.833740

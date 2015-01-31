@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 312.340153
+2 : Assign names to anonymous instructions : 312.340153
+3 : Loop-Closed SSA Form Pass : 312.340153
+4 : Aggressive Dead Code Elimination : 312.340153
+5 : Assign names to anonymous instructions : 312.340153
+6 : Induction Variable Simplification : 312.340153
+7 : MemCpy Optimization : 312.340153
+8 : Assign names to anonymous instructions : 312.340153
+9 : Aggressive Dead Code Elimination : 312.340153
+10 : Dead Code Elimination : 312.340153
+11 : Early CSE : 269.243577
+12 : Constant Hoisting : 269.243577
+13 : Lower atomic intrinsics to non-atomic form : 269.243577
+14 : Induction Variable Simplification : 269.243577
+15 : Dead Code Elimination : 269.243577
+16 : MemCpy Optimization : 269.243577
+17 : Promote Memory to Register : 183.039785
+18 : Reassociate expressions : 161.543977
+19 : Induction Variable Simplification : 161.543977
+20 : Global Value Numbering : 182.872013
+SpeedUp : 1.707971

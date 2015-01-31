@@ -1,0 +1,9 @@
+1 : Dead Instruction Elimination : 51.603458
+2 : Code sinking : 51.603458
+3 : Induction Variable Simplification : 51.481755
+4 : Dead Instruction Elimination : 51.481755
+5 : MergedLoadStoreMotion : 51.481755
+6 : Loop-Closed SSA Form Pass : 51.481755
+7 : Promote Memory to Register : 33.699942
+8 : Loop Invariant Code Motion : 34.953388
+SpeedUp : 1.476351

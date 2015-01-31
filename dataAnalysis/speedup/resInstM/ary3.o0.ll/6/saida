@@ -1,0 +1,5 @@
+1 : Remove redundant instructions : 270.210401
+2 : Reassociate expressions : 270.210401
+3 : Loop Invariant Code Motion : 270.210401
+4 : Global Value Numbering : 300.240231
+SpeedUp : 0.899981

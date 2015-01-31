@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 1142.052068
+2 : SROA : 1142.052068
+3 : Assign names to anonymous instructions : 1142.052068
+4 : MemCpy Optimization : 1142.052068
+5 : Promote Memory to Register : 900.904311
+6 : Reassociate expressions : 900.904311
+7 : Dead Code Elimination : 900.904311
+8 : Add DWARF path discriminators : 900.904311
+9 : MergedLoadStoreMotion : 900.904311
+10 : Remove redundant instructions : 900.904311
+11 : SROA : 900.904311
+12 : Early CSE : 871.270346
+13 : Dead Instruction Elimination : 871.270346
+14 : Induction Variable Simplification : 328.852722
+15 : Lower atomic intrinsics to non-atomic form : 328.852722
+16 : Aggressive Dead Code Elimination : 328.852722
+17 : Dead Code Elimination : 328.852722
+18 : Aggressive Dead Code Elimination : 328.852722
+19 : Alignment from assumptions : 328.852722
+20 : MemCpy Optimization : 328.852722
+SpeedUp : 3.472838

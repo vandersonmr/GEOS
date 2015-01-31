@@ -1,0 +1,17 @@
+1 : Promote Memory to Register : 15.841994
+2 : Combine redundant instructions : 15.069341
+3 : Reassociate expressions : 15.069341
+4 : Dead Instruction Elimination : 15.069341
+5 : Early CSE : 12.976847
+6 : Dead Instruction Elimination : 12.976847
+7 : SROA : 12.976847
+8 : Dead Code Elimination : 12.976847
+9 : Value Propagation : 12.976847
+10 : Assign names to anonymous instructions : 12.976847
+11 : MemCpy Optimization : 12.976847
+12 : Alignment from assumptions : 12.976847
+13 : Reassociate expressions : 12.976847
+14 : Reassociate expressions : 12.976847
+15 : SROA : 12.976847
+16 : Loop-Closed SSA Form Pass : 13.220954
+SpeedUp : 1.677595

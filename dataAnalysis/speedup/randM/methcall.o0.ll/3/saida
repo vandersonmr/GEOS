@@ -1,0 +1,5 @@
+1 : Constant Hoisting : 0.000001
+2 : MergedLoadStoreMotion : 0.000001
+3 : Global Value Numbering : 0.000001
+4 : Reassociate expressions : 0.000001
+SpeedUp : 0.945946

@@ -1,0 +1,21 @@
+1 : Code sinking : 245.312500
+2 : MemCpy Optimization : 245.312500
+3 : Code sinking : 245.312500
+4 : Loop-Closed SSA Form Pass : 245.312500
+5 : Dead Instruction Elimination : 245.312500
+6 : Aggressive Dead Code Elimination : 245.312500
+7 : Lower atomic intrinsics to non-atomic form : 245.312500
+8 : Early CSE : 193.750000
+9 : Global Value Numbering : 192.187500
+10 : Aggressive Dead Code Elimination : 192.187500
+11 : Alignment from assumptions : 192.187500
+12 : Loop-Closed SSA Form Pass : 192.187500
+13 : Dead Code Elimination : 192.187500
+14 : SROA : 192.187500
+15 : Add DWARF path discriminators : 192.187500
+16 : Value Propagation : 192.187500
+17 : Promote Memory to Register : 167.187500
+18 : SROA : 165.625000
+19 : Aggressive Dead Code Elimination : 165.625000
+20 : Alignment from assumptions : 165.625000
+SpeedUp : 1.481132

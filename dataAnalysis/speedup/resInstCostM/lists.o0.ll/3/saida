@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 1832.640000
+2 : Scalar Replacement of Aggregates (DT) : 885.300000
+3 : MemCpy Optimization : 879.300000
+4 : Combine redundant instructions : 812.820000
+5 : Reassociate expressions : 812.820000
+6 : Add DWARF path discriminators : 812.820000
+7 : Constant Hoisting : 812.820000
+8 : Alignment from assumptions : 812.820000
+9 : Global Value Numbering : 741.420000
+10 : Scalar Replacement of Aggregates (DT) : 741.420000
+11 : Add DWARF path discriminators : 741.420000
+12 : MemCpy Optimization : 741.420000
+13 : Global Value Numbering : 741.420000
+14 : Constant Hoisting : 741.420000
+15 : Dead Instruction Elimination : 741.420000
+16 : Alignment from assumptions : 741.420000
+17 : MemCpy Optimization : 741.420000
+18 : Early CSE : 741.420000
+19 : Code sinking : 741.420000
+20 : Combine redundant instructions : 741.420000
+SpeedUp : 2.512260

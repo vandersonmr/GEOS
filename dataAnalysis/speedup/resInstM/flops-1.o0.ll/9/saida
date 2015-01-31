@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 265.625000
+2 : Induction Variable Simplification : 265.625000
+3 : Lower atomic intrinsics to non-atomic form : 265.625000
+4 : Global Value Numbering : 265.625000
+5 : Reassociate expressions : 265.625000
+6 : Constant Hoisting : 265.625000
+7 : MergedLoadStoreMotion : 265.625000
+8 : Constant Hoisting : 265.625000
+9 : Constant Hoisting : 265.625000
+10 : MemCpy Optimization : 265.625000
+11 : Early CSE : 225.000000
+12 : MemCpy Optimization : 225.000000
+13 : Global Value Numbering : 225.000000
+14 : SROA : 225.000000
+15 : Loop-Closed SSA Form Pass : 225.000000
+16 : SROA : 225.000000
+17 : Aggressive Dead Code Elimination : 225.000000
+18 : Lower atomic intrinsics to non-atomic form : 225.000000
+19 : MergedLoadStoreMotion : 225.000000
+20 : Remove redundant instructions : 225.000000
+SpeedUp : 1.194444

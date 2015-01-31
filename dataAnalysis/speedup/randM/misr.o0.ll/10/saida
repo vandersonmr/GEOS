@@ -1,0 +1,4 @@
+1 : Combine redundant instructions : 0.000002
+2 : Aggressive Dead Code Elimination : 0.000002
+3 : Remove redundant instructions : 0.000002
+SpeedUp : 1.079208

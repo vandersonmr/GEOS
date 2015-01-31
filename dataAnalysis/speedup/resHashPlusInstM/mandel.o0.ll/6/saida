@@ -1,0 +1,9 @@
+1 : Value Propagation : 176.547122
+2 : Value Propagation : 176.547122
+3 : Dead Code Elimination : 176.547122
+4 : Aggressive Dead Code Elimination : 176.547122
+5 : Dead Code Elimination : 176.547122
+6 : Combine redundant instructions : 108.115961
+7 : Remove redundant instructions : 108.115961
+8 : Promote Memory to Register : 113.887515
+SpeedUp : 1.550189

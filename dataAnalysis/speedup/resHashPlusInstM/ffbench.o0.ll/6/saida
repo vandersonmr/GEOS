@@ -1,0 +1,9 @@
+1 : Dead Instruction Elimination : 266.005330
+2 : Dead Instruction Elimination : 266.005330
+3 : Code sinking : 266.005330
+4 : Value Propagation : 266.005330
+5 : Aggressive Dead Code Elimination : 266.005330
+6 : Aggressive Dead Code Elimination : 266.005330
+7 : Assign names to anonymous instructions : 266.005330
+8 : Early CSE : 272.576898
+SpeedUp : 0.975891

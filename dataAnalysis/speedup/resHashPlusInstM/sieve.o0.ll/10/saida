@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 6884.016552
+2 : Combine redundant instructions : 6659.481713
+3 : SROA : 6659.481713
+4 : Alignment from assumptions : 6659.481713
+5 : Constant Hoisting : 6659.481713
+6 : Value Propagation : 6659.481713
+7 : Loop Invariant Code Motion : 6659.481713
+8 : Code sinking : 6659.481713
+9 : MemCpy Optimization : 6659.481713
+10 : Constant Hoisting : 6659.481713
+11 : Loop-Closed SSA Form Pass : 6659.481713
+12 : MergedLoadStoreMotion : 6659.481713
+13 : Add DWARF path discriminators : 6659.481713
+14 : Assign names to anonymous instructions : 6659.481713
+15 : Alignment from assumptions : 6659.481713
+16 : MergedLoadStoreMotion : 6659.481713
+17 : Combine redundant instructions : 6659.481713
+18 : Remove redundant instructions : 6659.481713
+19 : Add DWARF path discriminators : 6659.481713
+20 : Alignment from assumptions : 6659.481713
+SpeedUp : 1.033717

@@ -1,0 +1,10 @@
+1 : Global Value Numbering : 2.663928
+2 : Loop-Closed SSA Form Pass : 2.663928
+3 : MergedLoadStoreMotion : 2.663928
+4 : Early CSE : 2.524970
+5 : Add DWARF path discriminators : 2.524970
+6 : Value Propagation : 2.524970
+7 : Global Value Numbering : 2.524970
+8 : Promote Memory to Register : 2.164400
+9 : Alignment from assumptions : 2.416028
+SpeedUp : 1.177093

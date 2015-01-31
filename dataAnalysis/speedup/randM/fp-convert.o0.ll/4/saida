@@ -1,0 +1,5 @@
+1 : Loop-Closed SSA Form Pass : 0.000000
+2 : MemCpy Optimization : 0.000000
+3 : Remove redundant instructions : 0.000000
+4 : Aggressive Dead Code Elimination : 0.000000
+SpeedUp : 0.967742

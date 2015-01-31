@@ -1,0 +1,17 @@
+1 : Global Value Numbering : 204.687500
+2 : Lower atomic intrinsics to non-atomic form : 204.687500
+3 : Code sinking : 204.687500
+4 : Aggressive Dead Code Elimination : 204.687500
+5 : Promote Memory to Register : 143.750000
+6 : Constant Hoisting : 143.750000
+7 : Aggressive Dead Code Elimination : 143.750000
+8 : Assign names to anonymous instructions : 143.750000
+9 : Aggressive Dead Code Elimination : 143.750000
+10 : Add DWARF path discriminators : 143.750000
+11 : Assign names to anonymous instructions : 143.750000
+12 : Alignment from assumptions : 143.750000
+13 : Dead Code Elimination : 143.750000
+14 : Lower atomic intrinsics to non-atomic form : 143.750000
+15 : Global Value Numbering : 143.750000
+16 : Loop-Closed SSA Form Pass : 145.312500
+SpeedUp : 1.419355

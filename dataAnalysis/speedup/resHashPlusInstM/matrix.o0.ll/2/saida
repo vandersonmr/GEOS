@@ -1,0 +1,7 @@
+1 : Alignment from assumptions : 6265.308210
+2 : Reassociate expressions : 6265.308210
+3 : Dead Code Elimination : 6265.308210
+4 : Promote Memory to Register : 5139.303766
+5 : Constant Hoisting : 5139.303766
+6 : Combine redundant instructions : 5644.373559
+SpeedUp : 1.110009

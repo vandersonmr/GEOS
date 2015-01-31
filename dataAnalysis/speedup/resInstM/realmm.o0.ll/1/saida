@@ -1,0 +1,19 @@
+1 : Promote Memory to Register : 0.127767
+2 : MemCpy Optimization : 0.127767
+3 : SROA : 0.127767
+4 : Early CSE : 0.120879
+5 : Value Propagation : 0.120879
+6 : Scalar Replacement of Aggregates (DT) : 0.120879
+7 : Alignment from assumptions : 0.120879
+8 : Loop Invariant Code Motion : 0.100719
+9 : Early CSE : 0.100719
+10 : Promote Memory to Register : 0.100719
+11 : Induction Variable Simplification : 0.093983
+12 : Loop-Closed SSA Form Pass : 0.093823
+13 : Loop Invariant Code Motion : 0.093823
+14 : Code sinking : 0.093823
+15 : Value Propagation : 0.093823
+16 : Lower atomic intrinsics to non-atomic form : 0.093823
+17 : SROA : 0.093823
+18 : Reassociate expressions : 0.094151
+SpeedUp : 2.111045

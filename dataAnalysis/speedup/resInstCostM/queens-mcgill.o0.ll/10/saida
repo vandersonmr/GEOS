@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 96.400683
+2 : MemCpy Optimization : 96.400683
+3 : Promote Memory to Register : 40.780938
+4 : Dead Code Elimination : 40.780938
+5 : Alignment from assumptions : 40.780938
+6 : Loop Invariant Code Motion : 39.680423
+7 : Early CSE : 39.680423
+8 : Promote Memory to Register : 39.680423
+9 : Constant Hoisting : 39.680423
+10 : Aggressive Dead Code Elimination : 39.680423
+11 : Scalar Replacement of Aggregates (DT) : 39.680423
+12 : MemCpy Optimization : 39.680423
+13 : Combine redundant instructions : 39.680423
+14 : Induction Variable Simplification : 39.680423
+15 : Promote Memory to Register : 39.680423
+16 : Promote Memory to Register : 39.680423
+17 : Aggressive Dead Code Elimination : 39.680423
+18 : Reassociate expressions : 39.680423
+19 : Code sinking : 39.680423
+20 : Constant Hoisting : 39.680423
+SpeedUp : 2.429427

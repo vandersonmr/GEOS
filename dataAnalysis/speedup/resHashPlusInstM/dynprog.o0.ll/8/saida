@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 512.955118
+2 : Scalar Replacement of Aggregates (DT) : 512.955118
+3 : Assign names to anonymous instructions : 512.955118
+4 : SROA : 512.955118
+5 : Aggressive Dead Code Elimination : 512.955118
+6 : Reassociate expressions : 512.955118
+7 : Value Propagation : 512.955118
+8 : Dead Instruction Elimination : 512.955118
+9 : Loop-Closed SSA Form Pass : 512.954478
+10 : Assign names to anonymous instructions : 512.954478
+11 : Dead Code Elimination : 512.954478
+12 : Promote Memory to Register : 512.954478
+13 : Dead Code Elimination : 512.954478
+14 : Constant Hoisting : 512.954478
+15 : Combine redundant instructions : 494.663998
+16 : Combine redundant instructions : 494.663998
+17 : Reassociate expressions : 494.663998
+18 : Dead Code Elimination : 494.663998
+19 : SROA : 494.663998
+20 : Induction Variable Simplification : 294.726379
+SpeedUp : 2.008042

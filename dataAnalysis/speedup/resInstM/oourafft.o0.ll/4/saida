@@ -1,0 +1,17 @@
+1 : Loop-Closed SSA Form Pass : 1230.106588
+2 : Loop-Closed SSA Form Pass : 1230.106588
+3 : Code sinking : 1230.106588
+4 : Dead Instruction Elimination : 1230.106588
+5 : Combine redundant instructions : 1135.128548
+6 : Code sinking : 1135.128548
+7 : Value Propagation : 1135.128548
+8 : Early CSE : 1121.316092
+9 : Add DWARF path discriminators : 1119.522053
+10 : Global Value Numbering : 699.891877
+11 : Global Value Numbering : 699.891877
+12 : Lower atomic intrinsics to non-atomic form : 699.891877
+13 : Global Value Numbering : 699.891877
+14 : Lower atomic intrinsics to non-atomic form : 699.891877
+15 : Combine redundant instructions : 699.891877
+16 : Reassociate expressions : 699.891879
+SpeedUp : 1.757567

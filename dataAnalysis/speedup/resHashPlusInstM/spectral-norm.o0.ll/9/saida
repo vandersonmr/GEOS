@@ -1,0 +1,8 @@
+1 : MemCpy Optimization : 355.055734
+2 : Assign names to anonymous instructions : 355.055734
+3 : Value Propagation : 355.055734
+4 : MemCpy Optimization : 355.055734
+5 : Value Propagation : 355.055734
+6 : Constant Hoisting : 355.055734
+7 : Scalar Replacement of Aggregates (DT) : 851.617801
+SpeedUp : 0.416919

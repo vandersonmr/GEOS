@@ -1,0 +1,5 @@
+1 : MergedLoadStoreMotion : 2291.200886
+2 : Code sinking : 2291.200886
+3 : Scalar Replacement of Aggregates (DT) : 2162.436405
+4 : Loop Invariant Code Motion : 2431.396157
+SpeedUp : 0.942340

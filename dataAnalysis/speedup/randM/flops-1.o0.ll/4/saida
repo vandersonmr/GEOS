@@ -1,0 +1,8 @@
+1 : Global Value Numbering : 0.000000
+2 : Add DWARF path discriminators : 0.000000
+3 : Early CSE : 0.000000
+4 : Alignment from assumptions : 0.000000
+5 : Value Propagation : 0.000000
+6 : Dead Instruction Elimination : 0.000000
+7 : Loop-Closed SSA Form Pass : 0.000000
+SpeedUp : 1.040000

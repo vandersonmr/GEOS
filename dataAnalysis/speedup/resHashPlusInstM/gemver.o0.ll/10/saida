@@ -1,0 +1,11 @@
+1 : Aggressive Dead Code Elimination : 101.011273
+2 : Value Propagation : 101.011273
+3 : Assign names to anonymous instructions : 101.011273
+4 : Dead Instruction Elimination : 101.011273
+5 : Dead Code Elimination : 101.011273
+6 : Add DWARF path discriminators : 101.011273
+7 : Promote Memory to Register : 95.351501
+8 : Loop-Closed SSA Form Pass : 95.351501
+9 : Dead Code Elimination : 95.351501
+10 : Early CSE : 103.129071
+SpeedUp : 0.979465

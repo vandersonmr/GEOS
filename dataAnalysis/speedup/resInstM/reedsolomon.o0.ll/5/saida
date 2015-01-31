@@ -1,0 +1,10 @@
+1 : Assign names to anonymous instructions : 700.576343
+2 : Code sinking : 700.576343
+3 : Remove redundant instructions : 700.576343
+4 : Scalar Replacement of Aggregates (DT) : 542.062308
+5 : Global Value Numbering : 409.047878
+6 : Global Value Numbering : 409.047878
+7 : Early CSE : 392.674102
+8 : Scalar Replacement of Aggregates (DT) : 392.674102
+9 : Loop-Closed SSA Form Pass : 393.024527
+SpeedUp : 1.782526

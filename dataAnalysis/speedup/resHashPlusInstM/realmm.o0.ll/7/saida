@@ -1,0 +1,5 @@
+1 : Alignment from assumptions : 1.109713
+2 : Aggressive Dead Code Elimination : 1.109713
+3 : SROA : 1.109713
+4 : Promote Memory to Register : 4.435317
+SpeedUp : 0.250199

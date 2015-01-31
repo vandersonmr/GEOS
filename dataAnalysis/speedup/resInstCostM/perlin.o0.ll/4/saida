@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 111.779157
+2 : Combine redundant instructions : 111.377715
+3 : Add DWARF path discriminators : 111.377715
+4 : Loop Invariant Code Motion : 111.377715
+5 : Constant Hoisting : 111.377715
+6 : Dead Code Elimination : 111.377715
+7 : Promote Memory to Register : 111.377715
+8 : Combine redundant instructions : 111.377715
+9 : Aggressive Dead Code Elimination : 111.377715
+10 : Dead Code Elimination : 111.377715
+11 : MergedLoadStoreMotion : 111.377715
+12 : Dead Code Elimination : 111.377715
+13 : Induction Variable Simplification : 111.377715
+14 : Scalar Replacement of Aggregates (DT) : 111.377715
+15 : Induction Variable Simplification : 111.377715
+16 : Alignment from assumptions : 111.377715
+17 : Aggressive Dead Code Elimination : 111.377715
+18 : Alignment from assumptions : 111.377715
+19 : Aggressive Dead Code Elimination : 111.377715
+20 : Reassociate expressions : 111.377715
+SpeedUp : 2.509011

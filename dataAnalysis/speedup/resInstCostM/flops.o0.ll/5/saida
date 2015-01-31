@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 1142.052068
+2 : MergedLoadStoreMotion : 1142.052068
+3 : Assign names to anonymous instructions : 1142.052068
+4 : Lower atomic intrinsics to non-atomic form : 1142.052068
+5 : Scalar Replacement of Aggregates (DT) : 900.904311
+6 : Lower atomic intrinsics to non-atomic form : 900.904311
+7 : Scalar Replacement of Aggregates (DT) : 900.904311
+8 : Promote Memory to Register : 900.904311
+9 : Code sinking : 900.904311
+10 : Combine redundant instructions : 870.662641
+11 : Reassociate expressions : 870.662641
+12 : MergedLoadStoreMotion : 870.662641
+13 : Value Propagation : 870.662641
+14 : Reassociate expressions : 870.662641
+15 : Dead Code Elimination : 870.662641
+16 : Alignment from assumptions : 870.662641
+17 : Loop-Closed SSA Form Pass : 870.662641
+18 : SROA : 870.662641
+19 : Alignment from assumptions : 870.662641
+20 : Scalar Replacement of Aggregates (DT) : 870.662641
+SpeedUp : 1.311704

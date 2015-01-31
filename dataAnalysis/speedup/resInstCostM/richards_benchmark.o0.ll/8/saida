@@ -1,0 +1,8 @@
+1 : Add DWARF path discriminators : 76.432831
+2 : Loop Invariant Code Motion : 76.432831
+3 : MergedLoadStoreMotion : 76.432831
+4 : Dead Code Elimination : 76.432831
+5 : MergedLoadStoreMotion : 76.432831
+6 : Promote Memory to Register : 54.169589
+7 : Value Propagation : 54.189273
+SpeedUp : 1.410479

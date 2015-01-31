@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 245.312500
+2 : Loop Invariant Code Motion : 245.312500
+3 : Alignment from assumptions : 245.312500
+4 : MemCpy Optimization : 245.312500
+5 : Loop-Closed SSA Form Pass : 245.312500
+6 : Early CSE : 193.750000
+7 : Loop Invariant Code Motion : 193.750000
+8 : Promote Memory to Register : 168.750000
+9 : MergedLoadStoreMotion : 148.437500
+10 : Loop-Closed SSA Form Pass : 148.437500
+11 : Code sinking : 148.437500
+12 : Add DWARF path discriminators : 148.437500
+13 : Remove redundant instructions : 146.875000
+14 : Add DWARF path discriminators : 146.875000
+15 : Dead Instruction Elimination : 146.875000
+16 : Promote Memory to Register : 146.875000
+17 : Early CSE : 146.875000
+18 : MemCpy Optimization : 146.875000
+19 : Aggressive Dead Code Elimination : 146.875000
+20 : Global Value Numbering : 145.312500
+SpeedUp : 1.688172

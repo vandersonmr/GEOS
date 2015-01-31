@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 508.676164
+2 : Scalar Replacement of Aggregates (DT) : 345.852208
+3 : Global Value Numbering : 275.797647
+4 : SROA : 275.797647
+5 : Remove redundant instructions : 275.797647
+6 : Promote Memory to Register : 275.797647
+7 : SROA : 275.797647
+8 : Constant Hoisting : 275.797647
+9 : Global Value Numbering : 275.797647
+10 : Promote Memory to Register : 275.797647
+11 : Dead Code Elimination : 275.797647
+12 : Lower atomic intrinsics to non-atomic form : 275.797647
+13 : Lower atomic intrinsics to non-atomic form : 275.797647
+14 : Add DWARF path discriminators : 275.797647
+15 : SROA : 275.797647
+16 : Aggressive Dead Code Elimination : 275.797647
+17 : Early CSE : 259.474524
+18 : Loop Invariant Code Motion : 254.056174
+19 : Loop Invariant Code Motion : 253.360345
+20 : Promote Memory to Register : 253.360345
+SpeedUp : 2.007718

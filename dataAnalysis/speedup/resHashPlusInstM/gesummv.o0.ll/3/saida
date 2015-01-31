@@ -1,0 +1,4 @@
+1 : MemCpy Optimization : 64.737929
+2 : Lower atomic intrinsics to non-atomic form : 64.737929
+3 : Combine redundant instructions : 67.709582
+SpeedUp : 0.956112

@@ -1,0 +1,4 @@
+1 : Promote Memory to Register : 556.199934
+2 : Aggressive Dead Code Elimination : 458.543684
+3 : Loop-Closed SSA Form Pass : 1063.304465
+SpeedUp : 51.176530

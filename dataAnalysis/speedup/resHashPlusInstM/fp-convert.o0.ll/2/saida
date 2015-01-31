@@ -1,0 +1,6 @@
+1 : Dead Code Elimination : 3140.620693
+2 : Remove redundant instructions : 3140.620693
+3 : Loop-Closed SSA Form Pass : 3140.620693
+4 : Dead Instruction Elimination : 3140.620693
+5 : Global Value Numbering : 21907.393860
+SpeedUp : 0.143359

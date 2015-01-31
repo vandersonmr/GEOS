@@ -1,0 +1,21 @@
+1 : Early CSE : 548.909590
+2 : MemCpy Optimization : 548.909590
+3 : MemCpy Optimization : 548.909590
+4 : Scalar Replacement of Aggregates (DT) : 387.480996
+5 : SROA : 322.920100
+6 : Remove redundant instructions : 322.920100
+7 : Dead Code Elimination : 322.920100
+8 : MemCpy Optimization : 322.920100
+9 : Dead Code Elimination : 322.920100
+10 : Constant Hoisting : 322.920100
+11 : Add DWARF path discriminators : 322.920100
+12 : Global Value Numbering : 32.873749
+13 : Dead Code Elimination : 32.873749
+14 : Alignment from assumptions : 32.873749
+15 : Constant Hoisting : 32.873749
+16 : Scalar Replacement of Aggregates (DT) : 32.873749
+17 : Lower atomic intrinsics to non-atomic form : 32.873749
+18 : Global Value Numbering : 32.873749
+19 : Remove redundant instructions : 32.873749
+20 : Induction Variable Simplification : 32.852737
+SpeedUp : 20.964381

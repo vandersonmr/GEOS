@@ -1,0 +1,5 @@
+1 : Induction Variable Simplification : 22.179401
+2 : Dead Instruction Elimination : 22.179401
+3 : Early CSE : 17.209103
+4 : Loop Invariant Code Motion : 17.453210
+SpeedUp : 1.270792

@@ -1,0 +1,7 @@
+1 : Add DWARF path discriminators : 589.420269
+2 : Induction Variable Simplification : 589.420269
+3 : Reassociate expressions : 589.420269
+4 : Promote Memory to Register : 195.756367
+5 : Dead Instruction Elimination : 98.953770
+6 : Loop-Closed SSA Form Pass : 98.953770
+SpeedUp : 5.956522

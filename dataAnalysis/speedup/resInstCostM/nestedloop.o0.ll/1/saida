@@ -1,0 +1,6 @@
+1 : Value Propagation : 589.420269
+2 : Lower atomic intrinsics to non-atomic form : 589.420269
+3 : Reassociate expressions : 589.420269
+4 : Early CSE : 589.420269
+5 : Global Value Numbering : 1170.322424
+SpeedUp : 0.503639

@@ -1,0 +1,6 @@
+1 : Assign names to anonymous instructions : 5.841981
+2 : Dead Instruction Elimination : 5.841981
+3 : Assign names to anonymous instructions : 5.841981
+4 : MemCpy Optimization : 5.841981
+5 : Global Value Numbering : 6.561921
+SpeedUp : 0.890285

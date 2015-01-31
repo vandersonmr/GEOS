@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 59.222512
+2 : Code sinking : 59.222512
+3 : MemCpy Optimization : 59.222512
+4 : Early CSE : 49.620792
+5 : SROA : 49.620792
+6 : Add DWARF path discriminators : 49.620792
+7 : MergedLoadStoreMotion : 49.620792
+8 : Promote Memory to Register : 30.411663
+9 : Add DWARF path discriminators : 28.810823
+10 : Reassociate expressions : 28.810823
+11 : Aggressive Dead Code Elimination : 28.810823
+12 : Remove redundant instructions : 28.810823
+13 : Loop-Closed SSA Form Pass : 28.810823
+14 : Add DWARF path discriminators : 28.810823
+15 : Reassociate expressions : 28.810823
+16 : MergedLoadStoreMotion : 28.810823
+17 : Add DWARF path discriminators : 28.810823
+18 : Combine redundant instructions : 28.810802
+19 : Dead Instruction Elimination : 28.810802
+20 : Scalar Replacement of Aggregates (DT) : 28.810802
+SpeedUp : 2.055566

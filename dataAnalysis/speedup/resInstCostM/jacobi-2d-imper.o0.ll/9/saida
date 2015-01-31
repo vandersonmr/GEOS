@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 12.349210
+2 : Loop Invariant Code Motion : 12.349210
+3 : Dead Instruction Elimination : 12.349210
+4 : MemCpy Optimization : 12.349210
+5 : Global Value Numbering : 12.349210
+6 : Aggressive Dead Code Elimination : 12.349210
+7 : Loop-Closed SSA Form Pass : 12.349210
+8 : MergedLoadStoreMotion : 12.349210
+9 : SROA : 12.349210
+10 : Loop-Closed SSA Form Pass : 12.349210
+11 : MergedLoadStoreMotion : 12.349210
+12 : Value Propagation : 12.349210
+13 : Add DWARF path discriminators : 12.349210
+14 : Code sinking : 12.349210
+15 : Add DWARF path discriminators : 12.349210
+16 : MergedLoadStoreMotion : 12.349210
+17 : Reassociate expressions : 12.349210
+18 : Alignment from assumptions : 12.349210
+19 : Induction Variable Simplification : 12.349210
+20 : Constant Hoisting : 12.349210
+SpeedUp : 1.126535

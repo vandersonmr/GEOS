@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 2.431754
+2 : MemCpy Optimization : 2.431754
+3 : SROA : 2.431754
+4 : Combine redundant instructions : 2.431754
+5 : SROA : 2.431754
+6 : Promote Memory to Register : 1.723595
+7 : Value Propagation : 1.721130
+8 : Constant Hoisting : 1.721130
+9 : Early CSE : 1.499743
+10 : SROA : 1.499743
+11 : MemCpy Optimization : 1.499743
+12 : Early CSE : 1.499743
+13 : Assign names to anonymous instructions : 1.499743
+14 : Scalar Replacement of Aggregates (DT) : 1.499743
+15 : Scalar Replacement of Aggregates (DT) : 1.499743
+16 : Global Value Numbering : 1.499736
+17 : Lower atomic intrinsics to non-atomic form : 1.499736
+18 : Code sinking : 1.499736
+19 : Value Propagation : 1.499736
+20 : Global Value Numbering : 1.499736
+SpeedUp : 1.752365

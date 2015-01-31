@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 548.333335
+2 : Loop Invariant Code Motion : 548.333335
+3 : Dead Code Elimination : 548.333335
+4 : Value Propagation : 548.333335
+5 : Aggressive Dead Code Elimination : 548.333335
+6 : Induction Variable Simplification : 548.333335
+7 : Alignment from assumptions : 548.333335
+8 : Code sinking : 548.333335
+9 : Add DWARF path discriminators : 548.333335
+10 : Reassociate expressions : 548.333335
+11 : Loop Invariant Code Motion : 548.333335
+12 : MergedLoadStoreMotion : 548.333335
+13 : Dead Instruction Elimination : 548.333335
+14 : Early CSE : 488.333335
+15 : Loop-Closed SSA Form Pass : 488.333335
+16 : Dead Code Elimination : 488.333335
+17 : MemCpy Optimization : 488.333335
+18 : Global Value Numbering : 418.333335
+19 : MemCpy Optimization : 418.333335
+20 : Dead Instruction Elimination : 418.333335
+SpeedUp : 1.310757

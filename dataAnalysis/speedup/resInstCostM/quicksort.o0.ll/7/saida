@@ -1,0 +1,21 @@
+1 : Code sinking : 1.358479
+2 : Constant Hoisting : 1.358479
+3 : Loop Invariant Code Motion : 1.358479
+4 : Dead Code Elimination : 1.358479
+5 : Combine redundant instructions : 1.288652
+6 : Loop Invariant Code Motion : 1.288652
+7 : Lower atomic intrinsics to non-atomic form : 1.288652
+8 : Assign names to anonymous instructions : 1.288652
+9 : Code sinking : 1.288652
+10 : Promote Memory to Register : 0.553437
+11 : MemCpy Optimization : 0.553437
+12 : SROA : 0.553437
+13 : Alignment from assumptions : 0.553437
+14 : Aggressive Dead Code Elimination : 0.553437
+15 : Value Propagation : 0.553437
+16 : Global Value Numbering : 0.481295
+17 : SROA : 0.476294
+18 : Combine redundant instructions : 0.476294
+19 : SROA : 0.476294
+20 : Dead Code Elimination : 0.476294
+SpeedUp : 2.852186

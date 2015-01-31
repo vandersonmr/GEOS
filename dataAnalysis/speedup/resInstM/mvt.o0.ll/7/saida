@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 13.125762
+2 : Aggressive Dead Code Elimination : 13.125762
+3 : Remove redundant instructions : 13.125762
+4 : MemCpy Optimization : 13.125762
+5 : Add DWARF path discriminators : 13.125762
+6 : Global Value Numbering : 9.445682
+7 : Scalar Replacement of Aggregates (DT) : 5.763561
+8 : Dead Code Elimination : 4.802801
+9 : Add DWARF path discriminators : 4.802801
+10 : Global Value Numbering : 4.802801
+11 : Aggressive Dead Code Elimination : 4.802801
+12 : Early CSE : 4.802801
+13 : Assign names to anonymous instructions : 4.802801
+14 : Lower atomic intrinsics to non-atomic form : 4.802801
+15 : Dead Instruction Elimination : 4.802801
+16 : Scalar Replacement of Aggregates (DT) : 4.802801
+17 : Early CSE : 4.802801
+18 : MemCpy Optimization : 4.802801
+19 : Lower atomic intrinsics to non-atomic form : 4.802801
+20 : Code sinking : 4.802801
+SpeedUp : 2.732939

@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 1226.677115
+2 : Early CSE : 1155.681172
+3 : MemCpy Optimization : 1155.681172
+4 : Assign names to anonymous instructions : 1155.681172
+5 : Loop-Closed SSA Form Pass : 1155.681172
+6 : Assign names to anonymous instructions : 1155.681172
+7 : Value Propagation : 1155.681172
+8 : Induction Variable Simplification : 1155.681172
+9 : MemCpy Optimization : 1155.681172
+10 : Loop Invariant Code Motion : 1155.681172
+11 : Promote Memory to Register : 658.442430
+12 : Promote Memory to Register : 490.127393
+13 : Remove redundant instructions : 488.252353
+14 : Combine redundant instructions : 488.252353
+15 : Dead Code Elimination : 488.000350
+16 : Value Propagation : 488.000350
+17 : Combine redundant instructions : 488.000350
+18 : Global Value Numbering : 300.038273
+19 : Assign names to anonymous instructions : 300.038273
+20 : Induction Variable Simplification : 300.038273
+SpeedUp : 4.088402

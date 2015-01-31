@@ -1,0 +1,7 @@
+1 : MemCpy Optimization : 508.676164
+2 : Scalar Replacement of Aggregates (DT) : 345.852208
+3 : MemCpy Optimization : 345.852208
+4 : MemCpy Optimization : 345.852208
+5 : Early CSE : 290.283020
+6 : Reassociate expressions : 290.409664
+SpeedUp : 1.751581

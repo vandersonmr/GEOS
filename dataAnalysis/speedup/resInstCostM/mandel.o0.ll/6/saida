@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 24.752050
+2 : Early CSE : 19.501800
+3 : Scalar Replacement of Aggregates (DT) : 17.501500
+4 : Aggressive Dead Code Elimination : 17.501500
+5 : Loop Invariant Code Motion : 16.751300
+6 : Reassociate expressions : 16.751300
+7 : Dead Instruction Elimination : 16.251200
+8 : SROA : 16.251200
+9 : Value Propagation : 16.251200
+10 : Dead Code Elimination : 16.251200
+11 : Early CSE : 16.251200
+12 : Value Propagation : 16.251200
+13 : Induction Variable Simplification : 16.251200
+14 : Dead Instruction Elimination : 16.251200
+15 : Loop Invariant Code Motion : 16.251200
+16 : Promote Memory to Register : 16.251200
+17 : Remove redundant instructions : 16.251200
+18 : Combine redundant instructions : 15.501200
+19 : SROA : 15.501200
+20 : SROA : 15.501200
+SpeedUp : 1.596783

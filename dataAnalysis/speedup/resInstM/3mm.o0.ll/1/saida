@@ -1,0 +1,21 @@
+1 : Early CSE : 839.565058
+2 : Lower atomic intrinsics to non-atomic form : 839.565058
+3 : Induction Variable Simplification : 839.565058
+4 : Global Value Numbering : 430.767280
+5 : Combine redundant instructions : 355.437386
+6 : Loop-Closed SSA Form Pass : 355.437386
+7 : Combine redundant instructions : 355.437386
+8 : Combine redundant instructions : 355.437386
+9 : Add DWARF path discriminators : 355.437386
+10 : Assign names to anonymous instructions : 355.437386
+11 : Value Propagation : 355.437386
+12 : Lower atomic intrinsics to non-atomic form : 355.437386
+13 : Loop-Closed SSA Form Pass : 355.437386
+14 : Lower atomic intrinsics to non-atomic form : 355.437386
+15 : Reassociate expressions : 355.437386
+16 : Value Propagation : 355.437386
+17 : Lower atomic intrinsics to non-atomic form : 355.437386
+18 : SROA : 355.437386
+19 : Global Value Numbering : 355.437386
+20 : Combine redundant instructions : 355.437386
+SpeedUp : 2.997543

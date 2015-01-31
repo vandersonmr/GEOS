@@ -1,0 +1,6 @@
+1 : Add DWARF path discriminators : 0.000003
+2 : Assign names to anonymous instructions : 0.000003
+3 : Induction Variable Simplification : 0.000003
+4 : Reassociate expressions : 0.000003
+5 : MemCpy Optimization : 0.000003
+SpeedUp : 0.958599

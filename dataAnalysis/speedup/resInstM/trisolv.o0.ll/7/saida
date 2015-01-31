@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 7.522641
+2 : Code sinking : 7.522641
+3 : Assign names to anonymous instructions : 7.522641
+4 : Early CSE : 5.282201
+5 : Remove redundant instructions : 5.282201
+6 : Code sinking : 5.282201
+7 : Early CSE : 5.282201
+8 : Promote Memory to Register : 4.161640
+9 : Combine redundant instructions : 3.041440
+10 : Remove redundant instructions : 3.041440
+11 : Constant Hoisting : 3.041440
+12 : Scalar Replacement of Aggregates (DT) : 3.041440
+13 : MergedLoadStoreMotion : 3.041440
+14 : Remove redundant instructions : 3.041440
+15 : Combine redundant instructions : 3.041440
+16 : Loop Invariant Code Motion : 3.041400
+17 : Induction Variable Simplification : 2.961420
+18 : Dead Instruction Elimination : 2.801420
+19 : Dead Code Elimination : 2.801420
+20 : Remove redundant instructions : 2.801420
+SpeedUp : 2.685295

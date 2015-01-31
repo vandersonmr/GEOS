@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 322.471101
+2 : MemCpy Optimization : 322.471101
+3 : Aggressive Dead Code Elimination : 322.471101
+4 : SROA : 322.471101
+5 : Alignment from assumptions : 322.471101
+6 : Code sinking : 322.471101
+7 : Lower atomic intrinsics to non-atomic form : 322.471101
+8 : Alignment from assumptions : 322.471101
+9 : Add DWARF path discriminators : 322.471101
+10 : Add DWARF path discriminators : 322.471101
+11 : SROA : 322.471101
+12 : Dead Instruction Elimination : 322.471101
+13 : Aggressive Dead Code Elimination : 322.471101
+14 : Reassociate expressions : 322.471101
+15 : Induction Variable Simplification : 322.471101
+16 : Loop Invariant Code Motion : 322.471101
+17 : Constant Hoisting : 322.471101
+18 : MergedLoadStoreMotion : 322.471101
+19 : Loop-Closed SSA Form Pass : 322.471101
+20 : Scalar Replacement of Aggregates (DT) : 350.894800
+SpeedUp : 0.918997

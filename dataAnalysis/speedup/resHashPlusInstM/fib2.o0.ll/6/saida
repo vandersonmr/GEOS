@@ -1,0 +1,8 @@
+1 : Loop-Closed SSA Form Pass : 1757.803232
+2 : Aggressive Dead Code Elimination : 1757.803232
+3 : Induction Variable Simplification : 1757.803232
+4 : Value Propagation : 1757.803232
+5 : Remove redundant instructions : 1757.803232
+6 : Loop-Closed SSA Form Pass : 1757.803232
+7 : Combine redundant instructions : 17038.869241
+SpeedUp : 0.103164

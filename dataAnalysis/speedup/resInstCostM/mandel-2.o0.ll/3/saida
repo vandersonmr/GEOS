@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 105.090282
+2 : Reassociate expressions : 98.816480
+3 : Aggressive Dead Code Elimination : 98.816480
+4 : Lower atomic intrinsics to non-atomic form : 98.816480
+5 : MemCpy Optimization : 98.816480
+6 : Dead Code Elimination : 98.816480
+7 : Loop-Closed SSA Form Pass : 98.816480
+8 : Remove redundant instructions : 98.816110
+9 : Global Value Numbering : 83.131301
+10 : Remove redundant instructions : 83.131301
+11 : MergedLoadStoreMotion : 83.131301
+12 : Alignment from assumptions : 83.131301
+13 : Reassociate expressions : 83.131301
+14 : Promote Memory to Register : 65.877916
+15 : Scalar Replacement of Aggregates (DT) : 65.877916
+16 : Alignment from assumptions : 65.877916
+17 : Aggressive Dead Code Elimination : 65.877916
+18 : Aggressive Dead Code Elimination : 65.877916
+19 : MergedLoadStoreMotion : 65.877916
+20 : Loop-Closed SSA Form Pass : 65.877916
+SpeedUp : 1.595228

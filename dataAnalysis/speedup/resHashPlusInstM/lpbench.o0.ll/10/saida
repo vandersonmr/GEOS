@@ -1,0 +1,9 @@
+1 : Loop Invariant Code Motion : 3760.875304
+2 : Loop-Closed SSA Form Pass : 3760.875304
+3 : Dead Code Elimination : 3760.875304
+4 : SROA : 3760.875304
+5 : Constant Hoisting : 3760.875304
+6 : MemCpy Optimization : 3760.875304
+7 : Value Propagation : 3760.875304
+8 : Scalar Replacement of Aggregates (DT) : 3925.732116
+SpeedUp : 0.958026

@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 13.911816
+2 : Loop-Closed SSA Form Pass : 13.911816
+3 : Constant Hoisting : 13.911816
+4 : Alignment from assumptions : 13.911816
+5 : Combine redundant instructions : 11.887173
+6 : Dead Code Elimination : 11.887173
+7 : Value Propagation : 11.887173
+8 : Loop Invariant Code Motion : 11.887173
+9 : Remove redundant instructions : 11.887173
+10 : Dead Instruction Elimination : 11.887173
+11 : Global Value Numbering : 10.314367
+12 : Add DWARF path discriminators : 10.314367
+13 : Dead Instruction Elimination : 10.314367
+14 : Promote Memory to Register : 5.984610
+15 : Constant Hoisting : 5.187208
+16 : Promote Memory to Register : 5.187208
+17 : Constant Hoisting : 5.187208
+18 : Code sinking : 5.187208
+19 : Aggressive Dead Code Elimination : 5.187208
+20 : Dead Instruction Elimination : 5.187208
+SpeedUp : 2.681947

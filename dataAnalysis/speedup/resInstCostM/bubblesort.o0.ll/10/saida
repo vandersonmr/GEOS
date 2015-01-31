@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 3.584917
+2 : Combine redundant instructions : 3.141947
+3 : SROA : 3.141947
+4 : Add DWARF path discriminators : 3.141947
+5 : MergedLoadStoreMotion : 3.141947
+6 : Dead Instruction Elimination : 3.141947
+7 : Combine redundant instructions : 3.141947
+8 : Induction Variable Simplification : 3.141947
+9 : Loop-Closed SSA Form Pass : 3.141947
+10 : Constant Hoisting : 3.141947
+11 : Combine redundant instructions : 3.141947
+12 : Alignment from assumptions : 3.141947
+13 : SROA : 3.141947
+14 : Loop-Closed SSA Form Pass : 3.141947
+15 : Global Value Numbering : 3.141941
+16 : Loop-Closed SSA Form Pass : 3.141941
+17 : Code sinking : 3.141941
+18 : Global Value Numbering : 3.141941
+19 : Alignment from assumptions : 3.141941
+20 : Alignment from assumptions : 3.141941
+SpeedUp : 1.140988

@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 76.432831
+2 : Dead Code Elimination : 76.432831
+3 : Alignment from assumptions : 76.432831
+4 : SROA : 76.432831
+5 : Assign names to anonymous instructions : 76.432831
+6 : Loop-Closed SSA Form Pass : 76.432831
+7 : Add DWARF path discriminators : 76.432831
+8 : Add DWARF path discriminators : 76.432831
+9 : MemCpy Optimization : 76.432831
+10 : Constant Hoisting : 76.432831
+11 : Promote Memory to Register : 54.169589
+12 : Induction Variable Simplification : 54.169589
+13 : MergedLoadStoreMotion : 54.169589
+14 : Early CSE : 45.283280
+15 : Alignment from assumptions : 45.283280
+16 : Remove redundant instructions : 45.283280
+17 : Induction Variable Simplification : 45.283280
+18 : MergedLoadStoreMotion : 45.283280
+19 : Early CSE : 45.283280
+20 : Scalar Replacement of Aggregates (DT) : 45.283280
+SpeedUp : 1.687882

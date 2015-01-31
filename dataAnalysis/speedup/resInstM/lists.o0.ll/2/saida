@@ -1,0 +1,12 @@
+1 : MergedLoadStoreMotion : 2214.360001
+2 : Dead Code Elimination : 2214.360001
+3 : Code sinking : 2214.360001
+4 : Add DWARF path discriminators : 2214.360001
+5 : Lower atomic intrinsics to non-atomic form : 2214.360001
+6 : SROA : 2214.360001
+7 : Add DWARF path discriminators : 2214.360001
+8 : Dead Instruction Elimination : 2214.360001
+9 : Lower atomic intrinsics to non-atomic form : 2214.360001
+10 : Promote Memory to Register : 1279.800000
+11 : Dead Instruction Elimination : 1279.860000
+SpeedUp : 1.730158

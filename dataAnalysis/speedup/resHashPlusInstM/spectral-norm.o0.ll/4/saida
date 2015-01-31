@@ -1,0 +1,7 @@
+1 : Combine redundant instructions : 322.200342
+2 : Loop-Closed SSA Form Pass : 322.200342
+3 : Constant Hoisting : 322.200342
+4 : Lower atomic intrinsics to non-atomic form : 322.200342
+5 : Global Value Numbering : 300.892456
+6 : SROA : 300.892458
+SpeedUp : 1.180009

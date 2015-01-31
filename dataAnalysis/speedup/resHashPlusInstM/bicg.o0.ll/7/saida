@@ -1,0 +1,8 @@
+1 : Loop Invariant Code Motion : 54.141359
+2 : Value Propagation : 54.141359
+3 : Alignment from assumptions : 54.141359
+4 : MemCpy Optimization : 54.141359
+5 : Alignment from assumptions : 54.141359
+6 : Loop-Closed SSA Form Pass : 54.141359
+7 : Promote Memory to Register : 54.613343
+SpeedUp : 0.991358

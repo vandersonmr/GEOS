@@ -1,0 +1,20 @@
+1 : Add DWARF path discriminators : 76.817904
+2 : Alignment from assumptions : 76.817904
+3 : Dead Instruction Elimination : 76.817904
+4 : Reassociate expressions : 76.817904
+5 : SROA : 76.817904
+6 : Combine redundant instructions : 64.054151
+7 : SROA : 64.054151
+8 : Loop-Closed SSA Form Pass : 64.054151
+9 : Remove redundant instructions : 64.054151
+10 : SROA : 64.054151
+11 : Scalar Replacement of Aggregates (DT) : 57.690112
+12 : MergedLoadStoreMotion : 57.690112
+13 : Lower atomic intrinsics to non-atomic form : 57.690112
+14 : Remove redundant instructions : 57.690112
+15 : Promote Memory to Register : 57.690112
+16 : Remove redundant instructions : 57.690112
+17 : Aggressive Dead Code Elimination : 57.690112
+18 : Aggressive Dead Code Elimination : 57.690112
+19 : Induction Variable Simplification : 68.358713
+SpeedUp : 1.123747

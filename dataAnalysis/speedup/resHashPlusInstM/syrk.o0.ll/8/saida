@@ -1,0 +1,15 @@
+1 : MemCpy Optimization : 1877.907038
+2 : Loop Invariant Code Motion : 1877.907038
+3 : Dead Code Elimination : 1877.907038
+4 : Alignment from assumptions : 1877.907038
+5 : Aggressive Dead Code Elimination : 1877.907038
+6 : Dead Code Elimination : 1877.907038
+7 : Combine redundant instructions : 1724.446206
+8 : Dead Code Elimination : 1724.446206
+9 : Constant Hoisting : 1724.446206
+10 : Alignment from assumptions : 1724.446206
+11 : Aggressive Dead Code Elimination : 1724.446206
+12 : Loop Invariant Code Motion : 1724.446206
+13 : Scalar Replacement of Aggregates (DT) : 1457.754491
+14 : Loop Invariant Code Motion : 1576.906402
+SpeedUp : 1.190880

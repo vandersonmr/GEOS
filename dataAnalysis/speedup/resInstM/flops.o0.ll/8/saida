@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 875.499222
+2 : Scalar Replacement of Aggregates (DT) : 634.351466
+3 : Code sinking : 634.351466
+4 : Remove redundant instructions : 634.351466
+5 : MergedLoadStoreMotion : 634.351466
+6 : Constant Hoisting : 634.351466
+7 : SROA : 634.351466
+8 : Dead Code Elimination : 634.351466
+9 : Promote Memory to Register : 634.351466
+10 : MergedLoadStoreMotion : 634.351466
+11 : Remove redundant instructions : 634.351466
+12 : MemCpy Optimization : 634.351466
+13 : Global Value Numbering : 576.648392
+14 : Global Value Numbering : 576.648392
+15 : Loop Invariant Code Motion : 510.934478
+16 : Combine redundant instructions : 476.766783
+17 : Combine redundant instructions : 476.766783
+18 : Remove redundant instructions : 476.766783
+19 : Value Propagation : 476.766783
+20 : Promote Memory to Register : 476.766783
+SpeedUp : 1.836326

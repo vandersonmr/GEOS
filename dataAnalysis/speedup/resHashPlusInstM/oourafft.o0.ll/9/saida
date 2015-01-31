@@ -1,0 +1,6 @@
+1 : Scalar Replacement of Aggregates (DT) : 2109.408729
+2 : Dead Code Elimination : 2109.401069
+3 : Combine redundant instructions : 2089.930486
+4 : Global Value Numbering : 1282.301762
+5 : Alignment from assumptions : 1276.145701
+6 : Early CSE : 1329.256443

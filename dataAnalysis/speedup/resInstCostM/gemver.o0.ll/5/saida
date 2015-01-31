@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 17.768402
+2 : Global Value Numbering : 13.288002
+3 : Global Value Numbering : 13.288002
+4 : Alignment from assumptions : 13.288002
+5 : Add DWARF path discriminators : 13.288002
+6 : Reassociate expressions : 13.288002
+7 : Alignment from assumptions : 13.288002
+8 : MergedLoadStoreMotion : 13.288002
+9 : Dead Instruction Elimination : 13.288002
+10 : Scalar Replacement of Aggregates (DT) : 6.884241
+11 : Aggressive Dead Code Elimination : 6.243761
+12 : Induction Variable Simplification : 6.243761
+13 : Aggressive Dead Code Elimination : 6.243761
+14 : Assign names to anonymous instructions : 6.243761
+15 : Dead Code Elimination : 6.243761
+16 : Induction Variable Simplification : 6.243761
+17 : Reassociate expressions : 6.243761
+18 : Loop-Closed SSA Form Pass : 6.243761
+19 : Value Propagation : 6.243761
+20 : Scalar Replacement of Aggregates (DT) : 6.243761
+SpeedUp : 2.845785

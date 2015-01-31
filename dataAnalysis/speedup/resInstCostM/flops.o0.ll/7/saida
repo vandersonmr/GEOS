@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 900.904311
+2 : Loop-Closed SSA Form Pass : 900.904311
+3 : Aggressive Dead Code Elimination : 900.904311
+4 : Code sinking : 900.904311
+5 : Dead Instruction Elimination : 900.904311
+6 : Loop Invariant Code Motion : 280.172211
+7 : Assign names to anonymous instructions : 280.172211
+8 : Alignment from assumptions : 280.172211
+9 : MemCpy Optimization : 280.172211
+10 : Promote Memory to Register : 280.172211
+11 : Assign names to anonymous instructions : 280.172211
+12 : Add DWARF path discriminators : 280.172211
+13 : Assign names to anonymous instructions : 280.172211
+14 : MemCpy Optimization : 280.172211
+15 : Lower atomic intrinsics to non-atomic form : 280.172211
+16 : Lower atomic intrinsics to non-atomic form : 280.172211
+17 : Value Propagation : 280.172211
+18 : Assign names to anonymous instructions : 280.172211
+19 : Combine redundant instructions : 280.172206
+20 : Dead Code Elimination : 280.172206
+SpeedUp : 4.076250

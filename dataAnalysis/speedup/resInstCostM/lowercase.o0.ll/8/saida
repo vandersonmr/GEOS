@@ -1,0 +1,21 @@
+1 : Value Propagation : 1600.800021
+2 : Constant Hoisting : 1600.800021
+3 : Induction Variable Simplification : 1600.800021
+4 : MergedLoadStoreMotion : 1600.800021
+5 : Scalar Replacement of Aggregates (DT) : 661.600008
+6 : Remove redundant instructions : 661.600008
+7 : Constant Hoisting : 661.600008
+8 : Induction Variable Simplification : 661.600008
+9 : MemCpy Optimization : 661.600008
+10 : SROA : 661.600008
+11 : Loop-Closed SSA Form Pass : 661.600008
+12 : Alignment from assumptions : 661.600008
+13 : Alignment from assumptions : 661.600008
+14 : Add DWARF path discriminators : 661.600008
+15 : Add DWARF path discriminators : 661.600008
+16 : Combine redundant instructions : 608.800007
+17 : SROA : 608.800007
+18 : Reassociate expressions : 608.800007
+19 : Global Value Numbering : 608.800007
+20 : Promote Memory to Register : 608.800007
+SpeedUp : 2.629435

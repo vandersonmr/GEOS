@@ -1,0 +1,21 @@
+1 : Value Propagation : 21.450203
+2 : Remove redundant instructions : 21.450203
+3 : Induction Variable Simplification : 21.450203
+4 : MemCpy Optimization : 21.450203
+5 : MergedLoadStoreMotion : 21.450203
+6 : Reassociate expressions : 21.450203
+7 : Code sinking : 21.450203
+8 : SROA : 21.450203
+9 : SROA : 21.450203
+10 : SROA : 21.450203
+11 : Global Value Numbering : 16.169443
+12 : Alignment from assumptions : 16.169443
+13 : MemCpy Optimization : 16.169443
+14 : Global Value Numbering : 16.169443
+15 : Global Value Numbering : 16.169443
+16 : MergedLoadStoreMotion : 16.169443
+17 : Remove redundant instructions : 16.169443
+18 : Lower atomic intrinsics to non-atomic form : 16.169443
+19 : MergedLoadStoreMotion : 16.169443
+20 : Promote Memory to Register : 9.925881
+SpeedUp : 2.161038

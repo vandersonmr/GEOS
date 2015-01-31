@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 10.244081
+2 : MemCpy Optimization : 10.244081
+3 : Promote Memory to Register : 5.762080
+4 : Scalar Replacement of Aggregates (DT) : 5.762080
+5 : SROA : 5.762080
+6 : Global Value Numbering : 0.321760
+7 : Dead Instruction Elimination : 0.321760
+8 : SROA : 0.321760
+9 : MergedLoadStoreMotion : 0.321760
+10 : Early CSE : 0.321760
+11 : SROA : 0.321760
+12 : Add DWARF path discriminators : 0.321760
+13 : Loop-Closed SSA Form Pass : 0.321760
+14 : Promote Memory to Register : 0.321760
+15 : Lower atomic intrinsics to non-atomic form : 0.321760
+16 : Promote Memory to Register : 0.321760
+17 : Promote Memory to Register : 0.321760
+18 : Reassociate expressions : 0.321760
+19 : MergedLoadStoreMotion : 0.321760
+20 : Dead Code Elimination : 0.321760
+SpeedUp : 31.837613

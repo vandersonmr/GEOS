@@ -1,0 +1,4 @@
+1 : MergedLoadStoreMotion : 3.584917
+2 : Loop-Closed SSA Form Pass : 3.584917
+3 : Reassociate expressions : 3.585418
+SpeedUp : 0.999860

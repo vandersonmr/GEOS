@@ -1,0 +1,17 @@
+1 : Dead Instruction Elimination : 2.477279
+2 : Promote Memory to Register : 1.352850
+3 : Scalar Replacement of Aggregates (DT) : 1.352850
+4 : Aggressive Dead Code Elimination : 1.352850
+5 : Combine redundant instructions : 1.302455
+6 : Constant Hoisting : 1.302455
+7 : Dead Code Elimination : 1.302455
+8 : Reassociate expressions : 1.302455
+9 : Aggressive Dead Code Elimination : 1.302455
+10 : Add DWARF path discriminators : 1.302455
+11 : MergedLoadStoreMotion : 1.302455
+12 : Reassociate expressions : 1.302455
+13 : Constant Hoisting : 1.302455
+14 : MemCpy Optimization : 1.302455
+15 : MemCpy Optimization : 1.302455
+16 : Loop Invariant Code Motion : 1.302480
+SpeedUp : 1.901971

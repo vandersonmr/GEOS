@@ -1,0 +1,6 @@
+1 : Combine redundant instructions : 79.303018
+2 : Lower atomic intrinsics to non-atomic form : 79.303018
+3 : Add DWARF path discriminators : 79.303018
+4 : Assign names to anonymous instructions : 79.303018
+5 : Global Value Numbering : 84.856683
+SpeedUp : 1.192847

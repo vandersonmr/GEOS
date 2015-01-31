@@ -1,0 +1,10 @@
+1 : Assign names to anonymous instructions : 206.250000
+2 : Loop Invariant Code Motion : 206.250000
+3 : Promote Memory to Register : 145.312500
+4 : MemCpy Optimization : 135.937500
+5 : Remove redundant instructions : 134.375000
+6 : Constant Hoisting : 134.375000
+7 : Alignment from assumptions : 134.375000
+8 : Value Propagation : 134.375000
+9 : Loop-Closed SSA Form Pass : 135.937500
+SpeedUp : 1.517241

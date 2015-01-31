@@ -1,0 +1,15 @@
+1 : Code sinking : 802.947846
+2 : MergedLoadStoreMotion : 802.947846
+3 : MergedLoadStoreMotion : 802.947846
+4 : MergedLoadStoreMotion : 802.947846
+5 : MemCpy Optimization : 802.947846
+6 : Loop-Closed SSA Form Pass : 802.947846
+7 : MemCpy Optimization : 802.947846
+8 : Value Propagation : 802.947846
+9 : Alignment from assumptions : 802.947846
+10 : Global Value Numbering : 651.802763
+11 : MergedLoadStoreMotion : 651.802763
+12 : Aggressive Dead Code Elimination : 651.802763
+13 : Constant Hoisting : 651.802763
+14 : Scalar Replacement of Aggregates (DT) : 2404.175603
+SpeedUp : 0.333981

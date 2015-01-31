@@ -1,0 +1,5 @@
+1 : Reassociate expressions : 0.000002
+2 : MemCpy Optimization : 0.000002
+3 : MergedLoadStoreMotion : 0.000002
+4 : Add DWARF path discriminators : 0.000002
+SpeedUp : 1.283784

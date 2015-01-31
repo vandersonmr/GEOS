@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 4345.034890
+2 : Alignment from assumptions : 4345.034890
+3 : Add DWARF path discriminators : 4345.034890
+4 : Loop-Closed SSA Form Pass : 4345.034890
+5 : Dead Instruction Elimination : 4345.034890
+6 : MemCpy Optimization : 4345.034890
+7 : Assign names to anonymous instructions : 4345.034890
+8 : Lower atomic intrinsics to non-atomic form : 4345.034890
+9 : Combine redundant instructions : 4323.898700
+10 : Constant Hoisting : 4323.898700
+11 : Reassociate expressions : 4323.898700
+12 : MergedLoadStoreMotion : 4323.898700
+13 : Dead Instruction Elimination : 4323.898700
+14 : Remove redundant instructions : 4323.898700
+15 : Aggressive Dead Code Elimination : 4323.898700
+16 : Induction Variable Simplification : 4323.898700
+17 : Constant Hoisting : 4323.898700
+18 : Promote Memory to Register : 468.769662
+19 : Add DWARF path discriminators : 467.901178
+20 : Reassociate expressions : 467.901177
+SpeedUp : 9.286223

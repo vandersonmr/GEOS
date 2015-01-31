@@ -1,0 +1,8 @@
+1 : Aggressive Dead Code Elimination : 160.971994
+2 : Reassociate expressions : 160.971994
+3 : Early CSE : 99.192367
+4 : Early CSE : 99.192367
+5 : Aggressive Dead Code Elimination : 99.192367
+6 : MergedLoadStoreMotion : 99.192367
+7 : Induction Variable Simplification : 103.117267
+SpeedUp : 1.561058

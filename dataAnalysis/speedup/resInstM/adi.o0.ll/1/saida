@@ -1,0 +1,12 @@
+1 : Remove redundant instructions : 167.861750
+2 : Early CSE : 92.292633
+3 : Induction Variable Simplification : 92.292633
+4 : Alignment from assumptions : 92.292633
+5 : Dead Code Elimination : 92.292633
+6 : Dead Instruction Elimination : 92.292633
+7 : Combine redundant instructions : 80.191009
+8 : Global Value Numbering : 34.137625
+9 : Code sinking : 34.137625
+10 : Global Value Numbering : 34.137625
+11 : Reassociate expressions : 34.138137
+SpeedUp : 4.917133

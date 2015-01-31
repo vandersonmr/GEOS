@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 17412.092542
+2 : Loop-Closed SSA Form Pass : 17412.092542
+3 : Constant Hoisting : 17412.092542
+4 : Early CSE : 17335.326603
+5 : Alignment from assumptions : 17335.326603
+6 : Value Propagation : 17335.326603
+7 : SROA : 17335.326603
+8 : Constant Hoisting : 17335.326603
+9 : Code sinking : 17335.326603
+10 : Remove redundant instructions : 17335.326603
+11 : Add DWARF path discriminators : 17335.326603
+12 : Add DWARF path discriminators : 17335.326603
+13 : Combine redundant instructions : 9087.493403
+14 : Alignment from assumptions : 9087.493403
+15 : Remove redundant instructions : 9087.493403
+16 : Early CSE : 9087.493403
+17 : Aggressive Dead Code Elimination : 9087.493403
+18 : Loop-Closed SSA Form Pass : 9050.243403
+19 : MergedLoadStoreMotion : 9050.243403
+20 : Loop-Closed SSA Form Pass : 9050.243403
+SpeedUp : 1.923936

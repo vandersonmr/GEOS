@@ -1,0 +1,5 @@
+1 : Constant Hoisting : 685.582385
+2 : Scalar Replacement of Aggregates (DT) : 595.613768
+3 : Add DWARF path discriminators : 595.613768
+4 : Combine redundant instructions : 720.900543
+SpeedUp : 0.951008

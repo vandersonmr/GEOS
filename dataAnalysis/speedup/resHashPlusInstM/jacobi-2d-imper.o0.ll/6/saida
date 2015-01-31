@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 85.878537
+2 : Code sinking : 85.878537
+3 : Reassociate expressions : 85.878537
+4 : Global Value Numbering : 69.506064
+5 : Add DWARF path discriminators : 69.506064
+6 : Dead Code Elimination : 69.506064
+7 : SROA : 69.506064
+8 : Value Propagation : 69.506064
+9 : Dead Code Elimination : 69.506064
+10 : Code sinking : 69.506064
+11 : Loop Invariant Code Motion : 69.506064
+12 : Add DWARF path discriminators : 69.506064
+13 : Value Propagation : 69.506064
+14 : Reassociate expressions : 69.506064
+15 : Combine redundant instructions : 58.743409
+16 : Value Propagation : 58.743409
+17 : Aggressive Dead Code Elimination : 58.743409
+18 : Scalar Replacement of Aggregates (DT) : 51.364329
+19 : Dead Instruction Elimination : 44.898497
+20 : Assign names to anonymous instructions : 46.731383
+SpeedUp : 1.837706

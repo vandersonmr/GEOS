@@ -1,0 +1,17 @@
+1 : Assign names to anonymous instructions : 4.391489
+2 : Scalar Replacement of Aggregates (DT) : 2.421506
+3 : Scalar Replacement of Aggregates (DT) : 2.421506
+4 : Add DWARF path discriminators : 2.421506
+5 : Value Propagation : 2.421506
+6 : Value Propagation : 2.421506
+7 : MemCpy Optimization : 2.421506
+8 : Induction Variable Simplification : 2.421506
+9 : Dead Instruction Elimination : 2.421506
+10 : Alignment from assumptions : 2.421506
+11 : Loop Invariant Code Motion : 2.340506
+12 : Add DWARF path discriminators : 2.340506
+13 : Induction Variable Simplification : 2.340506
+14 : Induction Variable Simplification : 2.340506
+15 : Lower atomic intrinsics to non-atomic form : 2.340506
+16 : Combine redundant instructions : 2.552009
+SpeedUp : 1.720797

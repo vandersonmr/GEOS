@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 111.742498
+2 : Scalar Replacement of Aggregates (DT) : 60.722527
+3 : Early CSE : 60.168612
+4 : SROA : 60.168612
+5 : Lower atomic intrinsics to non-atomic form : 60.168612
+6 : Code sinking : 60.168612
+7 : Aggressive Dead Code Elimination : 60.168612
+8 : Promote Memory to Register : 60.168612
+9 : Assign names to anonymous instructions : 60.168612
+10 : Constant Hoisting : 60.168612
+11 : MemCpy Optimization : 60.168612
+12 : Lower atomic intrinsics to non-atomic form : 60.168612
+13 : Constant Hoisting : 60.168612
+14 : Combine redundant instructions : 60.168612
+15 : Reassociate expressions : 60.168612
+16 : Lower atomic intrinsics to non-atomic form : 60.168612
+17 : Constant Hoisting : 60.168612
+18 : Code sinking : 60.168612
+19 : MergedLoadStoreMotion : 60.168612
+20 : Loop-Closed SSA Form Pass : 60.168612
+SpeedUp : 1.915659

@@ -1,0 +1,10 @@
+1 : MemCpy Optimization : 37.913151
+2 : Loop Invariant Code Motion : 37.913151
+3 : Lower atomic intrinsics to non-atomic form : 37.913151
+4 : Loop-Closed SSA Form Pass : 37.913151
+5 : Add DWARF path discriminators : 37.913151
+6 : Assign names to anonymous instructions : 37.913151
+7 : Constant Hoisting : 37.913151
+8 : Scalar Replacement of Aggregates (DT) : 21.426300
+9 : Lower atomic intrinsics to non-atomic form : 23.026300
+SpeedUp : 1.646515

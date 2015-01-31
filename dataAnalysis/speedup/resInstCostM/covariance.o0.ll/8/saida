@@ -1,0 +1,21 @@
+1 : Constant Hoisting : 190.920971
+2 : Global Value Numbering : 0.536216
+3 : Alignment from assumptions : 0.536216
+4 : Loop-Closed SSA Form Pass : 0.536216
+5 : Code sinking : 0.536216
+6 : Dead Code Elimination : 0.536216
+7 : Reassociate expressions : 0.536216
+8 : Constant Hoisting : 0.536216
+9 : Reassociate expressions : 0.536216
+10 : SROA : 0.536216
+11 : Lower atomic intrinsics to non-atomic form : 0.536216
+12 : Remove redundant instructions : 0.536216
+13 : Lower atomic intrinsics to non-atomic form : 0.536216
+14 : Assign names to anonymous instructions : 0.536216
+15 : MemCpy Optimization : 0.536216
+16 : Scalar Replacement of Aggregates (DT) : 0.255595
+17 : Induction Variable Simplification : 0.235535
+18 : Add DWARF path discriminators : 0.235535
+19 : Alignment from assumptions : 0.235535
+20 : MergedLoadStoreMotion : 0.235535
+SpeedUp : 810.582845

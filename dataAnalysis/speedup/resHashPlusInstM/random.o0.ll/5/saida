@@ -1,0 +1,14 @@
+1 : Assign names to anonymous instructions : 705.615601
+2 : Dead Instruction Elimination : 705.615601
+3 : Reassociate expressions : 705.615601
+4 : Code sinking : 705.615601
+5 : Assign names to anonymous instructions : 705.615601
+6 : Global Value Numbering : 705.615601
+7 : Remove redundant instructions : 705.615601
+8 : Induction Variable Simplification : 705.615601
+9 : Constant Hoisting : 705.615601
+10 : SROA : 705.615601
+11 : Add DWARF path discriminators : 705.615601
+12 : Combine redundant instructions : 679.615603
+13 : Promote Memory to Register : 679.615609
+SpeedUp : 1.038257

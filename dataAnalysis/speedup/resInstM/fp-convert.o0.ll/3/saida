@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 502.112500
+2 : SROA : 502.112500
+3 : Alignment from assumptions : 502.112500
+4 : Lower atomic intrinsics to non-atomic form : 502.112500
+5 : Early CSE : 450.882500
+6 : Loop Invariant Code Motion : 430.402500
+7 : Induction Variable Simplification : 430.402500
+8 : Scalar Replacement of Aggregates (DT) : 286.915000
+9 : Assign names to anonymous instructions : 276.670000
+10 : Promote Memory to Register : 276.670000
+11 : MergedLoadStoreMotion : 276.670000
+12 : Assign names to anonymous instructions : 276.670000
+13 : Lower atomic intrinsics to non-atomic form : 276.670000
+14 : MergedLoadStoreMotion : 276.670000
+15 : Add DWARF path discriminators : 276.670000
+16 : Dead Code Elimination : 276.670000
+17 : Early CSE : 266.425000
+18 : Promote Memory to Register : 266.425000
+19 : Aggressive Dead Code Elimination : 266.425000
+20 : Code sinking : 266.425000
+SpeedUp : 1.884630

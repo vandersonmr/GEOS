@@ -1,0 +1,6 @@
+1 : Assign names to anonymous instructions : 414.080246
+2 : Early CSE : 408.760719
+3 : Constant Hoisting : 408.760719
+4 : Scalar Replacement of Aggregates (DT) : 399.530558
+5 : Early CSE : 400.231577
+SpeedUp : 1.034602

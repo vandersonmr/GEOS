@@ -1,0 +1,5 @@
+1 : Add DWARF path discriminators : 65.627435
+2 : Reassociate expressions : 65.627435
+3 : MergedLoadStoreMotion : 65.627435
+4 : Global Value Numbering : 70.425077
+SpeedUp : 0.931876

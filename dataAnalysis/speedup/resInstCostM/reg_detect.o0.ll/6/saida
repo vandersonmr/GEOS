@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 4.232708
+2 : Dead Code Elimination : 4.232708
+3 : Value Propagation : 4.232708
+4 : Promote Memory to Register : 4.232708
+5 : Add DWARF path discriminators : 4.232708
+6 : Early CSE : 3.026007
+7 : Add DWARF path discriminators : 3.026007
+8 : Scalar Replacement of Aggregates (DT) : 3.026007
+9 : Loop-Closed SSA Form Pass : 3.026007
+10 : Dead Code Elimination : 3.026007
+11 : Alignment from assumptions : 3.026007
+12 : Remove redundant instructions : 3.026007
+13 : Dead Code Elimination : 3.026007
+14 : Constant Hoisting : 3.026007
+15 : Alignment from assumptions : 3.026007
+16 : Aggressive Dead Code Elimination : 3.026007
+17 : Global Value Numbering : 2.193508
+18 : Remove redundant instructions : 2.193508
+19 : Code sinking : 2.193508
+20 : Loop-Closed SSA Form Pass : 2.193508
+SpeedUp : 3.801043

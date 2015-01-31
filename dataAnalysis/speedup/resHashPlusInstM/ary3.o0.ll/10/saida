@@ -1,0 +1,20 @@
+1 : Value Propagation : 1886.811228
+2 : Value Propagation : 1886.811228
+3 : Remove redundant instructions : 1886.811218
+4 : Value Propagation : 1886.811218
+5 : Add DWARF path discriminators : 1886.811218
+6 : Value Propagation : 1886.811218
+7 : Dead Instruction Elimination : 1886.811218
+8 : Dead Instruction Elimination : 1886.811218
+9 : MemCpy Optimization : 1886.811218
+10 : Induction Variable Simplification : 1886.811218
+11 : Lower atomic intrinsics to non-atomic form : 1886.811218
+12 : Dead Code Elimination : 1886.811218
+13 : Dead Instruction Elimination : 1886.811218
+14 : Loop-Closed SSA Form Pass : 1886.811218
+15 : MergedLoadStoreMotion : 1886.811218
+16 : Dead Code Elimination : 1886.811218
+17 : Lower atomic intrinsics to non-atomic form : 1886.811218
+18 : Induction Variable Simplification : 1886.811218
+19 : Global Value Numbering : 485322.376744
+SpeedUp : 0.003888

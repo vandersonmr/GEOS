@@ -1,0 +1,6 @@
+1 : Remove redundant instructions : 51.775792
+2 : Value Propagation : 51.775792
+3 : Loop Invariant Code Motion : 51.775792
+4 : Aggressive Dead Code Elimination : 51.775792
+5 : Scalar Replacement of Aggregates (DT) : 56.705364
+SpeedUp : 0.913099

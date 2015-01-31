@@ -1,0 +1,8 @@
+1 : Code sinking : 12211.589782
+2 : Remove redundant instructions : 12211.589782
+3 : Reassociate expressions : 12211.589782
+4 : Induction Variable Simplification : 12211.589782
+5 : SROA : 12211.589782
+6 : Remove redundant instructions : 12211.589782
+7 : Combine redundant instructions : 12394.627574
+SpeedUp : 0.985232

@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 245.312500
+2 : Remove redundant instructions : 245.312500
+3 : MemCpy Optimization : 245.312500
+4 : Aggressive Dead Code Elimination : 245.312500
+5 : Loop-Closed SSA Form Pass : 245.312500
+6 : Code sinking : 245.312500
+7 : SROA : 245.312500
+8 : Loop Invariant Code Motion : 245.312500
+9 : Constant Hoisting : 245.312500
+10 : Assign names to anonymous instructions : 245.312500
+11 : Remove redundant instructions : 245.312500
+12 : Loop Invariant Code Motion : 245.312500
+13 : Constant Hoisting : 245.312500
+14 : Loop-Closed SSA Form Pass : 245.312500
+15 : Loop Invariant Code Motion : 245.312500
+16 : Aggressive Dead Code Elimination : 245.312500
+17 : Value Propagation : 245.312500
+18 : Loop Invariant Code Motion : 245.312500
+19 : Early CSE : 193.750000
+20 : Loop-Closed SSA Form Pass : 193.750000
+SpeedUp : 1.266129

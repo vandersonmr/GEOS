@@ -1,0 +1,21 @@
+1 : Loop Invariant Code Motion : 26.140006
+2 : Remove redundant instructions : 26.140006
+3 : Induction Variable Simplification : 26.140006
+4 : SROA : 26.140006
+5 : Loop Invariant Code Motion : 26.140006
+6 : Loop-Closed SSA Form Pass : 26.140006
+7 : SROA : 26.140006
+8 : MemCpy Optimization : 26.140006
+9 : Induction Variable Simplification : 26.140006
+10 : Assign names to anonymous instructions : 26.140006
+11 : Lower atomic intrinsics to non-atomic form : 26.140006
+12 : Reassociate expressions : 26.140006
+13 : Aggressive Dead Code Elimination : 26.140006
+14 : Scalar Replacement of Aggregates (DT) : 20.930004
+15 : Scalar Replacement of Aggregates (DT) : 20.090004
+16 : Aggressive Dead Code Elimination : 20.090004
+17 : SROA : 20.090004
+18 : MergedLoadStoreMotion : 20.090004
+19 : Scalar Replacement of Aggregates (DT) : 20.090004
+20 : Induction Variable Simplification : 20.090004
+SpeedUp : 1.301145

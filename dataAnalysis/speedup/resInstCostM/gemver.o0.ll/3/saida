@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 17.768402
+2 : Assign names to anonymous instructions : 17.768402
+3 : Dead Code Elimination : 17.768402
+4 : Early CSE : 13.606882
+5 : MergedLoadStoreMotion : 13.606882
+6 : Combine redundant instructions : 12.326242
+7 : Value Propagation : 12.326242
+8 : Global Value Numbering : 8.806082
+9 : Promote Memory to Register : 6.083921
+10 : Induction Variable Simplification : 5.923601
+11 : MemCpy Optimization : 5.923601
+12 : Add DWARF path discriminators : 5.923601
+13 : Constant Hoisting : 5.923601
+14 : MergedLoadStoreMotion : 5.923601
+15 : Early CSE : 5.923601
+16 : Promote Memory to Register : 5.923601
+17 : Promote Memory to Register : 5.923601
+18 : Add DWARF path discriminators : 5.923601
+19 : Scalar Replacement of Aggregates (DT) : 5.923601
+20 : Loop-Closed SSA Form Pass : 5.923601
+SpeedUp : 2.999595

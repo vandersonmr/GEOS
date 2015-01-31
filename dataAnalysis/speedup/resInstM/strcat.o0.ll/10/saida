@@ -1,0 +1,21 @@
+1 : Early CSE : 3.200003
+2 : Constant Hoisting : 3.200003
+3 : Code sinking : 3.200003
+4 : MergedLoadStoreMotion : 3.200003
+5 : Loop-Closed SSA Form Pass : 3.200003
+6 : Constant Hoisting : 3.200003
+7 : Promote Memory to Register : 2.100002
+8 : Assign names to anonymous instructions : 2.000002
+9 : Global Value Numbering : 1.700002
+10 : Code sinking : 1.700002
+11 : Value Propagation : 1.700002
+12 : Early CSE : 1.700002
+13 : Promote Memory to Register : 1.700002
+14 : Dead Code Elimination : 1.700002
+15 : SROA : 1.700002
+16 : Alignment from assumptions : 1.700002
+17 : Scalar Replacement of Aggregates (DT) : 1.700002
+18 : Dead Instruction Elimination : 1.700002
+19 : Dead Instruction Elimination : 1.700002
+20 : Induction Variable Simplification : 1.800002
+SpeedUp : 1.944443

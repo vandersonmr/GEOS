@@ -1,0 +1,20 @@
+1 : Value Propagation : 247.204441
+2 : Value Propagation : 247.204441
+3 : Dead Code Elimination : 247.204441
+4 : Constant Hoisting : 247.204441
+5 : Aggressive Dead Code Elimination : 247.204441
+6 : Loop-Closed SSA Form Pass : 247.204441
+7 : Aggressive Dead Code Elimination : 247.204441
+8 : Induction Variable Simplification : 247.204441
+9 : Combine redundant instructions : 224.145451
+10 : Code sinking : 224.145451
+11 : Aggressive Dead Code Elimination : 224.145451
+12 : Loop Invariant Code Motion : 224.145451
+13 : Loop-Closed SSA Form Pass : 224.145451
+14 : Lower atomic intrinsics to non-atomic form : 224.145451
+15 : SROA : 224.145451
+16 : Dead Code Elimination : 224.145451
+17 : Combine redundant instructions : 224.145451
+18 : Global Value Numbering : 168.877639
+19 : Loop Invariant Code Motion : 168.877703
+SpeedUp : 1.463807

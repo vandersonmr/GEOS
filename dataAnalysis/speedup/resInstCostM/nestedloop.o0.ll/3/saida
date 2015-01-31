@@ -1,0 +1,17 @@
+1 : Remove redundant instructions : 589.420269
+2 : Early CSE : 589.420269
+3 : Code sinking : 589.420269
+4 : Reassociate expressions : 589.420269
+5 : MergedLoadStoreMotion : 589.420269
+6 : Loop-Closed SSA Form Pass : 589.420269
+7 : Add DWARF path discriminators : 589.420269
+8 : SROA : 589.420269
+9 : Loop-Closed SSA Form Pass : 589.420269
+10 : Remove redundant instructions : 589.420269
+11 : Loop Invariant Code Motion : 589.420269
+12 : Dead Instruction Elimination : 589.420269
+13 : Loop-Closed SSA Form Pass : 589.420269
+14 : MergedLoadStoreMotion : 589.420269
+15 : Dead Code Elimination : 589.420269
+16 : Global Value Numbering : 1170.322424
+SpeedUp : 0.503639

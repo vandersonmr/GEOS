@@ -1,0 +1,10 @@
+1 : Combine redundant instructions : 648.889217
+2 : Assign names to anonymous instructions : 648.889217
+3 : Loop-Closed SSA Form Pass : 648.889217
+4 : Alignment from assumptions : 648.889217
+5 : Value Propagation : 648.889217
+6 : Loop-Closed SSA Form Pass : 648.889217
+7 : Reassociate expressions : 648.889217
+8 : Value Propagation : 648.889217
+9 : Global Value Numbering : 702.539062
+SpeedUp : 76.904519

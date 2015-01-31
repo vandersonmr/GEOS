@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 306.357121
+2 : Remove redundant instructions : 306.357121
+3 : Scalar Replacement of Aggregates (DT) : 218.451300
+4 : Loop-Closed SSA Form Pass : 218.451300
+5 : Combine redundant instructions : 187.389033
+6 : Global Value Numbering : 130.868761
+7 : SROA : 130.868761
+8 : Value Propagation : 130.868761
+9 : Dead Instruction Elimination : 130.868761
+10 : Constant Hoisting : 130.868761
+11 : Remove redundant instructions : 130.868761
+12 : Early CSE : 92.052187
+13 : Add DWARF path discriminators : 92.052187
+14 : Combine redundant instructions : 92.052187
+15 : Loop-Closed SSA Form Pass : 92.052187
+16 : Dead Instruction Elimination : 92.052187
+17 : Promote Memory to Register : 92.052187
+18 : Code sinking : 92.052187
+19 : Dead Code Elimination : 92.052187
+20 : Lower atomic intrinsics to non-atomic form : 92.052187
+SpeedUp : 4.574486

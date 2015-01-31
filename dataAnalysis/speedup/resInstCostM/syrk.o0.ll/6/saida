@@ -1,0 +1,21 @@
+1 : SROA : 312.203705
+2 : Loop Invariant Code Motion : 312.203705
+3 : Combine redundant instructions : 258.369649
+4 : Combine redundant instructions : 258.369649
+5 : MemCpy Optimization : 258.369649
+6 : Dead Code Elimination : 258.369649
+7 : Alignment from assumptions : 258.369649
+8 : Loop-Closed SSA Form Pass : 258.369649
+9 : Induction Variable Simplification : 258.369649
+10 : Code sinking : 258.369649
+11 : MergedLoadStoreMotion : 258.369649
+12 : Constant Hoisting : 258.369649
+13 : Dead Code Elimination : 258.369649
+14 : Constant Hoisting : 258.369649
+15 : Aggressive Dead Code Elimination : 258.369649
+16 : Global Value Numbering : 22.062839
+17 : Induction Variable Simplification : 22.062839
+18 : Constant Hoisting : 22.062839
+19 : Add DWARF path discriminators : 22.062839
+20 : Dead Instruction Elimination : 22.062839
+SpeedUp : 14.150659

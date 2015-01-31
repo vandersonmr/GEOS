@@ -1,0 +1,21 @@
+1 : Constant Hoisting : 10.883921
+2 : Loop-Closed SSA Form Pass : 10.883921
+3 : Assign names to anonymous instructions : 10.883921
+4 : SROA : 10.883921
+5 : Dead Instruction Elimination : 10.883921
+6 : Assign names to anonymous instructions : 10.883921
+7 : Loop-Closed SSA Form Pass : 10.883921
+8 : Constant Hoisting : 10.883921
+9 : Loop Invariant Code Motion : 10.883921
+10 : Dead Code Elimination : 10.883921
+11 : Early CSE : 8.483161
+12 : Early CSE : 8.483161
+13 : Value Propagation : 8.483161
+14 : Assign names to anonymous instructions : 8.483161
+15 : Induction Variable Simplification : 8.483161
+16 : Induction Variable Simplification : 8.483161
+17 : Loop Invariant Code Motion : 8.483161
+18 : Dead Code Elimination : 8.483161
+19 : Scalar Replacement of Aggregates (DT) : 5.601880
+20 : Alignment from assumptions : 4.641760
+SpeedUp : 2.344783

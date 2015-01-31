@@ -1,0 +1,21 @@
+1 : Value Propagation : 312.203705
+2 : MergedLoadStoreMotion : 312.203705
+3 : Global Value Numbering : 32.968224
+4 : Add DWARF path discriminators : 32.968224
+5 : Code sinking : 32.968224
+6 : Remove redundant instructions : 32.968224
+7 : Induction Variable Simplification : 32.968224
+8 : Aggressive Dead Code Elimination : 32.968224
+9 : Code sinking : 32.968224
+10 : Remove redundant instructions : 32.968224
+11 : SROA : 32.968224
+12 : Loop-Closed SSA Form Pass : 32.968224
+13 : MemCpy Optimization : 32.968224
+14 : Scalar Replacement of Aggregates (DT) : 11.115377
+15 : Combine redundant instructions : 11.062887
+16 : Value Propagation : 11.062887
+17 : SROA : 11.062887
+18 : Reassociate expressions : 11.062887
+19 : Promote Memory to Register : 11.062887
+20 : Constant Hoisting : 11.062887
+SpeedUp : 28.220817

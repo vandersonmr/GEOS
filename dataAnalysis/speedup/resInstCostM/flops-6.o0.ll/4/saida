@@ -1,0 +1,20 @@
+1 : Early CSE : 285.937499
+2 : Loop Invariant Code Motion : 285.937499
+3 : Loop-Closed SSA Form Pass : 285.937499
+4 : Loop-Closed SSA Form Pass : 285.937499
+5 : Dead Instruction Elimination : 285.937499
+6 : Alignment from assumptions : 285.937499
+7 : Aggressive Dead Code Elimination : 285.937499
+8 : Scalar Replacement of Aggregates (DT) : 260.937499
+9 : Scalar Replacement of Aggregates (DT) : 239.062499
+10 : Dead Code Elimination : 239.062499
+11 : Add DWARF path discriminators : 239.062499
+12 : Aggressive Dead Code Elimination : 239.062499
+13 : Constant Hoisting : 239.062499
+14 : Assign names to anonymous instructions : 239.062499
+15 : Reassociate expressions : 239.062499
+16 : Scalar Replacement of Aggregates (DT) : 239.062499
+17 : Aggressive Dead Code Elimination : 239.062499
+18 : Value Propagation : 239.062499
+19 : Global Value Numbering : 239.062499
+SpeedUp : 1.411765

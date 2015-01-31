@@ -1,0 +1,7 @@
+1 : Code sinking : 3760.954945
+2 : Constant Hoisting : 3760.954945
+3 : Value Propagation : 3760.954945
+4 : Dead Code Elimination : 3760.954945
+5 : SROA : 3760.954945
+6 : Promote Memory to Register : 3925.747000
+SpeedUp : 0.958023

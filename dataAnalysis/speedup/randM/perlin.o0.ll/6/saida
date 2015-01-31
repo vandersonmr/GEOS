@@ -1,0 +1,5 @@
+1 : SROA : 0.000002
+2 : Constant Hoisting : 0.000002
+3 : Dead Code Elimination : 0.000002
+4 : Scalar Replacement of Aggregates (DT) : 0.000002
+SpeedUp : 1.283784

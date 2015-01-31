@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 337.499999
+2 : Loop-Closed SSA Form Pass : 337.499999
+3 : Constant Hoisting : 337.499999
+4 : Alignment from assumptions : 337.499999
+5 : Scalar Replacement of Aggregates (DT) : 268.749999
+6 : Value Propagation : 268.749999
+7 : Assign names to anonymous instructions : 268.749999
+8 : Aggressive Dead Code Elimination : 268.749999
+9 : Assign names to anonymous instructions : 268.749999
+10 : SROA : 268.749999
+11 : MergedLoadStoreMotion : 268.749999
+12 : Add DWARF path discriminators : 268.749999
+13 : Constant Hoisting : 268.749999
+14 : Add DWARF path discriminators : 268.749999
+15 : Loop Invariant Code Motion : 246.874999
+16 : Reassociate expressions : 246.874999
+17 : Scalar Replacement of Aggregates (DT) : 246.874999
+18 : MergedLoadStoreMotion : 246.874999
+19 : Promote Memory to Register : 246.874999
+20 : Loop-Closed SSA Form Pass : 246.874999
+SpeedUp : 1.367089

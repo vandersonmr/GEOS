@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 10.883921
+2 : Dead Code Elimination : 10.883921
+3 : Assign names to anonymous instructions : 10.883921
+4 : Reassociate expressions : 10.883921
+5 : SROA : 10.883921
+6 : Lower atomic intrinsics to non-atomic form : 10.883921
+7 : Value Propagation : 10.883921
+8 : Remove redundant instructions : 10.883921
+9 : Reassociate expressions : 10.883921
+10 : Loop Invariant Code Motion : 10.883921
+11 : Loop-Closed SSA Form Pass : 10.883921
+12 : Alignment from assumptions : 10.883921
+13 : Dead Code Elimination : 10.883921
+14 : Combine redundant instructions : 9.443361
+15 : MergedLoadStoreMotion : 9.443361
+16 : Dead Instruction Elimination : 9.443361
+17 : Dead Code Elimination : 9.443361
+18 : Constant Hoisting : 9.443361
+19 : Constant Hoisting : 9.443361
+20 : MergedLoadStoreMotion : 9.443361
+SpeedUp : 1.152547

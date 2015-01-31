@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 59.222512
+2 : Reassociate expressions : 59.222512
+3 : SROA : 59.222512
+4 : MergedLoadStoreMotion : 59.222512
+5 : Scalar Replacement of Aggregates (DT) : 32.011703
+6 : Scalar Replacement of Aggregates (DT) : 32.011703
+7 : Reassociate expressions : 32.011703
+8 : MergedLoadStoreMotion : 32.011703
+9 : Dead Instruction Elimination : 32.011703
+10 : SROA : 32.011703
+11 : Value Propagation : 32.011703
+12 : Dead Instruction Elimination : 32.011703
+13 : Dead Instruction Elimination : 32.011703
+14 : Value Propagation : 32.011703
+15 : Loop-Closed SSA Form Pass : 32.011703
+16 : MemCpy Optimization : 32.011703
+17 : MergedLoadStoreMotion : 32.011703
+18 : Combine redundant instructions : 32.011642
+19 : Early CSE : 28.810802
+20 : Reassociate expressions : 28.810802
+SpeedUp : 2.055566

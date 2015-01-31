@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 61.134199
+2 : SROA : 61.134199
+3 : Lower atomic intrinsics to non-atomic form : 61.134199
+4 : Code sinking : 61.134199
+5 : Loop-Closed SSA Form Pass : 61.134199
+6 : Scalar Replacement of Aggregates (DT) : 32.354023
+7 : MergedLoadStoreMotion : 32.354023
+8 : Remove redundant instructions : 32.354023
+9 : SROA : 32.354023
+10 : Lower atomic intrinsics to non-atomic form : 32.354023
+11 : Remove redundant instructions : 32.354023
+12 : Reassociate expressions : 32.354023
+13 : Constant Hoisting : 32.354023
+14 : MergedLoadStoreMotion : 32.354023
+15 : MemCpy Optimization : 32.354023
+16 : Assign names to anonymous instructions : 32.354023
+17 : Loop-Closed SSA Form Pass : 32.354023
+18 : MergedLoadStoreMotion : 32.354023
+19 : Dead Code Elimination : 32.354023
+20 : Code sinking : 32.354023
+SpeedUp : 1.889539

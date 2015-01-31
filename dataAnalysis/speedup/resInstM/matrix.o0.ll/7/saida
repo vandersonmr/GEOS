@@ -1,0 +1,6 @@
+1 : Dead Code Elimination : 1251.300070
+2 : Assign names to anonymous instructions : 1251.300070
+3 : SROA : 1251.300070
+4 : Assign names to anonymous instructions : 1251.300070
+5 : Global Value Numbering : 1429.410081
+SpeedUp : 0.875396

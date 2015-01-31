@@ -1,0 +1,7 @@
+1 : Assign names to anonymous instructions : 2494.943098
+2 : MergedLoadStoreMotion : 2494.943098
+3 : Assign names to anonymous instructions : 2494.943098
+4 : Global Value Numbering : 832.011041
+5 : SROA : 832.011041
+6 : Combine redundant instructions : 843.127901
+SpeedUp : 2.959151

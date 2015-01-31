@@ -1,0 +1,12 @@
+1 : Dead Instruction Elimination : 377.048086
+2 : Scalar Replacement of Aggregates (DT) : 247.758244
+3 : Loop Invariant Code Motion : 172.407635
+4 : Early CSE : 161.628191
+5 : MemCpy Optimization : 161.628191
+6 : Dead Code Elimination : 161.628191
+7 : Constant Hoisting : 161.628191
+8 : Reassociate expressions : 161.628191
+9 : Combine redundant instructions : 150.880236
+10 : Scalar Replacement of Aggregates (DT) : 150.880236
+11 : Global Value Numbering : 172.218676
+SpeedUp : 2.189357

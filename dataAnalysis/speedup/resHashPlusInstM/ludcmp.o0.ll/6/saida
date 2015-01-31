@@ -1,0 +1,6 @@
+1 : SROA : 644.602284
+2 : MergedLoadStoreMotion : 644.602284
+3 : Early CSE : 543.659708
+4 : Add DWARF path discriminators : 543.659708
+5 : Reassociate expressions : 543.735860
+SpeedUp : 1.185506

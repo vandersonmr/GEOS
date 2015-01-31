@@ -1,0 +1,21 @@
+1 : Loop Invariant Code Motion : 91.525496
+2 : Assign names to anonymous instructions : 91.525496
+3 : Promote Memory to Register : 35.825172
+4 : Value Propagation : 35.825172
+5 : Add DWARF path discriminators : 35.825172
+6 : MergedLoadStoreMotion : 35.825172
+7 : Assign names to anonymous instructions : 35.825172
+8 : Global Value Numbering : 30.700172
+9 : Global Value Numbering : 30.700172
+10 : Value Propagation : 30.700172
+11 : Induction Variable Simplification : 30.700172
+12 : Value Propagation : 30.700172
+13 : Scalar Replacement of Aggregates (DT) : 30.700172
+14 : Early CSE : 30.675172
+15 : Reassociate expressions : 30.675172
+16 : Assign names to anonymous instructions : 30.675172
+17 : Global Value Numbering : 30.675172
+18 : Combine redundant instructions : 30.675172
+19 : SROA : 30.675172
+20 : Promote Memory to Register : 30.675172
+SpeedUp : 2.983699

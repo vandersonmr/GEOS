@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 60.200007
+2 : Global Value Numbering : 59.500007
+3 : Combine redundant instructions : 43.400005
+4 : Remove redundant instructions : 43.400005
+5 : Value Propagation : 43.400005
+6 : Induction Variable Simplification : 43.400005
+7 : Alignment from assumptions : 43.400005
+8 : Loop-Closed SSA Form Pass : 43.400005
+9 : Value Propagation : 43.400005
+10 : Early CSE : 43.400005
+11 : Aggressive Dead Code Elimination : 43.400005
+12 : MemCpy Optimization : 43.400005
+13 : Loop Invariant Code Motion : 43.400005
+14 : Early CSE : 43.400005
+15 : Dead Instruction Elimination : 43.400005
+16 : MergedLoadStoreMotion : 43.400005
+17 : Code sinking : 43.400005
+18 : Loop-Closed SSA Form Pass : 43.400005
+19 : Scalar Replacement of Aggregates (DT) : 25.900003
+20 : Loop-Closed SSA Form Pass : 25.900003
+SpeedUp : 2.324324

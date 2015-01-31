@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 1065.438978
+2 : Remove redundant instructions : 1065.438978
+3 : Lower atomic intrinsics to non-atomic form : 1065.438978
+4 : Value Propagation : 1065.438978
+5 : Early CSE : 839.565058
+6 : MergedLoadStoreMotion : 839.565058
+7 : MergedLoadStoreMotion : 839.565058
+8 : Global Value Numbering : 430.767280
+9 : Early CSE : 430.767280
+10 : Alignment from assumptions : 430.767280
+11 : Global Value Numbering : 430.767280
+12 : Combine redundant instructions : 355.437386
+13 : Value Propagation : 355.437386
+14 : Aggressive Dead Code Elimination : 355.437386
+15 : Scalar Replacement of Aggregates (DT) : 247.737683
+16 : MemCpy Optimization : 215.493899
+17 : MergedLoadStoreMotion : 215.493899
+18 : MergedLoadStoreMotion : 215.493899
+19 : Alignment from assumptions : 215.493899
+20 : Early CSE : 215.493899
+SpeedUp : 4.944172

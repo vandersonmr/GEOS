@@ -1,0 +1,21 @@
+1 : Code sinking : 13.765121
+2 : Add DWARF path discriminators : 13.765121
+3 : Add DWARF path discriminators : 13.765121
+4 : Dead Instruction Elimination : 13.765121
+5 : Induction Variable Simplification : 13.765121
+6 : Alignment from assumptions : 13.765121
+7 : Aggressive Dead Code Elimination : 13.765121
+8 : Reassociate expressions : 13.765121
+9 : Value Propagation : 13.765121
+10 : Dead Code Elimination : 13.765121
+11 : Aggressive Dead Code Elimination : 13.765121
+12 : Loop-Closed SSA Form Pass : 13.765121
+13 : Loop Invariant Code Motion : 13.765121
+14 : MemCpy Optimization : 13.765121
+15 : MergedLoadStoreMotion : 13.765121
+16 : Promote Memory to Register : 8.803281
+17 : Lower atomic intrinsics to non-atomic form : 5.922921
+18 : Reassociate expressions : 5.922921
+19 : Induction Variable Simplification : 5.922921
+20 : MemCpy Optimization : 5.922921
+SpeedUp : 2.324043

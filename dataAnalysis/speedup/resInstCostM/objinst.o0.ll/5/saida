@@ -1,0 +1,21 @@
+1 : Code sinking : 60.200007
+2 : Code sinking : 60.200007
+3 : Remove redundant instructions : 60.200007
+4 : Dead Instruction Elimination : 60.200007
+5 : Alignment from assumptions : 60.200007
+6 : Reassociate expressions : 60.200007
+7 : Remove redundant instructions : 60.200007
+8 : Assign names to anonymous instructions : 60.200007
+9 : Alignment from assumptions : 60.200007
+10 : Lower atomic intrinsics to non-atomic form : 60.200007
+11 : Code sinking : 60.200007
+12 : Induction Variable Simplification : 60.200007
+13 : Loop Invariant Code Motion : 60.200007
+14 : Dead Code Elimination : 60.200007
+15 : Early CSE : 54.600006
+16 : MemCpy Optimization : 54.600006
+17 : Dead Code Elimination : 54.600006
+18 : Dead Instruction Elimination : 54.600006
+19 : Combine redundant instructions : 44.100005
+20 : Aggressive Dead Code Elimination : 44.100005
+SpeedUp : 1.365079

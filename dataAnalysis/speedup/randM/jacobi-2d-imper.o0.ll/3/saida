@@ -1,0 +1,8 @@
+1 : Combine redundant instructions : 0.000001
+2 : Induction Variable Simplification : 0.000001
+3 : Early CSE : 0.000001
+4 : Assign names to anonymous instructions : 0.000001
+5 : Combine redundant instructions : 0.000001
+6 : Dead Code Elimination : 0.000001
+7 : Alignment from assumptions : 0.000001
+SpeedUp : 0.844444

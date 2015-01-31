@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 1142.052068
+2 : Aggressive Dead Code Elimination : 1142.052068
+3 : Loop Invariant Code Motion : 495.220827
+4 : Reassociate expressions : 495.220827
+5 : Combine redundant instructions : 430.768920
+6 : MergedLoadStoreMotion : 430.768920
+7 : Code sinking : 430.768920
+8 : MemCpy Optimization : 430.768920
+9 : Early CSE : 414.932614
+10 : Induction Variable Simplification : 414.932614
+11 : Add DWARF path discriminators : 414.932614
+12 : Early CSE : 414.932614
+13 : Code sinking : 414.932614
+14 : SROA : 414.932614
+15 : Aggressive Dead Code Elimination : 414.932614
+16 : Aggressive Dead Code Elimination : 414.932614
+17 : Early CSE : 414.932614
+18 : Assign names to anonymous instructions : 414.932614
+19 : Loop Invariant Code Motion : 414.932614
+20 : SROA : 414.932614
+SpeedUp : 2.752380

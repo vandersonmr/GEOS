@@ -1,0 +1,4 @@
+1 : MemCpy Optimization : 1230.106588
+2 : Global Value Numbering : 778.599470
+3 : Reassociate expressions : 778.599472
+SpeedUp : 1.579897

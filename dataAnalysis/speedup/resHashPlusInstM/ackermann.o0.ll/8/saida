@@ -1,0 +1,4 @@
+1 : Loop Invariant Code Motion : 4.182627
+2 : Induction Variable Simplification : 4.182627
+3 : Combine redundant instructions : 4.255301
+SpeedUp : 0.982922

@@ -1,0 +1,12 @@
+1 : Dead Code Elimination : 54416.232888
+2 : Code sinking : 54416.232888
+3 : Reassociate expressions : 54416.232888
+4 : Global Value Numbering : 54220.531359
+5 : Alignment from assumptions : 54220.531359
+6 : Lower atomic intrinsics to non-atomic form : 54220.531359
+7 : MemCpy Optimization : 54220.531359
+8 : Alignment from assumptions : 54220.531359
+9 : Induction Variable Simplification : 54220.531359
+10 : Scalar Replacement of Aggregates (DT) : 360.278373
+11 : Code sinking : 945.312595
+SpeedUp : 57.564274

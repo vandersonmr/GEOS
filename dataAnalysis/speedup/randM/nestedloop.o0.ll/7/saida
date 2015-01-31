@@ -1,0 +1,6 @@
+1 : Aggressive Dead Code Elimination : 0.000001
+2 : Global Value Numbering : 0.000001
+3 : MergedLoadStoreMotion : 0.000001
+4 : Add DWARF path discriminators : 0.000001
+5 : Assign names to anonymous instructions : 0.000001
+SpeedUp : 1.176471

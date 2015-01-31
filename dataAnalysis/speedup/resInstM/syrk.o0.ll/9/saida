@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 376.880150
+2 : Code sinking : 376.880150
+3 : Add DWARF path discriminators : 376.880150
+4 : SROA : 376.880150
+5 : Combine redundant instructions : 323.056621
+6 : Assign names to anonymous instructions : 323.056621
+7 : Scalar Replacement of Aggregates (DT) : 215.378084
+8 : Alignment from assumptions : 215.378084
+9 : Global Value Numbering : 32.684811
+10 : Global Value Numbering : 32.684811
+11 : Combine redundant instructions : 32.684811
+12 : Add DWARF path discriminators : 32.684811
+13 : Value Propagation : 32.684811
+14 : Remove redundant instructions : 32.684811
+15 : Dead Instruction Elimination : 32.684811
+16 : MemCpy Optimization : 32.684811
+17 : Reassociate expressions : 32.684811
+18 : Lower atomic intrinsics to non-atomic form : 32.684811
+19 : Reassociate expressions : 32.684811
+20 : Alignment from assumptions : 32.684811
+SpeedUp : 11.530743

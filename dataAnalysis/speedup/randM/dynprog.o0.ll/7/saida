@@ -1,0 +1,7 @@
+1 : Alignment from assumptions : 0.000001
+2 : Assign names to anonymous instructions : 0.000001
+3 : Loop Invariant Code Motion : 0.000001
+4 : Lower atomic intrinsics to non-atomic form : 0.000001
+5 : Loop-Closed SSA Form Pass : 0.000001
+6 : Assign names to anonymous instructions : 0.000001
+SpeedUp : 0.891566

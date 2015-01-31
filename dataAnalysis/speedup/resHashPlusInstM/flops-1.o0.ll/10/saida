@@ -1,0 +1,3 @@
+1 : Dead Instruction Elimination : 79681.857635
+2 : Combine redundant instructions : 100755.591072
+SpeedUp : 0.790843

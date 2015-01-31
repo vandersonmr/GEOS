@@ -1,0 +1,13 @@
+1 : Dead Instruction Elimination : 789.055338
+2 : Dead Code Elimination : 789.055338
+3 : Add DWARF path discriminators : 789.055338
+4 : Add DWARF path discriminators : 789.055338
+5 : Dead Code Elimination : 789.055338
+6 : Loop-Closed SSA Form Pass : 789.055338
+7 : Loop Invariant Code Motion : 789.055338
+8 : Add DWARF path discriminators : 789.055338
+9 : Combine redundant instructions : 740.592132
+10 : Alignment from assumptions : 740.592132
+11 : Add DWARF path discriminators : 740.592132
+12 : Scalar Replacement of Aggregates (DT) : 874.685424
+SpeedUp : 0.902102

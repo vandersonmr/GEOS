@@ -1,0 +1,21 @@
+1 : SROA : 113.750028
+2 : Early CSE : 104.450024
+3 : Scalar Replacement of Aggregates (DT) : 69.100016
+4 : Promote Memory to Register : 65.850015
+5 : Value Propagation : 65.850015
+6 : Constant Hoisting : 65.850015
+7 : Reassociate expressions : 65.850015
+8 : Constant Hoisting : 65.850015
+9 : Aggressive Dead Code Elimination : 65.850015
+10 : Remove redundant instructions : 65.850015
+11 : Scalar Replacement of Aggregates (DT) : 65.850015
+12 : Combine redundant instructions : 64.500013
+13 : Promote Memory to Register : 64.500013
+14 : MemCpy Optimization : 64.500013
+15 : Alignment from assumptions : 64.500013
+16 : MergedLoadStoreMotion : 64.500013
+17 : Add DWARF path discriminators : 64.500013
+18 : Constant Hoisting : 64.500013
+19 : Remove redundant instructions : 64.500013
+20 : SROA : 64.500013
+SpeedUp : 1.763566

@@ -1,0 +1,11 @@
+1 : Promote Memory to Register : 22.400004
+2 : Value Propagation : 22.400004
+3 : Scalar Replacement of Aggregates (DT) : 22.400004
+4 : Code sinking : 22.400004
+5 : MemCpy Optimization : 22.400004
+6 : Remove redundant instructions : 22.400004
+7 : Dead Code Elimination : 22.400004
+8 : Remove redundant instructions : 22.400004
+9 : Add DWARF path discriminators : 22.400004
+10 : Combine redundant instructions : 23.800004
+SpeedUp : 2.529412

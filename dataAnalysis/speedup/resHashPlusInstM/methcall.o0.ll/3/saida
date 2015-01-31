@@ -1,0 +1,10 @@
+1 : Reassociate expressions : 133682.475345
+2 : Early CSE : 133285.600375
+3 : MergedLoadStoreMotion : 133285.600375
+4 : Loop Invariant Code Motion : 133285.600375
+5 : Lower atomic intrinsics to non-atomic form : 133285.600375
+6 : Loop-Closed SSA Form Pass : 133285.600375
+7 : MergedLoadStoreMotion : 133285.600375
+8 : Promote Memory to Register : 13856.906704
+9 : Value Propagation : 34333.781738
+SpeedUp : 3.893613

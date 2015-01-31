@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 327.361362
+2 : SROA : 327.361362
+3 : SROA : 327.361362
+4 : Promote Memory to Register : 327.361362
+5 : Loop Invariant Code Motion : 236.192922
+6 : Combine redundant instructions : 209.302058
+7 : Dead Instruction Elimination : 209.302058
+8 : Remove redundant instructions : 209.302058
+9 : Reassociate expressions : 209.302058
+10 : Dead Code Elimination : 209.302058
+11 : Lower atomic intrinsics to non-atomic form : 209.302058
+12 : Code sinking : 209.302058
+13 : Induction Variable Simplification : 177.131592
+14 : Constant Hoisting : 177.131592
+15 : Alignment from assumptions : 177.131592
+16 : SROA : 177.131592
+17 : Value Propagation : 171.778601
+18 : Assign names to anonymous instructions : 171.778601
+19 : Promote Memory to Register : 171.778601
+20 : Lower atomic intrinsics to non-atomic form : 171.778601
+SpeedUp : 3.030242

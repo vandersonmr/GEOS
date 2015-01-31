@@ -1,0 +1,20 @@
+1 : Assign names to anonymous instructions : 577.138100
+2 : Scalar Replacement of Aggregates (DT) : 243.746000
+3 : Scalar Replacement of Aggregates (DT) : 243.746000
+4 : Aggressive Dead Code Elimination : 243.746000
+5 : Scalar Replacement of Aggregates (DT) : 243.746000
+6 : Constant Hoisting : 243.746000
+7 : MergedLoadStoreMotion : 243.746000
+8 : Combine redundant instructions : 243.746000
+9 : MemCpy Optimization : 243.746000
+10 : Scalar Replacement of Aggregates (DT) : 243.746000
+11 : Dead Code Elimination : 243.746000
+12 : Promote Memory to Register : 243.746000
+13 : Early CSE : 243.746000
+14 : Remove redundant instructions : 243.746000
+15 : Scalar Replacement of Aggregates (DT) : 243.746000
+16 : SROA : 243.746000
+17 : Loop-Closed SSA Form Pass : 243.746000
+18 : Induction Variable Simplification : 243.746000
+19 : Code sinking : 243.747700
+SpeedUp : 2.367768

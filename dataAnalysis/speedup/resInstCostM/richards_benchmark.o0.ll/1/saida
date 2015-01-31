@@ -1,0 +1,7 @@
+1 : Scalar Replacement of Aggregates (DT) : 54.169589
+2 : Global Value Numbering : 53.141100
+3 : Remove redundant instructions : 53.141100
+4 : Constant Hoisting : 53.141100
+5 : Induction Variable Simplification : 53.141100
+6 : Loop Invariant Code Motion : 53.160784
+SpeedUp : 1.437767

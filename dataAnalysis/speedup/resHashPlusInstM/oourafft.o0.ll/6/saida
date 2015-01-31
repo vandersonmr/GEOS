@@ -1,0 +1,19 @@
+1 : Loop Invariant Code Motion : 3599.805556
+2 : Dead Code Elimination : 3599.805556
+3 : Alignment from assumptions : 3599.805556
+4 : Dead Instruction Elimination : 3599.805556
+5 : MemCpy Optimization : 3599.805556
+6 : Constant Hoisting : 3599.805556
+7 : Early CSE : 3392.942814
+8 : SROA : 3392.942814
+9 : Add DWARF path discriminators : 3392.942814
+10 : Scalar Replacement of Aggregates (DT) : 2106.848277
+11 : Reassociate expressions : 2038.256675
+12 : Add DWARF path discriminators : 2038.053920
+13 : Scalar Replacement of Aggregates (DT) : 2038.053920
+14 : Global Value Numbering : 1335.906431
+15 : Combine redundant instructions : 1316.464204
+16 : MergedLoadStoreMotion : 1316.464204
+17 : Combine redundant instructions : 1316.464204
+18 : Loop Invariant Code Motion : 1316.715046
+SpeedUp : 2.733929

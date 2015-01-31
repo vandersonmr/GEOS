@@ -1,0 +1,16 @@
+1 : Induction Variable Simplification : 279.687499
+2 : Loop-Closed SSA Form Pass : 279.687499
+3 : Add DWARF path discriminators : 279.687499
+4 : Dead Instruction Elimination : 279.687499
+5 : Remove redundant instructions : 279.687499
+6 : Alignment from assumptions : 279.687499
+7 : Loop-Closed SSA Form Pass : 279.687499
+8 : Loop Invariant Code Motion : 279.687499
+9 : Alignment from assumptions : 279.687499
+10 : MergedLoadStoreMotion : 279.687499
+11 : Induction Variable Simplification : 279.687499
+12 : Loop-Closed SSA Form Pass : 279.687499
+13 : Lower atomic intrinsics to non-atomic form : 279.687499
+14 : Loop-Closed SSA Form Pass : 279.687499
+15 : Global Value Numbering : 279.687499
+SpeedUp : 1.000000

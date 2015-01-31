@@ -1,0 +1,21 @@
+1 : Constant Hoisting : 69.706230
+2 : Loop-Closed SSA Form Pass : 69.706230
+3 : Value Propagation : 69.706230
+4 : Code sinking : 67.917970
+5 : Dead Instruction Elimination : 67.917970
+6 : SROA : 67.917970
+7 : MergedLoadStoreMotion : 67.917970
+8 : Reassociate expressions : 67.917970
+9 : Global Value Numbering : 67.917970
+10 : Reassociate expressions : 67.917970
+11 : MergedLoadStoreMotion : 67.917970
+12 : SROA : 67.917970
+13 : Combine redundant instructions : 51.537259
+14 : Alignment from assumptions : 51.537259
+15 : MemCpy Optimization : 51.537259
+16 : MemCpy Optimization : 51.537259
+17 : MergedLoadStoreMotion : 51.537259
+18 : Alignment from assumptions : 51.537259
+19 : Value Propagation : 51.537259
+20 : Alignment from assumptions : 51.537259
+SpeedUp : 1.352541

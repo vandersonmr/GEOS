@@ -1,0 +1,21 @@
+1 : Code sinking : 11.752421
+2 : Aggressive Dead Code Elimination : 11.752421
+3 : Assign names to anonymous instructions : 11.752421
+4 : Scalar Replacement of Aggregates (DT) : 7.653812
+5 : Add DWARF path discriminators : 7.653812
+6 : Dead Code Elimination : 7.653812
+7 : Alignment from assumptions : 7.653812
+8 : Scalar Replacement of Aggregates (DT) : 7.653812
+9 : Dead Instruction Elimination : 7.653812
+10 : SROA : 7.653812
+11 : Induction Variable Simplification : 5.214610
+12 : Value Propagation : 5.214610
+13 : Induction Variable Simplification : 5.214610
+14 : Global Value Numbering : 3.167211
+15 : Combine redundant instructions : 2.754309
+16 : Add DWARF path discriminators : 2.748509
+17 : Aggressive Dead Code Elimination : 2.748509
+18 : Combine redundant instructions : 2.748509
+19 : Induction Variable Simplification : 2.748509
+20 : Combine redundant instructions : 2.748509
+SpeedUp : 4.275925

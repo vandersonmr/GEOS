@@ -1,0 +1,15 @@
+1 : MemCpy Optimization : 2167.241420
+2 : Loop Invariant Code Motion : 2167.241420
+3 : Constant Hoisting : 2167.241420
+4 : Loop-Closed SSA Form Pass : 2167.241420
+5 : Constant Hoisting : 2167.241420
+6 : Loop Invariant Code Motion : 2167.241420
+7 : Loop-Closed SSA Form Pass : 2167.241420
+8 : Alignment from assumptions : 2167.241420
+9 : Value Propagation : 2167.241420
+10 : Early CSE : 2144.992739
+11 : Constant Hoisting : 2144.992739
+12 : Aggressive Dead Code Elimination : 2144.992739
+13 : Value Propagation : 2144.992739
+14 : Global Value Numbering : 2506.012769
+SpeedUp : 0.864817

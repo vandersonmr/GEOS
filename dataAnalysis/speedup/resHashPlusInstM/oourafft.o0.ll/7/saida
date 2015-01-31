@@ -1,0 +1,4 @@
+1 : Code sinking : 3599.805556
+2 : Alignment from assumptions : 3599.805556
+3 : Early CSE : 3392.942814
+4 : Loop Invariant Code Motion : 3393.963354

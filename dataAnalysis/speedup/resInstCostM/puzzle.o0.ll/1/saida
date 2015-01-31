@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 91.500495
+2 : Early CSE : 71.325435
+3 : Promote Memory to Register : 35.775172
+4 : MemCpy Optimization : 30.700162
+5 : Global Value Numbering : 30.675172
+6 : MergedLoadStoreMotion : 30.675172
+7 : Add DWARF path discriminators : 30.675172
+8 : Code sinking : 30.675172
+9 : Remove redundant instructions : 30.675172
+10 : Scalar Replacement of Aggregates (DT) : 30.675172
+11 : Value Propagation : 30.675172
+12 : SROA : 30.675172
+13 : SROA : 30.675172
+14 : Assign names to anonymous instructions : 30.675172
+15 : Dead Instruction Elimination : 30.675172
+16 : Constant Hoisting : 30.675172
+17 : Loop Invariant Code Motion : 30.675172
+18 : Constant Hoisting : 30.675172
+19 : Assign names to anonymous instructions : 30.675172
+20 : Code sinking : 30.675172
+SpeedUp : 2.983699

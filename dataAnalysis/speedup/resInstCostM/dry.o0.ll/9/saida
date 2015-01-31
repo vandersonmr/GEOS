@@ -1,0 +1,21 @@
+1 : Early CSE : 362.000000
+2 : Scalar Replacement of Aggregates (DT) : 200.000000
+3 : Dead Instruction Elimination : 176.000000
+4 : Add DWARF path discriminators : 171.000000
+5 : Promote Memory to Register : 168.000000
+6 : Remove redundant instructions : 168.000000
+7 : Early CSE : 168.000000
+8 : Constant Hoisting : 168.000000
+9 : Scalar Replacement of Aggregates (DT) : 168.000000
+10 : MergedLoadStoreMotion : 168.000000
+11 : Early CSE : 168.000000
+12 : Promote Memory to Register : 168.000000
+13 : Global Value Numbering : 144.000000
+14 : Dead Instruction Elimination : 144.000000
+15 : Remove redundant instructions : 144.000000
+16 : SROA : 144.000000
+17 : Assign names to anonymous instructions : 144.000000
+18 : Aggressive Dead Code Elimination : 144.000000
+19 : Loop-Closed SSA Form Pass : 144.000000
+20 : Loop Invariant Code Motion : 143.000000
+SpeedUp : 2.930070

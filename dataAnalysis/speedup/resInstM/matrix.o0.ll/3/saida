@@ -1,0 +1,18 @@
+1 : Code sinking : 1251.300070
+2 : SROA : 1251.300070
+3 : Induction Variable Simplification : 1251.300070
+4 : MemCpy Optimization : 1251.300070
+5 : Reassociate expressions : 1251.300070
+6 : Add DWARF path discriminators : 1251.300070
+7 : Reassociate expressions : 1251.300070
+8 : Scalar Replacement of Aggregates (DT) : 792.300044
+9 : Promote Memory to Register : 633.390039
+10 : Alignment from assumptions : 633.390039
+11 : Induction Variable Simplification : 633.390039
+12 : Scalar Replacement of Aggregates (DT) : 633.390039
+13 : Combine redundant instructions : 573.300037
+14 : Loop Invariant Code Motion : 543.990033
+15 : Loop Invariant Code Motion : 543.990033
+16 : Assign names to anonymous instructions : 543.990033
+17 : Global Value Numbering : 597.030038
+SpeedUp : 2.095875

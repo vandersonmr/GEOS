@@ -1,0 +1,20 @@
+1 : Constant Hoisting : 2.843890
+2 : Induction Variable Simplification : 2.843890
+3 : Code sinking : 2.843890
+4 : Lower atomic intrinsics to non-atomic form : 2.843890
+5 : Dead Code Elimination : 2.843890
+6 : Induction Variable Simplification : 2.843890
+7 : Code sinking : 2.843890
+8 : Induction Variable Simplification : 2.843890
+9 : Assign names to anonymous instructions : 2.843890
+10 : Reassociate expressions : 2.843890
+11 : Constant Hoisting : 2.843890
+12 : Loop Invariant Code Motion : 2.843890
+13 : Add DWARF path discriminators : 2.843890
+14 : Assign names to anonymous instructions : 2.843890
+15 : Constant Hoisting : 2.843890
+16 : Lower atomic intrinsics to non-atomic form : 2.843890
+17 : Dead Instruction Elimination : 2.843890
+18 : Code sinking : 2.843890
+19 : Remove redundant instructions : 2.843890
+SpeedUp : 1.000000

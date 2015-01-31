@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 472.845333
+2 : Combine redundant instructions : 397.620409
+3 : Loop-Closed SSA Form Pass : 397.620409
+4 : Assign names to anonymous instructions : 397.620409
+5 : MergedLoadStoreMotion : 397.620409
+6 : SROA : 397.620409
+7 : Alignment from assumptions : 397.620409
+8 : Code sinking : 397.620409
+9 : Dead Code Elimination : 397.620409
+10 : Add DWARF path discriminators : 397.620409
+11 : Dead Code Elimination : 397.620409
+12 : Loop Invariant Code Motion : 397.620409
+13 : Value Propagation : 397.620409
+14 : SROA : 397.620409
+15 : Lower atomic intrinsics to non-atomic form : 397.620409
+16 : Add DWARF path discriminators : 397.620409
+17 : Loop-Closed SSA Form Pass : 397.620409
+18 : Aggressive Dead Code Elimination : 397.620409
+19 : Alignment from assumptions : 397.620409
+20 : Assign names to anonymous instructions : 397.620409
+SpeedUp : 1.189188

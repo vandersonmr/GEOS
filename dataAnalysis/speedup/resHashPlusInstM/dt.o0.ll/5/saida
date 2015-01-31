@@ -1,0 +1,20 @@
+1 : MergedLoadStoreMotion : 324.197070
+2 : Reassociate expressions : 324.197070
+3 : Constant Hoisting : 324.197070
+4 : Assign names to anonymous instructions : 324.197070
+5 : Alignment from assumptions : 324.197070
+6 : Value Propagation : 324.197070
+7 : Scalar Replacement of Aggregates (DT) : 266.559993
+8 : Aggressive Dead Code Elimination : 266.559993
+9 : MergedLoadStoreMotion : 266.559993
+10 : Code sinking : 266.559993
+11 : Value Propagation : 266.559993
+12 : Reassociate expressions : 266.559993
+13 : Alignment from assumptions : 266.559993
+14 : Dead Instruction Elimination : 266.559993
+15 : Loop Invariant Code Motion : 266.559993
+16 : Promote Memory to Register : 266.559993
+17 : Aggressive Dead Code Elimination : 266.559993
+18 : Value Propagation : 266.559993
+19 : Global Value Numbering : 306.073989
+SpeedUp : 1.059211

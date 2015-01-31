@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 399.469605
+2 : Dead Instruction Elimination : 399.469605
+3 : MemCpy Optimization : 399.469605
+4 : Add DWARF path discriminators : 399.469605
+5 : MemCpy Optimization : 399.469605
+6 : Global Value Numbering : 286.300002
+7 : MergedLoadStoreMotion : 286.300002
+8 : Add DWARF path discriminators : 286.300002
+9 : Induction Variable Simplification : 286.300002
+10 : Early CSE : 228.027280
+11 : Dead Instruction Elimination : 228.027280
+12 : Value Propagation : 228.027280
+13 : Loop Invariant Code Motion : 228.027280
+14 : Lower atomic intrinsics to non-atomic form : 228.027280
+15 : Assign names to anonymous instructions : 228.027280
+16 : Alignment from assumptions : 228.027280
+17 : Constant Hoisting : 228.027280
+18 : Reassociate expressions : 228.027280
+19 : Assign names to anonymous instructions : 228.027280
+20 : Lower atomic intrinsics to non-atomic form : 228.027280
+SpeedUp : 1.751850

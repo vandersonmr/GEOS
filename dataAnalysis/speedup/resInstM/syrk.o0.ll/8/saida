@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 376.880150
+2 : Code sinking : 376.880150
+3 : Dead Code Elimination : 376.880150
+4 : Loop-Closed SSA Form Pass : 376.880150
+5 : Scalar Replacement of Aggregates (DT) : 247.653284
+6 : Value Propagation : 247.653284
+7 : Combine redundant instructions : 215.378084
+8 : Remove redundant instructions : 215.378084
+9 : Dead Instruction Elimination : 215.378084
+10 : Combine redundant instructions : 215.378084
+11 : Promote Memory to Register : 215.378084
+12 : Promote Memory to Register : 215.378084
+13 : Constant Hoisting : 215.378084
+14 : Dead Instruction Elimination : 215.378084
+15 : Aggressive Dead Code Elimination : 215.378084
+16 : Loop-Closed SSA Form Pass : 215.378084
+17 : Dead Code Elimination : 215.378084
+18 : MergedLoadStoreMotion : 215.378084
+19 : Scalar Replacement of Aggregates (DT) : 215.378084
+20 : Early CSE : 183.134372
+SpeedUp : 2.057943

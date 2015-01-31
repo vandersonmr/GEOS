@@ -1,0 +1,9 @@
+1 : Loop Invariant Code Motion : 1226.677115
+2 : Lower atomic intrinsics to non-atomic form : 1226.677115
+3 : Constant Hoisting : 1226.677115
+4 : Code sinking : 1226.677115
+5 : Promote Memory to Register : 659.179058
+6 : Assign names to anonymous instructions : 659.005055
+7 : Combine redundant instructions : 655.879026
+8 : Induction Variable Simplification : 657.943047
+SpeedUp : 1.864412

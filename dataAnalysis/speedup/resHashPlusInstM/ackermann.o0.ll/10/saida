@@ -1,0 +1,4 @@
+1 : Assign names to anonymous instructions : 4.182627
+2 : Loop Invariant Code Motion : 4.182627
+3 : Early CSE : 65.140389
+SpeedUp : 0.064209

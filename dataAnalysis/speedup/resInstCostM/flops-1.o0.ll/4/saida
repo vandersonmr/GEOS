@@ -1,0 +1,18 @@
+1 : Code sinking : 340.625000
+2 : MergedLoadStoreMotion : 340.625000
+3 : Assign names to anonymous instructions : 340.625000
+4 : Loop-Closed SSA Form Pass : 340.625000
+5 : MergedLoadStoreMotion : 340.625000
+6 : Constant Hoisting : 340.625000
+7 : Induction Variable Simplification : 340.625000
+8 : Constant Hoisting : 340.625000
+9 : Aggressive Dead Code Elimination : 340.625000
+10 : Loop-Closed SSA Form Pass : 340.625000
+11 : Code sinking : 340.625000
+12 : Add DWARF path discriminators : 340.625000
+13 : Loop-Closed SSA Form Pass : 340.625000
+14 : Scalar Replacement of Aggregates (DT) : 281.250000
+15 : Assign names to anonymous instructions : 265.625000
+16 : Remove redundant instructions : 265.625000
+17 : Global Value Numbering : 265.625000
+SpeedUp : 1.282353

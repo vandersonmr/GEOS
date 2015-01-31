@@ -1,0 +1,7 @@
+1 : Constant Hoisting : 1352.458698
+2 : Scalar Replacement of Aggregates (DT) : 682.908279
+3 : Remove redundant instructions : 682.908279
+4 : SROA : 682.908279
+5 : Promote Memory to Register : 682.908279
+6 : Early CSE : 682.908288
+SpeedUp : 1.980440

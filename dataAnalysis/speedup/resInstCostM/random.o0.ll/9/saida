@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 64.000000
+2 : Add DWARF path discriminators : 64.000000
+3 : Assign names to anonymous instructions : 64.000000
+4 : Value Propagation : 64.000000
+5 : SROA : 64.000000
+6 : SROA : 64.000000
+7 : Value Propagation : 64.000000
+8 : Add DWARF path discriminators : 64.000000
+9 : Loop Invariant Code Motion : 64.000000
+10 : Loop-Closed SSA Form Pass : 64.000000
+11 : Promote Memory to Register : 52.000000
+12 : Induction Variable Simplification : 52.000000
+13 : SROA : 52.000000
+14 : Reassociate expressions : 52.000000
+15 : Lower atomic intrinsics to non-atomic form : 52.000000
+16 : Induction Variable Simplification : 52.000000
+17 : Dead Code Elimination : 52.000000
+18 : Early CSE : 48.000000
+19 : MemCpy Optimization : 48.000000
+20 : MergedLoadStoreMotion : 48.000000
+SpeedUp : 1.333333

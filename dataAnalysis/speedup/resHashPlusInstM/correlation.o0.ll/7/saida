@@ -1,0 +1,4 @@
+1 : Loop Invariant Code Motion : 1194.955967
+2 : MemCpy Optimization : 1194.955967
+3 : Remove redundant instructions : 1194.955967
+SpeedUp : 1.000000

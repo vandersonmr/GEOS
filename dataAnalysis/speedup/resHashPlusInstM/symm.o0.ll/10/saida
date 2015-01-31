@@ -1,0 +1,5 @@
+1 : Induction Variable Simplification : 1637.113271
+2 : MergedLoadStoreMotion : 1637.113271
+3 : Promote Memory to Register : 1399.244761
+4 : Value Propagation : 1549.369741
+SpeedUp : 1.056632

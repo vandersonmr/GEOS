@@ -1,0 +1,21 @@
+1 : Loop Invariant Code Motion : 428.125000
+2 : Reassociate expressions : 428.125000
+3 : Value Propagation : 428.125000
+4 : Loop Invariant Code Motion : 428.125000
+5 : Loop-Closed SSA Form Pass : 428.125000
+6 : Loop-Closed SSA Form Pass : 428.125000
+7 : Promote Memory to Register : 328.125000
+8 : Promote Memory to Register : 303.125000
+9 : Scalar Replacement of Aggregates (DT) : 303.125000
+10 : Early CSE : 290.625000
+11 : Value Propagation : 290.625000
+12 : Loop-Closed SSA Form Pass : 290.625000
+13 : SROA : 290.625000
+14 : Dead Instruction Elimination : 290.625000
+15 : MergedLoadStoreMotion : 290.625000
+16 : Value Propagation : 290.625000
+17 : Combine redundant instructions : 287.499999
+18 : Remove redundant instructions : 287.499999
+19 : Promote Memory to Register : 287.499999
+20 : Constant Hoisting : 287.499999
+SpeedUp : 1.489130

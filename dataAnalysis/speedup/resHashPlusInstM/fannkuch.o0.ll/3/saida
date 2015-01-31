@@ -1,0 +1,12 @@
+1 : Induction Variable Simplification : 2238.450727
+2 : Dead Code Elimination : 2238.450727
+3 : MemCpy Optimization : 2238.450727
+4 : Value Propagation : 2238.450727
+5 : Assign names to anonymous instructions : 2238.450727
+6 : MergedLoadStoreMotion : 2238.450727
+7 : Global Value Numbering : 1742.606387
+8 : Dead Instruction Elimination : 1742.606387
+9 : Scalar Replacement of Aggregates (DT) : 1510.211278
+10 : Code sinking : 1455.087495
+11 : Assign names to anonymous instructions : 1455.087497
+SpeedUp : 1.538362

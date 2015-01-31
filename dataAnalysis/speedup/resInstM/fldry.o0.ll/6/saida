@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 557.000000
+2 : Value Propagation : 557.000000
+3 : Lower atomic intrinsics to non-atomic form : 557.000000
+4 : Add DWARF path discriminators : 557.000000
+5 : Lower atomic intrinsics to non-atomic form : 557.000000
+6 : MemCpy Optimization : 557.000000
+7 : Constant Hoisting : 557.000000
+8 : Lower atomic intrinsics to non-atomic form : 557.000000
+9 : Induction Variable Simplification : 557.000000
+10 : Dead Instruction Elimination : 557.000000
+11 : MemCpy Optimization : 557.000000
+12 : Constant Hoisting : 557.000000
+13 : Value Propagation : 557.000000
+14 : Dead Code Elimination : 557.000000
+15 : Global Value Numbering : 495.000000
+16 : Global Value Numbering : 495.000000
+17 : Global Value Numbering : 495.000000
+18 : Reassociate expressions : 495.000000
+19 : Reassociate expressions : 495.000000
+20 : Induction Variable Simplification : 495.000000
+SpeedUp : 1.125253

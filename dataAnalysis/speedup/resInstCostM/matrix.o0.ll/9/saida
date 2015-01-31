@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 487.290023
+2 : Loop-Closed SSA Form Pass : 487.290023
+3 : Dead Code Elimination : 487.290023
+4 : Add DWARF path discriminators : 487.290023
+5 : Value Propagation : 487.290023
+6 : Aggressive Dead Code Elimination : 487.290023
+7 : Loop-Closed SSA Form Pass : 487.290023
+8 : Promote Memory to Register : 487.290023
+9 : Alignment from assumptions : 487.290023
+10 : Scalar Replacement of Aggregates (DT) : 487.290023
+11 : Lower atomic intrinsics to non-atomic form : 487.290023
+12 : Remove redundant instructions : 487.230023
+13 : Assign names to anonymous instructions : 487.230023
+14 : Aggressive Dead Code Elimination : 487.230023
+15 : MemCpy Optimization : 487.230023
+16 : Add DWARF path discriminators : 487.230023
+17 : Loop-Closed SSA Form Pass : 487.230023
+18 : Value Propagation : 487.230023
+19 : Code sinking : 487.230023
+20 : Combine redundant instructions : 457.230023
+SpeedUp : 2.083459

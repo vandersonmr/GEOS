@@ -1,0 +1,8 @@
+1 : MemCpy Optimization : 1194.955967
+2 : Early CSE : 775.613054
+3 : Code sinking : 775.613054
+4 : Value Propagation : 775.613054
+5 : Aggressive Dead Code Elimination : 775.613054
+6 : Aggressive Dead Code Elimination : 775.613054
+7 : Loop Invariant Code Motion : 775.613132
+SpeedUp : 1.540660

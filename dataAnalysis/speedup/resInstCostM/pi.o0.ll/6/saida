@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 33.339450
+2 : Dead Code Elimination : 33.339450
+3 : Alignment from assumptions : 33.339450
+4 : Value Propagation : 33.339450
+5 : Alignment from assumptions : 33.339450
+6 : Combine redundant instructions : 23.826300
+7 : Alignment from assumptions : 23.826300
+8 : Constant Hoisting : 23.826300
+9 : Promote Memory to Register : 15.913150
+10 : Loop-Closed SSA Form Pass : 15.913150
+11 : Loop Invariant Code Motion : 15.913150
+12 : Add DWARF path discriminators : 15.913150
+13 : Loop-Closed SSA Form Pass : 15.913150
+14 : Reassociate expressions : 15.913150
+15 : Induction Variable Simplification : 15.913150
+16 : Reassociate expressions : 15.913150
+17 : Remove redundant instructions : 15.913150
+18 : Promote Memory to Register : 15.913150
+19 : Dead Code Elimination : 15.913150
+20 : Reassociate expressions : 15.913150
+SpeedUp : 2.111461

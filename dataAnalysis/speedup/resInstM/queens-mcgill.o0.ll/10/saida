@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 115.262554
+2 : Add DWARF path discriminators : 115.262554
+3 : Code sinking : 115.262554
+4 : Code sinking : 115.262554
+5 : Alignment from assumptions : 115.262554
+6 : Constant Hoisting : 115.262554
+7 : SROA : 115.262554
+8 : Induction Variable Simplification : 115.262554
+9 : Scalar Replacement of Aggregates (DT) : 60.722527
+10 : SROA : 60.722522
+11 : Alignment from assumptions : 60.722522
+12 : Induction Variable Simplification : 60.722522
+13 : Code sinking : 60.722522
+14 : Scalar Replacement of Aggregates (DT) : 60.722522
+15 : Loop-Closed SSA Form Pass : 60.722522
+16 : Induction Variable Simplification : 60.722522
+17 : Promote Memory to Register : 60.722522
+18 : Loop Invariant Code Motion : 59.071750
+19 : Promote Memory to Register : 59.071750
+20 : Code sinking : 59.071750
+SpeedUp : 1.951230

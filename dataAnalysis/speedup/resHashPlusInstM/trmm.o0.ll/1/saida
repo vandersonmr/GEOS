@@ -1,0 +1,4 @@
+1 : Dead Code Elimination : 939.068850
+2 : MergedLoadStoreMotion : 939.068850
+3 : Global Value Numbering : 1079.595148
+SpeedUp : 0.869834

@@ -1,0 +1,5 @@
+1 : Alignment from assumptions : 0.000001
+2 : Remove redundant instructions : 0.000001
+3 : Induction Variable Simplification : 0.000001
+4 : Assign names to anonymous instructions : 0.000001
+SpeedUp : 1.034188

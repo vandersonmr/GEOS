@@ -1,0 +1,6 @@
+1 : Induction Variable Simplification : 266.005330
+2 : Code sinking : 266.005330
+3 : Code sinking : 266.005330
+4 : Scalar Replacement of Aggregates (DT) : 198.894825
+5 : MemCpy Optimization : 199.900025
+SpeedUp : 1.330692

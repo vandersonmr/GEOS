@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 60.200007
+2 : Lower atomic intrinsics to non-atomic form : 60.200007
+3 : Combine redundant instructions : 43.400005
+4 : Constant Hoisting : 43.400005
+5 : Code sinking : 43.400005
+6 : Code sinking : 43.400005
+7 : Loop-Closed SSA Form Pass : 43.400005
+8 : Reassociate expressions : 43.400005
+9 : MergedLoadStoreMotion : 43.400005
+10 : MemCpy Optimization : 43.400005
+11 : Global Value Numbering : 43.400005
+12 : Assign names to anonymous instructions : 43.400005
+13 : Induction Variable Simplification : 43.400005
+14 : Loop Invariant Code Motion : 43.400005
+15 : Combine redundant instructions : 43.400005
+16 : Add DWARF path discriminators : 43.400005
+17 : Early CSE : 43.400005
+18 : Constant Hoisting : 43.400005
+19 : MergedLoadStoreMotion : 43.400005
+20 : Alignment from assumptions : 43.400005
+SpeedUp : 1.387097

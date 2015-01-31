@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 3.500003
+2 : Dead Code Elimination : 3.500003
+3 : Add DWARF path discriminators : 3.500003
+4 : Loop-Closed SSA Form Pass : 3.500003
+5 : Induction Variable Simplification : 3.500003
+6 : Global Value Numbering : 3.100003
+7 : Remove redundant instructions : 3.100003
+8 : Induction Variable Simplification : 3.100003
+9 : Scalar Replacement of Aggregates (DT) : 1.900003
+10 : MemCpy Optimization : 1.800002
+11 : Code sinking : 1.800002
+12 : Lower atomic intrinsics to non-atomic form : 1.800002
+13 : Constant Hoisting : 1.800002
+14 : Reassociate expressions : 1.800002
+15 : Lower atomic intrinsics to non-atomic form : 1.800002
+16 : Constant Hoisting : 1.800002
+17 : Add DWARF path discriminators : 1.800002
+18 : Remove redundant instructions : 1.700002
+19 : Lower atomic intrinsics to non-atomic form : 1.700002
+20 : Remove redundant instructions : 1.700002
+SpeedUp : 2.058822

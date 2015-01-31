@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 4932.303126
+2 : Assign names to anonymous instructions : 4932.303126
+3 : SROA : 4932.303126
+4 : Lower atomic intrinsics to non-atomic form : 4932.303126
+5 : Promote Memory to Register : 4932.303126
+6 : Dead Code Elimination : 4932.303126
+7 : MergedLoadStoreMotion : 4932.303126
+8 : Scalar Replacement of Aggregates (DT) : 4932.303126
+9 : Alignment from assumptions : 4932.303126
+10 : MemCpy Optimization : 4932.303126
+11 : Early CSE : 3646.365595
+12 : Constant Hoisting : 3646.365595
+13 : Alignment from assumptions : 3646.365595
+14 : Reassociate expressions : 3646.365595
+15 : Alignment from assumptions : 3646.365595
+16 : Loop-Closed SSA Form Pass : 3646.365595
+17 : Code sinking : 3646.365595
+18 : Promote Memory to Register : 3646.365595
+19 : Aggressive Dead Code Elimination : 3646.365595
+20 : Value Propagation : 3646.365595
+SpeedUp : 1.553467

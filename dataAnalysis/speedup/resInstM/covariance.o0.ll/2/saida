@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 246.181316
+2 : Assign names to anonymous instructions : 246.181316
+3 : Add DWARF path discriminators : 246.181316
+4 : Scalar Replacement of Aggregates (DT) : 160.775845
+5 : Assign names to anonymous instructions : 160.775845
+6 : MergedLoadStoreMotion : 160.775845
+7 : Dead Code Elimination : 160.775845
+8 : Code sinking : 160.775845
+9 : Induction Variable Simplification : 110.615765
+10 : Alignment from assumptions : 110.615765
+11 : Constant Hoisting : 110.615765
+12 : Promote Memory to Register : 110.615765
+13 : Loop Invariant Code Motion : 95.540786
+14 : Induction Variable Simplification : 95.540786
+15 : Promote Memory to Register : 95.540786
+16 : Global Value Numbering : 0.325716
+17 : Loop-Closed SSA Form Pass : 0.325716
+18 : Loop-Closed SSA Form Pass : 0.325716
+19 : Assign names to anonymous instructions : 0.325716
+20 : Loop Invariant Code Motion : 0.325716
+SpeedUp : 755.816734

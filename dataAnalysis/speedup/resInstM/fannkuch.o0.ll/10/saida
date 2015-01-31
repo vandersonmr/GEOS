@@ -1,0 +1,7 @@
+1 : Combine redundant instructions : 411.863916
+2 : MemCpy Optimization : 411.863916
+3 : Combine redundant instructions : 411.863916
+4 : Scalar Replacement of Aggregates (DT) : 288.848402
+5 : SROA : 288.848402
+6 : Loop-Closed SSA Form Pass : 293.064503
+SpeedUp : 1.554465

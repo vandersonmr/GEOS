@@ -1,0 +1,14 @@
+1 : Early CSE : 176.271486
+2 : MergedLoadStoreMotion : 176.271486
+3 : Code sinking : 176.271486
+4 : Dead Instruction Elimination : 176.271486
+5 : Lower atomic intrinsics to non-atomic form : 176.271486
+6 : Combine redundant instructions : 151.181341
+7 : Assign names to anonymous instructions : 151.181341
+8 : MemCpy Optimization : 151.181341
+9 : Alignment from assumptions : 151.181341
+10 : Remove redundant instructions : 151.181341
+11 : Reassociate expressions : 151.181341
+12 : MemCpy Optimization : 151.181341
+13 : Loop Invariant Code Motion : 151.181351
+SpeedUp : 1.630835

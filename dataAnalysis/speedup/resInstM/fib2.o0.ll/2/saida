@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 98.197223
+2 : Assign names to anonymous instructions : 98.197223
+3 : Reassociate expressions : 98.197223
+4 : Dead Code Elimination : 98.197223
+5 : Loop Invariant Code Motion : 98.197223
+6 : Lower atomic intrinsics to non-atomic form : 98.197223
+7 : Loop-Closed SSA Form Pass : 98.197223
+8 : Global Value Numbering : 98.197223
+9 : Loop-Closed SSA Form Pass : 98.197223
+10 : Alignment from assumptions : 98.197223
+11 : MergedLoadStoreMotion : 98.197223
+12 : Dead Code Elimination : 98.197223
+13 : Early CSE : 98.197223
+14 : MemCpy Optimization : 98.197223
+15 : Promote Memory to Register : 98.197223
+16 : SROA : 98.197223
+17 : Loop-Closed SSA Form Pass : 98.197223
+18 : Remove redundant instructions : 98.197223
+19 : Value Propagation : 98.197223
+20 : Assign names to anonymous instructions : 98.197223
+SpeedUp : 1.928571

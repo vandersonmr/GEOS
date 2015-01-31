@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 2.293464
+2 : MergedLoadStoreMotion : 2.293464
+3 : Dead Code Elimination : 2.293464
+4 : Induction Variable Simplification : 2.293464
+5 : Add DWARF path discriminators : 2.293464
+6 : Code sinking : 2.293464
+7 : Add DWARF path discriminators : 2.293464
+8 : Constant Hoisting : 2.293464
+9 : Value Propagation : 2.293464
+10 : Early CSE : 2.178735
+11 : MemCpy Optimization : 2.178735
+12 : Dead Instruction Elimination : 2.178735
+13 : Aggressive Dead Code Elimination : 2.178735
+14 : Value Propagation : 2.178735
+15 : Add DWARF path discriminators : 2.178735
+16 : Assign names to anonymous instructions : 2.178735
+17 : Value Propagation : 2.178735
+18 : Assign names to anonymous instructions : 2.178735
+19 : Induction Variable Simplification : 2.178735
+20 : Aggressive Dead Code Elimination : 2.178735
+SpeedUp : 1.195612

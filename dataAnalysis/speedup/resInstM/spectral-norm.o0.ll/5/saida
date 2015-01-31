@@ -1,0 +1,10 @@
+1 : Code sinking : 65.627435
+2 : Promote Memory to Register : 38.417426
+3 : Induction Variable Simplification : 38.417366
+4 : Loop Invariant Code Motion : 35.217367
+5 : Constant Hoisting : 35.217367
+6 : Lower atomic intrinsics to non-atomic form : 35.217367
+7 : Alignment from assumptions : 35.217367
+8 : Global Value Numbering : 33.613767
+9 : Induction Variable Simplification : 33.614567
+SpeedUp : 1.952351

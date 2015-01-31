@@ -1,0 +1,5 @@
+1 : Combine redundant instructions : 740.592132
+2 : Remove redundant instructions : 740.592132
+3 : MergedLoadStoreMotion : 740.592132
+4 : Promote Memory to Register : 874.685424
+SpeedUp : 0.902102

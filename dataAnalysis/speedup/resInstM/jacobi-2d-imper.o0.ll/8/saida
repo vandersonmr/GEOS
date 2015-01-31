@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 17.372513
+2 : Loop Invariant Code Motion : 17.372513
+3 : Loop Invariant Code Motion : 17.372513
+4 : Assign names to anonymous instructions : 17.372513
+5 : Assign names to anonymous instructions : 17.372513
+6 : Early CSE : 11.729242
+7 : Aggressive Dead Code Elimination : 11.729242
+8 : Value Propagation : 11.729242
+9 : Alignment from assumptions : 11.729242
+10 : Value Propagation : 11.729242
+11 : Remove redundant instructions : 11.729242
+12 : Induction Variable Simplification : 11.729242
+13 : Loop-Closed SSA Form Pass : 11.729242
+14 : Dead Code Elimination : 11.729242
+15 : Combine redundant instructions : 10.103808
+16 : MemCpy Optimization : 10.103808
+17 : Alignment from assumptions : 10.103808
+18 : Value Propagation : 10.103808
+19 : Code sinking : 10.103808
+20 : MergedLoadStoreMotion : 10.103808
+SpeedUp : 1.719402

@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 592.090144
+2 : Reassociate expressions : 592.090144
+3 : SROA : 592.090144
+4 : Remove redundant instructions : 592.090144
+5 : Lower atomic intrinsics to non-atomic form : 592.090144
+6 : SROA : 592.090144
+7 : MemCpy Optimization : 592.090144
+8 : Reassociate expressions : 592.090144
+9 : Induction Variable Simplification : 592.090144
+10 : Add DWARF path discriminators : 592.090144
+11 : Lower atomic intrinsics to non-atomic form : 592.090144
+12 : Early CSE : 505.949472
+13 : Alignment from assumptions : 505.949472
+14 : Dead Instruction Elimination : 505.949472
+15 : MergedLoadStoreMotion : 505.949472
+16 : Combine redundant instructions : 419.840165
+17 : Reassociate expressions : 419.840165
+18 : Lower atomic intrinsics to non-atomic form : 419.840165
+19 : Dead Code Elimination : 419.840165
+20 : Induction Variable Simplification : 419.840165
+SpeedUp : 1.410275

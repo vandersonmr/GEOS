@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 397.620409
+2 : Dead Code Elimination : 397.620409
+3 : Value Propagation : 397.620409
+4 : Loop-Closed SSA Form Pass : 397.620409
+5 : Assign names to anonymous instructions : 397.620409
+6 : Assign names to anonymous instructions : 397.620409
+7 : Add DWARF path discriminators : 397.620409
+8 : Alignment from assumptions : 397.620409
+9 : Reassociate expressions : 397.620409
+10 : Combine redundant instructions : 397.620409
+11 : Add DWARF path discriminators : 397.620409
+12 : Dead Instruction Elimination : 397.620409
+13 : SROA : 397.620409
+14 : Dead Instruction Elimination : 397.620409
+15 : Loop Invariant Code Motion : 397.620409
+16 : Alignment from assumptions : 397.620409
+17 : Aggressive Dead Code Elimination : 397.620409
+18 : Constant Hoisting : 397.620409
+19 : Aggressive Dead Code Elimination : 397.620409
+20 : Induction Variable Simplification : 397.620409
+SpeedUp : 1.189188

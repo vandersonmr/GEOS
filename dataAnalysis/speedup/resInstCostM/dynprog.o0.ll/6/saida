@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 118.237015
+2 : Add DWARF path discriminators : 118.237015
+3 : Global Value Numbering : 44.512890
+4 : Loop Invariant Code Motion : 44.512890
+5 : SROA : 44.512890
+6 : SROA : 44.512890
+7 : Constant Hoisting : 44.512890
+8 : Value Propagation : 44.512890
+9 : Remove redundant instructions : 44.512890
+10 : Reassociate expressions : 44.512890
+11 : MemCpy Optimization : 44.512890
+12 : Remove redundant instructions : 44.512890
+13 : Promote Memory to Register : 19.058706
+14 : Combine redundant instructions : 13.359155
+15 : Promote Memory to Register : 11.399155
+16 : Promote Memory to Register : 11.399155
+17 : Alignment from assumptions : 11.399155
+18 : Remove redundant instructions : 11.399155
+19 : Dead Code Elimination : 11.399155
+20 : Promote Memory to Register : 11.399155
+SpeedUp : 10.372437

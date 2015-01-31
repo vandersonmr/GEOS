@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 2238.450727
+2 : Alignment from assumptions : 2238.450727
+3 : Alignment from assumptions : 2238.450727
+4 : Constant Hoisting : 2238.450727
+5 : Loop-Closed SSA Form Pass : 2238.450727
+6 : Value Propagation : 2238.450727
+7 : Reassociate expressions : 2238.450727
+8 : Constant Hoisting : 2238.450727
+9 : Loop Invariant Code Motion : 2238.450727
+10 : Dead Code Elimination : 2238.450727
+11 : Global Value Numbering : 1742.606387
+12 : Induction Variable Simplification : 1742.606387
+13 : Aggressive Dead Code Elimination : 1742.606387
+14 : Constant Hoisting : 1742.606387
+15 : Value Propagation : 1742.606387
+16 : Promote Memory to Register : 1510.211278
+17 : Lower atomic intrinsics to non-atomic form : 1457.618071
+18 : Dead Instruction Elimination : 1457.618064
+19 : Assign names to anonymous instructions : 1457.618064
+20 : Value Propagation : 1457.618064
+SpeedUp : 1.535691

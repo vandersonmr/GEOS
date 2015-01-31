@@ -1,0 +1,3 @@
+1 : Dead Code Elimination : 2494.943098
+2 : Scalar Replacement of Aggregates (DT) : 4193.941816
+SpeedUp : 0.594892

@@ -1,0 +1,5 @@
+1 : Dead Code Elimination : 1251.300070
+2 : Value Propagation : 1251.300070
+3 : Constant Hoisting : 1251.300070
+4 : Global Value Numbering : 1429.410081
+SpeedUp : 0.875396

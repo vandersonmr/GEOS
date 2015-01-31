@@ -1,0 +1,12 @@
+1 : Aggressive Dead Code Elimination : 133682.475345
+2 : Code sinking : 133682.475345
+3 : Alignment from assumptions : 133682.475345
+4 : Combine redundant instructions : 11396.546340
+5 : Alignment from assumptions : 11396.546340
+6 : Aggressive Dead Code Elimination : 11396.546340
+7 : Aggressive Dead Code Elimination : 11396.546340
+8 : Constant Hoisting : 11396.546340
+9 : Induction Variable Simplification : 11396.546340
+10 : Dead Instruction Elimination : 11396.546340
+11 : Scalar Replacement of Aggregates (DT) : 35839.406677
+SpeedUp : 3.730042

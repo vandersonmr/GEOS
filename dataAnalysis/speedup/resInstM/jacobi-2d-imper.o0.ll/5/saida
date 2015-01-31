@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 17.372513
+2 : SROA : 17.372513
+3 : Induction Variable Simplification : 17.372513
+4 : MergedLoadStoreMotion : 17.372513
+5 : Loop Invariant Code Motion : 17.372513
+6 : Assign names to anonymous instructions : 17.372513
+7 : Reassociate expressions : 17.372513
+8 : Assign names to anonymous instructions : 17.372513
+9 : Aggressive Dead Code Elimination : 17.372513
+10 : Promote Memory to Register : 11.648142
+11 : Loop-Closed SSA Form Pass : 6.186518
+12 : Dead Code Elimination : 6.186518
+13 : Value Propagation : 6.186518
+14 : Loop-Closed SSA Form Pass : 6.186518
+15 : Promote Memory to Register : 6.186518
+16 : Loop Invariant Code Motion : 6.186518
+17 : Dead Instruction Elimination : 6.186518
+18 : Code sinking : 6.186518
+19 : Combine redundant instructions : 6.184900
+20 : Dead Code Elimination : 6.184900
+SpeedUp : 2.808859

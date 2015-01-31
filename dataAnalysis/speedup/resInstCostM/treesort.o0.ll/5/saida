@@ -1,0 +1,4 @@
+1 : Alignment from assumptions : 2.054173
+2 : Scalar Replacement of Aggregates (DT) : 1.124692
+3 : Reassociate expressions : 1.129693
+SpeedUp : 1.818346

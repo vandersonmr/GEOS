@@ -1,0 +1,4 @@
+1 : MemCpy Optimization : 5662.759187
+2 : Remove redundant instructions : 5662.759187
+3 : Remove redundant instructions : 5662.759187
+4 : Code sinking : 5662.759187

@@ -1,0 +1,21 @@
+1 : Code sinking : 105.090282
+2 : Value Propagation : 105.090282
+3 : Global Value Numbering : 83.131424
+4 : Dead Code Elimination : 83.131424
+5 : MergedLoadStoreMotion : 83.131424
+6 : Promote Memory to Register : 65.878039
+7 : Constant Hoisting : 65.878039
+8 : Lower atomic intrinsics to non-atomic form : 65.878039
+9 : Constant Hoisting : 65.878039
+10 : Value Propagation : 65.878039
+11 : Loop Invariant Code Motion : 65.877673
+12 : Early CSE : 59.603688
+13 : Remove redundant instructions : 59.603688
+14 : Promote Memory to Register : 59.603688
+15 : Assign names to anonymous instructions : 59.603688
+16 : Induction Variable Simplification : 59.603688
+17 : Induction Variable Simplification : 59.603688
+18 : Aggressive Dead Code Elimination : 59.603688
+19 : Value Propagation : 59.603688
+20 : Scalar Replacement of Aggregates (DT) : 59.603688
+SpeedUp : 1.763151

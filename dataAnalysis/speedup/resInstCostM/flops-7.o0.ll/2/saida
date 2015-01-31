@@ -1,0 +1,13 @@
+1 : Scalar Replacement of Aggregates (DT) : 117.187500
+2 : Assign names to anonymous instructions : 117.187500
+3 : Constant Hoisting : 117.187500
+4 : Aggressive Dead Code Elimination : 109.375000
+5 : Early CSE : 104.687500
+6 : MergedLoadStoreMotion : 104.687500
+7 : Add DWARF path discriminators : 104.687500
+8 : Lower atomic intrinsics to non-atomic form : 104.687500
+9 : Promote Memory to Register : 104.687500
+10 : Early CSE : 104.687500
+11 : Remove redundant instructions : 104.687500
+12 : Global Value Numbering : 104.687500
+SpeedUp : 1.716418

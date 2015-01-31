@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 572.772726
+2 : Loop Invariant Code Motion : 572.772726
+3 : Combine redundant instructions : 502.192995
+4 : Dead Instruction Elimination : 502.192995
+5 : Induction Variable Simplification : 502.192995
+6 : Constant Hoisting : 502.192995
+7 : Promote Memory to Register : 438.520285
+8 : Constant Hoisting : 297.864964
+9 : Loop Invariant Code Motion : 297.864964
+10 : SROA : 297.864964
+11 : Promote Memory to Register : 297.864964
+12 : Lower atomic intrinsics to non-atomic form : 297.864964
+13 : Scalar Replacement of Aggregates (DT) : 297.864964
+14 : Induction Variable Simplification : 297.864964
+15 : Constant Hoisting : 297.864964
+16 : MemCpy Optimization : 297.864964
+17 : Dead Code Elimination : 297.864964
+18 : Loop Invariant Code Motion : 297.864964
+19 : Remove redundant instructions : 297.864964
+20 : Combine redundant instructions : 297.864964
+SpeedUp : 1.922927

@@ -1,0 +1,6 @@
+1 : Add DWARF path discriminators : 151.313482
+2 : Induction Variable Simplification : 151.313482
+3 : Alignment from assumptions : 151.313482
+4 : Code sinking : 151.313482
+5 : Reassociate expressions : 151.329866
+SpeedUp : 0.999892

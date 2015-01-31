@@ -1,0 +1,19 @@
+1 : Early CSE : 1.962503
+2 : SROA : 1.962503
+3 : Lower atomic intrinsics to non-atomic form : 1.962503
+4 : Induction Variable Simplification : 1.962503
+5 : Dead Code Elimination : 1.962503
+6 : Remove redundant instructions : 1.962503
+7 : Alignment from assumptions : 1.962503
+8 : Loop-Closed SSA Form Pass : 1.962503
+9 : Constant Hoisting : 1.962503
+10 : Remove redundant instructions : 1.962503
+11 : Dead Code Elimination : 1.962503
+12 : Dead Code Elimination : 1.962503
+13 : SROA : 1.962503
+14 : Aggressive Dead Code Elimination : 1.962503
+15 : Loop-Closed SSA Form Pass : 1.962503
+16 : Alignment from assumptions : 1.962503
+17 : Scalar Replacement of Aggregates (DT) : 1.075001
+18 : Promote Memory to Register : 1.175001
+SpeedUp : 1.808511

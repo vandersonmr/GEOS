@@ -1,0 +1,14 @@
+1 : Loop-Closed SSA Form Pass : 1886.811228
+2 : Alignment from assumptions : 1886.811228
+3 : Code sinking : 1886.811228
+4 : Code sinking : 1886.811228
+5 : Dead Instruction Elimination : 1886.811228
+6 : Assign names to anonymous instructions : 1886.811228
+7 : Dead Instruction Elimination : 1886.811228
+8 : Lower atomic intrinsics to non-atomic form : 1886.811228
+9 : Combine redundant instructions : 1828.526091
+10 : MemCpy Optimization : 1828.526091
+11 : Lower atomic intrinsics to non-atomic form : 1828.526091
+12 : Early CSE : 1755.391887
+13 : Aggressive Dead Code Elimination : 1755.391887
+SpeedUp : 1.074866

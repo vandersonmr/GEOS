@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 191.301411
+2 : Assign names to anonymous instructions : 191.301411
+3 : Combine redundant instructions : 151.166156
+4 : Early CSE : 120.985956
+5 : Value Propagation : 120.985956
+6 : Remove redundant instructions : 120.985956
+7 : Dead Instruction Elimination : 120.985956
+8 : MergedLoadStoreMotion : 120.985956
+9 : Early CSE : 120.985956
+10 : Reassociate expressions : 120.985956
+11 : Loop-Closed SSA Form Pass : 120.985956
+12 : Combine redundant instructions : 120.985956
+13 : Alignment from assumptions : 120.985956
+14 : Dead Instruction Elimination : 120.985956
+15 : Combine redundant instructions : 120.985956
+16 : Early CSE : 120.985956
+17 : Assign names to anonymous instructions : 120.985956
+18 : Reassociate expressions : 120.985956
+19 : Aggressive Dead Code Elimination : 120.985956
+20 : Constant Hoisting : 120.985956
+SpeedUp : 1.581187

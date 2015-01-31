@@ -1,0 +1,4 @@
+1 : Assign names to anonymous instructions : 0.000003
+2 : Dead Instruction Elimination : 0.000003
+3 : Combine redundant instructions : 0.000003
+SpeedUp : 0.941406

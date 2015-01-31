@@ -1,0 +1,5 @@
+1 : Code sinking : 35.838429
+2 : MemCpy Optimization : 35.838429
+3 : SROA : 35.838429
+4 : Promote Memory to Register : 39.878906
+SpeedUp : 0.898681

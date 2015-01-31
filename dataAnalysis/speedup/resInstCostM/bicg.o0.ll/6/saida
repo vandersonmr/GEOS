@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 10.244081
+2 : Scalar Replacement of Aggregates (DT) : 5.762080
+3 : Dead Code Elimination : 5.762080
+4 : Remove redundant instructions : 5.762080
+5 : Early CSE : 4.801880
+6 : Alignment from assumptions : 4.801880
+7 : MemCpy Optimization : 4.801880
+8 : Remove redundant instructions : 4.801880
+9 : Scalar Replacement of Aggregates (DT) : 4.801880
+10 : Aggressive Dead Code Elimination : 4.801880
+11 : Early CSE : 4.801880
+12 : Induction Variable Simplification : 4.801880
+13 : Global Value Numbering : 0.321760
+14 : Assign names to anonymous instructions : 0.321760
+15 : MemCpy Optimization : 0.321760
+16 : Remove redundant instructions : 0.321760
+17 : Value Propagation : 0.321760
+18 : Promote Memory to Register : 0.321760
+19 : Remove redundant instructions : 0.321760
+20 : Dead Code Elimination : 0.321760
+SpeedUp : 31.837613

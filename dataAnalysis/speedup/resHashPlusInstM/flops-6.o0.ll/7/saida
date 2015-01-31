@@ -1,0 +1,7 @@
+1 : MergedLoadStoreMotion : 40048.741226
+2 : Aggressive Dead Code Elimination : 40048.741226
+3 : Constant Hoisting : 40048.741226
+4 : Add DWARF path discriminators : 40048.741226
+5 : SROA : 40048.741226
+6 : Aggressive Dead Code Elimination : 40048.741226
+7 : Scalar Replacement of Aggregates (DT) : 122875.401751

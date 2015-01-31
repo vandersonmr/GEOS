@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 142.187500
+2 : Add DWARF path discriminators : 142.187500
+3 : Assign names to anonymous instructions : 142.187500
+4 : Add DWARF path discriminators : 142.187500
+5 : Reassociate expressions : 142.187500
+6 : Loop-Closed SSA Form Pass : 142.187500
+7 : Dead Code Elimination : 142.187500
+8 : Value Propagation : 142.187500
+9 : Remove redundant instructions : 142.187500
+10 : Lower atomic intrinsics to non-atomic form : 142.187500
+11 : Value Propagation : 142.187500
+12 : Promote Memory to Register : 79.687500
+13 : Dead Code Elimination : 68.750000
+14 : Value Propagation : 68.750000
+15 : Early CSE : 64.062500
+16 : Global Value Numbering : 62.500000
+17 : Add DWARF path discriminators : 62.500000
+18 : Dead Instruction Elimination : 62.500000
+19 : Add DWARF path discriminators : 62.500000
+20 : Scalar Replacement of Aggregates (DT) : 62.500000
+SpeedUp : 2.275000

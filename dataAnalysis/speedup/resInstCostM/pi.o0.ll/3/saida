@@ -1,0 +1,21 @@
+1 : Early CSE : 28.000001
+2 : Early CSE : 28.000001
+3 : Lower atomic intrinsics to non-atomic form : 28.000001
+4 : Early CSE : 28.000001
+5 : Remove redundant instructions : 28.000001
+6 : Induction Variable Simplification : 28.000001
+7 : MergedLoadStoreMotion : 28.000001
+8 : Reassociate expressions : 28.000001
+9 : Dead Code Elimination : 28.000001
+10 : Dead Instruction Elimination : 28.000001
+11 : Remove redundant instructions : 28.000001
+12 : Lower atomic intrinsics to non-atomic form : 28.000001
+13 : Global Value Numbering : 27.739450
+14 : Dead Code Elimination : 27.739450
+15 : Promote Memory to Register : 16.713150
+16 : Scalar Replacement of Aggregates (DT) : 16.713150
+17 : Promote Memory to Register : 16.713150
+18 : SROA : 16.713150
+19 : SROA : 16.713150
+20 : Dead Code Elimination : 16.713150
+SpeedUp : 2.010393

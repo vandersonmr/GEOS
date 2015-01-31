@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 0.964041
+2 : Promote Memory to Register : 0.322000
+3 : Promote Memory to Register : 0.321760
+4 : Scalar Replacement of Aggregates (DT) : 0.321760
+5 : Global Value Numbering : 0.321760
+6 : MergedLoadStoreMotion : 0.321760
+7 : Constant Hoisting : 0.321760
+8 : Loop-Closed SSA Form Pass : 0.321760
+9 : Promote Memory to Register : 0.321760
+10 : Promote Memory to Register : 0.321760
+11 : Alignment from assumptions : 0.321760
+12 : Early CSE : 0.321760
+13 : MergedLoadStoreMotion : 0.321760
+14 : Constant Hoisting : 0.321760
+15 : Promote Memory to Register : 0.321760
+16 : Loop-Closed SSA Form Pass : 0.321760
+17 : SROA : 0.321760
+18 : Promote Memory to Register : 0.321760
+19 : Add DWARF path discriminators : 0.321760
+20 : SROA : 0.321760
+SpeedUp : 31.837613

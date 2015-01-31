@@ -1,0 +1,4 @@
+1 : Constant Hoisting : 0.000000
+2 : Assign names to anonymous instructions : 0.000000
+3 : Constant Hoisting : 0.000000
+SpeedUp : 1.368421

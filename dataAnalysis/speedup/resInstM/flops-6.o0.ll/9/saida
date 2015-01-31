@@ -1,0 +1,21 @@
+1 : Loop Invariant Code Motion : 245.312500
+2 : Loop Invariant Code Motion : 245.312500
+3 : MergedLoadStoreMotion : 245.312500
+4 : Code sinking : 245.312500
+5 : SROA : 245.312500
+6 : Add DWARF path discriminators : 245.312500
+7 : Global Value Numbering : 243.750000
+8 : Add DWARF path discriminators : 243.750000
+9 : Reassociate expressions : 243.750000
+10 : Aggressive Dead Code Elimination : 243.750000
+11 : Loop Invariant Code Motion : 243.750000
+12 : Code sinking : 243.750000
+13 : Alignment from assumptions : 243.750000
+14 : Code sinking : 243.750000
+15 : Promote Memory to Register : 175.000000
+16 : Loop Invariant Code Motion : 154.687500
+17 : Aggressive Dead Code Elimination : 154.687500
+18 : SROA : 154.687500
+19 : Value Propagation : 153.125000
+20 : Alignment from assumptions : 153.125000
+SpeedUp : 1.602041

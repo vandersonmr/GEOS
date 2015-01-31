@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 312.203705
+2 : Promote Memory to Register : 182.966313
+3 : Reassociate expressions : 182.966313
+4 : Value Propagation : 182.966313
+5 : Assign names to anonymous instructions : 182.966313
+6 : Early CSE : 182.966313
+7 : Remove redundant instructions : 182.966313
+8 : Loop-Closed SSA Form Pass : 182.966313
+9 : Code sinking : 182.966313
+10 : SROA : 182.966313
+11 : MemCpy Optimization : 182.966313
+12 : Loop Invariant Code Motion : 139.964252
+13 : Scalar Replacement of Aggregates (DT) : 139.964252
+14 : Dead Instruction Elimination : 139.964252
+15 : Code sinking : 139.964252
+16 : Add DWARF path discriminators : 139.964252
+17 : Promote Memory to Register : 139.964252
+18 : Reassociate expressions : 139.964252
+19 : Value Propagation : 139.964252
+20 : Code sinking : 139.964252
+SpeedUp : 2.230596

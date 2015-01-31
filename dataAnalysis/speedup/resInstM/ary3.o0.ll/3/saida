@@ -1,0 +1,14 @@
+1 : Code sinking : 270.210411
+2 : Assign names to anonymous instructions : 270.210411
+3 : Reassociate expressions : 270.210411
+4 : Dead Code Elimination : 270.210411
+5 : Dead Code Elimination : 270.210411
+6 : Constant Hoisting : 270.210411
+7 : MemCpy Optimization : 270.210411
+8 : Reassociate expressions : 270.210411
+9 : Dead Instruction Elimination : 270.210411
+10 : Promote Memory to Register : 180.120280
+11 : MemCpy Optimization : 180.120280
+12 : Combine redundant instructions : 165.120250
+13 : Loop-Closed SSA Form Pass : 180.120250
+SpeedUp : 1.500167

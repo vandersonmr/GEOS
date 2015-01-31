@@ -1,0 +1,4 @@
+1 : Assign names to anonymous instructions : 48255.772424
+2 : Loop-Closed SSA Form Pass : 48255.772424
+3 : Scalar Replacement of Aggregates (DT) : 54787.120937
+SpeedUp : 0.880787

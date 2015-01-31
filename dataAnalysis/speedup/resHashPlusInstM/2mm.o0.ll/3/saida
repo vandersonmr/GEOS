@@ -1,0 +1,5 @@
+1 : Global Value Numbering : 2623.857768
+2 : Dead Code Elimination : 2623.857768
+3 : Promote Memory to Register : 1775.480866
+4 : Assign names to anonymous instructions : 2302.128724
+SpeedUp : 1.635900

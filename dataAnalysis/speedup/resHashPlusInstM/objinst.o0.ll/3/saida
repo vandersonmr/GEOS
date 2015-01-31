@@ -1,0 +1,17 @@
+1 : Value Propagation : 1352.458698
+2 : Dead Instruction Elimination : 1352.458698
+3 : Loop-Closed SSA Form Pass : 1352.458698
+4 : Add DWARF path discriminators : 1352.458698
+5 : Promote Memory to Register : 682.908279
+6 : Lower atomic intrinsics to non-atomic form : 682.908279
+7 : Assign names to anonymous instructions : 682.908279
+8 : Reassociate expressions : 682.908279
+9 : Remove redundant instructions : 682.908279
+10 : Constant Hoisting : 682.908279
+11 : Value Propagation : 682.908279
+12 : Loop Invariant Code Motion : 654.295929
+13 : Alignment from assumptions : 654.295929
+14 : Code sinking : 654.295929
+15 : Lower atomic intrinsics to non-atomic form : 654.295929
+16 : Early CSE : 14341.570928
+SpeedUp : 0.094303

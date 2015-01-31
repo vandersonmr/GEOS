@@ -1,0 +1,17 @@
+1 : Lower atomic intrinsics to non-atomic form : 557.000000
+2 : Assign names to anonymous instructions : 557.000000
+3 : Early CSE : 485.000000
+4 : Combine redundant instructions : 385.000000
+5 : MergedLoadStoreMotion : 385.000000
+6 : Lower atomic intrinsics to non-atomic form : 385.000000
+7 : Promote Memory to Register : 300.000000
+8 : Induction Variable Simplification : 263.000000
+9 : SROA : 263.000000
+10 : Reassociate expressions : 263.000000
+11 : Dead Instruction Elimination : 263.000000
+12 : Scalar Replacement of Aggregates (DT) : 263.000000
+13 : Assign names to anonymous instructions : 263.000000
+14 : Promote Memory to Register : 263.000000
+15 : Remove redundant instructions : 262.000000
+16 : Loop-Closed SSA Form Pass : 263.000000
+SpeedUp : 2.117871

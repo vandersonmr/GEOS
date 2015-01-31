@@ -1,0 +1,7 @@
+1 : Value Propagation : 904.892661
+2 : Assign names to anonymous instructions : 904.892661
+3 : Assign names to anonymous instructions : 904.892661
+4 : SROA : 904.892661
+5 : Early CSE : 223.493612
+6 : Promote Memory to Register : 185.356499
+7 : Assign names to anonymous instructions : 336.892598

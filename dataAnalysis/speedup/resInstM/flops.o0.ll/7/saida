@@ -1,0 +1,11 @@
+1 : Dead Code Elimination : 875.499222
+2 : Global Value Numbering : 765.058056
+3 : MergedLoadStoreMotion : 765.058056
+4 : Dead Instruction Elimination : 765.058056
+5 : Loop-Closed SSA Form Pass : 765.058056
+6 : MemCpy Optimization : 765.058056
+7 : Induction Variable Simplification : 705.027104
+8 : Assign names to anonymous instructions : 705.027104
+9 : Promote Memory to Register : 514.209641
+10 : Code sinking : 522.517830
+SpeedUp : 1.675539

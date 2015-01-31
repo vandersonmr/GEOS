@@ -1,0 +1,6 @@
+1 : Loop Invariant Code Motion : 459.684477
+2 : Promote Memory to Register : 394.045401
+3 : Global Value Numbering : 393.965324
+4 : Early CSE : 393.965327
+5 : Induction Variable Simplification : 390.890383
+SpeedUp : 1.175993

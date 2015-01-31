@@ -1,0 +1,16 @@
+1 : Dead Code Elimination : 2067.011333
+2 : Assign names to anonymous instructions : 2067.011333
+3 : Combine redundant instructions : 2045.476573
+4 : Remove redundant instructions : 2045.476573
+5 : Early CSE : 1720.696110
+6 : Dead Instruction Elimination : 1720.496110
+7 : Assign names to anonymous instructions : 1720.496110
+8 : Promote Memory to Register : 1179.837279
+9 : Aggressive Dead Code Elimination : 1172.329580
+10 : Aggressive Dead Code Elimination : 1172.329580
+11 : Combine redundant instructions : 1172.329580
+12 : Scalar Replacement of Aggregates (DT) : 1172.329580
+13 : Assign names to anonymous instructions : 1172.329580
+14 : Code sinking : 1172.329513
+15 : Combine redundant instructions : 1172.329580
+SpeedUp : 1.763166

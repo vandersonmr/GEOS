@@ -1,0 +1,5 @@
+1 : Value Propagation : 2402.819183
+2 : Reassociate expressions : 2397.439988
+3 : Lower atomic intrinsics to non-atomic form : 2397.439988
+4 : Loop Invariant Code Motion : 2666.399740
+SpeedUp : 0.901147

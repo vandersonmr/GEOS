@@ -1,0 +1,6 @@
+1 : Promote Memory to Register : 0.000003
+2 : Dead Instruction Elimination : 0.000004
+3 : MemCpy Optimization : 0.000004
+4 : Dead Code Elimination : 0.000004
+5 : Alignment from assumptions : 0.000004
+SpeedUp : 1.139665

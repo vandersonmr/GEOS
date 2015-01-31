@@ -1,0 +1,8 @@
+1 : Add DWARF path discriminators : 5662.759187
+2 : Dead Instruction Elimination : 5662.759187
+3 : Scalar Replacement of Aggregates (DT) : 1732.957418
+4 : Alignment from assumptions : 1732.957418
+5 : Loop-Closed SSA Form Pass : 1732.957418
+6 : MemCpy Optimization : 1732.957418
+7 : Combine redundant instructions : 2066.759476
+SpeedUp : 2.739922

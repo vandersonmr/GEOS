@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 3017.152974
+2 : Constant Hoisting : 3017.152974
+3 : Loop Invariant Code Motion : 3017.152974
+4 : Dead Code Elimination : 3017.152974
+5 : MemCpy Optimization : 3017.152974
+6 : Reassociate expressions : 3017.152974
+7 : Loop Invariant Code Motion : 3017.152974
+8 : Assign names to anonymous instructions : 3017.152974
+9 : Assign names to anonymous instructions : 3017.152974
+10 : Assign names to anonymous instructions : 3017.152974
+11 : Early CSE : 2512.003281
+12 : Induction Variable Simplification : 2512.003281
+13 : Constant Hoisting : 2512.003281
+14 : Dead Code Elimination : 2512.003281
+15 : MemCpy Optimization : 2512.003281
+16 : Assign names to anonymous instructions : 2512.003281
+17 : Early CSE : 2512.003281
+18 : Scalar Replacement of Aggregates (DT) : 1996.547846
+19 : MergedLoadStoreMotion : 1878.502051
+20 : Assign names to anonymous instructions : 1878.502051
+SpeedUp : 1.606148

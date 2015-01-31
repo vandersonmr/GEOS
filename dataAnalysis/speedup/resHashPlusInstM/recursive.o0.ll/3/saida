@@ -1,0 +1,9 @@
+1 : Dead Code Elimination : 605.674785
+2 : Loop Invariant Code Motion : 605.674785
+3 : MergedLoadStoreMotion : 605.674785
+4 : Add DWARF path discriminators : 605.674785
+5 : Induction Variable Simplification : 605.674785
+6 : Add DWARF path discriminators : 605.674785
+7 : Loop Invariant Code Motion : 605.674785
+8 : Combine redundant instructions : 637.695571
+SpeedUp : 0.949787

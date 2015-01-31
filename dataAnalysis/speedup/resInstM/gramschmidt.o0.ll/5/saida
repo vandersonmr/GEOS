@@ -1,0 +1,21 @@
+1 : Code sinking : 50.025499
+2 : SROA : 50.025499
+3 : MergedLoadStoreMotion : 50.025499
+4 : Remove redundant instructions : 50.025499
+5 : Assign names to anonymous instructions : 50.025499
+6 : Dead Code Elimination : 50.025499
+7 : Promote Memory to Register : 32.441987
+8 : Loop Invariant Code Motion : 26.385145
+9 : Lower atomic intrinsics to non-atomic form : 26.385145
+10 : Aggressive Dead Code Elimination : 26.385145
+11 : Early CSE : 20.283692
+12 : Global Value Numbering : 12.861161
+13 : Value Propagation : 12.861161
+14 : MemCpy Optimization : 12.861161
+15 : MemCpy Optimization : 12.861161
+16 : Dead Instruction Elimination : 12.861161
+17 : Dead Instruction Elimination : 12.861161
+18 : Value Propagation : 12.861161
+19 : Promote Memory to Register : 12.861161
+20 : Add DWARF path discriminators : 12.861161
+SpeedUp : 3.889656

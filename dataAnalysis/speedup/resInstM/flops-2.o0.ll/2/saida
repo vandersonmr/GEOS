@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 89.062500
+2 : Aggressive Dead Code Elimination : 78.125000
+3 : SROA : 78.125000
+4 : Remove redundant instructions : 76.562500
+5 : Value Propagation : 76.562500
+6 : Add DWARF path discriminators : 76.562500
+7 : Constant Hoisting : 76.562500
+8 : Global Value Numbering : 65.625001
+9 : Scalar Replacement of Aggregates (DT) : 65.625001
+10 : Lower atomic intrinsics to non-atomic form : 65.625001
+11 : Alignment from assumptions : 65.625001
+12 : Aggressive Dead Code Elimination : 65.625001
+13 : Scalar Replacement of Aggregates (DT) : 65.625001
+14 : Add DWARF path discriminators : 65.625001
+15 : SROA : 65.625001
+16 : Combine redundant instructions : 54.687501
+17 : Constant Hoisting : 54.687501
+18 : MergedLoadStoreMotion : 54.687501
+19 : Value Propagation : 54.687501
+20 : Loop-Closed SSA Form Pass : 59.375001
+SpeedUp : 2.473684

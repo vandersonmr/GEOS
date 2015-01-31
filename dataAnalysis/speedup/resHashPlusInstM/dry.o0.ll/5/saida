@@ -1,0 +1,13 @@
+1 : Lower atomic intrinsics to non-atomic form : 17412.092542
+2 : Loop-Closed SSA Form Pass : 17412.092542
+3 : Lower atomic intrinsics to non-atomic form : 17412.092542
+4 : Constant Hoisting : 17412.092542
+5 : Assign names to anonymous instructions : 17412.092542
+6 : Assign names to anonymous instructions : 17412.092542
+7 : Reassociate expressions : 17412.092503
+8 : MergedLoadStoreMotion : 17412.092503
+9 : MergedLoadStoreMotion : 17412.092503
+10 : Global Value Numbering : 17006.999303
+11 : Promote Memory to Register : 2616.552603
+12 : Combine redundant instructions : 8803.156448
+SpeedUp : 1.977937

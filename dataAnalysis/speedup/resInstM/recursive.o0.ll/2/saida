@@ -1,0 +1,21 @@
+1 : Loop Invariant Code Motion : 81.795036
+2 : Reassociate expressions : 81.795036
+3 : Aggressive Dead Code Elimination : 81.795036
+4 : Promote Memory to Register : 35.950767
+5 : Reassociate expressions : 35.950767
+6 : Dead Code Elimination : 35.950767
+7 : Early CSE : 35.950767
+8 : Add DWARF path discriminators : 35.950767
+9 : Loop-Closed SSA Form Pass : 35.950767
+10 : Loop-Closed SSA Form Pass : 35.950767
+11 : Loop Invariant Code Motion : 35.950767
+12 : MemCpy Optimization : 35.950767
+13 : Value Propagation : 35.950767
+14 : Constant Hoisting : 35.950767
+15 : Scalar Replacement of Aggregates (DT) : 35.950767
+16 : Alignment from assumptions : 35.950767
+17 : Dead Instruction Elimination : 35.950767
+18 : Reassociate expressions : 35.950767
+19 : Dead Instruction Elimination : 35.950767
+20 : Add DWARF path discriminators : 35.950767
+SpeedUp : 2.275196

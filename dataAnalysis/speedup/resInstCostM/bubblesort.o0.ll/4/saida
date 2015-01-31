@@ -1,0 +1,8 @@
+1 : Induction Variable Simplification : 3.584917
+2 : Aggressive Dead Code Elimination : 3.584917
+3 : Loop-Closed SSA Form Pass : 3.584917
+4 : Value Propagation : 3.584917
+5 : Value Propagation : 3.584917
+6 : Aggressive Dead Code Elimination : 3.584917
+7 : Reassociate expressions : 3.585418
+SpeedUp : 0.999860

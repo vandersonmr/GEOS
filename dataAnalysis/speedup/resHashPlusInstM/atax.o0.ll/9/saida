@@ -1,0 +1,4 @@
+1 : Code sinking : 72.728678
+2 : Reassociate expressions : 72.728678
+3 : Scalar Replacement of Aggregates (DT) : 77.052361
+SpeedUp : 0.943886

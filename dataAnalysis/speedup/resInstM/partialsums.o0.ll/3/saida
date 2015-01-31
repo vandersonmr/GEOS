@@ -1,0 +1,11 @@
+1 : Promote Memory to Register : 1.100002
+2 : Code sinking : 1.100002
+3 : Combine redundant instructions : 0.987501
+4 : Lower atomic intrinsics to non-atomic form : 0.987501
+5 : Lower atomic intrinsics to non-atomic form : 0.987501
+6 : Aggressive Dead Code Elimination : 0.987501
+7 : Promote Memory to Register : 0.987501
+8 : Promote Memory to Register : 0.987501
+9 : Code sinking : 0.987501
+10 : Loop Invariant Code Motion : 1.175001
+SpeedUp : 1.808511

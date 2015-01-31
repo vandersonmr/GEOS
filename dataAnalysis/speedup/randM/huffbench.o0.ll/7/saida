@@ -1,0 +1,9 @@
+1 : Assign names to anonymous instructions : 0.000002
+2 : Global Value Numbering : 0.000002
+3 : SROA : 0.000001
+4 : MergedLoadStoreMotion : 0.000001
+5 : Loop-Closed SSA Form Pass : 0.000002
+6 : Lower atomic intrinsics to non-atomic form : 0.000001
+7 : Scalar Replacement of Aggregates (DT) : 0.000002
+8 : Constant Hoisting : 0.000002
+SpeedUp : 1.104575

@@ -1,0 +1,21 @@
+1 : SROA : 1142.052068
+2 : Remove redundant instructions : 1142.052068
+3 : Constant Hoisting : 1142.052068
+4 : Add DWARF path discriminators : 1142.052068
+5 : Add DWARF path discriminators : 1142.052068
+6 : Alignment from assumptions : 1142.052068
+7 : Aggressive Dead Code Elimination : 1142.052068
+8 : Add DWARF path discriminators : 1142.052068
+9 : Induction Variable Simplification : 495.220827
+10 : Scalar Replacement of Aggregates (DT) : 336.445441
+11 : Induction Variable Simplification : 336.445441
+12 : SROA : 336.445441
+13 : MergedLoadStoreMotion : 336.445441
+14 : Loop Invariant Code Motion : 280.172211
+15 : Loop Invariant Code Motion : 280.172211
+16 : Alignment from assumptions : 280.172211
+17 : Aggressive Dead Code Elimination : 280.172211
+18 : SROA : 280.172211
+19 : Alignment from assumptions : 280.172211
+20 : Combine redundant instructions : 280.172206
+SpeedUp : 4.076250

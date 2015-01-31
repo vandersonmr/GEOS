@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 8.337617
+2 : SROA : 8.337617
+3 : Dead Instruction Elimination : 8.337617
+4 : Alignment from assumptions : 8.337617
+5 : Loop Invariant Code Motion : 8.337617
+6 : Constant Hoisting : 8.337617
+7 : Promote Memory to Register : 4.232708
+8 : SROA : 2.484507
+9 : Promote Memory to Register : 2.484507
+10 : Aggressive Dead Code Elimination : 2.484507
+11 : Dead Code Elimination : 2.484507
+12 : Aggressive Dead Code Elimination : 2.484507
+13 : MemCpy Optimization : 2.484507
+14 : Reassociate expressions : 2.484507
+15 : Remove redundant instructions : 2.484507
+16 : Combine redundant instructions : 2.327906
+17 : Global Value Numbering : 1.644406
+18 : Promote Memory to Register : 1.644406
+19 : Global Value Numbering : 1.644406
+20 : Aggressive Dead Code Elimination : 1.644406
+SpeedUp : 5.070292

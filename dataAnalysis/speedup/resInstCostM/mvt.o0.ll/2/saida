@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 10.404641
+2 : Loop-Closed SSA Form Pass : 10.404641
+3 : Value Propagation : 10.404641
+4 : Dead Code Elimination : 10.404641
+5 : Combine redundant instructions : 8.963961
+6 : Aggressive Dead Code Elimination : 8.963961
+7 : Remove redundant instructions : 8.963961
+8 : Value Propagation : 8.963961
+9 : Early CSE : 7.043401
+10 : Assign names to anonymous instructions : 7.043401
+11 : Assign names to anonymous instructions : 7.043401
+12 : Aggressive Dead Code Elimination : 7.043401
+13 : Dead Code Elimination : 7.043401
+14 : Aggressive Dead Code Elimination : 7.043401
+15 : Remove redundant instructions : 7.043401
+16 : Global Value Numbering : 4.963481
+17 : SROA : 4.963481
+18 : Combine redundant instructions : 4.963481
+19 : Loop-Closed SSA Form Pass : 4.963481
+20 : MemCpy Optimization : 4.963481
+SpeedUp : 2.096239

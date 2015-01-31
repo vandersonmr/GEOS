@@ -1,0 +1,9 @@
+1 : Aggressive Dead Code Elimination : 15.526641
+2 : Scalar Replacement of Aggregates (DT) : 10.004380
+3 : SROA : 10.004380
+4 : Combine redundant instructions : 9.044140
+5 : Induction Variable Simplification : 7.283700
+6 : Add DWARF path discriminators : 7.283700
+7 : Assign names to anonymous instructions : 7.283700
+8 : Reassociate expressions : 7.443740
+SpeedUp : 2.085865

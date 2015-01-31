@@ -1,0 +1,6 @@
+1 : Induction Variable Simplification : 251.562500
+2 : MemCpy Optimization : 251.562500
+3 : Assign names to anonymous instructions : 251.562500
+4 : Scalar Replacement of Aggregates (DT) : 181.250000
+5 : Scalar Replacement of Aggregates (DT) : 182.812500
+SpeedUp : 1.376068

@@ -1,0 +1,11 @@
+1 : Loop Invariant Code Motion : 142.187500
+2 : Loop Invariant Code Motion : 142.187500
+3 : Loop-Closed SSA Form Pass : 142.187500
+4 : Promote Memory to Register : 79.687500
+5 : Remove redundant instructions : 68.750000
+6 : Early CSE : 64.062500
+7 : Remove redundant instructions : 64.062500
+8 : Global Value Numbering : 62.500000
+9 : Add DWARF path discriminators : 62.500000
+10 : Loop-Closed SSA Form Pass : 64.062500
+SpeedUp : 2.219512

@@ -1,0 +1,5 @@
+1 : SROA : 0.000000
+2 : Promote Memory to Register : 0.000000
+3 : Global Value Numbering : 0.000001
+4 : Aggressive Dead Code Elimination : 0.000000
+SpeedUp : 1.181818

@@ -1,0 +1,17 @@
+1 : MemCpy Optimization : 685.582385
+2 : MemCpy Optimization : 685.582385
+3 : Lower atomic intrinsics to non-atomic form : 685.582385
+4 : Promote Memory to Register : 595.613768
+5 : Remove redundant instructions : 595.582518
+6 : Constant Hoisting : 595.582518
+7 : Dead Instruction Elimination : 595.582518
+8 : Remove redundant instructions : 595.582518
+9 : Aggressive Dead Code Elimination : 595.582518
+10 : Add DWARF path discriminators : 595.582518
+11 : Constant Hoisting : 595.582518
+12 : MemCpy Optimization : 595.582518
+13 : Assign names to anonymous instructions : 595.582518
+14 : Add DWARF path discriminators : 595.582518
+15 : Scalar Replacement of Aggregates (DT) : 595.582518
+16 : Reassociate expressions : 595.582519
+SpeedUp : 1.151112

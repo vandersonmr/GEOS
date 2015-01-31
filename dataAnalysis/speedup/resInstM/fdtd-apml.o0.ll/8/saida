@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 152.011698
+2 : Global Value Numbering : 105.947947
+3 : Code sinking : 105.947947
+4 : MergedLoadStoreMotion : 105.947947
+5 : Loop-Closed SSA Form Pass : 105.947947
+6 : Global Value Numbering : 105.947947
+7 : Dead Instruction Elimination : 105.947947
+8 : MergedLoadStoreMotion : 105.947947
+9 : Code sinking : 105.947947
+10 : Lower atomic intrinsics to non-atomic form : 105.947947
+11 : SROA : 105.947947
+12 : Promote Memory to Register : 68.722670
+13 : Alignment from assumptions : 35.364787
+14 : Dead Code Elimination : 35.364787
+15 : SROA : 35.364787
+16 : Combine redundant instructions : 30.148106
+17 : Lower atomic intrinsics to non-atomic form : 30.148106
+18 : Add DWARF path discriminators : 30.148106
+19 : Assign names to anonymous instructions : 30.148106
+20 : Remove redundant instructions : 30.148106
+SpeedUp : 5.042164

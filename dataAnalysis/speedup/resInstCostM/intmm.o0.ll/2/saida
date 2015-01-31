@@ -1,0 +1,4 @@
+1 : SROA : 0.149048
+2 : Dead Code Elimination : 0.149048
+3 : Reassociate expressions : 0.149376
+SpeedUp : 0.997804

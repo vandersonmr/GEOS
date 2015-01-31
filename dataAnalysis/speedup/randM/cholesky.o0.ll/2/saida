@@ -1,0 +1,4 @@
+1 : Alignment from assumptions : 0.000002
+2 : Early CSE : 0.000002
+3 : SROA : 0.000001
+SpeedUp : 1.244275

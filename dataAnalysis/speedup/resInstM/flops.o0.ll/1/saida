@@ -1,0 +1,13 @@
+1 : Scalar Replacement of Aggregates (DT) : 634.351466
+2 : Code sinking : 634.351466
+3 : Remove redundant instructions : 634.351466
+4 : SROA : 634.351466
+5 : Induction Variable Simplification : 257.459598
+6 : Code sinking : 257.459598
+7 : Constant Hoisting : 257.459598
+8 : Dead Instruction Elimination : 257.459598
+9 : MemCpy Optimization : 257.459598
+10 : Constant Hoisting : 257.459598
+11 : SROA : 257.459598
+12 : Global Value Numbering : 510.434867
+SpeedUp : 1.715203

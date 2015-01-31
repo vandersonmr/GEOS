@@ -1,0 +1,11 @@
+1 : Combine redundant instructions : 5624.300770
+2 : Remove redundant instructions : 5624.300770
+3 : Promote Memory to Register : 2066.759445
+4 : Combine redundant instructions : 2066.759445
+5 : Aggressive Dead Code Elimination : 2066.759445
+6 : Dead Instruction Elimination : 2066.759445
+7 : Assign names to anonymous instructions : 2066.759445
+8 : Scalar Replacement of Aggregates (DT) : 2066.759445
+9 : Scalar Replacement of Aggregates (DT) : 2066.759445
+10 : Early CSE : 2256.297774
+SpeedUp : 2.509757

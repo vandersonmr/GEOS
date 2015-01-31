@@ -1,0 +1,13 @@
+1 : Lower atomic intrinsics to non-atomic form : 0.482759
+2 : MergedLoadStoreMotion : 0.482759
+3 : Global Value Numbering : 0.412673
+4 : Remove redundant instructions : 0.412673
+5 : Constant Hoisting : 0.412673
+6 : Promote Memory to Register : 0.271680
+7 : Remove redundant instructions : 0.241383
+8 : Promote Memory to Register : 0.241383
+9 : Add DWARF path discriminators : 0.241383
+10 : Code sinking : 0.241383
+11 : Constant Hoisting : 0.241383
+12 : Loop Invariant Code Motion : 0.251280
+SpeedUp : 1.921196

@@ -1,0 +1,21 @@
+1 : Early CSE : 35.855218
+2 : Combine redundant instructions : 29.777378
+3 : Combine redundant instructions : 29.777378
+4 : Assign names to anonymous instructions : 29.777378
+5 : Dead Code Elimination : 29.777378
+6 : Add DWARF path discriminators : 29.777378
+7 : Global Value Numbering : 18.990265
+8 : Combine redundant instructions : 18.990265
+9 : Value Propagation : 18.990265
+10 : Loop Invariant Code Motion : 18.990265
+11 : Remove redundant instructions : 18.990265
+12 : Dead Code Elimination : 18.990265
+13 : Alignment from assumptions : 18.990265
+14 : Loop-Closed SSA Form Pass : 18.990265
+15 : Value Propagation : 18.990265
+16 : Combine redundant instructions : 18.990265
+17 : Dead Code Elimination : 18.990265
+18 : Remove redundant instructions : 18.990265
+19 : Dead Code Elimination : 18.990265
+20 : Combine redundant instructions : 18.990265
+SpeedUp : 2.634271

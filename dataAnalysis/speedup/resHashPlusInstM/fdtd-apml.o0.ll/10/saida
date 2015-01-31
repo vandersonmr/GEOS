@@ -1,0 +1,20 @@
+1 : Assign names to anonymous instructions : 399.469605
+2 : Lower atomic intrinsics to non-atomic form : 399.469605
+3 : Add DWARF path discriminators : 399.469605
+4 : Global Value Numbering : 286.300002
+5 : Lower atomic intrinsics to non-atomic form : 286.300002
+6 : SROA : 286.300002
+7 : Combine redundant instructions : 248.124779
+8 : Constant Hoisting : 248.124779
+9 : Alignment from assumptions : 248.124779
+10 : Reassociate expressions : 248.124779
+11 : Induction Variable Simplification : 248.124779
+12 : Dead Instruction Elimination : 248.124779
+13 : Dead Code Elimination : 248.124779
+14 : Global Value Numbering : 248.124779
+15 : Induction Variable Simplification : 248.124779
+16 : Promote Memory to Register : 183.907158
+17 : Alignment from assumptions : 142.213357
+18 : Assign names to anonymous instructions : 142.213357
+19 : Loop Invariant Code Motion : 157.040153
+SpeedUp : 2.543742

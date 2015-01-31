@@ -1,0 +1,7 @@
+1 : Early CSE : 207.206274
+2 : SROA : 207.206274
+3 : Constant Hoisting : 207.206274
+4 : MergedLoadStoreMotion : 207.206274
+5 : Loop-Closed SSA Form Pass : 207.206274
+6 : Scalar Replacement of Aggregates (DT) : 241.003646
+SpeedUp : 1.025729

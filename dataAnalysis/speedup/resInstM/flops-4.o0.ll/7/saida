@@ -1,0 +1,12 @@
+1 : Combine redundant instructions : 156.250000
+2 : Add DWARF path discriminators : 156.250000
+3 : MemCpy Optimization : 156.250000
+4 : Promote Memory to Register : 137.500000
+5 : Loop Invariant Code Motion : 128.125000
+6 : Combine redundant instructions : 126.562500
+7 : Alignment from assumptions : 126.562500
+8 : Code sinking : 126.562500
+9 : Remove redundant instructions : 126.562500
+10 : SROA : 126.562500
+11 : Loop Invariant Code Motion : 128.125000
+SpeedUp : 1.609756

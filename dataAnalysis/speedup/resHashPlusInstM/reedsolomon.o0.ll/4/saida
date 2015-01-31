@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 7183.798785
+2 : Combine redundant instructions : 4313.731205
+3 : Global Value Numbering : 3924.537699
+4 : Induction Variable Simplification : 3924.537699
+5 : Dead Code Elimination : 3924.537699
+6 : Loop-Closed SSA Form Pass : 3924.537699
+7 : Remove redundant instructions : 3924.537699
+8 : Loop-Closed SSA Form Pass : 3924.537699
+9 : Loop-Closed SSA Form Pass : 3924.537699
+10 : Value Propagation : 3924.537699
+11 : Add DWARF path discriminators : 3924.537699
+12 : Add DWARF path discriminators : 3924.537699
+13 : Global Value Numbering : 3924.537699
+14 : MemCpy Optimization : 3924.537699
+15 : Code sinking : 3924.537699
+16 : Aggressive Dead Code Elimination : 3924.537699
+17 : Loop-Closed SSA Form Pass : 3924.537699
+18 : Combine redundant instructions : 3924.537699
+19 : Lower atomic intrinsics to non-atomic form : 3924.537699
+20 : Early CSE : 3766.664801
+SpeedUp : 1.907204

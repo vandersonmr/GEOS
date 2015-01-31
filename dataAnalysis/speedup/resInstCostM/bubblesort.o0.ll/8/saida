@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 3.584917
+2 : Aggressive Dead Code Elimination : 3.584917
+3 : Aggressive Dead Code Elimination : 3.584917
+4 : Promote Memory to Register : 2.451980
+5 : Dead Code Elimination : 2.451980
+6 : Loop Invariant Code Motion : 2.451980
+7 : Early CSE : 1.261516
+8 : Assign names to anonymous instructions : 1.261516
+9 : Promote Memory to Register : 1.261516
+10 : Constant Hoisting : 1.261516
+11 : SROA : 1.261516
+12 : Dead Instruction Elimination : 1.261516
+13 : Scalar Replacement of Aggregates (DT) : 1.261516
+14 : Loop Invariant Code Motion : 1.261516
+15 : Scalar Replacement of Aggregates (DT) : 1.261516
+16 : Scalar Replacement of Aggregates (DT) : 1.261516
+17 : SROA : 1.261516
+18 : Dead Code Elimination : 1.261516
+19 : Lower atomic intrinsics to non-atomic form : 1.261516
+20 : Alignment from assumptions : 1.261516
+SpeedUp : 2.841753

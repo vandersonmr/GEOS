@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 12.405421
+2 : Value Propagation : 12.405421
+3 : Early CSE : 9.043941
+4 : Global Value Numbering : 8.724461
+5 : MergedLoadStoreMotion : 8.724461
+6 : Remove redundant instructions : 8.724461
+7 : Early CSE : 8.724461
+8 : Early CSE : 8.724461
+9 : Combine redundant instructions : 7.364001
+10 : Constant Hoisting : 7.364001
+11 : Dead Code Elimination : 7.364001
+12 : Remove redundant instructions : 7.364001
+13 : Alignment from assumptions : 7.364001
+14 : Scalar Replacement of Aggregates (DT) : 4.962840
+15 : Promote Memory to Register : 3.842520
+16 : Lower atomic intrinsics to non-atomic form : 3.842520
+17 : Combine redundant instructions : 3.842520
+18 : Value Propagation : 3.842520
+19 : Lower atomic intrinsics to non-atomic form : 3.842520
+20 : Promote Memory to Register : 3.842520
+SpeedUp : 3.228459

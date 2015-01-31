@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 679.753833
+2 : Dead Instruction Elimination : 679.753833
+3 : Scalar Replacement of Aggregates (DT) : 534.649352
+4 : MemCpy Optimization : 534.649352
+5 : Constant Hoisting : 534.649352
+6 : Reassociate expressions : 534.649352
+7 : Promote Memory to Register : 534.649352
+8 : Add DWARF path discriminators : 534.649352
+9 : Value Propagation : 534.649352
+10 : Promote Memory to Register : 534.649352
+11 : Lower atomic intrinsics to non-atomic form : 534.649352
+12 : Loop Invariant Code Motion : 521.981485
+13 : MemCpy Optimization : 521.981485
+14 : Reassociate expressions : 521.981485
+15 : Early CSE : 384.266836
+16 : Dead Code Elimination : 384.266836
+17 : MemCpy Optimization : 384.266836
+18 : MemCpy Optimization : 384.266836
+19 : Loop-Closed SSA Form Pass : 384.266836
+20 : Code sinking : 384.266836
+SpeedUp : 1.768963

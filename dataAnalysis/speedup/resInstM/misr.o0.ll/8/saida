@@ -1,0 +1,6 @@
+1 : Assign names to anonymous instructions : 5.494476
+2 : Dead Instruction Elimination : 5.494476
+3 : Alignment from assumptions : 5.494476
+4 : Value Propagation : 5.494476
+5 : Global Value Numbering : 6.825506
+SpeedUp : 0.804992

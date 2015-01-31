@@ -1,0 +1,21 @@
+1 : Early CSE : 839.565058
+2 : Constant Hoisting : 839.565058
+3 : Aggressive Dead Code Elimination : 839.565058
+4 : Aggressive Dead Code Elimination : 839.565058
+5 : SROA : 839.565058
+6 : Induction Variable Simplification : 839.565058
+7 : Induction Variable Simplification : 839.565058
+8 : Dead Instruction Elimination : 839.565058
+9 : Assign names to anonymous instructions : 839.565058
+10 : Combine redundant instructions : 710.474641
+11 : Dead Code Elimination : 710.474641
+12 : Loop-Closed SSA Form Pass : 710.474641
+13 : Dead Instruction Elimination : 710.474641
+14 : Induction Variable Simplification : 710.474641
+15 : Promote Memory to Register : 516.728864
+16 : Lower atomic intrinsics to non-atomic form : 387.680677
+17 : Alignment from assumptions : 387.680605
+18 : Reassociate expressions : 387.680605
+19 : Promote Memory to Register : 387.680605
+20 : Remove redundant instructions : 387.680605
+SpeedUp : 2.748239

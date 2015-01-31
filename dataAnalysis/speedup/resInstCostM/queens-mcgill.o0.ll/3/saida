@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 96.400683
+2 : Loop-Closed SSA Form Pass : 96.400683
+3 : Aggressive Dead Code Elimination : 96.400683
+4 : Constant Hoisting : 96.400683
+5 : Assign names to anonymous instructions : 96.400683
+6 : Promote Memory to Register : 40.780938
+7 : Loop-Closed SSA Form Pass : 40.780938
+8 : MergedLoadStoreMotion : 40.780938
+9 : Early CSE : 40.780938
+10 : Global Value Numbering : 26.759222
+11 : Lower atomic intrinsics to non-atomic form : 26.759222
+12 : Early CSE : 26.759222
+13 : SROA : 26.759222
+14 : Value Propagation : 26.759222
+15 : Aggressive Dead Code Elimination : 26.759222
+16 : Loop-Closed SSA Form Pass : 26.759222
+17 : Assign names to anonymous instructions : 26.759222
+18 : MergedLoadStoreMotion : 26.759222
+19 : Code sinking : 26.759222
+20 : Add DWARF path discriminators : 26.759222
+SpeedUp : 3.602522

@@ -1,0 +1,10 @@
+1 : Induction Variable Simplification : 705.615601
+2 : Assign names to anonymous instructions : 705.615601
+3 : Dead Code Elimination : 705.615601
+4 : Assign names to anonymous instructions : 705.615601
+5 : Assign names to anonymous instructions : 705.615601
+6 : Alignment from assumptions : 705.615601
+7 : MergedLoadStoreMotion : 705.615601
+8 : Dead Instruction Elimination : 705.615601
+9 : Early CSE : 717.615601
+SpeedUp : 0.983278

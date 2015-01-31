@@ -1,0 +1,21 @@
+1 : Early CSE : 104.450024
+2 : Early CSE : 104.450024
+3 : MemCpy Optimization : 104.450024
+4 : Combine redundant instructions : 101.800022
+5 : Dead Instruction Elimination : 101.800022
+6 : Loop-Closed SSA Form Pass : 101.800020
+7 : Combine redundant instructions : 101.800020
+8 : Lower atomic intrinsics to non-atomic form : 101.800020
+9 : Remove redundant instructions : 101.800020
+10 : Remove redundant instructions : 101.800020
+11 : Global Value Numbering : 101.000020
+12 : Global Value Numbering : 101.000020
+13 : Reassociate expressions : 101.000020
+14 : Alignment from assumptions : 101.000020
+15 : Alignment from assumptions : 101.000020
+16 : Induction Variable Simplification : 101.000020
+17 : Reassociate expressions : 101.000020
+18 : Constant Hoisting : 101.000020
+19 : Aggressive Dead Code Elimination : 101.000020
+20 : MemCpy Optimization : 101.000020
+SpeedUp : 1.126238

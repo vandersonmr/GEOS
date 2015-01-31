@@ -1,0 +1,16 @@
+1 : Value Propagation : 51.777586
+2 : Loop Invariant Code Motion : 51.777586
+3 : Add DWARF path discriminators : 51.777586
+4 : Dead Code Elimination : 51.777586
+5 : Remove redundant instructions : 51.775792
+6 : Aggressive Dead Code Elimination : 51.775792
+7 : Induction Variable Simplification : 51.775792
+8 : MemCpy Optimization : 51.775792
+9 : SROA : 51.775792
+10 : Dead Instruction Elimination : 51.775792
+11 : MergedLoadStoreMotion : 51.775792
+12 : Assign names to anonymous instructions : 51.775792
+13 : Induction Variable Simplification : 51.775792
+14 : Alignment from assumptions : 51.775792
+15 : Scalar Replacement of Aggregates (DT) : 56.705364
+SpeedUp : 0.913099

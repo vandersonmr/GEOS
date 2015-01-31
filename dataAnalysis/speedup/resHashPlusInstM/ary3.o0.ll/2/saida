@@ -1,0 +1,6 @@
+1 : Dead Code Elimination : 1886.811228
+2 : Promote Memory to Register : 1647.327578
+3 : Induction Variable Simplification : 1506.910409
+4 : Constant Hoisting : 1506.910409
+5 : Remove redundant instructions : 1506.910883
+SpeedUp : 1.252105

@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 40.300808
+2 : Global Value Numbering : 40.091336
+3 : Induction Variable Simplification : 40.091336
+4 : MemCpy Optimization : 40.091336
+5 : Constant Hoisting : 40.091336
+6 : MemCpy Optimization : 40.091336
+7 : Value Propagation : 40.091336
+8 : MergedLoadStoreMotion : 40.091336
+9 : Combine redundant instructions : 37.903692
+10 : SROA : 37.903692
+11 : Induction Variable Simplification : 37.903692
+12 : Scalar Replacement of Aggregates (DT) : 22.159022
+13 : SROA : 22.124649
+14 : Value Propagation : 22.124649
+15 : Loop Invariant Code Motion : 22.124649
+16 : Global Value Numbering : 22.089649
+17 : MergedLoadStoreMotion : 22.089649
+18 : Code sinking : 22.089649
+19 : Loop-Closed SSA Form Pass : 22.089649
+20 : Lower atomic intrinsics to non-atomic form : 22.089649
+SpeedUp : 1.824421

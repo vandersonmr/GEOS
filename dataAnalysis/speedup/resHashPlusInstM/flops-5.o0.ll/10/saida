@@ -1,0 +1,14 @@
+1 : Loop Invariant Code Motion : 39416.709980
+2 : Alignment from assumptions : 39416.709980
+3 : Loop-Closed SSA Form Pass : 39416.709980
+4 : Code sinking : 39416.709980
+5 : Aggressive Dead Code Elimination : 39416.709980
+6 : SROA : 39416.709980
+7 : Dead Code Elimination : 39416.709980
+8 : Dead Code Elimination : 39416.709980
+9 : Assign names to anonymous instructions : 39416.709980
+10 : Reassociate expressions : 39416.709980
+11 : Loop Invariant Code Motion : 39416.709980
+12 : Aggressive Dead Code Elimination : 39416.709980
+13 : SROA : 39416.709980
+14 : Combine redundant instructions : 121321.545032

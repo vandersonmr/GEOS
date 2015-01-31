@@ -1,0 +1,6 @@
+1 : MemCpy Optimization : 62.425728
+2 : Loop Invariant Code Motion : 62.425728
+3 : SROA : 62.425728
+4 : Code sinking : 62.425728
+5 : Reassociate expressions : 62.665788
+SpeedUp : 0.996169

@@ -1,0 +1,4 @@
+1 : Reassociate expressions : 101.011273
+2 : Loop Invariant Code Motion : 101.011273
+3 : Remove redundant instructions : 101.011273
+SpeedUp : 1.000000

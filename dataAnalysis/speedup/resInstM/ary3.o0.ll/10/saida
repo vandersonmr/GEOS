@@ -1,0 +1,4 @@
+1 : Code sinking : 270.210411
+2 : Remove redundant instructions : 270.210401
+3 : Global Value Numbering : 300.240231
+SpeedUp : 0.899981

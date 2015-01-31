@@ -1,0 +1,16 @@
+1 : Loop Invariant Code Motion : 409.901500
+2 : MergedLoadStoreMotion : 409.901500
+3 : Dead Instruction Elimination : 409.901500
+4 : Alignment from assumptions : 409.901500
+5 : Value Propagation : 409.901500
+6 : MergedLoadStoreMotion : 409.901500
+7 : Aggressive Dead Code Elimination : 409.901500
+8 : Loop-Closed SSA Form Pass : 409.901500
+9 : Value Propagation : 409.901500
+10 : Alignment from assumptions : 409.901500
+11 : Scalar Replacement of Aggregates (DT) : 215.168000
+12 : Reassociate expressions : 215.168000
+13 : Value Propagation : 215.168000
+14 : Dead Instruction Elimination : 215.168000
+15 : Global Value Numbering : 235.648000
+SpeedUp : 1.826375

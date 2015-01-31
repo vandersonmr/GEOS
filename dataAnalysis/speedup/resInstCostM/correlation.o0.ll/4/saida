@@ -1,0 +1,18 @@
+1 : Loop-Closed SSA Form Pass : 191.301411
+2 : Value Propagation : 191.301411
+3 : Lower atomic intrinsics to non-atomic form : 191.301411
+4 : Global Value Numbering : 0.762001
+5 : Aggressive Dead Code Elimination : 0.762001
+6 : Code sinking : 0.762001
+7 : Code sinking : 0.762001
+8 : Dead Instruction Elimination : 0.762001
+9 : Loop-Closed SSA Form Pass : 0.762001
+10 : Lower atomic intrinsics to non-atomic form : 0.762001
+11 : Promote Memory to Register : 0.371061
+12 : Combine redundant instructions : 0.290800
+13 : Promote Memory to Register : 0.290780
+14 : Assign names to anonymous instructions : 0.290780
+15 : Add DWARF path discriminators : 0.290780
+16 : Loop Invariant Code Motion : 0.290780
+17 : Induction Variable Simplification : 0.290790
+SpeedUp : 657.867032

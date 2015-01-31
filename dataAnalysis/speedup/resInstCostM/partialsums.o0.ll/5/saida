@@ -1,0 +1,21 @@
+1 : Value Propagation : 2.587503
+2 : Loop Invariant Code Motion : 2.587503
+3 : Loop-Closed SSA Form Pass : 2.587503
+4 : Induction Variable Simplification : 2.587503
+5 : Remove redundant instructions : 2.587503
+6 : Alignment from assumptions : 2.587503
+7 : Loop Invariant Code Motion : 2.587503
+8 : MemCpy Optimization : 2.587503
+9 : Reassociate expressions : 2.587503
+10 : MergedLoadStoreMotion : 2.587503
+11 : Add DWARF path discriminators : 2.587503
+12 : MemCpy Optimization : 2.587503
+13 : Global Value Numbering : 1.912503
+14 : Add DWARF path discriminators : 1.912503
+15 : Reassociate expressions : 1.912503
+16 : Loop Invariant Code Motion : 1.912503
+17 : Remove redundant instructions : 1.912503
+18 : Loop Invariant Code Motion : 1.912503
+19 : Scalar Replacement of Aggregates (DT) : 1.100002
+20 : MemCpy Optimization : 1.100002
+SpeedUp : 2.352272

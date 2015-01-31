@@ -1,0 +1,16 @@
+1 : Loop-Closed SSA Form Pass : 54028.428648
+2 : Add DWARF path discriminators : 54028.428648
+3 : Global Value Numbering : 53980.468492
+4 : Dead Instruction Elimination : 53980.468492
+5 : Aggressive Dead Code Elimination : 53980.468492
+6 : Dead Code Elimination : 53980.468492
+7 : Constant Hoisting : 53980.468492
+8 : Constant Hoisting : 53980.468492
+9 : Dead Instruction Elimination : 53980.468492
+10 : MergedLoadStoreMotion : 53980.468492
+11 : Combine redundant instructions : 702.539062
+12 : Combine redundant instructions : 702.539062
+13 : MemCpy Optimization : 702.539062
+14 : MemCpy Optimization : 702.539062
+15 : Early CSE : 65071.484375
+SpeedUp : 0.830293

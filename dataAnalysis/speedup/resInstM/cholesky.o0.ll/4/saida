@@ -1,0 +1,14 @@
+1 : Add DWARF path discriminators : 73.750483
+2 : Value Propagation : 73.750483
+3 : Combine redundant instructions : 64.755411
+4 : Assign names to anonymous instructions : 64.755411
+5 : Dead Code Elimination : 64.755411
+6 : Remove redundant instructions : 64.755411
+7 : Promote Memory to Register : 39.580642
+8 : Value Propagation : 39.528162
+9 : Dead Code Elimination : 39.528162
+10 : Global Value Numbering : 14.542249
+11 : Global Value Numbering : 14.537001
+12 : Code sinking : 14.537001
+13 : Loop Invariant Code Motion : 16.337024
+SpeedUp : 4.514316

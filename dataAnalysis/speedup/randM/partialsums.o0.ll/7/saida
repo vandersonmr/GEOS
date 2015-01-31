@@ -1,0 +1,5 @@
+1 : Constant Hoisting : 0.000000
+2 : Aggressive Dead Code Elimination : 0.000000
+3 : Dead Code Elimination : 0.000000
+4 : Reassociate expressions : 0.000001
+SpeedUp : 0.900000

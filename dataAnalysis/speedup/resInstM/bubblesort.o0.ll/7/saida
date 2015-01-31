@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 4.781890
+2 : Constant Hoisting : 4.781890
+3 : Alignment from assumptions : 4.781890
+4 : Dead Instruction Elimination : 4.781890
+5 : Dead Code Elimination : 4.781890
+6 : Scalar Replacement of Aggregates (DT) : 3.649453
+7 : Lower atomic intrinsics to non-atomic form : 3.649453
+8 : Add DWARF path discriminators : 3.649453
+9 : Loop Invariant Code Motion : 3.649453
+10 : MergedLoadStoreMotion : 3.649453
+11 : Loop-Closed SSA Form Pass : 3.649453
+12 : Loop-Closed SSA Form Pass : 3.649453
+13 : Early CSE : 1.958488
+14 : Dead Code Elimination : 1.958488
+15 : Value Propagation : 1.958488
+16 : Add DWARF path discriminators : 1.958488
+17 : Scalar Replacement of Aggregates (DT) : 1.958488
+18 : Early CSE : 1.958488
+19 : MergedLoadStoreMotion : 1.958488
+20 : Dead Code Elimination : 1.958488
+SpeedUp : 2.441623

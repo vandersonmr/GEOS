@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 50.025499
+2 : Value Propagation : 50.025499
+3 : Alignment from assumptions : 50.025499
+4 : Add DWARF path discriminators : 50.025499
+5 : Induction Variable Simplification : 50.025499
+6 : Constant Hoisting : 50.025499
+7 : Remove redundant instructions : 50.025499
+8 : Scalar Replacement of Aggregates (DT) : 32.441987
+9 : Dead Instruction Elimination : 23.007424
+10 : Combine redundant instructions : 18.279611
+11 : Lower atomic intrinsics to non-atomic form : 18.279611
+12 : Lower atomic intrinsics to non-atomic form : 18.279611
+13 : Constant Hoisting : 18.279611
+14 : Promote Memory to Register : 18.279611
+15 : Aggressive Dead Code Elimination : 18.279611
+16 : Value Propagation : 18.279611
+17 : SROA : 18.279611
+18 : Scalar Replacement of Aggregates (DT) : 18.279611
+19 : Add DWARF path discriminators : 18.279611
+20 : Early CSE : 16.258468
+SpeedUp : 3.076889

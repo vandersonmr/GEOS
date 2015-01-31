@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 73.059764
+2 : Global Value Numbering : 11.114311
+3 : Code sinking : 11.114311
+4 : Aggressive Dead Code Elimination : 11.114311
+5 : Global Value Numbering : 11.114311
+6 : Remove redundant instructions : 11.114311
+7 : Lower atomic intrinsics to non-atomic form : 11.114311
+8 : Assign names to anonymous instructions : 11.114311
+9 : Remove redundant instructions : 11.114311
+10 : Code sinking : 11.114311
+11 : Reassociate expressions : 11.114311
+12 : SROA : 11.114311
+13 : Alignment from assumptions : 11.114311
+14 : Combine redundant instructions : 11.096750
+15 : Early CSE : 11.077169
+16 : Lower atomic intrinsics to non-atomic form : 11.077169
+17 : MergedLoadStoreMotion : 11.077169
+18 : SROA : 11.077169
+19 : MemCpy Optimization : 11.077169
+20 : Lower atomic intrinsics to non-atomic form : 11.077169
+SpeedUp : 6.595527

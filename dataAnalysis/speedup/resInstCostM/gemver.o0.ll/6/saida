@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 15.687282
+2 : Reassociate expressions : 15.687282
+3 : Induction Variable Simplification : 15.687282
+4 : Loop-Closed SSA Form Pass : 15.687282
+5 : Promote Memory to Register : 9.284281
+6 : Early CSE : 8.803761
+7 : Combine redundant instructions : 8.803761
+8 : Reassociate expressions : 8.803761
+9 : Value Propagation : 8.803761
+10 : Dead Code Elimination : 8.803761
+11 : Global Value Numbering : 5.923601
+12 : Scalar Replacement of Aggregates (DT) : 5.923601
+13 : Combine redundant instructions : 5.923601
+14 : Loop-Closed SSA Form Pass : 5.923601
+15 : Loop Invariant Code Motion : 5.603561
+16 : Promote Memory to Register : 5.603561
+17 : Constant Hoisting : 5.603561
+18 : Assign names to anonymous instructions : 5.603561
+19 : Remove redundant instructions : 5.603561
+20 : Remove redundant instructions : 5.603561
+SpeedUp : 3.170913

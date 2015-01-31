@@ -1,0 +1,9 @@
+1 : Induction Variable Simplification : 0.000001
+2 : Reassociate expressions : 0.000001
+3 : Scalar Replacement of Aggregates (DT) : 0.000001
+4 : Global Value Numbering : 0.000001
+5 : Aggressive Dead Code Elimination : 0.000001
+6 : Induction Variable Simplification : 0.000001
+7 : MemCpy Optimization : 0.000001
+8 : Early CSE : 0.000001
+SpeedUp : 1.033898

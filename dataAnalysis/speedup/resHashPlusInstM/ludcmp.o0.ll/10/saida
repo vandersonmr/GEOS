@@ -1,0 +1,11 @@
+1 : MergedLoadStoreMotion : 644.602284
+2 : Aggressive Dead Code Elimination : 644.602284
+3 : Induction Variable Simplification : 644.602284
+4 : Alignment from assumptions : 644.602284
+5 : Combine redundant instructions : 574.709111
+6 : Constant Hoisting : 574.709111
+7 : Combine redundant instructions : 574.709111
+8 : Dead Code Elimination : 574.709111
+9 : Early CSE : 546.719543
+10 : Add DWARF path discriminators : 546.719666
+SpeedUp : 1.179036

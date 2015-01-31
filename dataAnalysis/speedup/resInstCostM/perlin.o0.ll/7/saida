@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 279.447877
+2 : Scalar Replacement of Aggregates (DT) : 111.779157
+3 : Loop Invariant Code Motion : 111.779157
+4 : Code sinking : 111.779157
+5 : Value Propagation : 111.779157
+6 : Value Propagation : 111.779157
+7 : Dead Code Elimination : 111.779157
+8 : Loop Invariant Code Motion : 111.779157
+9 : Loop Invariant Code Motion : 111.779157
+10 : Aggressive Dead Code Elimination : 111.779157
+11 : MergedLoadStoreMotion : 111.779157
+12 : MemCpy Optimization : 111.779157
+13 : Scalar Replacement of Aggregates (DT) : 111.779157
+14 : Add DWARF path discriminators : 111.779157
+15 : Loop Invariant Code Motion : 111.779157
+16 : SROA : 111.779157
+17 : Global Value Numbering : 105.994993
+18 : Global Value Numbering : 105.994993
+19 : Early CSE : 104.714334
+20 : Early CSE : 104.714334
+SpeedUp : 2.668669

@@ -1,0 +1,9 @@
+1 : Promote Memory to Register : 479.031349
+2 : Promote Memory to Register : 479.031349
+3 : Aggressive Dead Code Elimination : 479.031349
+4 : SROA : 479.031349
+5 : Promote Memory to Register : 479.031349
+6 : SROA : 479.031349
+7 : SROA : 479.031349
+8 : Global Value Numbering : 2131.471733
+SpeedUp : 2.038514

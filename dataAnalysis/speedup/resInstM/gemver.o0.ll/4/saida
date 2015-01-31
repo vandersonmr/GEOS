@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 21.450203
+2 : Lower atomic intrinsics to non-atomic form : 21.450203
+3 : Induction Variable Simplification : 21.450203
+4 : Promote Memory to Register : 13.766441
+5 : MergedLoadStoreMotion : 10.885601
+6 : Induction Variable Simplification : 10.885601
+7 : Dead Instruction Elimination : 10.885601
+8 : SROA : 10.885601
+9 : Add DWARF path discriminators : 10.885601
+10 : MergedLoadStoreMotion : 10.885601
+11 : Aggressive Dead Code Elimination : 10.885601
+12 : Code sinking : 10.885601
+13 : Value Propagation : 10.885601
+14 : MergedLoadStoreMotion : 10.885601
+15 : Dead Instruction Elimination : 10.885601
+16 : Value Propagation : 10.885601
+17 : Value Propagation : 10.885601
+18 : Early CSE : 9.764681
+19 : Loop Invariant Code Motion : 8.484641
+20 : Induction Variable Simplification : 8.484681
+SpeedUp : 2.528109

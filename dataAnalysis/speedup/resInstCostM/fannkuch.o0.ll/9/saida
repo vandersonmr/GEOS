@@ -1,0 +1,21 @@
+1 : Code sinking : 357.902575
+2 : Promote Memory to Register : 146.562442
+3 : Promote Memory to Register : 146.562442
+4 : Combine redundant instructions : 140.494492
+5 : Lower atomic intrinsics to non-atomic form : 140.494492
+6 : Lower atomic intrinsics to non-atomic form : 140.494492
+7 : Constant Hoisting : 140.494492
+8 : Assign names to anonymous instructions : 140.494492
+9 : Global Value Numbering : 63.713873
+10 : Reassociate expressions : 63.713873
+11 : Combine redundant instructions : 63.713873
+12 : Global Value Numbering : 63.713873
+13 : MergedLoadStoreMotion : 63.713873
+14 : Dead Code Elimination : 63.713873
+15 : Remove redundant instructions : 63.713873
+16 : Dead Code Elimination : 63.713873
+17 : Dead Code Elimination : 63.713873
+18 : Alignment from assumptions : 63.713873
+19 : MergedLoadStoreMotion : 63.713873
+20 : Remove redundant instructions : 63.713873
+SpeedUp : 5.617341

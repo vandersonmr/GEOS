@@ -1,0 +1,10 @@
+1 : Loop-Closed SSA Form Pass : 15.044312
+2 : Value Propagation : 15.044312
+3 : Lower atomic intrinsics to non-atomic form : 15.044312
+4 : Value Propagation : 15.044312
+5 : Early CSE : 14.919274
+6 : Constant Hoisting : 14.919274
+7 : Constant Hoisting : 14.919274
+8 : MemCpy Optimization : 14.919274
+9 : Combine redundant instructions : 15.059968
+SpeedUp : 0.998960

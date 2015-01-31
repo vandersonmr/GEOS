@@ -1,0 +1,9 @@
+1 : Code sinking : 78.440507
+2 : MemCpy Optimization : 78.440507
+3 : Remove redundant instructions : 78.440507
+4 : Assign names to anonymous instructions : 78.440507
+5 : Promote Memory to Register : 47.937503
+6 : Early CSE : 42.401503
+7 : Induction Variable Simplification : 42.401503
+8 : Scalar Replacement of Aggregates (DT) : 42.425503
+SpeedUp : 1.848900

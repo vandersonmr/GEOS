@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 170.312501
+2 : Scalar Replacement of Aggregates (DT) : 112.500000
+3 : Value Propagation : 112.500000
+4 : Constant Hoisting : 112.500000
+5 : MergedLoadStoreMotion : 112.500000
+6 : Scalar Replacement of Aggregates (DT) : 112.500000
+7 : Reassociate expressions : 103.125000
+8 : Assign names to anonymous instructions : 103.125000
+9 : Alignment from assumptions : 103.125000
+10 : Code sinking : 103.125000
+11 : Promote Memory to Register : 103.125000
+12 : Reassociate expressions : 103.125000
+13 : Combine redundant instructions : 84.375000
+14 : Combine redundant instructions : 84.375000
+15 : Lower atomic intrinsics to non-atomic form : 84.375000
+16 : Alignment from assumptions : 84.375000
+17 : Combine redundant instructions : 84.375000
+18 : Dead Instruction Elimination : 84.375000
+19 : Early CSE : 84.375000
+20 : Code sinking : 84.375000
+SpeedUp : 2.018519

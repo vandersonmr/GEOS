@@ -1,0 +1,14 @@
+1 : Scalar Replacement of Aggregates (DT) : 1279.800000
+2 : Add DWARF path discriminators : 1279.800000
+3 : Reassociate expressions : 1279.800000
+4 : Dead Code Elimination : 1279.800000
+5 : MergedLoadStoreMotion : 1279.800000
+6 : Aggressive Dead Code Elimination : 1279.800000
+7 : Reassociate expressions : 1279.800000
+8 : Early CSE : 1093.200000
+9 : Lower atomic intrinsics to non-atomic form : 1093.200000
+10 : Dead Instruction Elimination : 1093.200000
+11 : Induction Variable Simplification : 1086.960000
+12 : Alignment from assumptions : 1086.960000
+13 : MergedLoadStoreMotion : 1092.960000
+SpeedUp : 2.026021

@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 22.216971
+2 : Aggressive Dead Code Elimination : 22.216971
+3 : Add DWARF path discriminators : 22.216971
+4 : Code sinking : 22.216971
+5 : Value Propagation : 22.216971
+6 : Global Value Numbering : 22.199747
+7 : Value Propagation : 22.199747
+8 : Constant Hoisting : 22.199747
+9 : Global Value Numbering : 22.199747
+10 : Loop Invariant Code Motion : 22.199747
+11 : Dead Instruction Elimination : 22.199747
+12 : Value Propagation : 22.199747
+13 : Global Value Numbering : 22.199747
+14 : Aggressive Dead Code Elimination : 22.199747
+15 : Dead Code Elimination : 22.199747
+16 : Promote Memory to Register : 22.177037
+17 : Combine redundant instructions : 16.836076
+18 : Dead Instruction Elimination : 16.836076
+19 : Global Value Numbering : 16.836076
+20 : SROA : 16.836076
+SpeedUp : 1.319605

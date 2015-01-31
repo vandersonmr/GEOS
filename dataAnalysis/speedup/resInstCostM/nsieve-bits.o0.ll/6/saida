@@ -1,0 +1,21 @@
+1 : Code sinking : 68.901436
+2 : Loop-Closed SSA Form Pass : 68.901436
+3 : Alignment from assumptions : 68.901436
+4 : Aggressive Dead Code Elimination : 68.901436
+5 : Constant Hoisting : 68.901436
+6 : Combine redundant instructions : 59.510275
+7 : Add DWARF path discriminators : 59.510275
+8 : Reassociate expressions : 59.510275
+9 : Code sinking : 59.510275
+10 : Value Propagation : 59.510275
+11 : Scalar Replacement of Aggregates (DT) : 45.719611
+12 : Promote Memory to Register : 45.719611
+13 : Loop Invariant Code Motion : 45.719611
+14 : Scalar Replacement of Aggregates (DT) : 45.719611
+15 : Aggressive Dead Code Elimination : 45.719611
+16 : Loop-Closed SSA Form Pass : 45.719611
+17 : SROA : 45.719611
+18 : Value Propagation : 45.719611
+19 : Dead Instruction Elimination : 45.719611
+20 : Lower atomic intrinsics to non-atomic form : 45.719611
+SpeedUp : 1.507043

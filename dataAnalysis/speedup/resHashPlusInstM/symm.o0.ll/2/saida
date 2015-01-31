@@ -1,0 +1,16 @@
+1 : Code sinking : 1637.113271
+2 : Alignment from assumptions : 1637.113271
+3 : Reassociate expressions : 1637.113271
+4 : Constant Hoisting : 1637.113271
+5 : Value Propagation : 1637.113271
+6 : Lower atomic intrinsics to non-atomic form : 1637.113271
+7 : Aggressive Dead Code Elimination : 1637.113271
+8 : Assign names to anonymous instructions : 1637.113271
+9 : Constant Hoisting : 1637.113271
+10 : Loop-Closed SSA Form Pass : 1637.113271
+11 : Constant Hoisting : 1637.113271
+12 : SROA : 1637.113271
+13 : Combine redundant instructions : 1514.411921
+14 : MergedLoadStoreMotion : 1514.411921
+15 : Global Value Numbering : 1631.231419
+SpeedUp : 1.003606

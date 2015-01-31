@@ -1,0 +1,14 @@
+1 : Scalar Replacement of Aggregates (DT) : 276.562499
+2 : Induction Variable Simplification : 276.562499
+3 : Add DWARF path discriminators : 276.562499
+4 : Remove redundant instructions : 276.562499
+5 : Reassociate expressions : 276.562499
+6 : Loop-Closed SSA Form Pass : 276.562499
+7 : MemCpy Optimization : 276.562499
+8 : Induction Variable Simplification : 276.562499
+9 : Loop Invariant Code Motion : 254.687499
+10 : Combine redundant instructions : 243.749999
+11 : Dead Instruction Elimination : 243.749999
+12 : Lower atomic intrinsics to non-atomic form : 243.749999
+13 : Global Value Numbering : 243.749999
+SpeedUp : 1.423077

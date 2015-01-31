@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 17.372513
+2 : Global Value Numbering : 14.813484
+3 : Reassociate expressions : 14.813484
+4 : Constant Hoisting : 14.813484
+5 : MergedLoadStoreMotion : 14.813484
+6 : Alignment from assumptions : 14.813484
+7 : Promote Memory to Register : 9.666115
+8 : SROA : 7.830673
+9 : SROA : 7.830673
+10 : MergedLoadStoreMotion : 7.830673
+11 : Combine redundant instructions : 7.012652
+12 : Induction Variable Simplification : 5.826070
+13 : SROA : 5.826069
+14 : Add DWARF path discriminators : 5.826069
+15 : Loop-Closed SSA Form Pass : 5.826069
+16 : Reassociate expressions : 5.826069
+17 : Scalar Replacement of Aggregates (DT) : 5.826069
+18 : Combine redundant instructions : 5.826069
+19 : Alignment from assumptions : 5.826069
+20 : Loop Invariant Code Motion : 5.397658
+SpeedUp : 3.218528

@@ -1,0 +1,4 @@
+1 : Promote Memory to Register : 479.031349
+2 : SROA : 479.031349
+3 : Reassociate expressions : 479.031349
+SpeedUp : 9.070460

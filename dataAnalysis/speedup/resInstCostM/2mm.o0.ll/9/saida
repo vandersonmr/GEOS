@@ -1,0 +1,21 @@
+1 : SROA : 592.090144
+2 : Remove redundant instructions : 592.090144
+3 : Dead Code Elimination : 592.090144
+4 : Constant Hoisting : 592.090144
+5 : Loop-Closed SSA Form Pass : 592.090144
+6 : MemCpy Optimization : 592.090144
+7 : MergedLoadStoreMotion : 592.090144
+8 : Lower atomic intrinsics to non-atomic form : 592.090144
+9 : Remove redundant instructions : 592.090144
+10 : Early CSE : 505.949472
+11 : Dead Instruction Elimination : 505.949472
+12 : Induction Variable Simplification : 505.949472
+13 : Alignment from assumptions : 505.949472
+14 : Code sinking : 505.949472
+15 : Alignment from assumptions : 505.949472
+16 : Aggressive Dead Code Elimination : 505.949472
+17 : Loop Invariant Code Motion : 505.949472
+18 : Constant Hoisting : 505.949472
+19 : Scalar Replacement of Aggregates (DT) : 344.415806
+20 : Loop-Closed SSA Form Pass : 279.855002
+SpeedUp : 2.115703

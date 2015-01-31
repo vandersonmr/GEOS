@@ -1,0 +1,15 @@
+1 : MergedLoadStoreMotion : 3766.051407
+2 : Value Propagation : 3766.051407
+3 : Value Propagation : 3766.051407
+4 : Global Value Numbering : 2623.857768
+5 : Remove redundant instructions : 2623.857768
+6 : Loop-Closed SSA Form Pass : 2623.857768
+7 : Remove redundant instructions : 2623.857768
+8 : Dead Instruction Elimination : 2623.857768
+9 : Code sinking : 2623.857768
+10 : Loop-Closed SSA Form Pass : 2623.857768
+11 : Induction Variable Simplification : 2623.857768
+12 : Value Propagation : 2623.857768
+13 : Promote Memory to Register : 1775.480866
+14 : Promote Memory to Register : 2023.784092
+SpeedUp : 1.860896

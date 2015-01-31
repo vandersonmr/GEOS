@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 3459547.252725
+2 : Remove redundant instructions : 3459133.252725
+3 : Dead Code Elimination : 3459133.252725
+4 : Value Propagation : 3459133.252725
+5 : Value Propagation : 3459133.252725
+6 : Loop-Closed SSA Form Pass : 3459133.252725
+7 : Constant Hoisting : 3459133.252725
+8 : Remove redundant instructions : 3459133.252725
+9 : Remove redundant instructions : 3459133.252725
+10 : Dead Code Elimination : 3459133.252725
+11 : Dead Instruction Elimination : 3459133.252725
+12 : Induction Variable Simplification : 3459133.252725
+13 : Constant Hoisting : 3459133.252725
+14 : Dead Instruction Elimination : 3459133.252725
+15 : Value Propagation : 3459133.252725
+16 : Loop Invariant Code Motion : 3459133.252725
+17 : Loop Invariant Code Motion : 3459133.252725
+18 : Dead Instruction Elimination : 3459133.252725
+19 : Assign names to anonymous instructions : 3459133.252725
+20 : Reassociate expressions : 3459133.252725
+SpeedUp : 1.000120

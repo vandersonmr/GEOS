@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 61.134199
+2 : Dead Instruction Elimination : 61.134199
+3 : SROA : 61.134199
+4 : Early CSE : 50.339001
+5 : Loop Invariant Code Motion : 50.339001
+6 : Induction Variable Simplification : 50.339001
+7 : Dead Instruction Elimination : 50.339001
+8 : Scalar Replacement of Aggregates (DT) : 32.338279
+9 : Value Propagation : 26.938056
+10 : Scalar Replacement of Aggregates (DT) : 25.153726
+11 : Alignment from assumptions : 25.153726
+12 : Code sinking : 25.153726
+13 : Dead Code Elimination : 25.153726
+14 : Code sinking : 25.153726
+15 : Loop-Closed SSA Form Pass : 25.153726
+16 : Loop Invariant Code Motion : 25.153726
+17 : Scalar Replacement of Aggregates (DT) : 25.153726
+18 : Dead Code Elimination : 25.153726
+19 : Aggressive Dead Code Elimination : 25.153726
+20 : Add DWARF path discriminators : 25.153726
+SpeedUp : 2.430423

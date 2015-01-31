@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 10.883921
+2 : Early CSE : 8.483161
+3 : Dead Code Elimination : 8.483161
+4 : Loop Invariant Code Motion : 8.483161
+5 : Combine redundant instructions : 7.362721
+6 : Loop-Closed SSA Form Pass : 7.362721
+7 : Lower atomic intrinsics to non-atomic form : 7.362721
+8 : Induction Variable Simplification : 7.362721
+9 : Code sinking : 7.362721
+10 : Dead Code Elimination : 7.362721
+11 : Dead Instruction Elimination : 7.362721
+12 : Combine redundant instructions : 7.362721
+13 : Constant Hoisting : 7.362721
+14 : Promote Memory to Register : 5.121760
+15 : Assign names to anonymous instructions : 4.641680
+16 : Scalar Replacement of Aggregates (DT) : 4.641680
+17 : Loop-Closed SSA Form Pass : 4.641680
+18 : Dead Instruction Elimination : 4.641680
+19 : MemCpy Optimization : 4.641680
+20 : Value Propagation : 4.641680
+SpeedUp : 2.344823

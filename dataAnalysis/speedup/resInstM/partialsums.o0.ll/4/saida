@@ -1,0 +1,5 @@
+1 : Combine redundant instructions : 1.850002
+2 : Dead Instruction Elimination : 1.850002
+3 : Dead Instruction Elimination : 1.850002
+4 : Loop Invariant Code Motion : 1.875002
+SpeedUp : 1.133334

@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 10.244081
+2 : Dead Instruction Elimination : 10.244081
+3 : Assign names to anonymous instructions : 10.244081
+4 : SROA : 10.244081
+5 : Alignment from assumptions : 10.244081
+6 : Loop Invariant Code Motion : 10.244081
+7 : Promote Memory to Register : 5.762080
+8 : MemCpy Optimization : 4.802080
+9 : Dead Code Elimination : 4.802080
+10 : SROA : 4.802080
+11 : Loop-Closed SSA Form Pass : 4.802080
+12 : Aggressive Dead Code Elimination : 4.802080
+13 : Lower atomic intrinsics to non-atomic form : 4.802080
+14 : MemCpy Optimization : 4.802080
+15 : Reassociate expressions : 4.802080
+16 : Add DWARF path discriminators : 4.802080
+17 : Lower atomic intrinsics to non-atomic form : 4.802080
+18 : Remove redundant instructions : 4.802080
+19 : Dead Code Elimination : 4.802080
+20 : Early CSE : 4.321880
+SpeedUp : 2.370283

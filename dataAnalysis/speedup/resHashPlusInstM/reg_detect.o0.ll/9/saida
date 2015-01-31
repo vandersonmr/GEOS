@@ -1,0 +1,15 @@
+1 : Value Propagation : 51.777586
+2 : Aggressive Dead Code Elimination : 51.777586
+3 : Combine redundant instructions : 48.736754
+4 : Early CSE : 38.083943
+5 : Promote Memory to Register : 36.794930
+6 : SROA : 31.469563
+7 : Add DWARF path discriminators : 31.469563
+8 : Code sinking : 31.469563
+9 : Constant Hoisting : 31.469563
+10 : Scalar Replacement of Aggregates (DT) : 31.469563
+11 : SROA : 31.469563
+12 : Assign names to anonymous instructions : 31.469563
+13 : Early CSE : 31.469563
+14 : Loop-Closed SSA Form Pass : 32.164138
+SpeedUp : 1.609792

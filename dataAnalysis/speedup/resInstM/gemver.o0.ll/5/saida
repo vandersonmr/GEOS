@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 21.450203
+2 : Loop-Closed SSA Form Pass : 21.450203
+3 : Induction Variable Simplification : 21.450203
+4 : Reassociate expressions : 21.450203
+5 : Remove redundant instructions : 21.450203
+6 : Combine redundant instructions : 19.369243
+7 : Code sinking : 19.369243
+8 : Combine redundant instructions : 19.369243
+9 : Global Value Numbering : 13.928483
+10 : Promote Memory to Register : 9.125562
+11 : Constant Hoisting : 6.724121
+12 : Dead Code Elimination : 6.724121
+13 : Loop Invariant Code Motion : 6.244041
+14 : Loop-Closed SSA Form Pass : 6.244041
+15 : SROA : 6.244041
+16 : Dead Instruction Elimination : 6.244041
+17 : Early CSE : 6.244041
+18 : Alignment from assumptions : 6.244041
+19 : Global Value Numbering : 6.244041
+20 : Alignment from assumptions : 6.244041
+SpeedUp : 3.435308

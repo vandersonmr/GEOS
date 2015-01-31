@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 49.098611
+2 : Global Value Numbering : 49.098611
+3 : Alignment from assumptions : 49.098611
+4 : Loop-Closed SSA Form Pass : 49.098611
+5 : Alignment from assumptions : 49.098611
+6 : Loop-Closed SSA Form Pass : 49.098611
+7 : Alignment from assumptions : 49.098611
+8 : Dead Instruction Elimination : 49.098611
+9 : Global Value Numbering : 49.098611
+10 : MergedLoadStoreMotion : 49.098611
+11 : Aggressive Dead Code Elimination : 49.098611
+12 : MergedLoadStoreMotion : 49.098611
+13 : Scalar Replacement of Aggregates (DT) : 49.098611
+14 : Lower atomic intrinsics to non-atomic form : 49.098611
+15 : Alignment from assumptions : 49.098611
+16 : MergedLoadStoreMotion : 49.098611
+17 : Remove redundant instructions : 49.098611
+18 : Dead Code Elimination : 49.098611
+19 : Value Propagation : 49.098611
+20 : Early CSE : 49.098611
+SpeedUp : 3.000000

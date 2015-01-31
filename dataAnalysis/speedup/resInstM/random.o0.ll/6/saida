@@ -1,0 +1,21 @@
+1 : Value Propagation : 72.000000
+2 : Code sinking : 72.000000
+3 : Lower atomic intrinsics to non-atomic form : 72.000000
+4 : Code sinking : 72.000000
+5 : Code sinking : 72.000000
+6 : Value Propagation : 72.000000
+7 : Lower atomic intrinsics to non-atomic form : 72.000000
+8 : Dead Instruction Elimination : 72.000000
+9 : Dead Instruction Elimination : 72.000000
+10 : Reassociate expressions : 72.000000
+11 : Early CSE : 68.000000
+12 : Alignment from assumptions : 68.000000
+13 : Reassociate expressions : 68.000000
+14 : Loop Invariant Code Motion : 68.000000
+15 : MergedLoadStoreMotion : 68.000000
+16 : SROA : 68.000000
+17 : MemCpy Optimization : 68.000000
+18 : Add DWARF path discriminators : 68.000000
+19 : Dead Code Elimination : 68.000000
+20 : Constant Hoisting : 68.000000
+SpeedUp : 1.058824

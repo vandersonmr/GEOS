@@ -1,0 +1,8 @@
+1 : Add DWARF path discriminators : 40048.741226
+2 : Loop-Closed SSA Form Pass : 40048.741226
+3 : Reassociate expressions : 40048.741226
+4 : Constant Hoisting : 40048.741226
+5 : Value Propagation : 40048.741226
+6 : Induction Variable Simplification : 40048.741226
+7 : Early CSE : 62049.522728
+SpeedUp : 0.645432

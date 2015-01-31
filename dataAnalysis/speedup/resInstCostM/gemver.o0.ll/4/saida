@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 17.768402
+2 : Combine redundant instructions : 15.687282
+3 : Loop-Closed SSA Form Pass : 15.687282
+4 : Assign names to anonymous instructions : 15.687282
+5 : Global Value Numbering : 11.206962
+6 : Scalar Replacement of Aggregates (DT) : 6.404041
+7 : Reassociate expressions : 5.923601
+8 : Scalar Replacement of Aggregates (DT) : 5.923601
+9 : Value Propagation : 5.923601
+10 : Constant Hoisting : 5.923601
+11 : Dead Instruction Elimination : 5.923601
+12 : MergedLoadStoreMotion : 5.923601
+13 : MergedLoadStoreMotion : 5.923601
+14 : Assign names to anonymous instructions : 5.923601
+15 : Add DWARF path discriminators : 5.923601
+16 : Dead Instruction Elimination : 5.923601
+17 : Loop-Closed SSA Form Pass : 5.923601
+18 : Combine redundant instructions : 5.923601
+19 : MergedLoadStoreMotion : 5.923601
+20 : SROA : 5.923601
+SpeedUp : 2.999595

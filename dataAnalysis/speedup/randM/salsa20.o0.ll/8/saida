@@ -1,0 +1,4 @@
+1 : Add DWARF path discriminators : 0.000001
+2 : Promote Memory to Register : 0.000001
+3 : Constant Hoisting : 0.000001
+SpeedUp : 1.016393

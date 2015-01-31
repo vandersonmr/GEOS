@@ -1,0 +1,18 @@
+1 : Remove redundant instructions : 700.576343
+2 : Loop Invariant Code Motion : 699.777216
+3 : Loop-Closed SSA Form Pass : 699.777216
+4 : Global Value Numbering : 660.833254
+5 : Assign names to anonymous instructions : 660.833254
+6 : Code sinking : 660.833254
+7 : Assign names to anonymous instructions : 660.833254
+8 : Add DWARF path discriminators : 660.833254
+9 : Scalar Replacement of Aggregates (DT) : 512.249601
+10 : Dead Instruction Elimination : 403.290796
+11 : Dead Code Elimination : 403.290796
+12 : Combine redundant instructions : 402.260137
+13 : Add DWARF path discriminators : 401.878724
+14 : Add DWARF path discriminators : 401.878724
+15 : MergedLoadStoreMotion : 401.878724
+16 : MemCpy Optimization : 401.878724
+17 : Loop-Closed SSA Form Pass : 402.229148
+SpeedUp : 1.741734

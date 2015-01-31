@@ -1,0 +1,21 @@
+1 : Early CSE : 290.812950
+2 : Scalar Replacement of Aggregates (DT) : 215.409572
+3 : MergedLoadStoreMotion : 215.409572
+4 : Value Propagation : 215.409572
+5 : Loop-Closed SSA Form Pass : 215.409572
+6 : Lower atomic intrinsics to non-atomic form : 215.409572
+7 : Add DWARF path discriminators : 215.409572
+8 : Reassociate expressions : 215.409572
+9 : Induction Variable Simplification : 183.144930
+10 : SROA : 183.134423
+11 : Aggressive Dead Code Elimination : 183.134423
+12 : Scalar Replacement of Aggregates (DT) : 183.134423
+13 : MemCpy Optimization : 183.134423
+14 : Value Propagation : 183.134423
+15 : SROA : 183.134423
+16 : Aggressive Dead Code Elimination : 183.134423
+17 : Loop-Closed SSA Form Pass : 183.134423
+18 : SROA : 183.134423
+19 : Loop-Closed SSA Form Pass : 183.134423
+20 : Global Value Numbering : 32.695307
+SpeedUp : 11.527041

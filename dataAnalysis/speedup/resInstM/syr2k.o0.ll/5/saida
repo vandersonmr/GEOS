@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 688.737302
+2 : Loop-Closed SSA Form Pass : 688.737302
+3 : Dead Instruction Elimination : 688.737302
+4 : Loop Invariant Code Motion : 688.737302
+5 : Reassociate expressions : 688.737302
+6 : Global Value Numbering : 55.093905
+7 : Loop Invariant Code Motion : 55.093905
+8 : Add DWARF path discriminators : 55.093905
+9 : MemCpy Optimization : 55.093905
+10 : Remove redundant instructions : 55.093905
+11 : Loop Invariant Code Motion : 55.093905
+12 : Early CSE : 54.894440
+13 : Value Propagation : 54.894440
+14 : Aggressive Dead Code Elimination : 54.894440
+15 : Alignment from assumptions : 54.894440
+16 : Reassociate expressions : 54.894440
+17 : MergedLoadStoreMotion : 54.894440
+18 : Remove redundant instructions : 54.894440
+19 : SROA : 54.894440
+20 : Aggressive Dead Code Elimination : 54.894440
+SpeedUp : 12.546577

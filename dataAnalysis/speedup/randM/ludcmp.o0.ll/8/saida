@@ -1,0 +1,4 @@
+1 : Scalar Replacement of Aggregates (DT) : 0.000002
+2 : Global Value Numbering : 0.000001
+3 : Early CSE : 0.000001
+SpeedUp : 1.532258

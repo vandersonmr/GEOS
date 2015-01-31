@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 61.134199
+2 : Lower atomic intrinsics to non-atomic form : 61.134199
+3 : Code sinking : 61.134199
+4 : Scalar Replacement of Aggregates (DT) : 32.354023
+5 : SROA : 32.354023
+6 : Add DWARF path discriminators : 32.354023
+7 : SROA : 32.354023
+8 : Dead Code Elimination : 32.354023
+9 : Combine redundant instructions : 26.911857
+10 : Promote Memory to Register : 26.911857
+11 : Remove redundant instructions : 26.911857
+12 : Constant Hoisting : 26.911857
+13 : Reassociate expressions : 26.911857
+14 : Dead Code Elimination : 26.911857
+15 : Scalar Replacement of Aggregates (DT) : 26.911857
+16 : Early CSE : 25.090821
+17 : Dead Instruction Elimination : 25.090821
+18 : MergedLoadStoreMotion : 25.090821
+19 : MergedLoadStoreMotion : 25.090821
+20 : Scalar Replacement of Aggregates (DT) : 25.090821
+SpeedUp : 2.436516

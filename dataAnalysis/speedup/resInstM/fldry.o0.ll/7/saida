@@ -1,0 +1,7 @@
+1 : Loop-Closed SSA Form Pass : 557.000000
+2 : Reassociate expressions : 557.000000
+3 : Early CSE : 485.000000
+4 : Constant Hoisting : 485.000000
+5 : Assign names to anonymous instructions : 485.000000
+6 : Loop-Closed SSA Form Pass : 488.000000
+SpeedUp : 1.141393

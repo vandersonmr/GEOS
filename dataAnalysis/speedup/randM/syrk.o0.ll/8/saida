@@ -1,0 +1,7 @@
+1 : Lower atomic intrinsics to non-atomic form : 0.000002
+2 : Promote Memory to Register : 0.000002
+3 : Early CSE : 0.000002
+4 : Remove redundant instructions : 0.000002
+5 : Aggressive Dead Code Elimination : 0.000002
+6 : Dead Code Elimination : 0.000002
+SpeedUp : 1.100000

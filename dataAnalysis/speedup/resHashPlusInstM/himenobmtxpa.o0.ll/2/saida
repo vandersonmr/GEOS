@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 904.892661
+2 : Promote Memory to Register : 543.307818
+3 : Reassociate expressions : 464.143685
+4 : Code sinking : 464.143685
+5 : MergedLoadStoreMotion : 464.143685
+6 : Value Propagation : 464.143685
+7 : MemCpy Optimization : 464.143685
+8 : Loop Invariant Code Motion : 451.664722
+9 : Constant Hoisting : 451.664722
+10 : Lower atomic intrinsics to non-atomic form : 451.664722
+11 : Value Propagation : 451.664722
+12 : Code sinking : 451.664722
+13 : Code sinking : 451.664722
+14 : Loop-Closed SSA Form Pass : 451.664722
+15 : Induction Variable Simplification : 451.664722
+16 : MemCpy Optimization : 451.664722
+17 : Combine redundant instructions : 437.293617
+18 : Promote Memory to Register : 213.138609
+19 : Lower atomic intrinsics to non-atomic form : 213.138609
+20 : Code sinking : 213.138609
+SpeedUp : 4.245560

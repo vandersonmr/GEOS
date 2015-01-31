@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 21.450203
+2 : Scalar Replacement of Aggregates (DT) : 13.766441
+3 : Lower atomic intrinsics to non-atomic form : 13.766441
+4 : Code sinking : 13.766441
+5 : Alignment from assumptions : 13.766441
+6 : Dead Instruction Elimination : 13.766441
+7 : Value Propagation : 13.766441
+8 : Value Propagation : 13.766441
+9 : MergedLoadStoreMotion : 13.766441
+10 : Dead Code Elimination : 13.766441
+11 : Combine redundant instructions : 12.966241
+12 : Alignment from assumptions : 12.966241
+13 : Scalar Replacement of Aggregates (DT) : 12.966241
+14 : Aggressive Dead Code Elimination : 12.966241
+15 : Aggressive Dead Code Elimination : 12.966241
+16 : Global Value Numbering : 7.364241
+17 : Scalar Replacement of Aggregates (DT) : 7.364241
+18 : Aggressive Dead Code Elimination : 7.364241
+19 : MemCpy Optimization : 7.364241
+20 : Promote Memory to Register : 7.364241
+SpeedUp : 2.912751

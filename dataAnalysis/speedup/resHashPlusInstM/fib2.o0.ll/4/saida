@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 1757.803232
+2 : Aggressive Dead Code Elimination : 1757.803232
+3 : SROA : 1757.803232
+4 : Reassociate expressions : 1757.803232
+5 : Reassociate expressions : 1757.803232
+6 : Constant Hoisting : 1757.803232
+7 : Code sinking : 1757.803232
+8 : Dead Code Elimination : 1757.803232
+9 : Aggressive Dead Code Elimination : 1757.803232
+10 : Early CSE : 1673.789299
+11 : Dead Code Elimination : 1673.789299
+12 : Induction Variable Simplification : 1673.789299
+13 : Constant Hoisting : 1673.789299
+14 : Alignment from assumptions : 1673.789299
+15 : SROA : 1673.789299
+16 : Value Propagation : 1673.789299
+17 : Assign names to anonymous instructions : 1673.789299
+18 : Dead Code Elimination : 1673.789299
+19 : Dead Instruction Elimination : 1673.789299
+20 : Loop Invariant Code Motion : 1673.789299
+SpeedUp : 1.050194

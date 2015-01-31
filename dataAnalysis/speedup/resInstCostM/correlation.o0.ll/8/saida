@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 191.301411
+2 : Dead Instruction Elimination : 191.301411
+3 : MergedLoadStoreMotion : 191.301411
+4 : Dead Code Elimination : 191.301411
+5 : Combine redundant instructions : 151.166156
+6 : Dead Code Elimination : 151.166156
+7 : Code sinking : 151.166156
+8 : Reassociate expressions : 151.166156
+9 : Lower atomic intrinsics to non-atomic form : 151.166156
+10 : Aggressive Dead Code Elimination : 151.166156
+11 : MergedLoadStoreMotion : 151.166156
+12 : Value Propagation : 151.166156
+13 : Scalar Replacement of Aggregates (DT) : 80.700650
+14 : Dead Code Elimination : 80.700650
+15 : Add DWARF path discriminators : 80.700650
+16 : Combine redundant instructions : 80.700650
+17 : Value Propagation : 80.700650
+18 : Reassociate expressions : 80.700650
+19 : Combine redundant instructions : 80.700650
+20 : Lower atomic intrinsics to non-atomic form : 80.700650
+SpeedUp : 2.370506

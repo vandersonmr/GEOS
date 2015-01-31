@@ -1,0 +1,21 @@
+1 : Constant Hoisting : 142.187500
+2 : Dead Instruction Elimination : 142.187500
+3 : Dead Code Elimination : 142.187500
+4 : Value Propagation : 142.187500
+5 : Dead Code Elimination : 142.187500
+6 : Combine redundant instructions : 107.812500
+7 : Loop-Closed SSA Form Pass : 107.812500
+8 : Dead Instruction Elimination : 107.812500
+9 : Lower atomic intrinsics to non-atomic form : 107.812500
+10 : SROA : 107.812500
+11 : MergedLoadStoreMotion : 107.812500
+12 : Global Value Numbering : 106.250000
+13 : SROA : 106.250000
+14 : Lower atomic intrinsics to non-atomic form : 106.250000
+15 : Early CSE : 98.437500
+16 : Add DWARF path discriminators : 92.187500
+17 : Promote Memory to Register : 73.437500
+18 : Combine redundant instructions : 60.937500
+19 : SROA : 60.937500
+20 : Scalar Replacement of Aggregates (DT) : 60.937500
+SpeedUp : 2.333333

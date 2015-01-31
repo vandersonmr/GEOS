@@ -1,0 +1,20 @@
+1 : Induction Variable Simplification : 1.109713
+2 : Alignment from assumptions : 1.109713
+3 : Combine redundant instructions : 1.048389
+4 : Constant Hoisting : 1.048389
+5 : Value Propagation : 1.048389
+6 : Lower atomic intrinsics to non-atomic form : 1.048389
+7 : Loop Invariant Code Motion : 1.048389
+8 : Assign names to anonymous instructions : 1.048389
+9 : Assign names to anonymous instructions : 1.048389
+10 : MergedLoadStoreMotion : 1.048389
+11 : Aggressive Dead Code Elimination : 1.048389
+12 : SROA : 1.048389
+13 : Loop Invariant Code Motion : 1.048389
+14 : Dead Instruction Elimination : 1.048389
+15 : Induction Variable Simplification : 1.048389
+16 : Combine redundant instructions : 1.048389
+17 : MemCpy Optimization : 1.048389
+18 : Loop-Closed SSA Form Pass : 1.048389
+19 : Early CSE : 1.231237
+SpeedUp : 0.901299

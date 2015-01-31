@@ -1,0 +1,21 @@
+1 : Loop Invariant Code Motion : 455.558540
+2 : Induction Variable Simplification : 455.558540
+3 : Loop Invariant Code Motion : 455.558540
+4 : Reassociate expressions : 455.558540
+5 : SROA : 455.558540
+6 : Loop-Closed SSA Form Pass : 455.558540
+7 : Loop Invariant Code Motion : 455.558540
+8 : Loop-Closed SSA Form Pass : 455.558540
+9 : Aggressive Dead Code Elimination : 455.558540
+10 : Global Value Numbering : 265.384113
+11 : Aggressive Dead Code Elimination : 265.384113
+12 : Combine redundant instructions : 243.003002
+13 : Value Propagation : 235.999418
+14 : Global Value Numbering : 235.999418
+15 : Remove redundant instructions : 235.999418
+16 : Code sinking : 235.999418
+17 : Remove redundant instructions : 235.999418
+18 : MemCpy Optimization : 235.999418
+19 : Code sinking : 235.999418
+20 : Code sinking : 235.999418
+SpeedUp : 1.930338

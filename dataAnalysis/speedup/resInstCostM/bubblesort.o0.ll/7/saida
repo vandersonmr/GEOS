@@ -1,0 +1,16 @@
+1 : SROA : 3.584917
+2 : Dead Instruction Elimination : 3.584917
+3 : Early CSE : 2.706166
+4 : Dead Code Elimination : 2.706166
+5 : Code sinking : 2.706166
+6 : Code sinking : 2.706166
+7 : Lower atomic intrinsics to non-atomic form : 2.706166
+8 : SROA : 2.706166
+9 : Constant Hoisting : 2.706166
+10 : Remove redundant instructions : 2.706166
+11 : Add DWARF path discriminators : 2.706166
+12 : Aggressive Dead Code Elimination : 2.706166
+13 : Scalar Replacement of Aggregates (DT) : 2.075230
+14 : Aggressive Dead Code Elimination : 1.261516
+15 : Reassociate expressions : 1.262017
+SpeedUp : 2.840625

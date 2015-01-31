@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 3.141947
+2 : MergedLoadStoreMotion : 3.141947
+3 : Add DWARF path discriminators : 3.141947
+4 : Alignment from assumptions : 3.141947
+5 : Dead Instruction Elimination : 3.141947
+6 : Add DWARF path discriminators : 3.141947
+7 : Combine redundant instructions : 3.141947
+8 : Promote Memory to Register : 2.325727
+9 : MergedLoadStoreMotion : 2.325727
+10 : SROA : 2.325727
+11 : Scalar Replacement of Aggregates (DT) : 2.325727
+12 : Induction Variable Simplification : 2.012015
+13 : Aggressive Dead Code Elimination : 2.011013
+14 : Value Propagation : 2.011013
+15 : Value Propagation : 2.011013
+16 : Aggressive Dead Code Elimination : 2.011013
+17 : Reassociate expressions : 2.011013
+18 : Induction Variable Simplification : 2.011013
+19 : Aggressive Dead Code Elimination : 2.011013
+20 : Induction Variable Simplification : 2.011013
+SpeedUp : 1.782642

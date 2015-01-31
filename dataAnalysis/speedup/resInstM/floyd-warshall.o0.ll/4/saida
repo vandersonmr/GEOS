@@ -1,0 +1,21 @@
+1 : Early CSE : 258.295942
+2 : Constant Hoisting : 258.295942
+3 : MemCpy Optimization : 258.295942
+4 : Remove redundant instructions : 258.295942
+5 : Lower atomic intrinsics to non-atomic form : 258.295942
+6 : Induction Variable Simplification : 258.295942
+7 : Early CSE : 258.295942
+8 : Alignment from assumptions : 258.295942
+9 : Promote Memory to Register : 204.461998
+10 : Code sinking : 172.176446
+11 : Alignment from assumptions : 172.176446
+12 : Combine redundant instructions : 150.670142
+13 : Remove redundant instructions : 150.670142
+14 : Add DWARF path discriminators : 150.670142
+15 : Early CSE : 150.670142
+16 : Scalar Replacement of Aggregates (DT) : 150.670142
+17 : Loop Invariant Code Motion : 139.890780
+18 : Loop Invariant Code Motion : 139.890780
+19 : SROA : 139.890780
+20 : Constant Hoisting : 139.890780
+SpeedUp : 4.532640

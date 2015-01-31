@@ -1,0 +1,21 @@
+1 : Global Value Numbering : 381.666668
+2 : Scalar Replacement of Aggregates (DT) : 210.000000
+3 : Aggressive Dead Code Elimination : 195.000000
+4 : Early CSE : 195.000000
+5 : Aggressive Dead Code Elimination : 195.000000
+6 : Loop-Closed SSA Form Pass : 195.000000
+7 : MemCpy Optimization : 195.000000
+8 : Remove redundant instructions : 195.000000
+9 : Aggressive Dead Code Elimination : 195.000000
+10 : Add DWARF path discriminators : 195.000000
+11 : Add DWARF path discriminators : 195.000000
+12 : Add DWARF path discriminators : 195.000000
+13 : Constant Hoisting : 195.000000
+14 : Loop-Closed SSA Form Pass : 195.000000
+15 : Dead Instruction Elimination : 195.000000
+16 : Global Value Numbering : 195.000000
+17 : MergedLoadStoreMotion : 195.000000
+18 : Induction Variable Simplification : 195.000000
+19 : Add DWARF path discriminators : 195.000000
+20 : Global Value Numbering : 195.000000
+SpeedUp : 2.213675

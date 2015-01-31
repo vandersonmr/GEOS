@@ -1,0 +1,20 @@
+1 : MemCpy Optimization : 357.902575
+2 : Reassociate expressions : 357.902575
+3 : Lower atomic intrinsics to non-atomic form : 357.902575
+4 : Add DWARF path discriminators : 357.902575
+5 : Assign names to anonymous instructions : 357.902575
+6 : Loop Invariant Code Motion : 357.902575
+7 : Reassociate expressions : 357.902575
+8 : Promote Memory to Register : 146.562442
+9 : Combine redundant instructions : 140.095324
+10 : Dead Code Elimination : 140.095324
+11 : Add DWARF path discriminators : 140.095324
+12 : Remove redundant instructions : 140.095324
+13 : Reassociate expressions : 140.095324
+14 : Global Value Numbering : 63.027990
+15 : Alignment from assumptions : 63.027990
+16 : Early CSE : 63.027990
+17 : Constant Hoisting : 63.027990
+18 : MemCpy Optimization : 63.027990
+19 : Induction Variable Simplification : 63.713873
+SpeedUp : 5.617341

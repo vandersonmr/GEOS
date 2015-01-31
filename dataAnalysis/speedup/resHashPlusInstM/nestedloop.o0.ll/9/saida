@@ -1,0 +1,9 @@
+1 : Loop-Closed SSA Form Pass : 9969.309718
+2 : Value Propagation : 9969.309718
+3 : Code sinking : 9969.309718
+4 : Loop Invariant Code Motion : 9969.309718
+5 : SROA : 9969.309718
+6 : Reassociate expressions : 9969.309718
+7 : Promote Memory to Register : 8206.984264
+8 : Aggressive Dead Code Elimination : 8206.985142
+SpeedUp : 1.214735

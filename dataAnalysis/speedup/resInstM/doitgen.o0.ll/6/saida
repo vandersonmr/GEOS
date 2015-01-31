@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 134.130473
+2 : MergedLoadStoreMotion : 134.130473
+3 : Early CSE : 82.453857
+4 : Loop Invariant Code Motion : 82.453857
+5 : Reassociate expressions : 82.453857
+6 : SROA : 82.453857
+7 : Add DWARF path discriminators : 82.453857
+8 : Scalar Replacement of Aggregates (DT) : 60.450778
+9 : Assign names to anonymous instructions : 38.491159
+10 : Code sinking : 38.428240
+11 : Value Propagation : 38.428240
+12 : Assign names to anonymous instructions : 38.428240
+13 : Constant Hoisting : 38.428240
+14 : Promote Memory to Register : 38.428240
+15 : Loop Invariant Code Motion : 38.428240
+16 : Add DWARF path discriminators : 38.428240
+17 : Induction Variable Simplification : 35.701451
+18 : Lower atomic intrinsics to non-atomic form : 35.701286
+19 : MergedLoadStoreMotion : 35.701286
+20 : Constant Hoisting : 35.701286
+SpeedUp : 3.757021

@@ -1,0 +1,5 @@
+1 : Loop-Closed SSA Form Pass : 7.522641
+2 : Loop Invariant Code Motion : 7.522641
+3 : Early CSE : 5.282201
+4 : Induction Variable Simplification : 5.362181
+SpeedUp : 1.402907

@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 8.803281
+2 : Reassociate expressions : 8.803281
+3 : SROA : 8.803281
+4 : Aggressive Dead Code Elimination : 8.803281
+5 : Dead Code Elimination : 8.803281
+6 : Dead Instruction Elimination : 8.803281
+7 : Induction Variable Simplification : 7.043001
+8 : Global Value Numbering : 3.202281
+9 : Combine redundant instructions : 3.042201
+10 : Code sinking : 3.042201
+11 : Alignment from assumptions : 3.042201
+12 : Loop Invariant Code Motion : 3.042121
+13 : Loop Invariant Code Motion : 3.042121
+14 : Value Propagation : 3.042121
+15 : Early CSE : 3.042121
+16 : Assign names to anonymous instructions : 3.042121
+17 : Assign names to anonymous instructions : 3.042121
+18 : Assign names to anonymous instructions : 3.042121
+19 : Dead Code Elimination : 3.042121
+20 : Reassociate expressions : 3.042121
+SpeedUp : 4.524844

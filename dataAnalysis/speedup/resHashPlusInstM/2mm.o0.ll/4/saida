@@ -1,0 +1,4 @@
+1 : MergedLoadStoreMotion : 3766.051407
+2 : Value Propagation : 3766.051407
+3 : Remove redundant instructions : 3766.051407
+SpeedUp : 1.000000

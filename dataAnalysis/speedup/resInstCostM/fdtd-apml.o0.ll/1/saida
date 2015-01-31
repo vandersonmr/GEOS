@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 130.796125
+2 : Loop Invariant Code Motion : 130.796125
+3 : Combine redundant instructions : 111.949781
+4 : Assign names to anonymous instructions : 111.949781
+5 : Remove redundant instructions : 111.949781
+6 : Alignment from assumptions : 111.949781
+7 : Assign names to anonymous instructions : 111.949781
+8 : Constant Hoisting : 111.949781
+9 : Assign names to anonymous instructions : 111.949781
+10 : Combine redundant instructions : 111.949781
+11 : Constant Hoisting : 111.949781
+12 : Value Propagation : 111.949781
+13 : Assign names to anonymous instructions : 111.949781
+14 : Remove redundant instructions : 111.949781
+15 : Global Value Numbering : 77.480265
+16 : Aggressive Dead Code Elimination : 77.480265
+17 : Alignment from assumptions : 77.480265
+18 : Add DWARF path discriminators : 77.480265
+19 : Lower atomic intrinsics to non-atomic form : 77.480265
+20 : Lower atomic intrinsics to non-atomic form : 77.480265
+SpeedUp : 1.688122

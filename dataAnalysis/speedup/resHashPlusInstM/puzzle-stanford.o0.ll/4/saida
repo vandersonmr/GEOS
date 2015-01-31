@@ -1,0 +1,17 @@
+1 : Reassociate expressions : 143.595148
+2 : Early CSE : 139.387771
+3 : Add DWARF path discriminators : 139.387771
+4 : MemCpy Optimization : 139.387771
+5 : Value Propagation : 139.387771
+6 : Aggressive Dead Code Elimination : 139.387771
+7 : Promote Memory to Register : 134.046076
+8 : Dead Instruction Elimination : 134.046076
+9 : Value Propagation : 134.046076
+10 : Combine redundant instructions : 126.322222
+11 : Scalar Replacement of Aggregates (DT) : 126.322222
+12 : Assign names to anonymous instructions : 126.322222
+13 : MergedLoadStoreMotion : 126.322222
+14 : MergedLoadStoreMotion : 126.322222
+15 : Constant Hoisting : 126.322222
+16 : Global Value Numbering : 131.810467
+SpeedUp : 1.089406

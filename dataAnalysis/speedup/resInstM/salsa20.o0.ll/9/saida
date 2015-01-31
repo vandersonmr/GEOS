@@ -1,0 +1,21 @@
+1 : Constant Hoisting : 2402.819183
+2 : Value Propagation : 2402.819183
+3 : Value Propagation : 2402.819183
+4 : Dead Code Elimination : 2397.439988
+5 : Dead Code Elimination : 2397.439988
+6 : Add DWARF path discriminators : 2397.439988
+7 : Add DWARF path discriminators : 2397.439988
+8 : Loop-Closed SSA Form Pass : 2397.439988
+9 : Dead Code Elimination : 2397.439988
+10 : MemCpy Optimization : 2397.439988
+11 : Induction Variable Simplification : 2397.439988
+12 : Aggressive Dead Code Elimination : 2397.439988
+13 : Constant Hoisting : 2397.439988
+14 : MemCpy Optimization : 2397.439988
+15 : Aggressive Dead Code Elimination : 2397.439988
+16 : Lower atomic intrinsics to non-atomic form : 2397.439988
+17 : Value Propagation : 2397.439988
+18 : Alignment from assumptions : 2397.439988
+19 : Dead Code Elimination : 2397.439988
+20 : SROA : 2397.439988
+SpeedUp : 1.002244

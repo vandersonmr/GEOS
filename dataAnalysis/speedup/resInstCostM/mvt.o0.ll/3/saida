@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 5.762440
+2 : MemCpy Optimization : 5.762440
+3 : Early CSE : 5.442360
+4 : Reassociate expressions : 5.442360
+5 : Code sinking : 5.442360
+6 : Scalar Replacement of Aggregates (DT) : 5.442360
+7 : Early CSE : 5.442360
+8 : Assign names to anonymous instructions : 5.442360
+9 : Remove redundant instructions : 5.442360
+10 : Dead Instruction Elimination : 5.442360
+11 : MemCpy Optimization : 5.442360
+12 : Code sinking : 5.442360
+13 : Add DWARF path discriminators : 5.442360
+14 : Induction Variable Simplification : 5.442360
+15 : Early CSE : 5.442360
+16 : Lower atomic intrinsics to non-atomic form : 5.442360
+17 : Dead Instruction Elimination : 5.442360
+18 : Remove redundant instructions : 5.442360
+19 : Scalar Replacement of Aggregates (DT) : 5.442360
+20 : Constant Hoisting : 5.442360
+SpeedUp : 1.911788

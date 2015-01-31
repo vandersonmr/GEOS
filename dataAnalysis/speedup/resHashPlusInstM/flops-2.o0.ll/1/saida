@@ -1,0 +1,8 @@
+1 : Code sinking : 54416.232888
+2 : Early CSE : 630.295388
+3 : Code sinking : 630.295388
+4 : Global Value Numbering : 434.593514
+5 : Assign names to anonymous instructions : 434.593514
+6 : Reassociate expressions : 434.593514
+7 : Promote Memory to Register : 823.559626
+SpeedUp : 66.074430

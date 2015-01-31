@@ -1,0 +1,11 @@
+1 : Loop Invariant Code Motion : 13.737149
+2 : Dead Code Elimination : 13.737149
+3 : Add DWARF path discriminators : 13.737149
+4 : Code sinking : 13.737149
+5 : Induction Variable Simplification : 13.737149
+6 : Loop Invariant Code Motion : 13.737149
+7 : Assign names to anonymous instructions : 13.737149
+8 : Add DWARF path discriminators : 13.737149
+9 : Code sinking : 13.737149
+10 : Scalar Replacement of Aggregates (DT) : 39.551176
+SpeedUp : 0.347326

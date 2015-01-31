@@ -1,0 +1,20 @@
+1 : Alignment from assumptions : 2214.360001
+2 : MergedLoadStoreMotion : 2214.360001
+3 : Induction Variable Simplification : 2214.360001
+4 : Add DWARF path discriminators : 2214.360001
+5 : Assign names to anonymous instructions : 2214.360001
+6 : Assign names to anonymous instructions : 2214.360001
+7 : Induction Variable Simplification : 2214.360001
+8 : Code sinking : 2214.360001
+9 : Dead Instruction Elimination : 2214.360001
+10 : Code sinking : 2214.360001
+11 : Aggressive Dead Code Elimination : 2214.360001
+12 : Remove redundant instructions : 2184.360001
+13 : Remove redundant instructions : 2184.360001
+14 : Early CSE : 1948.140001
+15 : SROA : 1948.140001
+16 : Assign names to anonymous instructions : 1948.140001
+17 : Global Value Numbering : 1871.400001
+18 : Aggressive Dead Code Elimination : 1871.400001
+19 : Loop-Closed SSA Form Pass : 1895.400001
+SpeedUp : 1.168281

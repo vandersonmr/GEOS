@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 557.000000
+2 : Lower atomic intrinsics to non-atomic form : 557.000000
+3 : Remove redundant instructions : 557.000000
+4 : Loop Invariant Code Motion : 557.000000
+5 : Early CSE : 485.000000
+6 : Lower atomic intrinsics to non-atomic form : 485.000000
+7 : Add DWARF path discriminators : 485.000000
+8 : MergedLoadStoreMotion : 485.000000
+9 : Code sinking : 485.000000
+10 : Aggressive Dead Code Elimination : 485.000000
+11 : Value Propagation : 485.000000
+12 : SROA : 485.000000
+13 : Remove redundant instructions : 485.000000
+14 : Combine redundant instructions : 387.000000
+15 : Scalar Replacement of Aggregates (DT) : 300.000000
+16 : Loop-Closed SSA Form Pass : 263.000000
+17 : SROA : 263.000000
+18 : Global Value Numbering : 232.000000
+19 : Alignment from assumptions : 231.000000
+20 : Scalar Replacement of Aggregates (DT) : 231.000000
+SpeedUp : 2.411255

@@ -1,0 +1,11 @@
+1 : Promote Memory to Register : 300.823623
+2 : SROA : 300.823623
+3 : Alignment from assumptions : 300.823623
+4 : Value Propagation : 300.823623
+5 : Combine redundant instructions : 261.730802
+6 : Code sinking : 261.730802
+7 : Promote Memory to Register : 261.730802
+8 : Combine redundant instructions : 261.730802
+9 : Scalar Replacement of Aggregates (DT) : 261.730802
+10 : Induction Variable Simplification : 277.873555
+SpeedUp : 1.121922

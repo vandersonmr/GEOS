@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 246.551826
+2 : Assign names to anonymous instructions : 246.551826
+3 : Alignment from assumptions : 246.551826
+4 : Combine redundant instructions : 206.421616
+5 : Code sinking : 206.421616
+6 : SROA : 206.421616
+7 : Remove redundant instructions : 206.421616
+8 : Early CSE : 151.181341
+9 : Scalar Replacement of Aggregates (DT) : 110.835975
+10 : Combine redundant instructions : 80.655895
+11 : Combine redundant instructions : 80.655895
+12 : Early CSE : 80.655895
+13 : MemCpy Optimization : 80.655895
+14 : Constant Hoisting : 80.655895
+15 : Dead Instruction Elimination : 80.655895
+16 : Dead Code Elimination : 80.655895
+17 : Constant Hoisting : 80.655895
+18 : Scalar Replacement of Aggregates (DT) : 80.655895
+19 : Combine redundant instructions : 80.655895
+20 : Reassociate expressions : 80.655895
+SpeedUp : 3.056836

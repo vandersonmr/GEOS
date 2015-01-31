@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 245.312500
+2 : MergedLoadStoreMotion : 245.312500
+3 : Constant Hoisting : 245.312500
+4 : MergedLoadStoreMotion : 245.312500
+5 : Early CSE : 193.750000
+6 : Lower atomic intrinsics to non-atomic form : 193.750000
+7 : MemCpy Optimization : 193.750000
+8 : SROA : 193.750000
+9 : Loop-Closed SSA Form Pass : 193.750000
+10 : Loop-Closed SSA Form Pass : 193.750000
+11 : Dead Code Elimination : 193.750000
+12 : Loop Invariant Code Motion : 193.750000
+13 : MergedLoadStoreMotion : 193.750000
+14 : Lower atomic intrinsics to non-atomic form : 193.750000
+15 : Global Value Numbering : 192.187500
+16 : Induction Variable Simplification : 192.187500
+17 : Promote Memory to Register : 167.187500
+18 : MemCpy Optimization : 146.875000
+19 : Loop-Closed SSA Form Pass : 146.875000
+20 : Code sinking : 146.875000
+SpeedUp : 1.670213

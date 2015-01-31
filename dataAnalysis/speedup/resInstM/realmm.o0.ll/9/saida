@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 0.198757
+2 : MergedLoadStoreMotion : 0.198757
+3 : Add DWARF path discriminators : 0.198757
+4 : Induction Variable Simplification : 0.198757
+5 : MemCpy Optimization : 0.198757
+6 : Assign names to anonymous instructions : 0.198757
+7 : Combine redundant instructions : 0.175796
+8 : Assign names to anonymous instructions : 0.175796
+9 : Code sinking : 0.175796
+10 : Lower atomic intrinsics to non-atomic form : 0.175796
+11 : SROA : 0.175796
+12 : MemCpy Optimization : 0.175796
+13 : Aggressive Dead Code Elimination : 0.175796
+14 : Remove redundant instructions : 0.175796
+15 : Combine redundant instructions : 0.175796
+16 : Assign names to anonymous instructions : 0.175796
+17 : Add DWARF path discriminators : 0.175796
+18 : Loop Invariant Code Motion : 0.175796
+19 : Combine redundant instructions : 0.175796
+20 : Alignment from assumptions : 0.175796
+SpeedUp : 1.130609

@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 377.048086
+2 : Induction Variable Simplification : 377.048086
+3 : Code sinking : 377.048086
+4 : Alignment from assumptions : 377.048086
+5 : Dead Code Elimination : 377.048086
+6 : MemCpy Optimization : 377.048086
+7 : MemCpy Optimization : 377.048086
+8 : Promote Memory to Register : 247.758244
+9 : Alignment from assumptions : 183.249869
+10 : Reassociate expressions : 183.249869
+11 : Assign names to anonymous instructions : 183.249869
+12 : Code sinking : 183.249869
+13 : MemCpy Optimization : 183.249869
+14 : MemCpy Optimization : 183.249869
+15 : Loop-Closed SSA Form Pass : 183.249869
+16 : Constant Hoisting : 183.249869
+17 : Value Propagation : 183.249869
+18 : Aggressive Dead Code Elimination : 183.249869
+19 : MemCpy Optimization : 183.249869
+20 : Value Propagation : 183.249869
+SpeedUp : 2.057563

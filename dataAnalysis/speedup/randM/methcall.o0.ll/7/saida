@@ -1,0 +1,7 @@
+1 : Combine redundant instructions : 0.000001
+2 : SROA : 0.000001
+3 : Lower atomic intrinsics to non-atomic form : 0.000001
+4 : Combine redundant instructions : 0.000001
+5 : SROA : 0.000001
+6 : Aggressive Dead Code Elimination : 0.000001
+SpeedUp : 1.076923

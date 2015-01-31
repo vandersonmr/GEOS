@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 357.902575
+2 : Induction Variable Simplification : 357.902575
+3 : Lower atomic intrinsics to non-atomic form : 357.902575
+4 : Alignment from assumptions : 357.902575
+5 : Early CSE : 316.358477
+6 : Early CSE : 316.358477
+7 : Loop-Closed SSA Form Pass : 316.358477
+8 : Lower atomic intrinsics to non-atomic form : 316.358477
+9 : Dead Instruction Elimination : 316.358477
+10 : Dead Instruction Elimination : 316.358477
+11 : Global Value Numbering : 185.347182
+12 : Induction Variable Simplification : 185.347182
+13 : Reassociate expressions : 185.347182
+14 : Combine redundant instructions : 166.007006
+15 : Value Propagation : 162.704798
+16 : Reassociate expressions : 162.704798
+17 : Assign names to anonymous instructions : 162.704798
+18 : SROA : 162.704798
+19 : Early CSE : 162.704798
+20 : Alignment from assumptions : 162.704798
+SpeedUp : 2.199705

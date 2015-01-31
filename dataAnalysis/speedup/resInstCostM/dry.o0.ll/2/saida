@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 419.000000
+2 : Code sinking : 419.000000
+3 : Scalar Replacement of Aggregates (DT) : 210.000000
+4 : Combine redundant instructions : 175.000000
+5 : Scalar Replacement of Aggregates (DT) : 175.000000
+6 : Dead Instruction Elimination : 175.000000
+7 : Add DWARF path discriminators : 175.000000
+8 : Promote Memory to Register : 175.000000
+9 : Lower atomic intrinsics to non-atomic form : 175.000000
+10 : MergedLoadStoreMotion : 175.000000
+11 : Add DWARF path discriminators : 175.000000
+12 : Alignment from assumptions : 175.000000
+13 : Scalar Replacement of Aggregates (DT) : 175.000000
+14 : Value Propagation : 175.000000
+15 : Global Value Numbering : 145.000000
+16 : Loop Invariant Code Motion : 144.000000
+17 : Constant Hoisting : 144.000000
+18 : Loop Invariant Code Motion : 144.000000
+19 : Global Value Numbering : 144.000000
+20 : Induction Variable Simplification : 145.000000
+SpeedUp : 2.889655

@@ -1,0 +1,5 @@
+1 : Remove redundant instructions : 220228.838327
+2 : Value Propagation : 220228.838327
+3 : Promote Memory to Register : 12513.039598
+4 : Reassociate expressions : 12609.038971
+SpeedUp : 17.465950

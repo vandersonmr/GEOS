@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 32.231158
+2 : Add DWARF path discriminators : 32.231158
+3 : Combine redundant instructions : 32.231158
+4 : Code sinking : 32.231158
+5 : Induction Variable Simplification : 32.231158
+6 : Code sinking : 32.231158
+7 : MergedLoadStoreMotion : 32.231158
+8 : Scalar Replacement of Aggregates (DT) : 21.487084
+9 : Loop Invariant Code Motion : 21.487084
+10 : Constant Hoisting : 21.487084
+11 : Loop Invariant Code Motion : 21.487084
+12 : Dead Code Elimination : 21.487084
+13 : Aggressive Dead Code Elimination : 21.487084
+14 : Dead Instruction Elimination : 21.487084
+15 : Value Propagation : 21.487084
+16 : Early CSE : 21.487084
+17 : Promote Memory to Register : 21.487084
+18 : Alignment from assumptions : 21.487084
+19 : Reassociate expressions : 21.487084
+20 : Constant Hoisting : 21.487084
+SpeedUp : 1.750067

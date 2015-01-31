@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 324.197070
+2 : SROA : 324.197070
+3 : Code sinking : 324.197070
+4 : MergedLoadStoreMotion : 324.197070
+5 : Value Propagation : 324.197070
+6 : MergedLoadStoreMotion : 324.197070
+7 : Assign names to anonymous instructions : 324.197070
+8 : MemCpy Optimization : 324.197070
+9 : Scalar Replacement of Aggregates (DT) : 266.559993
+10 : Early CSE : 266.559931
+11 : Code sinking : 266.559931
+12 : Alignment from assumptions : 266.559931
+13 : Aggressive Dead Code Elimination : 266.559931
+14 : Reassociate expressions : 266.559931
+15 : Add DWARF path discriminators : 266.559931
+16 : Assign names to anonymous instructions : 266.559931
+17 : Dead Instruction Elimination : 266.559931
+18 : Dead Code Elimination : 266.559931
+19 : Constant Hoisting : 266.559931
+20 : Dead Code Elimination : 266.559931
+SpeedUp : 1.216226

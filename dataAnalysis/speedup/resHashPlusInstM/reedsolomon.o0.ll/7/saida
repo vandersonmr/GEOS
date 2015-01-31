@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 7183.798785
+2 : Global Value Numbering : 7093.536478
+3 : Lower atomic intrinsics to non-atomic form : 7093.536478
+4 : Constant Hoisting : 7093.536478
+5 : Alignment from assumptions : 7093.536478
+6 : Remove redundant instructions : 7093.536478
+7 : Alignment from assumptions : 7093.536478
+8 : Loop Invariant Code Motion : 7092.126478
+9 : Induction Variable Simplification : 7092.126478
+10 : Value Propagation : 7092.126478
+11 : MergedLoadStoreMotion : 7092.126478
+12 : Aggressive Dead Code Elimination : 7092.126478
+13 : Lower atomic intrinsics to non-atomic form : 7092.126478
+14 : Induction Variable Simplification : 7092.126478
+15 : Code sinking : 7092.126478
+16 : Constant Hoisting : 7092.126478
+17 : Dead Code Elimination : 7092.126478
+18 : Remove redundant instructions : 7092.126478
+19 : Remove redundant instructions : 7092.126478
+20 : Reassociate expressions : 7094.414281
+SpeedUp : 1.012599

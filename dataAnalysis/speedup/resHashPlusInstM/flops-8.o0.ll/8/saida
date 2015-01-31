@@ -1,0 +1,11 @@
+1 : Reassociate expressions : 48255.772424
+2 : MergedLoadStoreMotion : 48255.772424
+3 : Loop Invariant Code Motion : 48255.772424
+4 : Constant Hoisting : 48255.772424
+5 : Aggressive Dead Code Elimination : 48255.772424
+6 : Lower atomic intrinsics to non-atomic form : 48255.772424
+7 : MergedLoadStoreMotion : 48255.772424
+8 : Loop-Closed SSA Form Pass : 48255.772424
+9 : Alignment from assumptions : 48255.772424
+10 : Lower atomic intrinsics to non-atomic form : 48255.772424
+11 : Combine redundant instructions : 62010.607994

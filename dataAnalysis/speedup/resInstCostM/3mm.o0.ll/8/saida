@@ -1,0 +1,21 @@
+1 : Early CSE : 710.212179
+2 : Loop Invariant Code Motion : 710.212179
+3 : Remove redundant instructions : 710.212179
+4 : Dead Instruction Elimination : 710.212179
+5 : Remove redundant instructions : 710.212179
+6 : Combine redundant instructions : 581.090234
+7 : Dead Instruction Elimination : 581.090234
+8 : MemCpy Optimization : 581.090234
+9 : Assign names to anonymous instructions : 581.090234
+10 : Add DWARF path discriminators : 581.090234
+11 : Promote Memory to Register : 387.344456
+12 : Reassociate expressions : 355.090258
+13 : Early CSE : 355.090258
+14 : Reassociate expressions : 355.090258
+15 : Promote Memory to Register : 355.090258
+16 : Scalar Replacement of Aggregates (DT) : 355.090258
+17 : SROA : 355.090258
+18 : Aggressive Dead Code Elimination : 355.090258
+19 : Loop Invariant Code Motion : 355.090258
+20 : Promote Memory to Register : 355.090258
+SpeedUp : 2.363779

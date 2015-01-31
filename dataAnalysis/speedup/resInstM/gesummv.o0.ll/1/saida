@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 11.523201
+2 : MemCpy Optimization : 11.523201
+3 : Global Value Numbering : 7.042040
+4 : Add DWARF path discriminators : 7.042040
+5 : Reassociate expressions : 7.042040
+6 : Reassociate expressions : 7.042040
+7 : Add DWARF path discriminators : 7.042040
+8 : Dead Code Elimination : 7.042040
+9 : Remove redundant instructions : 7.042040
+10 : Alignment from assumptions : 7.042040
+11 : MergedLoadStoreMotion : 7.042040
+12 : SROA : 7.042040
+13 : Promote Memory to Register : 7.042040
+14 : MemCpy Optimization : 7.042040
+15 : Induction Variable Simplification : 6.882041
+16 : Constant Hoisting : 6.722041
+17 : MemCpy Optimization : 6.722041
+18 : Value Propagation : 6.722041
+19 : Assign names to anonymous instructions : 6.722041
+20 : Global Value Numbering : 6.722001
+SpeedUp : 2.714228

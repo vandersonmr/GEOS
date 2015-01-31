@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 268.750000
+2 : Add DWARF path discriminators : 268.750000
+3 : Loop-Closed SSA Form Pass : 268.750000
+4 : MergedLoadStoreMotion : 268.750000
+5 : Constant Hoisting : 268.750000
+6 : Alignment from assumptions : 268.750000
+7 : Global Value Numbering : 265.625000
+8 : Assign names to anonymous instructions : 265.625000
+9 : Loop-Closed SSA Form Pass : 265.625000
+10 : MergedLoadStoreMotion : 265.625000
+11 : Dead Instruction Elimination : 265.625000
+12 : Dead Code Elimination : 265.625000
+13 : Dead Instruction Elimination : 265.625000
+14 : Alignment from assumptions : 265.625000
+15 : Reassociate expressions : 265.625000
+16 : Value Propagation : 265.625000
+17 : Aggressive Dead Code Elimination : 265.625000
+18 : SROA : 265.625000
+19 : Value Propagation : 265.625000
+20 : Dead Code Elimination : 265.625000
+SpeedUp : 1.011765

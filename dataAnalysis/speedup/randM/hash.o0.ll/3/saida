@@ -1,0 +1,4 @@
+1 : Value Propagation : 0.000002
+2 : Assign names to anonymous instructions : 0.000002
+3 : Lower atomic intrinsics to non-atomic form : 0.000002
+SpeedUp : 0.953757

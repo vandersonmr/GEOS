@@ -1,0 +1,20 @@
+1 : Assign names to anonymous instructions : 775.183000
+2 : MergedLoadStoreMotion : 775.183000
+3 : Constant Hoisting : 775.183000
+4 : MergedLoadStoreMotion : 775.183000
+5 : Alignment from assumptions : 775.183000
+6 : Loop-Closed SSA Form Pass : 775.183000
+7 : SROA : 775.183000
+8 : Alignment from assumptions : 775.183000
+9 : MemCpy Optimization : 775.183000
+10 : Value Propagation : 775.183000
+11 : Assign names to anonymous instructions : 775.183000
+12 : Add DWARF path discriminators : 775.183000
+13 : Early CSE : 685.960200
+14 : Remove redundant instructions : 685.960200
+15 : Combine redundant instructions : 600.237700
+16 : Reassociate expressions : 600.237700
+17 : Induction Variable Simplification : 600.237700
+18 : Promote Memory to Register : 445.291200
+19 : Loop-Closed SSA Form Pass : 459.217600
+SpeedUp : 1.688052

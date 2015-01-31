@@ -1,0 +1,5 @@
+1 : Assign names to anonymous instructions : 54.141359
+2 : MergedLoadStoreMotion : 54.141359
+3 : Add DWARF path discriminators : 54.141359
+4 : Remove redundant instructions : 54.141359
+SpeedUp : 1.000000

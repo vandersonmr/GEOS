@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 111.875617
+2 : SROA : 111.875617
+3 : MemCpy Optimization : 111.875617
+4 : Combine redundant instructions : 96.675566
+5 : Induction Variable Simplification : 96.675566
+6 : Alignment from assumptions : 96.675566
+7 : Value Propagation : 96.675566
+8 : SROA : 96.675566
+9 : Dead Code Elimination : 96.675566
+10 : Alignment from assumptions : 96.675566
+11 : Reassociate expressions : 96.675566
+12 : Scalar Replacement of Aggregates (DT) : 56.225334
+13 : Constant Hoisting : 51.225274
+14 : Combine redundant instructions : 51.225274
+15 : Dead Code Elimination : 51.225274
+16 : Constant Hoisting : 51.225274
+17 : Dead Code Elimination : 51.225274
+18 : Combine redundant instructions : 51.225274
+19 : Combine redundant instructions : 51.225274
+20 : Global Value Numbering : 46.075334
+SpeedUp : 2.428102

@@ -1,0 +1,21 @@
+1 : Value Propagation : 377.048086
+2 : Combine redundant instructions : 333.951469
+3 : Scalar Replacement of Aggregates (DT) : 215.472548
+4 : Code sinking : 215.472548
+5 : Loop Invariant Code Motion : 161.659669
+6 : Constant Hoisting : 161.659669
+7 : Add DWARF path discriminators : 161.659669
+8 : Dead Instruction Elimination : 161.659669
+9 : Value Propagation : 161.659669
+10 : Lower atomic intrinsics to non-atomic form : 161.659669
+11 : MergedLoadStoreMotion : 161.659669
+12 : MergedLoadStoreMotion : 161.659669
+13 : MemCpy Optimization : 161.659669
+14 : Scalar Replacement of Aggregates (DT) : 161.659669
+15 : Code sinking : 161.659669
+16 : Value Propagation : 161.659669
+17 : Loop Invariant Code Motion : 161.659669
+18 : Induction Variable Simplification : 140.132383
+19 : Value Propagation : 140.132383
+20 : Dead Instruction Elimination : 140.132383
+SpeedUp : 2.690656

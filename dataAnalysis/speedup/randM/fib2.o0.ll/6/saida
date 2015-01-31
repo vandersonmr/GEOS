@@ -1,0 +1,5 @@
+1 : Dead Instruction Elimination : 0.000000
+2 : Dead Instruction Elimination : 0.000000
+3 : Scalar Replacement of Aggregates (DT) : 0.000000
+4 : Scalar Replacement of Aggregates (DT) : 0.000000
+SpeedUp : 0.827586

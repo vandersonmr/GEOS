@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 246.181316
+2 : Loop Invariant Code Motion : 246.181316
+3 : Promote Memory to Register : 160.775845
+4 : Promote Memory to Register : 115.625911
+5 : Lower atomic intrinsics to non-atomic form : 115.625911
+6 : Lower atomic intrinsics to non-atomic form : 115.625911
+7 : Reassociate expressions : 115.625911
+8 : Reassociate expressions : 115.625911
+9 : Add DWARF path discriminators : 115.625911
+10 : Dead Code Elimination : 115.625911
+11 : Reassociate expressions : 115.625911
+12 : Add DWARF path discriminators : 115.625911
+13 : Constant Hoisting : 115.625911
+14 : MemCpy Optimization : 115.625911
+15 : Constant Hoisting : 115.625911
+16 : Induction Variable Simplification : 95.540786
+17 : Early CSE : 85.510685
+18 : Global Value Numbering : 0.325716
+19 : Promote Memory to Register : 0.325716
+20 : Global Value Numbering : 0.325716
+SpeedUp : 755.816734

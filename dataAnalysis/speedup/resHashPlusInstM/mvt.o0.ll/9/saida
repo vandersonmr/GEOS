@@ -1,0 +1,18 @@
+1 : Combine redundant instructions : 68.269943
+2 : MemCpy Optimization : 68.269943
+3 : Alignment from assumptions : 68.269943
+4 : MergedLoadStoreMotion : 68.269943
+5 : Induction Variable Simplification : 68.269943
+6 : Assign names to anonymous instructions : 68.269943
+7 : Reassociate expressions : 68.269943
+8 : Dead Code Elimination : 68.269943
+9 : Dead Instruction Elimination : 68.269943
+10 : Add DWARF path discriminators : 68.269943
+11 : Value Propagation : 68.269943
+12 : Induction Variable Simplification : 68.269943
+13 : Code sinking : 68.269943
+14 : Early CSE : 59.907773
+15 : Alignment from assumptions : 59.907773
+16 : SROA : 59.907773
+17 : Promote Memory to Register : 64.072139
+SpeedUp : 1.121632

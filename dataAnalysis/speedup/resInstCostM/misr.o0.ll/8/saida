@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 4.391489
+2 : Code sinking : 4.391489
+3 : Code sinking : 4.391489
+4 : Reassociate expressions : 4.391489
+5 : SROA : 4.391489
+6 : Add DWARF path discriminators : 4.391489
+7 : Loop-Closed SSA Form Pass : 4.391489
+8 : Value Propagation : 4.391489
+9 : Constant Hoisting : 4.391489
+10 : MergedLoadStoreMotion : 4.391489
+11 : Aggressive Dead Code Elimination : 4.391489
+12 : MergedLoadStoreMotion : 4.391489
+13 : Promote Memory to Register : 2.421506
+14 : Remove redundant instructions : 2.421506
+15 : Code sinking : 2.421506
+16 : Loop Invariant Code Motion : 2.340506
+17 : Lower atomic intrinsics to non-atomic form : 2.340506
+18 : Constant Hoisting : 2.340506
+19 : Constant Hoisting : 2.340506
+20 : Loop-Closed SSA Form Pass : 2.340506
+SpeedUp : 1.876299

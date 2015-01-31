@@ -1,0 +1,10 @@
+1 : Dead Instruction Elimination : 245.312500
+2 : Scalar Replacement of Aggregates (DT) : 176.562500
+3 : Lower atomic intrinsics to non-atomic form : 176.562500
+4 : MergedLoadStoreMotion : 176.562500
+5 : Constant Hoisting : 176.562500
+6 : Dead Instruction Elimination : 176.562500
+7 : MemCpy Optimization : 176.562500
+8 : Alignment from assumptions : 176.562500
+9 : Loop-Closed SSA Form Pass : 178.125000
+SpeedUp : 1.377193

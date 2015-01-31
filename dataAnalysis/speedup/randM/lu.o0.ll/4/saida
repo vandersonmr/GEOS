@@ -1,0 +1,4 @@
+1 : Value Propagation : 0.000002
+2 : MergedLoadStoreMotion : 0.000002
+3 : MemCpy Optimization : 0.000001
+SpeedUp : 1.244275

@@ -1,0 +1,11 @@
+1 : Code sinking : 1757.803232
+2 : Reassociate expressions : 1757.803232
+3 : Induction Variable Simplification : 1757.803232
+4 : Loop Invariant Code Motion : 1757.803232
+5 : Alignment from assumptions : 1757.803232
+6 : Early CSE : 1673.789299
+7 : Aggressive Dead Code Elimination : 1673.789299
+8 : Assign names to anonymous instructions : 1673.789299
+9 : Assign names to anonymous instructions : 1673.789299
+10 : Promote Memory to Register : 23574.541105
+SpeedUp : 0.074564

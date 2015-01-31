@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 414.080246
+2 : Code sinking : 414.080246
+3 : Scalar Replacement of Aggregates (DT) : 410.340702
+4 : Loop Invariant Code Motion : 402.489813
+5 : Loop-Closed SSA Form Pass : 402.489813
+6 : Alignment from assumptions : 402.489813
+7 : Promote Memory to Register : 402.489813
+8 : Lower atomic intrinsics to non-atomic form : 402.489813
+9 : Scalar Replacement of Aggregates (DT) : 402.489813
+10 : Promote Memory to Register : 402.489813
+11 : Early CSE : 401.759536
+12 : Dead Code Elimination : 401.759536
+13 : Aggressive Dead Code Elimination : 401.759536
+14 : Constant Hoisting : 401.759536
+15 : Dead Code Elimination : 401.759536
+16 : Global Value Numbering : 401.334625
+17 : MergedLoadStoreMotion : 401.334625
+18 : MemCpy Optimization : 401.334625
+19 : SROA : 401.334625
+20 : Dead Code Elimination : 401.334625
+SpeedUp : 1.031758

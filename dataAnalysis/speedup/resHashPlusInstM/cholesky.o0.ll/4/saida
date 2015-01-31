@@ -1,0 +1,12 @@
+1 : SROA : 322.471101
+2 : Combine redundant instructions : 285.762067
+3 : Combine redundant instructions : 285.762067
+4 : Dead Instruction Elimination : 285.762067
+5 : SROA : 285.762067
+6 : Code sinking : 285.762067
+7 : Induction Variable Simplification : 285.762067
+8 : Code sinking : 285.762067
+9 : Assign names to anonymous instructions : 285.762067
+10 : Add DWARF path discriminators : 285.762067
+11 : Scalar Replacement of Aggregates (DT) : 298.010593
+SpeedUp : 1.082079

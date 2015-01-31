@@ -1,0 +1,9 @@
+1 : Alignment from assumptions : 2494.943098
+2 : Reassociate expressions : 2494.943098
+3 : Value Propagation : 2494.943098
+4 : Reassociate expressions : 2494.943098
+5 : Alignment from assumptions : 2494.943098
+6 : Code sinking : 2494.943098
+7 : MemCpy Optimization : 2494.943098
+8 : Remove redundant instructions : 2494.943099
+SpeedUp : 1.000000

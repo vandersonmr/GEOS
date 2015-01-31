@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 139.453675
+2 : MergedLoadStoreMotion : 139.453675
+3 : Dead Code Elimination : 139.453675
+4 : Induction Variable Simplification : 139.453675
+5 : Early CSE : 83.806469
+6 : Code sinking : 83.806469
+7 : Loop-Closed SSA Form Pass : 83.806469
+8 : Aggressive Dead Code Elimination : 83.806469
+9 : Alignment from assumptions : 83.806469
+10 : Value Propagation : 83.806469
+11 : Loop Invariant Code Motion : 83.806469
+12 : Add DWARF path discriminators : 83.806469
+13 : MemCpy Optimization : 83.806469
+14 : Add DWARF path discriminators : 83.806469
+15 : Assign names to anonymous instructions : 83.806469
+16 : Promote Memory to Register : 66.896618
+17 : Dead Instruction Elimination : 49.568031
+18 : Scalar Replacement of Aggregates (DT) : 49.568031
+19 : Global Value Numbering : 24.437282
+20 : Alignment from assumptions : 24.437282
+SpeedUp : 5.706595

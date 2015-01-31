@@ -1,0 +1,7 @@
+1 : Promote Memory to Register : 327.361362
+2 : Dead Code Elimination : 327.361362
+3 : Lower atomic intrinsics to non-atomic form : 327.361362
+4 : Add DWARF path discriminators : 327.361362
+5 : Combine redundant instructions : 278.995671
+6 : Loop-Closed SSA Form Pass : 284.348662
+SpeedUp : 1.830607

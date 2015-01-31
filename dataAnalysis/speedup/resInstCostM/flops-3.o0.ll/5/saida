@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 428.125000
+2 : SROA : 428.125000
+3 : Remove redundant instructions : 428.125000
+4 : Loop Invariant Code Motion : 428.125000
+5 : Dead Code Elimination : 428.125000
+6 : Value Propagation : 428.125000
+7 : Combine redundant instructions : 356.250000
+8 : Loop-Closed SSA Form Pass : 356.250000
+9 : Alignment from assumptions : 356.250000
+10 : Code sinking : 356.250000
+11 : Loop Invariant Code Motion : 356.250000
+12 : Value Propagation : 356.250000
+13 : Induction Variable Simplification : 356.250000
+14 : Code sinking : 356.250000
+15 : Value Propagation : 356.250000
+16 : Value Propagation : 356.250000
+17 : Lower atomic intrinsics to non-atomic form : 356.250000
+18 : Early CSE : 343.750000
+19 : Constant Hoisting : 337.500000
+20 : Dead Code Elimination : 337.500000
+SpeedUp : 1.268519

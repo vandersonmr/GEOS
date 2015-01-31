@@ -1,0 +1,7 @@
+1 : Code sinking : 0.000001
+2 : Alignment from assumptions : 0.000001
+3 : Add DWARF path discriminators : 0.000001
+4 : Lower atomic intrinsics to non-atomic form : 0.000001
+5 : Alignment from assumptions : 0.000001
+6 : Assign names to anonymous instructions : 0.000001
+SpeedUp : 1.076923

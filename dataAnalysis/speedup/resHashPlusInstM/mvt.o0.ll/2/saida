@@ -1,0 +1,9 @@
+1 : Induction Variable Simplification : 71.865366
+2 : Loop Invariant Code Motion : 71.865366
+3 : SROA : 71.865366
+4 : Aggressive Dead Code Elimination : 71.865366
+5 : Loop-Closed SSA Form Pass : 71.865366
+6 : Assign names to anonymous instructions : 71.865366
+7 : Dead Code Elimination : 71.865366
+8 : Remove redundant instructions : 71.865366
+SpeedUp : 1.000000

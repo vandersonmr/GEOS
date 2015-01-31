@@ -1,0 +1,9 @@
+1 : Scalar Replacement of Aggregates (DT) : 1279.800000
+2 : Dead Instruction Elimination : 1279.800000
+3 : Promote Memory to Register : 1279.800000
+4 : Scalar Replacement of Aggregates (DT) : 1279.800000
+5 : Scalar Replacement of Aggregates (DT) : 1279.800000
+6 : MemCpy Optimization : 1279.800000
+7 : Induction Variable Simplification : 1243.320000
+8 : MergedLoadStoreMotion : 1249.320000
+SpeedUp : 1.772452

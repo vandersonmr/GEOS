@@ -1,0 +1,9 @@
+1 : Dead Code Elimination : 160.971994
+2 : Induction Variable Simplification : 160.971994
+3 : Remove redundant instructions : 160.967094
+4 : Loop-Closed SSA Form Pass : 160.967094
+5 : Promote Memory to Register : 105.824761
+6 : Remove redundant instructions : 70.265211
+7 : SROA : 70.265211
+8 : Induction Variable Simplification : 70.265311
+SpeedUp : 2.290917

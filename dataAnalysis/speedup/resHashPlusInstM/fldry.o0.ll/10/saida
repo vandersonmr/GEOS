@@ -1,0 +1,6 @@
+1 : Add DWARF path discriminators : 17789.001314
+2 : Combine redundant instructions : 9628.723503
+3 : MergedLoadStoreMotion : 9628.723503
+4 : SROA : 9628.723503
+5 : Loop Invariant Code Motion : 9646.191803
+SpeedUp : 1.844148

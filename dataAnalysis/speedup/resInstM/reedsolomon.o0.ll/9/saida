@@ -1,0 +1,7 @@
+1 : Dead Instruction Elimination : 700.576343
+2 : Assign names to anonymous instructions : 700.576343
+3 : Loop-Closed SSA Form Pass : 700.576343
+4 : Code sinking : 700.576343
+5 : Promote Memory to Register : 542.062308
+6 : Promote Memory to Register : 545.601963
+SpeedUp : 1.284043

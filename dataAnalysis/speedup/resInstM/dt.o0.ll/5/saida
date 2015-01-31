@@ -1,0 +1,16 @@
+1 : Loop Invariant Code Motion : 42.977874
+2 : Scalar Replacement of Aggregates (DT) : 26.862449
+3 : Loop-Closed SSA Form Pass : 26.862449
+4 : Induction Variable Simplification : 26.862449
+5 : MergedLoadStoreMotion : 26.862449
+6 : MemCpy Optimization : 26.862449
+7 : Promote Memory to Register : 26.862449
+8 : Constant Hoisting : 26.862449
+9 : Add DWARF path discriminators : 26.862449
+10 : Assign names to anonymous instructions : 26.862449
+11 : Assign names to anonymous instructions : 26.862449
+12 : Dead Instruction Elimination : 26.862449
+13 : Remove redundant instructions : 26.862429
+14 : Promote Memory to Register : 26.862429
+15 : Global Value Numbering : 29.544141
+SpeedUp : 1.454700

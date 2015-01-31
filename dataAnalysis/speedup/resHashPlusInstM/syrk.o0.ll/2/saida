@@ -1,0 +1,4 @@
+1 : Promote Memory to Register : 1764.353222
+2 : Induction Variable Simplification : 1280.654361
+3 : Combine redundant instructions : 1587.672403
+SpeedUp : 1.182805

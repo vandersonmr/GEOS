@@ -1,0 +1,17 @@
+1 : Promote Memory to Register : 403.548191
+2 : Add DWARF path discriminators : 403.548191
+3 : Loop Invariant Code Motion : 403.328044
+4 : Reassociate expressions : 403.328044
+5 : Add DWARF path discriminators : 403.328044
+6 : Reassociate expressions : 403.328044
+7 : SROA : 403.328044
+8 : Alignment from assumptions : 403.328044
+9 : Lower atomic intrinsics to non-atomic form : 403.328044
+10 : Constant Hoisting : 403.328044
+11 : Aggressive Dead Code Elimination : 403.328044
+12 : Global Value Numbering : 55.660248
+13 : Remove redundant instructions : 55.660248
+14 : Scalar Replacement of Aggregates (DT) : 55.660248
+15 : Early CSE : 55.459782
+16 : Loop Invariant Code Motion : 55.459906
+SpeedUp : 11.646486

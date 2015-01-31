@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 69.706230
+2 : Value Propagation : 69.706230
+3 : Combine redundant instructions : 53.325519
+4 : Early CSE : 46.956060
+5 : Reassociate expressions : 42.484265
+6 : Global Value Numbering : 38.906763
+7 : Global Value Numbering : 38.906763
+8 : Combine redundant instructions : 38.906763
+9 : Scalar Replacement of Aggregates (DT) : 21.576020
+10 : Remove redundant instructions : 21.576020
+11 : Value Propagation : 21.576020
+12 : Constant Hoisting : 21.576020
+13 : Aggressive Dead Code Elimination : 21.576020
+14 : Aggressive Dead Code Elimination : 21.576020
+15 : Aggressive Dead Code Elimination : 21.576020
+16 : Constant Hoisting : 21.576020
+17 : Scalar Replacement of Aggregates (DT) : 21.576020
+18 : Value Propagation : 21.576020
+19 : Loop Invariant Code Motion : 21.576020
+20 : MemCpy Optimization : 21.576020
+SpeedUp : 3.230727

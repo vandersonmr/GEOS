@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 37.603840
+2 : MergedLoadStoreMotion : 37.603840
+3 : Induction Variable Simplification : 37.603840
+4 : Dead Instruction Elimination : 37.603840
+5 : Constant Hoisting : 37.603840
+6 : Lower atomic intrinsics to non-atomic form : 37.603840
+7 : Combine redundant instructions : 32.231158
+8 : SROA : 32.231158
+9 : Scalar Replacement of Aggregates (DT) : 21.487084
+10 : Add DWARF path discriminators : 21.487084
+11 : Alignment from assumptions : 21.487084
+12 : Induction Variable Simplification : 21.487084
+13 : Combine redundant instructions : 21.487084
+14 : Lower atomic intrinsics to non-atomic form : 21.487084
+15 : Loop-Closed SSA Form Pass : 21.487084
+16 : Lower atomic intrinsics to non-atomic form : 21.487084
+17 : Dead Instruction Elimination : 21.487084
+18 : Remove redundant instructions : 21.487084
+19 : Lower atomic intrinsics to non-atomic form : 21.487084
+20 : Dead Instruction Elimination : 21.487084
+SpeedUp : 1.750067

@@ -1,0 +1,21 @@
+1 : Add DWARF path discriminators : 7.522641
+2 : MergedLoadStoreMotion : 7.522641
+3 : MergedLoadStoreMotion : 7.522641
+4 : Add DWARF path discriminators : 7.522641
+5 : Remove redundant instructions : 7.522641
+6 : Constant Hoisting : 7.522641
+7 : Reassociate expressions : 7.522641
+8 : Combine redundant instructions : 6.642461
+9 : Combine redundant instructions : 6.642461
+10 : Dead Instruction Elimination : 6.642461
+11 : Loop Invariant Code Motion : 6.642461
+12 : Lower atomic intrinsics to non-atomic form : 6.642461
+13 : Scalar Replacement of Aggregates (DT) : 4.481641
+14 : Dead Code Elimination : 3.601661
+15 : Value Propagation : 3.601661
+16 : SROA : 3.601661
+17 : Combine redundant instructions : 3.601661
+18 : Dead Instruction Elimination : 3.601661
+19 : SROA : 3.601661
+20 : Code sinking : 3.601661
+SpeedUp : 2.088659

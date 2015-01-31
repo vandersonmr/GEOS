@@ -1,0 +1,17 @@
+1 : Remove redundant instructions : 146.274614
+2 : Alignment from assumptions : 146.274614
+3 : Dead Instruction Elimination : 146.274614
+4 : Induction Variable Simplification : 146.274614
+5 : Constant Hoisting : 146.274614
+6 : Early CSE : 115.610201
+7 : Value Propagation : 115.610201
+8 : Constant Hoisting : 115.610201
+9 : Value Propagation : 115.610201
+10 : Aggressive Dead Code Elimination : 115.610201
+11 : Code sinking : 115.610201
+12 : Dead Instruction Elimination : 115.610201
+13 : Dead Code Elimination : 115.610201
+14 : Aggressive Dead Code Elimination : 115.610201
+15 : Add DWARF path discriminators : 115.610201
+16 : Induction Variable Simplification : 119.205092
+SpeedUp : 1.227084

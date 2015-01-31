@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 3017.152974
+2 : Add DWARF path discriminators : 3017.152974
+3 : MergedLoadStoreMotion : 3017.152974
+4 : Value Propagation : 3017.152974
+5 : Dead Code Elimination : 3017.152974
+6 : Value Propagation : 3017.152974
+7 : Assign names to anonymous instructions : 3017.152974
+8 : Dead Instruction Elimination : 3017.152974
+9 : Global Value Numbering : 3015.735493
+10 : Scalar Replacement of Aggregates (DT) : 2778.034379
+11 : Constant Hoisting : 1984.467006
+12 : Alignment from assumptions : 1984.467006
+13 : Loop-Closed SSA Form Pass : 1984.467006
+14 : SROA : 1984.467006
+15 : Alignment from assumptions : 1984.467006
+16 : Assign names to anonymous instructions : 1984.467006
+17 : Reassociate expressions : 1984.467006
+18 : Lower atomic intrinsics to non-atomic form : 1984.467006
+19 : MergedLoadStoreMotion : 1984.467006
+20 : Loop-Closed SSA Form Pass : 1984.467006
+SpeedUp : 1.520385

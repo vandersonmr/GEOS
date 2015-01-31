@@ -1,0 +1,5 @@
+1 : Value Propagation : 188.549858
+2 : Induction Variable Simplification : 188.549858
+3 : Aggressive Dead Code Elimination : 188.549858
+4 : Global Value Numbering : 220.751565
+SpeedUp : 0.854127

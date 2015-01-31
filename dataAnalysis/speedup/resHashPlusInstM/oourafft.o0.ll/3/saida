@@ -1,0 +1,14 @@
+1 : Code sinking : 3599.805556
+2 : Remove redundant instructions : 3599.793556
+3 : SROA : 3599.793556
+4 : Dead Instruction Elimination : 3599.793556
+5 : Alignment from assumptions : 3599.793556
+6 : Code sinking : 3599.793556
+7 : Value Propagation : 3599.793556
+8 : Remove redundant instructions : 3599.793556
+9 : Loop-Closed SSA Form Pass : 3599.793556
+10 : Value Propagation : 3599.793556
+11 : Induction Variable Simplification : 3599.793556
+12 : Induction Variable Simplification : 3599.793556
+13 : Dead Instruction Elimination : 3599.793556
+14 : SROA : 3599.793556

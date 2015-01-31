@@ -1,0 +1,7 @@
+1 : Assign names to anonymous instructions : 0.000001
+2 : Loop-Closed SSA Form Pass : 0.000001
+3 : MemCpy Optimization : 0.000001
+4 : Early CSE : 0.000001
+5 : Combine redundant instructions : 0.000001
+6 : MemCpy Optimization : 0.000001
+SpeedUp : 1.119565

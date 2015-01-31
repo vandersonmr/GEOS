@@ -1,0 +1,21 @@
+1 : SROA : 419.000000
+2 : Assign names to anonymous instructions : 419.000000
+3 : Loop Invariant Code Motion : 419.000000
+4 : Combine redundant instructions : 292.000000
+5 : Aggressive Dead Code Elimination : 292.000000
+6 : Code sinking : 292.000000
+7 : Add DWARF path discriminators : 292.000000
+8 : MemCpy Optimization : 292.000000
+9 : Combine redundant instructions : 292.000000
+10 : Assign names to anonymous instructions : 292.000000
+11 : Induction Variable Simplification : 292.000000
+12 : Aggressive Dead Code Elimination : 292.000000
+13 : Code sinking : 292.000000
+14 : Assign names to anonymous instructions : 292.000000
+15 : Scalar Replacement of Aggregates (DT) : 187.000000
+16 : Induction Variable Simplification : 176.000000
+17 : Dead Instruction Elimination : 176.000000
+18 : Value Propagation : 176.000000
+19 : Code sinking : 176.000000
+20 : Global Value Numbering : 146.000000
+SpeedUp : 2.869863

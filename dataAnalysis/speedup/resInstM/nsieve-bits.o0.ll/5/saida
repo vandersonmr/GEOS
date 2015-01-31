@@ -1,0 +1,7 @@
+1 : Combine redundant instructions : 76.948337
+2 : Induction Variable Simplification : 76.948337
+3 : Remove redundant instructions : 76.948337
+4 : Induction Variable Simplification : 76.948337
+5 : Promote Memory to Register : 63.202342
+6 : Dead Instruction Elimination : 65.362106
+SpeedUp : 1.475730

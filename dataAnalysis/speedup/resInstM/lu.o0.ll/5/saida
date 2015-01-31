@@ -1,0 +1,21 @@
+1 : Constant Hoisting : 143.637873
+2 : Induction Variable Simplification : 143.637873
+3 : Early CSE : 82.677095
+4 : Promote Memory to Register : 64.692178
+5 : Scalar Replacement of Aggregates (DT) : 53.928571
+6 : Add DWARF path discriminators : 53.928571
+7 : Global Value Numbering : 21.784387
+8 : Global Value Numbering : 21.784387
+9 : SROA : 21.784387
+10 : SROA : 21.784387
+11 : Combine redundant instructions : 21.758167
+12 : Value Propagation : 21.758167
+13 : Loop-Closed SSA Form Pass : 21.758167
+14 : Aggressive Dead Code Elimination : 21.758167
+15 : Constant Hoisting : 21.758167
+16 : MergedLoadStoreMotion : 21.758167
+17 : Remove redundant instructions : 21.758167
+18 : Combine redundant instructions : 21.758167
+19 : Scalar Replacement of Aggregates (DT) : 21.758167
+20 : Dead Code Elimination : 21.758167
+SpeedUp : 6.601561

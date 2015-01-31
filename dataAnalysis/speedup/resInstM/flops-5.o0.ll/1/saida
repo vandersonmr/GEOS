@@ -1,0 +1,10 @@
+1 : Loop-Closed SSA Form Pass : 245.312500
+2 : Early CSE : 193.750000
+3 : Scalar Replacement of Aggregates (DT) : 168.750000
+4 : Loop-Closed SSA Form Pass : 168.750000
+5 : Value Propagation : 167.187500
+6 : Combine redundant instructions : 165.624999
+7 : Code sinking : 165.624999
+8 : Dead Code Elimination : 165.624999
+9 : Loop-Closed SSA Form Pass : 167.187499
+SpeedUp : 1.467290

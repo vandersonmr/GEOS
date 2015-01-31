@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 732.138416
+2 : SROA : 732.138416
+3 : Loop-Closed SSA Form Pass : 732.138416
+4 : Remove redundant instructions : 732.138416
+5 : MemCpy Optimization : 732.138416
+6 : Promote Memory to Register : 484.485110
+7 : Dead Code Elimination : 484.485110
+8 : Dead Code Elimination : 484.485110
+9 : Induction Variable Simplification : 355.457885
+10 : Scalar Replacement of Aggregates (DT) : 355.457885
+11 : Constant Hoisting : 355.457885
+12 : Add DWARF path discriminators : 355.457885
+13 : Loop-Closed SSA Form Pass : 355.457885
+14 : Combine redundant instructions : 290.907485
+15 : SROA : 290.907485
+16 : Dead Instruction Elimination : 290.907485
+17 : Lower atomic intrinsics to non-atomic form : 290.907485
+18 : Alignment from assumptions : 290.907485
+19 : Dead Code Elimination : 290.907485
+20 : Remove redundant instructions : 290.907485
+SpeedUp : 2.516740

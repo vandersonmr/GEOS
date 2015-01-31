@@ -1,0 +1,9 @@
+1 : SROA : 1194.955967
+2 : MemCpy Optimization : 1194.955967
+3 : Scalar Replacement of Aggregates (DT) : 810.667615
+4 : Induction Variable Simplification : 610.049586
+5 : MergedLoadStoreMotion : 610.049586
+6 : Combine redundant instructions : 539.739229
+7 : Induction Variable Simplification : 539.739229
+8 : Loop Invariant Code Motion : 559.155140
+SpeedUp : 2.137074

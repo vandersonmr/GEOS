@@ -1,0 +1,10 @@
+1 : MergedLoadStoreMotion : 50.519497
+2 : Combine redundant instructions : 48.908074
+3 : MergedLoadStoreMotion : 48.908074
+4 : Loop Invariant Code Motion : 48.740159
+5 : Lower atomic intrinsics to non-atomic form : 48.740159
+6 : MergedLoadStoreMotion : 48.740159
+7 : Global Value Numbering : 48.062983
+8 : Promote Memory to Register : 32.124150
+9 : Induction Variable Simplification : 35.924489
+SpeedUp : 1.406269

@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 484.149064
+2 : Constant Hoisting : 484.149064
+3 : Reassociate expressions : 484.149064
+4 : Remove redundant instructions : 484.149064
+5 : Remove redundant instructions : 484.149064
+6 : Loop Invariant Code Motion : 387.376077
+7 : Add DWARF path discriminators : 387.376077
+8 : Aggressive Dead Code Elimination : 387.376077
+9 : Early CSE : 387.334073
+10 : Dead Instruction Elimination : 387.334073
+11 : Global Value Numbering : 182.966713
+12 : Alignment from assumptions : 182.966713
+13 : Reassociate expressions : 182.966713
+14 : Constant Hoisting : 182.966713
+15 : MergedLoadStoreMotion : 182.966713
+16 : Code sinking : 182.966713
+17 : Scalar Replacement of Aggregates (DT) : 182.966713
+18 : Dead Instruction Elimination : 182.966713
+19 : Induction Variable Simplification : 182.966713
+20 : Lower atomic intrinsics to non-atomic form : 182.966713
+SpeedUp : 4.587474

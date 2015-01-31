@@ -1,0 +1,21 @@
+1 : Loop Invariant Code Motion : 51.481755
+2 : Induction Variable Simplification : 51.481755
+3 : Value Propagation : 51.481755
+4 : Dead Instruction Elimination : 51.481755
+5 : Dead Code Elimination : 51.481755
+6 : MergedLoadStoreMotion : 51.481755
+7 : Combine redundant instructions : 47.380231
+8 : Aggressive Dead Code Elimination : 47.379810
+9 : Alignment from assumptions : 47.379810
+10 : Dead Code Elimination : 47.379810
+11 : Add DWARF path discriminators : 47.379810
+12 : Alignment from assumptions : 47.379810
+13 : Loop-Closed SSA Form Pass : 47.379810
+14 : Alignment from assumptions : 47.379810
+15 : Induction Variable Simplification : 47.379810
+16 : Loop-Closed SSA Form Pass : 47.379810
+17 : Loop Invariant Code Motion : 47.379810
+18 : SROA : 47.379810
+19 : Code sinking : 47.379810
+20 : Lower atomic intrinsics to non-atomic form : 47.379810
+SpeedUp : 1.089144

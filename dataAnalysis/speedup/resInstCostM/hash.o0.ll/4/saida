@@ -1,0 +1,21 @@
+1 : SROA : 40.300808
+2 : Constant Hoisting : 40.300808
+3 : Promote Memory to Register : 21.903794
+4 : Scalar Replacement of Aggregates (DT) : 21.903794
+5 : Reassociate expressions : 21.903794
+6 : Promote Memory to Register : 21.903794
+7 : Scalar Replacement of Aggregates (DT) : 21.903794
+8 : Promote Memory to Register : 21.903794
+9 : Dead Instruction Elimination : 21.903794
+10 : Dead Instruction Elimination : 21.903794
+11 : Loop-Closed SSA Form Pass : 21.903794
+12 : Remove redundant instructions : 21.903794
+13 : Induction Variable Simplification : 21.903794
+14 : Reassociate expressions : 21.903794
+15 : Lower atomic intrinsics to non-atomic form : 21.903794
+16 : Early CSE : 21.296717
+17 : Reassociate expressions : 21.296717
+18 : Combine redundant instructions : 21.153149
+19 : Induction Variable Simplification : 21.153149
+20 : Value Propagation : 21.153149
+SpeedUp : 1.905192

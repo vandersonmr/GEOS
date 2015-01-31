@@ -1,0 +1,14 @@
+1 : Induction Variable Simplification : 2.037042
+2 : Early CSE : 1.950367
+3 : Remove redundant instructions : 1.950367
+4 : Dead Instruction Elimination : 1.950367
+5 : Early CSE : 1.950367
+6 : Code sinking : 1.950367
+7 : Aggressive Dead Code Elimination : 1.950367
+8 : Assign names to anonymous instructions : 1.950367
+9 : Induction Variable Simplification : 1.950367
+10 : Alignment from assumptions : 1.950367
+11 : Constant Hoisting : 1.950367
+12 : Combine redundant instructions : 1.536180
+13 : Global Value Numbering : 1.554298
+SpeedUp : 1.310587

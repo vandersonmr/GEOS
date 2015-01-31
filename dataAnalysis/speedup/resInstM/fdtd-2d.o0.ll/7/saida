@@ -1,0 +1,18 @@
+1 : Reassociate expressions : 73.059764
+2 : Aggressive Dead Code Elimination : 73.059764
+3 : Loop Invariant Code Motion : 73.059764
+4 : Dead Code Elimination : 73.059764
+5 : Loop Invariant Code Motion : 73.059764
+6 : MemCpy Optimization : 73.059764
+7 : Global Value Numbering : 11.114311
+8 : Loop-Closed SSA Form Pass : 11.114311
+9 : MemCpy Optimization : 11.114311
+10 : Loop Invariant Code Motion : 11.114311
+11 : SROA : 11.114311
+12 : MergedLoadStoreMotion : 11.114311
+13 : Alignment from assumptions : 11.114311
+14 : Dead Instruction Elimination : 11.114311
+15 : Loop Invariant Code Motion : 11.114311
+16 : Promote Memory to Register : 7.571006
+17 : Dead Instruction Elimination : 10.051878
+SpeedUp : 7.268270

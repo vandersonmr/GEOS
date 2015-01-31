@@ -1,0 +1,15 @@
+1 : Combine redundant instructions : 450.888500
+2 : Code sinking : 450.888500
+3 : Loop Invariant Code Motion : 430.408500
+4 : SROA : 430.408500
+5 : MemCpy Optimization : 430.408500
+6 : Scalar Replacement of Aggregates (DT) : 286.915000
+7 : Induction Variable Simplification : 286.885000
+8 : Promote Memory to Register : 286.885000
+9 : Constant Hoisting : 286.885000
+10 : Alignment from assumptions : 286.885000
+11 : Combine redundant instructions : 276.640000
+12 : Early CSE : 256.150000
+13 : Code sinking : 256.150000
+14 : Global Value Numbering : 276.655000
+SpeedUp : 1.814941

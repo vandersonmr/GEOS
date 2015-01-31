@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 5662.759187
+2 : Assign names to anonymous instructions : 5662.759187
+3 : Assign names to anonymous instructions : 5662.759187
+4 : Scalar Replacement of Aggregates (DT) : 1732.957418
+5 : Loop-Closed SSA Form Pass : 1732.957418
+6 : Assign names to anonymous instructions : 1732.957418
+7 : Loop Invariant Code Motion : 1722.937346
+8 : Value Propagation : 1722.937346
+9 : MemCpy Optimization : 1722.937346
+10 : Loop-Closed SSA Form Pass : 1722.937346
+11 : MergedLoadStoreMotion : 1722.937346
+12 : MergedLoadStoreMotion : 1722.937346
+13 : Code sinking : 1722.937346
+14 : Induction Variable Simplification : 1722.926051
+15 : Reassociate expressions : 1722.926051
+16 : MergedLoadStoreMotion : 1722.926051
+17 : Dead Instruction Elimination : 1722.926051
+18 : Value Propagation : 1722.926051
+19 : Add DWARF path discriminators : 1722.926051
+20 : Constant Hoisting : 1722.926051
+SpeedUp : 3.286711

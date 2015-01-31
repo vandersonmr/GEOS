@@ -1,0 +1,4 @@
+1 : Dead Instruction Elimination : 0.000002
+2 : Assign names to anonymous instructions : 0.000002
+3 : Code sinking : 0.000001
+SpeedUp : 1.190184

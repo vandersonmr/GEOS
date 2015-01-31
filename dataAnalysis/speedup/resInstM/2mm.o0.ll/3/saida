@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 732.138416
+2 : Aggressive Dead Code Elimination : 732.138416
+3 : Aggressive Dead Code Elimination : 732.138416
+4 : Reassociate expressions : 732.138416
+5 : MemCpy Optimization : 732.138416
+6 : Aggressive Dead Code Elimination : 732.138416
+7 : Promote Memory to Register : 484.485110
+8 : MemCpy Optimization : 484.485110
+9 : Global Value Numbering : 204.735397
+10 : Lower atomic intrinsics to non-atomic form : 204.735397
+11 : Code sinking : 204.735397
+12 : Dead Code Elimination : 204.735397
+13 : Alignment from assumptions : 204.735397
+14 : MergedLoadStoreMotion : 204.735397
+15 : Remove redundant instructions : 204.735397
+16 : Global Value Numbering : 204.735397
+17 : Aggressive Dead Code Elimination : 204.735397
+18 : MemCpy Optimization : 204.735397
+19 : Aggressive Dead Code Elimination : 204.735397
+20 : Assign names to anonymous instructions : 204.735397
+SpeedUp : 3.576023

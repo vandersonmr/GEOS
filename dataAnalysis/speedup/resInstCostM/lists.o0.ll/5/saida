@@ -1,0 +1,21 @@
+1 : SROA : 1862.640000
+2 : Reassociate expressions : 1862.640000
+3 : Add DWARF path discriminators : 1862.640000
+4 : Value Propagation : 1862.640000
+5 : Loop-Closed SSA Form Pass : 1862.640000
+6 : Global Value Numbering : 1732.080000
+7 : SROA : 1732.080000
+8 : Code sinking : 1732.080000
+9 : Constant Hoisting : 1732.080000
+10 : MemCpy Optimization : 1732.080000
+11 : MergedLoadStoreMotion : 1732.080000
+12 : Lower atomic intrinsics to non-atomic form : 1732.080000
+13 : Remove redundant instructions : 1732.080000
+14 : Constant Hoisting : 1732.080000
+15 : MergedLoadStoreMotion : 1732.080000
+16 : Alignment from assumptions : 1732.080000
+17 : Scalar Replacement of Aggregates (DT) : 832.020000
+18 : Early CSE : 759.660000
+19 : Reassociate expressions : 759.660000
+20 : Global Value Numbering : 759.660000
+SpeedUp : 2.451939

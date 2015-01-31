@@ -1,0 +1,19 @@
+1 : Value Propagation : 50.519497
+2 : MergedLoadStoreMotion : 50.519497
+3 : Combine redundant instructions : 48.908074
+4 : Induction Variable Simplification : 48.908074
+5 : Add DWARF path discriminators : 48.908074
+6 : Assign names to anonymous instructions : 48.908074
+7 : SROA : 48.908074
+8 : Loop-Closed SSA Form Pass : 48.908074
+9 : SROA : 48.908074
+10 : MemCpy Optimization : 48.908074
+11 : Early CSE : 43.410723
+12 : Value Propagation : 43.235723
+13 : MemCpy Optimization : 43.235723
+14 : Reassociate expressions : 43.235723
+15 : Dead Instruction Elimination : 43.235723
+16 : Constant Hoisting : 43.235723
+17 : Early CSE : 43.235723
+18 : Induction Variable Simplification : 45.313779
+SpeedUp : 1.114882

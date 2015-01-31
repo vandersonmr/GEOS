@@ -1,0 +1,11 @@
+1 : Scalar Replacement of Aggregates (DT) : 445.291200
+2 : Aggressive Dead Code Elimination : 445.291200
+3 : Lower atomic intrinsics to non-atomic form : 445.291200
+4 : Early CSE : 445.291200
+5 : Lower atomic intrinsics to non-atomic form : 445.291200
+6 : Lower atomic intrinsics to non-atomic form : 445.291200
+7 : Add DWARF path discriminators : 445.291200
+8 : Value Propagation : 445.291200
+9 : Dead Code Elimination : 445.291200
+10 : Loop-Closed SSA Form Pass : 459.217600
+SpeedUp : 1.688052

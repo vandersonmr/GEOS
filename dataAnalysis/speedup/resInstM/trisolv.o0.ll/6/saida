@@ -1,0 +1,8 @@
+1 : MergedLoadStoreMotion : 7.522641
+2 : Promote Memory to Register : 4.801680
+3 : Early CSE : 3.361480
+4 : Lower atomic intrinsics to non-atomic form : 3.361480
+5 : Reassociate expressions : 3.361480
+6 : Remove redundant instructions : 3.361480
+7 : Global Value Numbering : 3.601300
+SpeedUp : 2.088868

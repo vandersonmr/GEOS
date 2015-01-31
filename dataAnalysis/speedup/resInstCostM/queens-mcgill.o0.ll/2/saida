@@ -1,0 +1,21 @@
+1 : Loop-Closed SSA Form Pass : 96.400683
+2 : Value Propagation : 96.400683
+3 : Constant Hoisting : 96.400683
+4 : Reassociate expressions : 96.400683
+5 : Value Propagation : 96.400683
+6 : Combine redundant instructions : 92.610697
+7 : Lower atomic intrinsics to non-atomic form : 92.610697
+8 : Promote Memory to Register : 40.780938
+9 : Global Value Numbering : 26.759222
+10 : Aggressive Dead Code Elimination : 26.759222
+11 : Promote Memory to Register : 26.759222
+12 : Global Value Numbering : 26.759222
+13 : Constant Hoisting : 26.759222
+14 : Reassociate expressions : 26.759222
+15 : Dead Code Elimination : 26.759222
+16 : Remove redundant instructions : 26.759222
+17 : Add DWARF path discriminators : 26.759222
+18 : Lower atomic intrinsics to non-atomic form : 26.759222
+19 : Add DWARF path discriminators : 26.759222
+20 : MergedLoadStoreMotion : 26.759222
+SpeedUp : 3.602522

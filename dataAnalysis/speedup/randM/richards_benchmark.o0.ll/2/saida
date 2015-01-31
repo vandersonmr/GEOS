@@ -1,0 +1,6 @@
+1 : Reassociate expressions : 0.000003
+2 : Induction Variable Simplification : 0.000004
+3 : SROA : 0.000004
+4 : Promote Memory to Register : 0.000004
+5 : MemCpy Optimization : 0.000003
+SpeedUp : 1.259259

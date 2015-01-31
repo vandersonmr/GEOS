@@ -1,0 +1,14 @@
+1 : MergedLoadStoreMotion : 100.384673
+2 : MemCpy Optimization : 100.384673
+3 : Assign names to anonymous instructions : 100.384673
+4 : Induction Variable Simplification : 100.384673
+5 : Aggressive Dead Code Elimination : 94.110871
+6 : Assign names to anonymous instructions : 94.110871
+7 : Dead Instruction Elimination : 94.110871
+8 : SROA : 94.110871
+9 : Scalar Replacement of Aggregates (DT) : 78.426083
+10 : Global Value Numbering : 62.741027
+11 : Scalar Replacement of Aggregates (DT) : 62.741027
+12 : Promote Memory to Register : 62.741027
+13 : Induction Variable Simplification : 64.309417
+SpeedUp : 1.560964

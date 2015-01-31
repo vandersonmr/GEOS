@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 25.150009
+2 : Global Value Numbering : 24.990008
+3 : Remove redundant instructions : 24.990008
+4 : Dead Code Elimination : 24.990008
+5 : Assign names to anonymous instructions : 24.990008
+6 : Promote Memory to Register : 19.940006
+7 : MergedLoadStoreMotion : 17.860007
+8 : MergedLoadStoreMotion : 17.860007
+9 : Remove redundant instructions : 17.860007
+10 : Global Value Numbering : 17.860007
+11 : MemCpy Optimization : 17.860007
+12 : Reassociate expressions : 17.860007
+13 : Promote Memory to Register : 17.860007
+14 : Global Value Numbering : 17.860007
+15 : Induction Variable Simplification : 17.790007
+16 : SROA : 17.790007
+17 : Assign names to anonymous instructions : 17.790007
+18 : Dead Instruction Elimination : 17.790007
+19 : SROA : 17.790007
+20 : MergedLoadStoreMotion : 17.790007
+SpeedUp : 1.413716

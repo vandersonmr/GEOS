@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 312.203705
+2 : Assign names to anonymous instructions : 312.203705
+3 : Value Propagation : 312.203705
+4 : Dead Code Elimination : 312.203705
+5 : Constant Hoisting : 312.203705
+6 : Constant Hoisting : 312.203705
+7 : Remove redundant instructions : 312.203705
+8 : Loop-Closed SSA Form Pass : 312.203705
+9 : Alignment from assumptions : 312.203705
+10 : Alignment from assumptions : 312.203705
+11 : Induction Variable Simplification : 312.203705
+12 : Promote Memory to Register : 182.966313
+13 : Remove redundant instructions : 182.966313
+14 : Promote Memory to Register : 182.966313
+15 : Early CSE : 182.966313
+16 : SROA : 182.966313
+17 : Add DWARF path discriminators : 182.966313
+18 : Early CSE : 182.966313
+19 : Assign names to anonymous instructions : 182.966313
+20 : Global Value Numbering : 11.115377
+SpeedUp : 28.087550

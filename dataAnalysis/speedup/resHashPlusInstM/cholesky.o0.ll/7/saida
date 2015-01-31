@@ -1,0 +1,6 @@
+1 : Induction Variable Simplification : 322.471101
+2 : Constant Hoisting : 322.471101
+3 : Dead Code Elimination : 322.471101
+4 : SROA : 322.471101
+5 : Promote Memory to Register : 350.894800
+SpeedUp : 0.918997

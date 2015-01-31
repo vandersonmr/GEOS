@@ -1,0 +1,13 @@
+1 : Lower atomic intrinsics to non-atomic form : 73.059764
+2 : Global Value Numbering : 11.114311
+3 : Assign names to anonymous instructions : 11.114311
+4 : MergedLoadStoreMotion : 11.114311
+5 : Constant Hoisting : 11.114311
+6 : Remove redundant instructions : 11.114311
+7 : Early CSE : 11.093220
+8 : Alignment from assumptions : 11.093220
+9 : Scalar Replacement of Aggregates (DT) : 7.562005
+10 : Loop-Closed SSA Form Pass : 7.561425
+11 : Remove redundant instructions : 7.561425
+12 : Induction Variable Simplification : 8.556464
+SpeedUp : 8.538546

@@ -1,0 +1,16 @@
+1 : Induction Variable Simplification : 91.525496
+2 : Loop Invariant Code Motion : 91.525496
+3 : Loop-Closed SSA Form Pass : 91.525496
+4 : Combine redundant instructions : 76.325434
+5 : Add DWARF path discriminators : 76.325434
+6 : Constant Hoisting : 76.325434
+7 : Reassociate expressions : 76.325434
+8 : Early CSE : 66.250404
+9 : Early CSE : 66.225404
+10 : Loop Invariant Code Motion : 66.225404
+11 : Assign names to anonymous instructions : 66.225404
+12 : Early CSE : 66.225404
+13 : Alignment from assumptions : 66.225404
+14 : Constant Hoisting : 66.225404
+15 : Global Value Numbering : 66.225444
+SpeedUp : 1.382029

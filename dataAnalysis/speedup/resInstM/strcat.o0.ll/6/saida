@@ -1,0 +1,12 @@
+1 : Loop Invariant Code Motion : 3.500003
+2 : MemCpy Optimization : 3.500003
+3 : Remove redundant instructions : 3.500003
+4 : Lower atomic intrinsics to non-atomic form : 3.500003
+5 : Scalar Replacement of Aggregates (DT) : 2.100002
+6 : Dead Instruction Elimination : 1.900002
+7 : Value Propagation : 1.900002
+8 : Alignment from assumptions : 1.900002
+9 : Reassociate expressions : 1.900002
+10 : Scalar Replacement of Aggregates (DT) : 1.900002
+11 : Loop Invariant Code Motion : 2.000002
+SpeedUp : 1.750000

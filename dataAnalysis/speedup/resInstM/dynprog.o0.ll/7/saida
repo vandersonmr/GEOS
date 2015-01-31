@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 160.971994
+2 : Reassociate expressions : 160.971994
+3 : Scalar Replacement of Aggregates (DT) : 105.829661
+4 : Early CSE : 62.920210
+5 : Dead Instruction Elimination : 62.920210
+6 : Lower atomic intrinsics to non-atomic form : 62.920210
+7 : Loop Invariant Code Motion : 58.157835
+8 : Dead Code Elimination : 56.178035
+9 : Alignment from assumptions : 56.178035
+10 : Global Value Numbering : 19.251959
+11 : Dead Instruction Elimination : 19.251959
+12 : Assign names to anonymous instructions : 19.251959
+13 : Remove redundant instructions : 19.251959
+14 : Reassociate expressions : 19.251959
+15 : SROA : 19.251959
+16 : Assign names to anonymous instructions : 19.251959
+17 : Dead Code Elimination : 19.251959
+18 : Code sinking : 19.251959
+19 : Alignment from assumptions : 19.251959
+20 : Assign names to anonymous instructions : 19.251959
+SpeedUp : 8.361330

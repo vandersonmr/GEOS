@@ -1,0 +1,6 @@
+1 : MemCpy Optimization : 79681.857635
+2 : Dead Instruction Elimination : 79681.857635
+3 : Value Propagation : 79681.857635
+4 : Value Propagation : 79681.857635
+5 : Early CSE : 100749.045389
+SpeedUp : 0.790894

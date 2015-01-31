@@ -1,0 +1,12 @@
+1 : Value Propagation : 111.875617
+2 : Loop Invariant Code Motion : 111.875617
+3 : Dead Instruction Elimination : 111.875617
+4 : SROA : 111.875617
+5 : Constant Hoisting : 111.875617
+6 : Add DWARF path discriminators : 111.875617
+7 : SROA : 111.875617
+8 : Global Value Numbering : 106.800667
+9 : Promote Memory to Register : 51.100324
+10 : Constant Hoisting : 46.000304
+11 : Loop Invariant Code Motion : 51.000324
+SpeedUp : 2.193626

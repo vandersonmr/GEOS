@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 311.010630
+2 : Assign names to anonymous instructions : 311.010630
+3 : Assign names to anonymous instructions : 311.010630
+4 : Early CSE : 288.837990
+5 : Scalar Replacement of Aggregates (DT) : 143.749004
+6 : Code sinking : 138.626371
+7 : Remove redundant instructions : 138.626371
+8 : Reassociate expressions : 138.626371
+9 : Dead Code Elimination : 138.626371
+10 : Aggressive Dead Code Elimination : 138.626371
+11 : Early CSE : 138.626371
+12 : Assign names to anonymous instructions : 138.626371
+13 : Lower atomic intrinsics to non-atomic form : 138.626371
+14 : Scalar Replacement of Aggregates (DT) : 138.626371
+15 : SROA : 138.626371
+16 : SROA : 138.626371
+17 : Dead Code Elimination : 138.626371
+18 : SROA : 138.626371
+19 : Dead Code Elimination : 138.626371
+20 : MemCpy Optimization : 138.626371
+SpeedUp : 2.243517

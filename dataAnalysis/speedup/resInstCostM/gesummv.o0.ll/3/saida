@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 15.364001
+2 : Alignment from assumptions : 15.364001
+3 : MemCpy Optimization : 15.364001
+4 : Promote Memory to Register : 8.642080
+5 : MergedLoadStoreMotion : 8.642080
+6 : Dead Instruction Elimination : 8.642080
+7 : MemCpy Optimization : 8.642080
+8 : Lower atomic intrinsics to non-atomic form : 8.642080
+9 : Add DWARF path discriminators : 8.642080
+10 : Induction Variable Simplification : 8.642080
+11 : Global Value Numbering : 7.041720
+12 : Remove redundant instructions : 7.041720
+13 : Dead Instruction Elimination : 7.041720
+14 : Lower atomic intrinsics to non-atomic form : 7.041720
+15 : Assign names to anonymous instructions : 7.041720
+16 : Value Propagation : 7.041720
+17 : Loop-Closed SSA Form Pass : 7.041720
+18 : Reassociate expressions : 7.041720
+19 : Global Value Numbering : 7.041720
+20 : MemCpy Optimization : 7.041720
+SpeedUp : 2.181853

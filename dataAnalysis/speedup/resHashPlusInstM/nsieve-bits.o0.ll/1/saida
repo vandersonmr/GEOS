@@ -1,0 +1,15 @@
+1 : Reassociate expressions : 7344.689624
+2 : Assign names to anonymous instructions : 7344.689624
+3 : MergedLoadStoreMotion : 7344.689624
+4 : SROA : 7344.689624
+5 : Alignment from assumptions : 7344.689624
+6 : Aggressive Dead Code Elimination : 7344.689624
+7 : MemCpy Optimization : 7344.689624
+8 : Scalar Replacement of Aggregates (DT) : 537.821393
+9 : SROA : 524.051020
+10 : Reassociate expressions : 524.051020
+11 : Aggressive Dead Code Elimination : 524.051020
+12 : Dead Code Elimination : 524.051020
+13 : Reassociate expressions : 524.051020
+14 : Loop-Closed SSA Form Pass : 1898.501630
+SpeedUp : 3.868677

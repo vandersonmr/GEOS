@@ -1,0 +1,16 @@
+1 : SROA : 7183.798785
+2 : Code sinking : 7183.798785
+3 : Dead Instruction Elimination : 7183.798785
+4 : Global Value Numbering : 7093.536478
+5 : Value Propagation : 7093.536478
+6 : Aggressive Dead Code Elimination : 7093.536478
+7 : Early CSE : 6897.870029
+8 : Loop Invariant Code Motion : 6896.582814
+9 : Value Propagation : 6896.460029
+10 : Scalar Replacement of Aggregates (DT) : 3521.750181
+11 : Add DWARF path discriminators : 3421.491812
+12 : Dead Code Elimination : 3414.735736
+13 : Remove redundant instructions : 3414.735736
+14 : Loop-Closed SSA Form Pass : 3413.946420
+15 : Value Propagation : 3414.735736
+SpeedUp : 2.103764

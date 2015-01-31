@@ -1,0 +1,15 @@
+1 : Early CSE : 470.000000
+2 : MemCpy Optimization : 470.000000
+3 : Constant Hoisting : 470.000000
+4 : Alignment from assumptions : 470.000000
+5 : Scalar Replacement of Aggregates (DT) : 315.000000
+6 : Assign names to anonymous instructions : 284.000000
+7 : Aggressive Dead Code Elimination : 270.000000
+8 : Lower atomic intrinsics to non-atomic form : 270.000000
+9 : Lower atomic intrinsics to non-atomic form : 270.000000
+10 : Dead Code Elimination : 270.000000
+11 : Remove redundant instructions : 270.000000
+12 : Constant Hoisting : 270.000000
+13 : Dead Code Elimination : 270.000000
+14 : Loop-Closed SSA Form Pass : 271.000000
+SpeedUp : 1.966790

@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 1135.128548
+2 : Induction Variable Simplification : 1135.128548
+3 : Dead Instruction Elimination : 1135.128548
+4 : Lower atomic intrinsics to non-atomic form : 1135.128548
+5 : Code sinking : 1135.128548
+6 : Code sinking : 1135.128548
+7 : Add DWARF path discriminators : 1135.128548
+8 : Remove redundant instructions : 1135.128548
+9 : Add DWARF path discriminators : 1135.128548
+10 : MemCpy Optimization : 1135.128548
+11 : Alignment from assumptions : 1135.128548
+12 : Dead Code Elimination : 1135.128548
+13 : Induction Variable Simplification : 1135.128548
+14 : Early CSE : 1121.316092
+15 : Global Value Numbering : 699.891877
+16 : MemCpy Optimization : 699.891877
+17 : Aggressive Dead Code Elimination : 699.891877
+18 : Remove redundant instructions : 699.891877
+19 : Remove redundant instructions : 699.891877
+20 : Value Propagation : 699.891877
+SpeedUp : 1.757567

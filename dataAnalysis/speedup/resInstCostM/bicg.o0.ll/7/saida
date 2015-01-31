@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 10.244081
+2 : Dead Instruction Elimination : 10.244081
+3 : Add DWARF path discriminators : 10.244081
+4 : Loop-Closed SSA Form Pass : 10.244081
+5 : Assign names to anonymous instructions : 10.244081
+6 : Alignment from assumptions : 10.244081
+7 : Constant Hoisting : 10.244081
+8 : SROA : 10.244081
+9 : Constant Hoisting : 10.244081
+10 : Reassociate expressions : 10.244081
+11 : Add DWARF path discriminators : 10.244081
+12 : Assign names to anonymous instructions : 10.244081
+13 : Global Value Numbering : 0.964041
+14 : Early CSE : 0.963361
+15 : Scalar Replacement of Aggregates (DT) : 0.321920
+16 : Early CSE : 0.321760
+17 : Dead Instruction Elimination : 0.321760
+18 : Remove redundant instructions : 0.321760
+19 : Loop Invariant Code Motion : 0.321640
+20 : Reassociate expressions : 0.321640
+SpeedUp : 31.849488

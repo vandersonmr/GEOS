@@ -1,0 +1,21 @@
+1 : Induction Variable Simplification : 40.300808
+2 : MemCpy Optimization : 40.300808
+3 : Alignment from assumptions : 40.300808
+4 : Code sinking : 40.300808
+5 : MergedLoadStoreMotion : 40.300808
+6 : Lower atomic intrinsics to non-atomic form : 40.300808
+7 : Dead Code Elimination : 40.300808
+8 : Promote Memory to Register : 21.903794
+9 : Aggressive Dead Code Elimination : 21.903794
+10 : Add DWARF path discriminators : 21.903794
+11 : SROA : 21.903794
+12 : Loop Invariant Code Motion : 21.770880
+13 : Dead Instruction Elimination : 21.770880
+14 : Value Propagation : 21.770880
+15 : Scalar Replacement of Aggregates (DT) : 21.770880
+16 : Constant Hoisting : 21.770880
+17 : Constant Hoisting : 21.770880
+18 : Induction Variable Simplification : 21.770880
+19 : Early CSE : 21.100887
+20 : Induction Variable Simplification : 21.100887
+SpeedUp : 1.909911

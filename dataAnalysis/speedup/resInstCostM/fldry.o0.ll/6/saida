@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 448.000000
+2 : Dead Code Elimination : 448.000000
+3 : Scalar Replacement of Aggregates (DT) : 239.000000
+4 : Early CSE : 190.000000
+5 : Loop-Closed SSA Form Pass : 190.000000
+6 : MemCpy Optimization : 190.000000
+7 : Promote Memory to Register : 190.000000
+8 : MemCpy Optimization : 190.000000
+9 : Combine redundant instructions : 187.000000
+10 : Dead Code Elimination : 187.000000
+11 : Value Propagation : 187.000000
+12 : Lower atomic intrinsics to non-atomic form : 187.000000
+13 : Remove redundant instructions : 187.000000
+14 : Loop Invariant Code Motion : 187.000000
+15 : Remove redundant instructions : 187.000000
+16 : Dead Code Elimination : 187.000000
+17 : Assign names to anonymous instructions : 187.000000
+18 : Induction Variable Simplification : 187.000000
+19 : Remove redundant instructions : 187.000000
+20 : Promote Memory to Register : 187.000000
+SpeedUp : 2.395722

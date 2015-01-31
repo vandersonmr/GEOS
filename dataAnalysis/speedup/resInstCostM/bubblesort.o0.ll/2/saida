@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 3.141947
+2 : Remove redundant instructions : 3.141947
+3 : Remove redundant instructions : 3.141947
+4 : Promote Memory to Register : 2.325727
+5 : Value Propagation : 2.325727
+6 : Value Propagation : 2.325727
+7 : Combine redundant instructions : 2.325727
+8 : Dead Code Elimination : 2.325727
+9 : Loop Invariant Code Motion : 2.325727
+10 : Code sinking : 2.325727
+11 : Scalar Replacement of Aggregates (DT) : 2.325727
+12 : Loop Invariant Code Motion : 2.325727
+13 : Reassociate expressions : 2.325727
+14 : SROA : 2.325727
+15 : Value Propagation : 2.325727
+16 : Induction Variable Simplification : 2.012015
+17 : Value Propagation : 2.011013
+18 : MemCpy Optimization : 2.011013
+19 : Global Value Numbering : 1.511010
+20 : Assign names to anonymous instructions : 1.511010
+SpeedUp : 2.372530

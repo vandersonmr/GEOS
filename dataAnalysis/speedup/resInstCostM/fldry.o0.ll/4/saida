@@ -1,0 +1,21 @@
+1 : Scalar Replacement of Aggregates (DT) : 239.000000
+2 : Loop Invariant Code Motion : 212.000000
+3 : Dead Code Elimination : 205.000000
+4 : Promote Memory to Register : 205.000000
+5 : Scalar Replacement of Aggregates (DT) : 205.000000
+6 : Alignment from assumptions : 205.000000
+7 : Value Propagation : 205.000000
+8 : Combine redundant instructions : 195.000000
+9 : Assign names to anonymous instructions : 195.000000
+10 : MemCpy Optimization : 195.000000
+11 : Add DWARF path discriminators : 195.000000
+12 : Assign names to anonymous instructions : 195.000000
+13 : Induction Variable Simplification : 195.000000
+14 : Assign names to anonymous instructions : 195.000000
+15 : Aggressive Dead Code Elimination : 195.000000
+16 : MergedLoadStoreMotion : 195.000000
+17 : Promote Memory to Register : 195.000000
+18 : Aggressive Dead Code Elimination : 195.000000
+19 : MergedLoadStoreMotion : 195.000000
+20 : Assign names to anonymous instructions : 195.000000
+SpeedUp : 2.297436

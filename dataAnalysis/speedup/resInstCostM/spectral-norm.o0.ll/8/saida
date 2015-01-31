@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 59.222512
+2 : Loop-Closed SSA Form Pass : 59.222512
+3 : Dead Code Elimination : 59.222512
+4 : MergedLoadStoreMotion : 59.222512
+5 : Lower atomic intrinsics to non-atomic form : 59.222512
+6 : Reassociate expressions : 59.222512
+7 : Reassociate expressions : 59.222512
+8 : Early CSE : 51.220792
+9 : MergedLoadStoreMotion : 51.220792
+10 : Dead Code Elimination : 51.220792
+11 : Alignment from assumptions : 51.220792
+12 : Loop-Closed SSA Form Pass : 51.220792
+13 : Alignment from assumptions : 51.220792
+14 : SROA : 51.220792
+15 : Induction Variable Simplification : 51.220792
+16 : Promote Memory to Register : 32.011663
+17 : Aggressive Dead Code Elimination : 28.810823
+18 : Loop Invariant Code Motion : 28.810823
+19 : Add DWARF path discriminators : 28.810823
+20 : Constant Hoisting : 28.810823
+SpeedUp : 2.055565

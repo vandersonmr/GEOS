@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 35.739784
+2 : Dead Instruction Elimination : 35.739784
+3 : Constant Hoisting : 35.739784
+4 : Value Propagation : 35.739784
+5 : Scalar Replacement of Aggregates (DT) : 35.739784
+6 : MemCpy Optimization : 35.739784
+7 : Loop-Closed SSA Form Pass : 35.739784
+8 : Alignment from assumptions : 35.739784
+9 : Loop-Closed SSA Form Pass : 35.739784
+10 : Loop-Closed SSA Form Pass : 35.739784
+11 : Induction Variable Simplification : 35.230784
+12 : Promote Memory to Register : 35.230784
+13 : Remove redundant instructions : 35.230283
+14 : Early CSE : 31.231784
+15 : Remove redundant instructions : 31.231784
+16 : Dead Instruction Elimination : 31.231784
+17 : Aggressive Dead Code Elimination : 31.231784
+18 : Loop Invariant Code Motion : 25.708787
+19 : Early CSE : 25.708787
+20 : Value Propagation : 25.708787
+SpeedUp : 2.331463

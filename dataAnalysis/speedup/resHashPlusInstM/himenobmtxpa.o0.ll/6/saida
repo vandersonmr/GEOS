@@ -1,0 +1,20 @@
+1 : Reassociate expressions : 785.985689
+2 : Remove redundant instructions : 785.985689
+3 : Promote Memory to Register : 464.143685
+4 : Scalar Replacement of Aggregates (DT) : 464.143685
+5 : Code sinking : 464.143685
+6 : Induction Variable Simplification : 464.143685
+7 : Loop Invariant Code Motion : 451.664722
+8 : Dead Instruction Elimination : 451.664722
+9 : MemCpy Optimization : 451.664722
+10 : Code sinking : 451.664722
+11 : MemCpy Optimization : 451.664722
+12 : MergedLoadStoreMotion : 451.664722
+13 : Promote Memory to Register : 451.664722
+14 : Value Propagation : 451.664722
+15 : Dead Instruction Elimination : 451.664722
+16 : MemCpy Optimization : 451.664722
+17 : Induction Variable Simplification : 451.664722
+18 : MergedLoadStoreMotion : 451.664722
+19 : Induction Variable Simplification : 451.664722
+20 : Remove redundant instructions : 

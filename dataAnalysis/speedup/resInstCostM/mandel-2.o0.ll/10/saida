@@ -1,0 +1,21 @@
+1 : Early CSE : 73.720844
+2 : Code sinking : 73.720844
+3 : Add DWARF path discriminators : 73.720844
+4 : Early CSE : 73.720844
+5 : Alignment from assumptions : 73.720844
+6 : Constant Hoisting : 73.720844
+7 : MergedLoadStoreMotion : 73.720844
+8 : Loop-Closed SSA Form Pass : 73.720844
+9 : Value Propagation : 73.720844
+10 : Aggressive Dead Code Elimination : 73.720844
+11 : MemCpy Optimization : 73.720844
+12 : Remove redundant instructions : 73.720844
+13 : MemCpy Optimization : 73.720844
+14 : Induction Variable Simplification : 73.720844
+15 : Constant Hoisting : 73.720844
+16 : Constant Hoisting : 73.720844
+17 : Scalar Replacement of Aggregates (DT) : 62.741444
+18 : Reassociate expressions : 62.741444
+19 : MergedLoadStoreMotion : 62.741321
+20 : Alignment from assumptions : 62.741321
+SpeedUp : 1.674977

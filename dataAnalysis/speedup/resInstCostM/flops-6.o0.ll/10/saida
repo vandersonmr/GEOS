@@ -1,0 +1,21 @@
+1 : MemCpy Optimization : 337.499999
+2 : Lower atomic intrinsics to non-atomic form : 337.499999
+3 : Add DWARF path discriminators : 337.499999
+4 : Code sinking : 337.499999
+5 : Code sinking : 337.499999
+6 : Early CSE : 285.937499
+7 : Loop Invariant Code Motion : 285.937499
+8 : Loop Invariant Code Motion : 285.937499
+9 : Constant Hoisting : 285.937499
+10 : Dead Code Elimination : 285.937499
+11 : Alignment from assumptions : 285.937499
+12 : Promote Memory to Register : 260.937499
+13 : Combine redundant instructions : 237.499999
+14 : Promote Memory to Register : 237.499999
+15 : Constant Hoisting : 237.499999
+16 : Early CSE : 237.499999
+17 : Remove redundant instructions : 237.499999
+18 : Combine redundant instructions : 237.499999
+19 : Lower atomic intrinsics to non-atomic form : 237.499999
+20 : Dead Instruction Elimination : 237.499999
+SpeedUp : 1.421053

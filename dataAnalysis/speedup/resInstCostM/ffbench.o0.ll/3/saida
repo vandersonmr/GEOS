@@ -1,0 +1,18 @@
+1 : Dead Code Elimination : 73.443919
+2 : Induction Variable Simplification : 73.443919
+3 : MergedLoadStoreMotion : 73.443919
+4 : Remove redundant instructions : 73.443919
+5 : Induction Variable Simplification : 73.443919
+6 : Loop Invariant Code Motion : 73.443919
+7 : Aggressive Dead Code Elimination : 73.443919
+8 : Add DWARF path discriminators : 73.443919
+9 : Scalar Replacement of Aggregates (DT) : 40.568518
+10 : Early CSE : 31.813210
+11 : Early CSE : 31.813210
+12 : Promote Memory to Register : 31.813210
+13 : Global Value Numbering : 3.227742
+14 : SROA : 3.227742
+15 : Remove redundant instructions : 3.227742
+16 : Add DWARF path discriminators : 3.227742
+17 : Reassociate expressions : 3.266601
+SpeedUp : 22.483285

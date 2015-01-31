@@ -1,0 +1,21 @@
+1 : Dead Instruction Elimination : 4.781890
+2 : Combine redundant instructions : 4.339421
+3 : Remove redundant instructions : 4.339421
+4 : MergedLoadStoreMotion : 4.339421
+5 : Induction Variable Simplification : 4.339421
+6 : Dead Code Elimination : 4.339421
+7 : Dead Instruction Elimination : 4.339421
+8 : Induction Variable Simplification : 4.339421
+9 : Alignment from assumptions : 4.339421
+10 : Lower atomic intrinsics to non-atomic form : 4.339421
+11 : Assign names to anonymous instructions : 4.339421
+12 : Early CSE : 3.212171
+13 : MemCpy Optimization : 3.212171
+14 : Code sinking : 3.212171
+15 : Dead Code Elimination : 3.212171
+16 : MergedLoadStoreMotion : 3.212171
+17 : Alignment from assumptions : 3.212171
+18 : Remove redundant instructions : 3.212171
+19 : Promote Memory to Register : 2.646951
+20 : Lower atomic intrinsics to non-atomic form : 1.582236
+SpeedUp : 3.022236

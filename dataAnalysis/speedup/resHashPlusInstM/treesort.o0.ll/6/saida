@@ -1,0 +1,13 @@
+1 : Remove redundant instructions : 32.100803
+2 : SROA : 32.100803
+3 : Loop-Closed SSA Form Pass : 32.100803
+4 : Early CSE : 30.892806
+5 : Dead Instruction Elimination : 30.892806
+6 : Value Propagation : 30.892806
+7 : Global Value Numbering : 29.853105
+8 : Assign names to anonymous instructions : 29.853105
+9 : Loop-Closed SSA Form Pass : 29.853105
+10 : Remove redundant instructions : 29.853105
+11 : Remove redundant instructions : 29.853105
+12 : Scalar Replacement of Aggregates (DT) : 33.717488
+SpeedUp : 0.952052

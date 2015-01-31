@@ -1,0 +1,7 @@
+1 : Lower atomic intrinsics to non-atomic form : 0.000002
+2 : Alignment from assumptions : 0.000002
+3 : Reassociate expressions : 0.000002
+4 : Induction Variable Simplification : 0.000002
+5 : Dead Instruction Elimination : 0.000002
+6 : SROA : 0.000002
+SpeedUp : 1.192708

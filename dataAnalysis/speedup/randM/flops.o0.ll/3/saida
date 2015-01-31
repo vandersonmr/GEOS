@@ -1,0 +1,4 @@
+1 : Add DWARF path discriminators : 0.000002
+2 : Aggressive Dead Code Elimination : 0.000002
+3 : Value Propagation : 0.000002
+SpeedUp : 0.960976

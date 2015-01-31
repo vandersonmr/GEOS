@@ -1,0 +1,21 @@
+1 : Value Propagation : 4.391489
+2 : Remove redundant instructions : 4.391489
+3 : MergedLoadStoreMotion : 4.391489
+4 : Promote Memory to Register : 2.421506
+5 : Assign names to anonymous instructions : 2.421506
+6 : Alignment from assumptions : 2.421506
+7 : Loop Invariant Code Motion : 2.340506
+8 : Alignment from assumptions : 2.340506
+9 : Dead Instruction Elimination : 2.340506
+10 : Constant Hoisting : 2.340506
+11 : Dead Instruction Elimination : 2.340506
+12 : Add DWARF path discriminators : 2.340506
+13 : Aggressive Dead Code Elimination : 2.340506
+14 : Reassociate expressions : 2.340506
+15 : Global Value Numbering : 1.988510
+16 : Dead Instruction Elimination : 1.988510
+17 : MemCpy Optimization : 1.988510
+18 : Add DWARF path discriminators : 1.988510
+19 : Scalar Replacement of Aggregates (DT) : 1.988510
+20 : MergedLoadStoreMotion : 1.988510
+SpeedUp : 2.208432

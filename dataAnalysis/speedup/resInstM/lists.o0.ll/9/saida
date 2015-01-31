@@ -1,0 +1,5 @@
+1 : Scalar Replacement of Aggregates (DT) : 1279.800000
+2 : Remove redundant instructions : 1243.800000
+3 : Alignment from assumptions : 1243.800000
+4 : Loop Invariant Code Motion : 1273.860000
+SpeedUp : 1.738307

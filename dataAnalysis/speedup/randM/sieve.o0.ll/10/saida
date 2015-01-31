@@ -1,0 +1,4 @@
+1 : Induction Variable Simplification : 0.000000
+2 : Loop-Closed SSA Form Pass : 0.000000
+3 : Dead Instruction Elimination : 0.000001
+SpeedUp : 1.000000

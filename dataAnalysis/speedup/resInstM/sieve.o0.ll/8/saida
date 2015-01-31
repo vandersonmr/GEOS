@@ -1,0 +1,13 @@
+1 : Value Propagation : 775.183000
+2 : MergedLoadStoreMotion : 775.183000
+3 : Reassociate expressions : 775.183000
+4 : Code sinking : 775.183000
+5 : Combine redundant instructions : 675.535800
+6 : Constant Hoisting : 675.535800
+7 : Add DWARF path discriminators : 675.535800
+8 : Remove redundant instructions : 675.535800
+9 : Dead Code Elimination : 675.535800
+10 : Loop Invariant Code Motion : 675.535800
+11 : Promote Memory to Register : 445.291200
+12 : Loop Invariant Code Motion : 459.219300
+SpeedUp : 1.688045

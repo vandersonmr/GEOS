@@ -1,0 +1,21 @@
+1 : Code sinking : 8.337617
+2 : MemCpy Optimization : 8.337617
+3 : Add DWARF path discriminators : 8.337617
+4 : Induction Variable Simplification : 8.337617
+5 : SROA : 8.337617
+6 : Assign names to anonymous instructions : 8.337617
+7 : Add DWARF path discriminators : 8.337617
+8 : Remove redundant instructions : 8.336217
+9 : Constant Hoisting : 8.336217
+10 : Add DWARF path discriminators : 8.336217
+11 : Lower atomic intrinsics to non-atomic form : 8.336217
+12 : MemCpy Optimization : 8.336217
+13 : Alignment from assumptions : 8.336217
+14 : Lower atomic intrinsics to non-atomic form : 8.336217
+15 : Code sinking : 8.336217
+16 : Code sinking : 8.336217
+17 : Alignment from assumptions : 8.336217
+18 : Scalar Replacement of Aggregates (DT) : 4.231308
+19 : MergedLoadStoreMotion : 4.231307
+20 : Dead Instruction Elimination : 4.231307
+SpeedUp : 1.970459

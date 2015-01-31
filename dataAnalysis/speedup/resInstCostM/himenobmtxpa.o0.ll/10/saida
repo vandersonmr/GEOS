@@ -1,0 +1,21 @@
+1 : Code sinking : 421.091408
+2 : Lower atomic intrinsics to non-atomic form : 421.091408
+3 : Lower atomic intrinsics to non-atomic form : 421.091408
+4 : Early CSE : 127.394998
+5 : MemCpy Optimization : 124.895476
+6 : MemCpy Optimization : 122.395953
+7 : Assign names to anonymous instructions : 122.395953
+8 : Loop Invariant Code Motion : 122.395953
+9 : MemCpy Optimization : 122.395953
+10 : Dead Instruction Elimination : 122.395953
+11 : Aggressive Dead Code Elimination : 122.395953
+12 : Remove redundant instructions : 122.395953
+13 : Constant Hoisting : 122.395953
+14 : Scalar Replacement of Aggregates (DT) : 112.259966
+15 : Loop Invariant Code Motion : 90.481338
+16 : Aggressive Dead Code Elimination : 90.478838
+17 : Constant Hoisting : 90.478838
+18 : Constant Hoisting : 90.478838
+19 : Global Value Numbering : 84.382616
+20 : Dead Instruction Elimination : 84.382616
+SpeedUp : 4.990263

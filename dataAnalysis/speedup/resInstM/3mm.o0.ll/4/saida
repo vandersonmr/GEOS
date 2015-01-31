@@ -1,0 +1,21 @@
+1 : Reassociate expressions : 1065.438978
+2 : Loop-Closed SSA Form Pass : 1065.438978
+3 : Lower atomic intrinsics to non-atomic form : 1065.438978
+4 : SROA : 1065.438978
+5 : Lower atomic intrinsics to non-atomic form : 1065.438978
+6 : MemCpy Optimization : 1065.438978
+7 : Global Value Numbering : 506.086750
+8 : Code sinking : 506.086750
+9 : Lower atomic intrinsics to non-atomic form : 506.086750
+10 : Induction Variable Simplification : 506.086750
+11 : Early CSE : 430.767280
+12 : MemCpy Optimization : 430.767280
+13 : Global Value Numbering : 430.767280
+14 : MergedLoadStoreMotion : 430.767280
+15 : SROA : 430.767280
+16 : Dead Code Elimination : 430.767280
+17 : Aggressive Dead Code Elimination : 430.767280
+18 : Loop-Closed SSA Form Pass : 430.767280
+19 : Reassociate expressions : 430.767280
+20 : Add DWARF path discriminators : 430.767280
+SpeedUp : 2.473352

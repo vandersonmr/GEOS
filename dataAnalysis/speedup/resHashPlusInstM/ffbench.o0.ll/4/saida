@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 260.984536
+2 : Alignment from assumptions : 260.984536
+3 : Lower atomic intrinsics to non-atomic form : 260.984536
+4 : Code sinking : 260.984536
+5 : Assign names to anonymous instructions : 260.984536
+6 : Dead Code Elimination : 260.984536
+7 : Promote Memory to Register : 198.905220
+8 : MergedLoadStoreMotion : 194.878671
+9 : Early CSE : 178.818246
+10 : Dead Instruction Elimination : 178.818246
+11 : Combine redundant instructions : 178.818246
+12 : Early CSE : 178.818246
+13 : Code sinking : 178.818246
+14 : Lower atomic intrinsics to non-atomic form : 178.818246
+15 : SROA : 178.818246
+16 : Assign names to anonymous instructions : 178.818246
+17 : MergedLoadStoreMotion : 178.818246
+18 : Dead Code Elimination : 178.818246
+19 : Promote Memory to Register : 178.818246
+20 : Add DWARF path discriminators : 178.818246
+SpeedUp : 1.487574

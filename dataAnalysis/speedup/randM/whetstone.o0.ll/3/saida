@@ -1,0 +1,8 @@
+1 : Constant Hoisting : 0.000003
+2 : Global Value Numbering : 0.000003
+3 : Combine redundant instructions : 0.000003
+4 : MemCpy Optimization : 0.000002
+5 : Assign names to anonymous instructions : 0.000003
+6 : Lower atomic intrinsics to non-atomic form : 0.000003
+7 : MemCpy Optimization : 0.000003
+SpeedUp : 1.119565

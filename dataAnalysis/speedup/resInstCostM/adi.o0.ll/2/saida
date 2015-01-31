@@ -1,0 +1,10 @@
+1 : Assign names to anonymous instructions : 139.453675
+2 : Code sinking : 139.453675
+3 : Early CSE : 83.806469
+4 : Loop-Closed SSA Form Pass : 83.806469
+5 : Early CSE : 83.806469
+6 : Remove redundant instructions : 83.806469
+7 : Induction Variable Simplification : 83.806469
+8 : SROA : 83.806469
+9 : Reassociate expressions : 84.854020
+SpeedUp : 1.643454

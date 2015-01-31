@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 37.606503
+2 : Induction Variable Simplification : 37.606503
+3 : Combine redundant instructions : 37.606503
+4 : Promote Memory to Register : 26.862429
+5 : MergedLoadStoreMotion : 26.862429
+6 : Assign names to anonymous instructions : 26.862429
+7 : Early CSE : 26.862429
+8 : MergedLoadStoreMotion : 26.862429
+9 : Induction Variable Simplification : 26.862429
+10 : Constant Hoisting : 26.862429
+11 : Promote Memory to Register : 26.862429
+12 : Assign names to anonymous instructions : 26.862429
+13 : MemCpy Optimization : 26.862429
+14 : Remove redundant instructions : 26.862429
+15 : MemCpy Optimization : 26.862429
+16 : Aggressive Dead Code Elimination : 26.862429
+17 : Code sinking : 26.862429
+18 : Code sinking : 26.862429
+19 : Combine redundant instructions : 26.862429
+20 : Lower atomic intrinsics to non-atomic form : 26.862429
+SpeedUp : 1.599925

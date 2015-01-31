@@ -1,0 +1,12 @@
+1 : Remove redundant instructions : 428.125000
+2 : Constant Hoisting : 428.125000
+3 : Loop Invariant Code Motion : 428.125000
+4 : Scalar Replacement of Aggregates (DT) : 328.125000
+5 : Dead Code Elimination : 303.125000
+6 : MemCpy Optimization : 303.125000
+7 : Aggressive Dead Code Elimination : 303.125000
+8 : Add DWARF path discriminators : 303.125000
+9 : Scalar Replacement of Aggregates (DT) : 303.125000
+10 : Loop-Closed SSA Form Pass : 303.125000
+11 : Global Value Numbering : 303.125000
+SpeedUp : 1.412371

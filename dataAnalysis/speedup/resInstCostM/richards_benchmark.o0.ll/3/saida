@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 76.432831
+2 : Reassociate expressions : 76.432831
+3 : Combine redundant instructions : 66.258655
+4 : Early CSE : 59.941102
+5 : Loop-Closed SSA Form Pass : 59.475824
+6 : Scalar Replacement of Aggregates (DT) : 44.149544
+7 : Add DWARF path discriminators : 42.700410
+8 : MemCpy Optimization : 42.700410
+9 : Scalar Replacement of Aggregates (DT) : 42.700410
+10 : Induction Variable Simplification : 42.700410
+11 : Dead Instruction Elimination : 42.700410
+12 : Remove redundant instructions : 42.700410
+13 : SROA : 42.700410
+14 : Lower atomic intrinsics to non-atomic form : 42.700410
+15 : Aggressive Dead Code Elimination : 42.700410
+16 : Add DWARF path discriminators : 42.700410
+17 : Constant Hoisting : 42.700410
+18 : Value Propagation : 42.700410
+19 : Combine redundant instructions : 42.700410
+20 : Loop Invariant Code Motion : 42.700410
+SpeedUp : 1.789979

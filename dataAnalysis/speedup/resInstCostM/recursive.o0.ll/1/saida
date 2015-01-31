@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 53.325519
+2 : Alignment from assumptions : 53.325519
+3 : Combine redundant instructions : 53.325519
+4 : Global Value Numbering : 53.325519
+5 : Combine redundant instructions : 53.325519
+6 : Remove redundant instructions : 53.325519
+7 : Dead Code Elimination : 53.325519
+8 : Alignment from assumptions : 53.325519
+9 : Constant Hoisting : 53.325519
+10 : Combine redundant instructions : 53.325519
+11 : Dead Instruction Elimination : 53.325519
+12 : Dead Code Elimination : 53.325519
+13 : SROA : 53.325519
+14 : Code sinking : 51.537259
+15 : Global Value Numbering : 51.537259
+16 : Promote Memory to Register : 20.681890
+17 : Reassociate expressions : 20.681890
+18 : Reassociate expressions : 20.681890
+19 : Code sinking : 20.681890
+20 : Early CSE : 20.681890
+SpeedUp : 3.370399

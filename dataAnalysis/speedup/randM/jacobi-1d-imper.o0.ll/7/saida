@@ -1,0 +1,4 @@
+1 : Constant Hoisting : 0.000001
+2 : Scalar Replacement of Aggregates (DT) : 0.000001
+3 : Lower atomic intrinsics to non-atomic form : 0.000001
+SpeedUp : 1.054545

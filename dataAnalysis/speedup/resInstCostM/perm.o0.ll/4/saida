@@ -1,0 +1,4 @@
+1 : Add DWARF path discriminators : 2.037042
+2 : Loop-Closed SSA Form Pass : 2.037042
+3 : Global Value Numbering : 2.091366
+SpeedUp : 0.974025

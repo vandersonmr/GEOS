@@ -1,0 +1,14 @@
+1 : Constant Hoisting : 111.875617
+2 : Constant Hoisting : 111.875617
+3 : Code sinking : 111.875617
+4 : Code sinking : 111.875617
+5 : Induction Variable Simplification : 111.875617
+6 : Assign names to anonymous instructions : 111.875617
+7 : MemCpy Optimization : 111.875617
+8 : Loop Invariant Code Motion : 111.875617
+9 : Aggressive Dead Code Elimination : 111.875617
+10 : Remove redundant instructions : 111.850617
+11 : Value Propagation : 111.850617
+12 : SROA : 111.850617
+13 : Reassociate expressions : 111.850617
+SpeedUp : 1.000224

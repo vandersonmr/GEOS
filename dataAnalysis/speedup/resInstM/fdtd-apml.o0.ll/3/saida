@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 152.011698
+2 : Reassociate expressions : 152.011698
+3 : Dead Code Elimination : 152.011698
+4 : Code sinking : 152.011698
+5 : Alignment from assumptions : 152.011698
+6 : Value Propagation : 152.011698
+7 : Alignment from assumptions : 152.011698
+8 : Value Propagation : 152.011698
+9 : Add DWARF path discriminators : 152.011698
+10 : Reassociate expressions : 152.011698
+11 : Remove redundant instructions : 152.011698
+12 : Lower atomic intrinsics to non-atomic form : 152.011698
+13 : Promote Memory to Register : 98.988594
+14 : Loop-Closed SSA Form Pass : 98.988594
+15 : Add DWARF path discriminators : 98.988594
+16 : Alignment from assumptions : 98.988594
+17 : Induction Variable Simplification : 75.612566
+18 : Promote Memory to Register : 75.612566
+19 : SROA : 75.612566
+20 : Value Propagation : 75.612566
+SpeedUp : 2.010403

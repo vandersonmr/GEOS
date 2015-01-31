@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 143.637873
+2 : Aggressive Dead Code Elimination : 143.637873
+3 : Remove redundant instructions : 143.637873
+4 : SROA : 143.637873
+5 : Assign names to anonymous instructions : 143.637873
+6 : Assign names to anonymous instructions : 143.637873
+7 : MergedLoadStoreMotion : 143.637873
+8 : Scalar Replacement of Aggregates (DT) : 93.362002
+9 : Combine redundant instructions : 75.429607
+10 : Assign names to anonymous instructions : 75.429607
+11 : MemCpy Optimization : 75.429607
+12 : Value Propagation : 75.429607
+13 : Induction Variable Simplification : 46.759813
+14 : Promote Memory to Register : 46.759813
+15 : Early CSE : 43.175429
+16 : Remove redundant instructions : 43.175429
+17 : Assign names to anonymous instructions : 43.175429
+18 : Add DWARF path discriminators : 43.175429
+19 : Early CSE : 43.175429
+20 : Value Propagation : 43.175429
+SpeedUp : 3.326843

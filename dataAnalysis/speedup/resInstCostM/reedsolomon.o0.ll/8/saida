@@ -1,0 +1,10 @@
+1 : MemCpy Optimization : 508.676164
+2 : MergedLoadStoreMotion : 508.676164
+3 : Promote Memory to Register : 345.852208
+4 : Aggressive Dead Code Elimination : 345.852208
+5 : Combine redundant instructions : 338.525343
+6 : Lower atomic intrinsics to non-atomic form : 338.525343
+7 : Lower atomic intrinsics to non-atomic form : 338.525343
+8 : Constant Hoisting : 338.525343
+9 : Reassociate expressions : 338.674304
+SpeedUp : 1.501963

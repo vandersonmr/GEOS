@@ -1,0 +1,7 @@
+1 : Dead Instruction Elimination : 3599.805556
+2 : Dead Instruction Elimination : 3599.805556
+3 : Combine redundant instructions : 3367.974635
+4 : Promote Memory to Register : 2188.267076
+5 : Promote Memory to Register : 2188.234145
+6 : Alignment from assumptions : 2188.234145
+7 : Induction Variable Simplification : 2324.009235

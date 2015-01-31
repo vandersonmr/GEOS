@@ -1,0 +1,10 @@
+1 : Scalar Replacement of Aggregates (DT) : 595.613768
+2 : Remove redundant instructions : 595.582518
+3 : Dead Instruction Elimination : 595.582518
+4 : SROA : 595.582518
+5 : SROA : 595.582518
+6 : Dead Instruction Elimination : 595.582518
+7 : Scalar Replacement of Aggregates (DT) : 595.582518
+8 : Constant Hoisting : 595.582518
+9 : Early CSE : 641.830557
+SpeedUp : 1.068167

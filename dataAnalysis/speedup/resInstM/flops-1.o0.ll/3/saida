@@ -1,0 +1,21 @@
+1 : Code sinking : 268.750000
+2 : Reassociate expressions : 268.750000
+3 : Code sinking : 268.750000
+4 : Assign names to anonymous instructions : 268.750000
+5 : MemCpy Optimization : 268.750000
+6 : Loop Invariant Code Motion : 268.750000
+7 : Code sinking : 268.750000
+8 : Reassociate expressions : 268.750000
+9 : Dead Instruction Elimination : 268.750000
+10 : Induction Variable Simplification : 268.750000
+11 : Dead Code Elimination : 268.750000
+12 : MergedLoadStoreMotion : 268.750000
+13 : Dead Instruction Elimination : 268.750000
+14 : Code sinking : 268.750000
+15 : SROA : 268.750000
+16 : Remove redundant instructions : 268.750000
+17 : Promote Memory to Register : 209.375000
+18 : Constant Hoisting : 168.750000
+19 : MemCpy Optimization : 168.750000
+20 : Constant Hoisting : 168.750000
+SpeedUp : 1.592593

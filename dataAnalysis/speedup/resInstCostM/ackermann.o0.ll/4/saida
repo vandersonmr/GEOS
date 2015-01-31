@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 0.097602
+2 : Promote Memory to Register : 0.097602
+3 : Value Propagation : 0.097602
+4 : Alignment from assumptions : 0.097602
+5 : Scalar Replacement of Aggregates (DT) : 0.097602
+6 : Constant Hoisting : 0.097602
+7 : Add DWARF path discriminators : 0.097602
+8 : Value Propagation : 0.097602
+9 : Constant Hoisting : 0.097602
+10 : Dead Instruction Elimination : 0.097602
+11 : Aggressive Dead Code Elimination : 0.097602
+12 : Add DWARF path discriminators : 0.097602
+13 : Scalar Replacement of Aggregates (DT) : 0.097602
+14 : Dead Instruction Elimination : 0.097602
+15 : Dead Instruction Elimination : 0.097602
+16 : Constant Hoisting : 0.097602
+17 : Dead Code Elimination : 0.097602
+18 : Remove redundant instructions : 0.097602
+19 : Dead Code Elimination : 0.097602
+20 : Lower atomic intrinsics to non-atomic form : 0.097602
+SpeedUp : 3.855295

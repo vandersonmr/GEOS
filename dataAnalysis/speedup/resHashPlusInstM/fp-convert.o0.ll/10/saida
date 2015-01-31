@@ -1,0 +1,8 @@
+1 : Reassociate expressions : 3140.620693
+2 : SROA : 3140.620693
+3 : Assign names to anonymous instructions : 3140.620693
+4 : Alignment from assumptions : 3140.620693
+5 : Constant Hoisting : 3140.620693
+6 : Add DWARF path discriminators : 3140.620693
+7 : Scalar Replacement of Aggregates (DT) : 87796.028248
+SpeedUp : 0.035772

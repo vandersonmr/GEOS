@@ -1,0 +1,6 @@
+1 : Scalar Replacement of Aggregates (DT) : 2162.436405
+2 : Reassociate expressions : 2157.057210
+3 : Dead Code Elimination : 2157.057210
+4 : Value Propagation : 2157.057210
+5 : Loop Invariant Code Motion : 2426.016962
+SpeedUp : 0.944429

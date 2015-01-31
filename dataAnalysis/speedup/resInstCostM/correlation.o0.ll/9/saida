@@ -1,0 +1,21 @@
+1 : Lower atomic intrinsics to non-atomic form : 191.301411
+2 : MergedLoadStoreMotion : 191.301411
+3 : Induction Variable Simplification : 191.301411
+4 : Loop Invariant Code Motion : 191.301411
+5 : Lower atomic intrinsics to non-atomic form : 191.301411
+6 : Induction Variable Simplification : 191.301411
+7 : Early CSE : 146.081146
+8 : MergedLoadStoreMotion : 146.081146
+9 : Combine redundant instructions : 120.985956
+10 : Constant Hoisting : 120.985956
+11 : Scalar Replacement of Aggregates (DT) : 80.640590
+12 : Constant Hoisting : 70.535565
+13 : Combine redundant instructions : 70.535565
+14 : Value Propagation : 70.535565
+15 : Aggressive Dead Code Elimination : 70.535565
+16 : Global Value Numbering : 0.280781
+17 : Induction Variable Simplification : 0.280781
+18 : Add DWARF path discriminators : 0.280781
+19 : Scalar Replacement of Aggregates (DT) : 0.280781
+20 : MemCpy Optimization : 0.280781
+SpeedUp : 681.320096

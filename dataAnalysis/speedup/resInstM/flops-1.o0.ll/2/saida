@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 268.750000
+2 : MergedLoadStoreMotion : 268.750000
+3 : SROA : 268.750000
+4 : Value Propagation : 268.750000
+5 : Loop Invariant Code Motion : 268.750000
+6 : MemCpy Optimization : 268.750000
+7 : Dead Instruction Elimination : 268.750000
+8 : Constant Hoisting : 268.750000
+9 : MemCpy Optimization : 268.750000
+10 : Constant Hoisting : 268.750000
+11 : Scalar Replacement of Aggregates (DT) : 209.375000
+12 : Value Propagation : 187.500000
+13 : MemCpy Optimization : 184.375000
+14 : Loop Invariant Code Motion : 181.250000
+15 : Promote Memory to Register : 178.125000
+16 : Constant Hoisting : 175.000000
+17 : Lower atomic intrinsics to non-atomic form : 171.875000
+18 : Alignment from assumptions : 171.875000
+19 : Loop-Closed SSA Form Pass : 171.875000
+20 : Loop-Closed SSA Form Pass : 171.875000
+SpeedUp : 1.563636

@@ -1,0 +1,7 @@
+1 : Promote Memory to Register : 60.000000
+2 : Reassociate expressions : 60.000000
+3 : Induction Variable Simplification : 60.000000
+4 : Reassociate expressions : 60.000000
+5 : Dead Instruction Elimination : 60.000000
+6 : Code sinking : 64.000000
+SpeedUp : 1.125000

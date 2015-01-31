@@ -1,0 +1,18 @@
+1 : Assign names to anonymous instructions : 59.939074
+2 : Reassociate expressions : 59.939074
+3 : Remove redundant instructions : 59.938573
+4 : Loop-Closed SSA Form Pass : 59.938573
+5 : Alignment from assumptions : 59.938573
+6 : Global Value Numbering : 8.083139
+7 : Value Propagation : 8.083139
+8 : Alignment from assumptions : 8.083139
+9 : Assign names to anonymous instructions : 8.083139
+10 : Value Propagation : 8.083139
+11 : Dead Code Elimination : 8.083139
+12 : Early CSE : 8.068548
+13 : Dead Instruction Elimination : 8.068548
+14 : Scalar Replacement of Aggregates (DT) : 3.036813
+15 : Dead Instruction Elimination : 3.036303
+16 : SROA : 3.036303
+17 : Loop Invariant Code Motion : 4.530275
+SpeedUp : 13.230781

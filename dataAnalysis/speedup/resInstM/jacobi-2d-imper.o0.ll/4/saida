@@ -1,0 +1,21 @@
+1 : Promote Memory to Register : 11.648142
+2 : Alignment from assumptions : 11.648142
+3 : Add DWARF path discriminators : 11.648142
+4 : Assign names to anonymous instructions : 11.648142
+5 : Reassociate expressions : 11.648142
+6 : Combine redundant instructions : 10.032919
+7 : Aggressive Dead Code Elimination : 10.032919
+8 : Loop-Closed SSA Form Pass : 10.032919
+9 : Loop Invariant Code Motion : 7.980493
+10 : Global Value Numbering : 5.787437
+11 : Induction Variable Simplification : 5.198457
+12 : Dead Code Elimination : 5.198457
+13 : Constant Hoisting : 5.198457
+14 : Scalar Replacement of Aggregates (DT) : 5.198457
+15 : Remove redundant instructions : 5.198457
+16 : Scalar Replacement of Aggregates (DT) : 5.198457
+17 : Combine redundant instructions : 5.198457
+18 : Promote Memory to Register : 5.198457
+19 : Early CSE : 5.198457
+20 : Constant Hoisting : 5.198457
+SpeedUp : 3.341859

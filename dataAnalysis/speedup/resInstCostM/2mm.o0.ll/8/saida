@@ -1,0 +1,21 @@
+1 : SROA : 592.090144
+2 : Scalar Replacement of Aggregates (DT) : 344.415806
+3 : Constant Hoisting : 344.415806
+4 : Add DWARF path discriminators : 344.415806
+5 : MergedLoadStoreMotion : 344.415806
+6 : Add DWARF path discriminators : 344.415806
+7 : Dead Code Elimination : 344.415806
+8 : Reassociate expressions : 344.415806
+9 : Induction Variable Simplification : 344.405320
+10 : Induction Variable Simplification : 344.405320
+11 : Constant Hoisting : 344.405320
+12 : MemCpy Optimization : 344.405320
+13 : Combine redundant instructions : 279.854920
+14 : Combine redundant instructions : 279.854920
+15 : SROA : 279.854920
+16 : Code sinking : 279.854920
+17 : Remove redundant instructions : 279.854920
+18 : Value Propagation : 279.854920
+19 : Constant Hoisting : 279.854920
+20 : Remove redundant instructions : 279.854920
+SpeedUp : 2.115704

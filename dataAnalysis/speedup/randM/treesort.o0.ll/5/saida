@@ -1,0 +1,7 @@
+1 : Remove redundant instructions : 0.000001
+2 : Lower atomic intrinsics to non-atomic form : 0.000001
+3 : Aggressive Dead Code Elimination : 0.000001
+4 : Aggressive Dead Code Elimination : 0.000001
+5 : MergedLoadStoreMotion : 0.000001
+6 : Reassociate expressions : 0.000001
+SpeedUp : 0.897059

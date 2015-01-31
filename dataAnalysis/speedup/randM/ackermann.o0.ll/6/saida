@@ -1,0 +1,5 @@
+1 : Combine redundant instructions : 0.000000
+2 : Combine redundant instructions : 0.000000
+3 : Early CSE : 0.000001
+4 : Remove redundant instructions : 0.000000
+SpeedUp : 1.181818

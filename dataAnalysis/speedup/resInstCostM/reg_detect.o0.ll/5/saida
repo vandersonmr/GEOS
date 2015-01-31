@@ -1,0 +1,19 @@
+1 : Add DWARF path discriminators : 8.337617
+2 : Scalar Replacement of Aggregates (DT) : 4.232708
+3 : Reassociate expressions : 4.232708
+4 : Early CSE : 3.026007
+5 : MemCpy Optimization : 3.026007
+6 : Combine redundant instructions : 2.467406
+7 : Assign names to anonymous instructions : 2.467406
+8 : Dead Instruction Elimination : 2.467406
+9 : Loop-Closed SSA Form Pass : 2.467406
+10 : Constant Hoisting : 2.467406
+11 : Lower atomic intrinsics to non-atomic form : 2.467406
+12 : Early CSE : 2.467406
+13 : Reassociate expressions : 2.467406
+14 : Add DWARF path discriminators : 2.467406
+15 : Value Propagation : 2.467406
+16 : Reassociate expressions : 2.467406
+17 : Lower atomic intrinsics to non-atomic form : 2.467406
+18 : Induction Variable Simplification : 2.467406
+SpeedUp : 3.379102

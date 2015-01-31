@@ -1,0 +1,18 @@
+1 : Reassociate expressions : 2067.011333
+2 : Aggressive Dead Code Elimination : 2067.011333
+3 : Assign names to anonymous instructions : 2067.011333
+4 : Dead Code Elimination : 2067.011333
+5 : Loop Invariant Code Motion : 2067.011288
+6 : Induction Variable Simplification : 2067.011288
+7 : Loop Invariant Code Motion : 2067.011288
+8 : Combine redundant instructions : 2045.476605
+9 : Add DWARF path discriminators : 2045.476605
+10 : Assign names to anonymous instructions : 2045.476605
+11 : Lower atomic intrinsics to non-atomic form : 2045.476605
+12 : MemCpy Optimization : 2045.476605
+13 : Lower atomic intrinsics to non-atomic form : 2045.476605
+14 : Loop-Closed SSA Form Pass : 2045.476605
+15 : SROA : 2045.476605
+16 : Scalar Replacement of Aggregates (DT) : 1273.318423
+17 : Code sinking : 1366.357312
+SpeedUp : 1.512790

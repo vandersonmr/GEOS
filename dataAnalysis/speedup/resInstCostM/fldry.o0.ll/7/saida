@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 448.000000
+2 : Promote Memory to Register : 239.000000
+3 : Dead Code Elimination : 208.000000
+4 : Lower atomic intrinsics to non-atomic form : 208.000000
+5 : Dead Code Elimination : 208.000000
+6 : Loop Invariant Code Motion : 205.000000
+7 : MergedLoadStoreMotion : 205.000000
+8 : Aggressive Dead Code Elimination : 205.000000
+9 : Constant Hoisting : 205.000000
+10 : Add DWARF path discriminators : 205.000000
+11 : Loop Invariant Code Motion : 205.000000
+12 : Scalar Replacement of Aggregates (DT) : 205.000000
+13 : Early CSE : 186.000000
+14 : Reassociate expressions : 186.000000
+15 : Value Propagation : 186.000000
+16 : Loop-Closed SSA Form Pass : 186.000000
+17 : Aggressive Dead Code Elimination : 186.000000
+18 : Add DWARF path discriminators : 186.000000
+19 : Constant Hoisting : 186.000000
+20 : Induction Variable Simplification : 186.000000
+SpeedUp : 2.408602

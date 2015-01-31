@@ -1,0 +1,4 @@
+1 : Remove redundant instructions : 151.313482
+2 : Constant Hoisting : 151.313482
+3 : Combine redundant instructions : 226.178423
+SpeedUp : 0.669001

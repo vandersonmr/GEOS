@@ -1,0 +1,21 @@
+1 : Dead Code Elimination : 39.205364
+2 : Early CSE : 30.422153
+3 : Early CSE : 30.422153
+4 : Loop-Closed SSA Form Pass : 30.422153
+5 : Constant Hoisting : 30.422153
+6 : SROA : 30.422153
+7 : Promote Memory to Register : 20.269153
+8 : Remove redundant instructions : 17.575616
+9 : Aggressive Dead Code Elimination : 17.575616
+10 : Constant Hoisting : 17.575616
+11 : MergedLoadStoreMotion : 17.575616
+12 : Value Propagation : 17.575616
+13 : Combine redundant instructions : 14.872871
+14 : Constant Hoisting : 14.872871
+15 : Lower atomic intrinsics to non-atomic form : 14.872871
+16 : Scalar Replacement of Aggregates (DT) : 14.872871
+17 : Lower atomic intrinsics to non-atomic form : 14.872871
+18 : Remove redundant instructions : 14.872871
+19 : Dead Instruction Elimination : 14.872871
+20 : Dead Code Elimination : 14.872871
+SpeedUp : 2.636032

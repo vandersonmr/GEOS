@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 189.380358
+2 : Loop Invariant Code Motion : 189.380358
+3 : Dead Instruction Elimination : 189.380358
+4 : Add DWARF path discriminators : 189.380358
+5 : Dead Instruction Elimination : 189.380358
+6 : Value Propagation : 189.380358
+7 : Constant Hoisting : 189.380358
+8 : Assign names to anonymous instructions : 189.380358
+9 : Code sinking : 189.380358
+10 : Code sinking : 189.380358
+11 : Remove redundant instructions : 189.380358
+12 : Scalar Replacement of Aggregates (DT) : 98.197223
+13 : MemCpy Optimization : 98.197223
+14 : Add DWARF path discriminators : 98.197223
+15 : Combine redundant instructions : 98.197223
+16 : Assign names to anonymous instructions : 98.197223
+17 : Dead Instruction Elimination : 98.197223
+18 : Early CSE : 98.197223
+19 : Loop-Closed SSA Form Pass : 98.197223
+20 : Alignment from assumptions : 98.197223
+SpeedUp : 1.928571

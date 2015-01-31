@@ -1,0 +1,4 @@
+1 : Promote Memory to Register : 47.937503
+2 : Loop Invariant Code Motion : 47.937503
+3 : Global Value Numbering : 70.987002
+SpeedUp : 1.104998

@@ -1,0 +1,6 @@
+1 : Promote Memory to Register : 0.000003
+2 : Lower atomic intrinsics to non-atomic form : 0.000003
+3 : Promote Memory to Register : 0.000003
+4 : Loop Invariant Code Motion : 0.000003
+5 : Early CSE : 0.000003
+SpeedUp : 0.958599

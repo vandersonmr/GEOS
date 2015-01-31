@@ -1,0 +1,21 @@
+1 : Value Propagation : 101.011273
+2 : Assign names to anonymous instructions : 101.011273
+3 : Code sinking : 101.011273
+4 : Loop-Closed SSA Form Pass : 101.011273
+5 : Assign names to anonymous instructions : 101.011273
+6 : Loop-Closed SSA Form Pass : 101.011273
+7 : Add DWARF path discriminators : 101.011273
+8 : Loop Invariant Code Motion : 101.011273
+9 : Global Value Numbering : 78.304270
+10 : MemCpy Optimization : 78.304270
+11 : SROA : 78.304270
+12 : SROA : 78.304270
+13 : Lower atomic intrinsics to non-atomic form : 78.304270
+14 : Scalar Replacement of Aggregates (DT) : 74.331714
+15 : Induction Variable Simplification : 59.323595
+16 : Loop-Closed SSA Form Pass : 58.093570
+17 : Alignment from assumptions : 58.093570
+18 : Add DWARF path discriminators : 58.093570
+19 : MergedLoadStoreMotion : 58.093570
+20 : Add DWARF path discriminators : 58.093570
+SpeedUp : 1.738769

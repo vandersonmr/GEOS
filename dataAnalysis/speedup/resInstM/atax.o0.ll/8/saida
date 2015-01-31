@@ -1,0 +1,21 @@
+1 : Code sinking : 13.765121
+2 : Aggressive Dead Code Elimination : 13.765121
+3 : Value Propagation : 13.765121
+4 : Remove redundant instructions : 13.765121
+5 : Remove redundant instructions : 13.765121
+6 : Global Value Numbering : 6.564081
+7 : MergedLoadStoreMotion : 6.564081
+8 : MemCpy Optimization : 6.564081
+9 : Loop Invariant Code Motion : 6.564081
+10 : Early CSE : 5.123481
+11 : Lower atomic intrinsics to non-atomic form : 5.123481
+12 : Code sinking : 5.123481
+13 : MergedLoadStoreMotion : 5.123481
+14 : Loop-Closed SSA Form Pass : 5.123481
+15 : Global Value Numbering : 5.123481
+16 : Combine redundant instructions : 4.643201
+17 : Reassociate expressions : 4.643201
+18 : Global Value Numbering : 4.643201
+19 : Constant Hoisting : 4.643201
+20 : Early CSE : 4.643201
+SpeedUp : 2.964576

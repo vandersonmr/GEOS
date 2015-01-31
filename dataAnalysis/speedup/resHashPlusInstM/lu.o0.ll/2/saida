@@ -1,0 +1,9 @@
+1 : MemCpy Optimization : 679.753833
+2 : Combine redundant instructions : 623.669076
+3 : Loop Invariant Code Motion : 623.669076
+4 : Assign names to anonymous instructions : 623.669076
+5 : Constant Hoisting : 623.669076
+6 : Loop-Closed SSA Form Pass : 623.669076
+7 : Promote Memory to Register : 526.666767
+8 : Lower atomic intrinsics to non-atomic form : 554.753450
+SpeedUp : 1.225326

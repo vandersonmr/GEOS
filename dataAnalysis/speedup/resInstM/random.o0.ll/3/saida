@@ -1,0 +1,21 @@
+1 : Alignment from assumptions : 72.000000
+2 : Loop Invariant Code Motion : 72.000000
+3 : MergedLoadStoreMotion : 72.000000
+4 : Dead Code Elimination : 72.000000
+5 : MergedLoadStoreMotion : 72.000000
+6 : Early CSE : 68.000000
+7 : Add DWARF path discriminators : 68.000000
+8 : Add DWARF path discriminators : 68.000000
+9 : Alignment from assumptions : 68.000000
+10 : Assign names to anonymous instructions : 68.000000
+11 : Reassociate expressions : 68.000000
+12 : Aggressive Dead Code Elimination : 68.000000
+13 : Loop-Closed SSA Form Pass : 68.000000
+14 : Remove redundant instructions : 68.000000
+15 : Remove redundant instructions : 68.000000
+16 : Induction Variable Simplification : 68.000000
+17 : Loop-Closed SSA Form Pass : 68.000000
+18 : Assign names to anonymous instructions : 68.000000
+19 : Lower atomic intrinsics to non-atomic form : 68.000000
+20 : Global Value Numbering : 68.000000
+SpeedUp : 1.058824

@@ -1,0 +1,4 @@
+1 : Remove redundant instructions : 0.000002
+2 : Constant Hoisting : 0.000002
+3 : SROA : 0.000002
+SpeedUp : 1.121339

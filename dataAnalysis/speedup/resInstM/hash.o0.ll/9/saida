@@ -1,0 +1,14 @@
+1 : MergedLoadStoreMotion : 50.519497
+2 : Value Propagation : 50.519497
+3 : Dead Instruction Elimination : 50.519497
+4 : Combine redundant instructions : 48.908074
+5 : Constant Hoisting : 48.908074
+6 : Loop Invariant Code Motion : 48.740159
+7 : Code sinking : 48.740159
+8 : Constant Hoisting : 48.740159
+9 : Add DWARF path discriminators : 48.740159
+10 : Dead Instruction Elimination : 48.740159
+11 : Lower atomic intrinsics to non-atomic form : 48.740159
+12 : Promote Memory to Register : 32.749116
+13 : Aggressive Dead Code Elimination : 36.432548
+SpeedUp : 1.386658

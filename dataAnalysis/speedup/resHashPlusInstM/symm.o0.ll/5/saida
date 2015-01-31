@@ -1,0 +1,9 @@
+1 : Loop Invariant Code Motion : 1637.113271
+2 : Aggressive Dead Code Elimination : 1637.113271
+3 : Scalar Replacement of Aggregates (DT) : 1399.244761
+4 : MergedLoadStoreMotion : 1181.448412
+5 : Loop-Closed SSA Form Pass : 1181.448412
+6 : MergedLoadStoreMotion : 1181.448412
+7 : Loop-Closed SSA Form Pass : 1181.448412
+8 : Induction Variable Simplification : 1441.462376
+SpeedUp : 1.135731

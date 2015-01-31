@@ -1,0 +1,6 @@
+1 : MemCpy Optimization : 0.000003
+2 : Constant Hoisting : 0.000003
+3 : Promote Memory to Register : 0.000003
+4 : Assign names to anonymous instructions : 0.000003
+5 : Aggressive Dead Code Elimination : 0.000003
+SpeedUp : 0.958599

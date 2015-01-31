@@ -1,0 +1,5 @@
+1 : SROA : 789.055338
+2 : Aggressive Dead Code Elimination : 789.055338
+3 : SROA : 789.055338
+4 : Scalar Replacement of Aggregates (DT) : 874.685423
+SpeedUp : 0.902102

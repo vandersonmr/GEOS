@@ -1,0 +1,3 @@
+1 : Scalar Replacement of Aggregates (DT) : 56.462504
+2 : Loop Invariant Code Motion : 56.619504
+SpeedUp : 1.535964

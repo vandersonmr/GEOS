@@ -1,0 +1,13 @@
+1 : Combine redundant instructions : 48.908074
+2 : Reassociate expressions : 48.908074
+3 : Assign names to anonymous instructions : 48.908074
+4 : MergedLoadStoreMotion : 48.908074
+5 : Early CSE : 43.410723
+6 : MemCpy Optimization : 43.235723
+7 : Constant Hoisting : 43.235723
+8 : Early CSE : 43.235723
+9 : Reassociate expressions : 43.235723
+10 : Code sinking : 43.235723
+11 : Value Propagation : 43.235723
+12 : Loop Invariant Code Motion : 44.719878
+SpeedUp : 1.129688

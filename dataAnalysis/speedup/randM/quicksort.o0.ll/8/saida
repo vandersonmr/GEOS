@@ -1,0 +1,5 @@
+1 : Constant Hoisting : 0.000001
+2 : Dead Instruction Elimination : 0.000000
+3 : Dead Code Elimination : 0.000001
+4 : Combine redundant instructions : 0.000000
+SpeedUp : 1.166667

@@ -1,0 +1,21 @@
+1 : Value Propagation : 1193.941651
+2 : Value Propagation : 1193.941651
+3 : Lower atomic intrinsics to non-atomic form : 1193.941651
+4 : Aggressive Dead Code Elimination : 1193.941651
+5 : Dead Instruction Elimination : 1193.941651
+6 : Aggressive Dead Code Elimination : 1193.941651
+7 : Global Value Numbering : 4.490895
+8 : Assign names to anonymous instructions : 4.490895
+9 : Loop Invariant Code Motion : 4.490895
+10 : Lower atomic intrinsics to non-atomic form : 4.490895
+11 : MemCpy Optimization : 4.490895
+12 : MergedLoadStoreMotion : 4.490895
+13 : Constant Hoisting : 4.490895
+14 : SROA : 4.490895
+15 : Dead Instruction Elimination : 4.490895
+16 : Remove redundant instructions : 4.490895
+17 : SROA : 4.490895
+18 : Alignment from assumptions : 4.490895
+19 : Remove redundant instructions : 4.490895
+20 : Value Propagation : 4.490895
+SpeedUp : 265.858280

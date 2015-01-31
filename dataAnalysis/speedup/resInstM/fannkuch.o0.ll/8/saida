@@ -1,0 +1,10 @@
+1 : MergedLoadStoreMotion : 455.558540
+2 : Add DWARF path discriminators : 455.558540
+3 : Loop Invariant Code Motion : 455.558540
+4 : Global Value Numbering : 265.384113
+5 : Scalar Replacement of Aggregates (DT) : 161.008960
+6 : Remove redundant instructions : 139.094558
+7 : Add DWARF path discriminators : 139.094558
+8 : Constant Hoisting : 139.094558
+9 : Loop-Closed SSA Form Pass : 142.381566
+SpeedUp : 3.199561

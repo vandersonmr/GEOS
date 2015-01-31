@@ -1,0 +1,21 @@
+1 : Aggressive Dead Code Elimination : 448.000000
+2 : Constant Hoisting : 448.000000
+3 : Early CSE : 391.000000
+4 : Scalar Replacement of Aggregates (DT) : 229.000000
+5 : Early CSE : 190.000000
+6 : Promote Memory to Register : 190.000000
+7 : Add DWARF path discriminators : 190.000000
+8 : Induction Variable Simplification : 190.000000
+9 : Alignment from assumptions : 190.000000
+10 : Alignment from assumptions : 190.000000
+11 : Loop-Closed SSA Form Pass : 190.000000
+12 : Dead Instruction Elimination : 190.000000
+13 : Dead Instruction Elimination : 190.000000
+14 : SROA : 190.000000
+15 : MemCpy Optimization : 190.000000
+16 : Dead Instruction Elimination : 190.000000
+17 : Dead Code Elimination : 190.000000
+18 : Assign names to anonymous instructions : 190.000000
+19 : Code sinking : 190.000000
+20 : Remove redundant instructions : 190.000000
+SpeedUp : 2.357895

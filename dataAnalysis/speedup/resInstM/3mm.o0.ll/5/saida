@@ -1,0 +1,21 @@
+1 : Remove redundant instructions : 1065.438978
+2 : Promote Memory to Register : 710.264607
+3 : Dead Code Elimination : 710.264607
+4 : Remove redundant instructions : 710.264607
+5 : Early CSE : 484.548138
+6 : Constant Hoisting : 484.548138
+7 : Loop Invariant Code Motion : 452.073760
+8 : Induction Variable Simplification : 419.798652
+9 : Early CSE : 419.798580
+10 : Constant Hoisting : 419.798580
+11 : MergedLoadStoreMotion : 419.798580
+12 : Remove redundant instructions : 419.798580
+13 : Early CSE : 419.798580
+14 : Add DWARF path discriminators : 419.798580
+15 : Dead Instruction Elimination : 419.798580
+16 : SROA : 419.798580
+17 : Lower atomic intrinsics to non-atomic form : 419.798580
+18 : Dead Code Elimination : 419.798580
+19 : Add DWARF path discriminators : 419.798580
+20 : Combine redundant instructions : 387.554766
+SpeedUp : 2.749131

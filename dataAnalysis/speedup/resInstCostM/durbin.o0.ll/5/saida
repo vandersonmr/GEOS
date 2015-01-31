@@ -1,0 +1,21 @@
+1 : Assign names to anonymous instructions : 12.405421
+2 : MemCpy Optimization : 12.405421
+3 : Lower atomic intrinsics to non-atomic form : 12.405421
+4 : MergedLoadStoreMotion : 12.405421
+5 : Dead Instruction Elimination : 12.405421
+6 : Code sinking : 12.405421
+7 : SROA : 12.405421
+8 : Value Propagation : 12.405421
+9 : SROA : 12.405421
+10 : Assign names to anonymous instructions : 12.405421
+11 : Aggressive Dead Code Elimination : 12.405421
+12 : Combine redundant instructions : 10.244641
+13 : Add DWARF path discriminators : 10.244641
+14 : Lower atomic intrinsics to non-atomic form : 10.244641
+15 : Early CSE : 7.763581
+16 : Scalar Replacement of Aggregates (DT) : 5.682460
+17 : Promote Memory to Register : 4.722140
+18 : Remove redundant instructions : 4.722140
+19 : Lower atomic intrinsics to non-atomic form : 4.722140
+20 : Constant Hoisting : 4.722140
+SpeedUp : 2.627076

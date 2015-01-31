@@ -1,0 +1,12 @@
+1 : Assign names to anonymous instructions : 21.577543
+2 : Add DWARF path discriminators : 21.577543
+3 : Aggressive Dead Code Elimination : 21.577543
+4 : Early CSE : 9.972280
+5 : Promote Memory to Register : 9.134218
+6 : Combine redundant instructions : 8.326606
+7 : Constant Hoisting : 8.326606
+8 : SROA : 8.326606
+9 : Aggressive Dead Code Elimination : 8.326606
+10 : Loop Invariant Code Motion : 7.300593
+11 : Global Value Numbering : 7.509374
+SpeedUp : 2.873414

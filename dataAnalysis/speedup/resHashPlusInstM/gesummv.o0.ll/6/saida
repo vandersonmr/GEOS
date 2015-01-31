@@ -1,0 +1,17 @@
+1 : Reassociate expressions : 64.737929
+2 : Aggressive Dead Code Elimination : 64.737929
+3 : Assign names to anonymous instructions : 64.737929
+4 : MergedLoadStoreMotion : 64.737929
+5 : Constant Hoisting : 64.737929
+6 : Add DWARF path discriminators : 64.737929
+7 : Value Propagation : 64.737929
+8 : Loop-Closed SSA Form Pass : 64.737929
+9 : Reassociate expressions : 64.737929
+10 : Alignment from assumptions : 64.737929
+11 : SROA : 64.737929
+12 : MergedLoadStoreMotion : 64.737929
+13 : Loop Invariant Code Motion : 64.737929
+14 : Assign names to anonymous instructions : 64.737929
+15 : Reassociate expressions : 64.737929
+16 : Global Value Numbering : 79.550621
+SpeedUp : 0.813795

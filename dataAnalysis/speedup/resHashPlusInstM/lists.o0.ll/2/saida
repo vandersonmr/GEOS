@@ -1,0 +1,5 @@
+1 : Reassociate expressions : 3459547.252725
+2 : Value Propagation : 3459547.252725
+3 : Value Propagation : 3459547.252725
+4 : Combine redundant instructions : 3534857.678253
+SpeedUp : 0.978695

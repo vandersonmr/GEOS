@@ -1,0 +1,21 @@
+1 : Early CSE : 140.121406
+2 : Value Propagation : 140.121406
+3 : Remove redundant instructions : 140.121406
+4 : MemCpy Optimization : 140.121406
+5 : Assign names to anonymous instructions : 140.121406
+6 : MemCpy Optimization : 140.121406
+7 : Promote Memory to Register : 107.772764
+8 : Lower atomic intrinsics to non-atomic form : 107.699292
+9 : SROA : 107.699292
+10 : Constant Hoisting : 107.699292
+11 : Alignment from assumptions : 107.699292
+12 : Promote Memory to Register : 107.699292
+13 : Lower atomic intrinsics to non-atomic form : 107.699292
+14 : Aggressive Dead Code Elimination : 107.699292
+15 : Scalar Replacement of Aggregates (DT) : 107.699292
+16 : SROA : 107.699292
+17 : Code sinking : 107.699292
+18 : Loop-Closed SSA Form Pass : 107.699292
+19 : Alignment from assumptions : 107.699292
+20 : MemCpy Optimization : 107.699292
+SpeedUp : 1.750707

@@ -1,0 +1,5 @@
+1 : Remove redundant instructions : 32.100803
+2 : Early CSE : 30.892806
+3 : Code sinking : 30.892806
+4 : Scalar Replacement of Aggregates (DT) : 34.697506
+SpeedUp : 0.925162

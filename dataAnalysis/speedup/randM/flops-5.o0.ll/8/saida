@@ -1,0 +1,4 @@
+1 : Dead Code Elimination : 0.000000
+2 : Loop-Closed SSA Form Pass : 0.000000
+3 : Alignment from assumptions : 0.000000
+SpeedUp : 1.368421

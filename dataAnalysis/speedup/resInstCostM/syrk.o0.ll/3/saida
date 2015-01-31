@@ -1,0 +1,21 @@
+1 : Combine redundant instructions : 258.369649
+2 : Dead Instruction Elimination : 258.369649
+3 : Dead Instruction Elimination : 258.369649
+4 : MergedLoadStoreMotion : 258.369649
+5 : Combine redundant instructions : 258.369649
+6 : Combine redundant instructions : 258.369649
+7 : Lower atomic intrinsics to non-atomic form : 258.369649
+8 : Promote Memory to Register : 150.691113
+9 : Aggressive Dead Code Elimination : 150.691113
+10 : Loop-Closed SSA Form Pass : 150.691113
+11 : Remove redundant instructions : 150.691113
+12 : MergedLoadStoreMotion : 150.691113
+13 : Remove redundant instructions : 150.691113
+14 : MergedLoadStoreMotion : 150.691113
+15 : Early CSE : 150.691113
+16 : Code sinking : 150.691113
+17 : SROA : 150.691113
+18 : Alignment from assumptions : 150.691113
+19 : Promote Memory to Register : 150.691113
+20 : Lower atomic intrinsics to non-atomic form : 150.691113
+SpeedUp : 2.071812

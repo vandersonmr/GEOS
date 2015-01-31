@@ -1,0 +1,8 @@
+1 : Aggressive Dead Code Elimination : 502.112500
+2 : Add DWARF path discriminators : 502.112500
+3 : Code sinking : 502.112500
+4 : Early CSE : 450.882500
+5 : Aggressive Dead Code Elimination : 450.882500
+6 : Value Propagation : 450.882500
+7 : Global Value Numbering : 491.837500
+SpeedUp : 1.020891

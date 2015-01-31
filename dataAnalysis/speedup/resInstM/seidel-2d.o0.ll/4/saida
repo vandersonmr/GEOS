@@ -1,0 +1,21 @@
+1 : MergedLoadStoreMotion : 21.577543
+2 : Scalar Replacement of Aggregates (DT) : 15.116230
+3 : Add DWARF path discriminators : 15.116230
+4 : Aggressive Dead Code Elimination : 15.116230
+5 : Aggressive Dead Code Elimination : 15.116230
+6 : Constant Hoisting : 15.116230
+7 : Induction Variable Simplification : 10.530231
+8 : Lower atomic intrinsics to non-atomic form : 10.530231
+9 : Dead Code Elimination : 10.530231
+10 : Early CSE : 7.738625
+11 : Loop-Closed SSA Form Pass : 7.738625
+12 : Remove redundant instructions : 7.738625
+13 : Code sinking : 7.738625
+14 : MergedLoadStoreMotion : 7.738625
+15 : Code sinking : 7.738625
+16 : Loop Invariant Code Motion : 6.702612
+17 : MergedLoadStoreMotion : 6.702612
+18 : Code sinking : 6.702612
+19 : Early CSE : 6.702612
+20 : Assign names to anonymous instructions : 6.702612
+SpeedUp : 3.219274

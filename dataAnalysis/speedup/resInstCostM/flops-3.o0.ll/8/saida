@@ -1,0 +1,14 @@
+1 : Aggressive Dead Code Elimination : 428.125000
+2 : Induction Variable Simplification : 428.125000
+3 : Lower atomic intrinsics to non-atomic form : 428.125000
+4 : Scalar Replacement of Aggregates (DT) : 328.125000
+5 : Loop Invariant Code Motion : 303.125000
+6 : Lower atomic intrinsics to non-atomic form : 303.125000
+7 : Assign names to anonymous instructions : 303.125000
+8 : Loop-Closed SSA Form Pass : 303.125000
+9 : Assign names to anonymous instructions : 303.125000
+10 : Induction Variable Simplification : 303.125000
+11 : Combine redundant instructions : 287.499999
+12 : Lower atomic intrinsics to non-atomic form : 287.499999
+13 : Global Value Numbering : 287.500000
+SpeedUp : 1.489130
