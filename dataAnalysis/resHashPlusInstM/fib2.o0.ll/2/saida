@@ -1,4 +1,0 @@
-1 : MergedLoadStoreMotion : 1757.803232
-2 : Lower atomic intrinsics to non-atomic form : 1757.803232
-3 : Combine redundant instructions : 17038.869241
-SpeedUp : 0.103164

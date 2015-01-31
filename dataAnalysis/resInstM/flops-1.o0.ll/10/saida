@@ -1,7 +1,0 @@
-1 : Aggressive Dead Code Elimination : 268.750000
-2 : Scalar Replacement of Aggregates (DT) : 209.375000
-3 : Constant Hoisting : 187.500000
-4 : MergedLoadStoreMotion : 187.500000
-5 : Scalar Replacement of Aggregates (DT) : 187.500000
-6 : Loop-Closed SSA Form Pass : 190.625000
-SpeedUp : 1.409836

@@ -1,6 +1,0 @@
-1 : Promote Memory to Register : 35.700006
-2 : Combine redundant instructions : 35.000005
-3 : Scalar Replacement of Aggregates (DT) : 35.000005
-4 : Lower atomic intrinsics to non-atomic form : 35.000005
-5 : Loop Invariant Code Motion : 37.100005
-SpeedUp : 1.981132

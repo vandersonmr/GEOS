@@ -1,9 +1,0 @@
-1 : Induction Variable Simplification : 42.977874
-2 : MemCpy Optimization : 42.977874
-3 : SROA : 42.977874
-4 : Value Propagation : 42.977874
-5 : Loop-Closed SSA Form Pass : 42.977874
-6 : Code sinking : 42.977874
-7 : Reassociate expressions : 42.977874
-8 : Global Value Numbering : 51.028276
-SpeedUp : 0.842236

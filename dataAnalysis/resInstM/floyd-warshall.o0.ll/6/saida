@@ -1,4 +1,0 @@
-1 : Code sinking : 634.074512
-2 : MemCpy Optimization : 634.074512
-3 : Global Value Numbering : 666.307605
-SpeedUp : 0.951624

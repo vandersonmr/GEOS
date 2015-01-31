@@ -1,5 +1,0 @@
-1 : Assign names to anonymous instructions : 0.000001
-2 : Global Value Numbering : 0.000001
-3 : Dead Code Elimination : 0.000001
-4 : Induction Variable Simplification : 0.000001
-SpeedUp : 1.066667

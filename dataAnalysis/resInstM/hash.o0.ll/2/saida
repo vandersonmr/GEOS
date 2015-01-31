@@ -1,9 +1,0 @@
-1 : Loop Invariant Code Motion : 50.449497
-2 : Code sinking : 50.449497
-3 : Induction Variable Simplification : 50.449497
-4 : Value Propagation : 50.449497
-5 : Alignment from assumptions : 50.449497
-6 : Loop-Closed SSA Form Pass : 50.449497
-7 : Scalar Replacement of Aggregates (DT) : 32.396024
-8 : Aggressive Dead Code Elimination : 36.233627
-SpeedUp : 1.394271

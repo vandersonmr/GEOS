@@ -1,6 +1,0 @@
-1 : Dead Code Elimination : 64.737929
-2 : Aggressive Dead Code Elimination : 64.737929
-3 : Value Propagation : 64.737929
-4 : Lower atomic intrinsics to non-atomic form : 64.737929
-5 : Early CSE : 71.520954
-SpeedUp : 0.905160

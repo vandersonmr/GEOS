@@ -1,4 +1,0 @@
-1 : Add DWARF path discriminators : 0.000001
-2 : Loop Invariant Code Motion : 0.000001
-3 : Aggressive Dead Code Elimination : 0.000001
-SpeedUp : 1.195652

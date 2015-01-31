@@ -1,9 +1,0 @@
-1 : Alignment from assumptions : 1637.113271
-2 : Scalar Replacement of Aggregates (DT) : 1399.244761
-3 : Global Value Numbering : 1372.971152
-4 : MemCpy Optimization : 1372.971152
-5 : Early CSE : 1372.971152
-6 : Early CSE : 1372.971152
-7 : Global Value Numbering : 1372.971152
-8 : Combine redundant instructions : 1453.572600
-SpeedUp : 1.126269

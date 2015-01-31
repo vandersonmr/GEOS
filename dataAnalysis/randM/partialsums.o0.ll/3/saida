@@ -1,5 +1,0 @@
-1 : Remove redundant instructions : 0.000000
-2 : Constant Hoisting : 0.000000
-3 : Promote Memory to Register : 0.000000
-4 : Code sinking : 0.000001
-SpeedUp : 0.900000

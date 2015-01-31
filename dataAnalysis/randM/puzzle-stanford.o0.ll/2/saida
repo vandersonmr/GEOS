@@ -1,6 +1,0 @@
-1 : Assign names to anonymous instructions : 0.000003
-2 : Combine redundant instructions : 0.000003
-3 : MemCpy Optimization : 0.000002
-4 : MergedLoadStoreMotion : 0.000003
-5 : Remove redundant instructions : 0.000003
-SpeedUp : 0.992308

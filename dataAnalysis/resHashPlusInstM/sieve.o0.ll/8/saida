@@ -1,9 +1,0 @@
-1 : Loop Invariant Code Motion : 6884.016552
-2 : Dead Instruction Elimination : 6884.016552
-3 : Loop-Closed SSA Form Pass : 6884.016552
-4 : Value Propagation : 6884.016552
-5 : Value Propagation : 6884.016552
-6 : Promote Memory to Register : 6064.045525
-7 : MergedLoadStoreMotion : 6064.045525
-8 : Loop Invariant Code Motion : 6067.289544
-SpeedUp : 1.134612

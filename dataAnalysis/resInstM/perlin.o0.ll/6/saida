@@ -1,7 +1,0 @@
-1 : MemCpy Optimization : 311.010630
-2 : Early CSE : 288.837990
-3 : Remove redundant instructions : 288.837990
-4 : Code sinking : 288.837990
-5 : SROA : 288.837990
-6 : Loop Invariant Code Motion : 289.264876
-SpeedUp : 1.075176

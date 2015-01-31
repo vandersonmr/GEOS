@@ -1,8 +1,0 @@
-1 : Assign names to anonymous instructions : 3760.954945
-2 : SROA : 3760.954945
-3 : Loop Invariant Code Motion : 3760.875304
-4 : Loop-Closed SSA Form Pass : 3760.875304
-5 : Reassociate expressions : 3760.875304
-6 : Value Propagation : 3760.875304
-7 : Promote Memory to Register : 3925.732116
-SpeedUp : 0.958026

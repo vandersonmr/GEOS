@@ -1,5 +1,0 @@
-1 : Global Value Numbering : 0.000001
-2 : Value Propagation : 0.000001
-3 : Loop Invariant Code Motion : 0.000001
-4 : MemCpy Optimization : 0.000001
-SpeedUp : 0.980769

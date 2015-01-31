@@ -1,7 +1,0 @@
-1 : Dead Code Elimination : 1230.106588
-2 : Alignment from assumptions : 1230.106588
-3 : Induction Variable Simplification : 1230.106588
-4 : Alignment from assumptions : 1230.106588
-5 : Combine redundant instructions : 1135.128548
-6 : Reassociate expressions : 1135.128549
-SpeedUp : 1.083672

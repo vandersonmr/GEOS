@@ -1,8 +1,0 @@
-1 : Promote Memory to Register : 1.100002
-2 : Constant Hoisting : 1.100002
-3 : Global Value Numbering : 0.962502
-4 : Promote Memory to Register : 0.962502
-5 : MergedLoadStoreMotion : 0.962502
-6 : Dead Code Elimination : 0.962502
-7 : Loop Invariant Code Motion : 1.125002
-SpeedUp : 1.888889

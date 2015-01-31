@@ -1,4 +1,0 @@
-1 : Loop Invariant Code Motion : 0.000005
-2 : MergedLoadStoreMotion : 0.000005
-3 : SROA : 0.000005
-SpeedUp : 0.975567

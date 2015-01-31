@@ -1,5 +1,0 @@
-1 : Scalar Replacement of Aggregates (DT) : 0.000002
-2 : Loop Invariant Code Motion : 0.000002
-3 : Dead Code Elimination : 0.000001
-4 : SROA : 0.000001
-SpeedUp : 1.177778

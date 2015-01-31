@@ -1,5 +1,0 @@
-1 : Reassociate expressions : 0.000002
-2 : Scalar Replacement of Aggregates (DT) : 0.000002
-3 : Constant Hoisting : 0.000002
-4 : Aggressive Dead Code Elimination : 0.000002
-SpeedUp : 1.068571

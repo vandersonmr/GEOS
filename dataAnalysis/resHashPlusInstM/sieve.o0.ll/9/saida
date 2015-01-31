@@ -1,8 +1,0 @@
-1 : MemCpy Optimization : 6884.016552
-2 : Value Propagation : 6884.016552
-3 : Scalar Replacement of Aggregates (DT) : 6064.045525
-4 : MemCpy Optimization : 6064.045525
-5 : MemCpy Optimization : 6064.045525
-6 : Code sinking : 6064.029883
-7 : Loop-Closed SSA Form Pass : 6067.273902
-SpeedUp : 1.134614

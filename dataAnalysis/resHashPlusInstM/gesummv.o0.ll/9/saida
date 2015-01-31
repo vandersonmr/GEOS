@@ -1,7 +1,0 @@
-1 : Aggressive Dead Code Elimination : 64.737929
-2 : Code sinking : 64.737929
-3 : Aggressive Dead Code Elimination : 64.737929
-4 : Alignment from assumptions : 64.737929
-5 : Constant Hoisting : 64.737929
-6 : Remove redundant instructions : 64.737929
-SpeedUp : 1.000000

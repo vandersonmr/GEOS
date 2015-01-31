@@ -1,6 +1,0 @@
-1 : Constant Hoisting : 111.875617
-2 : Add DWARF path discriminators : 111.875617
-3 : Early CSE : 91.675556
-4 : SROA : 91.675556
-5 : Loop Invariant Code Motion : 96.675566
-SpeedUp : 1.157227

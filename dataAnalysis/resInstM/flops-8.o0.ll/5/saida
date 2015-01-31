@@ -1,8 +1,0 @@
-1 : Dead Instruction Elimination : 251.562500
-2 : Promote Memory to Register : 181.250000
-3 : Alignment from assumptions : 181.250000
-4 : Reassociate expressions : 181.250000
-5 : Dead Code Elimination : 181.250000
-6 : Code sinking : 181.250000
-7 : Loop-Closed SSA Form Pass : 182.812500
-SpeedUp : 1.376068

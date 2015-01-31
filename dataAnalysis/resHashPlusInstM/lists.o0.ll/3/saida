@@ -1,5 +1,0 @@
-1 : Value Propagation : 3459547.252725
-2 : Promote Memory to Register : 15510.232816
-3 : Induction Variable Simplification : 14953.112824
-4 : Add DWARF path discriminators : 14959.112824
-SpeedUp : 231.266873

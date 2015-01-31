@@ -1,8 +1,0 @@
-1 : Add DWARF path discriminators : 62.425728
-2 : MergedLoadStoreMotion : 62.425728
-3 : Code sinking : 62.425728
-4 : Combine redundant instructions : 59.563015
-5 : Dead Instruction Elimination : 59.563015
-6 : Remove redundant instructions : 59.563015
-7 : Reassociate expressions : 62.283694
-SpeedUp : 1.002280

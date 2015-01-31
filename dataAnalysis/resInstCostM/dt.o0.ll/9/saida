@@ -1,8 +1,0 @@
-1 : Combine redundant instructions : 32.231158
-2 : Remove redundant instructions : 32.231158
-3 : Loop Invariant Code Motion : 32.231158
-4 : Induction Variable Simplification : 32.231158
-5 : Scalar Replacement of Aggregates (DT) : 21.487084
-6 : Loop-Closed SSA Form Pass : 21.487084
-7 : Global Value Numbering : 24.171438
-SpeedUp : 1.555714

@@ -1,8 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 48255.772424
-2 : Add DWARF path discriminators : 48255.772424
-3 : SROA : 48255.772424
-4 : Dead Instruction Elimination : 48255.772424
-5 : Loop-Closed SSA Form Pass : 48255.772424
-6 : Add DWARF path discriminators : 48255.772424
-7 : Scalar Replacement of Aggregates (DT) : 54787.120937
-SpeedUp : 0.880787

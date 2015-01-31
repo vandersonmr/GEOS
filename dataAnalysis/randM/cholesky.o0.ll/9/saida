@@ -1,4 +1,0 @@
-1 : Combine redundant instructions : 0.000002
-2 : Loop Invariant Code Motion : 0.000002
-3 : Remove redundant instructions : 0.000001
-SpeedUp : 1.244275

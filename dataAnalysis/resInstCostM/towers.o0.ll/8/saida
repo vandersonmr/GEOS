@@ -1,9 +1,0 @@
-1 : Dead Code Elimination : 2.064423
-2 : Add DWARF path discriminators : 2.064423
-3 : MemCpy Optimization : 2.064423
-4 : Constant Hoisting : 2.064423
-5 : Constant Hoisting : 2.064423
-6 : SROA : 2.064423
-7 : MergedLoadStoreMotion : 2.064423
-8 : Reassociate expressions : 2.080807
-SpeedUp : 0.992126

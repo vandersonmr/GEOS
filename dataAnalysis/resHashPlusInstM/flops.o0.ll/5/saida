@@ -1,6 +1,0 @@
-1 : Alignment from assumptions : 2717.750320
-2 : Loop-Closed SSA Form Pass : 2717.750320
-3 : Dead Code Elimination : 2717.750320
-4 : Reassociate expressions : 2717.750320
-5 : Combine redundant instructions : 265548.247263
-SpeedUp : 0.010234

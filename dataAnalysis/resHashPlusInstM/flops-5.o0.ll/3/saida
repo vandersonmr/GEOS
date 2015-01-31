@@ -1,6 +1,0 @@
-1 : Loop Invariant Code Motion : 39416.709980
-2 : MemCpy Optimization : 39416.709980
-3 : Value Propagation : 39416.709980
-4 : Global Value Numbering : 39357.812324
-5 : Scalar Replacement of Aggregates (DT) : 122838.280814
-SpeedUp : 0.320883

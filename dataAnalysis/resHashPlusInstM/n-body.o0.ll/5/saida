@@ -1,3 +1,0 @@
-1 : Combine redundant instructions : 446.760249
-2 : Loop-Closed SSA Form Pass : 446.760249
-SpeedUp : 1.028929

@@ -1,4 +1,0 @@
-1 : Loop-Closed SSA Form Pass : 54554.991137
-2 : Dead Code Elimination : 54554.991137
-3 : Add DWARF path discriminators : 54554.991137
-4 : Combine redundant instructions : 50405.920603

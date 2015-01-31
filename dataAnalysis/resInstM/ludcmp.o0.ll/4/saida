@@ -1,5 +1,0 @@
-1 : Aggressive Dead Code Elimination : 146.274634
-2 : Add DWARF path discriminators : 146.274634
-3 : Scalar Replacement of Aggregates (DT) : 90.309080
-4 : Reassociate expressions : 90.309080
-SpeedUp : 1.619711

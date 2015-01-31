@@ -1,4 +1,0 @@
-1 : MergedLoadStoreMotion : 0.000001
-2 : Combine redundant instructions : 0.000001
-3 : Dead Code Elimination : 0.000001
-SpeedUp : 0.971014

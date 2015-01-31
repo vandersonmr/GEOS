@@ -1,6 +1,0 @@
-1 : MemCpy Optimization : 22.216971
-2 : Combine redundant instructions : 21.523221
-3 : Loop-Closed SSA Form Pass : 21.523221
-4 : Value Propagation : 21.523221
-5 : Scalar Replacement of Aggregates (DT) : 22.114530
-SpeedUp : 1.004632

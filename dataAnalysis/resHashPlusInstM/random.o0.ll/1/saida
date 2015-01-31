@@ -1,4 +1,0 @@
-1 : Code sinking : 705.615601
-2 : Value Propagation : 705.615601
-3 : Early CSE : 717.615601
-SpeedUp : 0.983278

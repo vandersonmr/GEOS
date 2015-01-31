@@ -1,6 +1,0 @@
-1 : Combine redundant instructions : 9628.723503
-2 : Dead Instruction Elimination : 9628.723503
-3 : Dead Code Elimination : 9628.723503
-4 : Dead Code Elimination : 9628.723503
-5 : Scalar Replacement of Aggregates (DT) : 15657.359548
-SpeedUp : 1.136143

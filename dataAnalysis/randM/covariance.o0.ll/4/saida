@@ -1,5 +1,0 @@
-1 : MergedLoadStoreMotion : 0.000001
-2 : Assign names to anonymous instructions : 0.000001
-3 : Promote Memory to Register : 0.000001
-4 : MemCpy Optimization : 0.000001
-SpeedUp : 0.921053

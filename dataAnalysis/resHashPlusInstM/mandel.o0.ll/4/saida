@@ -1,7 +1,0 @@
-1 : Add DWARF path discriminators : 176.547122
-2 : Early CSE : 111.546872
-3 : SROA : 111.546872
-4 : Code sinking : 111.546872
-5 : Alignment from assumptions : 111.546872
-6 : Promote Memory to Register : 120.279568
-SpeedUp : 1.467806

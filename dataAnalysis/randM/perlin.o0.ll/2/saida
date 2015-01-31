@@ -1,5 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 0.000002
-2 : Alignment from assumptions : 0.000002
-3 : Dead Instruction Elimination : 0.000002
-4 : Remove redundant instructions : 0.000002
-SpeedUp : 1.283784

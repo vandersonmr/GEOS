@@ -1,9 +1,0 @@
-1 : Value Propagation : 6265.308210
-2 : Loop Invariant Code Motion : 6265.308210
-3 : MemCpy Optimization : 6265.308210
-4 : Induction Variable Simplification : 6265.308210
-5 : Induction Variable Simplification : 6265.308210
-6 : MergedLoadStoreMotion : 6265.308210
-7 : Lower atomic intrinsics to non-atomic form : 6265.308210
-8 : Combine redundant instructions : 7092.592602
-SpeedUp : 0.883359

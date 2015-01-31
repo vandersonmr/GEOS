@@ -1,8 +1,0 @@
-1 : Scalar Replacement of Aggregates (DT) : 1.124692
-2 : Dead Instruction Elimination : 1.124692
-3 : Alignment from assumptions : 1.124692
-4 : SROA : 1.124692
-5 : Code sinking : 1.124692
-6 : Scalar Replacement of Aggregates (DT) : 1.124692
-7 : Reassociate expressions : 1.129693
-SpeedUp : 1.818346

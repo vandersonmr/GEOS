@@ -1,4 +1,0 @@
-1 : Remove redundant instructions : 634.074512
-2 : Induction Variable Simplification : 634.074512
-3 : Global Value Numbering : 666.307605
-SpeedUp : 0.951624

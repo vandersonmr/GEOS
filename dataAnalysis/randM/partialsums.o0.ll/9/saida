@@ -1,5 +1,0 @@
-1 : Dead Instruction Elimination : 0.000000
-2 : Dead Code Elimination : 0.000000
-3 : Add DWARF path discriminators : 0.000000
-4 : MergedLoadStoreMotion : 0.000001
-SpeedUp : 0.900000

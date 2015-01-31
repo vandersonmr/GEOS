@@ -1,6 +1,0 @@
-1 : Value Propagation : 64.000000
-2 : Loop Invariant Code Motion : 64.000000
-3 : Combine redundant instructions : 48.000000
-4 : Promote Memory to Register : 48.000000
-5 : Induction Variable Simplification : 52.000000
-SpeedUp : 1.230769

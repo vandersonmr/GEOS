@@ -1,8 +1,0 @@
-1 : Dead Code Elimination : 142.187500
-2 : MergedLoadStoreMotion : 142.187500
-3 : Constant Hoisting : 142.187500
-4 : Alignment from assumptions : 142.187500
-5 : Scalar Replacement of Aggregates (DT) : 79.687500
-6 : MemCpy Optimization : 68.750000
-7 : Loop-Closed SSA Form Pass : 70.312500
-SpeedUp : 2.022222

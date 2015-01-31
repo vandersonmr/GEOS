@@ -1,6 +1,0 @@
-1 : MemCpy Optimization : 0.000001
-2 : Add DWARF path discriminators : 0.000001
-3 : Reassociate expressions : 0.000001
-4 : Combine redundant instructions : 0.000001
-5 : Remove redundant instructions : 0.000001
-SpeedUp : 0.768519

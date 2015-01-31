@@ -1,9 +1,0 @@
-1 : MemCpy Optimization : 17789.001314
-2 : Assign names to anonymous instructions : 17789.001314
-3 : MergedLoadStoreMotion : 17789.001314
-4 : Remove redundant instructions : 17789.001274
-5 : Loop-Closed SSA Form Pass : 17789.001274
-6 : Constant Hoisting : 17789.001274
-7 : Scalar Replacement of Aggregates (DT) : 9320.846503
-8 : Add DWARF path discriminators : 30562.719248
-SpeedUp : 0.582049

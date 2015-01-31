@@ -1,4 +1,0 @@
-1 : Combine redundant instructions : 0.000002
-2 : Dead Code Elimination : 0.000002
-3 : Loop-Closed SSA Form Pass : 0.000001
-SpeedUp : 1.190184

@@ -1,7 +1,0 @@
-1 : MemCpy Optimization : 96.456822
-2 : Scalar Replacement of Aggregates (DT) : 68.283339
-3 : Alignment from assumptions : 68.283339
-4 : Add DWARF path discriminators : 68.283339
-5 : Add DWARF path discriminators : 68.283339
-6 : Induction Variable Simplification : 70.443103
-SpeedUp : 1.369287

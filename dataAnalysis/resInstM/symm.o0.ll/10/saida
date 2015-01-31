@@ -1,4 +1,0 @@
-1 : Induction Variable Simplification : 520.530740
-2 : Early CSE : 375.811165
-3 : Loop-Closed SSA Form Pass : 381.164156
-SpeedUp : 1.365634

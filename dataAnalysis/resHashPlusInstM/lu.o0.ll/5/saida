@@ -1,7 +1,0 @@
-1 : Value Propagation : 679.753833
-2 : Assign names to anonymous instructions : 679.753833
-3 : Code sinking : 679.753833
-4 : Promote Memory to Register : 534.649352
-5 : Combine redundant instructions : 526.666786
-6 : Loop Invariant Code Motion : 554.753469
-SpeedUp : 1.225326

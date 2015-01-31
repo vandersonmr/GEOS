@@ -1,5 +1,0 @@
-1 : Combine redundant instructions : 84.779658
-2 : Dead Instruction Elimination : 84.779658
-3 : Scalar Replacement of Aggregates (DT) : 55.950579
-4 : Induction Variable Simplification : 57.662354
-SpeedUp : 1.654364

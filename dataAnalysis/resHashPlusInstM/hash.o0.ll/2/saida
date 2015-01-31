@@ -1,5 +1,0 @@
-1 : Combine redundant instructions : 771.915169
-2 : Dead Code Elimination : 771.915169
-3 : Early CSE : 572.643419
-4 : Constant Hoisting : 581.895592
-SpeedUp : 1.379883

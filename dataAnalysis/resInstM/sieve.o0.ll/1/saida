@@ -1,7 +1,0 @@
-1 : Combine redundant instructions : 675.535800
-2 : Assign names to anonymous instructions : 675.535800
-3 : Early CSE : 600.237700
-4 : Global Value Numbering : 499.726900
-5 : Scalar Replacement of Aggregates (DT) : 399.588400
-6 : Loop Invariant Code Motion : 433.109000
-SpeedUp : 1.789810

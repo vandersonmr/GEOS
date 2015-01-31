@@ -1,6 +1,0 @@
-1 : Dead Code Elimination : 0.000001
-2 : Induction Variable Simplification : 0.000001
-3 : Early CSE : 0.000001
-4 : Induction Variable Simplification : 0.000001
-5 : Reassociate expressions : 0.000001
-SpeedUp : 0.768519

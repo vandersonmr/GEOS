@@ -1,6 +1,0 @@
-1 : Constant Hoisting : 322.471101
-2 : Global Value Numbering : 271.000926
-3 : Aggressive Dead Code Elimination : 271.000926
-4 : Scalar Replacement of Aggregates (DT) : 218.459712
-5 : Code sinking : 226.743319
-SpeedUp : 1.422186

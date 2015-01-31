@@ -1,5 +1,0 @@
-1 : Promote Memory to Register : 0.000001
-2 : MemCpy Optimization : 0.000001
-3 : Loop-Closed SSA Form Pass : 0.000001
-4 : Remove redundant instructions : 0.000001
-SpeedUp : 1.034188

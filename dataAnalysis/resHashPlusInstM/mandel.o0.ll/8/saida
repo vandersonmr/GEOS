@@ -1,5 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 176.547122
-2 : Value Propagation : 176.547122
-3 : Lower atomic intrinsics to non-atomic form : 176.547122
-4 : Loop Invariant Code Motion : 10465.374214
-SpeedUp : 0.016870

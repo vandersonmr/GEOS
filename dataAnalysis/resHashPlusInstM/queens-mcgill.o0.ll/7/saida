@@ -1,9 +1,0 @@
-1 : Dead Code Elimination : 789.055338
-2 : Loop-Closed SSA Form Pass : 789.055338
-3 : Remove redundant instructions : 789.055338
-4 : Induction Variable Simplification : 789.055338
-5 : Dead Code Elimination : 789.055338
-6 : Remove redundant instructions : 789.055338
-7 : MergedLoadStoreMotion : 789.055338
-8 : Scalar Replacement of Aggregates (DT) : 874.685424
-SpeedUp : 0.902102

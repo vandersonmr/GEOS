@@ -1,8 +1,0 @@
-1 : Remove redundant instructions : 591.774013
-2 : Lower atomic intrinsics to non-atomic form : 591.774013
-3 : Promote Memory to Register : 512.943397
-4 : SROA : 512.943397
-5 : Global Value Numbering : 313.287374
-6 : Induction Variable Simplification : 287.863192
-7 : Combine redundant instructions : 331.785234
-SpeedUp : 1.783753

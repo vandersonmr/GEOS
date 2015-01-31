@@ -1,9 +1,0 @@
-1 : Early CSE : 46.284603
-2 : Aggressive Dead Code Elimination : 46.284603
-3 : Combine redundant instructions : 43.760318
-4 : Alignment from assumptions : 43.760318
-5 : Global Value Numbering : 43.691586
-6 : Promote Memory to Register : 30.621863
-7 : Dead Code Elimination : 30.615194
-8 : Induction Variable Simplification : 33.352149
-SpeedUp : 1.547230

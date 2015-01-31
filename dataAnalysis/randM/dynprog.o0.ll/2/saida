@@ -1,7 +1,0 @@
-1 : Induction Variable Simplification : 0.000001
-2 : Aggressive Dead Code Elimination : 0.000001
-3 : SROA : 0.000001
-4 : Add DWARF path discriminators : 0.000001
-5 : Induction Variable Simplification : 0.000001
-6 : MergedLoadStoreMotion : 0.000001
-SpeedUp : 0.891566

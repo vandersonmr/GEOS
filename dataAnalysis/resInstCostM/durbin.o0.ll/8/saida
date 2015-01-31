@@ -1,7 +1,0 @@
-1 : MemCpy Optimization : 12.405421
-2 : Induction Variable Simplification : 12.405421
-3 : SROA : 12.405421
-4 : Loop-Closed SSA Form Pass : 12.405421
-5 : Scalar Replacement of Aggregates (DT) : 6.883040
-6 : Reassociate expressions : 6.962980
-SpeedUp : 1.781625

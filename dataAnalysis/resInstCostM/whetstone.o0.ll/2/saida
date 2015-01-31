@@ -1,8 +1,0 @@
-1 : MemCpy Optimization : 78.440507
-2 : SROA : 78.440507
-3 : Scalar Replacement of Aggregates (DT) : 47.937503
-4 : Loop-Closed SSA Form Pass : 47.937503
-5 : Code sinking : 47.937503
-6 : Loop Invariant Code Motion : 47.937503
-7 : Reassociate expressions : 47.937503
-SpeedUp : 1.636308

@@ -1,6 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 1.627812
-2 : Dead Instruction Elimination : 1.627812
-3 : Lower atomic intrinsics to non-atomic form : 1.627812
-4 : Loop-Closed SSA Form Pass : 1.627812
-5 : Global Value Numbering : 1.627815
-SpeedUp : 0.999998

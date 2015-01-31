@@ -1,7 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 176.547122
-2 : Aggressive Dead Code Elimination : 176.547122
-3 : Dead Instruction Elimination : 176.547122
-4 : Dead Instruction Elimination : 176.547122
-5 : Reassociate expressions : 176.547122
-6 : Loop Invariant Code Motion : 10465.374214
-SpeedUp : 0.016870

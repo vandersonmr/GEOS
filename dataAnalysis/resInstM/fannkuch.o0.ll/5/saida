@@ -1,5 +1,0 @@
-1 : MergedLoadStoreMotion : 455.558540
-2 : Alignment from assumptions : 455.558540
-3 : Early CSE : 410.382013
-4 : Loop Invariant Code Motion : 411.467064
-SpeedUp : 1.107157

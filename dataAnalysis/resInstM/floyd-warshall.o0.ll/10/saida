@@ -1,8 +1,0 @@
-1 : Early CSE : 258.295942
-2 : Remove redundant instructions : 258.295942
-3 : Loop-Closed SSA Form Pass : 258.295942
-4 : Reassociate expressions : 258.295942
-5 : Early CSE : 258.295942
-6 : Induction Variable Simplification : 258.295942
-7 : Global Value Numbering : 290.529035
-SpeedUp : 2.182482

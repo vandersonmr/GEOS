@@ -1,3 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 96.456822
-2 : Global Value Numbering : 96.536798
-SpeedUp : 0.999172

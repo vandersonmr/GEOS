@@ -1,4 +1,0 @@
-1 : Add DWARF path discriminators : 0.000003
-2 : Combine redundant instructions : 0.000002
-3 : Dead Instruction Elimination : 0.000003
-SpeedUp : 1.070175

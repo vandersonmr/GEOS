@@ -1,8 +1,0 @@
-1 : Combine redundant instructions : 454.570519
-2 : SROA : 454.570519
-3 : Combine redundant instructions : 454.570519
-4 : Code sinking : 454.570519
-5 : MergedLoadStoreMotion : 454.570519
-6 : Scalar Replacement of Aggregates (DT) : 338.525259
-7 : Reassociate expressions : 338.674222
-SpeedUp : 1.501963

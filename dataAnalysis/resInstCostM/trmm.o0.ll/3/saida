@@ -1,8 +1,0 @@
-1 : Promote Memory to Register : 91.524956
-2 : Code sinking : 91.524956
-3 : Loop Invariant Code Motion : 70.029210
-4 : Alignment from assumptions : 70.029210
-5 : Combine redundant instructions : 70.018683
-6 : Reassociate expressions : 70.018683
-7 : Induction Variable Simplification : 70.018693
-SpeedUp : 2.230700

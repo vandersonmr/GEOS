@@ -1,9 +1,0 @@
-1 : MemCpy Optimization : 0.000002
-2 : Global Value Numbering : 0.000002
-3 : SROA : 0.000001
-4 : Scalar Replacement of Aggregates (DT) : 0.000001
-5 : Add DWARF path discriminators : 0.000002
-6 : Early CSE : 0.000002
-7 : Assign names to anonymous instructions : 0.000001
-8 : Reassociate expressions : 0.000002
-SpeedUp : 1.076433

@@ -1,6 +1,0 @@
-1 : SROA : 14685.372832
-2 : Aggressive Dead Code Elimination : 14685.372832
-3 : Early CSE : 13113.019753
-4 : Combine redundant instructions : 12991.684786
-5 : Combine redundant instructions : 12991.690084
-SpeedUp : 1.130367

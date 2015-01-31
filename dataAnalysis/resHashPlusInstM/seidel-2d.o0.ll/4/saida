@@ -1,5 +1,0 @@
-1 : Early CSE : 47.345986
-2 : Induction Variable Simplification : 47.345986
-3 : Promote Memory to Register : 39.068584
-4 : Combine redundant instructions : 55.646937
-SpeedUp : 1.380452

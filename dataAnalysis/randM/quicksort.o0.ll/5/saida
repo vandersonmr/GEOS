@@ -1,5 +1,0 @@
-1 : Remove redundant instructions : 0.000001
-2 : Value Propagation : 0.000000
-3 : Aggressive Dead Code Elimination : 0.000001
-4 : Assign names to anonymous instructions : 0.000000
-SpeedUp : 1.166667

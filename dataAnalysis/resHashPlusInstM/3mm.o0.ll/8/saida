@@ -1,4 +1,0 @@
-1 : Combine redundant instructions : 5102.444994
-2 : Reassociate expressions : 5102.444994
-3 : Promote Memory to Register : 5350.636373
-SpeedUp : 1.058661

@@ -1,4 +1,0 @@
-1 : Induction Variable Simplification : 0.000002
-2 : Lower atomic intrinsics to non-atomic form : 0.000002
-3 : MemCpy Optimization : 0.000002
-SpeedUp : 1.079208

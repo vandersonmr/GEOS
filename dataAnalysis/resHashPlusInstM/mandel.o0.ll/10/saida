@@ -1,5 +1,0 @@
-1 : Promote Memory to Register : 100.167997
-2 : Scalar Replacement of Aggregates (DT) : 100.167997
-3 : Code sinking : 100.167997
-4 : Remove redundant instructions : 110.529568
-SpeedUp : 1.597284

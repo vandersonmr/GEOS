@@ -1,8 +1,0 @@
-1 : Assign names to anonymous instructions : 705.615601
-2 : MergedLoadStoreMotion : 705.615601
-3 : Dead Instruction Elimination : 705.615601
-4 : Dead Code Elimination : 705.615601
-5 : Global Value Numbering : 705.615601
-6 : Lower atomic intrinsics to non-atomic form : 705.615601
-7 : Early CSE : 717.615601
-SpeedUp : 0.983278

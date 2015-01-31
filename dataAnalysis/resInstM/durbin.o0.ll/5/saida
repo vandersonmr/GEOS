@@ -1,5 +1,0 @@
-1 : Loop Invariant Code Motion : 15.526641
-2 : Promote Memory to Register : 10.004380
-3 : Global Value Numbering : 5.283280
-4 : Reassociate expressions : 5.363340
-SpeedUp : 2.894957

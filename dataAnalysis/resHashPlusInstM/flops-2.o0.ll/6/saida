@@ -1,9 +1,0 @@
-1 : Dead Code Elimination : 54416.232888
-2 : MemCpy Optimization : 54416.232888
-3 : Add DWARF path discriminators : 54416.232888
-4 : Combine redundant instructions : 1211.840967
-5 : SROA : 1211.840967
-6 : Combine redundant instructions : 1211.840967
-7 : Scalar Replacement of Aggregates (DT) : 946.824934
-8 : Add DWARF path discriminators : 76559.313371
-SpeedUp : 0.710772

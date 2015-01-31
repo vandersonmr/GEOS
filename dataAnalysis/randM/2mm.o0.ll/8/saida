@@ -1,4 +1,0 @@
-1 : Constant Hoisting : 0.000003
-2 : Add DWARF path discriminators : 0.000003
-3 : Code sinking : 0.000003
-SpeedUp : 1.112360

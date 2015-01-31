@@ -1,5 +1,0 @@
-1 : Dead Instruction Elimination : 0.000001
-2 : Constant Hoisting : 0.000001
-3 : Global Value Numbering : 0.000001
-4 : Aggressive Dead Code Elimination : 0.000001
-SpeedUp : 0.945946

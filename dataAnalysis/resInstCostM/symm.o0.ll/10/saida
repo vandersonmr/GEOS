@@ -1,6 +1,0 @@
-1 : MergedLoadStoreMotion : 466.738443
-2 : Lower atomic intrinsics to non-atomic form : 466.738443
-3 : Assign names to anonymous instructions : 466.738443
-4 : MergedLoadStoreMotion : 466.738443
-5 : Global Value Numbering : 498.730548
-SpeedUp : 0.935853

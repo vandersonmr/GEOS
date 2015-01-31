@@ -1,5 +1,0 @@
-1 : Reassociate expressions : 0.000001
-2 : Combine redundant instructions : 0.000001
-3 : Loop-Closed SSA Form Pass : 0.000001
-4 : Constant Hoisting : 0.000001
-SpeedUp : 0.864865

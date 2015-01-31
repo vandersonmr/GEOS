@@ -1,5 +1,0 @@
-1 : Remove redundant instructions : 0.000002
-2 : MemCpy Optimization : 0.000002
-3 : MergedLoadStoreMotion : 0.000002
-4 : Dead Instruction Elimination : 0.000001
-SpeedUp : 1.073446

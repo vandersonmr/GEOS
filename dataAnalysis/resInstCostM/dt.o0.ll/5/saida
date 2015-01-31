@@ -1,5 +1,0 @@
-1 : Code sinking : 37.603840
-2 : Loop Invariant Code Motion : 37.603840
-3 : Add DWARF path discriminators : 37.603840
-4 : Global Value Numbering : 45.656884
-SpeedUp : 0.823618

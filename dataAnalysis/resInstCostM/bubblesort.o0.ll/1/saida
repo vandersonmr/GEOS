@@ -1,8 +1,0 @@
-1 : Loop Invariant Code Motion : 3.584917
-2 : Aggressive Dead Code Elimination : 3.584917
-3 : SROA : 3.584917
-4 : Assign names to anonymous instructions : 3.584917
-5 : Induction Variable Simplification : 3.584917
-6 : Code sinking : 3.584917
-7 : Reassociate expressions : 3.585418
-SpeedUp : 0.999860

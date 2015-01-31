@@ -1,7 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 7344.689624
-2 : Remove redundant instructions : 7344.689624
-3 : Reassociate expressions : 7344.689624
-4 : Constant Hoisting : 7344.689624
-5 : Loop Invariant Code Motion : 7344.689624
-6 : Combine redundant instructions : 7348.631869
-SpeedUp : 0.999464

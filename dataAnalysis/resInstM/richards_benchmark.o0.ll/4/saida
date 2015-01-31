@@ -1,5 +1,0 @@
-1 : Dead Code Elimination : 92.579429
-2 : Reassociate expressions : 92.579429
-3 : Early CSE : 82.136103
-4 : Loop Invariant Code Motion : 82.240804
-SpeedUp : 1.125712

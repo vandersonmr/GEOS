@@ -1,6 +1,0 @@
-1 : MergedLoadStoreMotion : 0.000002
-2 : Global Value Numbering : 0.000001
-3 : Constant Hoisting : 0.000001
-4 : Alignment from assumptions : 0.000001
-5 : Constant Hoisting : 0.000001
-SpeedUp : 1.101695

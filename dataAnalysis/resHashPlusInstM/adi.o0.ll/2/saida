@@ -1,5 +1,0 @@
-1 : Assign names to anonymous instructions : 578.672607
-2 : Combine redundant instructions : 541.417939
-3 : Loop Invariant Code Motion : 541.417939
-4 : Scalar Replacement of Aggregates (DT) : 683.173511
-SpeedUp : 0.847036

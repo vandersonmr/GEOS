@@ -1,8 +1,0 @@
-1 : Early CSE : 734.857830
-2 : Reassociate expressions : 734.857830
-3 : Loop Invariant Code Motion : 330.913741
-4 : Constant Hoisting : 330.913741
-5 : Loop Invariant Code Motion : 330.913741
-6 : Loop-Closed SSA Form Pass : 330.913741
-7 : Global Value Numbering : 591.438244
-SpeedUp : 1.480288

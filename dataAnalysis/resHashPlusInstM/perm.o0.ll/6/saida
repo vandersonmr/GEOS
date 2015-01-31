@@ -1,5 +1,0 @@
-1 : Reassociate expressions : 13.737149
-2 : Alignment from assumptions : 13.737149
-3 : MergedLoadStoreMotion : 13.737149
-4 : Global Value Numbering : 33.025103
-SpeedUp : 0.415961

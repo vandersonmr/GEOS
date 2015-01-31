@@ -1,8 +1,0 @@
-1 : Loop Invariant Code Motion : 685.582385
-2 : Value Propagation : 685.582385
-3 : Induction Variable Simplification : 685.582385
-4 : Early CSE : 620.818305
-5 : Constant Hoisting : 620.818305
-6 : Loop Invariant Code Motion : 610.505784
-7 : Early CSE : 620.818305
-SpeedUp : 1.104321

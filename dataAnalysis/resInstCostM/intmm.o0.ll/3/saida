@@ -1,5 +1,0 @@
-1 : Scalar Replacement of Aggregates (DT) : 0.077885
-2 : Lower atomic intrinsics to non-atomic form : 0.077885
-3 : Early CSE : 0.077561
-4 : Global Value Numbering : 0.078981
-SpeedUp : 1.887134

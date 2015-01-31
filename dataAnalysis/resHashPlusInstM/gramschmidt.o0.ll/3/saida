@@ -1,8 +1,0 @@
-1 : Loop-Closed SSA Form Pass : 247.204441
-2 : Promote Memory to Register : 204.052987
-3 : Dead Instruction Elimination : 203.988608
-4 : Aggressive Dead Code Elimination : 203.988608
-5 : Constant Hoisting : 203.988608
-6 : MergedLoadStoreMotion : 203.988608
-7 : Value Propagation : 204.052987
-SpeedUp : 1.211472

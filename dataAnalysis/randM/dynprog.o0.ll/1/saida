@@ -1,7 +1,0 @@
-1 : Code sinking : 0.000001
-2 : Loop Invariant Code Motion : 0.000001
-3 : Promote Memory to Register : 0.000001
-4 : Loop-Closed SSA Form Pass : 0.000001
-5 : Promote Memory to Register : 0.000001
-6 : Constant Hoisting : 0.000001
-SpeedUp : 0.891566

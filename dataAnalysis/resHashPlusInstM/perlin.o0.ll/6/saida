@@ -1,4 +1,0 @@
-1 : MemCpy Optimization : 2167.241420
-2 : Lower atomic intrinsics to non-atomic form : 2167.241420
-3 : Global Value Numbering : 2545.449965
-SpeedUp : 0.851418

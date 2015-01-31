@@ -1,5 +1,0 @@
-1 : Alignment from assumptions : 0.000002
-2 : Early CSE : 0.000002
-3 : Lower atomic intrinsics to non-atomic form : 0.000002
-4 : Scalar Replacement of Aggregates (DT) : 0.000002
-SpeedUp : 1.068571

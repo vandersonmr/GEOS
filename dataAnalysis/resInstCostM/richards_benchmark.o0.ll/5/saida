@@ -1,8 +1,0 @@
-1 : Code sinking : 76.432831
-2 : MergedLoadStoreMotion : 76.432831
-3 : Remove redundant instructions : 76.432831
-4 : Value Propagation : 76.432831
-5 : Loop Invariant Code Motion : 76.432831
-6 : Scalar Replacement of Aggregates (DT) : 54.169589
-7 : Lower atomic intrinsics to non-atomic form : 54.189273
-SpeedUp : 1.410479

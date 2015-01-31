@@ -1,5 +1,0 @@
-1 : Loop Invariant Code Motion : 2.477279
-2 : Loop-Closed SSA Form Pass : 2.477279
-3 : Scalar Replacement of Aggregates (DT) : 1.352850
-4 : Reassociate expressions : 1.352875
-SpeedUp : 1.831122

@@ -1,5 +1,0 @@
-1 : Promote Memory to Register : 0.000002
-2 : Induction Variable Simplification : 0.000002
-3 : Remove redundant instructions : 0.000002
-4 : Aggressive Dead Code Elimination : 0.000002
-SpeedUp : 1.283784

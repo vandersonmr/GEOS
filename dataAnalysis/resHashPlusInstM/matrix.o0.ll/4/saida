@@ -1,6 +1,0 @@
-1 : Code sinking : 6265.308210
-2 : Loop Invariant Code Motion : 6265.308210
-3 : Alignment from assumptions : 6265.308210
-4 : SROA : 6265.308210
-5 : Combine redundant instructions : 7092.592602
-SpeedUp : 0.883359

@@ -1,7 +1,0 @@
-1 : Alignment from assumptions : 72.728678
-2 : Add DWARF path discriminators : 72.728678
-3 : Lower atomic intrinsics to non-atomic form : 72.728678
-4 : SROA : 72.728678
-5 : Loop Invariant Code Motion : 72.728678
-6 : Promote Memory to Register : 77.052361
-SpeedUp : 0.943886

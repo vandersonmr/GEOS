@@ -1,4 +1,0 @@
-1 : Loop Invariant Code Motion : 0.000005
-2 : Loop-Closed SSA Form Pass : 0.000005
-3 : Alignment from assumptions : 0.000005
-SpeedUp : 0.975567

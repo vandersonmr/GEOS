@@ -1,5 +1,0 @@
-1 : Induction Variable Simplification : 0.000002
-2 : MergedLoadStoreMotion : 0.000002
-3 : Add DWARF path discriminators : 0.000002
-4 : MemCpy Optimization : 0.000002
-SpeedUp : 1.068571

@@ -1,8 +1,0 @@
-1 : Aggressive Dead Code Elimination : 679.753833
-2 : Value Propagation : 679.753833
-3 : Constant Hoisting : 679.753833
-4 : SROA : 679.753833
-5 : Aggressive Dead Code Elimination : 679.753833
-6 : Dead Instruction Elimination : 679.753833
-7 : Remove redundant instructions : 679.753833
-SpeedUp : 1.000000

@@ -1,5 +1,0 @@
-1 : MemCpy Optimization : 35.838429
-2 : Add DWARF path discriminators : 35.838429
-3 : Code sinking : 35.838429
-4 : Scalar Replacement of Aggregates (DT) : 39.878906
-SpeedUp : 0.898681

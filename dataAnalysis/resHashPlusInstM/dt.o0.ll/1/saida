@@ -1,8 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 324.197070
-2 : Early CSE : 310.768661
-3 : Loop-Closed SSA Form Pass : 310.768661
-4 : Induction Variable Simplification : 310.768661
-5 : MergedLoadStoreMotion : 310.768661
-6 : Add DWARF path discriminators : 310.768661
-7 : Global Value Numbering : 348.834936
-SpeedUp : 0.929371

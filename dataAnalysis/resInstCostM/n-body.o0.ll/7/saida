@@ -1,5 +1,0 @@
-1 : Dead Code Elimination : 132.050031
-2 : Early CSE : 122.750027
-3 : Add DWARF path discriminators : 122.750027
-4 : Global Value Numbering : 123.350027
-SpeedUp : 1.070531

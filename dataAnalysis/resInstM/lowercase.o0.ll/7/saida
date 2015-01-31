@@ -1,8 +1,0 @@
-1 : Value Propagation : 2405.600027
-2 : Value Propagation : 2405.600027
-3 : Induction Variable Simplification : 2405.600027
-4 : Loop Invariant Code Motion : 2405.600027
-5 : Alignment from assumptions : 2405.600027
-6 : Scalar Replacement of Aggregates (DT) : 1472.800015
-7 : Assign names to anonymous instructions : 1522.400014
-SpeedUp : 1.580137

@@ -1,5 +1,0 @@
-1 : Dead Instruction Elimination : 54028.428648
-2 : SROA : 54028.428648
-3 : MemCpy Optimization : 54028.428648
-4 : Early CSE : 76544.444615
-SpeedUp : 0.705844

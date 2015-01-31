@@ -1,6 +1,0 @@
-1 : Loop Invariant Code Motion : 2.064423
-2 : Promote Memory to Register : 1.089676
-3 : Constant Hoisting : 1.089676
-4 : Assign names to anonymous instructions : 1.089676
-5 : Reassociate expressions : 1.097868
-SpeedUp : 1.880393

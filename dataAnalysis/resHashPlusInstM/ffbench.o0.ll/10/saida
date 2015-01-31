@@ -1,5 +1,0 @@
-1 : Code sinking : 266.005330
-2 : MemCpy Optimization : 266.005330
-3 : Value Propagation : 266.005330
-4 : Reassociate expressions : 266.123965
-SpeedUp : 0.999554

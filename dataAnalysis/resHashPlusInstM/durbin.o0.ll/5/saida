@@ -1,4 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 62.425728
-2 : Loop Invariant Code Motion : 62.425728
-3 : Early CSE : 66.366152
-SpeedUp : 0.940626

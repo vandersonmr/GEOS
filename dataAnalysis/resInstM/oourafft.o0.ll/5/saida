@@ -1,9 +1,0 @@
-1 : Aggressive Dead Code Elimination : 1230.106588
-2 : Promote Memory to Register : 662.964034
-3 : Dead Code Elimination : 662.959534
-4 : Early CSE : 415.746571
-5 : Dead Code Elimination : 415.746571
-6 : MemCpy Optimization : 415.746571
-7 : Global Value Numbering : 262.043178
-8 : Loop-Closed SSA Form Pass : 262.187201
-SpeedUp : 4.691711

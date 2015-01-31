@@ -1,8 +1,0 @@
-1 : Global Value Numbering : 38.281099
-2 : MergedLoadStoreMotion : 38.281099
-3 : Dead Instruction Elimination : 38.281099
-4 : Lower atomic intrinsics to non-atomic form : 38.281099
-5 : Combine redundant instructions : 36.161877
-6 : Promote Memory to Register : 29.172653
-7 : Early CSE : 30.766421
-SpeedUp : 1.682925

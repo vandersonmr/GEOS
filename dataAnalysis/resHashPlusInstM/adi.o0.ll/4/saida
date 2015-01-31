@@ -1,5 +1,0 @@
-1 : Constant Hoisting : 578.672607
-2 : Aggressive Dead Code Elimination : 578.672607
-3 : Dead Code Elimination : 578.672607
-4 : SROA : 578.672607
-5 : Aggressive Dead Code Elimination : 578.672607

@@ -1,9 +1,0 @@
-1 : Promote Memory to Register : 71.589549
-2 : Promote Memory to Register : 71.589549
-3 : Value Propagation : 71.589549
-4 : Remove redundant instructions : 71.589549
-5 : Dead Instruction Elimination : 71.589549
-6 : Aggressive Dead Code Elimination : 71.589549
-7 : Combine redundant instructions : 66.726448
-8 : Loop Invariant Code Motion : 66.831149
-SpeedUp : 1.385274

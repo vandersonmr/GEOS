@@ -1,7 +1,0 @@
-1 : MemCpy Optimization : 5662.759187
-2 : Assign names to anonymous instructions : 5662.759187
-3 : MemCpy Optimization : 5662.759187
-4 : Promote Memory to Register : 1732.957418
-5 : MemCpy Optimization : 1732.957418
-6 : Combine redundant instructions : 2066.759476
-SpeedUp : 2.739922

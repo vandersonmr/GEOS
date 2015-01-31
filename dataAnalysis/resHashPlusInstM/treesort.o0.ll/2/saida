@@ -1,6 +1,0 @@
-1 : Add DWARF path discriminators : 32.100803
-2 : Value Propagation : 32.100803
-3 : Lower atomic intrinsics to non-atomic form : 32.100803
-4 : Constant Hoisting : 32.100803
-5 : Global Value Numbering : 32.837093
-SpeedUp : 0.977577

@@ -1,9 +1,0 @@
-1 : MemCpy Optimization : 76.560016
-2 : Induction Variable Simplification : 76.560016
-3 : Value Propagation : 76.560016
-4 : Assign names to anonymous instructions : 76.560016
-5 : Scalar Replacement of Aggregates (DT) : 43.808364
-6 : Code sinking : 35.574942
-7 : Combine redundant instructions : 34.916248
-8 : Induction Variable Simplification : 34.918849
-SpeedUp : 2.192513

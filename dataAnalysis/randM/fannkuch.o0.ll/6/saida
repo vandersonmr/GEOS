@@ -1,5 +1,0 @@
-1 : Code sinking : 0.000002
-2 : Alignment from assumptions : 0.000002
-3 : Dead Instruction Elimination : 0.000001
-4 : Combine redundant instructions : 0.000001
-SpeedUp : 1.177778

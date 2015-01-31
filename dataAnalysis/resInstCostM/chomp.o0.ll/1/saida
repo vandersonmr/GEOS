@@ -1,7 +1,0 @@
-1 : Scalar Replacement of Aggregates (DT) : 16.841439
-2 : Constant Hoisting : 16.841439
-3 : Reassociate expressions : 16.841439
-4 : Promote Memory to Register : 16.841439
-5 : Loop Invariant Code Motion : 16.756672
-6 : Code sinking : 16.785292
-SpeedUp : 2.136219

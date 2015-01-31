@@ -1,5 +1,0 @@
-1 : Dead Instruction Elimination : 3140.620693
-2 : Value Propagation : 3140.620693
-3 : Dead Instruction Elimination : 3140.620693
-4 : Combine redundant instructions : 3214.262626
-SpeedUp : 0.977089

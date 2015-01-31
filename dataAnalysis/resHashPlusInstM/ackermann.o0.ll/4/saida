@@ -1,8 +1,0 @@
-1 : Reassociate expressions : 4.182627
-2 : Dead Instruction Elimination : 4.182627
-3 : Assign names to anonymous instructions : 4.182627
-4 : Reassociate expressions : 4.182627
-5 : Induction Variable Simplification : 4.182627
-6 : SROA : 4.182627
-7 : Combine redundant instructions : 4.255301
-SpeedUp : 0.982922

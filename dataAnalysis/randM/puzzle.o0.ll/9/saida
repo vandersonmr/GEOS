@@ -1,6 +1,0 @@
-1 : Alignment from assumptions : 0.000001
-2 : Combine redundant instructions : 0.000001
-3 : Scalar Replacement of Aggregates (DT) : 0.000001
-4 : MemCpy Optimization : 0.000001
-5 : Promote Memory to Register : 0.000001
-SpeedUp : 0.768519

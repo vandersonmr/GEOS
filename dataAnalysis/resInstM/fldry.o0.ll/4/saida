@@ -1,4 +1,0 @@
-1 : Value Propagation : 557.000000
-2 : Early CSE : 485.000000
-3 : Induction Variable Simplification : 488.000000
-SpeedUp : 1.141393

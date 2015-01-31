@@ -1,4 +1,0 @@
-1 : Constant Hoisting : 644.602284
-2 : SROA : 644.602284
-3 : Reassociate expressions : 644.670620
-SpeedUp : 0.999894

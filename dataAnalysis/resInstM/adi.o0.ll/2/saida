@@ -1,8 +1,0 @@
-1 : Alignment from assumptions : 167.861750
-2 : Dead Code Elimination : 167.861750
-3 : Alignment from assumptions : 167.861750
-4 : Promote Memory to Register : 111.033339
-5 : Induction Variable Simplification : 83.240733
-6 : Value Propagation : 83.240733
-7 : Reassociate expressions : 83.765020
-SpeedUp : 2.003960

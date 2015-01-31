@@ -1,8 +1,0 @@
-1 : Code sinking : 2.125003
-2 : MemCpy Optimization : 2.125003
-3 : Lower atomic intrinsics to non-atomic form : 2.125003
-4 : Scalar Replacement of Aggregates (DT) : 1.100002
-5 : Aggressive Dead Code Elimination : 1.100002
-6 : Combine redundant instructions : 0.987501
-7 : Induction Variable Simplification : 1.150001
-SpeedUp : 1.847827

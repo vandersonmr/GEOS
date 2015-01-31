@@ -1,6 +1,0 @@
-1 : Global Value Numbering : 0.000002
-2 : Dead Code Elimination : 0.000001
-3 : Reassociate expressions : 0.000002
-4 : Reassociate expressions : 0.000001
-5 : Induction Variable Simplification : 0.000002
-SpeedUp : 1.168750

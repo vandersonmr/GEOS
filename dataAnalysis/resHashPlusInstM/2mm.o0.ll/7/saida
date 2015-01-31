@@ -1,8 +1,0 @@
-1 : Loop-Closed SSA Form Pass : 3766.051407
-2 : Dead Code Elimination : 3766.051407
-3 : Reassociate expressions : 3766.051407
-4 : Early CSE : 3289.818473
-5 : Aggressive Dead Code Elimination : 3289.818473
-6 : Constant Hoisting : 3289.818473
-7 : Scalar Replacement of Aggregates (DT) : 3655.892296
-SpeedUp : 1.030132

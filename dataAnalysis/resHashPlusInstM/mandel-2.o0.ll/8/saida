@@ -1,4 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 552.937676
-2 : Assign names to anonymous instructions : 552.937676
-3 : Loop Invariant Code Motion : 564.725810
-SpeedUp : 0.979126

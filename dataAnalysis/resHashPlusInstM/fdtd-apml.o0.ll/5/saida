@@ -1,4 +1,0 @@
-1 : Constant Hoisting : 399.469605
-2 : Promote Memory to Register : 320.727792
-3 : Constant Hoisting : 320.727792
-4 : SROA : 320.727792

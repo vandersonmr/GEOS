@@ -1,9 +1,0 @@
-1 : Alignment from assumptions : 40048.741226
-2 : Value Propagation : 40048.741226
-3 : Code sinking : 40048.741226
-4 : Dead Code Elimination : 40048.741226
-5 : Induction Variable Simplification : 40048.741226
-6 : Lower atomic intrinsics to non-atomic form : 40048.741226
-7 : Global Value Numbering : 39982.812320
-8 : Combine redundant instructions : 130157.812063
-SpeedUp : 0.307694

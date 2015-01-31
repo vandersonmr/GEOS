@@ -1,9 +1,0 @@
-1 : Dead Code Elimination : 0.162824
-2 : Dead Code Elimination : 0.162824
-3 : Promote Memory to Register : 0.091661
-4 : Assign names to anonymous instructions : 0.091661
-5 : MemCpy Optimization : 0.091661
-6 : MergedLoadStoreMotion : 0.091661
-7 : Assign names to anonymous instructions : 0.091661
-8 : Reassociate expressions : 0.091989
-SpeedUp : 1.770035

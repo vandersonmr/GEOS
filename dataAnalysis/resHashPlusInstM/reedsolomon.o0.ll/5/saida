@@ -1,4 +1,0 @@
-1 : Dead Code Elimination : 7183.798785
-2 : Combine redundant instructions : 4313.731205
-3 : Reassociate expressions : 4314.773510
-SpeedUp : 1.664931

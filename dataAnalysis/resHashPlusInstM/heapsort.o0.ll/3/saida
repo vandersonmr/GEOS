@@ -1,6 +1,0 @@
-1 : Early CSE : 508.427039
-2 : Early CSE : 508.427039
-3 : Loop-Closed SSA Form Pass : 508.427039
-4 : Combine redundant instructions : 503.970670
-5 : Dead Code Elimination : 1422.290670
-SpeedUp : 0.384977

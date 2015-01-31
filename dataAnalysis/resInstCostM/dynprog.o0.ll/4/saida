@@ -1,8 +1,0 @@
-1 : Early CSE : 76.919787
-2 : Combine redundant instructions : 53.584810
-3 : Scalar Replacement of Aggregates (DT) : 35.982330
-4 : Reassociate expressions : 35.830630
-5 : Promote Memory to Register : 35.830630
-6 : Add DWARF path discriminators : 35.830630
-7 : Code sinking : 37.913130
-SpeedUp : 3.118630

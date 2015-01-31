@@ -1,7 +1,0 @@
-1 : Assign names to anonymous instructions : 54554.991137
-2 : Early CSE : 50407.335232
-3 : MergedLoadStoreMotion : 50407.335232
-4 : Aggressive Dead Code Elimination : 50407.335232
-5 : Dead Instruction Elimination : 50407.335232
-6 : Add DWARF path discriminators : 50407.335232
-7 : Combine redundant instructions : 118605.920167

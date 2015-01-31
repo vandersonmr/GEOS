@@ -1,9 +1,0 @@
-1 : Promote Memory to Register : 22.194014
-2 : Global Value Numbering : 16.875167
-3 : Loop-Closed SSA Form Pass : 16.875167
-4 : Early CSE : 15.191584
-5 : Alignment from assumptions : 15.191584
-6 : Aggressive Dead Code Elimination : 15.191584
-7 : Assign names to anonymous instructions : 15.191584
-8 : Reassociate expressions : 15.201103
-SpeedUp : 1.461537

@@ -1,5 +1,0 @@
-1 : Constant Hoisting : 0.000000
-2 : Early CSE : 0.000000
-3 : Lower atomic intrinsics to non-atomic form : 0.000000
-4 : Global Value Numbering : 0.000000
-SpeedUp : 1.500000

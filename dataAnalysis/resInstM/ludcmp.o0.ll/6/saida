@@ -1,5 +1,0 @@
-1 : Remove redundant instructions : 146.274614
-2 : Global Value Numbering : 115.762332
-3 : Global Value Numbering : 115.762332
-4 : Reassociate expressions : 115.783334
-SpeedUp : 1.263348

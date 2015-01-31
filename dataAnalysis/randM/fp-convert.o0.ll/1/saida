@@ -1,5 +1,0 @@
-1 : Scalar Replacement of Aggregates (DT) : 0.000000
-2 : Early CSE : 0.000000
-3 : Early CSE : 0.000000
-4 : MergedLoadStoreMotion : 0.000000
-SpeedUp : 0.967742

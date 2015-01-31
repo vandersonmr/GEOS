@@ -1,5 +1,0 @@
-1 : MemCpy Optimization : 54416.232888
-2 : Promote Memory to Register : 556.199934
-3 : Dead Code Elimination : 539.793684
-4 : Loop Invariant Code Motion : 1144.554465
-SpeedUp : 47.543594

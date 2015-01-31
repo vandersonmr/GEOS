@@ -1,8 +1,0 @@
-1 : Dead Code Elimination : 95.394509
-2 : MergedLoadStoreMotion : 95.394509
-3 : Dead Instruction Elimination : 95.394509
-4 : Global Value Numbering : 95.314509
-5 : Scalar Replacement of Aggregates (DT) : 55.550579
-6 : Dead Code Elimination : 50.255257
-7 : Loop-Closed SSA Form Pass : 52.127031
-SpeedUp : 1.830039

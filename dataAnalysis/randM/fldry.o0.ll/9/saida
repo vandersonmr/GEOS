@@ -1,4 +1,0 @@
-1 : MergedLoadStoreMotion : 0.000001
-2 : Alignment from assumptions : 0.000001
-3 : Scalar Replacement of Aggregates (DT) : 0.000001
-SpeedUp : 1.009901

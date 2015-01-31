@@ -1,4 +1,0 @@
-1 : Early CSE : 0.000003
-2 : Aggressive Dead Code Elimination : 0.000003
-3 : Dead Instruction Elimination : 0.000003
-SpeedUp : 1.112360

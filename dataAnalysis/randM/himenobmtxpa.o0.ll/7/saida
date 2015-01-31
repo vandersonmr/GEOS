@@ -1,6 +1,0 @@
-1 : MergedLoadStoreMotion : 0.000003
-2 : Reassociate expressions : 0.000003
-3 : Lower atomic intrinsics to non-atomic form : 0.000003
-4 : Induction Variable Simplification : 0.000003
-5 : Remove redundant instructions : 0.000003
-SpeedUp : 0.958599

@@ -1,6 +1,0 @@
-1 : Loop Invariant Code Motion : 48255.772424
-2 : Code sinking : 48255.772424
-3 : Dead Instruction Elimination : 48255.772424
-4 : Assign names to anonymous instructions : 48255.772424
-5 : Loop-Closed SSA Form Pass : 48255.772424
-6 : Scalar Replacement of Aggregates (DT) : 54787.120937

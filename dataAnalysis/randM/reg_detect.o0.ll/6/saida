@@ -1,6 +1,0 @@
-1 : Add DWARF path discriminators : 0.000001
-2 : Code sinking : 0.000001
-3 : Assign names to anonymous instructions : 0.000001
-4 : Assign names to anonymous instructions : 0.000001
-5 : Constant Hoisting : 0.000001
-SpeedUp : 0.990826

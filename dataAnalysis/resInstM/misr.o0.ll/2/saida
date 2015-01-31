@@ -1,6 +1,0 @@
-1 : Dead Instruction Elimination : 5.494476
-2 : Constant Hoisting : 5.494476
-3 : Promote Memory to Register : 3.669483
-4 : Alignment from assumptions : 3.669483
-5 : Combine redundant instructions : 3.690986
-SpeedUp : 1.488620

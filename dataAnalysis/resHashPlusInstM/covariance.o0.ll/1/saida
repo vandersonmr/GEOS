@@ -1,6 +1,0 @@
-1 : Alignment from assumptions : 1193.941651
-2 : Lower atomic intrinsics to non-atomic form : 1193.941651
-3 : Reassociate expressions : 1193.941651
-4 : Alignment from assumptions : 1193.941651
-5 : Remove redundant instructions : 1193.941651
-SpeedUp : 1.000000
