@@ -67,7 +67,7 @@ int main(int argc, char **argv) {
   while (!HashLineAndTail.first.empty()) {
     int Id;
     char HashString[1000];
-
+    
     sscanf(HashLineAndTail.first.str().c_str(), "%d: %s", &Id, HashString); 
 
     Hashs[Id] = new BBHash(std::string(HashString));
@@ -82,7 +82,7 @@ int main(int argc, char **argv) {
     int Id;
     double Time; 
 
-    sscanf(HashLineAndTail.first.str().c_str(), "%d: %lf", &Id, &Time); 
+    sscanf(ProfLineAndTail.first.str().c_str(), "%d: %lf", &Id, &Time); 
 
     Times[Id] = Time;
     

@@ -121,7 +121,6 @@ int main(int argc, char** argv) {
   printf("-------------------------------------------------\n");
   FunctionPassManager FPM(Optimized->getLLVMModule());
 
-  FPM.add(GEOS::getPass(OptimizationKind::CFGStructurization));
   FPM.add(GEOS::getPass(OptimizationKind::FlattenCFG));
   FPM.add(GEOS::getPass(OptimizationKind::CFGSimplification));
   FPM.add(GEOS::getPass(OptimizationKind::LoopStrengthReduce));

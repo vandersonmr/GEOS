@@ -20,7 +20,6 @@
 #include "llvm/IR/Module.h"
 #include "llvm/IR/IRBuilder.h"
 #include "llvm/Pass.h"
-#include "llvm/Support/raw_ostream.h"
 
 #include <iostream>
 #include <sstream>
@@ -39,7 +38,7 @@ namespace {
 
       bool runOnBasicBlock(BasicBlock &BB, int id) {
         if (BB.getInstList().size() > 3) 
-          outs() << id << ": " << generateHash(BB) << "\n";
+          printf("%d: %s\n", id, generateHash(BB).str().c_str());
         return false;
       }
 

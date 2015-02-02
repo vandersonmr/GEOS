@@ -5,40 +5,29 @@ if [ "$1" == "" ]; then
   exit
 fi
 
-cont=false
-mkdir $1;
-mkdir $1/DB;
-mkdir $1/HDB;
-for ll in $(ls ../benchmarks/llvm/); do
-  ll=../benchmarks/llvm/$ll
+sudo chmod +x /usr/local/bin/saferun
+
+mkdir -p $1;
+mkdir -p $1/DB;
+mkdir -p $1/HDB;
+
+for ll in $(ls ../benchmarks/llvm/* -d); do
+  ll=$ll
   echo $ll
   rm -f tmp.ll
   rm -f tmp
 
-  lsResult=$(ls $1/*.ll 2> /dev/null)
-  if [ "$lsResult" == "" ]; then
-    cont=true;
-  else
-    if [ "../benchmarks/llvm/$(ls *.ll)" == "$ll" ]; then
-      cont=true
-    fi;
-  fi;
+  cp $ll/*.ll $1/tmp.ll
 
-  if [ "$cont" == true ]; then
-    if [ -d $ll ]; then
-      llvm-link-3.5 $ll/* -S > $1/tmp.ll 
-    else
-      cp $ll $1/tmp.ll 
-    fi
+  opt -load /usr/local/lib/libLLVMBBProf.so -bb-prof $1/tmp.ll -S -o tmp.ll 
+  opt -load /usr/local/lib/libLLVMBBHash.so -extract-bb-hash $1/tmp.ll -S \
+    -disable-output > htmp.ll
 
-    opt -load /usr/local/lib/libLLVMBBProf.so -bb-prof $1/tmp.ll -S -o tmp.ll 
-    opt -load /usr/local/lib/libLLVMBBHash.so -extract-bb-hash $1/tmp.ll -S \
-                                                     -disable-output > htmp.ll
-    mv htmp.ll $1/HDB/${ll:19}
-    clang++ tmp.ll ../src/PAPI.cpp -o tmp -lm -dl -lpapi -O0  
-    time ./tmp 2> $1/DB/${ll:19}
-    rm $1/tmp.ll
-  fi;
+  mv htmp.ll $1/HDB/${ll:19}
+  clang++ tmp.ll ../src/PAPI.cpp -o tmp -lm -ldl -lpapi -O0  
+  time sudo saferun 0 1.86 "./tmp 2> $1/DB/${ll:19}"
+  rm $1/tmp.ll
+
   echo "done"
 done;
 

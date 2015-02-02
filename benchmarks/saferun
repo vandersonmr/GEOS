@@ -1,8 +1,18 @@
 #!/bin/bash
-ulimit -v 1000000
-sudo cpufreq-set -c 3 -d 3.1GHz -u 3.1GHz root
-sudo cpufreq-set -c 3 -g powersave root
-su -c "cset shield -c 3" root
-su -c "cset shield -e -- $1" root
-su -c "cset shield --unshield" root
-sudo cpufreq-set -c 3 -d 1.2GHz -u 1.2GHz root
+
+function setupCPU() {
+  ulimit -v 2000000
+  sudo cpufreq-set -c $1 -d $2GHz -u $2GHz root
+  sudo cpufreq-set -c $1 -g powersave root
+  su -c "cset shield -c $1" root
+  su -c "cset shield -e -- $3" root
+  su -c "cset shield --unshield" root
+  sudo cpufreq-set -c $1 -d 1.6GHz -u 1.6GHz root
+}
+
+if [[ $# -eq 0 ]] ; then
+  echo "saferun CPUID FREQ \"Commands\""
+  exit 0
+fi
+
+setupCPU $1 $2 "$3"

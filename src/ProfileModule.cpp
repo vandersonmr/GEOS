@@ -55,14 +55,15 @@ ProfileModule::ProfileModule(Module* M,
 
       auto MBB = FreqFunc->block_begin(); 
       ++MBB;
+      ++MBB;
       for(auto &BB : *LLVMFunc) {
         BasicBlockFrequency[BB.getName()] = (*MBB).get()->getCount();
         ++MBB;
       }
     }
 
-    iGCDA++;
-    iGCNO++;
+    ++iGCDA;
+    ++iGCNO;
   }
 }
 

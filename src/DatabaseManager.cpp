@@ -17,7 +17,6 @@
 #include "DatabaseManager.h"
 
 #include "llvm/Support/MemoryBuffer.h"
-#include <llvm/Support/raw_ostream.h>
 
 using namespace llvm;
 
@@ -31,7 +30,7 @@ constexpr int w = 5;
 
 // PrimeNumber define the largest locality-sensitive hash number. 
 // In other words, it defines the size of CDB.
-constexpr int PrimeNumber = 101;
+constexpr int PrimeNumber = 59;
 
 // A randomic hash used to calculate the locality-sensitive hash using 
 // dotProduct to reduce the dimensions to a scalar.
@@ -52,7 +51,7 @@ void DatabaseManager::loadDatabase(StringRef Filename) {
 
     sscanf(LineAndTail.first.str().c_str(), "%s %lf", HashString, &Time); 
 
-    insert(BBHash(StringRef(HashString)), Time);
+    insert(BBHash(std::string(HashString)), Time);
 
     LineAndTail = LineAndTail.second.split('\n'); 
   }
@@ -68,7 +67,7 @@ int DatabaseManager::size() const {
 }
 
 double DatabaseManager::getTime(const BBHash &Hash) const {
-  if(hasHash(Hash))
+  if(hasHash(Hash)) 
     return DB.at(Hash);
   else 
     return 0.0;
@@ -84,10 +83,15 @@ BBHash* DatabaseManager::
 getNearest(const BBHash &Hash) const {
   if (Nearest.count(Hash) == 0) {
     double SmallestDistance = std::numeric_limits<double>::max();
-    llvm::StringRef Smallest ="";
+    llvm::StringRef Smallest = "";
 
     int dotProduct = BBHash::dotProduct(Hash, *RandomHash);
-    auto Hashes    = CDB.at((dotProduct/w) % PrimeNumber);
+
+    int Deslocation = 0;  
+    while (CDB.count(((dotProduct+Deslocation)/w) % PrimeNumber) == 0)
+      Deslocation++;
+
+    auto Hashes = CDB.at(((dotProduct+Deslocation)/w) % PrimeNumber);
 
     for (auto &Elem : Hashes) {
       double Distance = 0;
@@ -108,7 +112,7 @@ getNearest(const BBHash &Hash) const {
   return Nearest[Hash];
 }
 
-void DatabaseManager::insert(BBHash Hash, double Value) {
+void DatabaseManager::insert(const BBHash &Hash, double Value) {
   assert(Value > 0 && "Cannot insert in the database a negative value.");
 
   CDB[(BBHash::dotProduct(Hash, *RandomHash)/w) % PrimeNumber]
@@ -126,6 +130,6 @@ void DatabaseManager::unionWith(DatabaseManager &DB2) {
 }
 
 void DatabaseManager::printDatabase() const {
-  for (auto i : DB)
-    outs() << i.first.getString() << " " << i.second << "\n";
+  for (auto i : DB) 
+    printf("%s %lf\n", i.first.getString().str().c_str(), i.second);
 }

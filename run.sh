@@ -4,6 +4,7 @@ function create-database() {
   echo "Creating database $1 from $2"
   touch $1
   cd database/$2/HDB
+  rm tmp
   for h in $(ls *); do
     echo $h
     llvm-merge -hs $h -p ../DB/$h -db ../../../$1 >> tmp

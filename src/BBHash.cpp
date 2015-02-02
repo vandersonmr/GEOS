@@ -25,8 +25,10 @@ void BBHash::loadBB(BasicBlock &BB) {
   setDescriptor(DescriptorKind::NumberOfInstructions, BBSize);
 
   for (auto &i : BB) {
-    addUpDescriptor(DescriptorKind::NumberOfInstructions);
     switch (i.getOpcode()) {
+      default: 
+        addUpDescriptor(DescriptorKind::Others);
+        break;
       case Instruction::GetElementPtr:
         addUpDescriptor(DescriptorKind::GetElementPtr);
         break;
@@ -119,15 +121,14 @@ void BBHash::loadBB(BasicBlock &BB) {
         auto Func = cast<CallInst>(i).getCalledFunction();
         if (Func != nullptr) {
           auto FuncName = Func->getName(); 
-          if (FuncName == "printf") {
+          if (FuncName == "printf") 
             addUpDescriptor(DescriptorKind::Printf);  
-          } else if (FuncName == "malloc") {
+          else if (FuncName == "malloc") 
             addUpDescriptor(DescriptorKind::Malloc);
-          } else if (FuncName == "pow") {
+          else if (FuncName == "pow")
             addUpDescriptor(DescriptorKind::Pow);
-          } else if (FuncName == "sqrt") {
+          else if (FuncName == "sqrt") 
             addUpDescriptor(DescriptorKind::Sqrt);
-          }
         }
         break;
     }
@@ -159,17 +160,16 @@ BBHash::BBHash(const StringRef &S) {
     Hash[i] = d;
     ss >> p;
 
-    if (!(d >= 0 && p == '-')) {
+    if (!(d >= 0 && p == '-')) 
       printf("%s\n", S.str().c_str());
-    }
-
+    
     assert(d >= 0 && p == '-' 
         && "The string representation of a BBHash is in a bad format.");
   }
 }
 
 void BBHash::setDescriptor(DescriptorKind DescriptionId, int Value) {
-  assert((int) DescriptionId >= 0 && (int) DescriptionId < Size &&
+  assert((int) DescriptionId >= 0 && (int) DescriptionId <= Size &&
       "Trying to set an invalid descriptor.");
 
   assert(Value >= 0 && "The value of an descriptor must be greater than 0.");
@@ -183,7 +183,7 @@ void BBHash::addUpDescriptor(DescriptorKind DescriptionId, int N) {
 }
 
 int BBHash::getDescriptor(DescriptorKind DescriptionId) const {
-  assert((int) DescriptionId >= 0 && (int) DescriptionId < Size &&
+  assert((int) DescriptionId >= 0 && (int) DescriptionId <= Size &&
       "Trying to get the value of an invalid descriptor.");
 
   return Hash[DescriptionId];
@@ -193,8 +193,8 @@ int BBHash::getDescriptor(DescriptorKind DescriptionId) const {
 StringRef BBHash::getString() const {
   std::stringstream *SSTM = new std::stringstream;
     for (int i=0; i < Size-1; i++) 
-      (*SSTM) << Hash[i] << "-";
-    (*SSTM) << Hash[Size-1];
+      (*SSTM) << getDescriptor((DescriptorKind) i) << "-";
+    (*SSTM) << getDescriptor((DescriptorKind) (Size-1)) << "\0\0";
   return SSTM->str();
 }
 

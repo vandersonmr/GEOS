@@ -56,7 +56,7 @@ class DatabaseManager {
     // 
     /// \param The first parameter is the hash and the second is the execution
     ///  time of this hash. 
-    void insert(BBHash, double);
+    void insert(const BBHash&, double);
 
     /// \brief This function merge the database with the one given as parameter.
     void unionWith(DatabaseManager&);
