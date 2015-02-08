@@ -9,7 +9,7 @@ execute_process(COMMAND llvm-config --cxxflags --ldflags
 
 string(REPLACE "\n" " " LLVM_CONFIG "${LLVM_CONFIG_N}")
 
-set(CMAKE_CXX_FLAGS "-fno-rtti -O2 -g ${LLVM_CONFIG} -O2")
+set(CMAKE_CXX_FLAGS "-fno-rtti -O3 ${LLVM_CONFIG} -O3")
 
 add_library (DatabaseManager ${PROJECT_SOURCE_DIR}/src/DatabaseManager.cpp)
 add_library (BBHash ${PROJECT_SOURCE_DIR}/src/BBHash.cpp)

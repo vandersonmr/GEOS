@@ -70,7 +70,6 @@ CPUFreq("cpu-freq", cl::desc("defines CPU Clock rate."),
 static cl::alias 
 CPUAlias("f", cl::desc("Alias for -cpu-freq"), cl::aliasopt(CPUFreq));
 
-
 void printModule(ProfileModule* P, int Id) {
   char FileName[20];
   sprintf(FileName, "%d.ll", Id);
@@ -96,18 +95,17 @@ int main(int argc, char** argv) {
   Module *MyModule = 
     parseIRFile(LLVMFilename.c_str(), Error, Context).release();
 
-  std::list<MemoryBuffer*> GCNOList;
-  std::list<MemoryBuffer*> GCDAList;
+  std::vector<MemoryBuffer*> GCNOList;
+  std::vector<MemoryBuffer*> GCDAList;
 
   cl::list<std::string>::iterator iGCDA = GCDAFilename.begin();
   cl::list<std::string>::iterator iGCNO = GCNOFilename.begin();
-  // FIXME!
-  //while (iGCDA != GCDAFilename.end() && iGCNO != GCNOFilename.end()) {
-  auto GCNO = MemoryBuffer::getFileOrSTDIN(*iGCNO);
-  auto GCDA = MemoryBuffer::getFileOrSTDIN(*iGCDA);
-  GCNOList.push_back(GCNO.get().get());
-  GCDAList.push_back(GCDA.get().get());
-  //}
+  while (iGCDA != GCDAFilename.end() && iGCNO != GCNOFilename.end()) {
+    GCNOList.push_back(MemoryBuffer::getFileOrSTDIN(*iGCNO).get().release());
+    GCDAList.push_back(MemoryBuffer::getFileOrSTDIN(*iGCDA).get().release()); 
+    ++iGCDA;
+    ++iGCNO;
+  }
 
   ProfileModule  *PModule   = new ProfileModule(MyModule, GCDAList, GCNOList);
   ProfileModule  *Optimized = PModule;

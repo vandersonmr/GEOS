@@ -16,7 +16,6 @@
 #include "llvm/Support/GCOV.h"
 
 #include <unordered_map>
-#include <list>
 #include <vector>
 
 /// \brief This class is responsable for encapsulating, copying, and mantaing 
@@ -51,9 +50,9 @@ class ProfileModule {
   public:
     /// \brief The constructor needs a LLVM Module and two lists of buffers of
     /// GCOV files to create the profiling information. 
-    ProfileModule(llvm::Module*, std::list<llvm::MemoryBuffer*>, 
-                  std::list<llvm::MemoryBuffer*>);
-
+    ProfileModule(llvm::Module*, 
+        std::vector<llvm::MemoryBuffer*>, 
+        std::vector<llvm::MemoryBuffer*>);
 
     /// \brief Returns its LLVM Module.
     llvm::Module* getLLVMModule() const;

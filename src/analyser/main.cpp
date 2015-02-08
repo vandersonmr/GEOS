@@ -58,6 +58,14 @@ static cl::opt<std::string> DatabaseFilename("database",
 static cl::alias 
 dbAlias("db", cl::desc("Alias for -database"), cl::aliasopt(DatabaseFilename));
 
+static cl::opt<double> 
+CPUFreq("cpu-freq", cl::desc("defines CPU Clock rate."), 
+    cl::value_desc("CPU Clock"),
+    cl::Required);
+static cl::alias 
+CPUAlias("f", cl::desc("Alias for -cpu-freq"), cl::aliasopt(CPUFreq));
+
+
 int main(int argc, char** argv) {
   LLVMContext Context;
   SMDiagnostic Error;
@@ -67,25 +75,26 @@ int main(int argc, char** argv) {
   std::unique_ptr<Module> MyModule = parseIRFile(LLVMFilename.c_str(),
       Error, Context);
 
-  std::list<MemoryBuffer*> GCNOList;
-  std::list<MemoryBuffer*> GCDAList;
+  std::vector<MemoryBuffer*> GCNOList;
+  std::vector<MemoryBuffer*> GCDAList;
 
   cl::list<std::string>::iterator iGCDA = GCDAFilename.begin();
   cl::list<std::string>::iterator iGCNO = GCNOFilename.begin();
-  // FIXME!
-//  while (iGCDA != GCDAFilename.end() && iGCNO != GCNOFilename.end()) {
-    auto GCNO = MemoryBuffer::getFileOrSTDIN(*iGCNO);
-    auto GCDA = MemoryBuffer::getFileOrSTDIN(*iGCDA);
-    GCNOList.push_back(GCNO.get().get());
-    GCDAList.push_back(GCDA.get().get());
-//  }
+  while (iGCDA != GCDAFilename.end() && iGCNO != GCNOFilename.end()) {
+    GCNOList.push_back(MemoryBuffer::getFileOrSTDIN(*iGCNO).get().release());
+    GCDAList.push_back(MemoryBuffer::getFileOrSTDIN(*iGCDA).get().release()); 
+    ++iGCDA;
+    ++iGCNO;
+  }
+
   AnalysisMethod *Analyser = 
     GEOS::getAnalyser((AnalysisMethodKind) OptAnalysisMethod, 
       DatabaseFilename.c_str());
 
   ProfileModule PModule(&(*MyModule), GCDAList, GCNOList);
 
-  outs() << GEOS::analyseExecutionTime(PModule, Analyser) << "\n";
+  printf("%lf\n", GEOS::analyseExecutionTime(PModule, Analyser) / 
+      (CPUFreq * std::pow(10, 9)));
 
   return 0;
 }

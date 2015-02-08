@@ -9,8 +9,7 @@ for o in 0 1 2 3 s z; do
 
   echo -n "Linking..."
   mkdir -p llvm/sgefa.o$o
-  mv *.ll llvm/sgefa.o$o
-  #llvm-link-3.5 *.ll -S > llvm/sgefa.o$o.ll
+  cp *.ll llvm/sgefa.o$o/
   echo "done"
 done
 

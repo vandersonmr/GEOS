@@ -26,8 +26,8 @@ using namespace llvm;
 
 int I = 0;
 ProfileModule::ProfileModule(Module* M, 
-    std::list<MemoryBuffer*> GCDA, 
-    std::list<MemoryBuffer*> GCNO) {
+    std::vector<MemoryBuffer*> GCDA, 
+    std::vector<MemoryBuffer*> GCNO) {
 
   LLVMModule = M;
 
@@ -38,8 +38,8 @@ ProfileModule::ProfileModule(Module* M,
     }
   }
 
-  std::list<MemoryBuffer*>::iterator iGCDA = GCDA.begin();
-  std::list<MemoryBuffer*>::iterator iGCNO = GCNO.begin();
+  std::vector<MemoryBuffer*>::iterator iGCDA = GCDA.begin();
+  std::vector<MemoryBuffer*>::iterator iGCNO = GCNO.begin();
 
   while (iGCDA != GCDA.end() && iGCNO != GCNO.end()) {
     llvm::GCOVFile GF;

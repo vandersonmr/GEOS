@@ -9,8 +9,7 @@ for o in 0 1 2 3 s z; do
 
   echo -n "Linking..."
   mkdir -p llvm/aha.o$o
-  mv *.ll llvm/aha.o$o
-  #llvm-link-3.5 *.ll > llvm/aha.o$o.ll
+  mv *.ll llvm/aha.o$o/
+  #llvm-link *.ll > llvm/aha.o$o/aha.o$o.ll
   echo "done"
 done
-
