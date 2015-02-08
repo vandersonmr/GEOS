@@ -19,12 +19,11 @@
 using namespace llvm;
 
 InstructionPlusHashMethod::InstructionPlusHashMethod(StringRef Filename) {
-  IM = new InstructionCostMethod();
+  IM = new InstructionMethod();
   HM = new HashWeightedMethod(Filename);
 }
 
 double InstructionPlusHashMethod::
 estimateExecutionTime(llvm::Function* Func, const ProfileModule &Freq) const { 
-  return    (IM->estimateExecutionTime(Func, Freq) + 
-             HM->estimateExecutionTime(Func, Freq)) / 2;
+  return    0.8*IM->estimateExecutionTime(Func, Freq) + 0.2*HM->estimateExecutionTime(Func, Freq);
 } 

@@ -26,11 +26,11 @@ using namespace llvm;
 
 // w constant is related with the size of each bucket. Smaller values creates
 // buckets with less Hashes, but also decrease the precision.
-constexpr int w = 5;
+constexpr int w = 10;
 
 // PrimeNumber define the largest locality-sensitive hash number. 
 // In other words, it defines the size of CDB.
-constexpr int PrimeNumber = 59;
+constexpr int PrimeNumber = 101;
 
 // A randomic hash used to calculate the locality-sensitive hash using 
 // dotProduct to reduce the dimensions to a scalar.
