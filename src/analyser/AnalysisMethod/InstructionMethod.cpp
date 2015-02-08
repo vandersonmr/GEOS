@@ -21,10 +21,7 @@ double InstructionMethod::
 estimateExecutionTime(llvm::Function* Func, const ProfileModule &Freq) const { 
   double PerformanceMensurment = 0;
 
-  printf("%s \n", Func->getName().str().c_str());
   for (auto &BB : *Func) {
-    printf("\t%s : %ld \n", BB.getName().str().c_str(), 
-        Freq.getBasicBlockFrequency(&BB));
     PerformanceMensurment += 
       Freq.getBasicBlockFrequency(&BB) * BB.getInstList().size() * 0.8;
   } 
