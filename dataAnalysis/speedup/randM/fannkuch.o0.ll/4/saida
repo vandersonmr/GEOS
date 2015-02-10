@@ -1,5 +1,0 @@
-1 : Early CSE : 0.000002
-2 : SROA : 0.000002
-3 : Dead Code Elimination : 0.000001
-4 : Constant Hoisting : 0.000001
-SpeedUp : 1.177778

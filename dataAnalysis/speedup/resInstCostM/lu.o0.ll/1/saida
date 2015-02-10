@@ -1,7 +1,0 @@
-1 : Combine redundant instructions : 89.756626
-2 : Dead Instruction Elimination : 89.756626
-3 : Induction Variable Simplification : 89.756626
-4 : Code sinking : 89.756626
-5 : Promote Memory to Register : 43.096617
-6 : MergedLoadStoreMotion : 46.670505
-SpeedUp : 2.385021

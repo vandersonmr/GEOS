@@ -1,4 +1,0 @@
-1 : Code sinking : 0.000001
-2 : Scalar Replacement of Aggregates (DT) : 0.000001
-3 : Remove redundant instructions : 0.000001
-SpeedUp : 1.136364

@@ -1,6 +1,0 @@
-1 : Loop Invariant Code Motion : 0.000003
-2 : Add DWARF path discriminators : 0.000002
-3 : Global Value Numbering : 0.000002
-4 : Aggressive Dead Code Elimination : 0.000002
-5 : SROA : 0.000002
-SpeedUp : 1.487805

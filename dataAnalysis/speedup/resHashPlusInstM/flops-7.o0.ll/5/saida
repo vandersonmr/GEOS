@@ -1,8 +1,0 @@
-1 : Value Propagation : 54028.428648
-2 : Alignment from assumptions : 54028.428648
-3 : Add DWARF path discriminators : 54028.428648
-4 : Induction Variable Simplification : 54028.428648
-5 : Loop-Closed SSA Form Pass : 54028.428648
-6 : MemCpy Optimization : 54028.428648
-7 : Promote Memory to Register : 67025.401761
-SpeedUp : 0.806089

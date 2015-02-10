@@ -1,4 +1,0 @@
-1 : MemCpy Optimization : 700.576343
-2 : Alignment from assumptions : 700.576343
-3 : Reassociate expressions : 701.014722
-SpeedUp : 0.999375

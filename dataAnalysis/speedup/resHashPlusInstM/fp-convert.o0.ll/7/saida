@@ -1,9 +1,0 @@
-1 : Dead Instruction Elimination : 3140.620693
-2 : Alignment from assumptions : 3140.620693
-3 : Add DWARF path discriminators : 3140.620693
-4 : Assign names to anonymous instructions : 3140.620693
-5 : MergedLoadStoreMotion : 3140.620693
-6 : Assign names to anonymous instructions : 3140.620693
-7 : Code sinking : 3140.620693
-8 : Global Value Numbering : 21907.393860
-SpeedUp : 0.143359

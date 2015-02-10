@@ -1,6 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 2.064423
-2 : SROA : 2.064423
-3 : Code sinking : 2.064423
-4 : Loop Invariant Code Motion : 2.064423
-5 : Reassociate expressions : 2.080807
-SpeedUp : 0.992126

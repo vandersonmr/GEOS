@@ -1,8 +1,0 @@
-1 : Dead Code Elimination : 2.125003
-2 : Promote Memory to Register : 1.100002
-3 : Early CSE : 1.012501
-4 : Dead Instruction Elimination : 1.012501
-5 : Reassociate expressions : 1.012501
-6 : MergedLoadStoreMotion : 1.012501
-7 : Loop Invariant Code Motion : 1.200001
-SpeedUp : 1.770834

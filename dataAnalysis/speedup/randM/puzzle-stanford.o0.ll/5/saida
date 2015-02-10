@@ -1,6 +1,0 @@
-1 : Promote Memory to Register : 0.000003
-2 : Remove redundant instructions : 0.000003
-3 : Promote Memory to Register : 0.000002
-4 : Combine redundant instructions : 0.000003
-5 : Loop Invariant Code Motion : 0.000003
-SpeedUp : 0.992308

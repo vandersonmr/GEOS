@@ -1,5 +1,0 @@
-1 : Constant Hoisting : 12211.589782
-2 : Lower atomic intrinsics to non-atomic form : 12211.589782
-3 : Loop-Closed SSA Form Pass : 12211.589782
-4 : Promote Memory to Register : 17108.524855
-SpeedUp : 0.713772

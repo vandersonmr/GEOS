@@ -1,5 +1,0 @@
-1 : Early CSE : 0.000001
-2 : MemCpy Optimization : 0.000001
-3 : Scalar Replacement of Aggregates (DT) : 0.000001
-4 : Loop-Closed SSA Form Pass : 0.000001
-SpeedUp : 0.921053

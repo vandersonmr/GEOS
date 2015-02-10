@@ -1,5 +1,0 @@
-1 : Reassociate expressions : 2405.600027
-2 : Early CSE : 2052.000024
-3 : Early CSE : 2052.000024
-4 : Global Value Numbering : 2082.400026
-SpeedUp : 1.155206

@@ -1,7 +1,0 @@
-1 : Scalar Replacement of Aggregates (DT) : 145.312500
-2 : Dead Code Elimination : 145.312500
-3 : Remove redundant instructions : 145.312500
-4 : Alignment from assumptions : 145.312500
-5 : Aggressive Dead Code Elimination : 145.312500
-6 : Loop-Closed SSA Form Pass : 146.875000
-SpeedUp : 1.404255

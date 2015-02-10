@@ -1,5 +1,0 @@
-1 : Induction Variable Simplification : 2.604921
-2 : Alignment from assumptions : 2.604921
-3 : Loop-Closed SSA Form Pass : 2.604921
-4 : Reassociate expressions : 2.621305
-SpeedUp : 0.993750

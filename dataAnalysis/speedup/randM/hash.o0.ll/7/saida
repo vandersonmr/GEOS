@@ -1,6 +1,0 @@
-1 : Aggressive Dead Code Elimination : 0.000002
-2 : Global Value Numbering : 0.000002
-3 : MergedLoadStoreMotion : 0.000002
-4 : Loop-Closed SSA Form Pass : 0.000002
-5 : SROA : 0.000002
-SpeedUp : 1.024845

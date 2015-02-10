@@ -1,4 +1,0 @@
-1 : Loop Invariant Code Motion : 322.471101
-2 : Alignment from assumptions : 322.471101
-3 : Scalar Replacement of Aggregates (DT) : 350.894800
-SpeedUp : 0.918997

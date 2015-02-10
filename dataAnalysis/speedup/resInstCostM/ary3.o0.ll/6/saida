@@ -1,5 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 195.150310
-2 : Assign names to anonymous instructions : 195.150310
-3 : Loop-Closed SSA Form Pass : 195.150310
-4 : Global Value Numbering : 225.180180
-SpeedUp : 0.866641

@@ -1,4 +1,0 @@
-1 : Loop-Closed SSA Form Pass : 548.333335
-2 : Scalar Replacement of Aggregates (DT) : 356.666667
-3 : Add DWARF path discriminators : 366.666667
-SpeedUp : 1.495455

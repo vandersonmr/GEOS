@@ -1,9 +1,0 @@
-1 : MemCpy Optimization : 95.394509
-2 : Code sinking : 95.394509
-3 : Dead Code Elimination : 95.394509
-4 : Reassociate expressions : 95.394509
-5 : Scalar Replacement of Aggregates (DT) : 55.630579
-6 : Aggressive Dead Code Elimination : 55.630579
-7 : MemCpy Optimization : 55.630579
-8 : Loop-Closed SSA Form Pass : 57.422354
-SpeedUp : 1.661278

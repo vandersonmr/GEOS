@@ -1,6 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 109705.295037
-2 : Loop Invariant Code Motion : 109705.295037
-3 : MergedLoadStoreMotion : 109705.295037
-4 : Alignment from assumptions : 109705.295037
-5 : Scalar Replacement of Aggregates (DT) : 132169.554375
-SpeedUp : 0.830035

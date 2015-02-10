@@ -1,5 +1,0 @@
-1 : Dead Code Elimination : 572.772726
-2 : Add DWARF path discriminators : 572.772726
-3 : MemCpy Optimization : 572.772726
-4 : Global Value Numbering : 584.050308
-SpeedUp : 0.980691

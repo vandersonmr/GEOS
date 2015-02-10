@@ -1,4 +1,0 @@
-1 : Aggressive Dead Code Elimination : 605.674785
-2 : Global Value Numbering : 605.674785
-3 : Combine redundant instructions : 637.695571
-SpeedUp : 0.949787

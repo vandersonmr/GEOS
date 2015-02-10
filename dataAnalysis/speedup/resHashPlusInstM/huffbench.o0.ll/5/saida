@@ -1,8 +1,0 @@
-1 : Reassociate expressions : 220228.838327
-2 : Induction Variable Simplification : 220228.768213
-3 : Value Propagation : 220228.768213
-4 : Remove redundant instructions : 220228.768213
-5 : Scalar Replacement of Aggregates (DT) : 12513.040351
-6 : Loop Invariant Code Motion : 12437.667613
-7 : Value Propagation : 12608.854710
-SpeedUp : 17.466205

@@ -1,6 +1,0 @@
-1 : Promote Memory to Register : 0.000003
-2 : Promote Memory to Register : 0.000003
-3 : Constant Hoisting : 0.000003
-4 : Code sinking : 0.000003
-5 : Add DWARF path discriminators : 0.000003
-SpeedUp : 0.958599

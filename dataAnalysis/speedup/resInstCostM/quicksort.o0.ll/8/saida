@@ -1,6 +1,0 @@
-1 : Remove redundant instructions : 1.358479
-2 : Scalar Replacement of Aggregates (DT) : 0.568439
-3 : Constant Hoisting : 0.568439
-4 : Early CSE : 0.448022
-5 : Reassociate expressions : 0.453023
-SpeedUp : 2.998698

@@ -1,6 +1,0 @@
-1 : Loop Invariant Code Motion : 0.000003
-2 : Promote Memory to Register : 0.000003
-3 : Add DWARF path discriminators : 0.000002
-4 : Assign names to anonymous instructions : 0.000003
-5 : Induction Variable Simplification : 0.000003
-SpeedUp : 0.992308

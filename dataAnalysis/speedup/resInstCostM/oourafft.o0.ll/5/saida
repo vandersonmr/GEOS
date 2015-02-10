@@ -1,8 +1,0 @@
-1 : Scalar Replacement of Aggregates (DT) : 659.179058
-2 : Add DWARF path discriminators : 659.179058
-3 : Constant Hoisting : 659.179058
-4 : Global Value Numbering : 334.012049
-5 : Scalar Replacement of Aggregates (DT) : 334.012049
-6 : Value Propagation : 334.012049
-7 : Induction Variable Simplification : 334.165102
-SpeedUp : 3.670871

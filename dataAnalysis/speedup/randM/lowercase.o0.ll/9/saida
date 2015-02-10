@@ -1,4 +1,0 @@
-1 : Add DWARF path discriminators : 0.000001
-2 : Assign names to anonymous instructions : 0.000001
-3 : Aggressive Dead Code Elimination : 0.000001
-SpeedUp : 0.971014

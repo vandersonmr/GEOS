@@ -1,7 +1,0 @@
-1 : Dead Instruction Elimination : 50.519497
-2 : Combine redundant instructions : 48.908074
-3 : Aggressive Dead Code Elimination : 48.908074
-4 : Value Propagation : 48.908074
-5 : Early CSE : 43.410723
-6 : Loop Invariant Code Motion : 44.719878
-SpeedUp : 1.129688

@@ -1,9 +1,0 @@
-1 : Value Propagation : 502.112500
-2 : Dead Instruction Elimination : 502.112500
-3 : Code sinking : 502.112500
-4 : Loop Invariant Code Motion : 481.632500
-5 : Reassociate expressions : 481.632500
-6 : Induction Variable Simplification : 481.632500
-7 : Promote Memory to Register : 286.915000
-8 : Loop Invariant Code Motion : 297.160000
-SpeedUp : 1.689704

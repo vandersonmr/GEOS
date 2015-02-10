@@ -1,4 +1,0 @@
-1 : MemCpy Optimization : 12.113044
-2 : Assign names to anonymous instructions : 12.113044
-3 : Scalar Replacement of Aggregates (DT) : 12.418121
-SpeedUp : 0.975433

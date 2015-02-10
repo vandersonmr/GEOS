@@ -1,9 +1,0 @@
-1 : Loop-Closed SSA Form Pass : 548.333335
-2 : Combine redundant instructions : 438.333334
-3 : Dead Instruction Elimination : 438.333334
-4 : Promote Memory to Register : 361.666667
-5 : Aggressive Dead Code Elimination : 361.666667
-6 : Promote Memory to Register : 361.666667
-7 : Value Propagation : 361.666667
-8 : Loop Invariant Code Motion : 371.666667
-SpeedUp : 1.475336

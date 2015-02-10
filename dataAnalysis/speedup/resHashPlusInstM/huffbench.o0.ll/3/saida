@@ -1,6 +1,0 @@
-1 : Code sinking : 220228.838327
-2 : Early CSE : 219984.826873
-3 : Assign names to anonymous instructions : 219984.826873
-4 : Scalar Replacement of Aggregates (DT) : 12630.658620
-5 : MergedLoadStoreMotion : 12729.342957
-SpeedUp : 17.300880

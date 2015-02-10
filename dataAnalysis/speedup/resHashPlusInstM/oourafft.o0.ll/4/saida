@@ -1,4 +1,0 @@
-1 : Loop Invariant Code Motion : 3599.805556
-2 : MergedLoadStoreMotion : 3599.805556
-3 : Dead Instruction Elimination : 3599.805556
-4 : Reassociate expressions : 3599.805557

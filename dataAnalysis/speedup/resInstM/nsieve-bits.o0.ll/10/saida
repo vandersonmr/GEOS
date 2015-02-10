@@ -1,7 +1,0 @@
-1 : Reassociate expressions : 96.456822
-2 : Induction Variable Simplification : 96.456822
-3 : Value Propagation : 96.456822
-4 : Reassociate expressions : 96.456822
-5 : Promote Memory to Register : 68.283339
-6 : Value Propagation : 69.726303
-SpeedUp : 1.383363

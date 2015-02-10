@@ -1,8 +1,0 @@
-1 : Loop Invariant Code Motion : 51.777586
-2 : Lower atomic intrinsics to non-atomic form : 51.777586
-3 : Add DWARF path discriminators : 51.777586
-4 : Reassociate expressions : 51.777586
-5 : Value Propagation : 51.777586
-6 : Loop-Closed SSA Form Pass : 51.777586
-7 : Promote Memory to Register : 56.705372
-SpeedUp : 0.913098

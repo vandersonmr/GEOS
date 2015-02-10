@@ -1,7 +1,0 @@
-1 : Global Value Numbering : 161.317921
-2 : Aggressive Dead Code Elimination : 161.317921
-3 : Loop Invariant Code Motion : 161.317921
-4 : Scalar Replacement of Aggregates (DT) : 125.936402
-5 : MergedLoadStoreMotion : 123.986518
-6 : Aggressive Dead Code Elimination : 126.849360
-SpeedUp : 1.948803

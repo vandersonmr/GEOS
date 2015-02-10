@@ -1,4 +1,0 @@
-1 : Dead Code Elimination : 39416.709980
-2 : MergedLoadStoreMotion : 39416.709980
-3 : Scalar Replacement of Aggregates (DT) : 122875.401751
-SpeedUp : 0.320786

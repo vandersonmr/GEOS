@@ -1,8 +1,0 @@
-1 : Assign names to anonymous instructions : 79681.857635
-2 : Induction Variable Simplification : 79681.857635
-3 : Alignment from assumptions : 79681.857635
-4 : MemCpy Optimization : 79681.857635
-5 : Constant Hoisting : 79681.857635
-6 : Add DWARF path discriminators : 79681.857635
-7 : Promote Memory to Register : 79789.866623
-SpeedUp : 0.998646

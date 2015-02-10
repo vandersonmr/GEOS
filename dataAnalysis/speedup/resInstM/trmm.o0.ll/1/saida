@@ -1,5 +1,0 @@
-1 : Reassociate expressions : 188.549858
-2 : Constant Hoisting : 188.549858
-3 : Value Propagation : 188.549858
-4 : Global Value Numbering : 220.751565
-SpeedUp : 0.854127

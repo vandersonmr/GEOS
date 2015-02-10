@@ -1,6 +1,0 @@
-1 : MergedLoadStoreMotion : 1637.113271
-2 : Loop-Closed SSA Form Pass : 1637.113271
-3 : Reassociate expressions : 1637.113271
-4 : Promote Memory to Register : 1399.244761
-5 : Loop-Closed SSA Form Pass : 1484.892613
-SpeedUp : 1.102513

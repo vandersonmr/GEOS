@@ -1,4 +1,0 @@
-1 : Loop-Closed SSA Form Pass : 3459547.252725
-2 : Assign names to anonymous instructions : 3459547.252725
-3 : Early CSE : 3464663.457278
-SpeedUp : 0.998523

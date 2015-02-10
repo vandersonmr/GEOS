@@ -1,5 +1,0 @@
-1 : Induction Variable Simplification : 143.595148
-2 : Value Propagation : 143.595148
-3 : Alignment from assumptions : 143.595148
-4 : Scalar Replacement of Aggregates (DT) : 143.678342
-SpeedUp : 0.999421

@@ -1,4 +1,0 @@
-1 : MergedLoadStoreMotion : 0.000001
-2 : SROA : 0.000001
-3 : Loop-Closed SSA Form Pass : 0.000001
-SpeedUp : 1.195652

@@ -1,5 +1,0 @@
-1 : Assign names to anonymous instructions : 0.000002
-2 : Lower atomic intrinsics to non-atomic form : 0.000002
-3 : Add DWARF path discriminators : 0.000002
-4 : Value Propagation : 0.000001
-SpeedUp : 1.073446

@@ -1,8 +1,0 @@
-1 : SROA : 0.000000
-2 : MergedLoadStoreMotion : 0.000000
-3 : Global Value Numbering : 0.000000
-4 : Lower atomic intrinsics to non-atomic form : 0.000000
-5 : Promote Memory to Register : 0.000000
-6 : Aggressive Dead Code Elimination : 0.000000
-7 : Early CSE : 0.000000
-SpeedUp : 1.238095

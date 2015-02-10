@@ -1,7 +1,0 @@
-1 : MergedLoadStoreMotion : 79681.857635
-2 : Global Value Numbering : 79567.187322
-3 : Alignment from assumptions : 79567.187322
-4 : Reassociate expressions : 79567.187322
-5 : MergedLoadStoreMotion : 79567.187322
-6 : Early CSE : 100653.125077
-SpeedUp : 0.791648

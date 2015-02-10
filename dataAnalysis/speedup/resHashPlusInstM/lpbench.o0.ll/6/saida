@@ -1,5 +1,0 @@
-1 : Remove redundant instructions : 3760.954945
-2 : Induction Variable Simplification : 3760.875304
-3 : Early CSE : 3438.698718
-4 : Scalar Replacement of Aggregates (DT) : 3924.470570
-SpeedUp : 0.958334

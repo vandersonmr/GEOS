@@ -1,4 +1,0 @@
-1 : Add DWARF path discriminators : 414.080246
-2 : Early CSE : 408.760719
-3 : Loop Invariant Code Motion : 410.044127
-SpeedUp : 1.009843

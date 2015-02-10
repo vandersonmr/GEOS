@@ -1,8 +1,0 @@
-1 : Loop-Closed SSA Form Pass : 7183.798785
-2 : Constant Hoisting : 7183.798785
-3 : Aggressive Dead Code Elimination : 7183.798785
-4 : Value Propagation : 7183.798785
-5 : MemCpy Optimization : 7183.798785
-6 : Loop-Closed SSA Form Pass : 7183.798785
-7 : Reassociate expressions : 7184.808160
-SpeedUp : 0.999860

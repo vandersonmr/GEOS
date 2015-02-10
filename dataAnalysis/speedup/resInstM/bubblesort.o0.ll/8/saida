@@ -1,7 +1,0 @@
-1 : Remove redundant instructions : 4.781890
-2 : Assign names to anonymous instructions : 4.781890
-3 : Assign names to anonymous instructions : 4.781890
-4 : Loop Invariant Code Motion : 4.781890
-5 : SROA : 4.781890
-6 : Reassociate expressions : 4.782391
-SpeedUp : 0.999895

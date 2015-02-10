@@ -1,6 +1,0 @@
-1 : Loop Invariant Code Motion : 1637.113271
-2 : Loop Invariant Code Motion : 1637.113271
-3 : Alignment from assumptions : 1637.113271
-4 : Dead Instruction Elimination : 1637.113271
-5 : Remove redundant instructions : 1637.113271
-SpeedUp : 1.000000

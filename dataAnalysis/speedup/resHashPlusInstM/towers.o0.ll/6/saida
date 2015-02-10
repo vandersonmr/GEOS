@@ -1,3 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 151.313482
-2 : Combine redundant instructions : 226.178423
-SpeedUp : 0.669001

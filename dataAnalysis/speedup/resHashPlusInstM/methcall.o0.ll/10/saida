@@ -1,9 +1,0 @@
-1 : SROA : 133682.475345
-2 : SROA : 133682.475345
-3 : Combine redundant instructions : 11396.546340
-4 : Dead Instruction Elimination : 11396.546340
-5 : Induction Variable Simplification : 11396.546340
-6 : MemCpy Optimization : 11396.546340
-7 : Dead Instruction Elimination : 11396.546340
-8 : Scalar Replacement of Aggregates (DT) : 35839.406677
-SpeedUp : 3.730042

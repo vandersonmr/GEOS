@@ -1,6 +1,0 @@
-1 : Reassociate expressions : 789.055338
-2 : Remove redundant instructions : 789.055338
-3 : Add DWARF path discriminators : 789.055338
-4 : Remove redundant instructions : 789.055338
-5 : Early CSE : 1334.216932
-SpeedUp : 0.591400

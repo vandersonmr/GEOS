@@ -1,4 +1,0 @@
-1 : Combine redundant instructions : 0.000002
-2 : Add DWARF path discriminators : 0.000002
-3 : Loop-Closed SSA Form Pass : 0.000002
-SpeedUp : 0.960976

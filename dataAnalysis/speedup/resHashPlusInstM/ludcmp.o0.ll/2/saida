@@ -1,7 +1,0 @@
-1 : MemCpy Optimization : 644.602284
-2 : Loop Invariant Code Motion : 644.602284
-3 : Assign names to anonymous instructions : 644.602284
-4 : Early CSE : 543.659708
-5 : Lower atomic intrinsics to non-atomic form : 543.659708
-6 : Promote Memory to Register : 578.761501
-SpeedUp : 1.113762

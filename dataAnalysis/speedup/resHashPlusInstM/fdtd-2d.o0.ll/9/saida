@@ -1,6 +1,0 @@
-1 : Combine redundant instructions : 302.891792
-2 : Dead Code Elimination : 302.891792
-3 : Early CSE : 227.157557
-4 : Reassociate expressions : 227.157557
-5 : Promote Memory to Register : 247.937050
-SpeedUp : 1.257385

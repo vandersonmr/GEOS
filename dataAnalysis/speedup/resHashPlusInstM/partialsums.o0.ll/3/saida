@@ -1,5 +1,0 @@
-1 : Loop-Closed SSA Form Pass : 783.664483
-2 : Lower atomic intrinsics to non-atomic form : 783.664483
-3 : Aggressive Dead Code Elimination : 783.664483
-4 : Combine redundant instructions : 1597.043922
-SpeedUp : 0.490697

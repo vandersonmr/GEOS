@@ -1,5 +1,0 @@
-1 : Promote Memory to Register : 1472.800015
-2 : MemCpy Optimization : 1472.800015
-3 : Early CSE : 1373.600014
-4 : Loop-Closed SSA Form Pass : 1423.200014
-SpeedUp : 1.690275

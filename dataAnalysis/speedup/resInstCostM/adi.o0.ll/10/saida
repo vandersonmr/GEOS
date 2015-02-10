@@ -1,7 +1,0 @@
-1 : Dead Instruction Elimination : 139.453675
-2 : Constant Hoisting : 139.453675
-3 : Induction Variable Simplification : 139.453675
-4 : Scalar Replacement of Aggregates (DT) : 82.623204
-5 : Early CSE : 61.119480
-6 : Reassociate expressions : 61.643255
-SpeedUp : 2.262270

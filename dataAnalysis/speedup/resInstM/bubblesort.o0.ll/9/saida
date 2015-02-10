@@ -1,7 +1,0 @@
-1 : Value Propagation : 4.781890
-2 : MemCpy Optimization : 4.781890
-3 : Add DWARF path discriminators : 4.781890
-4 : Promote Memory to Register : 3.649453
-5 : Early CSE : 1.958488
-6 : Loop Invariant Code Motion : 2.083238
-SpeedUp : 2.295412

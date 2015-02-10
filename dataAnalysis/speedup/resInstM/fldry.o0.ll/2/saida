@@ -1,7 +1,0 @@
-1 : Combine redundant instructions : 418.000000
-2 : MergedLoadStoreMotion : 418.000000
-3 : SROA : 418.000000
-4 : Global Value Numbering : 360.000000
-5 : SROA : 356.000000
-6 : Loop Invariant Code Motion : 358.000000
-SpeedUp : 1.555866

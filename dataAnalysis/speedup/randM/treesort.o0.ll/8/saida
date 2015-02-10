@@ -1,7 +1,0 @@
-1 : Dead Instruction Elimination : 0.000001
-2 : Assign names to anonymous instructions : 0.000001
-3 : Reassociate expressions : 0.000001
-4 : Dead Instruction Elimination : 0.000001
-5 : Loop-Closed SSA Form Pass : 0.000001
-6 : Loop Invariant Code Motion : 0.000001
-SpeedUp : 0.897059

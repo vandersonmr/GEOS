@@ -1,6 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 0.000005
-2 : Global Value Numbering : 0.000005
-3 : Combine redundant instructions : 0.000005
-4 : Add DWARF path discriminators : 0.000005
-5 : MemCpy Optimization : 0.000004
-SpeedUp : 1.131579

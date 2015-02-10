@@ -1,5 +1,0 @@
-1 : MemCpy Optimization : 54.141359
-2 : MemCpy Optimization : 54.141359
-3 : Code sinking : 54.141359
-4 : Remove redundant instructions : 54.141359
-SpeedUp : 1.000000

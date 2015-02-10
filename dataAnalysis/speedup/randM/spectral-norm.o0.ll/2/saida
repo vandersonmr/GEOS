@@ -1,4 +1,0 @@
-1 : Remove redundant instructions : 0.000001
-2 : Induction Variable Simplification : 0.000001
-3 : Early CSE : 0.000001
-SpeedUp : 1.200000

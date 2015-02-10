@@ -1,4 +1,0 @@
-1 : Loop Invariant Code Motion : 72.728678
-2 : Induction Variable Simplification : 72.728678
-3 : Early CSE : 78.827602
-SpeedUp : 0.922630

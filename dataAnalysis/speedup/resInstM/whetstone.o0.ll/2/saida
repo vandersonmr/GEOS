@@ -1,6 +1,0 @@
-1 : Scalar Replacement of Aggregates (DT) : 56.462504
-2 : Remove redundant instructions : 56.462504
-3 : Lower atomic intrinsics to non-atomic form : 56.462504
-4 : SROA : 56.462504
-5 : Loop-Closed SSA Form Pass : 56.619504
-SpeedUp : 1.535964

@@ -1,5 +1,0 @@
-1 : Constant Hoisting : 2.843890
-2 : Scalar Replacement of Aggregates (DT) : 2.388804
-3 : Assign names to anonymous instructions : 2.388804
-4 : Induction Variable Simplification : 2.738839
-SpeedUp : 1.038356

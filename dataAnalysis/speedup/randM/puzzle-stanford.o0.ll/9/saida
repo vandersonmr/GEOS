@@ -1,6 +1,0 @@
-1 : Dead Code Elimination : 0.000003
-2 : Early CSE : 0.000003
-3 : Induction Variable Simplification : 0.000002
-4 : Dead Instruction Elimination : 0.000003
-5 : Combine redundant instructions : 0.000003
-SpeedUp : 0.992308

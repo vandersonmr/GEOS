@@ -1,6 +1,0 @@
-1 : MergedLoadStoreMotion : 17412.092542
-2 : Loop-Closed SSA Form Pass : 17412.092542
-3 : Aggressive Dead Code Elimination : 17412.092503
-4 : Promote Memory to Register : 3070.533703
-5 : Code sinking : 25944.928148
-SpeedUp : 0.671117

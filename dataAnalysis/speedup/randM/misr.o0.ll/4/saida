@@ -1,4 +1,0 @@
-1 : Loop-Closed SSA Form Pass : 0.000002
-2 : Aggressive Dead Code Elimination : 0.000002
-3 : Dead Instruction Elimination : 0.000002
-SpeedUp : 1.079208

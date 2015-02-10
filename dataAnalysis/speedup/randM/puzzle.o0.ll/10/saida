@@ -1,6 +1,0 @@
-1 : Code sinking : 0.000001
-2 : MemCpy Optimization : 0.000001
-3 : MergedLoadStoreMotion : 0.000001
-4 : MemCpy Optimization : 0.000001
-5 : Combine redundant instructions : 0.000001
-SpeedUp : 0.768519

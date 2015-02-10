@@ -1,9 +1,0 @@
-1 : MergedLoadStoreMotion : 1862.640000
-2 : Dead Instruction Elimination : 1862.640000
-3 : MemCpy Optimization : 1862.640000
-4 : MemCpy Optimization : 1862.640000
-5 : Code sinking : 1862.640000
-6 : Induction Variable Simplification : 1862.640000
-7 : Promote Memory to Register : 915.300000
-8 : MemCpy Optimization : 915.360000
-SpeedUp : 2.034872

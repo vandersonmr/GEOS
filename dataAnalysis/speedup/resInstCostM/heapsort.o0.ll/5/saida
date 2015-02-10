@@ -1,9 +1,0 @@
-1 : Combine redundant instructions : 62.873985
-2 : Assign names to anonymous instructions : 62.873985
-3 : Assign names to anonymous instructions : 62.873985
-4 : Dead Instruction Elimination : 62.873985
-5 : Combine redundant instructions : 62.873985
-6 : Combine redundant instructions : 62.873985
-7 : Constant Hoisting : 62.873985
-8 : Global Value Numbering : 62.873985
-SpeedUp : 1.171180

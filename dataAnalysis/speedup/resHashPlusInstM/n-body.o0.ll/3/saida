@@ -1,5 +1,0 @@
-1 : Aggressive Dead Code Elimination : 459.684477
-2 : Value Propagation : 459.684477
-3 : Combine redundant instructions : 446.760249
-4 : Combine redundant instructions : 446.760249
-SpeedUp : 1.028929

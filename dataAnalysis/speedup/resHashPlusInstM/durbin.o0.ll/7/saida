@@ -1,5 +1,0 @@
-1 : Value Propagation : 62.425728
-2 : Dead Instruction Elimination : 62.425728
-3 : Alignment from assumptions : 62.425728
-4 : Dead Instruction Elimination : 62.425728
-5 : Aggressive Dead Code Elimination : 62.425728

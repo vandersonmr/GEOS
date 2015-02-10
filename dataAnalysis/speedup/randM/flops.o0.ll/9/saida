@@ -1,4 +1,0 @@
-1 : MemCpy Optimization : 0.000002
-2 : Early CSE : 0.000002
-3 : Assign names to anonymous instructions : 0.000002
-SpeedUp : 0.960976

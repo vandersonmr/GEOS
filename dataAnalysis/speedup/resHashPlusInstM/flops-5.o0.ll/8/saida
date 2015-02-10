@@ -1,8 +1,0 @@
-1 : Loop Invariant Code Motion : 39416.709980
-2 : Aggressive Dead Code Elimination : 39416.709980
-3 : Dead Instruction Elimination : 39416.709980
-4 : MemCpy Optimization : 39416.709980
-5 : Induction Variable Simplification : 39416.709980
-6 : Alignment from assumptions : 39416.709980
-7 : Dead Code Elimination : 39416.709980
-8 : Early CSE : 53162.022728

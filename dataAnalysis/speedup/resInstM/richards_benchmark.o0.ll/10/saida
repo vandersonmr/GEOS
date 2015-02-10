@@ -1,5 +1,0 @@
-1 : Scalar Replacement of Aggregates (DT) : 71.589549
-2 : Code sinking : 71.589549
-3 : SROA : 71.589549
-4 : Loop-Closed SSA Form Pass : 71.694250
-SpeedUp : 1.291309

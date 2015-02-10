@@ -1,7 +1,0 @@
-1 : Dead Instruction Elimination : 783.664483
-2 : Scalar Replacement of Aggregates (DT) : 49.138919
-3 : Lower atomic intrinsics to non-atomic form : 49.138919
-4 : Aggressive Dead Code Elimination : 49.138919
-5 : Alignment from assumptions : 49.138919
-6 : Loop-Closed SSA Form Pass : 626.051673
-SpeedUp : 1.251757

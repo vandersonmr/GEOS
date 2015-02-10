@@ -1,5 +1,0 @@
-1 : Reassociate expressions : 2067.011333
-2 : Lower atomic intrinsics to non-atomic form : 2067.011333
-3 : Scalar Replacement of Aggregates (DT) : 1273.619493
-4 : Induction Variable Simplification : 1371.162190
-SpeedUp : 1.507489

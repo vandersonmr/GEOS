@@ -1,7 +1,0 @@
-1 : Value Propagation : 775.183000
-2 : MemCpy Optimization : 775.183000
-3 : Remove redundant instructions : 775.183000
-4 : Promote Memory to Register : 445.291200
-5 : MemCpy Optimization : 445.291200
-6 : Loop Invariant Code Motion : 459.217600
-SpeedUp : 1.688052

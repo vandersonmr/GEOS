@@ -1,6 +1,0 @@
-1 : Dead Instruction Elimination : 1.109713
-2 : Early CSE : 1.027435
-3 : MergedLoadStoreMotion : 1.027435
-4 : Aggressive Dead Code Elimination : 1.027435
-5 : Promote Memory to Register : 4.432939
-SpeedUp : 0.250333

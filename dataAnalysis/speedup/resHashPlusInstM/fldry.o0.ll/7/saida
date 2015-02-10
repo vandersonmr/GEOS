@@ -1,5 +1,0 @@
-1 : Code sinking : 17789.001314
-2 : Aggressive Dead Code Elimination : 17789.001274
-3 : Scalar Replacement of Aggregates (DT) : 9320.846503
-4 : Induction Variable Simplification : 30540.308348
-SpeedUp : 0.582476

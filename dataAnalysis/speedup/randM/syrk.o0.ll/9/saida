@@ -1,7 +1,0 @@
-1 : Assign names to anonymous instructions : 0.000002
-2 : Value Propagation : 0.000002
-3 : Remove redundant instructions : 0.000002
-4 : MemCpy Optimization : 0.000002
-5 : Combine redundant instructions : 0.000002
-6 : Dead Code Elimination : 0.000002
-SpeedUp : 1.100000

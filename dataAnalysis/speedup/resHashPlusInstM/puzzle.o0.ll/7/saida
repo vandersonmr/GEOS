@@ -1,9 +1,0 @@
-1 : Alignment from assumptions : 685.582385
-2 : Scalar Replacement of Aggregates (DT) : 595.613768
-3 : Lower atomic intrinsics to non-atomic form : 595.613768
-4 : Loop-Closed SSA Form Pass : 563.573592
-5 : Dead Instruction Elimination : 563.573592
-6 : Promote Memory to Register : 563.573592
-7 : MergedLoadStoreMotion : 563.573592
-8 : Combine redundant instructions : 720.900543
-SpeedUp : 0.951008

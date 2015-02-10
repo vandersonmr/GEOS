@@ -1,6 +1,0 @@
-1 : Scalar Replacement of Aggregates (DT) : 0.000003
-2 : Combine redundant instructions : 0.000003
-3 : MergedLoadStoreMotion : 0.000003
-4 : Dead Instruction Elimination : 0.000003
-5 : Constant Hoisting : 0.000003
-SpeedUp : 0.958599

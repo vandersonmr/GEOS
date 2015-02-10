@@ -1,9 +1,0 @@
-1 : MemCpy Optimization : 466.738443
-2 : MergedLoadStoreMotion : 466.738443
-3 : Assign names to anonymous instructions : 466.738443
-4 : Alignment from assumptions : 466.738443
-5 : Dead Code Elimination : 466.738443
-6 : Combine redundant instructions : 407.698115
-7 : Loop Invariant Code Motion : 407.698115
-8 : Global Value Numbering : 428.994735
-SpeedUp : 1.087982

@@ -1,9 +1,0 @@
-1 : Remove redundant instructions : 1065.438978
-2 : Global Value Numbering : 506.086750
-3 : Promote Memory to Register : 312.267214
-4 : Value Propagation : 237.031732
-5 : Combine redundant instructions : 215.493899
-6 : Dead Instruction Elimination : 215.493899
-7 : Loop-Closed SSA Form Pass : 215.493899
-8 : Loop Invariant Code Motion : 226.210346
-SpeedUp : 4.709948

@@ -1,5 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 2402.819183
-2 : Remove redundant instructions : 2397.439988
-3 : MergedLoadStoreMotion : 2397.439988
-4 : Loop Invariant Code Motion : 2666.399740
-SpeedUp : 0.901147

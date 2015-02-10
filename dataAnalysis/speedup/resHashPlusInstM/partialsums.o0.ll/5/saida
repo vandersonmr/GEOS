@@ -1,4 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 783.664483
-2 : Loop-Closed SSA Form Pass : 783.664483
-3 : Combine redundant instructions : 1597.043922
-SpeedUp : 0.490697

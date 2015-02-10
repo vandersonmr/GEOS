@@ -1,4 +1,0 @@
-1 : Value Propagation : 2.843890
-2 : Code sinking : 2.843890
-3 : Combine redundant instructions : 2.911306
-SpeedUp : 0.976843

@@ -1,5 +1,0 @@
-1 : Induction Variable Simplification : 0.000001
-2 : Global Value Numbering : 0.000001
-3 : Code sinking : 0.000001
-4 : MemCpy Optimization : 0.000001
-SpeedUp : 1.104478

@@ -1,7 +1,0 @@
-1 : Reassociate expressions : 0.000002
-2 : Loop Invariant Code Motion : 0.000001
-3 : Add DWARF path discriminators : 0.000001
-4 : Constant Hoisting : 0.000001
-5 : Assign names to anonymous instructions : 0.000001
-6 : MergedLoadStoreMotion : 0.000002
-SpeedUp : 1.065574

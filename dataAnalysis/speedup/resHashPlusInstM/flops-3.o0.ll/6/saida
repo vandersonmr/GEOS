@@ -1,8 +1,0 @@
-1 : Dead Instruction Elimination : 109705.295037
-2 : Constant Hoisting : 109705.295037
-3 : Induction Variable Simplification : 109705.295037
-4 : Loop-Closed SSA Form Pass : 109705.295037
-5 : SROA : 109705.295037
-6 : Aggressive Dead Code Elimination : 109705.295037
-7 : Early CSE : 139952.170366
-SpeedUp : 0.783877

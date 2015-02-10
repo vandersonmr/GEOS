@@ -1,6 +1,0 @@
-1 : Constant Hoisting : 2494.943098
-2 : Dead Instruction Elimination : 2494.943098
-3 : SROA : 2494.943098
-4 : Code sinking : 2494.943098
-5 : Remove redundant instructions : 2494.943099
-SpeedUp : 1.000000

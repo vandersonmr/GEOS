@@ -1,4 +1,0 @@
-1 : Dead Code Elimination : 6884.016552
-2 : Scalar Replacement of Aggregates (DT) : 6064.045525
-3 : Reassociate expressions : 6206.094174
-SpeedUp : 1.109235

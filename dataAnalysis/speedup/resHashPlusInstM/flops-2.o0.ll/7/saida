@@ -1,6 +1,0 @@
-1 : Dead Instruction Elimination : 54416.232888
-2 : Loop-Closed SSA Form Pass : 54416.232888
-3 : Combine redundant instructions : 1211.840967
-4 : Scalar Replacement of Aggregates (DT) : 946.824934
-5 : Promote Memory to Register : 76559.313371
-SpeedUp : 0.710772

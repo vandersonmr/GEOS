@@ -1,6 +1,0 @@
-1 : Promote Memory to Register : 143.749006
-2 : Promote Memory to Register : 143.749006
-3 : Alignment from assumptions : 143.749006
-4 : Combine redundant instructions : 143.548285
-5 : Induction Variable Simplification : 144.605598
-SpeedUp : 2.150751

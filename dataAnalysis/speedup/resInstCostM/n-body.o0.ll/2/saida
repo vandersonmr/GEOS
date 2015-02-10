@@ -1,7 +1,0 @@
-1 : Promote Memory to Register : 87.050019
-2 : Combine redundant instructions : 85.150016
-3 : Early CSE : 82.150016
-4 : Scalar Replacement of Aggregates (DT) : 82.150016
-5 : MemCpy Optimization : 82.150016
-6 : Induction Variable Simplification : 82.200016
-SpeedUp : 1.606448

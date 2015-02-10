@@ -1,4 +1,0 @@
-1 : Constant Hoisting : 685.582385
-2 : Scalar Replacement of Aggregates (DT) : 595.613768
-3 : Early CSE : 641.830557
-SpeedUp : 1.068167

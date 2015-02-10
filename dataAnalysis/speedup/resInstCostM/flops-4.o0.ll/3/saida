@@ -1,8 +1,0 @@
-1 : Remove redundant instructions : 279.687499
-2 : Scalar Replacement of Aggregates (DT) : 218.749999
-3 : Scalar Replacement of Aggregates (DT) : 218.749999
-4 : Reassociate expressions : 218.749999
-5 : Lower atomic intrinsics to non-atomic form : 218.749999
-6 : Loop-Closed SSA Form Pass : 218.749999
-7 : Global Value Numbering : 218.749999
-SpeedUp : 1.278571

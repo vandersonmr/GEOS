@@ -1,9 +1,0 @@
-1 : Loop-Closed SSA Form Pass : 355.055734
-2 : Assign names to anonymous instructions : 355.055734
-3 : SROA : 355.055734
-4 : Dead Code Elimination : 355.055734
-5 : Assign names to anonymous instructions : 355.055734
-6 : Induction Variable Simplification : 355.055734
-7 : MergedLoadStoreMotion : 355.055734
-8 : Scalar Replacement of Aggregates (DT) : 851.617801
-SpeedUp : 0.416919

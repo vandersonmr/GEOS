@@ -1,8 +1,0 @@
-1 : Alignment from assumptions : 1436315.569525
-2 : MemCpy Optimization : 1436315.569525
-3 : Dead Code Elimination : 1436315.569525
-4 : Aggressive Dead Code Elimination : 1436315.569525
-5 : Scalar Replacement of Aggregates (DT) : 152.963273
-6 : Dead Instruction Elimination : 152.963273
-7 : Loop-Closed SSA Form Pass : 1551242.363273
-SpeedUp : 0.925913

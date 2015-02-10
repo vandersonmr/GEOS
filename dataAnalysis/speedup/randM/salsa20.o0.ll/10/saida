@@ -1,4 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 0.000001
-2 : Remove redundant instructions : 0.000001
-3 : Alignment from assumptions : 0.000001
-SpeedUp : 1.016393

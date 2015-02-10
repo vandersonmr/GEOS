@@ -1,9 +1,0 @@
-1 : Alignment from assumptions : 700.576343
-2 : Remove redundant instructions : 700.576343
-3 : Code sinking : 700.576343
-4 : Combine redundant instructions : 647.377934
-5 : Aggressive Dead Code Elimination : 647.377934
-6 : Code sinking : 647.377934
-7 : Assign names to anonymous instructions : 647.377934
-8 : Reassociate expressions : 647.816313
-SpeedUp : 1.081443

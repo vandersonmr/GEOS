@@ -1,8 +1,0 @@
-1 : Loop-Closed SSA Form Pass : 0.000000
-2 : Alignment from assumptions : 0.000000
-3 : Global Value Numbering : 0.000000
-4 : Value Propagation : 0.000000
-5 : Add DWARF path discriminators : 0.000000
-6 : Aggressive Dead Code Elimination : 0.000000
-7 : Combine redundant instructions : 0.000000
-SpeedUp : 1.238095

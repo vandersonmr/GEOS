@@ -1,9 +1,0 @@
-1 : Induction Variable Simplification : 3766.051407
-2 : Dead Code Elimination : 3766.051407
-3 : Global Value Numbering : 2623.857768
-4 : Lower atomic intrinsics to non-atomic form : 2623.857768
-5 : Alignment from assumptions : 2623.857768
-6 : Loop Invariant Code Motion : 2623.857768
-7 : Promote Memory to Register : 1775.480866
-8 : Scalar Replacement of Aggregates (DT) : 1964.188358
-SpeedUp : 1.917358

@@ -1,6 +1,0 @@
-1 : Loop Invariant Code Motion : 1352.458698
-2 : Constant Hoisting : 1352.458698
-3 : Add DWARF path discriminators : 1352.458698
-4 : Dead Instruction Elimination : 1352.458698
-5 : Early CSE : 4643.858741
-SpeedUp : 0.291236

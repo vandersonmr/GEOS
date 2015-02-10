@@ -1,5 +1,0 @@
-1 : Assign names to anonymous instructions : 1886.811228
-2 : Code sinking : 1886.811228
-3 : Early CSE : 1736.428768
-4 : Combine redundant instructions : 1755.391667
-SpeedUp : 1.074866

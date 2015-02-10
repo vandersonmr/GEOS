@@ -1,4 +1,0 @@
-1 : Dead Code Elimination : 1886.811228
-2 : Scalar Replacement of Aggregates (DT) : 1647.327578
-3 : Remove redundant instructions : 1647.328052
-SpeedUp : 1.145377

@@ -1,5 +1,0 @@
-1 : Combine redundant instructions : 0.000004
-2 : Lower atomic intrinsics to non-atomic form : 0.000004
-3 : Aggressive Dead Code Elimination : 0.000004
-4 : Induction Variable Simplification : 0.000004
-SpeedUp : 0.980874

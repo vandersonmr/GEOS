@@ -1,6 +1,0 @@
-1 : SROA : 2717.750320
-2 : Remove redundant instructions : 2717.750320
-3 : Loop-Closed SSA Form Pass : 2717.750320
-4 : Lower atomic intrinsics to non-atomic form : 2717.750320
-5 : Dead Instruction Elimination : 2717.750320
-6 : Scalar Replacement of Aggregates (DT) : 118399.369075

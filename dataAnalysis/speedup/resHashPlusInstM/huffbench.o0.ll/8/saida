@@ -1,5 +1,0 @@
-1 : Early CSE : 219984.826873
-2 : Code sinking : 219984.826873
-3 : Promote Memory to Register : 12630.658620
-4 : Alignment from assumptions : 12729.342957
-SpeedUp : 17.300880

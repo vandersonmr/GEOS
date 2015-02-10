@@ -1,8 +1,0 @@
-1 : MemCpy Optimization : 78.440507
-2 : Dead Instruction Elimination : 78.440507
-3 : Aggressive Dead Code Elimination : 78.440507
-4 : Early CSE : 73.313507
-5 : MergedLoadStoreMotion : 73.313507
-6 : Code sinking : 73.313507
-7 : Global Value Numbering : 100.382006
-SpeedUp : 0.781420

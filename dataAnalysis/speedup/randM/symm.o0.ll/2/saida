@@ -1,4 +1,0 @@
-1 : Dead Instruction Elimination : 0.000002
-2 : Combine redundant instructions : 0.000002
-3 : MemCpy Optimization : 0.000001
-SpeedUp : 1.190184

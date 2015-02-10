@@ -1,7 +1,0 @@
-1 : Early CSE : 0.000002
-2 : Add DWARF path discriminators : 0.000001
-3 : Dead Code Elimination : 0.000001
-4 : Loop Invariant Code Motion : 0.000001
-5 : SROA : 0.000001
-6 : Reassociate expressions : 0.000002
-SpeedUp : 1.065574

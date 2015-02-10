@@ -1,8 +1,0 @@
-1 : Value Propagation : 54554.991137
-2 : SROA : 54554.991137
-3 : SROA : 54554.991137
-4 : Alignment from assumptions : 54554.991137
-5 : Early CSE : 50407.335232
-6 : MemCpy Optimization : 50407.335232
-7 : Value Propagation : 50407.335232
-8 : Scalar Replacement of Aggregates (DT) : 68713.586126

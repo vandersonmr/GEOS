@@ -1,5 +1,0 @@
-1 : Scalar Replacement of Aggregates (DT) : 105.060170
-2 : SROA : 105.060170
-3 : Scalar Replacement of Aggregates (DT) : 105.060170
-4 : Loop Invariant Code Motion : 105.075160
-SpeedUp : 1.857245

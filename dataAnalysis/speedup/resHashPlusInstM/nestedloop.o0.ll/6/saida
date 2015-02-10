@@ -1,5 +1,0 @@
-1 : Scalar Replacement of Aggregates (DT) : 8206.984264
-2 : MergedLoadStoreMotion : 8206.984264
-3 : Remove redundant instructions : 8206.984264
-4 : Loop Invariant Code Motion : 8206.985142
-SpeedUp : 1.214735

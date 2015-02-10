@@ -1,4 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 5664.510111
-2 : Dead Instruction Elimination : 5664.510111
-3 : Remove redundant instructions : 5664.510111
-SpeedUp : 1.000000

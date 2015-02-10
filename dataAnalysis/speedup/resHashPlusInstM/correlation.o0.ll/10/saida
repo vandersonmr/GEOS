@@ -1,5 +1,0 @@
-1 : Constant Hoisting : 1194.955967
-2 : Dead Instruction Elimination : 1194.955967
-3 : Combine redundant instructions : 897.710837
-4 : Scalar Replacement of Aggregates (DT) : 1007.687310
-SpeedUp : 1.185840

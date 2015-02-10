@@ -1,9 +1,0 @@
-1 : SROA : 4.182627
-2 : Constant Hoisting : 4.182627
-3 : Dead Code Elimination : 4.182627
-4 : Code sinking : 4.182627
-5 : Constant Hoisting : 4.182627
-6 : Loop-Closed SSA Form Pass : 4.182627
-7 : MergedLoadStoreMotion : 4.182627
-8 : Promote Memory to Register : 12.517954
-SpeedUp : 0.334130

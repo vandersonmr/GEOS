@@ -1,8 +1,0 @@
-1 : MergedLoadStoreMotion : 76.817904
-2 : Value Propagation : 76.817904
-3 : Assign names to anonymous instructions : 76.817904
-4 : Scalar Replacement of Aggregates (DT) : 57.214028
-5 : Induction Variable Simplification : 53.662971
-6 : Add DWARF path discriminators : 53.662971
-7 : Combine redundant instructions : 68.358732
-SpeedUp : 1.123747

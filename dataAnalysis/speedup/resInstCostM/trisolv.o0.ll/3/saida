@@ -1,6 +1,0 @@
-1 : Loop Invariant Code Motion : 5.841981
-2 : Remove redundant instructions : 5.841981
-3 : Induction Variable Simplification : 5.841981
-4 : Reassociate expressions : 5.841981
-5 : Global Value Numbering : 6.561921
-SpeedUp : 0.890285

@@ -1,4 +1,0 @@
-1 : Early CSE : 1364.298341
-2 : Dead Instruction Elimination : 1364.298341
-3 : Loop Invariant Code Motion : 1391.194316
-SpeedUp : 1.727163

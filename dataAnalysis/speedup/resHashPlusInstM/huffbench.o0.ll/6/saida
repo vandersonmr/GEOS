@@ -1,6 +1,0 @@
-1 : Assign names to anonymous instructions : 220228.838327
-2 : Constant Hoisting : 220228.838327
-3 : Promote Memory to Register : 12513.039598
-4 : Code sinking : 12513.039222
-5 : Combine redundant instructions : 13421.500878
-SpeedUp : 16.408660

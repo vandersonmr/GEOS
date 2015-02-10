@@ -1,4 +1,0 @@
-1 : Code sinking : 0.000003
-2 : Dead Instruction Elimination : 0.000003
-3 : Early CSE : 0.000003
-SpeedUp : 0.941406

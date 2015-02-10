@@ -1,6 +1,0 @@
-1 : Value Propagation : 1230.106588
-2 : Alignment from assumptions : 1230.106588
-3 : Constant Hoisting : 1230.106588
-4 : MergedLoadStoreMotion : 1230.106588
-5 : Reassociate expressions : 1230.106589
-SpeedUp : 1.000000

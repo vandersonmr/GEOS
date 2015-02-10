@@ -1,8 +1,0 @@
-1 : Loop Invariant Code Motion : 73.443919
-2 : Induction Variable Simplification : 73.443919
-3 : Induction Variable Simplification : 73.443919
-4 : Lower atomic intrinsics to non-atomic form : 73.443919
-5 : Constant Hoisting : 73.443919
-6 : Scalar Replacement of Aggregates (DT) : 40.568518
-7 : Promote Memory to Register : 40.686456
-SpeedUp : 1.805120

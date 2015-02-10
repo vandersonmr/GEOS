@@ -1,5 +1,0 @@
-1 : Reassociate expressions : 79681.857635
-2 : Loop Invariant Code Motion : 79681.857635
-3 : Remove redundant instructions : 79681.857635
-4 : Scalar Replacement of Aggregates (DT) : 79789.866623
-SpeedUp : 0.998646

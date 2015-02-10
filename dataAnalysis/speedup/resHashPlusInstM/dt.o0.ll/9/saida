@@ -1,6 +1,0 @@
-1 : Assign names to anonymous instructions : 324.197070
-2 : Early CSE : 310.768661
-3 : Induction Variable Simplification : 310.768661
-4 : Dead Code Elimination : 310.768661
-5 : Combine redundant instructions : 313.695565
-SpeedUp : 1.033477

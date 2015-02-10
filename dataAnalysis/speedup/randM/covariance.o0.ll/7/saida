@@ -1,5 +1,0 @@
-1 : Code sinking : 0.000001
-2 : Loop-Closed SSA Form Pass : 0.000001
-3 : Combine redundant instructions : 0.000001
-4 : MemCpy Optimization : 0.000001
-SpeedUp : 0.921053

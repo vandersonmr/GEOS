@@ -1,6 +1,0 @@
-1 : Loop Invariant Code Motion : 22.179401
-2 : Scalar Replacement of Aggregates (DT) : 15.841994
-3 : Early CSE : 12.989537
-4 : Lower atomic intrinsics to non-atomic form : 12.989537
-5 : Loop Invariant Code Motion : 13.012559
-SpeedUp : 1.704461

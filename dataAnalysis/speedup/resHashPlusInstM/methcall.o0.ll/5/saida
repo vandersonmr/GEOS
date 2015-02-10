@@ -1,6 +1,0 @@
-1 : Alignment from assumptions : 133682.475345
-2 : Loop Invariant Code Motion : 133682.475345
-3 : Add DWARF path discriminators : 133682.475345
-4 : Scalar Replacement of Aggregates (DT) : 13741.906704
-5 : Constant Hoisting : 58558.131738
-SpeedUp : 2.282902

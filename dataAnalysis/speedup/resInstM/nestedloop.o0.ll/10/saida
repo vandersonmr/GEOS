@@ -1,7 +1,0 @@
-1 : Induction Variable Simplification : 884.176172
-2 : SROA : 884.176172
-3 : SROA : 884.176172
-4 : Scalar Replacement of Aggregates (DT) : 494.723069
-5 : Dead Instruction Elimination : 395.815071
-6 : Value Propagation : 395.815072
-SpeedUp : 2.233811

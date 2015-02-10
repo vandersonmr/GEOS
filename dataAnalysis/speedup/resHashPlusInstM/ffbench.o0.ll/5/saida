@@ -1,6 +1,0 @@
-1 : Dead Code Elimination : 266.005330
-2 : Scalar Replacement of Aggregates (DT) : 198.894825
-3 : Add DWARF path discriminators : 198.894825
-4 : Assign names to anonymous instructions : 198.894825
-5 : Remove redundant instructions : 198.894826
-SpeedUp : 1.337417

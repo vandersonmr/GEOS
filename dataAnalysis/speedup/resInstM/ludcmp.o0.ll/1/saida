@@ -1,9 +1,0 @@
-1 : MemCpy Optimization : 146.274634
-2 : Assign names to anonymous instructions : 146.274634
-3 : Induction Variable Simplification : 146.274634
-4 : Remove redundant instructions : 146.274614
-5 : Value Propagation : 146.274614
-6 : Induction Variable Simplification : 146.274614
-7 : Code sinking : 146.274614
-8 : Reassociate expressions : 146.295626
-SpeedUp : 0.999857

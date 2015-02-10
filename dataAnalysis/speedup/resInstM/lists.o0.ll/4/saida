@@ -1,5 +1,0 @@
-1 : Loop-Closed SSA Form Pass : 2214.360001
-2 : Loop-Closed SSA Form Pass : 2214.360001
-3 : Scalar Replacement of Aggregates (DT) : 1279.800000
-4 : Dead Instruction Elimination : 1309.860000
-SpeedUp : 1.690532

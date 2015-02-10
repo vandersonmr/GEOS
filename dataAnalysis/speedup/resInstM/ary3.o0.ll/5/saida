@@ -1,8 +1,0 @@
-1 : Aggressive Dead Code Elimination : 270.210411
-2 : Assign names to anonymous instructions : 270.210411
-3 : Alignment from assumptions : 270.210411
-4 : Assign names to anonymous instructions : 270.210411
-5 : Dead Code Elimination : 270.210411
-6 : Lower atomic intrinsics to non-atomic form : 270.210411
-7 : Global Value Numbering : 300.240231
-SpeedUp : 0.899981

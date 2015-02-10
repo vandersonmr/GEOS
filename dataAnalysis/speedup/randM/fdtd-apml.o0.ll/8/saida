@@ -1,4 +1,0 @@
-1 : MemCpy Optimization : 0.000003
-2 : MergedLoadStoreMotion : 0.000002
-3 : Combine redundant instructions : 0.000003
-SpeedUp : 1.070175

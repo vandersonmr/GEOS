@@ -1,4 +1,0 @@
-1 : Remove redundant instructions : 2717.750320
-2 : Dead Code Elimination : 2717.750320
-3 : Remove redundant instructions : 2717.750320
-4 : Scalar Replacement of Aggregates (DT) : 118399.369075

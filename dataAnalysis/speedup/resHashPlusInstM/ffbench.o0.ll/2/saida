@@ -1,6 +1,0 @@
-1 : Constant Hoisting : 266.005330
-2 : Combine redundant instructions : 260.984536
-3 : Promote Memory to Register : 198.905220
-4 : Remove redundant instructions : 194.872046
-5 : Reassociate expressions : 194.994814
-SpeedUp : 1.364166

@@ -1,6 +1,0 @@
-1 : Constant Hoisting : 0.000003
-2 : Induction Variable Simplification : 0.000003
-3 : Early CSE : 0.000002
-4 : Scalar Replacement of Aggregates (DT) : 0.000003
-5 : Induction Variable Simplification : 0.000003
-SpeedUp : 0.992308

@@ -1,4 +1,0 @@
-1 : MemCpy Optimization : 0.000003
-2 : Alignment from assumptions : 0.000003
-3 : Remove redundant instructions : 0.000003
-SpeedUp : 1.112360

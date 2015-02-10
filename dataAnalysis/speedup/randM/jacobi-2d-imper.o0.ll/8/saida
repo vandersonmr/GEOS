@@ -1,8 +1,0 @@
-1 : Remove redundant instructions : 0.000001
-2 : Alignment from assumptions : 0.000001
-3 : MergedLoadStoreMotion : 0.000001
-4 : Dead Code Elimination : 0.000001
-5 : Promote Memory to Register : 0.000001
-6 : Aggressive Dead Code Elimination : 0.000001
-7 : Reassociate expressions : 0.000001
-SpeedUp : 0.844444

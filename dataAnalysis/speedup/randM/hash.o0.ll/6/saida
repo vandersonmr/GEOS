@@ -1,4 +1,0 @@
-1 : Constant Hoisting : 0.000002
-2 : MergedLoadStoreMotion : 0.000002
-3 : Dead Instruction Elimination : 0.000002
-SpeedUp : 0.953757

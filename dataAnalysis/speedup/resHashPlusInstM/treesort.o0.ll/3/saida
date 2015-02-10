@@ -1,6 +1,0 @@
-1 : Remove redundant instructions : 32.100803
-2 : Lower atomic intrinsics to non-atomic form : 32.100803
-3 : Lower atomic intrinsics to non-atomic form : 32.100803
-4 : Dead Instruction Elimination : 32.100803
-5 : Global Value Numbering : 32.837093
-SpeedUp : 0.977577

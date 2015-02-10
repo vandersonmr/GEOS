@@ -1,7 +1,0 @@
-1 : Constant Hoisting : 50.519497
-2 : Constant Hoisting : 50.519497
-3 : Reassociate expressions : 50.519497
-4 : Value Propagation : 50.519497
-5 : Early CSE : 44.917146
-6 : Loop Invariant Code Motion : 46.960202
-SpeedUp : 1.075794

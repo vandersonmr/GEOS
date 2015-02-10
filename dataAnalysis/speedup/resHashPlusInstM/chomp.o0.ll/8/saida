@@ -1,8 +1,0 @@
-1 : Remove redundant instructions : 414.080246
-2 : Early CSE : 408.760719
-3 : Remove redundant instructions : 408.760719
-4 : Alignment from assumptions : 408.760719
-5 : Scalar Replacement of Aggregates (DT) : 399.530558
-6 : Induction Variable Simplification : 395.275304
-7 : Code sinking : 397.580755
-SpeedUp : 1.041500

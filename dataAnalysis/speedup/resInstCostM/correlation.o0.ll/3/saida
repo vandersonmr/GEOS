@@ -1,9 +1,0 @@
-1 : Dead Code Elimination : 191.301411
-2 : Early CSE : 146.081146
-3 : Induction Variable Simplification : 146.081146
-4 : MergedLoadStoreMotion : 146.081146
-5 : Loop-Closed SSA Form Pass : 146.081146
-6 : Promote Memory to Register : 100.690650
-7 : Add DWARF path discriminators : 80.585605
-8 : Remove redundant instructions : 80.590590
-SpeedUp : 2.373744

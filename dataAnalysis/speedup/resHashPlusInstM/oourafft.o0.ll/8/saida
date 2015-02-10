@@ -1,9 +1,0 @@
-1 : Code sinking : 3599.805556
-2 : Alignment from assumptions : 3599.805556
-3 : Scalar Replacement of Aggregates (DT) : 2109.408729
-4 : Add DWARF path discriminators : 2109.408632
-5 : Constant Hoisting : 2109.408632
-6 : Alignment from assumptions : 2109.408632
-7 : Combine redundant instructions : 2089.930486
-8 : Remove redundant instructions : 2089.930486
-9 : Induction Variable Simplification : 2317.462592

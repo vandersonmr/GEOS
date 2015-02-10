@@ -1,9 +1,0 @@
-1 : Assign names to anonymous instructions : 875.499222
-2 : Remove redundant instructions : 875.499222
-3 : Aggressive Dead Code Elimination : 875.499222
-4 : Loop-Closed SSA Form Pass : 875.499222
-5 : Assign names to anonymous instructions : 875.499222
-6 : MergedLoadStoreMotion : 875.499222
-7 : Promote Memory to Register : 634.351466
-8 : Constant Hoisting : 643.202440
-SpeedUp : 1.361157

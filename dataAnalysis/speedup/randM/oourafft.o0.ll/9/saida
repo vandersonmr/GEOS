@@ -1,5 +1,0 @@
-1 : Lower atomic intrinsics to non-atomic form : 0.000007
-2 : MemCpy Optimization : 0.000007
-3 : Alignment from assumptions : 0.000007
-4 : SROA : 0.000007
-SpeedUp : 1.051650

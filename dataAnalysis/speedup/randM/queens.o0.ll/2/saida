@@ -1,5 +1,0 @@
-1 : Induction Variable Simplification : 0.000001
-2 : Induction Variable Simplification : 0.000001
-3 : Dead Code Elimination : 0.000001
-4 : Combine redundant instructions : 0.000001
-SpeedUp : 1.076923

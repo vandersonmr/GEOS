@@ -1,5 +1,0 @@
-1 : Loop Invariant Code Motion : 0.000002
-2 : Global Value Numbering : 0.000001
-3 : Dead Instruction Elimination : 0.000001
-4 : Add DWARF path discriminators : 0.000001
-SpeedUp : 1.680412

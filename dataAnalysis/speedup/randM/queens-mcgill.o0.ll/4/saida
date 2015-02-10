@@ -1,5 +1,0 @@
-1 : Dead Instruction Elimination : 0.000002
-2 : Dead Instruction Elimination : 0.000002
-3 : Loop-Closed SSA Form Pass : 0.000002
-4 : Code sinking : 0.000002
-SpeedUp : 1.068571

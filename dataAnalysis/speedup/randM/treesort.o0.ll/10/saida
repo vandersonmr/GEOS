@@ -1,7 +1,0 @@
-1 : Dead Code Elimination : 0.000001
-2 : Loop-Closed SSA Form Pass : 0.000001
-3 : Early CSE : 0.000001
-4 : MergedLoadStoreMotion : 0.000001
-5 : Global Value Numbering : 0.000001
-6 : MemCpy Optimization : 0.000001
-SpeedUp : 1.016667

@@ -1,6 +1,0 @@
-1 : Induction Variable Simplification : 54028.428648
-2 : MergedLoadStoreMotion : 54028.428648
-3 : Combine redundant instructions : 648.889217
-4 : Promote Memory to Register : 448.058524
-5 : Code sinking : 64989.159820
-SpeedUp : 0.831345

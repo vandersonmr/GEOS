@@ -1,5 +1,0 @@
-1 : MemCpy Optimization : 0.000004
-2 : Aggressive Dead Code Elimination : 0.000004
-3 : Dead Code Elimination : 0.000004
-4 : Alignment from assumptions : 0.000004
-SpeedUp : 0.980874

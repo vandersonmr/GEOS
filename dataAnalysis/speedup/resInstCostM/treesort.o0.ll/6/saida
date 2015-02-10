@@ -1,6 +1,0 @@
-1 : MergedLoadStoreMotion : 2.054173
-2 : MemCpy Optimization : 2.054173
-3 : Scalar Replacement of Aggregates (DT) : 1.124692
-4 : Dead Code Elimination : 1.124692
-5 : Reassociate expressions : 1.129693
-SpeedUp : 1.818346

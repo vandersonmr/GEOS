@@ -1,7 +1,0 @@
-1 : Value Propagation : 220228.838327
-2 : Constant Hoisting : 220228.838327
-3 : Scalar Replacement of Aggregates (DT) : 12513.039598
-4 : MemCpy Optimization : 12513.039598
-5 : SROA : 12513.039598
-6 : Remove redundant instructions : 12609.039598
-SpeedUp : 17.465949

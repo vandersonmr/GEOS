@@ -1,9 +1,0 @@
-1 : Reassociate expressions : 3140.620693
-2 : Code sinking : 3140.620693
-3 : Code sinking : 3140.620693
-4 : Value Propagation : 3140.620693
-5 : Value Propagation : 3140.620693
-6 : Alignment from assumptions : 3140.620693
-7 : Loop-Closed SSA Form Pass : 3140.620693
-8 : Combine redundant instructions : 3214.262626
-SpeedUp : 0.977089

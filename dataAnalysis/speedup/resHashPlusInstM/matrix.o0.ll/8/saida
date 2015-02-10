@@ -1,5 +1,0 @@
-1 : Constant Hoisting : 6265.308210
-2 : Dead Instruction Elimination : 6265.308210
-3 : SROA : 6265.308210
-4 : Early CSE : 6854.448122
-SpeedUp : 0.914050

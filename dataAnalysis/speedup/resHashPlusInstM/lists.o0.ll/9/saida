@@ -1,9 +1,0 @@
-1 : Remove redundant instructions : 3459133.252725
-2 : Dead Code Elimination : 3459133.252725
-3 : Promote Memory to Register : 42913.732816
-4 : Scalar Replacement of Aggregates (DT) : 15294.232816
-5 : Combine redundant instructions : 15107.755774
-6 : Induction Variable Simplification : 14720.931382
-7 : Global Value Numbering : 14368.372402
-8 : Combine redundant instructions : 14374.372402
-SpeedUp : 240.674664

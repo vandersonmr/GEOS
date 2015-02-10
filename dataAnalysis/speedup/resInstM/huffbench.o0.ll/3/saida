@@ -1,5 +1,0 @@
-1 : Dead Instruction Elimination : 2067.011333
-2 : Constant Hoisting : 2067.011333
-3 : Promote Memory to Register : 1273.619493
-4 : Loop Invariant Code Motion : 1371.162587
-SpeedUp : 1.507488

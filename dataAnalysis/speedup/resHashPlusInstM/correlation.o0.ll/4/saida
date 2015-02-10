@@ -1,6 +1,0 @@
-1 : Alignment from assumptions : 1194.955967
-2 : Combine redundant instructions : 897.710837
-3 : Aggressive Dead Code Elimination : 897.710837
-4 : Loop Invariant Code Motion : 897.710837
-5 : Promote Memory to Register : 1007.687310
-SpeedUp : 1.185840

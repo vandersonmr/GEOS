@@ -1,6 +1,0 @@
-1 : Induction Variable Simplification : 0.000003
-2 : Loop-Closed SSA Form Pass : 0.000003
-3 : Code sinking : 0.000003
-4 : Remove redundant instructions : 0.000003
-5 : Code sinking : 0.000003
-SpeedUp : 0.958599
