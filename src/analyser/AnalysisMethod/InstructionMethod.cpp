@@ -23,7 +23,7 @@ estimateExecutionTime(llvm::Function* Func, const ProfileModule &Freq) const {
 
   for (auto &BB : *Func) {
     PerformanceMensurment += 
-      Freq.getBasicBlockFrequency(&BB) * BB.getInstList().size() * 0.8;
+      (Freq.getBasicBlockFrequency(&BB) * BB.getInstList().size())/0.6935707;
   } 
 
   return PerformanceMensurment;

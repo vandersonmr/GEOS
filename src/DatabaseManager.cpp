@@ -26,11 +26,11 @@ using namespace llvm;
 
 // w constant is related with the size of each bucket. Smaller values creates
 // buckets with less Hashes, but also decrease the precision.
-constexpr int w = 10;
+constexpr int w = 1;
 
 // PrimeNumber define the largest locality-sensitive hash number. 
 // In other words, it defines the size of CDB.
-constexpr int PrimeNumber = 101;
+constexpr int PrimeNumber = 1;
 
 // A randomic hash used to calculate the locality-sensitive hash using 
 // dotProduct to reduce the dimensions to a scalar.
@@ -67,10 +67,14 @@ int DatabaseManager::size() const {
 }
 
 double DatabaseManager::getTime(const BBHash &Hash) const {
-  if(hasHash(Hash)) 
-    return DB.at(Hash);
-  else 
+  if(hasHash(Hash)) {
+    int Res = ((int)DB.at(Hash)/5)*5;
+    if (Res > 130) 
+      return Res / 3;
+    return Res; 
+  } else { 
     return 0.0;
+  }
 }
 
 bool DatabaseManager::hasHash(const BBHash &Hash) const {

@@ -63,34 +63,23 @@ GEOS::getAnalyser(AnalysisMethodKind Method, StringRef DatabaseFilename = "") {
 
 Pass* GEOS::getPass(OptimizationKind OptChoosed) {
   switch(OptChoosed) {
-    case ConstantPropagation:
-      return createConstantPropagationPass();
-    case AlignmentFromAssumptions:
-      return createAlignmentFromAssumptionsPass();
-    //case SCCP:
-    //  return createSCCPPass();
-    case DeadInstElimination:
-      return createDeadInstEliminationPass();
-    case DeadCodeElimination:
-      return createDeadCodeEliminationPass();
-    case AggressiveDCE:
-      return createAggressiveDCEPass();
-    case SROA:
+    // --------------- Not Working
+    //case sccp:
+    //  return createsccppass();
+    //case LoopInstSimplify:
+    //  return createLoopInstSimplifyPass();
+    //case PartiallyInlineLibCalls:
+    //  return createPartiallyInlineLibCallsPass();
+    //case LoadCombine:
+    //  return createLoadCombinePass(); // PreserveCFG
+
+    // ---------------- Change the CFG
+    /*case SROA:
       return createSROAPass();
-    case ScalarReplAggregates: 
-      return createScalarReplAggregatesPass(); //PreservesCFG
-    case InductionVariableSimplify:
-      return createIndVarSimplifyPass();
-    case InstructionCombining:
-      return createInstructionCombiningPass();
-    case LICM:
-      return createLICMPass();
     case LoopStrengthReduce:
       return createLoopStrengthReducePass();
     case LoopUnswitch:
       return createLoopUnswitchPass();
-    //case LoopInstSimplify:
-    //  return createLoopInstSimplifyPass();
     case LoopUnroll:
       return createLoopUnrollPass();
     case LoopReroll:
@@ -99,12 +88,6 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createLoopRotatePass();
     case LoopIdiom:
       return createLoopIdiomPass();
-    case PromoteMemoryToRegister:
-      return createPromoteMemoryToRegisterPass();
-    case DemoteRegisterToMemory:
-      return createDemoteRegisterToMemoryPass();
-    case Reassociate: 
-      return createReassociatePass(); // PreservesCFG
     case JumpThreading:
       return createJumpThreadingPass();
     case CFGSimplification:
@@ -121,8 +104,44 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createTailCallEliminationPass();
     case LowerSwitch: // Maybe can change CFG
       return createLowerSwitchPass();
-    case LCSSA:
-      return createLCSSAPass(); // PreservesCFG
+    case LoopDeletion: // Maybe can change CFG
+      return createLoopDeletionPass();
+    case ScalarizerPass: // Maybe can change CFG
+      return createScalarizerPass();
+    case SeparateConstOffsetFromGEP:  // Maybe can change CFG
+      return createSeparateConstOffsetFromGEPPass();
+    case LICM:
+      return createLICMPass();*/
+
+    // ---------------- Does not change the CFG
+    case SCCP:
+      return createSCCPPass();
+    case SROA:
+      return createSROAPass();
+    case ConstantPropagation:
+      return createConstantPropagationPass();
+    case AlignmentFromAssumptions:
+      return createAlignmentFromAssumptionsPass();
+    case DeadInstElimination:
+      return createDeadInstEliminationPass();
+    case DeadCodeElimination:
+      return createDeadCodeEliminationPass();
+    case AggressiveDCE:
+      return createAggressiveDCEPass();
+    case ScalarReplAggregates: 
+      return createScalarReplAggregatesPass(); //PreservesCFG
+    case InductionVariableSimplify:
+      return createIndVarSimplifyPass();
+    case InstructionCombining:
+      return createInstructionCombiningPass();
+    case PromoteMemoryToRegister:
+      return createPromoteMemoryToRegisterPass();
+    case DemoteRegisterToMemory:
+      return createDemoteRegisterToMemoryPass();
+    case Reassociate: 
+      return createReassociatePass(); // PreservesCFG
+/*    case LCSSA:
+      return createLCSSAPass(); // PreservesCFG*/
     case EarlyCSE:
       return createEarlyCSEPass();
     case MergedLoadStoreMotion:
@@ -131,12 +150,10 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createGVNPass();
     case MemCpyOpt:
       return createMemCpyOptPass();
-    case LoopDeletion: // Maybe can change CFG
-      return createLoopDeletionPass();
     case ConstantHoisting:
       return createConstantHoistingPass();
-    case InstructionNamer:
-      return createInstructionNamerPass();
+/*    case InstructionNamer:
+      return createInstructionNamerPass();*/
     case Sink: 
       return createSinkingPass();  // PreservesCFG
     case LowerAtomic:
@@ -145,16 +162,8 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createCorrelatedValuePropagationPass();
     case InstructionSimplifier:
       return createInstructionSimplifierPass();
-    //case PartiallyInlineLibCalls:
-    //  return createPartiallyInlineLibCallsPass();
-    case ScalarizerPass: // Maybe can change CFG
-      return createScalarizerPass();
     case AddDiscriminators:
       return createAddDiscriminatorsPass();
-    case SeparateConstOffsetFromGEP:  // Maybe can change CFG
-      return createSeparateConstOffsetFromGEPPass();
-    //case LoadCombine:
-    //  return createLoadCombinePass(); // PreserveCFG
     default:
       return nullptr;
   }

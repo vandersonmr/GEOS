@@ -26,7 +26,7 @@ estimateExecutionTime(llvm::Function* Func, const ProfileModule &Freq) const {
     auto BBCost = 0;
     for (auto &I : BB) 
       BBCost += CostEstimator::getInstructionCost(&I);
-    PerformanceMensurment += Freq.getBasicBlockFrequency(&BB) * BBCost * 1.2;
+    PerformanceMensurment += (Freq.getBasicBlockFrequency(&BB) * BBCost)/0.7851706;
   } 
 
   return PerformanceMensurment;

@@ -1,0 +1,14 @@
+1 : SROA : 0.419997
+2 : Early CSE : 0.404229
+3 : Sparse Conditional Constant Propagation : 0.404229
+4 : Combine redundant instructions : 0.437289
+5 : SROA : 0.437048
+6 : Early CSE : 0.437048
+7 : Combine redundant instructions : 0.437048
+8 : Reassociate expressions : 0.437048
+9 : Global Value Numbering : 0.409507
+10 : Sparse Conditional Constant Propagation : 0.409507
+11 : Aggressive Dead Code Elimination : 0.409507
+12 : Combine redundant instructions : 0.409507
+13 : Global Value Numbering : 0.409507
+SpeedUp : 1.025616

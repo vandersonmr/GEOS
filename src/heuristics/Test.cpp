@@ -113,19 +113,28 @@ int main(int argc, char** argv) {
     GEOS::getAnalyser((AnalysisMethodKind) OptAnalysisMethod, 
         DatabaseFilename.c_str());
 
-  double ExecutionTime1 = GEOS::analyseExecutionTime(*Optimized, Analyser);
+  double ExecutionTime1 = GEOS::analyseExecutionTime(*Optimized, Analyser) / 
+    (CPUFreq * std::pow(10, 9));
+
+  printf("%lf\n", ExecutionTime1);
+
   printModule(Optimized, 1);
 
-  printf("-------------------------------------------------\n");
   FunctionPassManager FPM(Optimized->getLLVMModule());
 
-  FPM.add(GEOS::getPass(OptimizationKind::FlattenCFG));
-  FPM.add(GEOS::getPass(OptimizationKind::CFGSimplification));
-  FPM.add(GEOS::getPass(OptimizationKind::LoopStrengthReduce));
-  FPM.add(GEOS::getPass(OptimizationKind::LoopUnroll));
-  FPM.add(GEOS::getPass(OptimizationKind::BreakCriticalEdges));
-  FPM.add(GEOS::getPass(OptimizationKind::LoopSimplify));
-  FPM.add(GEOS::getPass(OptimizationKind::LoopDeletion));
+  FPM.add(GEOS::getPass(OptimizationKind::SROA));
+  FPM.add(GEOS::getPass(OptimizationKind::EarlyCSE));
+  FPM.add(GEOS::getPass(OptimizationKind::LowerExpectInstrinsics));
+  FPM.add(GEOS::getPass(OptimizationKind::SCCP));
+  FPM.add(GEOS::getPass(OptimizationKind::InstructionCombining));
+  FPM.add(GEOS::getPass(OptimizationKind::SROA));
+  FPM.add(GEOS::getPass(OptimizationKind::EarlyCSE));
+  FPM.add(GEOS::getPass(OptimizationKind::InstructionCombining));
+  FPM.add(GEOS::getPass(OptimizationKind::Reassociate));
+  FPM.add(GEOS::getPass(OptimizationKind::GVN));
+  FPM.add(GEOS::getPass(OptimizationKind::SCCP));
+  FPM.add(GEOS::getPass(OptimizationKind::AggressiveDCE));
+  FPM.add(GEOS::getPass(OptimizationKind::InstructionCombining));
 
   FPM.doInitialization();
   ProfileModule* Candidate = 

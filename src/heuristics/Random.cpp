@@ -63,6 +63,13 @@ static cl::opt<std::string> DatabaseFilename("database",
 static cl::alias 
 dbAlias("db", cl::desc("Alias for -database"), cl::aliasopt(DatabaseFilename));
 
+static cl::opt<double> 
+CPUFreq("cpu-freq", cl::desc("defines CPU Clock rate."), 
+    cl::value_desc("CPU Clock"),
+    cl::Required);
+static cl::alias 
+CPUAlias("f", cl::desc("Alias for -cpu-freq"), cl::aliasopt(CPUFreq));
+
 void printModule(ProfileModule* P, int Id) {
   char FileName[20];
   sprintf(FileName, "%d.ll", Id);
@@ -87,19 +94,18 @@ int main(int argc, char** argv) {
 
   Module *MyModule = 
     parseIRFile(LLVMFilename.c_str(), Error, Context).release();
-
-  std::list<MemoryBuffer*> GCNOList;
-  std::list<MemoryBuffer*> GCDAList;
+  
+  std::vector<MemoryBuffer*> GCNOList;
+  std::vector<MemoryBuffer*> GCDAList;
 
   cl::list<std::string>::iterator iGCDA = GCDAFilename.begin();
   cl::list<std::string>::iterator iGCNO = GCNOFilename.begin();
-  // FIXME!
-  //while (iGCDA != GCDAFilename.end() && iGCNO != GCNOFilename.end()) {
-  auto GCNO = MemoryBuffer::getFileOrSTDIN(*iGCNO);
-  auto GCDA = MemoryBuffer::getFileOrSTDIN(*iGCDA);
-  GCNOList.push_back(GCNO.get().get());
-  GCDAList.push_back(GCDA.get().get());
-  //}
+  while (iGCDA != GCDAFilename.end() && iGCNO != GCNOFilename.end()) {
+    GCNOList.push_back(MemoryBuffer::getFileOrSTDIN(*iGCNO).get().release());
+    GCDAList.push_back(MemoryBuffer::getFileOrSTDIN(*iGCDA).get().release()); 
+    ++iGCDA;
+    ++iGCNO;
+  }
 
   ProfileModule  *PModule   = new ProfileModule(MyModule, GCDAList, GCNOList);
   ProfileModule  *Optimized = PModule;
@@ -107,16 +113,18 @@ int main(int argc, char** argv) {
     GEOS::getAnalyser((AnalysisMethodKind) OptAnalysisMethod, 
         DatabaseFilename.c_str());
 
-  double StartTime = GEOS::analyseExecutionTime(*Optimized, 
-      Analyser) / 100000000.0;
+  double StartTime = GEOS::analyseExecutionTime(*Optimized, Analyser) 
+    / (CPUFreq * std::pow(10, 9));
 
   double BestValue = std::numeric_limits<double>::max();
   std::vector<OptimizationKind> Optimizations;
-  int Try = 30;
+  int Try = 50;
   int i = 0;
-  while (i < 30) {
+  while (i < 20) {
     OptimizationKind OptChoosed = (OptimizationKind) getRandomPass(gen);
     if (GEOS::getPass(OptChoosed) == nullptr) continue;
+
+    Optimizations.push_back(OptChoosed);
 
     FunctionPassManager FPM(Optimized->getLLVMModule());
 
@@ -130,7 +138,7 @@ int main(int argc, char** argv) {
       GEOS::applyPasses(*Optimized, FPM);
     FPM.doFinalization();
 
-    double ExecutionTime = GEOS::analyseExecutionTime(*Optimized, Analyser);
+    double ExecutionTime = GEOS::analyseExecutionTime(*Candidate, Analyser);
 
     if (ExecutionTime <= BestValue) {
       i++;
@@ -141,7 +149,8 @@ int main(int argc, char** argv) {
       printModule(Optimized, i);
 
       printf("%lf\n", 
-          GEOS::analyseExecutionTime(*Optimized, Analyser) / 100000000.0);
+          GEOS::analyseExecutionTime(*Optimized, Analyser) / 
+          (CPUFreq * std::pow(10, 9)));
     } else {
       delete Candidate;
       Optimizations.pop_back(); 
@@ -149,7 +158,7 @@ int main(int argc, char** argv) {
       if (Try == 0) { 
         printf("SpeedUp : %lf\n", 
           StartTime / (GEOS::analyseExecutionTime(*Optimized, Analyser) 
-          / 100000000.0));
+          / (CPUFreq * std::pow(10, 9))));
 
         return 0;
       }
@@ -158,7 +167,7 @@ int main(int argc, char** argv) {
 
   printf("SpeedUp : %lf\n", 
           StartTime / (GEOS::analyseExecutionTime(*Optimized, Analyser) 
-          / 100000000.0));
+          / (CPUFreq * std::pow(10, 9))));
 
   return 0;
 }

@@ -31,8 +31,8 @@ estimateExecutionTime(llvm::Function* Func, const ProfileModule &Freq) const {
 
   for (auto &BB : *Func) {
     BBHash Hash(BB);
-    PerformanceMensurment += Freq.getBasicBlockFrequency(&BB) * 
-                   DBManager->getTime(*DBManager->getNearest(Hash));
+    PerformanceMensurment += (Freq.getBasicBlockFrequency(&BB) * 
+      DBManager->getTime(*DBManager->getNearest(Hash)))/4.522935;
   } 
 
   return PerformanceMensurment;

@@ -20,15 +20,15 @@
 using namespace llvm;
 
 void BBHash::loadBB(BasicBlock &BB) {
+  for (int i = 0; i <= Size; i++) 
+    Hash[i] = 0;
+
   int BBSize = BB.getInstList().size();
 
   setDescriptor(DescriptorKind::NumberOfInstructions, BBSize);
 
   for (auto &i : BB) {
     switch (i.getOpcode()) {
-      default: 
-        addUpDescriptor(DescriptorKind::Others);
-        break;
       case Instruction::GetElementPtr:
         addUpDescriptor(DescriptorKind::GetElementPtr);
         break;
@@ -157,7 +157,7 @@ BBHash::BBHash(const StringRef &S) {
   char p;
   for (int i = 0; i < Size; i++) {
     ss >> d;
-    Hash[i] = d;
+    setDescriptor((DescriptorKind) i, d);
     ss >> p;
 
     if (!(d >= 0 && p == '-')) 
@@ -172,7 +172,8 @@ void BBHash::setDescriptor(DescriptorKind DescriptionId, int Value) {
   assert((int) DescriptionId >= 0 && (int) DescriptionId <= Size &&
       "Trying to set an invalid descriptor.");
 
-  assert(Value >= 0 && "The value of an descriptor must be greater than 0.");
+  assert(Value >= 0 && 
+      "The value of an descriptor must be greater or equal to 0.");
 
   Hash[DescriptionId] = Value;
 }
@@ -232,24 +233,27 @@ BBHash* BBHash::getRandomHash() {
   return RandomHash;
 }
 
-
 unsigned BBHash::descriptorWeight(DescriptorKind d) {
   switch (d) {
+    case DescriptorKind::ExtractElement: 
+    case DescriptorKind::InsertElement: 
+    case DescriptorKind::ShuffleVector: 
     case DescriptorKind::Load:
     case DescriptorKind::Store:
+      return 1;
     case DescriptorKind::FRem:
     case DescriptorKind::FAdd:
     case DescriptorKind::FSub:
     case DescriptorKind::FMul:
     case DescriptorKind::FDiv:
-      return 2;
+      return 1;
     case DescriptorKind::Calls: 
-      return 3;
+      return 1000;
     case DescriptorKind::Printf:
     case DescriptorKind::Malloc: 
     case DescriptorKind::Pow: 
     case DescriptorKind::Sqrt: 
-      return 4;
+      return 50;
     default:
       return 1;
   }
