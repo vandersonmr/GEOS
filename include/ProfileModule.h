@@ -18,20 +18,8 @@
 #include <unordered_map>
 #include <vector>
 
-/// \brief This class is responsable for encapsulating, copying, and mantaing 
-/// consistency of a LLVM Module and its profiling information.
-class ProfileModule {
-  private:
-    /// \brief The LLVM Module.
-    llvm::Module *LLVMModule;
-
-    /// \brief This function loads from files (GCDA and GCNO) the GCOV profiling
-    /// information.
-    std::vector<llvm::GCOVFunction*>
-    readFunctions(
-        llvm::GCOVFile& GF, llvm::GCOVBuffer &GCNOBuffer, 
-        llvm::GCOVBuffer &GCDABuffer); 
-
+class ProfileData {
+  protected:
     /// \brief Maps basic block's name with its execution frequency.
     std::unordered_map<std::string, uint64_t> BasicBlockFrequency;
 
@@ -42,21 +30,7 @@ class ProfileModule {
     /// \brief Uses the predecessors of a Basic Block to try to update its 
     ///  execution frequency. 
     uint64_t getExecutionFreqUsingSuccessors(llvm::BasicBlock* BB);
-
-    /// \brief This constructor is used in the instanciation of a copy of a 
-    /// ProfileModule.
-    ProfileModule(llvm::Module*, 
-        const std::unordered_map<std::string, uint64_t>&);
   public:
-    /// \brief The constructor needs a LLVM Module and two lists of buffers of
-    /// GCOV files to create the profiling information. 
-    ProfileModule(llvm::Module*, 
-        std::vector<llvm::MemoryBuffer*>, 
-        std::vector<llvm::MemoryBuffer*>);
-
-    /// \brief Returns its LLVM Module.
-    llvm::Module* getLLVMModule() const;
-
     /// \brief For each Basic Block in the CFG, the predecessors and successors 
     /// are used to update or find its execution frequency.
     void repairFunctionProfiling(llvm::Function*);
@@ -75,7 +49,42 @@ class ProfileModule {
 
     /// \brief Sets the execution frequency of an given basic block.
     void     setBasicBlockFrequency(const llvm::BasicBlock*, uint64_t); 
+}
+
+class ProfileFunction {
+  private: 
+    llvm::Function *Func;
+
+    ProfileData Profile;
+    
+  public:
+    ProfileModule(llvm:Function*, ProfileData&);  
+   
+    llvm::Function* getLLVMFunction(); 
+
+    ProfileFunction* getCopy() const;
+}
+
+/// \brief This class is responsable for encapsulating, copying, and mantaing 
+/// consistency of a LLVM Module and its profiling information.
+class ProfileModule {
+  private:
+    /// \brief The LLVM Module.
+    llvm::Module *LLVMModule;
+
+    ProfileData Profile;
+  public:
+    /// \brief The constructor needs a LLVM Module and two lists of buffers of
+    /// GCOV files to create the profiling information. 
+    ProfileModule(llvm::Module*, ProfileData&);
+
+    /// \brief Returns its LLVM Module.
+    llvm::Module* getLLVMModule() const;
     
     /// \brief Returns a copy of the Profiling Module.
     ProfileModule* getCopy() const;
+  
+    ProfileFunction& getProfileFunction(const llvm:stringref) const;
+
+    ProfileFunction& getProfileFunction(const llvm::Function*) const;
 };

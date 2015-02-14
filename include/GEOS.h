@@ -77,12 +77,6 @@ enum OptimizationKind {
 /// ProfileModule, which contains the LLVM code and the profiling information, 
 /// and also analyse its execution time. 
 namespace GEOS {
-    /// \brief Instantiates the specificated AnlysisMethod.
-    ///
-    /// \param First is the AnalysisMethod kind and the second is the database 
-    /// file path.
-    AnalysisMethod* getAnalyser(AnalysisMethodKind, llvm::StringRef);
-
     /// \brief Returns the instanciation of the optimization choosed.
     llvm::Pass* getPass(OptimizationKind);
 
@@ -91,8 +85,8 @@ namespace GEOS {
     ///
     /// \param the first param is the function name that the passes should be 
     /// applied. 
-    ProfileModule* applyPassesOnFunction(llvm::StringRef,
-        const ProfileModule&, llvm::FunctionPassManager&);
+    ProfileModule* applyPassesOnFunction(const ProfileFunction&,
+        llvm::FunctionPassManager&);
 
     /// \brief Apply Passes (Transformations) into a ProfileModule. Also ensures
     /// that its profiling information ramains consistent. The ProfileModule 
@@ -106,12 +100,11 @@ namespace GEOS {
     ///
     /// \param The first param is the name of the function that the analysis 
     /// should be done. 
-    double analyseFunctionExecutionTime(llvm::StringRef, 
-        const ProfileModule&, AnalysisMethod*);
+    double analyseFunctionCost(const ProfileFunction&, CostEstimatorOptions&);
 
     /// \brief Estimate the execution time of a ProfileModule with the given 
     /// AnalysisMethod and returns it. 
-    double analyseExecutionTime(const ProfileModule&, AnalysisMethod*);
+    double analyseCost(const ProfileModule&, CostEstimatorOptions&);
 }
 
 #endif
