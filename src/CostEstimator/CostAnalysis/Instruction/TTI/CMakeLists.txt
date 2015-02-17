@@ -1,0 +1,1 @@
+add_library(TTIAnalysis OBJECT TTIInstructionAnalysis.cpp)

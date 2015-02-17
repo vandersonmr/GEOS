@@ -5,7 +5,7 @@ echo "Compiling polybench..."
 mkdir -p llvm
 clang -g -S -emit-llvm utilities/polybench.c -o polybench.ll -O0
 
-for o in 0 1 2 3 s z; do
+for o in 0 1 2 3; do
   for benchs in $(ls datamining); do
     echo -n "Compiling $benchs in O$o..."
     cd datamining/$benchs

@@ -18,48 +18,11 @@
 #include "llvm/Support/MemoryBuffer.h"
 #include "llvm/Transforms/Scalar.h"
 
+#include "CostEstimator/CostEstimator.h"
+
 #include <cstdlib>
 
 using namespace llvm;
-
-AnalysisMethod*
-GEOS::getAnalyser(AnalysisMethodKind Method, StringRef DatabaseFilename = "") {
-  AnalysisMethod *Analyser;
-
-  switch (Method) {
-    case hashWM:
-      if (!DatabaseFilename.empty())
-        Analyser = new HashWeightedMethod(DatabaseFilename);
-      else
-        errs() 
-          << "For hashM you must pass a database filename with -database\n";
-      break;
-    case instM:
-      Analyser = new InstructionMethod();
-      break;
-    case instCostM:
-      Analyser = new InstructionCostMethod();
-      break;
-    case randM:
-      Analyser = new RandomMethod();
-      break;
-    case freqM:
-      Analyser = new FrequencyMethod();
-      break;
-    case hashPlusInstM:
-      if (!DatabaseFilename.empty())
-        Analyser = new InstructionPlusHashMethod(DatabaseFilename);
-      else
-        errs() << "For hashPlusInstM you must pass a database filename with" <<
-          " -database\n";
-      break;
-    default:
-      Analyser = new InstructionMethod();
-      break;
-  }
-
-  return Analyser;
-}
 
 Pass* GEOS::getPass(OptimizationKind OptChoosed) {
   switch(OptChoosed) {
@@ -173,11 +136,8 @@ ProfileModule*
 GEOS::applyPassesOnFunction(StringRef FuncName, const ProfileModule& PModule, 
     FunctionPassManager& PM) {
 
-  assert(PModule.getLLVMModule()->getFunction(FuncName) != nullptr && 
-      "There is no function with this name in the Module.");
-
-  ProfileModule *ModuleCopy = PModule.getCopy();
-  Module        *MyModule   = ModuleCopy->getLLVMModule();
+  ProfileModule   *ModuleCopy = PModule.getCopy();
+  Module          *MyModule   = ModuleCopy->getLLVMModule();
 
   Function *Func = MyModule->getFunction(FuncName);
 
@@ -201,33 +161,31 @@ GEOS::applyPasses(const ProfileModule& PModule, FunctionPassManager& PM) {
   return ModuleCopy; 
 }
 
-double 
-GEOS::analyseFunctionExecutionTime(StringRef FuncName, 
-    const ProfileModule& PModule, AnalysisMethod *Analyser) {
+double GEOS::
+analyseFunctionCost(StringRef FuncName, const ProfileModule* PModule, 
+    CostEstimatorOptions Opts) {
 
-  assert(PModule.getLLVMModule()->getFunction(FuncName) != nullptr && 
+  assert(PModule->getLLVMModule()->getFunction(FuncName) != nullptr && 
       "There is no function with this name in the Module.");
 
-  Module *MyModule = PModule.getLLVMModule();
+  Module *MyModule = PModule->getLLVMModule();
 
   Function     *LLVMFunc = MyModule->getFunction(FuncName);
   assert(LLVMFunc != nullptr 
       && "Trying to access a LLVM Function that don't exist!");
 
-  double Estimation = Analyser->estimateExecutionTime(LLVMFunc, PModule);
+  double Estimation = CostEstimator::getFunctionCost(FuncName, PModule, Opts);
 
   return Estimation;
 }
 
-double 
-GEOS::analyseExecutionTime(const ProfileModule& PModule, 
-    AnalysisMethod *Analyser) {
+double GEOS::
+analyseCost(const ProfileModule* PModule, CostEstimatorOptions Opts) {
+  double Estimation = 0;
+  for (auto &Func : *PModule->getLLVMModule()) 
+    Estimation += 
+      CostEstimator::getFunctionCost(Func.getName(), PModule, Opts);
 
-  double PerformanceMensurment = 0;
-  for (auto &LLVMFunc : *PModule.getLLVMModule()) 
-    PerformanceMensurment +=
-      Analyser->estimateExecutionTime(&LLVMFunc, PModule);
-
-  return PerformanceMensurment;
+  return Estimation;
 }
 

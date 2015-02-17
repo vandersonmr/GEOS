@@ -1,6 +1,7 @@
-add_library(GEOS GEOS.cpp)
+add_subdirectory(CostEstimator)
+add_subdirectory(ProfileModule)
+add_subdirectory(Profiling)
 
-TARGET_LINK_LIBRARIES(
-  llvm-merge LLVMCore LLVMSupport rt dl tinfo atomic pthread z m) 
+add_library(GEOS GEOS.cpp)
 
 INSTALL(FILES saferun DESTINATION bin)

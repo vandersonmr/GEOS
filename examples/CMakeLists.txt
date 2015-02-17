@@ -1,28 +1,8 @@
-add_executable (geos-random Random.cpp)
-add_executable (geos-fixed Fixed.cpp)
-#add_executable (geos-randomOnFunction RandomOnFunction.cpp)
-add_executable (geos-test Test.cpp)
+add_executable (geos-analyser Analyser.cpp)
 
-TARGET_LINK_LIBRARIES(geos-random ProfileModule GEOS LLVMIRReader 
-  LLVMBitReader LLVMAsmParser LLVMAnalysis LLVMCore LLVMScalarOpts LLVMSupport 
-  LLVMTarget LLVMTransformUtils LLVMAnalysis LLVMInstCombine Analyser 
-  LLVMBitWriter DatabaseManager BBHash rt dl tinfo atomic pthread z m)
+TARGET_LINK_LIBRARIES(geos-analyser GEOS CostEstimator GCOV ProfileModule 
+  LLVMIRReader  CallCostReader LLVMBitReader LLVMAsmParser LLVMAnalysis LLVMCore
+  LLVMScalarOpts LLVMSupport LLVMTarget LLVMTransformUtils LLVMAnalysis 
+  LLVMInstCombine LLVMBitWriter rt dl tinfo  atomic pthread z m)
 
-TARGET_LINK_LIBRARIES(geos-fixed ProfileModule GEOS LLVMIRReader 
-  LLVMBitReader LLVMAsmParser LLVMAnalysis LLVMCore LLVMScalarOpts LLVMSupport 
-  LLVMTarget LLVMTransformUtils LLVMAnalysis LLVMInstCombine Analyser 
-  LLVMBitWriter DatabaseManager BBHash rt dl tinfo atomic pthread z m)
-
-#TARGET_LINK_LIBRARIES(geos-randomOnFunction ProfileModule GEOS LLVMIRReader 
-#  LLVMBitReader LLVMAsmParser LLVMAnalysis LLVMCore LLVMScalarOpts LLVMSupport 
-#  LLVMTarget LLVMTransformUtils LLVMAnalysis LLVMInstCombine Analyser 
-#  LLVMBitWriter DatabaseManager BBHash rt dl tinfo atomic pthread z m)
-
-TARGET_LINK_LIBRARIES(geos-test ProfileModule GEOS LLVMIRReader 
-  LLVMBitReader LLVMAsmParser LLVMAnalysis LLVMCore LLVMScalarOpts LLVMSupport 
-  LLVMTarget LLVMTransformUtils LLVMAnalysis LLVMInstCombine Analyser 
-  LLVMBitWriter DatabaseManager BBHash rt dl tinfo atomic pthread z m)
-
-#INSTALL(TARGETS geos-random geos-randomOnFunction geos-test 
-INSTALL(TARGETS geos-test geos-random geos-fixed
-  RUNTIME DESTINATION bin)
+INSTALL(TARGETS geos-analyser RUNTIME DESTINATION bin)

@@ -1,6 +1,6 @@
-cmake_minimum_required (VERSION 2.8.7)
+cmake_minimum_required (VERSION 2.8.8)
 
-project (GEOS VERSION 1.0.0)
+project (GEOS1.0)
 
 include_directories ("${PROJECT_SOURCE_DIR}/include")
 
@@ -9,7 +9,8 @@ execute_process (COMMAND llvm-config --cxxflags --ldflags
 
 string (REPLACE "\n" " " LLVM_CONFIG "${LLVM_CONFIG_N}")
 
-set (CMAKE_CXX_FLAGS "-fno-rtti -g -O0 ${LLVM_CONFIG} -O0")
+set (CMAKE_CXX_FLAGS "-fno-rtti -Wall -Wextra -g -O0 ${LLVM_CONFIG} -O0")
 
 add_subdirectory (src)
 add_subdirectory (test)
+add_subdirectory (examples)

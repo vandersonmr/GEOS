@@ -13,12 +13,10 @@
 ///
 //===----------------------------------------------------------------------===//
 
-#ifndef GEOS_H
-#define GEOS_H
-
-#include "AnalysisMethod.h"
-
 #include "llvm/PassManager.h"
+
+#include "ProfileModule/ProfileModule.h"
+#include "CostEstimator/CostEstimatorOptions.h"
 
 enum OptimizationKind {
   ConstantPropagation,
@@ -77,34 +75,35 @@ enum OptimizationKind {
 /// ProfileModule, which contains the LLVM code and the profiling information, 
 /// and also analyse its execution time. 
 namespace GEOS {
-    /// \brief Returns the instanciation of the optimization choosed.
-    llvm::Pass* getPass(OptimizationKind);
+    extern "C" {
+      /// \brief Returns the instanciation of the optimization choosed.
+      llvm::Pass* getPass(OptimizationKind);
 
-    /// \brief Like applyPasses this function apply a set of passes to the 
-    /// llvm module. However, it just apply those to an specific function. 
-    ///
-    /// \param the first param is the function name that the passes should be 
-    /// applied. 
-    ProfileModule* applyPassesOnFunction(const ProfileFunction&,
-        llvm::FunctionPassManager&);
+      /// \brief Like applyPasses this function apply a set of passes to the 
+      /// llvm module. However, it just apply those to an specific function. 
+      ///
+      /// \param the first param is the function name that the passes should be 
+      /// applied. 
+      ProfileModule* applyPassesOnFunction(llvm::StringRef,const ProfileModule&,
+          llvm::FunctionPassManager&);
 
-    /// \brief Apply Passes (Transformations) into a ProfileModule. Also ensures
-    /// that its profiling information ramains consistent. The ProfileModule 
-    /// given as parameter isn't modified, actualy all the modifications are
-    /// made in a copy. This copy is returned as parameter.
-    ProfileModule* applyPasses(const ProfileModule&, 
-        llvm::FunctionPassManager&);
+      /// \brief Apply Passes (Transformations) into a ProfileModule. Also ensures
+      /// that its profiling information ramains consistent. The ProfileModule 
+      /// given as parameter isn't modified, actualy all the modifications are
+      /// made in a copy. This copy is returned as parameter.
+      ProfileModule* applyPasses(const ProfileModule&, 
+          llvm::FunctionPassManager&);
 
-    /// \brief Estimate the execution time of a function from the ProfileModule
-    /// with the given AnalysisMethod and returns it.
-    ///
-    /// \param The first param is the name of the function that the analysis 
-    /// should be done. 
-    double analyseFunctionCost(const ProfileFunction&, CostEstimatorOptions&);
+      /// \brief Estimate the execution time of a function from the ProfileModule
+      /// with the given AnalysisMethod and returns it.
+      ///
+      /// \param The first param is the name of the function that the analysis 
+      /// should be done. 
+      double analyseFunctionCost(llvm::StringRef, const ProfileModule*, 
+          ::CostEstimatorOptions);
 
-    /// \brief Estimate the execution time of a ProfileModule with the given 
-    /// AnalysisMethod and returns it. 
-    double analyseCost(const ProfileModule&, CostEstimatorOptions&);
+      /// \brief Estimate the execution time of a ProfileModule with the given 
+      /// AnalysisMethod and returns it. 
+      double analyseCost(const ProfileModule*, ::CostEstimatorOptions);
+    }
 }
-
-#endif
