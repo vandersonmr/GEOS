@@ -24,6 +24,8 @@ class CostAnalysis {
 
 class CacheAnalysis : public CostAnalysis {
   public:
+    CacheAnalysis();
+
     double 
       estimateCost(llvm::StringRef, const ProfileModule*, 
           CostEstimatorOptions) const;

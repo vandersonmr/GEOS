@@ -20,7 +20,7 @@
 #include "../../../../include/Profiling/papi.h"
 #include <cmath>
 
-#define TIME 200
+#define TIME 100
 
 int     ID;
 int    *Freq;
@@ -68,7 +68,8 @@ void start_measures(int Id) {
 }
 
 void get_results() {
-  Value[ID] += get_time_stamp();
+  if (Freq[ID] < TIME)
+    Value[ID] += get_time_stamp();
 }
 
 void print_results() {
