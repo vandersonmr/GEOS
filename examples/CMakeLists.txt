@@ -1,6 +1,6 @@
 add_executable (geos-analyser Analyser.cpp)
 
-TARGET_LINK_LIBRARIES(geos-analyser GEOS CostEstimator GCOV ProfileModule 
+TARGET_LINK_LIBRARIES(geos-analyser GEOS CostEstimator GCOV STATIC ProfileModule 
   LLVMIRReader  CallCostReader LLVMBitReader LLVMAsmParser LLVMAnalysis LLVMCore
   LLVMScalarOpts LLVMSupport LLVMTarget LLVMTransformUtils LLVMAnalysis 
   LLVMX86Disassembler LLVMX86AsmParser LLVMX86CodeGen LLVMSelectionDAG 

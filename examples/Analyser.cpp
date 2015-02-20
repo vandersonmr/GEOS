@@ -25,6 +25,7 @@
 
 #include "CostEstimator/CostEstimatorOptions.h" 
 #include "Profiling/GCOVReader.h" 
+#include "Profiling/StaticProfiling.h" 
 #include "Profiling/CallCostReader.h" 
 
 #include <stack>
