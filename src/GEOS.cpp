@@ -17,12 +17,38 @@
 
 #include "llvm/Support/MemoryBuffer.h"
 #include "llvm/Transforms/Scalar.h"
+#include "llvm/Support/TargetSelect.h"
 
 #include "CostEstimator/CostEstimator.h"
 
 #include <cstdlib>
 
 using namespace llvm;
+
+void GEOS::init() {
+  InitializeNativeTarget();
+
+  PassRegistry *Registry = PassRegistry::getPassRegistry();
+  initializeCore(*Registry);
+  initializeCodeGen(*Registry);
+  initializeLoopStrengthReducePass(*Registry);
+  initializeLowerIntrinsicsPass(*Registry);
+  initializeUnreachableBlockElimPass(*Registry);
+  initializeScalarOpts(*Registry);                                                                         
+  initializeObjCARCOpts(*Registry);                                                                        
+  initializeVectorization(*Registry);                                                                      
+  initializeIPO(*Registry);                                                                                
+  initializeAnalysis(*Registry);                                                                           
+  initializeIPA(*Registry);                                                                                
+  initializeTransformUtils(*Registry);                                                                     
+  initializeInstCombine(*Registry);                                                                        
+  initializeInstrumentation(*Registry);                                                                    
+  initializeTarget(*Registry);      
+
+  initializeCodeGenPreparePass(*Registry);                                                                 
+  initializeAtomicExpandPass(*Registry);                                                                   
+  initializeRewriteSymbolsPass(*Registry);                                                                 
+}
 
 Pass* GEOS::getPass(OptimizationKind OptChoosed) {
   switch(OptChoosed) {
@@ -37,7 +63,7 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
     //  return createLoadCombinePass(); // PreserveCFG
 
     // ---------------- Change the CFG
-    /*case SROA:
+    case SROA:
       return createSROAPass();
     case LoopStrengthReduce:
       return createLoopStrengthReducePass();
@@ -74,13 +100,11 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
     case SeparateConstOffsetFromGEP:  // Maybe can change CFG
       return createSeparateConstOffsetFromGEPPass();
     case LICM:
-      return createLICMPass();*/
+      return createLICMPass();
 
     // ---------------- Does not change the CFG
     case SCCP:
       return createSCCPPass();
-    case SROA:
-      return createSROAPass();
     case ConstantPropagation:
       return createConstantPropagationPass();
     case AlignmentFromAssumptions:
@@ -103,7 +127,7 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createDemoteRegisterToMemoryPass();
     case Reassociate: 
       return createReassociatePass(); // PreservesCFG
-/*    case LCSSA:
+    case LCSSA:
       return createLCSSAPass(); // PreservesCFG*/
     case EarlyCSE:
       return createEarlyCSEPass();

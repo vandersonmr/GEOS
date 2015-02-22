@@ -43,13 +43,13 @@ llAlias("ll", cl::desc("Alias for -llvm-file"), cl::aliasopt(LLVMFilename));
 
 static cl::list<std::string> 
 GCNOFilename("gcno", cl::desc("One or more GCOV GCNO files"), 
-    cl::value_desc("filename.gcno"), cl::OneOrMore);
+    cl::value_desc("filename.gcno"), cl::ZeroOrMore);
 static cl::alias 
 goAlias("go", cl::desc("Alias for -gcno"), cl::aliasopt(GCNOFilename));
 
 static cl::list<std::string> 
 GCDAFilename("gcda", cl::desc("One or more GCOV GCDA files"), 
-    cl::value_desc("filename.gcda"), cl::OneOrMore);
+    cl::value_desc("filename.gcda"), cl::ZeroOrMore);
 static cl::alias 
 gaAlias("ga", cl::desc("Alias for -gcda"), cl::aliasopt(GCDAFilename));
 
@@ -100,6 +100,8 @@ AnalysisSet(cl::desc("Choose an analysis set:"),
 
 
 int main(int argc, char** argv) {
+  GEOS::init();
+
   LLVMContext &Context = getGlobalContext();
   SMDiagnostic Error;
 
@@ -108,21 +110,26 @@ int main(int argc, char** argv) {
   Module *MyModule = 
     parseIRFile(LLVMFilename.c_str(), Error, Context).release();
 
-  std::vector<MemoryBuffer*> GCNOList;
-  std::vector<MemoryBuffer*> GCDAList;
-
-  cl::list<std::string>::iterator iGCDA = GCDAFilename.begin();
-  cl::list<std::string>::iterator iGCNO = GCNOFilename.begin();
-  while (iGCDA != GCDAFilename.end() && iGCNO != GCNOFilename.end()) {
-    GCNOList.push_back(MemoryBuffer::getFile(*iGCNO).get().release());
-    GCDAList.push_back(MemoryBuffer::getFile(*iGCDA).get().release()); 
-    ++iGCDA;
-    ++iGCNO;
-  }
-
   ProfileModule *PModule = new ProfileModule(MyModule);
 
-  loadGCOV(GCDAList, GCNOList, PModule);
+  if (GCDAFilename.empty() || GCNOFilename.empty()) {
+    loadStaticProfiling(PModule);
+  } else {
+    std::vector<MemoryBuffer*> GCNOList;
+    std::vector<MemoryBuffer*> GCDAList;
+
+    cl::list<std::string>::iterator iGCDA = GCDAFilename.begin();
+    cl::list<std::string>::iterator iGCNO = GCNOFilename.begin();
+    while (iGCDA != GCDAFilename.end() && iGCNO != GCNOFilename.end()) {
+      GCNOList.push_back(MemoryBuffer::getFile(*iGCNO).get().release());
+      GCDAList.push_back(MemoryBuffer::getFile(*iGCDA).get().release()); 
+      ++iGCDA;
+      ++iGCNO;
+    }
+
+    loadGCOV(GCDAList, GCNOList, PModule);
+  }
+
   if (!CallCost.empty())
     loadCallCost(CallCost, PModule);
 
@@ -146,7 +153,7 @@ int main(int argc, char** argv) {
       }
       Opts.AnalysisActivated.push_back(Analyse);
     }
-  } else {
+  } else if (AnalysisSet == CostEstimatorOptionsSet::ArchSensitive) {
     if (CallCost.empty()) {
       fprintf(stderr, "CallCost analysis needs a CallCost profiling file (-c).");
       return 1;   

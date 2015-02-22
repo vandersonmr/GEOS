@@ -76,6 +76,8 @@ enum OptimizationKind {
 /// and also analyse its execution time. 
 namespace GEOS {
     extern "C" {
+      void init();
+
       /// \brief Returns the instanciation of the optimization choosed.
       llvm::Pass* getPass(OptimizationKind);
 

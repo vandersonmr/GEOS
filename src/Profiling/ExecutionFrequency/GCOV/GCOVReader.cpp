@@ -83,6 +83,7 @@ void loadGCOV(std::vector<MemoryBuffer*> GCDAs,
           && "Trying to access a LLVM Function that don't exist!");
 
       auto MBB = FreqFunc->block_begin(); 
+      printf("%s %d\n", LLVMFunc->getName().str().c_str(), (*MBB).get()->getCount());
       ++MBB;
       ++MBB;
       for(auto &BB : *LLVMFunc) {
@@ -95,5 +96,4 @@ void loadGCOV(std::vector<MemoryBuffer*> GCDAs,
     ++iGCNO;
   }
 
-  Profile->repairProfiling();
 }

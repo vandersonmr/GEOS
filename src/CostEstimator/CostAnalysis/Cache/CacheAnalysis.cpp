@@ -19,7 +19,6 @@
 #include "CostEstimator/InstructionCostEstimator.h"
 
 #include "llvm/Pass.h"
-#include "llvm/Support/TargetSelect.h"
 #include "llvm/ADT/Triple.h"
 #include "llvm/Support/Host.h"
 #include "llvm/Support/TargetRegistry.h"
@@ -41,24 +40,28 @@ using namespace llvm;
 struct MachineAST : public MachineFunctionPass {
   static char ID;
   const ProfileModule *Profile;
-  StringRef FuncName;
-  MachineAST(StringRef FName, const ProfileModule *P) : MachineFunctionPass(ID),
-  Profile(P), FuncName(FName) {};
+  MachineAST(const ProfileModule *P) : MachineFunctionPass(ID),
+  Profile(P) {};
 
-  double Cost = 0;
+  double getFunctionCost(Function &F) {
+    return MFCost[F.getName().str()];
+  } 
+
   virtual bool runOnMachineFunction(MachineFunction &MF) {
-    if (MF.getName() == FuncName) {
-      for (auto &MB : MF) {
-        int MBCost = 0;
-        for (auto &MI : MB) {
-          if (MI.mayLoad() || MI.mayStore()) 
-            MBCost += 1;
-        }
-        Cost += Profile->getBasicBlockFrequency(*(MB.getBasicBlock())) * MBCost;
+    for (auto &MB : MF) {
+      int MBCost = 0;
+      for (auto &MI : MB) {
+        if (MI.mayLoad() || MI.mayStore())
+          MBCost += 1;
       }
+      MFCost[MF.getName().str()] += 
+        Profile->getBasicBlockFrequency(*(MB.getBasicBlock())) * MBCost;
     }
     return true;
   }
+
+  private:
+    std::unordered_map<std::string, double> MFCost;
 };
 
 char MachineAST::ID = 0;
@@ -118,25 +121,17 @@ void compileModule(Module *M, MachineAST* MAST, PassManager &PM) {
   }
 }
 
-CacheAnalysis::CacheAnalysis() {
-  InitializeNativeTarget();
-
-  PassRegistry *Registry = PassRegistry::getPassRegistry();
-  initializeCore(*Registry);
-  initializeCodeGen(*Registry);
-  initializeLoopStrengthReducePass(*Registry);
-  initializeLowerIntrinsicsPass(*Registry);
-  initializeUnreachableBlockElimPass(*Registry);
-}
-
+MachineAST *MAST = nullptr;
+PassManager PM;
 double CacheAnalysis::estimateCost(StringRef FuncName, 
     const ProfileModule *Profile, CostEstimatorOptions Opts) const {
 
   Module *M = Profile->getLLVMModule();
 
-  MachineAST *MAST = new MachineAST(FuncName, Profile);  
-  PassManager PM;
-  compileModule(M, MAST, PM);
+  if (MAST == nullptr) {
+    MAST = new MachineAST(Profile);  
+    compileModule(M, MAST, PM);
+  }
 
-  return MAST->Cost;
+  return MAST->getFunctionCost(*(M->getFunction(FuncName)));
 }

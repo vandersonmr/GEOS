@@ -9,7 +9,7 @@ execute_process (COMMAND llvm-config --cxxflags --ldflags
 
 string (REPLACE "\n" " " LLVM_CONFIG "${LLVM_CONFIG_N}")
 
-set (CMAKE_CXX_FLAGS "-fno-rtti -Wall -Wextra -g -O0 ${LLVM_CONFIG} -O0")
+set (CMAKE_CXX_FLAGS "-fno-rtti -Wall -Wextra -g -O3 ${LLVM_CONFIG} -O3 -flto")
 
 add_subdirectory (src)
 add_subdirectory (test)

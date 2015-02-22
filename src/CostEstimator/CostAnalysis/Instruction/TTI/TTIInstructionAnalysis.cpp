@@ -24,11 +24,8 @@ using namespace llvm;
 
 CostModelAnalysis *InstructionCostModel; 
 TTIInstructionAnalysis::TTIInstructionAnalysis() {
-  PassRegistry &Registry = *PassRegistry::getPassRegistry();
-  llvm::initializeAnalysis(Registry);
-
-  InstructionCostModel =
-    static_cast<CostModelAnalysis*>(createCostModelAnalysisPass());
+    InstructionCostModel =
+      static_cast<CostModelAnalysis*>(createCostModelAnalysisPass());
 }
 
 double TTIInstructionAnalysis::estimateCost(StringRef FuncName, 
