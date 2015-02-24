@@ -41,5 +41,5 @@ double CallAnalysis::estimateCost(StringRef FuncName,
     Cost += Profile->getBasicBlockFrequency(BB) * BBCost;
   }
 
-  return Cost;   
+  return Cost * 0.5;   
 }

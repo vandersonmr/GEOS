@@ -103,7 +103,7 @@ namespace {
         IRBuilder<> Builder(I.getContext());
 
         // Call starT_measures
-        auto ConstantId   = ConstantInt::get(Builder.getInt32Ty(), ID);
+        auto ConstantId = ConstantInt::get(Builder.getInt32Ty(), ID);
         CallInst *StartMeasuresCall = Builder.CreateCall(
             M.getFunction("start_measures"), ConstantId);
 

@@ -43,5 +43,5 @@ double BranchAnalysis::estimateCost(StringRef FuncName,
     }  
   }
   
-  return Cost;   
+  return Cost * 3;   
 }

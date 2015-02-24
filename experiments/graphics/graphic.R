@@ -23,8 +23,8 @@ sp1 = spa1[spa2 < 10]
 sp2 = spa2[spa2 < 10]
 sp3 = spa3[spa2 < 10]
 
-estimatedCost = stampCall[,2]*1 + stampCache[,2]*1 + stampBranch[,2]*3.5 + 0.00001;
-#   stampTTI[,2]*0.01;
+estimatedCost = stampCall[,2]*0.5 + stampCache[,2]*4 + stampBranch[,2]*3 + 0.00001 +
+   stampTTI[,2]*2;
 
 estimatedsp1 = estimatedCost[x0]/estimatedCost[x1]
 estimatedsp2 = estimatedCost[x0]/estimatedCost[x2]
@@ -76,33 +76,36 @@ length(which((estimatedsp1 < 1) == (sp1 < 1)))/length(sp1)
 length(which((estimatedsp2 < 1) == (sp2 < 1)))/length(sp2)
 length(which((estimatedsp3 < 1) == (sp3 < 1)))/length(sp3)
 
+print("Choice")
+t = 0
+t2 = 0
+s = 0
+for(i in 1:length(stamp[,2])) {
+  for(j in 1:length(stamp[,2])) {
+    if (stamp[, 2][i] > stamp[, 2][j]) {
+      s = s + 1
+      if (estimatedCost[i] >= estimatedCost[j]) {
+        t = t + 1
+      }
+    }
+  }
+}
+t/(s)
 
 print("Speed encontrado")
 spmean = 0;
 for (i in 1:length(sp1)) {
   if (estimatedsp1[i] > estimatedsp2[i]) {
     if (estimatedsp1[i] > estimatedsp3[i]) {
-      if (estimatedsp1[i] > 1)
-        spmean = spmean + sp1[i]
-      else 
-        spmean = spmean + 1
+      spmean = spmean + sp1[i]
     } else {
-      if (estimatedsp3[i] > 1)
-        spmean = spmean + sp3[i]
-      else 
-        spmean = spmean + 1
+      spmean = spmean + sp3[i]
     }
   } else {
     if (estimatedsp2[i] > estimatedsp3[i]) {
-      if (estimatedsp2[i] > 1)
         spmean = spmean + sp2[i]
-      else 
-        spmean = spmean + 1
     } else {
-      if (estimatedsp3[i] > 1)
         spmean = spmean + sp3[i]
-      else 
-        spmean = spmean + 1
     }
   }
 }

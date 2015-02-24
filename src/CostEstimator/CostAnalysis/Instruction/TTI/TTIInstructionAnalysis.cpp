@@ -56,5 +56,5 @@ double TTIInstructionAnalysis::estimateCost(StringRef FuncName,
     Cost += Profile->getBasicBlockFrequency(BB) * BBCost;
   }
   
-  return Cost;   
+  return Cost * 2;   
 }

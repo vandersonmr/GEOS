@@ -133,5 +133,5 @@ double CacheAnalysis::estimateCost(StringRef FuncName,
     compileModule(M, MAST, PM);
   }
 
-  return MAST->getFunctionCost(*(M->getFunction(FuncName)));
+  return MAST->getFunctionCost(*(M->getFunction(FuncName))) * 4;
 }
