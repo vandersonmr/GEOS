@@ -23,7 +23,10 @@ class CostAnalysis {
 };
 
 class CacheAnalysis : public CostAnalysis {
+  private: 
+    const ProfileModule *PModule;
   public:
+    CacheAnalysis(const ProfileModule*);
     double 
       estimateCost(llvm::StringRef, const ProfileModule*, 
           CostEstimatorOptions) const;
@@ -62,10 +65,10 @@ class CallAnalysis : public CostAnalysis {
 
 namespace {
   std::unique_ptr<CostAnalysis> 
-    createCostAnalysis(CostAnalysisKind Kind) {
+    createCostAnalysis(CostAnalysisKind Kind, const ProfileModule *PModule) {
       switch (Kind) {
         case Cache:
-          return std::unique_ptr<CostAnalysis>(new CacheAnalysis());
+          return std::unique_ptr<CostAnalysis>(new CacheAnalysis(PModule));
         default:
         case StaticInstruction:
           return std::unique_ptr<CostAnalysis>(new StaticInstructionAnalysis());

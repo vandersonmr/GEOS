@@ -96,6 +96,13 @@ namespace GEOS {
       ProfileModule* applyPasses(const ProfileModule&, 
           llvm::FunctionPassManager&);
 
+      /// \brief Apply Passes (Transformations) into a ProfileModule. Also ensures
+      /// that its profiling information ramains consistent. The ProfileModule 
+      /// given as parameter isn't modified, actualy all the modifications are
+      /// made in a copy. This copy is returned as parameter.
+      ProfileModule* applyPassesModule(const ProfileModule&, 
+          llvm::FunctionPassManager&, llvm::PassManager&);
+
       /// \brief Estimate the execution time of a function from the ProfileModule
       /// with the given AnalysisMethod and returns it.
       ///

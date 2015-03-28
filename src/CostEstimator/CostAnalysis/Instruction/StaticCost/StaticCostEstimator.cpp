@@ -32,7 +32,7 @@ double StaticInstructionAnalysis::estimateCost(StringRef FuncName,
     double BBCost = 0; 
 
     for (auto &I : BB)
-      BBCost += InstructionCostEstimator::getInstructionCost(I); 
+      BBCost += 1;//InstructionCostEstimator::getInstructionCost(I); 
 
     Cost += Profile->getBasicBlockFrequency(BB) * BBCost;
   }

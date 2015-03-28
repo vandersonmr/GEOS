@@ -24,10 +24,14 @@ using namespace llvm;
 
 CostModelAnalysis *InstructionCostModel; 
 TTIInstructionAnalysis::TTIInstructionAnalysis() {
-    InstructionCostModel =
-      static_cast<CostModelAnalysis*>(createCostModelAnalysisPass());
+  PassRegistry &Registry = *PassRegistry::getPassRegistry();
+  initializeAnalysis(Registry);
+
+  InstructionCostModel =
+    static_cast<CostModelAnalysis*>(createCostModelAnalysisPass());
 }
 
+FunctionPassManager *FPM;
 double TTIInstructionAnalysis::estimateCost(StringRef FuncName, 
     const ProfileModule* Profile, CostEstimatorOptions Opts) const {
 
@@ -36,17 +40,20 @@ double TTIInstructionAnalysis::estimateCost(StringRef FuncName,
   auto M = Profile->getLLVMModule();
   auto Func = M->getFunction(FuncName);
 
-  FunctionPassManager FPM(M); 
+  if (FPM == nullptr) { 
+    FPM = new FunctionPassManager(M);
+    FPM->add(InstructionCostModel);
+    FPM->doInitialization(); 
+  }
 
-  FPM.add(InstructionCostModel);
-  FPM.doInitialization(); 
-  FPM.run(*Func);
+  FPM->run(*Func);
 
   for (auto &BB : *Func) {
     double BBCost = 0; 
 
     for (auto &I : BB) {
       unsigned InstCost = InstructionCostModel->getInstructionCost(&I);
+
       if (InstCost != (unsigned) - 1)                                                                     
         BBCost += InstCost;                                                                               
       else                                                                                                
@@ -56,5 +63,5 @@ double TTIInstructionAnalysis::estimateCost(StringRef FuncName,
     Cost += Profile->getBasicBlockFrequency(BB) * BBCost;
   }
   
-  return Cost * 2;   
+  return Cost * 0.9 * 0.25;   
 }

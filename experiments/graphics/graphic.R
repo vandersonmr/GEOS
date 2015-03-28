@@ -4,7 +4,7 @@ require(ggplot2)
 
 stamp       = read.table("../stamp")
 stampBranch = read.table("../stampBranch")
-stampCache  = read.table("../stampCache")
+stampCache  = read.table("../stampCache12")
 stampCall   = read.table("../stampCall")
 stampStatic = read.table("../stampStaticInstruction")
 stampTTI    = read.table("../stampTTIInstruction")
@@ -23,7 +23,7 @@ sp1 = spa1[spa2 < 10]
 sp2 = spa2[spa2 < 10]
 sp3 = spa3[spa2 < 10]
 
-estimatedCost = stampCall[,2]*0.5 + stampCache[,2]*4 + stampBranch[,2]*3 + 0.00001 +
+estimatedCost = stampCall[,2]*0.05 + stampCache[,2]*5 + stampBranch[,2]*3 + 0.00001 +
    stampTTI[,2]*2;
 
 estimatedsp1 = estimatedCost[x0]/estimatedCost[x1]

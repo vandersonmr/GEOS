@@ -19,13 +19,31 @@
 using namespace llvm;
 
 double 
+CostEstimator::getModuleCost(const ProfileModule *Profile,
+    CostEstimatorOptions Opts) {
+  
+  double CostEstimated = 0;
+
+  for (auto AnalysisKind : Opts.AnalysisActivated) {
+    std::unique_ptr<CostAnalysis> Analyse = 
+      createCostAnalysis(AnalysisKind, Profile);
+    
+    for (auto &Func : *Profile->getLLVMModule())
+      CostEstimated += Analyse->estimateCost(Func.getName(), Profile, Opts);
+  }
+
+  return CostEstimated / (Opts.CPUClockInGHz * std::pow(10, 9));
+}
+
+double 
 CostEstimator::getFunctionCost(StringRef FuncName, const ProfileModule *Profile,
     CostEstimatorOptions Opts) {
   
   double CostEstimated = 0;
 
   for (auto AnalysisKind : Opts.AnalysisActivated) {
-    std::unique_ptr<CostAnalysis> Analyse = createCostAnalysis(AnalysisKind);
+    std::unique_ptr<CostAnalysis> Analyse = 
+      createCostAnalysis(AnalysisKind, Profile);
 
     CostEstimated += Analyse->estimateCost(FuncName, Profile, Opts);
   }

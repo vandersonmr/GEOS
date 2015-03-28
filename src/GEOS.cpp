@@ -177,13 +177,32 @@ GEOS::applyPasses(const ProfileModule& PModule, FunctionPassManager& PM) {
   ProfileModule *ModuleCopy = PModule.getCopy();
   Module        *MyModule   = ModuleCopy->getLLVMModule();
 
-  for (auto& Func : *MyModule)
+  for (auto& Func : *MyModule) 
     PM.run(Func);
 
   ModuleCopy->repairProfiling();
 
   return ModuleCopy; 
 }
+
+ProfileModule* 
+GEOS::applyPassesModule(const ProfileModule& PModule, FunctionPassManager& FPM, 
+    PassManager& PM) {
+  ProfileModule *ModuleCopy = PModule.getCopy();
+  Module        *MyModule   = ModuleCopy->getLLVMModule();
+
+  for (auto &Func : *MyModule)
+    FPM.run(Func);
+
+  ModuleCopy->repairProfiling();
+
+  PM.run(*MyModule);
+
+  ModuleCopy->repairProfiling();
+
+  return ModuleCopy; 
+}
+
 
 double GEOS::
 analyseFunctionCost(StringRef FuncName, const ProfileModule* PModule, 
@@ -205,11 +224,6 @@ analyseFunctionCost(StringRef FuncName, const ProfileModule* PModule,
 
 double GEOS::
 analyseCost(const ProfileModule* PModule, CostEstimatorOptions Opts) {
-  double Estimation = 0;
-  for (auto &Func : *PModule->getLLVMModule()) 
-    Estimation += 
-      CostEstimator::getFunctionCost(Func.getName(), PModule, Opts);
-
-  return Estimation;
+  return CostEstimator::getModuleCost(PModule, Opts);
 }
 

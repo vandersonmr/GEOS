@@ -1,1 +1,1 @@
-add_library(CacheAnalysis OBJECT CacheAnalysis.cpp)
+add_library(CacheAnalysis OBJECT CacheAnalysis.cpp MachineFunctionAnalysis.cpp)

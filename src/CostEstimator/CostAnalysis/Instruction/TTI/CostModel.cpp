@@ -33,7 +33,7 @@ using namespace llvm;
 #define CM_NAME "cost-model"
 #define DEBUG_TYPE CM_NAME
 
-static cl::opt<bool> EnableReduxCost("costmodel-reduxcost", cl::init(false),
+static cl::opt<bool> EnableReduxCost("costmodel-reduxcost", cl::init(true),
                                      cl::Hidden,
                                      cl::desc("Recognize reduction patterns."));
 
@@ -77,6 +77,7 @@ FunctionPass *llvm::createCostModelAnalysisPass() {
 
 void
 CostModelAnalysis::getAnalysisUsage(AnalysisUsage &AU) const {
+  AU.addRequired<TargetTransformInfo>();
   AU.setPreservesAll();
 }
 

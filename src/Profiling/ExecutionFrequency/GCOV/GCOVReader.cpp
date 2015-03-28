@@ -15,6 +15,7 @@
 
 #include "llvm/IR/Function.h"
 #include "llvm/IR/Module.h"
+#include "llvm/IR/InstrTypes.h"
 
 #include "Profiling/GCOVReader.h"
 
@@ -63,6 +64,11 @@ std::vector<GCOVFunction*> readFunctions(GCOVFile& GF, GCOVBuffer &GCNOBuffer,
 void loadGCOV(std::vector<MemoryBuffer*> GCDAs, 
     std::vector<MemoryBuffer*> GCNOs, ProfileModule *Profile) {
 
+  auto I = 0;
+  for (auto &Func : *Profile->getLLVMModule()) 
+    for (auto &BB : Func)
+      BB.setName(std::to_string(I++));
+
   std::vector<MemoryBuffer*>::iterator iGCDA = GCDAs.begin();
   std::vector<MemoryBuffer*>::iterator iGCNO = GCNOs.begin();
 
@@ -83,11 +89,20 @@ void loadGCOV(std::vector<MemoryBuffer*> GCDAs,
           && "Trying to access a LLVM Function that don't exist!");
 
       auto MBB = FreqFunc->block_begin(); 
-      printf("%s %d\n", LLVMFunc->getName().str().c_str(), (*MBB).get()->getCount());
       ++MBB;
       ++MBB;
       for(auto &BB : *LLVMFunc) {
-        Profile->setBasicBlockFrequency(BB, (*MBB).get()->getCount());
+        Profile->setBasicBlockFrequency(BB, (*MBB).get()->getCount());  
+        (*MBB)->sortDstEdges();
+        std::vector<uint32_t> Freqs;
+        for (auto BranchFreq = (*MBB)->dst_begin(); 
+            BranchFreq != (*MBB)->dst_end(); ++BranchFreq) { 
+          Freqs.push_back((*BranchFreq)->Count);
+        }
+
+        if (Freqs.size() >= 2)  
+          Profile->setBranchFrequency(BB, Freqs);
+
         ++MBB;
       }
     }

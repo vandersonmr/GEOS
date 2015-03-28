@@ -132,6 +132,11 @@ void spreadOverCallGraph(ProfileModule *Profile) {
 
 char StaticProfiling::ID = 0;
 void loadStaticProfiling(ProfileModule *Profile) {
+  int I = 0;
+  for (auto &Func : *Profile->getLLVMModule()) 
+    for (auto &BB : Func) 
+      BB.setName(std::to_string(I++));
+
   PassManager PM;
   StaticProfiling *Static = new StaticProfiling(Profile);
   PM.add(Static);

@@ -21,6 +21,12 @@
 #include "llvm/IR/CFG.h"
 #include "llvm/Bitcode/ReaderWriter.h"
 #include "llvm/Support/FileSystem.h"
+#include "llvm/IR/MDBuilder.h"
+#include <llvm/IR/LLVMContext.h>
+#include "llvm/PassManager.h"
+#include "llvm/Pass.h"
+#include "llvm/Analysis/Passes.h"
+#include "llvm/Analysis/BlockFrequencyInfo.h"
 
 #include <stack>
 
@@ -33,6 +39,7 @@ bool hasWeight(const Instruction &I) {
 double getWeight(const Instruction &I) {
   assert(hasWeight(I) && 
       "Trying to get the weight of a Instruction without a weight.");
+
   return std::stod(
       cast<MDString>(I.getMetadata("Weight")->getOperand(0))->getString());
 }
@@ -71,30 +78,59 @@ ProfileModule::ProfileModule(Module* M) {
       for (auto &I : BB)
         if (isa<CallInst>(I)) 
           if (cast<CallInst>(I).getCalledFunction() == nullptr ||
-            cast<CallInst>(I).getCalledFunction()->size() == 0)  
-              setID(I, nC++);
+              cast<CallInst>(I).getCalledFunction()->size() == 0)  
+            setID(I, nC++);
     }
   }
-
 }
 
 Module* ProfileModule::getLLVMModule() const {
   return LLVMModule;
 }
 
+std::unordered_map<std::string, uint64_t> BBFreq;
+
+bool ProfileModule::hasBranchFrequency(const BasicBlock &BB) const {
+  return BB.getTerminator()->getMetadata("prof") != nullptr;
+}
+
+void 
+ProfileModule::setBranchFrequency(BasicBlock &BB, std::vector<uint32_t> &Freq) {
+  MDBuilder MDB(BB.getTerminator()->getContext());
+  MDNode *Node = MDB.createBranchWeights(Freq);
+  BB.getTerminator()->setMetadata(LLVMContext::MD_prof, Node);
+}
+
+std::vector<uint32_t> 
+ProfileModule::getBranchFrequency(const BasicBlock &BB) const {
+  std::vector<uint32_t> Freqs;
+  auto Terminator = BB.getTerminator();
+  if (hasBranchFrequency(BB) && Terminator != nullptr) {
+    int NumOperands = 
+      Terminator->getMetadata("prof")->getNumOperands();
+    for (int i = 1; i < NumOperands; i++)  
+      Freqs.push_back(cast<ConstantInt>(cast<ConstantAsMetadata>(
+              Terminator->getMetadata("prof")->getOperand(i))->getValue())
+          ->getSExtValue());
+  }
+  return Freqs;
+}
+
 bool ProfileModule::hasBasicBlockFrequency(const BasicBlock &BB) const {
-  return hasWeight(*BB.getTerminator());
+  return BBFreq.count(BB.getName().str()) != 0;
 }
 
 uint64_t ProfileModule::getBasicBlockFrequency(const BasicBlock &BB) const {
-  if (hasBasicBlockFrequency(BB))
-    return getWeight(*BB.getTerminator());
-  else return 0;
+  if (hasBasicBlockFrequency(BB)) {
+    return BBFreq[BB.getName().str()];
+  } else { 
+    return 0; 
+  } 
 }
 
 void 
 ProfileModule::setBasicBlockFrequency(BasicBlock &BB, uint64_t Freq) {
-  setWeight(*BB.getTerminator(), Freq);
+  BBFreq[BB.getName().str()] = Freq;
 }
 
 bool ProfileModule::hasCallCost(const CallInst &I) const {
@@ -122,11 +158,8 @@ ProfileModule::getExecutionFreqUsingPredecessors(BasicBlock *BB) {
     if (BB != Predecessor) { 
       if (isa<BranchInst>(Terminator)) {
         if (cast<BranchInst>(Terminator)->isUnconditional()) {
-
           PredecessorsWeight += getBasicBlockFrequency(*Predecessor);
-
-        } else {
-
+        }/* else {
           uint64_t EdgeWeight = getBasicBlockFrequency(*Predecessor);
           for (unsigned J = 0; J < Terminator->getNumSuccessors(); ++J) {
             auto SuccPred = Terminator->getSuccessor(J);
@@ -141,14 +174,11 @@ ProfileModule::getExecutionFreqUsingPredecessors(BasicBlock *BB) {
               }
             }
           }
-
           PredecessorsWeight += EdgeWeight;
-        }
+        }*/
       }
     }
-
   }
-
   return PredecessorsWeight;
 }
 
@@ -161,11 +191,8 @@ ProfileModule::getExecutionFreqUsingSuccessors(BasicBlock *BB) {
 
     if (BB != Successor) { 
       if (Successor->getSinglePredecessor() == BB) {
-
         SuccessorsWeight += getBasicBlockFrequency(*Successor);
-
-      } else {
-
+      }/* else {
         uint64_t EdgeWeight = getBasicBlockFrequency(*Successor);
         for (auto IT = pred_begin(Successor); IT != pred_end(Successor); ++IT) {
           BasicBlock* PredSucc = *IT;
@@ -185,31 +212,56 @@ ProfileModule::getExecutionFreqUsingSuccessors(BasicBlock *BB) {
             }
           }
         }
-        SuccessorsWeight += EdgeWeight; 
-      }
-
+        SuccessorsWeight += EdgeWeight;
+      }*/
     }
   }
-
 
   return SuccessorsWeight;
 }
 
+struct StaticProfiling : public FunctionPass {
+  static char ID;
+  ProfileModule *Profile;
+
+  StaticProfiling(ProfileModule *P) : FunctionPass(ID), Profile(P) {};
+
+  void getAnalysisUsage(AnalysisUsage &AU) const override {
+    AU.addRequired<BlockFrequencyInfo>();
+    AU.setPreservesAll();
+  }
+
+  bool runOnFunction(Function &F) {
+    BlockFrequencyInfo &BFI = getAnalysis<BlockFrequencyInfo>();
+
+    for (auto &BB : F) 
+      Profile->setBasicBlockFrequency(BB, 
+          BFI.getBlockFreq(&BB).getFrequency() / BFI.getEntryFreq());
+    return true;
+  }
+};
 
 void ProfileModule::repairFunctionProfiling(Function *Func) {
+  std::unordered_map<BasicBlock*, bool> HasFreq;
+  for (auto &BB : *Func)
+    if (hasBasicBlockFrequency(BB))
+      HasFreq[&BB] = true;
+
   bool changed = true;
   while(changed) {
     changed = false;
     for (auto &BB : *Func) {
-      uint64_t PredecessorsWeight = getExecutionFreqUsingPredecessors(&BB);
-      uint64_t SuccessorsWeight   = getExecutionFreqUsingSuccessors(&BB);
+      if (HasFreq.count(&BB) == 0) {
+        uint64_t PredecessorsWeight = getExecutionFreqUsingPredecessors(&BB);
+        uint64_t SuccessorsWeight   = getExecutionFreqUsingSuccessors(&BB);
 
-      uint64_t ExecutionFreq = std::max(PredecessorsWeight, SuccessorsWeight);
+        uint64_t ExecutionFreq = std::max(PredecessorsWeight, SuccessorsWeight);
 
-      if (ExecutionFreq > getBasicBlockFrequency(BB) &&
-          ExecutionFreq != 0) { 
-        setBasicBlockFrequency(BB, ExecutionFreq);
-        changed = true;
+        if (ExecutionFreq > getBasicBlockFrequency(BB) &&
+            ExecutionFreq != 0) { 
+          setBasicBlockFrequency(BB, ExecutionFreq);
+          changed = true;
+        }
       }
     }
   }
@@ -217,6 +269,20 @@ void ProfileModule::repairFunctionProfiling(Function *Func) {
 
 void ProfileModule::repairProfiling() {
   for (auto &Func : *LLVMModule) {
+    for (auto &BB : Func) {
+      if (hasBranchFrequency(BB)) {
+        auto Frequency = 0;
+        auto NumSucc = 0;
+        for (auto &BFreq : getBranchFrequency(BB)) {
+          Frequency += BFreq;
+          auto Succ = BB.getTerminator()->getSuccessor(NumSucc);
+          if (!hasBasicBlockFrequency(*Succ))
+            setBasicBlockFrequency(*Succ, BFreq);
+          ++NumSucc;
+        }
+        setBasicBlockFrequency(BB, Frequency);
+      }
+    }
     repairFunctionProfiling(&Func);
   }
 }
@@ -229,7 +295,7 @@ ProfileModule* ProfileModule::getCopy() const {
 void ProfileModule::print(const std::string Path) const {
   std::error_code Err;
   raw_fd_ostream *Out =          
-    new raw_fd_ostream(Path, Err, llvm::sys::fs::OpenFlags::F_Excl);
+    new raw_fd_ostream(Path, Err, llvm::sys::fs::OpenFlags::F_RW);
   WriteBitcodeToFile(getLLVMModule(), *Out);                         
   Out->flush();
   delete Out;

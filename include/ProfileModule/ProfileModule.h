@@ -55,6 +55,10 @@ class ProfileModule {
     /// \brief sets the execution frequency of an given basic block.
     void setBasicBlockFrequency(llvm::BasicBlock&, uint64_t); 
 
+    bool hasBranchFrequency(const llvm::BasicBlock&) const;
+    std::vector<uint32_t> getBranchFrequency(const llvm::BasicBlock&) const; 
+    void setBranchFrequency(llvm::BasicBlock&, std::vector<uint32_t>&); 
+
     bool hasID(const llvm::Instruction &I) const;
     int  getID(const llvm::Instruction &I);
 

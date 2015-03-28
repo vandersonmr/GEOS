@@ -16,6 +16,8 @@
 
 namespace CostEstimator {
   extern "C" {
+   double getModuleCost(const ProfileModule*, CostEstimatorOptions);
+
     double getFunctionCost(llvm::StringRef, 
         const ProfileModule*, CostEstimatorOptions);
   }
