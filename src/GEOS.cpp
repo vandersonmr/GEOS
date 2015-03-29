@@ -17,48 +17,37 @@
 
 #include "llvm/Support/MemoryBuffer.h"
 #include "llvm/Transforms/Scalar.h"
+#include "llvm/Support/TargetSelect.h"
+
+#include "CostEstimator/CostEstimator.h"
 
 #include <cstdlib>
 
 using namespace llvm;
 
-AnalysisMethod*
-GEOS::getAnalyser(AnalysisMethodKind Method, StringRef DatabaseFilename = "") {
-  AnalysisMethod *Analyser;
+void GEOS::init() {
+  InitializeNativeTarget();
 
-  switch (Method) {
-    case hashWM:
-      if (!DatabaseFilename.empty())
-        Analyser = new HashWeightedMethod(DatabaseFilename);
-      else
-        errs() 
-          << "For hashM you must pass a database filename with -database\n";
-      break;
-    case instM:
-      Analyser = new InstructionMethod();
-      break;
-    case instCostM:
-      Analyser = new InstructionCostMethod();
-      break;
-    case randM:
-      Analyser = new RandomMethod();
-      break;
-    case freqM:
-      Analyser = new FrequencyMethod();
-      break;
-    case hashPlusInstM:
-      if (!DatabaseFilename.empty())
-        Analyser = new InstructionPlusHashMethod(DatabaseFilename);
-      else
-        errs() << "For hashPlusInstM you must pass a database filename with" <<
-          " -database\n";
-      break;
-    default:
-      Analyser = new InstructionMethod();
-      break;
-  }
+  PassRegistry *Registry = PassRegistry::getPassRegistry();
+  initializeCore(*Registry);
+  initializeCodeGen(*Registry);
+  initializeLoopStrengthReducePass(*Registry);
+  initializeLowerIntrinsicsPass(*Registry);
+  initializeUnreachableBlockElimPass(*Registry);
+  initializeScalarOpts(*Registry);                                                                         
+  initializeObjCARCOpts(*Registry);                                                                        
+  initializeVectorization(*Registry);                                                                      
+  initializeIPO(*Registry);                                                                                
+  initializeAnalysis(*Registry);                                                                           
+  initializeIPA(*Registry);                                                                                
+  initializeTransformUtils(*Registry);                                                                     
+  initializeInstCombine(*Registry);                                                                        
+  initializeInstrumentation(*Registry);                                                                    
+  initializeTarget(*Registry);      
 
-  return Analyser;
+  initializeCodeGenPreparePass(*Registry);                                                                 
+  initializeAtomicExpandPass(*Registry);                                                                   
+  initializeRewriteSymbolsPass(*Registry);                                                                 
 }
 
 Pass* GEOS::getPass(OptimizationKind OptChoosed) {
@@ -74,7 +63,7 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
     //  return createLoadCombinePass(); // PreserveCFG
 
     // ---------------- Change the CFG
-    /*case SROA:
+    case SROA:
       return createSROAPass();
     case LoopStrengthReduce:
       return createLoopStrengthReducePass();
@@ -111,13 +100,11 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
     case SeparateConstOffsetFromGEP:  // Maybe can change CFG
       return createSeparateConstOffsetFromGEPPass();
     case LICM:
-      return createLICMPass();*/
+      return createLICMPass();
 
     // ---------------- Does not change the CFG
     case SCCP:
       return createSCCPPass();
-    case SROA:
-      return createSROAPass();
     case ConstantPropagation:
       return createConstantPropagationPass();
     case AlignmentFromAssumptions:
@@ -140,7 +127,7 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createDemoteRegisterToMemoryPass();
     case Reassociate: 
       return createReassociatePass(); // PreservesCFG
-/*    case LCSSA:
+    case LCSSA:
       return createLCSSAPass(); // PreservesCFG*/
     case EarlyCSE:
       return createEarlyCSEPass();
@@ -173,11 +160,8 @@ ProfileModule*
 GEOS::applyPassesOnFunction(StringRef FuncName, const ProfileModule& PModule, 
     FunctionPassManager& PM) {
 
-  assert(PModule.getLLVMModule()->getFunction(FuncName) != nullptr && 
-      "There is no function with this name in the Module.");
-
-  ProfileModule *ModuleCopy = PModule.getCopy();
-  Module        *MyModule   = ModuleCopy->getLLVMModule();
+  ProfileModule   *ModuleCopy = PModule.getCopy();
+  Module          *MyModule   = ModuleCopy->getLLVMModule();
 
   Function *Func = MyModule->getFunction(FuncName);
 
@@ -193,7 +177,7 @@ GEOS::applyPasses(const ProfileModule& PModule, FunctionPassManager& PM) {
   ProfileModule *ModuleCopy = PModule.getCopy();
   Module        *MyModule   = ModuleCopy->getLLVMModule();
 
-  for (auto& Func : *MyModule)
+  for (auto& Func : *MyModule) 
     PM.run(Func);
 
   ModuleCopy->repairProfiling();
@@ -201,33 +185,45 @@ GEOS::applyPasses(const ProfileModule& PModule, FunctionPassManager& PM) {
   return ModuleCopy; 
 }
 
-double 
-GEOS::analyseFunctionExecutionTime(StringRef FuncName, 
-    const ProfileModule& PModule, AnalysisMethod *Analyser) {
+ProfileModule* 
+GEOS::applyPassesModule(const ProfileModule& PModule, FunctionPassManager& FPM, 
+    PassManager& PM) {
+  ProfileModule *ModuleCopy = PModule.getCopy();
+  Module        *MyModule   = ModuleCopy->getLLVMModule();
 
-  assert(PModule.getLLVMModule()->getFunction(FuncName) != nullptr && 
+  for (auto &Func : *MyModule)
+    FPM.run(Func);
+
+  ModuleCopy->repairProfiling();
+
+  PM.run(*MyModule);
+
+  ModuleCopy->repairProfiling();
+
+  return ModuleCopy; 
+}
+
+
+double GEOS::
+analyseFunctionCost(StringRef FuncName, const ProfileModule* PModule, 
+    CostEstimatorOptions Opts) {
+
+  assert(PModule->getLLVMModule()->getFunction(FuncName) != nullptr && 
       "There is no function with this name in the Module.");
 
-  Module *MyModule = PModule.getLLVMModule();
+  Module *MyModule = PModule->getLLVMModule();
 
   Function     *LLVMFunc = MyModule->getFunction(FuncName);
   assert(LLVMFunc != nullptr 
       && "Trying to access a LLVM Function that don't exist!");
 
-  double Estimation = Analyser->estimateExecutionTime(LLVMFunc, PModule);
+  double Estimation = CostEstimator::getFunctionCost(FuncName, PModule, Opts);
 
   return Estimation;
 }
 
-double 
-GEOS::analyseExecutionTime(const ProfileModule& PModule, 
-    AnalysisMethod *Analyser) {
-
-  double PerformanceMensurment = 0;
-  for (auto &LLVMFunc : *PModule.getLLVMModule()) 
-    PerformanceMensurment +=
-      Analyser->estimateExecutionTime(&LLVMFunc, PModule);
-
-  return PerformanceMensurment;
+double GEOS::
+analyseCost(const ProfileModule* PModule, CostEstimatorOptions Opts) {
+  return CostEstimator::getModuleCost(PModule, Opts);
 }
 

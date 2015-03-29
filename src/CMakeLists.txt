@@ -1,9 +1,7 @@
-add_executable (llvm-merge mergeDatabase.cpp)
+add_subdirectory(CostEstimator)
+add_subdirectory(ProfileModule)
+add_subdirectory(Profiling)
 
 add_library(GEOS GEOS.cpp)
-add_library(ProfileModule ProfileModule.cpp)
 
-TARGET_LINK_LIBRARIES(llvm-merge DatabaseManager BBHash LLVMCore 
-  LLVMSupport rt dl tinfo atomic pthread z m) 
-
-INSTALL(TARGETS llvm-merge RUNTIME DESTINATION bin)
+INSTALL(FILES saferun DESTINATION bin)
