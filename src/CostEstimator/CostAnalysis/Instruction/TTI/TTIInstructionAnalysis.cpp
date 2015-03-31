@@ -1,23 +1,22 @@
-//===-- include/CostEstimator.h - llvm::Instruction Cost Estimator -*- C++ -*---===//
+//===-- TTIInstructionAnalysis.cpp - Arch Instruction Estimator -*- C++ -*-===//
 //
-// The LLVM Time Cost Analyser Infrastructure
+//              The LLVM Time Cost Analyser Infrastructure
 //
 // This file is distributed under the MIT License. See LICENSE.txt for details.
 //
 //===----------------------------------------------------------------------===//
 ///
 /// \file
-/// \brief This file contains declarations and implementation of
-/// a LLVM llvm::Instruction Cost Estimator. From an LLVM instruction it gives a cost
-/// based in its execution time.
+/// \brief This file contains declarations and implementation of an
+/// instruction cost anaysis that is sensitive to the architecture.
 ///
 //===----------------------------------------------------------------------===//
 
-#include "llvm/IR/Module.h"
+#include "CostEstimator/CostAnalysis.h"
+
 #include "llvm/PassManager.h"
 #include "llvm/Support/TargetSelect.h"
 
-#include "CostEstimator/CostAnalysis.h"
 #include "./CostModel.cpp"
 
 using namespace llvm;

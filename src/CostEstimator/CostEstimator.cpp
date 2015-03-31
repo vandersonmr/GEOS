@@ -1,4 +1,4 @@
-//===--------- analyser/main.cpp - BB Cost Estimative -*- C++ -*- ---------===//
+//===--------- CostEstimator.cpp - BB Cost Estimative -*- C++ -*- ---------===//
 //
 //              The LLVM Time Cost Analyser Infrastructure
 //
@@ -9,12 +9,13 @@
 /// \file
 /// \brief This file contains the implementation of the program cost 
 /// analyser. It uses the the AnalysisMethods to calculate the cost of each
-/// function. 
+/// function or the entire module. 
 ///
 //===----------------------------------------------------------------------===//
 
-#include "CostEstimator/CostAnalysis.h"
 #include "CostEstimator/CostEstimator.h"
+
+#include "CostEstimator/CostAnalysis.h"
 
 using namespace llvm;
 

@@ -1,29 +1,29 @@
-//===------ BBProf.cpp - Add PAPI instructions in each basic block  -------===//
+//===--------------- GCOVReader.cpp - Load GCOV Profile -------------------===//
 //
-//                     The LLVM Compiler Infrastructure
+//                The LLVM Time Cost Analyser Infrastructure
 //
-// This file is distributed under the University of Illinois Open Source
-// License. See LICENSE.TXT for details.
-//
-//===----------------------------------------------------------------------===//
-//
-// This file implements a Basic Block Pass that adds calls to PAPI functions at
-// each Basic Block. Those PAPI instructions measure the number of clocks used 
-// by the basic block and print this information in stdout. 
+// This file is distributed under the MIT License. See LICENSE.TXT for details.
 //
 //===----------------------------------------------------------------------===//
-
-#include "llvm/IR/Function.h"
-#include "llvm/IR/Module.h"
-#include "llvm/IR/InstrTypes.h"
+//
+/// \brief This file contains implemantation of GCOV Profile Loader. 
+/// It reads GCDAs and GCNOs files from GCOV profiling. With information 
+/// found in this files it sets branch and basic block frequencies.
+/// 
+/// To instrument a code to generate GCOV profiling using clang:
+/// clang -g -O0 --coverage code.c
+//
+//===----------------------------------------------------------------------===//
 
 #include "Profiling/GCOVReader.h"
 
+#include "llvm/IR/Module.h"
+#include "llvm/IR/InstrTypes.h"
+
 using namespace llvm;
 
-std::vector<GCOVFunction*> readFunctions(GCOVFile& GF, GCOVBuffer &GCNOBuffer, 
-    GCOVBuffer &GCDABuffer) {
-
+std::vector<GCOVFunction*> 
+readFunctions(GCOVFile& GF, GCOVBuffer &GCNOBuffer, GCOVBuffer &GCDABuffer) {
   GCOV::GCOVVersion Version;
   std::vector<GCOVFunction*> *Functions = 
     new std::vector<GCOVFunction*>; 
@@ -110,5 +110,4 @@ void loadGCOV(std::vector<MemoryBuffer*> GCDAs,
     ++iGCDA;
     ++iGCNO;
   }
-
 }

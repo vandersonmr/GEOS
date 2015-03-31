@@ -1,24 +1,23 @@
-//===-- GEOS.cpp -  Guide to Exploration of Otimization's Set -*- C++ -*---===//
+//===-- GEOS.cpp - Guide to Exploration of Otimization's Set -*- C++ -*---===//
 //
-//              The LLVM Time Cost Analyser Infrastructure
+// The LLVM Time Cost Analyser Infrastructure
 //
-//  This file is distributed under the MIT License. See LICENSE.txt for details.
-//              
+// This file is distributed under the MIT License. See LICENSE.txt for details.
+//
 //===----------------------------------------------------------------------===//
 ///
 /// \file
-/// \brief This file contains implementation of the GEOS's main functions. Which
-/// are responsable for interfacing heuristics that want to explore, in a 
-/// fast way, the otmization's space set. 
+/// \brief This file contains implementation of GEOS's main functions. Which
+/// are responsable for interfacing heuristics that want to explore, in a
+/// fast way, the otmization's space set.
 ///
 //===----------------------------------------------------------------------===//
 
 #include "GEOS.h"
 
 #include "llvm/Support/MemoryBuffer.h"
-#include "llvm/Transforms/Scalar.h"
 #include "llvm/Support/TargetSelect.h"
-
+#include "llvm/Transforms/Scalar.h"
 #include "CostEstimator/CostEstimator.h"
 
 #include <cstdlib>
@@ -27,41 +26,38 @@ using namespace llvm;
 
 void GEOS::init() {
   InitializeNativeTarget();
-
   PassRegistry *Registry = PassRegistry::getPassRegistry();
   initializeCore(*Registry);
   initializeCodeGen(*Registry);
   initializeLoopStrengthReducePass(*Registry);
   initializeLowerIntrinsicsPass(*Registry);
   initializeUnreachableBlockElimPass(*Registry);
-  initializeScalarOpts(*Registry);                                                                         
-  initializeObjCARCOpts(*Registry);                                                                        
-  initializeVectorization(*Registry);                                                                      
-  initializeIPO(*Registry);                                                                                
-  initializeAnalysis(*Registry);                                                                           
-  initializeIPA(*Registry);                                                                                
-  initializeTransformUtils(*Registry);                                                                     
-  initializeInstCombine(*Registry);                                                                        
-  initializeInstrumentation(*Registry);                                                                    
-  initializeTarget(*Registry);      
-
-  initializeCodeGenPreparePass(*Registry);                                                                 
-  initializeAtomicExpandPass(*Registry);                                                                   
-  initializeRewriteSymbolsPass(*Registry);                                                                 
+  initializeScalarOpts(*Registry);
+  initializeObjCARCOpts(*Registry);
+  initializeVectorization(*Registry);
+  initializeIPO(*Registry);
+  initializeAnalysis(*Registry);
+  initializeIPA(*Registry);
+  initializeTransformUtils(*Registry);
+  initializeInstCombine(*Registry);
+  initializeInstrumentation(*Registry);
+  initializeTarget(*Registry);
+  initializeCodeGenPreparePass(*Registry);
+  initializeAtomicExpandPass(*Registry);
+  initializeRewriteSymbolsPass(*Registry);
 }
 
 Pass* GEOS::getPass(OptimizationKind OptChoosed) {
   switch(OptChoosed) {
     // --------------- Not Working
     //case sccp:
-    //  return createsccppass();
+    // return createsccppass();
     //case LoopInstSimplify:
-    //  return createLoopInstSimplifyPass();
+    // return createLoopInstSimplifyPass();
     //case PartiallyInlineLibCalls:
-    //  return createPartiallyInlineLibCallsPass();
+    // return createPartiallyInlineLibCallsPass();
     //case LoadCombine:
-    //  return createLoadCombinePass(); // PreserveCFG
-
+    // return createLoadCombinePass(); // PreserveCFG
     // ---------------- Change the CFG
     case SROA:
       return createSROAPass();
@@ -97,12 +93,10 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createLoopDeletionPass();
     case ScalarizerPass: // Maybe can change CFG
       return createScalarizerPass();
-    case SeparateConstOffsetFromGEP:  // Maybe can change CFG
+    case SeparateConstOffsetFromGEP: // Maybe can change CFG
       return createSeparateConstOffsetFromGEPPass();
     case LICM:
       return createLICMPass();
-
-    // ---------------- Does not change the CFG
     case SCCP:
       return createSCCPPass();
     case ConstantPropagation:
@@ -115,7 +109,7 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createDeadCodeEliminationPass();
     case AggressiveDCE:
       return createAggressiveDCEPass();
-    case ScalarReplAggregates: 
+    case ScalarReplAggregates:
       return createScalarReplAggregatesPass(); //PreservesCFG
     case InductionVariableSimplify:
       return createIndVarSimplifyPass();
@@ -125,7 +119,7 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createPromoteMemoryToRegisterPass();
     case DemoteRegisterToMemory:
       return createDemoteRegisterToMemoryPass();
-    case Reassociate: 
+    case Reassociate:
       return createReassociatePass(); // PreservesCFG
     case LCSSA:
       return createLCSSAPass(); // PreservesCFG*/
@@ -139,10 +133,10 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createMemCpyOptPass();
     case ConstantHoisting:
       return createConstantHoistingPass();
-/*    case InstructionNamer:
-      return createInstructionNamerPass();*/
-    case Sink: 
-      return createSinkingPass();  // PreservesCFG
+      /* case InstructionNamer:
+         return createInstructionNamerPass();*/
+    case Sink:
+      return createSinkingPass(); // PreservesCFG
     case LowerAtomic:
       return createLowerAtomicPass(); // PreservesCFG
     case ValuePropagation:
@@ -156,74 +150,73 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
   }
 }
 
-ProfileModule* 
-GEOS::applyPassesOnFunction(StringRef FuncName, const ProfileModule& PModule, 
+ProfileModule*
+GEOS::applyPassesOnFunction(StringRef FuncName, const ProfileModule& PModule,
     FunctionPassManager& PM) {
 
-  ProfileModule   *ModuleCopy = PModule.getCopy();
-  Module          *MyModule   = ModuleCopy->getLLVMModule();
+  assert(PModule.getLLVMModule()->getFunction(FuncName) != nullptr &&
+      "There is no function with this name in the Module.");
+
+  ProfileModule *ModuleCopy = PModule.getCopy();
+  Module *MyModule = ModuleCopy->getLLVMModule();
 
   Function *Func = MyModule->getFunction(FuncName);
+
+  assert(Func != nullptr 
+      && "Trying to access a LLVM Function that don't exist!");
 
   PM.run(*Func);
 
   ModuleCopy->repairFunctionProfiling(Func);
-
-  return ModuleCopy; 
+  return ModuleCopy;
 }
 
-ProfileModule* 
+ProfileModule*
 GEOS::applyPasses(const ProfileModule& PModule, FunctionPassManager& PM) {
   ProfileModule *ModuleCopy = PModule.getCopy();
-  Module        *MyModule   = ModuleCopy->getLLVMModule();
+  Module *MyModule = ModuleCopy->getLLVMModule();
 
-  for (auto& Func : *MyModule) 
+  for (auto& Func : *MyModule)
     PM.run(Func);
 
   ModuleCopy->repairProfiling();
-
-  return ModuleCopy; 
+  return ModuleCopy;
 }
 
-ProfileModule* 
-GEOS::applyPassesModule(const ProfileModule& PModule, FunctionPassManager& FPM, 
+ProfileModule*
+GEOS::applyPassesModule(const ProfileModule& PModule, FunctionPassManager& FPM,
     PassManager& PM) {
+
   ProfileModule *ModuleCopy = PModule.getCopy();
-  Module        *MyModule   = ModuleCopy->getLLVMModule();
+  Module *MyModule = ModuleCopy->getLLVMModule();
 
   for (auto &Func : *MyModule)
     FPM.run(Func);
 
   ModuleCopy->repairProfiling();
-
   PM.run(*MyModule);
-
   ModuleCopy->repairProfiling();
 
-  return ModuleCopy; 
+  return ModuleCopy;
 }
 
-
 double GEOS::
-analyseFunctionCost(StringRef FuncName, const ProfileModule* PModule, 
+analyseFunctionCost(StringRef FuncName, const ProfileModule* PModule,
     CostEstimatorOptions Opts) {
 
-  assert(PModule->getLLVMModule()->getFunction(FuncName) != nullptr && 
+  assert(PModule->getLLVMModule()->getFunction(FuncName) != nullptr &&
       "There is no function with this name in the Module.");
 
   Module *MyModule = PModule->getLLVMModule();
+  Function *LLVMFunc = MyModule->getFunction(FuncName);
 
-  Function     *LLVMFunc = MyModule->getFunction(FuncName);
-  assert(LLVMFunc != nullptr 
+  assert(LLVMFunc != nullptr
       && "Trying to access a LLVM Function that don't exist!");
 
-  double Estimation = CostEstimator::getFunctionCost(FuncName, PModule, Opts);
-
-  return Estimation;
+  return CostEstimator::getFunctionCost(FuncName, PModule, Opts);
 }
 
 double GEOS::
 analyseCost(const ProfileModule* PModule, CostEstimatorOptions Opts) {
   return CostEstimator::getModuleCost(PModule, Opts);
 }
-

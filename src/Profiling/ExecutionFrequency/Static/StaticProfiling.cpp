@@ -1,34 +1,30 @@
-//===------ BBProf.cpp - Add PAPI instructions in each basic block  -------===//
+//===------------ StaticProfiling.cpp - Load Static Profile  --------------===//
 //
-//                     The LLVM Compiler Infrastructure
+//                     The LLVM Time Cost Analyser Infrastructure
 //
-// This file is distributed under the University of Illinois Open Source
-// License. See LICENSE.TXT for details.
-//
-//===----------------------------------------------------------------------===//
-//
-// This file implements a Basic Block Pass that adds calls to PAPI functions at
-// each Basic Block. Those PAPI instructions measure the number of clocks used 
-// by the basic block and print this information in stdout. 
+// This file is distributed under the MIT License. See LICENSE.TXT for details.
 //
 //===----------------------------------------------------------------------===//
-
-#include "llvm/IR/Function.h"
-#include "llvm/IR/Module.h"
-#include "llvm/IR/Instructions.h"
-#include "llvm/Analysis/CallGraph.h"
-#include "llvm/PassManager.h"
-#include "llvm/Pass.h"
-#include "llvm/Analysis/Passes.h"
-#include "llvm/Analysis/BlockFrequencyInfo.h"
+//
+/// \brief This file contains implemantation of Static Profile Loader. 
+/// It uses static analysis to mensure the execution frequency of each branch.
+/// It uses an algorithm implemented in the LLVM infrastructure to mensure 
+/// branchs and basic block frequencies.
+//
+//===----------------------------------------------------------------------===//
 
 #include "Profiling/StaticProfiling.h"
-#include "GEOS.h"
+
+#include "llvm/Analysis/BlockFrequencyInfo.h"
+#include "llvm/Analysis/CallGraph.h"
+#include "llvm/Analysis/Passes.h"
+#include "llvm/IR/Instructions.h"
+#include "llvm/IR/Module.h"
+#include "llvm/PassManager.h"
+#include "llvm/Pass.h"
 
 #include <list>
-#include <stack>
 #include <unordered_map>
-#include <algorithm>
 
 using namespace llvm;
 

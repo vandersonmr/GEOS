@@ -1,17 +1,16 @@
-//===------- include/ProfileModule.h - The Profile Module  -*- C++ -*------===//
+//===---------------- CallCostReader.h - Load Call's Cost ---------------===//
 //
-//              The LLVM Time Cost Analyser Infrastructure
+//                The LLVM Time Cost Analyser Infrastructure
 //
-//  This file is distributed under the MIT License. See LICENSE.txt for details.
-//              
+// This file is distributed under the MIT License. See LICENSE.TXT for details.
+//
 //===----------------------------------------------------------------------===//
-///
-/// \file
-/// \brief This file contains implementation of the Profile Module. Which
-/// encapsulate a LLVMModule and also the profiling information of this module. 
-///
+//
+/// \brief This file contains declarations of Call Cost loader. 
+//
 //===----------------------------------------------------------------------===//
 
 #include "ProfileModule/ProfileModule.h"
 
+/// \brief It loads call's cost of external functions in the ProfileModule.
 void loadCallCost(llvm::StringRef, ProfileModule*);

@@ -1,4 +1,4 @@
-//===------- include/ProfileModule.h - The Profile Module  -*- C++ -*------===//
+//===------ include/StaticProfiling.h - Load Static Profile  -*- C++ -*----===//
 //
 //              The LLVM Time Cost Analyser Infrastructure
 //
@@ -7,13 +7,13 @@
 //===----------------------------------------------------------------------===//
 ///
 /// \file
-/// \brief This file contains implementation of the Profile Module. Which
-/// encapsulate a LLVMModule and also the profiling information of this module. 
+/// \brief This file contains declarations of Profile Loader. 
+/// It uses static analysis to mensure the execution frequency of each branch. 
 ///
 //===----------------------------------------------------------------------===//
 
 #include "ProfileModule/ProfileModule.h"
 
-#include <vector>
-
+/// \brief It loads in the ProfileModule branch frequency information estimated
+/// by LLVM static analysis.
 void loadStaticProfiling(ProfileModule*);

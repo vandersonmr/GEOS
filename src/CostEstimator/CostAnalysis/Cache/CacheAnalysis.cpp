@@ -1,45 +1,34 @@
-//===-- include/CostEstimator.h - llvm::Instruction Cost Estimator -*- C++ -*---===//
+//===--------- CacheAnalysis.cpp - Cache Cost Estimator -*- C++ -*---------===//
 //
-// The LLVM Time Cost Analyser Infrastructure
+//                The LLVM Time Cost Analyser Infrastructure
 //
 // This file is distributed under the MIT License. See LICENSE.txt for details.
 //
 //===----------------------------------------------------------------------===//
 ///
 /// \file
-/// \brief This file contains declarations and implementation of
-/// a LLVM llvm::Instruction Cost Estimator. From an LLVM instruction it gives a cost
-/// based in its execution time.
+/// \brief This file contains declarations and implementation of the instruction
+/// cache analysis and also use of registers analysis.
 ///
 //===----------------------------------------------------------------------===//
 
-#include "llvm/IR/Module.h"
-
 #include "CostEstimator/CostAnalysis.h"
-#include "CostEstimator/LRUCache.h"
-#include "CostEstimator/InstructionCostEstimator.h"
 
-#include "llvm/Pass.h"
-#include "llvm/ADT/Triple.h"
-#include "llvm/Support/Host.h"
-#include "llvm/Support/TargetRegistry.h"
-#include "llvm/Target/TargetOptions.h"
-#include "llvm/Target/TargetMachine.h"
+#include "llvm/CodeGen/MachineFunctionAnalysis.h"
+#include "llvm/CodeGen/MachineModuleInfo.h"
+#include "llvm/CodeGen/MachinePostDominators.h"
 #include "llvm/PassManager.h"
-#include "llvm/Target/TargetLibraryInfo.h"
-#include "llvm/Target/TargetSubtargetInfo.h"
+#include "llvm/Support/TargetRegistry.h"
 #include "llvm/Support/FileSystem.h"
 #include "llvm/Support/FormattedStream.h"
-#include "llvm/CodeGen/MachineFunction.h"
-#include "llvm/CodeGen/MachinePostDominators.h"
-#include "llvm/CodeGen/MachineModuleInfo.h"
-#include "llvm/CodeGen/MachineFunctionAnalysis.h"
-#include "llvm/IR/CallSite.h"
-#include "llvm/Analysis/CallGraph.h"
+#include "llvm/Target/TargetLibraryInfo.h"
+#include "llvm/Target/TargetMachine.h"
+#include "llvm/Target/TargetSubtargetInfo.h"
 
-#include <iostream>
 #include <unordered_map>
-#include <list>
+
+#include "CostEstimator/InstructionCostEstimator.h"
+#include "CostEstimator/LRUCache.h"
 
 using namespace llvm;
 

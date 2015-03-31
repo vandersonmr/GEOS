@@ -7,8 +7,8 @@
 //===----------------------------------------------------------------------===//
 ///
 /// \file
-/// \brief This file contains declarations of GEOS main functions. 
-/// Which are responsable for interfacing with heuristics for otimization's set
+/// \brief This file contains declarations of GEOS main functions. Which are 
+/// responsable for interfacing with heuristics for otimization's set 
 /// exploration. 
 ///
 //===----------------------------------------------------------------------===//
@@ -72,8 +72,8 @@ enum OptimizationKind {
 };
 
 /// \brief This namespace is responsable for applying passes into a 
-/// ProfileModule, which contains the LLVM code and the profiling information, 
-/// and also analyse its execution time. 
+/// ProfileModule, which contains the LLVM code and the profiling information. 
+/// It also analyse its execution time. 
 namespace GEOS {
     extern "C" {
       void init();

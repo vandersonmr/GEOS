@@ -1,3 +1,4 @@
+//===--- include/CostEstimator.h - Cost Estimator Interface -*- C++ -*-----===//
 //
 //              The LLVM Time Cost Analyser Infrastructure
 //
@@ -6,8 +7,7 @@
 //===----------------------------------------------------------------------===//
 ///
 /// \file
-/// \brief This file contains declarations of every method for analysis the 
-/// execution cost of a LLVM function.
+/// \brief This file contains declarations of the cost estimator interface.
 ///
 //===----------------------------------------------------------------------===//
 
@@ -16,8 +16,12 @@
 
 namespace CostEstimator {
   extern "C" {
-   double getModuleCost(const ProfileModule*, CostEstimatorOptions);
+    /// \brief It returns, using the analysis set in the CostEstimatorOptions,
+    /// the estimated cost of the given ProfileModule.
+    double getModuleCost(const ProfileModule*, CostEstimatorOptions);
 
+    /// \brief It returns, using the analysis set in the CostEstimatorOptions, 
+    /// the estimated cost of the function that the name was given. 
     double getFunctionCost(llvm::StringRef, 
         const ProfileModule*, CostEstimatorOptions);
   }

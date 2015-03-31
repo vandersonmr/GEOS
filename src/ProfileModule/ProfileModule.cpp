@@ -1,4 +1,4 @@
-//===-- ProfileModule.cpp -  The Profile Module -*- C++ -*---===//
+//===--------- ProfileModule.cpp -  The Profile Module -*- C++ -*----------===//
 //
 //              The LLVM Time Cost Analyser Infrastructure
 //
@@ -8,27 +8,23 @@
 ///
 /// \file
 /// \brief This file contains implementation of the Profile Module. Which
-/// encapsulate a LLVMModule and also the profiling information of this module. 
+/// encapsulate a LLVMModule and its profiling information. 
 ///
 //===----------------------------------------------------------------------===//
 
 #include "ProfileModule/ProfileModule.h"
 
-#include "llvm/Transforms/Utils/Cloning.h"
-#include "llvm/IR/Instructions.h"
-#include "llvm/IR/IntrinsicInst.h"
-#include "llvm/IR/Type.h"
-#include "llvm/IR/CFG.h"
-#include "llvm/Bitcode/ReaderWriter.h"
-#include "llvm/Support/FileSystem.h"
-#include "llvm/IR/MDBuilder.h"
-#include <llvm/IR/LLVMContext.h>
-#include "llvm/PassManager.h"
-#include "llvm/Pass.h"
 #include "llvm/Analysis/Passes.h"
 #include "llvm/Analysis/BlockFrequencyInfo.h"
+#include "llvm/Bitcode/ReaderWriter.h"
+#include "llvm/IR/CFG.h"
+#include "llvm/IR/IntrinsicInst.h"
+#include "llvm/IR/LLVMContext.h"
+#include "llvm/IR/MDBuilder.h"
+#include "llvm/Support/FileSystem.h"
+#include "llvm/Transforms/Utils/Cloning.h"
 
-#include <stack>
+#include <unordered_map>
 
 using namespace llvm;
 

@@ -1,23 +1,23 @@
-//===------ BBProf.cpp - Add PAPI instructions in each basic block  -------===//
+//===---------------- CallCostReader.cpp - Load Call's Cost ---------------===//
 //
-//                     The LLVM Compiler Infrastructure
+//                The LLVM Time Cost Analyser Infrastructure
 //
-// This file is distributed under the University of Illinois Open Source
-// License. See LICENSE.TXT for details.
-//
-//===----------------------------------------------------------------------===//
-//
-// This file implements a Basic Block Pass that adds calls to PAPI functions at
-// each Basic Block. Those PAPI instructions measure the number of clocks used 
-// by the basic block and print this information in stdout. 
+// This file is distributed under the MIT License. See LICENSE.TXT for details.
 //
 //===----------------------------------------------------------------------===//
+//
+/// \brief This file contains implemantation of Call Cost loader. It reads from
+/// a file the execution time of each external function. This is need for 
+/// callcost cost analysis. 
+/// 
+/// To instrument a code to generate Call Cost using clang:
+/// opt -strip-debug -load /usr/local/lib/libLLVMCallCost.so -call-cost test.ll
+//
+//===----------------------------------------------------------------------===//
+#include "Profiling/CallCostReader.h"
 
-#include "llvm/IR/Function.h"
 #include "llvm/IR/Module.h"
 #include "llvm/IR/Instructions.h"
-
-#include "Profiling/CallCostReader.h"
 
 using namespace llvm;
 
