@@ -20,12 +20,12 @@
 # iconv built into libc) for the transcoding. See
 # http://www.gnu.org/software/libiconv for the list of possible encodings.
 
-DOXYFILE_ENCODING      = UTF-8
+DOXYFILE_ENCODING    = UTF-8
 
 # The PROJECT_NAME tag is a single word (or a sequence of words surrounded
 # by quotes) that should identify the project.
 
-PROJECT_NAME           = "GEOS - Guide to Exploration of Otimization's Sequences"
+PROJECT_NAME         = "GEOS - Guide for Exploration of the Optimization Space"
 
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number.
