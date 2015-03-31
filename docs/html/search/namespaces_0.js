@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['geos',['GEOS',['../namespaceGEOS.html',1,'']]]
+  ['costestimator',['CostEstimator',['../namespaceCostEstimator.html',1,'']]]
 ];

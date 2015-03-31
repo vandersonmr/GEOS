@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['frequencymethod_2ecpp',['FrequencyMethod.cpp',['../FrequencyMethod_8cpp.html',1,'']]]
+  ['lrucache_2eh',['LRUCache.h',['../LRUCache_8h.html',1,'']]]
 ];

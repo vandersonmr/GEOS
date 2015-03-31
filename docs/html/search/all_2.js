@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['calls',['Calls',['../BBHash_8h.html#a1cac54f1961199852455d1cdf18e8525a1a1c3802a27c2777c6611cb5c030b7d0',1,'BBHash.h']]],
-  ['cbegin',['cbegin',['../classDatabaseManager.html#aedcb40a7a47600b1c1deb63f47f3f77e',1,'DatabaseManager']]],
-  ['cend',['cend',['../classDatabaseManager.html#a2e63a17205dd1f37ab4268fe84018f6f',1,'DatabaseManager']]],
-  ['cfgsimplification',['CFGSimplification',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a2a876dee3e320a123dfd8fb1040bbcb3',1,'GEOS.h']]],
-  ['cfgstructurization',['CFGStructurization',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a745c966e474400f419eb02b0f1594d29',1,'GEOS.h']]],
-  ['const_5fiterator',['const_iterator',['../classDatabaseManager.html#afaeaf7bb6a3607445fb70a0b1652127d',1,'DatabaseManager']]],
-  ['constanthoisting',['ConstantHoisting',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a12e0179653d92bc95fbce96b1e16eca5',1,'GEOS.h']]],
-  ['constantpropagation',['ConstantPropagation',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5adaca107cdd5179bc30b56f2f343b6ee1',1,'GEOS.h']]],
-  ['cost',['Cost',['../CostEstimator_8h.html#a63eab158c3939d16044f28fedc267267',1,'CostEstimator.h']]],
-  ['costestimator_2eh',['CostEstimator.h',['../CostEstimator_8h.html',1,'']]],
-  ['cpualias',['CPUAlias',['../Test_8cpp.html#acfbbfe6abc822375d9585039a554e338',1,'Test.cpp']]],
-  ['cpufreq',['CPUFreq',['../Test_8cpp.html#a67e68f6e074606a4f8b3dca3bc12dd38',1,'Test.cpp']]]
+  ['bbfreq',['BBFreq',['../ProfileModule_8cpp.html#abc6ffb3fd409ab969291c1afd05c597e',1,'ProfileModule.cpp']]],
+  ['block_5fbegin',['block_begin',['../classllvm_1_1GCOVFunction.html#a57bdc0dd37b708c2de928873dbf43ce7',1,'llvm::GCOVFunction']]],
+  ['block_5fend',['block_end',['../classllvm_1_1GCOVFunction.html#ab362139c199c44452c98effdd99ffd29',1,'llvm::GCOVFunction']]],
+  ['blockiterator',['BlockIterator',['../classllvm_1_1GCOVFunction.html#a38c23c918b4162d3041304a8f5de6e0a',1,'llvm::GCOVFunction']]],
+  ['branchanalysis',['BranchAnalysis',['../classBranchAnalysis.html',1,'']]],
+  ['branchanalysis_2ecpp',['BranchAnalysis.cpp',['../BranchAnalysis_8cpp.html',1,'']]],
+  ['branchcount',['BranchCount',['../structllvm_1_1GCOVOptions.html#ad321402357f07e8ab07d852a2efd7284',1,'llvm::GCOVOptions']]],
+  ['branchdiv',['branchDiv',['../GCOV_8cpp.html#ac5c50c19959609312020d2f5e1a0ca71',1,'GCOV.cpp']]],
+  ['branchinfo',['BranchInfo',['../structllvm_1_1GCOVOptions.html#af869b769cf07330ab3c9af0a73747a0e',1,'llvm::GCOVOptions']]],
+  ['breakcriticaledges',['BreakCriticalEdges',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a64b12abd4565bedcde9aadb5bd4805fe',1,'GEOS.h']]],
+  ['bss_5fend',['bss_end',['../struct__papi__address__map.html#aff1ca79e084566ed1e313df3d5926b14',1,'_papi_address_map']]],
+  ['bss_5fstart',['bss_start',['../struct__papi__address__map.html#a296aaa1f2a099c93ba2fc79dec4f8e49',1,'_papi_address_map']]]
 ];

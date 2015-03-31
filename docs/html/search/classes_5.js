@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['instructioncostmethod',['InstructionCostMethod',['../classInstructionCostMethod.html',1,'']]],
-  ['instructionmethod',['InstructionMethod',['../classInstructionMethod.html',1,'']]],
-  ['instructionplushashmethod',['InstructionPlusHashMethod',['../classInstructionPlusHashMethod.html',1,'']]]
+  ['fileinfo',['FileInfo',['../classllvm_1_1FileInfo.html',1,'llvm']]],
+  ['formatbranchinfo',['formatBranchInfo',['../structformatBranchInfo.html',1,'']]],
+  ['functionpass',['FunctionPass',['../classFunctionPass.html',1,'']]]
 ];

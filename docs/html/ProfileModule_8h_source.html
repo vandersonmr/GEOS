@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>GEOS - Guide to Exploration of Otimization&#39;s Sequences: ProfileModule.h Source File</title>
+<title>GEOS - Guide for Exploration of the Optimization Space: ProfileModule.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GEOS - Guide to Exploration of Otimization&#39;s Sequences
-   &#160;<span id="projectnumber">0.1a</span>
+   <div id="projectname">GEOS - Guide for Exploration of the Optimization Space
+   &#160;<span id="projectnumber">1.0a</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_ca719a3c9c7698fbb7b385e0ac0f0ef9.html">repos</a></li><li class="navelem"><a class="el" href="dir_c1cac778c5291f7d85175b6e39b12919.html">GEOS</a></li><li class="navelem"><a class="el" href="dir_1cdbcde0bf0bb7a27e932161f6b26d47.html">include</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_5c1f77b6d547333da17420fc98c4f94a.html">repos</a></li><li class="navelem"><a class="el" href="dir_8dc547b64c22af10c8c726a467f39b55.html">GEOS</a></li><li class="navelem"><a class="el" href="dir_70372965118cf4ea0a533a4ca110f7fa.html">include</a></li><li class="navelem"><a class="el" href="dir_852d9ad5f9a9ed41c35e7f1696893fd4.html">ProfileModule</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -98,91 +98,117 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//===----------------------------------------------------------------------===//</span><span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">///</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/// \file</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \brief This file contains implementation of the Profile Module. Which</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// encapsulate a LLVMModule and also the profiling information of this module. </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \brief This file contains declarations of the Profile Module. Which</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// encapsulate a LLVMModule with profiling information. </span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">///</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"></span><span class="comment">//===----------------------------------------------------------------------===//</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;llvm/IR/Module.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;llvm/Support/GCOV.h&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">/// \brief This class is responsable for encapsulating, copying, and mantaing </span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/// consistency of a LLVM Module and its profiling information.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classProfileModule.html">   24</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="classProfileModule.html">ProfileModule</a> {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">private</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    /// \brief The LLVM Module.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"></span>    llvm::Module *LLVMModule;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef PROFILEMODULE_H</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PROFILEMODULE_H</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;llvm/IR/Module.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;llvm/Support/GCOV.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/// \brief This class is responsable for encapsulating, copying, and mantaing </span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/// the consistency of its LLVM Module and its profiling information.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classProfileModule.html">   25</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="classProfileModule.html">ProfileModule</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    llvm::Module *LLVMModule;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">    /// \brief This function loads from files (GCDA and GCNO) the GCOV profiling</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    /// information.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span>    std::vector&lt;llvm::GCOVFunction*&gt;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    readFunctions(</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        llvm::GCOVFile&amp; GF, llvm::GCOVBuffer &amp;GCNOBuffer, </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        llvm::GCOVBuffer &amp;GCDABuffer); </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">    /// \brief Maps basic block&#39;s name with its execution frequency.</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"></span>    std::unordered_map&lt;std::string, uint64_t&gt; BasicBlockFrequency;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">    /// \brief Uses the predecessors of a Basic Block to try to update its </span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">    ///  execution frequency. </span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"></span>    uint64_t getExecutionFreqUsingPredecessors(llvm::BasicBlock* BB);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">    /// \brief Uses the predecessors of a Basic Block to try to update its </span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">    ///  execution frequency. </span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span>    uint64_t getExecutionFreqUsingSuccessors(llvm::BasicBlock* BB);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">    /// \brief This constructor is used in the instanciation of a copy of a </span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">    /// ProfileModule.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"></span>    <a class="code" href="classProfileModule.html">ProfileModule</a>(llvm::Module*, </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">const</span> std::unordered_map&lt;std::string, uint64_t&gt;&amp;);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">    /// \brief The constructor needs a LLVM Module and two lists of buffers of</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">    /// GCOV files to create the profiling information. </span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"></span>    <a class="code" href="classProfileModule.html">ProfileModule</a>(llvm::Module*, std::list&lt;llvm::MemoryBuffer*&gt;, </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                  std::list&lt;llvm::MemoryBuffer*&gt;);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">    /// \brief Returns its LLVM Module.</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span>    llvm::Module* <a class="code" href="classProfileModule.html#a2ca657beae7881e8364e57abffc2ce4f">getLLVMModule</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">    /// \brief For each Basic Block in the CFG, the predecessors and successors </span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">    /// are used to update or find its execution frequency.</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classProfileModule.html#a17cad3a7d951ee78efd7b30cc3a423ce">repairFunctionProfiling</a>(llvm::Function*);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">    /// \brief For each function in the ProfileModule it calls</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">    /// repairFunctionProfiling</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classProfileModule.html#acc69d694de56150b427b9a97218010f4">repairProfiling</a>();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">    /// \brief Returns true if the execution frequency of the given BasicBlock</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">    /// is known, otherwise returns false.</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code" href="classProfileModule.html#a08667492bbf4986b6b7752ccf0a05610">hasBasicBlockFrequency</a>(<span class="keyword">const</span> llvm::BasicBlock*) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">    /// \brief Returns the execution frequency of the given BasicBlock, if it</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">    /// doesn&#39;t have the frequency it will return 0.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"></span>    uint64_t <a class="code" href="classProfileModule.html#aec52f07d61cdacf8d7dfa4a52efbe819">getBasicBlockFrequency</a>(<span class="keyword">const</span> llvm::BasicBlock*) <span class="keyword">const</span>; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">    /// \brief Sets the execution frequency of an given basic block.</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span>     <a class="code" href="classProfileModule.html#a30391a175d04cc70c60e1cf6f688f2da">setBasicBlockFrequency</a>(<span class="keyword">const</span> llvm::BasicBlock*, uint64_t); </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment"></span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">    /// \brief Returns a copy of the Profiling Module.</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"></span>    <a class="code" href="classProfileModule.html">ProfileModule</a>* <a class="code" href="classProfileModule.html#afed1fbe5ead415d6687dec691376b509">getCopy</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="ttc" id="classProfileModule_html_aec52f07d61cdacf8d7dfa4a52efbe819"><div class="ttname"><a href="classProfileModule.html#aec52f07d61cdacf8d7dfa4a52efbe819">ProfileModule::getBasicBlockFrequency</a></div><div class="ttdeci">uint64_t getBasicBlockFrequency(const llvm::BasicBlock *) const </div><div class="ttdoc">Returns the execution frequency of the given BasicBlock, if it doesn&#39;t have the frequency it will ret...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00086">ProfileModule.cpp:86</a></div></div>
-<div class="ttc" id="classProfileModule_html_a2ca657beae7881e8364e57abffc2ce4f"><div class="ttname"><a href="classProfileModule.html#a2ca657beae7881e8364e57abffc2ce4f">ProfileModule::getLLVMModule</a></div><div class="ttdeci">llvm::Module * getLLVMModule() const </div><div class="ttdoc">Returns its LLVM Module. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00077">ProfileModule.cpp:77</a></div></div>
-<div class="ttc" id="classProfileModule_html"><div class="ttname"><a href="classProfileModule.html">ProfileModule</a></div><div class="ttdoc">This class is responsable for encapsulating, copying, and mantaing consistency of a LLVM Module and i...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8h_source.html#l00024">ProfileModule.h:24</a></div></div>
-<div class="ttc" id="classProfileModule_html_a17cad3a7d951ee78efd7b30cc3a423ce"><div class="ttname"><a href="classProfileModule.html#a17cad3a7d951ee78efd7b30cc3a423ce">ProfileModule::repairFunctionProfiling</a></div><div class="ttdeci">void repairFunctionProfiling(llvm::Function *)</div><div class="ttdoc">For each Basic Block in the CFG, the predecessors and successors are used to update or find its execu...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00183">ProfileModule.cpp:183</a></div></div>
-<div class="ttc" id="classProfileModule_html_acc69d694de56150b427b9a97218010f4"><div class="ttname"><a href="classProfileModule.html#acc69d694de56150b427b9a97218010f4">ProfileModule::repairProfiling</a></div><div class="ttdeci">void repairProfiling()</div><div class="ttdoc">For each function in the ProfileModule it calls repairFunctionProfiling. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00205">ProfileModule.cpp:205</a></div></div>
-<div class="ttc" id="classProfileModule_html_a30391a175d04cc70c60e1cf6f688f2da"><div class="ttname"><a href="classProfileModule.html#a30391a175d04cc70c60e1cf6f688f2da">ProfileModule::setBasicBlockFrequency</a></div><div class="ttdeci">void setBasicBlockFrequency(const llvm::BasicBlock *, uint64_t)</div><div class="ttdoc">Sets the execution frequency of an given basic block. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00094">ProfileModule.cpp:94</a></div></div>
-<div class="ttc" id="classProfileModule_html_afed1fbe5ead415d6687dec691376b509"><div class="ttname"><a href="classProfileModule.html#afed1fbe5ead415d6687dec691376b509">ProfileModule::getCopy</a></div><div class="ttdeci">ProfileModule * getCopy() const </div><div class="ttdoc">Returns a copy of the Profiling Module. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00211">ProfileModule.cpp:211</a></div></div>
-<div class="ttc" id="classProfileModule_html_a08667492bbf4986b6b7752ccf0a05610"><div class="ttname"><a href="classProfileModule.html#a08667492bbf4986b6b7752ccf0a05610">ProfileModule::hasBasicBlockFrequency</a></div><div class="ttdeci">bool hasBasicBlockFrequency(const llvm::BasicBlock *) const </div><div class="ttdoc">Returns true if the execution frequency of the given BasicBlock is known, otherwise returns false...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00081">ProfileModule.cpp:81</a></div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">    /// \brief Uses the predecessors of a Basic Block to estimate and update its </span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    ///  execution frequency. </span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span>    uint64_t getExecutionFreqUsingPredecessors(llvm::BasicBlock *BB);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">    /// \brief Uses the predecessors of a Basic Block to estimate and update its </span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">    ///  execution frequency. </span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span>    uint64_t getExecutionFreqUsingSuccessors(llvm::BasicBlock *BB);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">    /// \brief For each Basic Block in the CFG its predecessors and successors </span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">    /// are used to estimate and update its execution frequency.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classProfileModule.html#a17cad3a7d951ee78efd7b30cc3a423ce">repairFunctionProfiling</a>(llvm::Function*);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">    /// \brief Repair each function in the module.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classProfileModule.html#acc69d694de56150b427b9a97218010f4">repairProfiling</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">    /// \brief returns true if the execution frequency of the given basicblock</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">    /// is known, otherwise returns false.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code" href="classProfileModule.html#aa08f1aee243d7a0ab78447999d888398">hasBasicBlockFrequency</a>(<span class="keyword">const</span> llvm::BasicBlock&amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">    /// \brief returns the execution frequency of the given basicblock, and if </span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">    /// it doesn&#39;t have the frequency it will return 0.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span>    uint64_t <a class="code" href="classProfileModule.html#acf31afe2ff23b29bfdad41f57a4f4bb6">getBasicBlockFrequency</a>(<span class="keyword">const</span> llvm::BasicBlock&amp;) <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">    /// \brief sets the execution frequency of an given basic block.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classProfileModule.html#ab0322ce93b30592ad0f452082adf1532">setBasicBlockFrequency</a>(llvm::BasicBlock&amp;, uint64_t); </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">    /// \brief returns true if the execution frequency of the terminator of an </span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">    /// given basicblock is known, otherwise returns false.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code" href="classProfileModule.html#ad5ea685daffaa49096a5238498100d86">hasBranchFrequency</a>(<span class="keyword">const</span> llvm::BasicBlock&amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">    /// \brief returns a vector with the execution frequency for each possible </span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">    /// path that can be taken by the terminator instruction of a given </span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">    /// basicblock. If it doesn&#39;t have the frequency it will return 0.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span>    std::vector&lt;uint32_t&gt; <a class="code" href="classProfileModule.html#a1dbb1e0e74bb83990c732a1fb09bfbff">getBranchFrequency</a>(<span class="keyword">const</span> llvm::BasicBlock&amp;) <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">    /// \brief sets the execution frequency for each path that can be taken</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">    /// by the terminator instruction of the given basicblock.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classProfileModule.html#a68e1b9bc542dfdb865a6584d5d758228">setBranchFrequency</a>(llvm::BasicBlock&amp;, std::vector&lt;uint32_t&gt;&amp;); </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">    /// \brief returns true if the instruction have an ID, otherwise </span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">    /// returns false.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code" href="classProfileModule.html#a5d66848d9c35e4cfd3837d105c1d72eb">hasID</a>(<span class="keyword">const</span> llvm::Instruction &amp;I) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">    /// \brief Returns the ID of a given instruction.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"></span>    <span class="keywordtype">int</span>  <a class="code" href="classProfileModule.html#afc23ba15dfb2146631b172285e6cbdc1">getID</a>(<span class="keyword">const</span> llvm::Instruction &amp;I);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">    /// \brief returns true if the call instruction have a cost, otherwise </span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">    /// returns false.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code" href="classProfileModule.html#abf5c0f33b22a57b0654979126acf6fa2">hasCallCost</a>(<span class="keyword">const</span> llvm::CallInst&amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">    /// \brief Returns the call&#39;s cost of a given call.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"></span>    <span class="keywordtype">double</span> <a class="code" href="classProfileModule.html#a189bfdcde2f50e3d61cd29a40b28588b">getCallCost</a>(<span class="keyword">const</span> llvm::CallInst&amp;) <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">    /// \brief Sets the cost of a given call.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classProfileModule.html#a1101cff67ce6e531ff6cff385a0be6f9">setCallCost</a>(llvm::CallInst&amp;, <span class="keywordtype">double</span>); </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classProfileModule.html#a6a0a880f04a8a5bbef8d929fe9c149be">ProfileModule</a>(llvm::Module*);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">    /// \brief Returns its LLVM Module.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span>    llvm::Module* <a class="code" href="classProfileModule.html#a2ca657beae7881e8364e57abffc2ce4f">getLLVMModule</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">    /// \brief Returns a copy of the Profiling Module.</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"></span>    <a class="code" href="classProfileModule.html">ProfileModule</a>* <a class="code" href="classProfileModule.html#afed1fbe5ead415d6687dec691376b509">getCopy</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">    /// \brief It saves the LLVM module with all the profiling information</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">    /// in the given path.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classProfileModule.html#a275910e8a0ec876899d60a68420927e2">print</a>(<span class="keyword">const</span> std::string) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classProfileModule_html_abf5c0f33b22a57b0654979126acf6fa2"><div class="ttname"><a href="classProfileModule.html#abf5c0f33b22a57b0654979126acf6fa2">ProfileModule::hasCallCost</a></div><div class="ttdeci">bool hasCallCost(const llvm::CallInst &amp;) const </div><div class="ttdoc">returns true if the call instruction have a cost, otherwise returns false. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00132">ProfileModule.cpp:132</a></div></div>
+<div class="ttc" id="classProfileModule_html_a2ca657beae7881e8364e57abffc2ce4f"><div class="ttname"><a href="classProfileModule.html#a2ca657beae7881e8364e57abffc2ce4f">ProfileModule::getLLVMModule</a></div><div class="ttdeci">llvm::Module * getLLVMModule() const </div><div class="ttdoc">Returns its LLVM Module. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00083">ProfileModule.cpp:83</a></div></div>
+<div class="ttc" id="classProfileModule_html_aa08f1aee243d7a0ab78447999d888398"><div class="ttname"><a href="classProfileModule.html#aa08f1aee243d7a0ab78447999d888398">ProfileModule::hasBasicBlockFrequency</a></div><div class="ttdeci">bool hasBasicBlockFrequency(const llvm::BasicBlock &amp;) const </div><div class="ttdoc">returns true if the execution frequency of the given basicblock is known, otherwise returns false...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00115">ProfileModule.cpp:115</a></div></div>
+<div class="ttc" id="classProfileModule_html"><div class="ttname"><a href="classProfileModule.html">ProfileModule</a></div><div class="ttdoc">This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8h_source.html#l00025">ProfileModule.h:25</a></div></div>
+<div class="ttc" id="classProfileModule_html_a5d66848d9c35e4cfd3837d105c1d72eb"><div class="ttname"><a href="classProfileModule.html#a5d66848d9c35e4cfd3837d105c1d72eb">ProfileModule::hasID</a></div><div class="ttdeci">bool hasID(const llvm::Instruction &amp;I) const </div><div class="ttdoc">returns true if the instruction have an ID, otherwise returns false. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00050">ProfileModule.cpp:50</a></div></div>
+<div class="ttc" id="classProfileModule_html_a6a0a880f04a8a5bbef8d929fe9c149be"><div class="ttname"><a href="classProfileModule.html#a6a0a880f04a8a5bbef8d929fe9c149be">ProfileModule::ProfileModule</a></div><div class="ttdeci">ProfileModule(llvm::Module *)</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00069">ProfileModule.cpp:69</a></div></div>
+<div class="ttc" id="classProfileModule_html_a17cad3a7d951ee78efd7b30cc3a423ce"><div class="ttname"><a href="classProfileModule.html#a17cad3a7d951ee78efd7b30cc3a423ce">ProfileModule::repairFunctionProfiling</a></div><div class="ttdeci">void repairFunctionProfiling(llvm::Function *)</div><div class="ttdoc">For each Basic Block in the CFG its predecessors and successors are used to estimate and update its e...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00240">ProfileModule.cpp:240</a></div></div>
+<div class="ttc" id="classProfileModule_html_acc69d694de56150b427b9a97218010f4"><div class="ttname"><a href="classProfileModule.html#acc69d694de56150b427b9a97218010f4">ProfileModule::repairProfiling</a></div><div class="ttdeci">void repairProfiling()</div><div class="ttdoc">Repair each function in the module. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00266">ProfileModule.cpp:266</a></div></div>
+<div class="ttc" id="classProfileModule_html_a1101cff67ce6e531ff6cff385a0be6f9"><div class="ttname"><a href="classProfileModule.html#a1101cff67ce6e531ff6cff385a0be6f9">ProfileModule::setCallCost</a></div><div class="ttdeci">void setCallCost(llvm::CallInst &amp;, double)</div><div class="ttdoc">Sets the cost of a given call. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00143">ProfileModule.cpp:143</a></div></div>
+<div class="ttc" id="classProfileModule_html_ab0322ce93b30592ad0f452082adf1532"><div class="ttname"><a href="classProfileModule.html#ab0322ce93b30592ad0f452082adf1532">ProfileModule::setBasicBlockFrequency</a></div><div class="ttdeci">void setBasicBlockFrequency(llvm::BasicBlock &amp;, uint64_t)</div><div class="ttdoc">sets the execution frequency of an given basic block. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00128">ProfileModule.cpp:128</a></div></div>
+<div class="ttc" id="classProfileModule_html_afc23ba15dfb2146631b172285e6cbdc1"><div class="ttname"><a href="classProfileModule.html#afc23ba15dfb2146631b172285e6cbdc1">ProfileModule::getID</a></div><div class="ttdeci">int getID(const llvm::Instruction &amp;I)</div><div class="ttdoc">Returns the ID of a given instruction. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00054">ProfileModule.cpp:54</a></div></div>
+<div class="ttc" id="classProfileModule_html_acf31afe2ff23b29bfdad41f57a4f4bb6"><div class="ttname"><a href="classProfileModule.html#acf31afe2ff23b29bfdad41f57a4f4bb6">ProfileModule::getBasicBlockFrequency</a></div><div class="ttdeci">uint64_t getBasicBlockFrequency(const llvm::BasicBlock &amp;) const </div><div class="ttdoc">returns the execution frequency of the given basicblock, and if it doesn&#39;t have the frequency it will...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00119">ProfileModule.cpp:119</a></div></div>
+<div class="ttc" id="classProfileModule_html_a68e1b9bc542dfdb865a6584d5d758228"><div class="ttname"><a href="classProfileModule.html#a68e1b9bc542dfdb865a6584d5d758228">ProfileModule::setBranchFrequency</a></div><div class="ttdeci">void setBranchFrequency(llvm::BasicBlock &amp;, std::vector&lt; uint32_t &gt; &amp;)</div><div class="ttdoc">sets the execution frequency for each path that can be taken by the terminator instruction of the giv...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00094">ProfileModule.cpp:94</a></div></div>
+<div class="ttc" id="classProfileModule_html_a1dbb1e0e74bb83990c732a1fb09bfbff"><div class="ttname"><a href="classProfileModule.html#a1dbb1e0e74bb83990c732a1fb09bfbff">ProfileModule::getBranchFrequency</a></div><div class="ttdeci">std::vector&lt; uint32_t &gt; getBranchFrequency(const llvm::BasicBlock &amp;) const </div><div class="ttdoc">returns a vector with the execution frequency for each possible path that can be taken by the termina...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00101">ProfileModule.cpp:101</a></div></div>
+<div class="ttc" id="classProfileModule_html_a189bfdcde2f50e3d61cd29a40b28588b"><div class="ttname"><a href="classProfileModule.html#a189bfdcde2f50e3d61cd29a40b28588b">ProfileModule::getCallCost</a></div><div class="ttdeci">double getCallCost(const llvm::CallInst &amp;) const </div><div class="ttdoc">Returns the call&#39;s cost of a given call. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00136">ProfileModule.cpp:136</a></div></div>
+<div class="ttc" id="classProfileModule_html_ad5ea685daffaa49096a5238498100d86"><div class="ttname"><a href="classProfileModule.html#ad5ea685daffaa49096a5238498100d86">ProfileModule::hasBranchFrequency</a></div><div class="ttdeci">bool hasBranchFrequency(const llvm::BasicBlock &amp;) const </div><div class="ttdoc">returns true if the execution frequency of the terminator of an given basicblock is known...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00089">ProfileModule.cpp:89</a></div></div>
+<div class="ttc" id="classProfileModule_html_a275910e8a0ec876899d60a68420927e2"><div class="ttname"><a href="classProfileModule.html#a275910e8a0ec876899d60a68420927e2">ProfileModule::print</a></div><div class="ttdeci">void print(const std::string) const </div><div class="ttdoc">It saves the LLVM module with all the profiling information in the given path. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00291">ProfileModule.cpp:291</a></div></div>
+<div class="ttc" id="classProfileModule_html_afed1fbe5ead415d6687dec691376b509"><div class="ttname"><a href="classProfileModule.html#afed1fbe5ead415d6687dec691376b509">ProfileModule::getCopy</a></div><div class="ttdeci">ProfileModule * getCopy() const </div><div class="ttdoc">Returns a copy of the Profiling Module. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00286">ProfileModule.cpp:286</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 29 2015 00:47:18 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 30 2015 22:07:30 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

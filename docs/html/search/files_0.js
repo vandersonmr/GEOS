@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['analysismethod_2eh',['AnalysisMethod.h',['../AnalysisMethod_8h.html',1,'']]]
+  ['branchanalysis_2ecpp',['BranchAnalysis.cpp',['../BranchAnalysis_8cpp.html',1,'']]]
 ];

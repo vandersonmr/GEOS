@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['databasemanager',['DatabaseManager',['../classDatabaseManager.html',1,'']]]
+  ['branchanalysis',['BranchAnalysis',['../classBranchAnalysis.html',1,'']]]
 ];

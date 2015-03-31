@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cost',['Cost',['../CostEstimator_8h.html#a63eab158c3939d16044f28fedc267267',1,'CostEstimator.h']]]
+  ['gcovversion',['GCOVVersion',['../namespacellvm_1_1GCOV.html#aa1bb0e8b1c685b30bf6d3247fb3feb08',1,'llvm::GCOV']]]
 ];

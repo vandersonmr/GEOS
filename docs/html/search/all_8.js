@@ -1,22 +1,11 @@
 var searchData=
 [
-  ['i',['I',['../ProfileModule_8cpp.html#a352bbbeb589f233b0c128127bae07005',1,'ProfileModule.cpp']]],
-  ['icmp',['ICmp',['../BBHash_8h.html#a1cac54f1961199852455d1cdf18e8525a1fa31f7df0a5328abd3c103219b95884',1,'BBHash.h']]],
-  ['id',['ID',['../PAPI_8cpp.html#af180e926633cde08a05ccbc3af397ee4',1,'PAPI.cpp']]],
-  ['inductionvariablesimplify',['InductionVariableSimplify',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5ae3715eed67639f26db9b5d70a126cc47',1,'GEOS.h']]],
-  ['init_5fpapi',['init_PAPI',['../PAPI_8cpp.html#a1b644c5a45b31fdd325203a8e057294f',1,'PAPI.cpp']]],
-  ['insert',['insert',['../classDatabaseManager.html#a2a26f10fb144de273aa8e50a27896dbb',1,'DatabaseManager']]],
-  ['insertelement',['InsertElement',['../BBHash_8h.html#a1cac54f1961199852455d1cdf18e8525af2639ece9f498c75f97b782dfaa2070f',1,'BBHash.h']]],
-  ['instcostm',['instCostM',['../AnalysisMethod_8h.html#a65b6de1fe68e7de9c7ec0bb36c7c71e2a1797b01df81cb4e30b8bbd34d5b337bb',1,'AnalysisMethod.h']]],
-  ['instm',['instM',['../AnalysisMethod_8h.html#a65b6de1fe68e7de9c7ec0bb36c7c71e2a4d8b3be116dc4b19938940cfdc6fad20',1,'AnalysisMethod.h']]],
-  ['instructioncombining',['InstructionCombining',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a0dc4d369f85330b42f676548c28b3040',1,'GEOS.h']]],
-  ['instructioncost_2ecpp',['InstructionCost.cpp',['../InstructionCost_8cpp.html',1,'']]],
-  ['instructioncostmethod',['InstructionCostMethod',['../classInstructionCostMethod.html',1,'']]],
-  ['instructionmethod',['InstructionMethod',['../classInstructionMethod.html',1,'']]],
-  ['instructionmethod_2ecpp',['InstructionMethod.cpp',['../InstructionMethod_8cpp.html',1,'']]],
-  ['instructionnamer',['InstructionNamer',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a1ab79cf046523776775dde58f8e1f43c',1,'GEOS.h']]],
-  ['instructionplushashmethod',['InstructionPlusHashMethod',['../classInstructionPlusHashMethod.html',1,'InstructionPlusHashMethod'],['../classInstructionPlusHashMethod.html#a09f57efa6a544d49e0ec90ae686a8ef8',1,'InstructionPlusHashMethod::InstructionPlusHashMethod()']]],
-  ['instructionplushashmethod_2ecpp',['InstructionPlusHashMethod.cpp',['../InstructionPlusHashMethod_8cpp.html',1,'']]],
-  ['instructionsimplifier',['InstructionSimplifier',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a0ee6ba68a5f5541b3bd7363e17acb134',1,'GEOS.h']]],
-  ['iterator',['iterator',['../classDatabaseManager.html#a919739e08f1249f1ec242a55e13fa7b6',1,'DatabaseManager']]]
+  ['handler',['handler',['../struct__papi__debug__option.html#abed704e04296f8ddcc7f9f7af037ee25',1,'_papi_debug_option']]],
+  ['hasbasicblockfrequency',['hasBasicBlockFrequency',['../classProfileModule.html#aa08f1aee243d7a0ab78447999d888398',1,'ProfileModule']]],
+  ['hasbranchfrequency',['hasBranchFrequency',['../classProfileModule.html#ad5ea685daffaa49096a5238498100d86',1,'ProfileModule']]],
+  ['hascallcost',['hasCallCost',['../classProfileModule.html#abf5c0f33b22a57b0654979126acf6fa2',1,'ProfileModule']]],
+  ['hasid',['hasID',['../classProfileModule.html#a5d66848d9c35e4cfd3837d105c1d72eb',1,'ProfileModule']]],
+  ['hasweight',['hasWeight',['../ProfileModule_8cpp.html#a3366eb6c938c0ca18abedf5fdcd4c2ac',1,'ProfileModule.cpp']]],
+  ['high',['High',['../InstructionCostEstimator_8h.html#a63eab158c3939d16044f28fedc267267a24c57acd029e3f96fede49402ea01e6f',1,'InstructionCostEstimator.h']]],
+  ['hw_5finfo',['hw_info',['../unionPAPI__option__t.html#aa0e60840f354c76d6bf1962777ffffe7',1,'PAPI_option_t']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['iterator',['iterator',['../classDatabaseManager.html#a919739e08f1249f1ec242a55e13fa7b6',1,'DatabaseManager']]]
+  ['blockiterator',['BlockIterator',['../classllvm_1_1GCOVFunction.html#a38c23c918b4162d3041304a8f5de6e0a',1,'llvm::GCOVFunction']]]
 ];

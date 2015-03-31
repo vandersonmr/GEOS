@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['analysismethodkind',['AnalysisMethodKind',['../AnalysisMethod_8h.html#a65b6de1fe68e7de9c7ec0bb36c7c71e2',1,'AnalysisMethod.h']]]
+  ['cost',['Cost',['../InstructionCostEstimator_8h.html#a63eab158c3939d16044f28fedc267267',1,'InstructionCostEstimator.h']]],
+  ['costanalysiskind',['CostAnalysisKind',['../CostEstimatorOptions_8h.html#ae1ecd711ae02755bf4cc29246fec44c6',1,'CostEstimatorOptions.h']]],
+  ['costestimatoroptionsset',['CostEstimatorOptionsSet',['../CostEstimatorOptions_8h.html#a846cac6f6c3288585fccaacda8fa3991',1,'CostEstimatorOptions.h']]]
 ];

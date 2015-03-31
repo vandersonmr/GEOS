@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>GEOS - Guide to Exploration of Otimization&#39;s Sequences: GEOS.h File Reference</title>
+<title>GEOS - Guide for Exploration of the Optimization Space: GEOS.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GEOS - Guide to Exploration of Otimization&#39;s Sequences
-   &#160;<span id="projectnumber">0.1a</span>
+   <div id="projectname">GEOS - Guide for Exploration of the Optimization Space
+   &#160;<span id="projectnumber">1.0a</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_ca719a3c9c7698fbb7b385e0ac0f0ef9.html">repos</a></li><li class="navelem"><a class="el" href="dir_c1cac778c5291f7d85175b6e39b12919.html">GEOS</a></li><li class="navelem"><a class="el" href="dir_1cdbcde0bf0bb7a27e932161f6b26d47.html">include</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_5c1f77b6d547333da17420fc98c4f94a.html">repos</a></li><li class="navelem"><a class="el" href="dir_8dc547b64c22af10c8c726a467f39b55.html">GEOS</a></li><li class="navelem"><a class="el" href="dir_70372965118cf4ea0a533a4ca110f7fa.html">include</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,21 +96,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This file contains declarations of <a class="el" href="namespaceGEOS.html" title="This namespace is responsable for applying passes into a ProfileModule, which contains the LLVM code ...">GEOS</a> main functions. Which are responsable for interfacing with heuristics for otimization's set exploration.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="AnalysisMethod_8h_source.html">AnalysisMethod.h</a>&quot;</code><br/>
-<code>#include &quot;llvm/PassManager.h&quot;</code><br/>
+<div class="textblock"><code>#include &quot;llvm/PassManager.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="ProfileModule_8h_source.html">ProfileModule/ProfileModule.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="CostEstimatorOptions_8h_source.html">CostEstimator/CostEstimatorOptions.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for GEOS.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="GEOS_8h__incl.png" border="0" usemap="#GEOS_8h" alt=""/></div>
 <map name="GEOS_8h" id="GEOS_8h">
-<area shape="rect" id="node2" href="AnalysisMethod_8h.html" title="This file contains declarations of every method for analysis the execution cost of a LLVM function..." alt="" coords="774,80,897,107"/><area shape="rect" id="node3" href="DatabaseManager_8h.html" title="This file contains declarations of the Basic Block Database Manager. " alt="" coords="537,155,673,181"/><area shape="rect" id="node16" href="ProfileModule_8h.html" title="This file contains implementation of the Profile Module. Which encapsulate a LLVMModule and also the ..." alt="" coords="971,229,1081,256"/><area shape="rect" id="node4" href="BBHash_8h.html" title="This file contains declarations of a Basic Block Hash representation. Which is responsable for creati..." alt="" coords="482,229,563,256"/></map>
+<area shape="rect" id="node3" href="ProfileModule_8h.html" title="This file contains declarations of the Profile Module. Which encapsulate a LLVMModule with profiling ..." alt="" coords="169,88,361,115"/><area shape="rect" id="node7" href="CostEstimatorOptions_8h.html" title="This file contains declarations of structures that contains options to customize the cost estimation ..." alt="" coords="386,81,576,122"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="GEOS_8h__dep__incl.png" border="0" usemap="#GEOS_8hdep" alt=""/></div>
 <map name="GEOS_8hdep" id="GEOS_8hdep">
-<area shape="rect" id="node2" href="main_8cpp.html" title="This file contains the implementation of the program cost analyser. It uses the the AnalysisMethods t..." alt="" coords="5,80,79,107"/><area shape="rect" id="node3" href="GEOS_8cpp.html" title="This file contains implementation of the GEOS&#39;s main functions. Which are responsable for interfacing..." alt="" coords="104,80,185,107"/><area shape="rect" id="node4" href="Random_8cpp.html" title="This file contains implementation of the GEOS&#39;s main functions. Which are responsable for interfacing..." alt="" coords="211,80,305,107"/><area shape="rect" id="node5" href="RandomOnFunction_8cpp.html" title="This file contains implementation of the GEOS&#39;s main functions. Which are responsable for interfacing..." alt="" coords="330,80,491,107"/><area shape="rect" id="node6" href="Test_8cpp.html" title="This file contains implementation of the GEOS&#39;s main functions. Which are responsable for interfacing..." alt="" coords="516,80,588,107"/></map>
+<area shape="rect" id="node2" href="GEOS_8cpp.html" title="This file contains implementation of GEOS&#39;s main functions. Which are responsable for interfacing heu..." alt="" coords="4,80,85,107"/></map>
 </div>
 </div>
 <p><a href="GEOS_8h_source.html">Go to the source code of this file.</a></p>
@@ -118,7 +119,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceGEOS"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html">GEOS</a></td></tr>
-<tr class="memdesc:namespaceGEOS"><td class="mdescLeft">&#160;</td><td class="mdescRight">This namespace is responsable for applying passes into a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing consistency of a LLVM Module and i...">ProfileModule</a>, which contains the LLVM code and the profiling information, and also analyse its execution time. <br/></td></tr>
+<tr class="memdesc:namespaceGEOS"><td class="mdescLeft">&#160;</td><td class="mdescRight">This namespace is responsable for applying passes into a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a>, which contains the LLVM code and the profiling information. It also analyse its execution time. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -192,9 +193,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a43f40b362cd1c6ad3ec96a4b4d1eb182"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAnalysisMethod.html">AnalysisMethod</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a43f40b362cd1c6ad3ec96a4b4d1eb182">GEOS::getAnalyser</a> (<a class="el" href="AnalysisMethod_8h.html#a65b6de1fe68e7de9c7ec0bb36c7c71e2">AnalysisMethodKind</a>, llvm::StringRef)</td></tr>
-<tr class="memdesc:a43f40b362cd1c6ad3ec96a4b4d1eb182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the specificated AnlysisMethod.  <a href="#a43f40b362cd1c6ad3ec96a4b4d1eb182">More...</a><br/></td></tr>
-<tr class="separator:a43f40b362cd1c6ad3ec96a4b4d1eb182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f4c7f7aa8502a2593a231a54f5d8be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#ae8f4c7f7aa8502a2593a231a54f5d8be">GEOS::init</a> ()</td></tr>
+<tr class="separator:ae8f4c7f7aa8502a2593a231a54f5d8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da23a2e03153cc8110acc3564843f81"><td class="memItemLeft" align="right" valign="top">llvm::Pass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a2da23a2e03153cc8110acc3564843f81">GEOS::getPass</a> (<a class="el" href="GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5">OptimizationKind</a>)</td></tr>
 <tr class="memdesc:a2da23a2e03153cc8110acc3564843f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instanciation of the optimization choosed.  <a href="#a2da23a2e03153cc8110acc3564843f81">More...</a><br/></td></tr>
 <tr class="separator:a2da23a2e03153cc8110acc3564843f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,14 +202,17 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab70447a5825083c7e87304cff472e13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like applyPasses this function apply a set of passes to the llvm module. However, it just apply those to an specific function.  <a href="#ab70447a5825083c7e87304cff472e13c">More...</a><br/></td></tr>
 <tr class="separator:ab70447a5825083c7e87304cff472e13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64d258559ffb715536bead46681ed475"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classProfileModule.html">ProfileModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a64d258559ffb715536bead46681ed475">GEOS::applyPasses</a> (const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;, llvm::FunctionPassManager &amp;)</td></tr>
-<tr class="memdesc:a64d258559ffb715536bead46681ed475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply Passes (Transformations) into a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing consistency of a LLVM Module and i...">ProfileModule</a>. Also ensures that its profiling information ramains consistent. The <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing consistency of a LLVM Module and i...">ProfileModule</a> given as parameter isn't modified, actualy all the modifications are made in a copy. This copy is returned as parameter.  <a href="#a64d258559ffb715536bead46681ed475">More...</a><br/></td></tr>
+<tr class="memdesc:a64d258559ffb715536bead46681ed475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply Passes (Transformations) into a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a>. Also ensures that its profiling information ramains consistent. The <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a> given as parameter isn't modified, actualy all the modifications are made in a copy. This copy is returned as parameter.  <a href="#a64d258559ffb715536bead46681ed475">More...</a><br/></td></tr>
 <tr class="separator:a64d258559ffb715536bead46681ed475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4313200e30faecd7c72466d282ffdd7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#ab4313200e30faecd7c72466d282ffdd7">GEOS::analyseFunctionExecutionTime</a> (llvm::StringRef, const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;, <a class="el" href="classAnalysisMethod.html">AnalysisMethod</a> *)</td></tr>
-<tr class="memdesc:ab4313200e30faecd7c72466d282ffdd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the execution time of a function from the <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing consistency of a LLVM Module and i...">ProfileModule</a> with the given <a class="el" href="classAnalysisMethod.html" title="Every execution time cost analysis must inherit from this class. ">AnalysisMethod</a> and returns it.  <a href="#ab4313200e30faecd7c72466d282ffdd7">More...</a><br/></td></tr>
-<tr class="separator:ab4313200e30faecd7c72466d282ffdd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac003dcf72dde5d7033bf499c31284cd2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#ac003dcf72dde5d7033bf499c31284cd2">GEOS::analyseExecutionTime</a> (const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;, <a class="el" href="classAnalysisMethod.html">AnalysisMethod</a> *)</td></tr>
-<tr class="memdesc:ac003dcf72dde5d7033bf499c31284cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the execution time of a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing consistency of a LLVM Module and i...">ProfileModule</a> with the given <a class="el" href="classAnalysisMethod.html" title="Every execution time cost analysis must inherit from this class. ">AnalysisMethod</a> and returns it.  <a href="#ac003dcf72dde5d7033bf499c31284cd2">More...</a><br/></td></tr>
-<tr class="separator:ac003dcf72dde5d7033bf499c31284cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc027c03aefd7369ce275a1f177ecaaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classProfileModule.html">ProfileModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#adc027c03aefd7369ce275a1f177ecaaf">GEOS::applyPassesModule</a> (const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;, llvm::FunctionPassManager &amp;, llvm::PassManager &amp;)</td></tr>
+<tr class="memdesc:adc027c03aefd7369ce275a1f177ecaaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply Passes (Transformations) into a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a>. Also ensures that its profiling information ramains consistent. The <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a> given as parameter isn't modified, actualy all the modifications are made in a copy. This copy is returned as parameter.  <a href="#adc027c03aefd7369ce275a1f177ecaaf">More...</a><br/></td></tr>
+<tr class="separator:adc027c03aefd7369ce275a1f177ecaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9bde28a8a87f51d9333282e888682e4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#af9bde28a8a87f51d9333282e888682e4">GEOS::analyseFunctionCost</a> (llvm::StringRef, const <a class="el" href="classProfileModule.html">ProfileModule</a> *,::CostEstimatorOptions)</td></tr>
+<tr class="memdesc:af9bde28a8a87f51d9333282e888682e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the execution time of a function from the <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a> with the given AnalysisMethod and returns it.  <a href="#af9bde28a8a87f51d9333282e888682e4">More...</a><br/></td></tr>
+<tr class="separator:af9bde28a8a87f51d9333282e888682e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0e4274febe448880c7deefb7e3a60c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a7a0e4274febe448880c7deefb7e3a60c">GEOS::analyseCost</a> (const <a class="el" href="classProfileModule.html">ProfileModule</a> *,::CostEstimatorOptions)</td></tr>
+<tr class="memdesc:a7a0e4274febe448880c7deefb7e3a60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the execution time of a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a> with the given AnalysisMethod and returns it.  <a href="#a7a0e4274febe448880c7deefb7e3a60c">More...</a><br/></td></tr>
+<tr class="separator:a7a0e4274febe448880c7deefb7e3a60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains declarations of <a class="el" href="namespaceGEOS.html" title="This namespace is responsable for applying passes into a ProfileModule, which contains the LLVM code ...">GEOS</a> main functions. Which are responsable for interfacing with heuristics for otimization's set exploration. </p>
@@ -328,14 +331,14 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="GEOS_8h_source.html#l00023">23</a> of file <a class="el" href="GEOS_8h_source.html">GEOS.h</a>.</p>
+<p>Definition at line <a class="el" href="GEOS_8h_source.html#l00021">21</a> of file <a class="el" href="GEOS_8h_source.html">GEOS.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 29 2015 00:47:19 for GEOS - Guide to Exploration of Otimization&#39;s Sequences by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 30 2015 22:07:30 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

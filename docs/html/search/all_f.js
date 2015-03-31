@@ -1,13 +1,8 @@
 var searchData=
 [
-  ['randm',['randM',['../AnalysisMethod_8h.html#a65b6de1fe68e7de9c7ec0bb36c7c71e2a0778eb7d3fcfd6dc25c466524284acf0',1,'AnalysisMethod.h']]],
-  ['random_2ecpp',['Random.cpp',['../Random_8cpp.html',1,'']]],
-  ['randomhash',['RandomHash',['../DatabaseManager_8cpp.html#a696b18841830e71dfa7fb6c9a0cef7a4',1,'DatabaseManager.cpp']]],
-  ['randommethod',['RandomMethod',['../classRandomMethod.html',1,'']]],
-  ['randommethod_2ecpp',['RandomMethod.cpp',['../RandomMethod_8cpp.html',1,'']]],
-  ['randomonfunction_2ecpp',['RandomOnFunction.cpp',['../RandomOnFunction_8cpp.html',1,'']]],
-  ['reassociate',['Reassociate',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a6f69c0907f02545fafb02f83689814e4',1,'GEOS.h']]],
-  ['repairfunctionprofiling',['repairFunctionProfiling',['../classProfileModule.html#a17cad3a7d951ee78efd7b30cc3a423ce',1,'ProfileModule']]],
-  ['repairprofiling',['repairProfiling',['../classProfileModule.html#acc69d694de56150b427b9a97218010f4',1,'ProfileModule']]],
-  ['ret',['Ret',['../BBHash_8h.html#a1cac54f1961199852455d1cdf18e8525a25d7142d3b1514bc4f4b4ac596862449',1,'BBHash.h']]]
+  ['operator_3c_3c',['operator&lt;&lt;',['../classlru_1_1cache.html#a36002e3ced86df6693dad59709f956d5',1,'lru::cache::operator&lt;&lt;()'],['../GCOV_8cpp.html#acdad0f6c5454953b03a4d49c54229db3',1,'operator&lt;&lt;():&#160;GCOV.cpp']]],
+  ['operator_5b_5d',['operator[]',['../classlru_1_1cache.html#a08af941d215ab1a5459d3e5af24e128b',1,'lru::cache::operator[](const K &amp;k)'],['../classlru_1_1cache.html#a472236602e88642c52ff2d5eb4134ee2',1,'lru::cache::operator[](const K &amp;k) const ']]],
+  ['optimizationkind',['OptimizationKind',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5',1,'GEOS.h']]],
+  ['options',['Options',['../structformatBranchInfo.html#a977253303497f2f1258d04c85688f2a7',1,'formatBranchInfo']]],
+  ['ovf_5finfo',['ovf_info',['../unionPAPI__option__t.html#a92af0d0541883c9fca0cabeb0aa9072d',1,'PAPI_option_t']]]
 ];

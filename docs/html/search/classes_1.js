@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bbhash',['BBHash',['../classBBHash.html',1,'']]]
+  ['abstractcachestate',['AbstractCacheState',['../structAbstractCacheState.html',1,'']]]
 ];

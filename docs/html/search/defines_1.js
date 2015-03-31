@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stack',['STACK',['../PAPI_8cpp.html#a2cc8f2d83039de1aef6590f9782921ee',1,'PAPI.cpp']]]
+  ['debug_5ftype',['DEBUG_TYPE',['../CostModel_8cpp.html#ad78e062f62e0d6e453941fb4ca843e4d',1,'DEBUG_TYPE():&#160;CostModel.cpp'],['../CallCost_8cpp.html#ad78e062f62e0d6e453941fb4ca843e4d',1,'DEBUG_TYPE():&#160;CallCost.cpp']]]
 ];

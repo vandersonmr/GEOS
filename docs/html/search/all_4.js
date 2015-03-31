@@ -1,7 +1,19 @@
 var searchData=
 [
-  ['earlycse',['EarlyCSE',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5ab2c9f9f5526207823da22e25f7665180',1,'GEOS.h']]],
-  ['end',['end',['../classDatabaseManager.html#ac6471007268f46e16e531730ece1cbe9',1,'DatabaseManager']]],
-  ['estimateexecutiontime',['estimateExecutionTime',['../classAnalysisMethod.html#afd5a51fbd8aec6dd39f51155805e9b38',1,'AnalysisMethod::estimateExecutionTime()'],['../classInstructionMethod.html#a65b25c5582210ff6f9a6ce5f1f6838bc',1,'InstructionMethod::estimateExecutionTime()'],['../classHashWeightedMethod.html#a8001089ccb3cb34ec6a07825f1727102',1,'HashWeightedMethod::estimateExecutionTime()'],['../classRandomMethod.html#ac1c0379dcdd48bbeaf287e38838ad03d',1,'RandomMethod::estimateExecutionTime()'],['../classFrequencyMethod.html#a3596e36d5837f5d20671089dfab07c73',1,'FrequencyMethod::estimateExecutionTime()'],['../classInstructionCostMethod.html#a1f2097ab2874ee073714ceeb50045a30',1,'InstructionCostMethod::estimateExecutionTime()'],['../classInstructionPlusHashMethod.html#abbac8b450ee415c8f03cfb99575b8c82',1,'InstructionPlusHashMethod::estimateExecutionTime()'],['../classProfMethod.html#ab0505bfd5a287c0fe042dd0efac159b7',1,'ProfMethod::estimateExecutionTime()']]],
-  ['extractelement',['ExtractElement',['../BBHash_8h.html#a1cac54f1961199852455d1cdf18e8525a534b45e4e8533fa4a26577c7f675eb93',1,'BBHash.h']]]
+  ['data_5fend',['data_end',['../struct__papi__address__map.html#aa9cf52530d546b7750bc15f9775425c5',1,'_papi_address_map']]],
+  ['data_5fstart',['data_start',['../struct__papi__address__map.html#a2213a9a8fa85e19ee7da6e2176cc75d8',1,'_papi_address_map']]],
+  ['deadcodeelimination',['DeadCodeElimination',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a24a8c391ec8500eb9a170798c21f2c2e',1,'GEOS.h']]],
+  ['deadinstelimination',['DeadInstElimination',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a7f60f19030c179eaebed8b802771ca3e',1,'GEOS.h']]],
+  ['deadstoreelimination',['DeadStoreElimination',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a131ca383118296cb4c269d8345f13392',1,'GEOS.h']]],
+  ['debug',['debug',['../unionPAPI__option__t.html#ae7a533ec577cd4654a78ecfd98d63ab9',1,'PAPI_option_t']]],
+  ['debug_5ftype',['DEBUG_TYPE',['../CostModel_8cpp.html#ad78e062f62e0d6e453941fb4ca843e4d',1,'DEBUG_TYPE():&#160;CostModel.cpp'],['../CallCost_8cpp.html#ad78e062f62e0d6e453941fb4ca843e4d',1,'DEBUG_TYPE():&#160;CallCost.cpp']]],
+  ['defdomain',['defdomain',['../unionPAPI__option__t.html#a49022b55db5a2de8b6fc9c93d64e3161',1,'PAPI_option_t']]],
+  ['defgranularity',['defgranularity',['../unionPAPI__option__t.html#ad079416d81dab0163b70a7e5f847dba8',1,'PAPI_option_t']]],
+  ['demoteregistertomemory',['DemoteRegisterToMemory',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a88e9e6c952a4661885988a186c6ed298',1,'GEOS.h']]],
+  ['derived',['derived',['../structevent__info.html#ab2b29cf4afd637ad4953860f956ab3fe',1,'event_info']]],
+  ['domain',['domain',['../struct__papi__domain__option.html#ac74a086a205ac87c19952b0e3357da03',1,'_papi_domain_option::domain()'],['../unionPAPI__option__t.html#a56d4dc4d4d131037afb8783e77223bd7',1,'PAPI_option_t::domain()']]],
+  ['dst',['Dst',['../structllvm_1_1GCOVEdge.html#a4e98c0fc8bcb2098f33ed2849baafda4',1,'llvm::GCOVEdge']]],
+  ['dst_5fbegin',['dst_begin',['../classllvm_1_1GCOVBlock.html#a3a26e5a25f6f02d95e99b560f487fcd3',1,'llvm::GCOVBlock']]],
+  ['dst_5fend',['dst_end',['../classllvm_1_1GCOVBlock.html#a011d362e0402c50cbedf80663321fdd3',1,'llvm::GCOVBlock']]],
+  ['dump',['dump',['../classllvm_1_1GCOVFile.html#ac0d11bc91e382e7b4956cb4cdf538468',1,'llvm::GCOVFile::dump()'],['../classllvm_1_1GCOVFunction.html#aac80cd9f7f6d6d8e3f3616c6b4f2764d',1,'llvm::GCOVFunction::dump()'],['../classllvm_1_1GCOVBlock.html#a2315de1b7e41c118354aaef4dd3c0bd9',1,'llvm::GCOVBlock::dump()']]]
 ];

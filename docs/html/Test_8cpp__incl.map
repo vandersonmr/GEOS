@@ -1,7 +1,0 @@
-<map id="Test.cpp" name="Test.cpp">
-<area shape="rect" id="node2" href="$GEOS_8h.html" title="This file contains declarations of GEOS main functions. Which are responsable for interfacing with he..." alt="" coords="472,80,541,107"/>
-<area shape="rect" id="node3" href="$AnalysisMethod_8h.html" title="This file contains declarations of every method for analysis the execution cost of a LLVM function..." alt="" coords="445,155,568,181"/>
-<area shape="rect" id="node4" href="$DatabaseManager_8h.html" title="This file contains declarations of the Basic Block Database Manager. " alt="" coords="491,229,628,256"/>
-<area shape="rect" id="node17" href="$ProfileModule_8h.html" title="This file contains implementation of the Profile Module. Which encapsulate a LLVMModule and also the ..." alt="" coords="282,304,392,331"/>
-<area shape="rect" id="node5" href="$BBHash_8h.html" title="This file contains declarations of a Basic Block Hash representation. Which is responsable for creati..." alt="" coords="681,304,761,331"/>
-</map>

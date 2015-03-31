@@ -1,0 +1,8 @@
+<map id="CostAnalysis.h" name="CostAnalysis.h">
+<area shape="rect" id="node2" href="$BranchAnalysis_8cpp.html" title="This file contains declarations and implementation of unconditional branch analysis. " alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node3" href="$CacheAnalysis_8cpp.html" title="This file contains declarations and implementation of the instruction cache analysis and also use of ..." alt="" coords="166,80,297,107"/>
+<area shape="rect" id="node4" href="$CallCostAnalysis_8cpp.html" title="This file contains declarations and implementation of Call Cost analysis. " alt="" coords="323,80,467,107"/>
+<area shape="rect" id="node5" href="$StaticCostEstimator_8cpp.html" title="This file contains declarations and implementation of an instruction cost anaysis that is NOT sensiti..." alt="" coords="491,80,653,107"/>
+<area shape="rect" id="node6" href="$TTIInstructionAnalysis_8cpp.html" title="This file contains declarations and implementation of an instruction cost anaysis that is sensitive t..." alt="" coords="677,80,853,107"/>
+<area shape="rect" id="node7" href="$CostEstimator_8cpp.html" title="This file contains the implementation of the program cost analyser. It uses the the AnalysisMethods t..." alt="" coords="877,80,1005,107"/>
+</map>

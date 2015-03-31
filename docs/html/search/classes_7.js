@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['randommethod',['RandomMethod',['../classRandomMethod.html',1,'']]]
+  ['instructioncostestimator',['InstructionCostEstimator',['../classInstructionCostEstimator.html',1,'']]]
 ];
