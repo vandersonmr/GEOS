@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GEOS by vandersonmr</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>GEOS</h1>
+        <p>Guide for Exploration of the Optimization Space</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/vandersonmr/GEOS" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/vandersonmr/GEOS/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/vandersonmr/GEOS/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <p>The Guide for Exploration of the Optimization Space is a LLVM tool designed for be used by heuristics in the search for good optimization sequences. This tool, which is also known as GEOS, provides a set of analysis that can mensure the execution time of a LLVM code. By invoking GEOS the heuristic can be guided without executing the code, what can be seriously faster.</p>
+
+<h3>
+<a id="source-code" class="anchor" href="#source-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Source code</h3>
+
+<ul>
+<li>Get the sources: <code>git clone https://github.com/vandersonmr/GEOS</code>
+</li>
+</ul>
+
+<h3>
+<a id="dependences" class="anchor" href="#dependences" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependences</h3>
+
+<ul>
+<li>GEOS 1.0 needs LLVM 3.6 and Clang 3.6.</li>
+</ul>
+
+<h3>
+<a id="building" class="anchor" href="#building" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building</h3>
+
+<p>GEOS can be easily compiled with CMake:</p>
+
+<pre><code>cd build 
+cmake ..
+sudo make install
+</code></pre>
+
+<h2>
+<a id="how-to-use-it" class="anchor" href="#how-to-use-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use it</h2>
+
+<p>GEOS can be used as an API as the follow example.</p>
+
+<pre><code>  // Initialize all needed structures and passes from LLVM.
+  GEOS::init();
+
+  LLVMContext &amp;Context = getGlobalContext();
+  SMDiagnostic Error;
+  cl::ParseCommandLineOptions(argc, argv);
+  Module *MyModule = 
+    parseIRFile(LLVMFilename.c_str(), Error, Context).release();                 
+
+  // Instanciate a ProfileModule without any profiling yet.
+  ProfileModule *PModule = new ProfileModule(MyModule);                           
+
+  // Read gcov profile and set automatically all options for analysis.
+  CostEstimatorOptions &amp;Opts = populatePModule(PModule);
+
+  // Estimate time cost
+  auto Cost = GEOS::analyseCost(PModule, Opts);
+</code></pre>
+
+<p>To generate the GCOV profiling you need to compile your code with the following flags.</p>
+
+<pre><code>clang -O0 -g -coverage test.c
+./a.out
+</code></pre>
+
+<p>If needed the <a href="">documentation</a> can be used to better understand.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>GEOS is licensed under the <a href="LICENSE.txt">MIT license</a>.</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>This project was developed at the State University of Maringá by Vanderson M. do Rosario (<a href="https://github.com/vandersonmr" class="user-mention">@vandersonmr</a>).</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>You can send an email to <a href="mailto:vandersonmr2@gmail.com">vandersonmr2@gmail.com</a></p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/vandersonmr">vandersonmr</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
