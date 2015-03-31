@@ -1,0 +1,19 @@
+<map id="ProfileModule.h" name="ProfileModule.h">
+<area shape="rect" id="node2" href="$CostAnalysis_8h.html" title="This file contains declarations of every method for analysis of the execution cost of a LLVM function..." alt="" coords="518,80,625,107"/>
+<area shape="rect" id="node9" href="$CostEstimator_8h.html" title="This file contains declarations of the cost estimator interface. " alt="" coords="911,80,1025,107"/>
+<area shape="rect" id="node11" href="$GEOS_8h.html" title="This file contains declarations of GEOS main functions. Which are responsable for interfacing with he..." alt="" coords="1049,80,1119,107"/>
+<area shape="rect" id="node12" href="$CallCostReader_8h.html" title="CallCostReader.h" alt="" coords="1143,80,1265,107"/>
+<area shape="rect" id="node14" href="$GCOVReader_8h.html" title="GCOVReader.h" alt="" coords="1290,80,1400,107"/>
+<area shape="rect" id="node16" href="$StaticProfiling_8h.html" title="This file contains declarations of Profile Loader. It uses static analysis to mensure the execution f..." alt="" coords="1425,80,1536,107"/>
+<area shape="rect" id="node18" href="$ProfileModule_8cpp.html" title="This file contains implementation of the Profile Module. Which encapsulate a LLVMModule and its profi..." alt="" coords="1561,80,1684,107"/>
+<area shape="rect" id="node3" href="$BranchAnalysis_8cpp.html" title="This file contains declarations and implementation of unconditional branch analysis. " alt="" coords="5,155,140,181"/>
+<area shape="rect" id="node4" href="$CacheAnalysis_8cpp.html" title="This file contains declarations and implementation of the instruction cache analysis and also use of ..." alt="" coords="166,155,297,181"/>
+<area shape="rect" id="node5" href="$CallCostAnalysis_8cpp.html" title="This file contains declarations and implementation of Call Cost analysis. " alt="" coords="323,155,467,181"/>
+<area shape="rect" id="node6" href="$StaticCostEstimator_8cpp.html" title="This file contains declarations and implementation of an instruction cost anaysis that is NOT sensiti..." alt="" coords="491,155,653,181"/>
+<area shape="rect" id="node7" href="$TTIInstructionAnalysis_8cpp.html" title="This file contains declarations and implementation of an instruction cost anaysis that is sensitive t..." alt="" coords="677,155,853,181"/>
+<area shape="rect" id="node8" href="$CostEstimator_8cpp.html" title="This file contains the implementation of the program cost analyser. It uses the the AnalysisMethods t..." alt="" coords="877,155,1005,181"/>
+<area shape="rect" id="node10" href="$GEOS_8cpp.html" title="This file contains implementation of GEOS&#39;s main functions. Which are responsable for interfacing heu..." alt="" coords="1029,155,1111,181"/>
+<area shape="rect" id="node13" href="$CallCostReader_8cpp.html" title="CallCostReader.cpp" alt="" coords="1136,155,1271,181"/>
+<area shape="rect" id="node15" href="$GCOVReader_8cpp.html" title="GCOVReader.cpp" alt="" coords="1296,155,1421,181"/>
+<area shape="rect" id="node17" href="$StaticProfiling_8cpp.html" title="StaticProfiling.cpp" alt="" coords="1446,155,1572,181"/>
+</map>

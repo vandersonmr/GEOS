@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['machineast',['MachineAST',['../structMachineAST.html',1,'MachineAST'],['../structMachineAST.html#ade5a7abac9dd8358998ab8a2c431e0f7',1,'MachineAST::MachineAST()']]],
+  ['machinefunctionanalysis_2ecpp',['MachineFunctionAnalysis.cpp',['../MachineFunctionAnalysis_8cpp.html',1,'']]],
+  ['manglecoveragepath',['mangleCoveragePath',['../GCOV_8cpp.html#a9dc80501043000f0bf75820ebfef69c4',1,'GCOV.cpp']]],
+  ['map',['map',['../struct__papi__shared__lib__info.html#a96185f1a5bf09f26ed37575018aa0b26',1,'_papi_shared_lib_info::map()'],['../namespacelru.html#a11ae01895cb21fc7046dadeffaf47cc2',1,'lru::map()']]],
+  ['mark',['Mark',['../StaticProfiling_8cpp.html#ad4318329170d5b87269b3dc0a5c70bd8',1,'StaticProfiling.cpp']]],
+  ['mast',['MAST',['../CacheAnalysis_8cpp.html#a7b147e441d742f9aefedf8d7459df9ce',1,'CacheAnalysis.cpp']]],
+  ['matchpairwisereduction',['matchPairwiseReduction',['../CostModel_8cpp.html#a8e04bb8457cd584ee39fc0b22c3a3006',1,'CostModel.cpp']]],
+  ['matchpairwisereductionatlevel',['matchPairwiseReductionAtLevel',['../CostModel_8cpp.html#a5340969808526287dae546fc84d8470f',1,'CostModel.cpp']]],
+  ['matchpairwiseshufflemask',['matchPairwiseShuffleMask',['../CostModel_8cpp.html#a4dd87fd2ea3bf80c36dfc658c0b311cc',1,'CostModel.cpp']]],
+  ['matchvectorsplittingreduction',['matchVectorSplittingReduction',['../CostModel_8cpp.html#a7d6911f274dc8aa8e875e8e3123cba5c',1,'CostModel.cpp']]],
+  ['max_5fdegree',['max_degree',['../struct__papi__multiplex__option.html#a02c7a9cb956c9c4bdff2bb4d03f2e6ba',1,'_papi_multiplex_option']]],
+  ['medium',['Medium',['../InstructionCostEstimator_8h.html#a63eab158c3939d16044f28fedc267267a8cfb9311a439a51b14159ed0970f398b',1,'InstructionCostEstimator.h']]],
+  ['mem_5fhierarchy',['mem_hierarchy',['../struct__papi__hw__info.html#a54962535c96468143bfa59ee8fea7dac',1,'_papi_hw_info']]],
+  ['memcpyopt',['MemCpyOpt',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5abe07fed8addc43a91ae8ba1018a4b3d3',1,'GEOS.h']]],
+  ['mergedloadstoremotion',['MergedLoadStoreMotion',['../GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a527ed22e9bd4554234f7f64e51f555c0',1,'GEOS.h']]],
+  ['mhz',['mhz',['../struct__papi__hw__info.html#a21bd1eef703d322d4b2e0d44b4cf3dbf',1,'_papi_hw_info']]],
+  ['model',['model',['../struct__papi__hw__info.html#add02e8d704ea627b45b4bb9fe00fb989',1,'_papi_hw_info']]],
+  ['model_5fstring',['model_string',['../struct__papi__hw__info.html#ae96fbb35f6475f4cf9e34a1ccd9ae689',1,'_papi_hw_info']]],
+  ['multiplex',['multiplex',['../unionPAPI__option__t.html#a9f7a5b2215788b17a9953a39e7101fae',1,'PAPI_option_t']]]
+];

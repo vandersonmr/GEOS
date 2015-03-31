@@ -1,0 +1,7 @@
+<map id="CacheAnalysis.cpp" name="CacheAnalysis.cpp">
+<area shape="rect" id="node2" href="$CostAnalysis_8h.html" title="This file contains declarations of every method for analysis of the execution cost of a LLVM function..." alt="" coords="111,88,305,115"/>
+<area shape="rect" id="node19" href="$InstructionCostEstimator_8h.html" title="This file contains declarations and implementation of a LLVM llvm::Instruction Cost Estimator..." alt="" coords="2553,81,2721,122"/>
+<area shape="rect" id="node21" href="$LRUCache_8h.html" title="CostEstimator/LRUCache.h" alt="" coords="2746,88,2928,115"/>
+<area shape="rect" id="node3" href="$CostEstimatorOptions_8h.html" title="This file contains declarations of structures that contains options to customize the cost estimation ..." alt="" coords="5,171,195,213"/>
+<area shape="rect" id="node5" href="$ProfileModule_8h.html" title="This file contains declarations of the Profile Module. Which encapsulate a LLVMModule with profiling ..." alt="" coords="220,179,412,205"/>
+</map>
