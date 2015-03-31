@@ -7,9 +7,50 @@ The Guide for Exploration of the Optimization Space is a LLVM tool designed for 
 
 ### Dependences
 
+* GEOS 1.0 needs LLVM 3.6 and Clang 3.6.
+
 ### Building
 
+GEOS can be easily compiled with CMake:
+
+```
+cd build 
+cmake ..
+sudo make install
+```
+
 ## How to use it
+
+GEOS can be used as an API as the follow example.
+
+```
+  // Initialize all needed structures and passes from LLVM.
+  GEOS::init();
+  
+  LLVMContext &Context = getGlobalContext();
+  SMDiagnostic Error;
+  cl::ParseCommandLineOptions(argc, argv);
+  Module *MyModule = 
+    parseIRFile(LLVMFilename.c_str(), Error, Context).release();                 
+    
+  // Instanciate a ProfileModule without any profiling yet.
+  ProfileModule *PModule = new ProfileModule(MyModule);                           
+  
+  // Read gcov profile and set automatically all options for analysis.
+  CostEstimatorOptions &Opts = populatePModule(PModule);
+  
+  // Estimate time cost
+  auto Cost = GEOS::analyseCost(PModule, Opts);
+```
+
+To generate the GCOV profiling you need to compile your code with the following flags.
+
+```
+clang -O0 -g -coverage test.c
+./a.out
+```
+
+If needed the [documentation]() can be used to better understand.
 
 ## License
 
