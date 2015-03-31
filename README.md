@@ -13,5 +13,5 @@ The Guide for Exploration of the Optimization Space is a LLVM tool designed for 
 
 ## License
 
-GEOS is licensed under the [MIT license](LICENSE).
+GEOS is licensed under the [MIT license](LICENSE.txt).
 
