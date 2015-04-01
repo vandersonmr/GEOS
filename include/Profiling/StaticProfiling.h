@@ -14,6 +14,6 @@
 
 #include "ProfileModule/ProfileModule.h"
 
-/// \brief It loads in the ProfileModule branch frequency information estimated
-/// by LLVM static analysis.
+/// \brief This function estimate the execution frequency of each branch and
+/// add this information in the Profile Module.
 void loadStaticProfiling(ProfileModule*);

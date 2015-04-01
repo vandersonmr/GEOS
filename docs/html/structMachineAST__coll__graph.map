@@ -1,4 +1,4 @@
 <map id="MachineAST" name="MachineAST">
 <area shape="rect" id="node2" href="$classFunctionPass.html" title="FunctionPass" alt="" coords="5,5,107,32"/>
-<area shape="rect" id="node6" href="$classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module..." alt="" coords="453,5,552,32"/>
+<area shape="rect" id="node6" href="$classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself..." alt="" coords="453,5,552,32"/>
 </map>

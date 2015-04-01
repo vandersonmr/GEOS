@@ -7,7 +7,7 @@
 //===----------------------------------------------------------------------===//
 ///
 /// \file
-/// \brief This file contains implementation of the Profile Module. Which
+/// \brief This file contains implementation of the ProfileModule, which
 /// encapsulate a LLVMModule and its profiling information. 
 ///
 //===----------------------------------------------------------------------===//

@@ -1,4 +1,4 @@
 <map id="CostAnalysis.h" name="CostAnalysis.h">
 <area shape="rect" id="node2" href="$CostEstimatorOptions_8h.html" title="This file contains declarations of structures that contains options to customize the cost estimation ..." alt="" coords="5,81,195,122"/>
-<area shape="rect" id="node4" href="$ProfileModule_8h.html" title="This file contains declarations of the Profile Module. Which encapsulate a LLVMModule with profiling ..." alt="" coords="220,88,412,115"/>
+<area shape="rect" id="node4" href="$ProfileModule_8h.html" title="This file contains declarations of the Profile Module, which encapsulate a LLVMModule with profiling ..." alt="" coords="220,88,412,115"/>
 </map>

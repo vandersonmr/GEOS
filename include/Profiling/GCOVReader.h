@@ -17,8 +17,8 @@
 
 #include <vector>
 
-/// \brief It loads in the ProfileModule branch frequency information from GCOVs 
-/// files.
+/// \brief This function loads GCOV files and add the profiling information of
+/// them in the ProfileModule given as paramter.
 void loadGCOV(std::vector<llvm::MemoryBuffer*>, 
     std::vector<llvm::MemoryBuffer*>, ProfileModule*);
 

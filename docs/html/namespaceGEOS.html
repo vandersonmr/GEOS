@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>This namespace is responsable for applying passes into a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a>, which contains the LLVM code and the profiling information. It also analyse its execution time.  
+<p>This namespace is responsible for applying passes into a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a>, analyse its execution time and make copies of it.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -96,26 +96,26 @@ Functions</h2></td></tr>
 <tr class="memitem:ae8f4c7f7aa8502a2593a231a54f5d8be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#ae8f4c7f7aa8502a2593a231a54f5d8be">init</a> ()</td></tr>
 <tr class="separator:ae8f4c7f7aa8502a2593a231a54f5d8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da23a2e03153cc8110acc3564843f81"><td class="memItemLeft" align="right" valign="top">llvm::Pass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a2da23a2e03153cc8110acc3564843f81">getPass</a> (<a class="el" href="GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5">OptimizationKind</a>)</td></tr>
-<tr class="memdesc:a2da23a2e03153cc8110acc3564843f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instanciation of the optimization choosed.  <a href="#a2da23a2e03153cc8110acc3564843f81">More...</a><br/></td></tr>
+<tr class="memdesc:a2da23a2e03153cc8110acc3564843f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instanciation of the chosen OptimizationKind.  <a href="#a2da23a2e03153cc8110acc3564843f81">More...</a><br/></td></tr>
 <tr class="separator:a2da23a2e03153cc8110acc3564843f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab70447a5825083c7e87304cff472e13c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classProfileModule.html">ProfileModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#ab70447a5825083c7e87304cff472e13c">applyPassesOnFunction</a> (llvm::StringRef, const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;, llvm::FunctionPassManager &amp;)</td></tr>
-<tr class="memdesc:ab70447a5825083c7e87304cff472e13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like applyPasses this function apply a set of passes to the llvm module. However, it just apply those to an specific function.  <a href="#ab70447a5825083c7e87304cff472e13c">More...</a><br/></td></tr>
+<tr class="memdesc:ab70447a5825083c7e87304cff472e13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like applyPasses this function applies a sequence of passes. But differently from applyPasses this passes are just applied to the function with the name given as parameter.  <a href="#ab70447a5825083c7e87304cff472e13c">More...</a><br/></td></tr>
 <tr class="separator:ab70447a5825083c7e87304cff472e13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64d258559ffb715536bead46681ed475"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classProfileModule.html">ProfileModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a64d258559ffb715536bead46681ed475">applyPasses</a> (const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;, llvm::FunctionPassManager &amp;)</td></tr>
-<tr class="memdesc:a64d258559ffb715536bead46681ed475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply Passes (Transformations) into a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a>. Also ensures that its profiling information ramains consistent. The <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a> given as parameter isn't modified, actualy all the modifications are made in a copy. This copy is returned as parameter.  <a href="#a64d258559ffb715536bead46681ed475">More...</a><br/></td></tr>
+<tr class="memdesc:a64d258559ffb715536bead46681ed475"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function applies a sequence of passes (Transformations) into a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a>. The passes are not applied into the <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a> given as parameter, actually, all modifications are made in a copy and this copy is returned as parameter. Futher, it ensures the profiling consistency.  <a href="#a64d258559ffb715536bead46681ed475">More...</a><br/></td></tr>
 <tr class="separator:a64d258559ffb715536bead46681ed475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc027c03aefd7369ce275a1f177ecaaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classProfileModule.html">ProfileModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#adc027c03aefd7369ce275a1f177ecaaf">applyPassesModule</a> (const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;, llvm::FunctionPassManager &amp;, llvm::PassManager &amp;)</td></tr>
-<tr class="memdesc:adc027c03aefd7369ce275a1f177ecaaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply Passes (Transformations) into a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a>. Also ensures that its profiling information ramains consistent. The <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a> given as parameter isn't modified, actualy all the modifications are made in a copy. This copy is returned as parameter.  <a href="#adc027c03aefd7369ce275a1f177ecaaf">More...</a><br/></td></tr>
+<tr class="memdesc:adc027c03aefd7369ce275a1f177ecaaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function works as applyPasses. The only difference is that this one can apply FunctionPasses AND ModulePasses.  <a href="#adc027c03aefd7369ce275a1f177ecaaf">More...</a><br/></td></tr>
 <tr class="separator:adc027c03aefd7369ce275a1f177ecaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9bde28a8a87f51d9333282e888682e4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#af9bde28a8a87f51d9333282e888682e4">analyseFunctionCost</a> (llvm::StringRef, const <a class="el" href="classProfileModule.html">ProfileModule</a> *,::CostEstimatorOptions)</td></tr>
-<tr class="memdesc:af9bde28a8a87f51d9333282e888682e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the execution time of a function from the <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a> with the given AnalysisMethod and returns it.  <a href="#af9bde28a8a87f51d9333282e888682e4">More...</a><br/></td></tr>
+<tr class="memdesc:af9bde28a8a87f51d9333282e888682e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the execution time of a function, that the name is a parameter, using the given AnalysisMethod and options.  <a href="#af9bde28a8a87f51d9333282e888682e4">More...</a><br/></td></tr>
 <tr class="separator:af9bde28a8a87f51d9333282e888682e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a0e4274febe448880c7deefb7e3a60c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a7a0e4274febe448880c7deefb7e3a60c">analyseCost</a> (const <a class="el" href="classProfileModule.html">ProfileModule</a> *,::CostEstimatorOptions)</td></tr>
-<tr class="memdesc:a7a0e4274febe448880c7deefb7e3a60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the execution time of a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a> with the given AnalysisMethod and returns it.  <a href="#a7a0e4274febe448880c7deefb7e3a60c">More...</a><br/></td></tr>
+<tr class="memdesc:a7a0e4274febe448880c7deefb7e3a60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the execution time of a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a> using the given AnalysisMethod and options.  <a href="#a7a0e4274febe448880c7deefb7e3a60c">More...</a><br/></td></tr>
 <tr class="separator:a7a0e4274febe448880c7deefb7e3a60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This namespace is responsable for applying passes into a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a>, which contains the LLVM code and the profiling information. It also analyse its execution time. </p>
+<div class="textblock"><p>This namespace is responsible for applying passes into a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a>, analyse its execution time and make copies of it. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a7a0e4274febe448880c7deefb7e3a60c"></a>
 <div class="memitem">
@@ -141,7 +141,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Estimate the execution time of a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a> with the given AnalysisMethod and returns it. </p>
+<p>Estimate the execution time of a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a> using the given AnalysisMethod and options. </p>
 
 </div>
 </div>
@@ -175,13 +175,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Estimate the execution time of a function from the <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a> with the given AnalysisMethod and returns it. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">The</td><td>first param is the name of the function that the analysis should be done. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Estimate the execution time of a function, that the name is a parameter, using the given AnalysisMethod and options. </p>
 
 </div>
 </div>
@@ -209,7 +203,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Apply Passes (Transformations) into a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a>. Also ensures that its profiling information ramains consistent. The <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a> given as parameter isn't modified, actualy all the modifications are made in a copy. This copy is returned as parameter. </p>
+<p>This function applies a sequence of passes (Transformations) into a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a>. The passes are not applied into the <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a> given as parameter, actually, all modifications are made in a copy and this copy is returned as parameter. Futher, it ensures the profiling consistency. </p>
 
 </div>
 </div>
@@ -243,7 +237,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Apply Passes (Transformations) into a <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a>. Also ensures that its profiling information ramains consistent. The <a class="el" href="classProfileModule.html" title="This class is responsable for encapsulating, copying, and mantaing the consistency of its LLVM Module...">ProfileModule</a> given as parameter isn't modified, actualy all the modifications are made in a copy. This copy is returned as parameter. </p>
+<p>This function works as applyPasses. The only difference is that this one can apply FunctionPasses AND ModulePasses. </p>
 
 </div>
 </div>
@@ -277,13 +271,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Like applyPasses this function apply a set of passes to the llvm module. However, it just apply those to an specific function. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">the</td><td>first param is the function name that the passes should be applied. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Like applyPasses this function applies a sequence of passes. But differently from applyPasses this passes are just applied to the function with the name given as parameter. </p>
 
 </div>
 </div>
@@ -301,7 +289,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the instanciation of the optimization choosed. </p>
+<p>Returns the instanciation of the chosen OptimizationKind. </p>
 
 <p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00050">50</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
 
@@ -329,7 +317,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 30 2015 22:07:30 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 1 2015 15:54:24 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

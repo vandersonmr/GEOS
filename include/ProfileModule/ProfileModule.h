@@ -7,7 +7,7 @@
 //===----------------------------------------------------------------------===//
 ///
 /// \file
-/// \brief This file contains declarations of the Profile Module. Which
+/// \brief This file contains declarations of the Profile Module, which
 /// encapsulate a LLVMModule with profiling information. 
 ///
 //===----------------------------------------------------------------------===//
@@ -20,66 +20,68 @@
 
 #include <vector>
 
-/// \brief This class is responsable for encapsulating, copying, and mantaing 
-/// the consistency of its LLVM Module and its profiling information.
+/// \brief This class is responsible for encapsulating profile information with
+/// LLVM code, make copies of itself, and maintain the consistency of itself.
 class ProfileModule {
   private:
     llvm::Module *LLVMModule;
 
-    /// \brief Uses the predecessors of a Basic Block to estimate and update its 
-    ///  execution frequency. 
+    /// \brief This function uses the predecessors of the given basic block to 
+    /// estimate and update its execution frequency. 
     uint64_t getExecutionFreqUsingPredecessors(llvm::BasicBlock *BB);
 
-    /// \brief Uses the predecessors of a Basic Block to estimate and update its 
-    ///  execution frequency. 
+    /// \brief This function uses the predecessors of the given basic block to 
+    /// estimate and update its execution frequency. 
     uint64_t getExecutionFreqUsingSuccessors(llvm::BasicBlock *BB);
   public:
-    /// \brief For each Basic Block in the CFG its predecessors and successors 
-    /// are used to estimate and update its execution frequency.
+    /// \brief For each basic block in the CFG of the given function, its 
+    /// predecessors and successors are used to estimate and update its 
+    /// execution frequency.
     void repairFunctionProfiling(llvm::Function*);
 
     /// \brief Repair each function in the module.
     void repairProfiling();
 
-    /// \brief returns true if the execution frequency of the given basicblock
+    /// \brief Return true if the execution frequency of the given basic block
     /// is known, otherwise returns false.
     bool hasBasicBlockFrequency(const llvm::BasicBlock&) const;
 
-    /// \brief returns the execution frequency of the given basicblock, and if 
-    /// it doesn't have the frequency it will return 0.
+    /// \brief Returns the execution frequency of the given basic block, but if 
+    /// it doesn't have the frequency, it will return 0.
     uint64_t getBasicBlockFrequency(const llvm::BasicBlock&) const; 
 
-    /// \brief sets the execution frequency of an given basic block.
+    /// \brief Sets the execution frequency of a basic block.
     void setBasicBlockFrequency(llvm::BasicBlock&, uint64_t); 
 
-    /// \brief returns true if the execution frequency of the terminator of an 
-    /// given basicblock is known, otherwise returns false.
+    /// \brief If the basic block ends with a branch as terminator instruction
+    /// and the frequencies of this branch are known, it will return true. 
+    /// Otherwise, it will return false.
     bool hasBranchFrequency(const llvm::BasicBlock&) const;
 
-    /// \brief returns a vector with the execution frequency for each possible 
+    /// \brief Returns a vector with the execution frequency for each possible 
     /// path that can be taken by the terminator instruction of a given 
     /// basicblock. If it doesn't have the frequency it will return 0.
     std::vector<uint32_t> getBranchFrequency(const llvm::BasicBlock&) const; 
 
-    /// \brief sets the execution frequency for each path that can be taken
+    /// \brief Sets the execution frequency for each path that can be taken
     /// by the terminator instruction of the given basicblock.
     void setBranchFrequency(llvm::BasicBlock&, std::vector<uint32_t>&); 
 
-    /// \brief returns true if the instruction have an ID, otherwise 
+    /// \brief Returns true if the instruction have an ID, otherwise 
     /// returns false.
     bool hasID(const llvm::Instruction &I) const;
 
     /// \brief Returns the ID of a given instruction.
     int  getID(const llvm::Instruction &I);
 
-    /// \brief returns true if the call instruction have a cost, otherwise 
+    /// \brief Returns true if the call instruction have a cost, otherwise 
     /// returns false.
     bool hasCallCost(const llvm::CallInst&) const;
 
-    /// \brief Returns the call's cost of a given call.
+    /// \brief Returns the call cost of a given call instruction.
     double getCallCost(const llvm::CallInst&) const; 
 
-    /// \brief Sets the cost of a given call.
+    /// \brief Sets the cost of a given call instruction.
     void setCallCost(llvm::CallInst&, double); 
 
     ProfileModule(llvm::Module*);
@@ -87,7 +89,7 @@ class ProfileModule {
     /// \brief Returns its LLVM Module.
     llvm::Module* getLLVMModule() const;
 
-    /// \brief Returns a copy of the Profiling Module.
+    /// \brief Make a copy of the Profiling Module.
     ProfileModule* getCopy() const;
 
     /// \brief It saves the LLVM module with all the profiling information

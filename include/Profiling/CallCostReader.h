@@ -12,5 +12,7 @@
 
 #include "ProfileModule/ProfileModule.h"
 
-/// \brief It loads call's cost of external functions in the ProfileModule.
+/// \brief This function loads from a file the execution cost of external
+/// function calls and adds this information in the ProfileModule. The first
+/// parameter is the file path.
 void loadCallCost(llvm::StringRef, ProfileModule*);

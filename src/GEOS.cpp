@@ -1,6 +1,6 @@
-//===-- GEOS.cpp - Guide to Exploration of Otimization's Set -*- C++ -*---===//
+//== GEOS.cpp - Guide for Exploration of the Otimization's Space -*- C++ -*-==//
 //
-// The LLVM Time Cost Analyser Infrastructure
+//              The LLVM Time Cost Analyser Infrastructure
 //
 // This file is distributed under the MIT License. See LICENSE.txt for details.
 //
