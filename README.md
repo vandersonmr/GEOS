@@ -50,7 +50,7 @@ clang -O0 -g -coverage test.c
 ./a.out
 ```
 
-If needed the [documentation](https://vandersonmr.github.io/GEOS/docs/) can be used for better understand.
+If needed the [documentation](https://vandersonmr.github.io/GEOS/docs/namespaceGEOS.html) can be used for better understand.
 
 ## License
 
