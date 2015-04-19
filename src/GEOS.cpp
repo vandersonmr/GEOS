@@ -58,6 +58,10 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
     // return createPartiallyInlineLibCallsPass();
     //case LoadCombine:
     // return createLoadCombinePass(); // PreserveCFG
+    //case SeparateConstOffsetFromGEP: // Maybe can change CFG
+    //  return createSeparateConstOffsetFromGEPPass();
+    // case InstructionNamer:
+    //     return createInstructionNamerPass();
     // ---------------- Change the CFG
     case SROA:
       return createSROAPass();
@@ -93,8 +97,6 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createLoopDeletionPass();
     case ScalarizerPass: // Maybe can change CFG
       return createScalarizerPass();
-    case SeparateConstOffsetFromGEP: // Maybe can change CFG
-      return createSeparateConstOffsetFromGEPPass();
     case LICM:
       return createLICMPass();
     case SCCP:
@@ -133,8 +135,6 @@ Pass* GEOS::getPass(OptimizationKind OptChoosed) {
       return createMemCpyOptPass();
     case ConstantHoisting:
       return createConstantHoistingPass();
-      /* case InstructionNamer:
-         return createInstructionNamerPass();*/
     case Sink:
       return createSinkingPass(); // PreservesCFG
     case LowerAtomic:

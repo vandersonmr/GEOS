@@ -1,4 +1,4 @@
-//===-- BestO.cpp -  Guide for Exploration of Otimization's Set -*- C++ -*-===//
+//== BestRandom.cpp -  Guide to Exploration of Otimization's Set -*- C++ -*-==//
 //
 //              The LLVM Time Cost Analyser Infrastructure
 //
@@ -8,7 +8,8 @@
 ///
 /// \file
 /// \brief This file implements an tool, that when given a llvm code and its 
-/// profiling information returns the best otimization option (O1, O2, O3).
+/// profiling information returns the best otimization sequence from a randomic
+/// range.
 ///
 //===----------------------------------------------------------------------===//
 
@@ -29,23 +30,21 @@
 #include <limits>
 #include <random>
 
-using namespace llvm;
+OptimizationKind getRandomOptimizationKind() {
+  std::random_device rd;
+  std::default_random_engine e1(rd());
+  std::uniform_int_distribution<int> uniform_dist(0, 
+      OptimizationKind::LoadCombine);
+  int Rand = uniform_dist(e1);
+  return static_cast<OptimizationKind>(Rand);
+}
 
-double 
-applyAndGetOCost(ProfileModule* PModule, CostEstimatorOptions &Opts, int O) {
-  PassManagerBuilder Builder;
-  Builder.SizeLevel = 0;
-  Builder.OptLevel = O;
-  FunctionPassManager FPMO(PModule->getLLVMModule());
-  PassManager PMO;
-  Builder.populateFunctionPassManager(FPMO);
-  Builder.populateModulePassManager(PMO);
-
-  ProfileModule *PO = GEOS::applyPassesModule(*PModule, FPMO, PMO);
-   
-  auto Cost = GEOS::analyseCost(PO, Opts);
-  
-  return Cost;
+void randomiclyPopulate(FunctionPassManager &PM, int NumOfOptimizations = 60) {
+  for (int i = 0; i < NumOfOptimizations; i++) {
+    Pass *P = GEOS::getPass(getRandomOptimizationKind());
+    if (P != nullptr) 
+      PM.add(P);
+  }
 }
 
 int main(int argc, char** argv) {
@@ -63,21 +62,26 @@ int main(int argc, char** argv) {
   
   CostEstimatorOptions &Opts = gcl::populatePModule(PModule);
 
-  auto Cost = GEOS::analyseCost(PModule, Opts);
+  double Cost = GEOS::analyseCost(PModule, Opts);
 
-  auto BestO = 3;
-  auto BestCost = Cost; 
+  PassManagerBuilder Builder;
 
-  for (int i = 1; i <= 3; i++) {
-    auto CostO = applyAndGetOCost(PModule, Opts, i);
-    
-    if (BestCost < CostO) {
-      BestCost = CostO;
-      BestO = i;
-    }
+  for (int i = 0; i < 100; i++) {
+    Builder.SizeLevel = 0;
+    Builder.OptLevel = i%3;
+
+    PassManager PM;
+    Builder.populateModulePassManager(PM);
+
+    FunctionPassManager FPM(PModule->getLLVMModule());
+    randomiclyPopulate(FPM, 20);
+
+    ProfileModule *PO = GEOS::applyPassesModule(*PModule, FPM, PM);
+
+    printf("%d Sp: %lf\n", i, Cost/GEOS::analyseCost(PO, Opts));
+
+    delete PO;
   }
-
-  printf("-O%d", BestO);
 
   return 0;
 }
