@@ -31,5 +31,7 @@
 application
 build
 benchmarks/llvm
+GEOS-Experiments
+TODO
 
 *.bc
