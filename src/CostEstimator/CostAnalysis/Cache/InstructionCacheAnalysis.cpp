@@ -310,11 +310,17 @@ void compileModule(Module *M, const ProfileModule *Profile, PassManager &PM) {
   MAST->getFunctionCost(*(M->getFunction("main")));
 }
 
-PassManager PM;
+PassManager *PM;
 InstructionCacheAnalysis::InstructionCacheAnalysis(const ProfileModule* P) {
+  PM = new PassManager;
   PModule = P;
   Module *M = P->getLLVMModule();
-  compileModule(M, P, PM);
+  compileModule(M, P, *PM);
+}
+
+InstructionCacheAnalysis::~InstructionCacheAnalysis() {
+  delete PM;
+  delete MAST;
 }
 
 double InstructionCacheAnalysis::estimateCost(StringRef FuncName, 

@@ -139,11 +139,17 @@ void compileModule1(Module *M, const ProfileModule *Profile, PassManager &PM) {
   MAST1->getFunctionCost(*(M->getFunction("main")));
 }
 
-PassManager PM1;
+PassManager *PM1;
 RegisterUseAnalysis::RegisterUseAnalysis(const ProfileModule* P) {
+  PM1 = new PassManager;
   PModule = P;
   Module *M = P->getLLVMModule();
-  compileModule1(M, P, PM1);
+  compileModule1(M, P, *PM1);
+}
+
+RegisterUseAnalysis::~RegisterUseAnalysis() {
+  delete PM1;
+  delete MAST1;
 }
 
 double RegisterUseAnalysis::estimateCost(StringRef FuncName, 

@@ -35,6 +35,7 @@ class RegisterUseAnalysis : public CostAnalysis {
     const ProfileModule *PModule;
   public:
     RegisterUseAnalysis(const ProfileModule*);
+    ~RegisterUseAnalysis();
     double 
       estimateCost(llvm::StringRef, const ProfileModule*, 
           CostEstimatorOptions) const;
@@ -48,6 +49,7 @@ class InstructionCacheAnalysis : public CostAnalysis {
     const ProfileModule *PModule;
   public:
     InstructionCacheAnalysis(const ProfileModule*);
+    ~InstructionCacheAnalysis();
     double 
       estimateCost(llvm::StringRef, const ProfileModule*, 
           CostEstimatorOptions) const;
