@@ -7,8 +7,8 @@
 //===----------------------------------------------------------------------===//
 ///
 /// \file
-/// \brief This file implements an tool, that when given a llvm code and its 
-/// profiling information returns the best otimization option (O1, O2, O3).
+/// \brief This file implements a tool, that when given a llvm code and its 
+/// profiling information, returns the best otimization option (O1, O2, O3).
 ///
 //===----------------------------------------------------------------------===//
 
