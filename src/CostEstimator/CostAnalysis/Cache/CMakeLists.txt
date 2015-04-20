@@ -1,1 +1,2 @@
-add_library(CacheAnalysis OBJECT CacheAnalysis.cpp MachineFunctionAnalysis.cpp)
+add_library(CacheAnalysis OBJECT MachineFunctionAnalysis.cpp
+  RegisterUseAnalysis.cpp InstructionCacheAnalysis.cpp)

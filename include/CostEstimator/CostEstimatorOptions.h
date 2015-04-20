@@ -20,7 +20,7 @@
 namespace {
   /// \brief List of analysis methods
   enum CostAnalysisKind {
-    Cache, StaticInstruction, TTIInstruction, Branch, Call
+    RegisterUse, InstructionCache, StaticInstruction, TTIInstruction, Branch, Call
   };
 
   /// \brief This structure contain a vector with analysis and options for 
@@ -50,7 +50,7 @@ namespace {
       case ArchSensitive:
         return {CostAnalysisKind::TTIInstruction, 
             CostAnalysisKind::Call, CostAnalysisKind::Branch, 
-            CostAnalysisKind::Cache};  
+            CostAnalysisKind::RegisterUse};  
     }
   } 
 }

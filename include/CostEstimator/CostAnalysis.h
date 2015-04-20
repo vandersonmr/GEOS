@@ -27,21 +27,32 @@ class CostAnalysis {
           CostEstimatorOptions) const = 0;
 };
 
-/// \brief TODO: Split this class in two, one for instruction cache and other
-/// for registers.
-//
-/// This analyis method estimate the cost of the instruction cache and the
-/// use of registers. It is necessery to compile the LLVM code to the machine
-/// assembly, so it can be expensive.
-class CacheAnalysis : public CostAnalysis {
+/// This analyis method estimate the cost of the use of registers. Due to the 
+/// fact that it is necessery to compile the LLVM code to the machine assembly, 
+/// it can be expensive.
+class RegisterUseAnalysis : public CostAnalysis {
   private: 
     const ProfileModule *PModule;
   public:
-    CacheAnalysis(const ProfileModule*);
+    RegisterUseAnalysis(const ProfileModule*);
     double 
       estimateCost(llvm::StringRef, const ProfileModule*, 
           CostEstimatorOptions) const;
 };
+
+/// This analyis method estimate the cost of the instruction's cache. Due to the
+/// fact that it is necessery to compile the LLVM code to the machine assembly, 
+/// so it can be expensive.
+class InstructionCacheAnalysis : public CostAnalysis {
+  private: 
+    const ProfileModule *PModule;
+  public:
+    InstructionCacheAnalysis(const ProfileModule*);
+    double 
+      estimateCost(llvm::StringRef, const ProfileModule*, 
+          CostEstimatorOptions) const;
+};
+
 
 /// \brief Return the sum of the cost of all LLVM instruction multiplicated by 
 /// its the execution frequency. The cost is the same for every architecture.
@@ -86,8 +97,12 @@ namespace {
   std::unique_ptr<CostAnalysis> 
     createCostAnalysis(CostAnalysisKind Kind, const ProfileModule *PModule) {
       switch (Kind) {
-        case Cache:
-          return std::unique_ptr<CostAnalysis>(new CacheAnalysis(PModule));
+        case InstructionCache:
+          return std::unique_ptr<CostAnalysis>(
+              new InstructionCacheAnalysis(PModule));
+        case RegisterUse:
+          return std::unique_ptr<CostAnalysis>(
+              new RegisterUseAnalysis(PModule));
         default:
         case StaticInstruction:
           return std::unique_ptr<CostAnalysis>(new StaticInstructionAnalysis());

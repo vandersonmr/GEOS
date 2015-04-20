@@ -15,6 +15,7 @@
 #include "llvm/CodeGen/GCMetadata.h"
 #include "llvm/CodeGen/MachineFunction.h"
 #include "llvm/CodeGen/MachineModuleInfo.h"
+
 using namespace llvm;
 
 char MachineFunctionAnalysis::ID = 0;

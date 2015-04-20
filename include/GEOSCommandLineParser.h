@@ -53,7 +53,8 @@ CallCostAlias("c", cl::desc("Alias for -call"), cl::aliasopt(CallCost));
 static cl::list<CostAnalysisKind>
 Analysis(cl::desc("Choose one or more analysis method:"), 
     cl::values(
-      clEnumVal(Cache, "Analyse register use cost."),
+      clEnumVal(InstructionCache, "Analyse register use cost."),
+      clEnumVal(RegisterUse, "Analyse register use cost."),
       clEnumVal(StaticInstruction,
         "Analyse instruction costs using the same weight for each instruction independent of plataform."),
       clEnumVal(TTIInstruction,

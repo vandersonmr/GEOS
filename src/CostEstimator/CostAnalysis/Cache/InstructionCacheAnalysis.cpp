@@ -9,7 +9,11 @@
 /// \file
 /// \brief This file contains declarations and implementation of the instruction
 /// cache analysis and also use of registers analysis.
-///
+//
+// !TODO
+//  * More acurate inst weight
+//  * Reduce cache size for L1
+//  * Follow more the algorithm
 //===----------------------------------------------------------------------===//
 
 #include "CostEstimator/CostAnalysis.h"
@@ -112,8 +116,6 @@ struct MachineAST : public FunctionPass {
           calculateFuncInstanceCost(ACS, *FuncToMachine[F.getName().str()]);
         }
       }
-
-      calculateRegisterCost(*FuncToMachine[F.getName().str()]);
     }
 
     return MFCost[F.getName().str()];
@@ -163,22 +165,9 @@ struct MachineAST : public FunctionPass {
 
   std::unordered_map<std::string, double> MFCost;
 
-  void calculateRegisterCost(MachineFunction&); 
   AbstractCacheState* 
     calculateFuncInstanceCost(AbstractCacheState*, MachineFunction&);
 };
-
-void MachineAST::calculateRegisterCost(MachineFunction &MF) {
-  for (auto &MB : MF) {
-    int MBCost = 0;
-    for (auto &MI : MB)  
-      if (MI.mayLoad() || MI.mayStore())
-        MBCost += 1;
-    
-    MFCost[MF.getName().str()] += 
-      Profile->getBasicBlockFrequency(*(MB.getBasicBlock())) * MBCost * 1.3;
-  }
-}
 
 AbstractCacheState* MachineAST::
 calculateFuncInstanceCost(AbstractCacheState* EntryState, MachineFunction &MF) {  
@@ -322,13 +311,13 @@ void compileModule(Module *M, const ProfileModule *Profile, PassManager &PM) {
 }
 
 PassManager PM;
-CacheAnalysis::CacheAnalysis(const ProfileModule* P) {
+InstructionCacheAnalysis::InstructionCacheAnalysis(const ProfileModule* P) {
   PModule = P;
   Module *M = P->getLLVMModule();
   compileModule(M, P, PM);
 }
 
-double CacheAnalysis::estimateCost(StringRef FuncName, 
+double InstructionCacheAnalysis::estimateCost(StringRef FuncName, 
     const ProfileModule *Profile, CostEstimatorOptions Opts) const {
 
   Module *M = PModule->getLLVMModule();
