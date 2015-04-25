@@ -71,6 +71,10 @@ enum OptimizationKind {
   LoadCombine
 };
 
+enum ExecutionKind {
+  JIT, Compiled
+};
+
 /// \brief This namespace is responsible for applying passes into a 
 /// ProfileModule, analyse its execution time and make copies of it.
 namespace GEOS {
@@ -107,5 +111,9 @@ namespace GEOS {
       /// \brief Estimate the execution time of a ProfileModule using the given 
       /// AnalysisMethod and options. 
       double analyseCost(const ProfileModule*, ::CostEstimatorOptions);
+
+      /// \brief It runs the llvm code and returns its the real runtime. 
+      double getRealExecutionTime(const ProfileModule*, ExecutionKind, 
+          char* const* envp);
     }
 }

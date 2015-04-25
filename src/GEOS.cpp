@@ -17,15 +17,21 @@
 
 #include "llvm/Support/MemoryBuffer.h"
 #include "llvm/Support/TargetSelect.h"
+#include "llvm/ExecutionEngine/Interpreter.h"
+#include "llvm/ExecutionEngine/MCJIT.h"
 #include "llvm/Transforms/Scalar.h"
+
 #include "CostEstimator/CostEstimator.h"
 
 #include <cstdlib>
+#include <sys/time.h>
 
 using namespace llvm;
 
 void GEOS::init() {
   InitializeNativeTarget();
+  InitializeNativeTargetAsmPrinter();
+  InitializeNativeTargetAsmParser();
   PassRegistry *Registry = PassRegistry::getPassRegistry();
   initializeCore(*Registry);
   initializeCodeGen(*Registry);
@@ -219,4 +225,46 @@ analyseFunctionCost(StringRef FuncName, const ProfileModule* PModule,
 double GEOS::
 analyseCost(const ProfileModule* PModule, CostEstimatorOptions Opts) {
   return CostEstimator::getModuleCost(PModule, Opts);
+}
+
+typedef unsigned long long timestampType;
+
+static timestampType getTimestamp ()
+{
+  struct timeval now;
+  gettimeofday (&now, NULL);
+  return now.tv_usec + (timestampType) now.tv_sec * 1000000;
+}
+
+
+double GEOS::
+getRealExecutionTime(const ProfileModule* PModule, ExecutionKind ExecKind, 
+    char* const* envp) {
+  switch(ExecKind) {
+    case JIT:
+      {
+        auto Mod = PModule->getCopy()->getLLVMModule();
+        std::string ErrStr;
+        ExecutionEngine *EE = 
+          EngineBuilder(std::unique_ptr<Module>(Mod)).create();
+        Function *EntryFn = Mod->getFunction("main");
+        if (!EntryFn) {                                                                                         
+          errs() << "main function not found in module.\n";                                  
+          return 0.0;                                                                                            
+        }    
+        EE->finalizeObject();
+        typedef void (*PFN)();
+        PFN pfn = reinterpret_cast<PFN>(EE->getPointerToFunction(EntryFn));
+        timestampType T0 = getTimestamp();
+        pfn();
+        timestampType T1 = getTimestamp();
+        double Secs = (T1 - T0) / 1000000.0L;
+        delete EE;
+        return Secs;
+      }
+    case Compiled:
+      PModule->print(".tmp.ll");
+      return 0.0;
+  }
+  return 0.0;
 }

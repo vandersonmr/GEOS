@@ -47,7 +47,7 @@ void randomiclyPopulate(FunctionPassManager &PM, int NumOfOptimizations = 60) {
   }
 }
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv, char* const *envp) {
   GEOS::init();
 
   LLVMContext &Context = getGlobalContext();
@@ -63,9 +63,13 @@ int main(int argc, char** argv) {
   CostEstimatorOptions &Opts = gcl::populatePModule(PModule);
 
   double Cost = GEOS::analyseCost(PModule, Opts);
+  double RealCost = 
+    GEOS::getRealExecutionTime(PModule, ExecutionKind::JIT, envp);
 
   PassManagerBuilder Builder;
 
+  ProfileModule *Best = nullptr;
+  double BestSpeedup = 1;
   for (int i = 0; i < 100; i++) {
     Builder.SizeLevel = 0;
     Builder.OptLevel = i%3;
@@ -78,10 +82,21 @@ int main(int argc, char** argv) {
 
     ProfileModule *PO = GEOS::applyPassesModule(*PModule, FPM, PM);
 
-    printf("%d Sp: %lf\n", i, Cost/GEOS::analyseCost(PO, Opts));
+    double NewCost = GEOS::analyseCost(PO, Opts);
 
-    delete PO;
+    if ((Cost/NewCost) > BestSpeedup) {
+      delete Best;
+      BestSpeedup = Cost/NewCost;
+      Best = PO;
+      printf("%lf\n", BestSpeedup);
+    } else {
+      delete PO;
+    }
   }
 
+  double NewRealCost = 
+    GEOS::getRealExecutionTime(Best, ExecutionKind::JIT, envp);
+
+  printf("\nBEST: %lf | %lf \n", BestSpeedup, RealCost/NewRealCost);
   return 0;
 }
