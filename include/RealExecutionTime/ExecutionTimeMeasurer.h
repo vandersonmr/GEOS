@@ -31,22 +31,31 @@ static timestampType getTimestamp() {
 class ExecutionTimeMeasurer {
   private:
     virtual void run(std::vector<std::string>&, char* const*) = 0;
-  public:
-    double getExecutionTime() {
-      std::vector<std::string> Argv;
-      Argv.push_back("program_name");
-      timestampType T0 = getTimestamp();
-      run(Argv, nullptr);
-      timestampType T1 = getTimestamp();
-      return (T1 - T0) / 1000000.0L;
-    }
 
+    void flushCache() {
+      int cs = 32770 * 1024 / sizeof(double);
+      double* flush = (double*) calloc (cs, sizeof(double));
+      int i;                  
+      double tmp = 0.0;       
+      for (i = 0; i < cs; i++)
+        tmp += flush[i];      
+      assert (tmp <= 10.0);   
+      free (flush);           
+    } 
+  public:
     double getExecutionTime(std::vector<std::string>& Argv, 
         char* const* Envp) {
+      flushCache();
       timestampType T0 = getTimestamp();
       run(Argv, Envp);
       timestampType T1 = getTimestamp();
       return (T1 - T0) / 1000000.0L;
+    }
+
+    double getExecutionTime() {
+      std::vector<std::string> Argv;
+      Argv.push_back("program_name");
+      return getExecutionTime(Argv, nullptr);
     }
 
     ~ExecutionTimeMeasurer() {};

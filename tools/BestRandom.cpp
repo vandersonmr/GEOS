@@ -40,35 +40,48 @@ int main(int argc, char** argv) {
     parseIRFile(LLVMFilename.c_str(), Error, Context).release();
 
   ProfileModule *PModule = new ProfileModule(MyModule);
-  
+
   CostEstimatorOptions &Opts = gcl::populatePModule(PModule);
 
-  double Cost = GEOS::analyseCost(PModule, Opts);
-  double RealCost = 
-    GEOS::getRealExecutionTime(PModule, ExecutionKind::JIT);
+  double BestOfBest = 0;
+  double BestOfBestEstimation = 0;
+  for(int j = 0; j < 10; j++) {
+    double Cost = GEOS::analyseCost(PModule, Opts);
+    double RealCost = 
+      GEOS::getRealExecutionTime(PModule, ExecutionKind::JIT);
 
-  ProfileModule *Best = nullptr;
-  double BestSpeedup = 1;
-  for (int i = 0; i < 100; i++) {
-    PassSequence Passes;
-    Passes.randomize(20, true, OptLevel::Random, OptLevel::Random);
-    ProfileModule *PO = GEOS::applyPasses(*PModule, Passes);
+    ProfileModule *Best = nullptr;
+    double BestSpeedup = 0;
 
-    double NewCost = GEOS::analyseCost(PO, Opts);
+    for (int i = 0; i < 100; i++) {
+      PassSequence Passes;
+      Passes.randomize(30, true, OptLevel::Random, OptLevel::Random);
+      Passes.print();
+      printf("\n");
+      ProfileModule *PO = GEOS::applyPasses(*PModule, Passes);
 
-    if ((Cost/NewCost) > BestSpeedup) {
-      delete Best;
-      BestSpeedup = Cost/NewCost;
-      Best = PO;
-      printf("%lf\n", BestSpeedup);
-    } else {
-      delete PO;
+      double NewCost = GEOS::analyseCost(PO, Opts);
+
+      if ((Cost/NewCost) > BestSpeedup) {
+        delete Best;
+        BestSpeedup = Cost/NewCost;
+        Best = PO;
+        printf("%lf\n", BestSpeedup);
+      } else {
+        delete PO;
+      }
+    }
+    double NewRealCost = 
+      GEOS::getRealExecutionTime(Best, ExecutionKind::JIT);
+
+    printf("\nBEST: %lf | %lf \n", BestSpeedup, RealCost/NewRealCost);
+
+    if ((RealCost/NewRealCost) > BestOfBest) {
+      BestOfBest = RealCost/NewRealCost;
+      BestOfBestEstimation = BestSpeedup;
     }
   }
+  printf("\nBEST OF BEST: %lf | %lf \n", BestOfBestEstimation, BestOfBest);
 
-  double NewRealCost = 
-    GEOS::getRealExecutionTime(Best, ExecutionKind::JIT);
-
-  printf("\nBEST: %lf | %lf \n", BestSpeedup, RealCost/NewRealCost);
   return 0;
 }

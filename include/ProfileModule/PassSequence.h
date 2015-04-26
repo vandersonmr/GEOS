@@ -208,6 +208,10 @@ class PassSequence {
     }
 
     void add(OptimizationKind P) {
+      if (P == LoopRotate) 
+        Opts.push_back(LoopReroll);
+//      if (P == InductionVariableSimplify)
+//        Opts.push_back(LoopReroll);
       Opts.push_back(P);
     }
 
@@ -238,6 +242,10 @@ class PassSequence {
           FPM.add(P);
       }
     }    
+
+    unsigned size() {
+      return Opts.size();
+    }
 
     void print() {
       for (auto Opt : Opts) {

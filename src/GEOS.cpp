@@ -21,6 +21,9 @@
 #include "CostEstimator/CostEstimator.h"
 
 #include <cstdlib>
+#include <sys/types.h> 
+#include <sys/wait.h>  
+#include <unistd.h>    
 
 using namespace llvm;
 

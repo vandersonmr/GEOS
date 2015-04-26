@@ -12,5 +12,4 @@ string (REPLACE "\n" " " LLVM_CONFIG "${LLVM_CONFIG_N}")
 set (CMAKE_CXX_FLAGS "-fno-rtti -Wall -Wextra -g -O3 ${LLVM_CONFIG} -O3")
 
 add_subdirectory (src)
-add_subdirectory (test)
 add_subdirectory (tools)
