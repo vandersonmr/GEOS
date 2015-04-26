@@ -17,103 +17,43 @@
 
 #include "ProfileModule/ProfileModule.h"
 #include "CostEstimator/CostEstimatorOptions.h"
-
-enum OptimizationKind {
-  ConstantPropagation,
-  AlignmentFromAssumptions,
-  SCCP,
-  DeadInstElimination,
-  DeadCodeElimination,
-  DeadStoreElimination,
-  AggressiveDCE,
-  SROA,
-  ScalarReplAggregates,
-  InductionVariableSimplify,
-  InstructionCombining,
-  LICM,
-  LoopStrengthReduce,
-  LoopUnswitch,
-  LoopInstSimplify,
-  LoopUnroll,
-  LoopReroll,
-  LoopRotate,
-  LoopIdiom,
-  PromoteMemoryToRegister,
-  DemoteRegisterToMemory,
-  Reassociate,
-  JumpThreading,
-  CFGSimplification,
-  FlattenCFG,
-  CFGStructurization,
-  BreakCriticalEdges,
-  LoopSimplify,
-  TailCallElimination,
-  LowerSwitch,
-  LowerInvoke,
-  LCSSA,
-  EarlyCSE,
-  MergedLoadStoreMotion,
-  GVN,
-  MemCpyOpt,
-  LoopDeletion,
-  ConstantHoisting,
-  InstructionNamer,
-  Sink,
-  LowerAtomic,
-  ValuePropagation,
-  InstructionSimplifier,
-  LowerExpectInstrinsics,
-  PartiallyInlineLibCalls,
-  SampleProfilePass,
-  ScalarizerPass,
-  AddDiscriminators,
-  SeparateConstOffsetFromGEP,
-  LoadCombine
-};
-
-enum ExecutionKind {
-  JIT, Compiled
-};
+#include "RealExecutionTime/ExecutionTimeMeasurer.h"
+#include "ProfileModule/PassSequence.h"
 
 /// \brief This namespace is responsible for applying passes into a 
 /// ProfileModule, analyse its execution time and make copies of it.
 namespace GEOS {
-    extern "C" {
-      void init();
+  extern "C" {
+    void init();
 
-      /// \brief Returns the instanciation of the chosen OptimizationKind.
-      llvm::Pass* getPass(OptimizationKind);
+    /// \brief Like applyPasses this function applies a sequence of passes. 
+    /// But differently from applyPasses this passes are just applied to the 
+    /// function with the name given as parameter.
+    ProfileModule* applyPassesOnFunction(llvm::StringRef,
+        const ProfileModule&, PassSequence&);
 
-      /// \brief Like applyPasses this function applies a sequence of passes. 
-      /// But differently from applyPasses this passes are just applied to the 
-      /// function with the name given as parameter.
-      ProfileModule* applyPassesOnFunction(llvm::StringRef,const ProfileModule&,
-          llvm::FunctionPassManager&);
+    /// \brief This function applies a sequence of passes (Transformations) 
+    /// into a ProfileModule. The passes are not applied into the 
+    /// ProfileModule given as parameter, actually, all modifications are
+    /// made in a copy and this copy is returned as parameter. Futher, it 
+    /// ensures the profiling consistency.
+    ProfileModule* applyPasses(const ProfileModule&, PassSequence&);
 
-      /// \brief This function applies a sequence of passes (Transformations) 
-      /// into a ProfileModule. The passes are not applied into the 
-      /// ProfileModule given as parameter, actually, all modifications are
-      /// made in a copy and this copy is returned as parameter. Futher, it 
-      /// ensures the profiling consistency.
-      ProfileModule* applyPasses(const ProfileModule&, 
-          llvm::FunctionPassManager&);
+    /// \brief Estimate the execution time of a function, that the name is a 
+    /// parameter, using the given AnalysisMethod and options.
+    double analyseFunctionCost(llvm::StringRef, const ProfileModule*, 
+        ::CostEstimatorOptions);
 
-      /// \brief This function works as applyPasses. The only difference is that
-      /// this one can apply FunctionPasses AND ModulePasses.
-      ProfileModule* applyPassesModule(const ProfileModule&, 
-          llvm::FunctionPassManager&, llvm::PassManager&);
+    /// \brief Estimate the execution time of a ProfileModule using the given 
+    /// AnalysisMethod and options. 
+    double analyseCost(const ProfileModule*, CostEstimatorOptions);
 
-      /// \brief Estimate the execution time of a function, that the name is a 
-      /// parameter, using the given AnalysisMethod and options.
-      double analyseFunctionCost(llvm::StringRef, const ProfileModule*, 
-          ::CostEstimatorOptions);
+    /// \brief It runs the llvm code and returns its real runtime. 
+    double getRealExecutionTime(const ProfileModule*, ExecutionKind);
 
-      /// \brief Estimate the execution time of a ProfileModule using the given 
-      /// AnalysisMethod and options. 
-      double analyseCost(const ProfileModule*, ::CostEstimatorOptions);
-
-      /// \brief It runs the llvm code and returns its the real runtime. 
-      double getRealExecutionTime(const ProfileModule*, ExecutionKind, 
-          char* const* envp);
-    }
+    /// \brief It runs the llvm code and returns its real runtime. 
+    /// Argv and Envp are parameters.
+    double getRealExecutionTimeWithArgs(const ProfileModule*, 
+        ExecutionKind, std::vector<std::string>, char* const*);
+  }
 }

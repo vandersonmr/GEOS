@@ -3,6 +3,7 @@ add_executable (geos-best BestO.cpp)
 add_executable (geos-random BestRandom.cpp)
 
 TARGET_LINK_LIBRARIES(geos-analyser GEOS CostEstimator GCOV STATIC ProfileModule 
+  JITExecution
   LLVMIRReader  CallCostReader LLVMBitReader LLVMAsmParser LLVMAnalysis LLVMCore
   LLVMScalarOpts LLVMSupport LLVMTarget LLVMTransformUtils LLVMAnalysis 
   LLVMX86Disassembler LLVMX86AsmParser LLVMX86CodeGen LLVMSelectionDAG 
@@ -15,6 +16,7 @@ TARGET_LINK_LIBRARIES(geos-analyser GEOS CostEstimator GCOV STATIC ProfileModule
   rt dl tinfo atomic pthread z m)
 
 TARGET_LINK_LIBRARIES(geos-best GEOS CostEstimator GCOV STATIC ProfileModule 
+  JITExecution
   LLVMIRReader  CallCostReader LLVMBitReader LLVMAsmParser LLVMAnalysis LLVMCore
   LLVMScalarOpts LLVMSupport LLVMTarget LLVMTransformUtils LLVMAnalysis 
   LLVMX86Disassembler LLVMX86AsmParser LLVMX86CodeGen LLVMSelectionDAG 
@@ -27,6 +29,7 @@ TARGET_LINK_LIBRARIES(geos-best GEOS CostEstimator GCOV STATIC ProfileModule
   rt dl tinfo atomic pthread z m)
 
 TARGET_LINK_LIBRARIES(geos-random GEOS CostEstimator GCOV STATIC ProfileModule 
+  JITExecution
   LLVMIRReader  CallCostReader LLVMBitReader LLVMAsmParser LLVMAnalysis LLVMCore
   LLVMScalarOpts LLVMSupport LLVMTarget LLVMTransformUtils LLVMAnalysis 
   LLVMX86Disassembler LLVMX86AsmParser LLVMX86CodeGen LLVMSelectionDAG 
@@ -35,7 +38,7 @@ TARGET_LINK_LIBRARIES(geos-random GEOS CostEstimator GCOV STATIC ProfileModule
   LLVMMCParser LLVMBitReader LLVMMCDisassembler LLVMX86Info LLVMX86AsmPrinter 
   LLVMMC LLVMX86Utils LLVMCore LLVMSupport LLVMInstCombine LLVMBitWriter 
   LLVMObjCARCOpts LLVMInstrumentation LLVMVectorize LLVMProfileData LLVMipo
-  LLVMMCJIT LLVMRuntimeDyld LLVMInterpreter LLVMExecutionEngine
+  LLVMMCJIT LLVMRuntimeDyld LLVMInterpreter LLVMExecutionEngine  
   rt dl tinfo atomic pthread z m)
 
 

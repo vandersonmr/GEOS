@@ -21,8 +21,6 @@
 #include "llvm/Support/MemoryBuffer.h"
 #include "llvm/Support/SourceMgr.h"
 #include "llvm/IR/LLVMContext.h"
-#include "llvm/Transforms/IPO/PassManagerBuilder.h"
-#include "llvm/PassManager.h"
 
 #include "GEOSCommandLineParser.h"
 
@@ -30,24 +28,7 @@
 #include <limits>
 #include <random>
 
-OptimizationKind getRandomOptimizationKind() {
-  std::random_device rd;
-  std::default_random_engine e1(rd());
-  std::uniform_int_distribution<int> uniform_dist(0, 
-      OptimizationKind::LoadCombine);
-  int Rand = uniform_dist(e1);
-  return static_cast<OptimizationKind>(Rand);
-}
-
-void randomiclyPopulate(FunctionPassManager &PM, int NumOfOptimizations = 60) {
-  for (int i = 0; i < NumOfOptimizations; i++) {
-    Pass *P = GEOS::getPass(getRandomOptimizationKind());
-    if (P != nullptr) 
-      PM.add(P);
-  }
-}
-
-int main(int argc, char** argv, char* const *envp) {
+int main(int argc, char** argv) {
   GEOS::init();
 
   LLVMContext &Context = getGlobalContext();
@@ -64,23 +45,14 @@ int main(int argc, char** argv, char* const *envp) {
 
   double Cost = GEOS::analyseCost(PModule, Opts);
   double RealCost = 
-    GEOS::getRealExecutionTime(PModule, ExecutionKind::JIT, envp);
-
-  PassManagerBuilder Builder;
+    GEOS::getRealExecutionTime(PModule, ExecutionKind::JIT);
 
   ProfileModule *Best = nullptr;
   double BestSpeedup = 1;
   for (int i = 0; i < 100; i++) {
-    Builder.SizeLevel = 0;
-    Builder.OptLevel = i%3;
-
-    PassManager PM;
-    Builder.populateModulePassManager(PM);
-
-    FunctionPassManager FPM(PModule->getLLVMModule());
-    randomiclyPopulate(FPM, 20);
-
-    ProfileModule *PO = GEOS::applyPassesModule(*PModule, FPM, PM);
+    PassSequence Passes;
+    Passes.randomize(20, true, OptLevel::Random, OptLevel::Random);
+    ProfileModule *PO = GEOS::applyPasses(*PModule, Passes);
 
     double NewCost = GEOS::analyseCost(PO, Opts);
 
@@ -95,7 +67,7 @@ int main(int argc, char** argv, char* const *envp) {
   }
 
   double NewRealCost = 
-    GEOS::getRealExecutionTime(Best, ExecutionKind::JIT, envp);
+    GEOS::getRealExecutionTime(Best, ExecutionKind::JIT);
 
   printf("\nBEST: %lf | %lf \n", BestSpeedup, RealCost/NewRealCost);
   return 0;

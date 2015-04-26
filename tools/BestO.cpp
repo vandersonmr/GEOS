@@ -20,8 +20,6 @@
 #include "llvm/Support/MemoryBuffer.h"
 #include "llvm/Support/SourceMgr.h"
 #include "llvm/IR/LLVMContext.h"
-#include "llvm/Transforms/IPO/PassManagerBuilder.h"
-#include "llvm/PassManager.h"
 
 #include "GEOSCommandLineParser.h"
 
@@ -33,19 +31,12 @@ using namespace llvm;
 
 double 
 applyAndGetOCost(ProfileModule* PModule, CostEstimatorOptions &Opts, int O) {
-  PassManagerBuilder Builder;
-  Builder.SizeLevel = 0;
-  Builder.OptLevel = O;
-  FunctionPassManager FPMO(PModule->getLLVMModule());
-  PassManager PMO;
-  Builder.populateFunctionPassManager(FPMO);
-  Builder.populateModulePassManager(PMO);
+  PassSequence Passes;
+  Passes.setOLevel(static_cast<OptLevel>(O));
+  Passes.setOSize(OptLevel::None);
+  ProfileModule *PO = GEOS::applyPasses(*PModule, Passes);
 
-  ProfileModule *PO = GEOS::applyPassesModule(*PModule, FPMO, PMO);
-   
-  auto Cost = GEOS::analyseCost(PO, Opts);
-  
-  return Cost;
+  return GEOS::analyseCost(PO, Opts);
 }
 
 int main(int argc, char** argv) {

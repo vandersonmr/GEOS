@@ -1,4 +1,4 @@
-//===--- include/CostAnalysis.h - Basic Block Cost Estimator -*- C++ -*--===//
+//===---- include/CostAnalysis.h - Basic Block Cost Estimator -*- C++ -*---===//
 //
 //              The LLVM Time Cost Analyser Infrastructure
 //
