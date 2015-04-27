@@ -1,0 +1,9 @@
+<map id="InstructionCacheAnalysis.cpp" name="InstructionCacheAnalysis.cpp">
+<area shape="rect" id="node2" href="$CostAnalysis_8h.html" title="This file contains declarations of every method for analysis of the execution cost of a LLVM function..." alt="" coords="327,88,521,115"/>
+<area shape="rect" id="node14" href="$CodeGenModule_8h.html" title="CostEstimator/CodeGenModule.h" alt="" coords="1779,88,1993,115"/>
+<area shape="rect" id="node24" href="$InstructionCostEstimator_8h.html" title="This file contains declarations and implementation of a LLVM llvm::Instruction Cost Estimator..." alt="" coords="2785,81,2953,122"/>
+<area shape="rect" id="node26" href="$LRUCache_8h.html" title="CostEstimator/LRUCache.h" alt="" coords="2978,88,3160,115"/>
+<area shape="rect" id="node3" href="$CostEstimatorOptions_8h.html" title="This file contains declarations of structures that contains options to customize the cost estimation ..." alt="" coords="5,262,195,303"/>
+<area shape="rect" id="node5" href="$ProfileModule_8h.html" title="This file contains declarations of the Profile Module, which encapsulate a LLVMModule with profiling ..." alt="" coords="328,179,520,205"/>
+<area shape="rect" id="node8" href="$PassSequence_8h.html" title="This file contains the definition and implementation of a sequence of passes. " alt="" coords="585,269,788,296"/>
+</map>
