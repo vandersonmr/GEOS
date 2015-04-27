@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7egcovblock',['~GCOVBlock',['../classllvm_1_1GCOVBlock.html#a90f69447839e933b83fb0bf1b358d01d',1,'llvm::GCOVBlock']]]
+  ['y',['Y',['../CallCost_8cpp.html#a829312c58888413304f39f84e132c96b',1,'CallCost.cpp']]]
 ];

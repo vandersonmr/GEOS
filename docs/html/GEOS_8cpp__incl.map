@@ -1,8 +1,0 @@
-<map id="GEOS.cpp" name="GEOS.cpp">
-<area shape="rect" id="node2" href="$GEOS_8h.html" title="This file contains declarations of GEOS main functions. Which are responsable for interfacing with he..." alt="" coords="473,80,543,107"/>
-<area shape="rect" id="node20" href="$CostEstimator_8h.html" title="This file contains declarations of the cost estimator interface. " alt="" coords="733,80,932,107"/>
-<area shape="rect" id="node4" href="$ProfileModule_8h.html" title="This file contains declarations of the Profile Module, which encapsulate a LLVMModule with profiling ..." alt="" coords="544,245,736,272"/>
-<area shape="rect" id="node7" href="$PassSequence_8h.html" title="This file contains the definition and implementation of a sequence of passes. " alt="" coords="264,320,467,347"/>
-<area shape="rect" id="node13" href="$CostEstimatorOptions_8h.html" title="This file contains declarations of structures that contains options to customize the cost estimation ..." alt="" coords="614,155,804,197"/>
-<area shape="rect" id="node14" href="$ExecutionTimeMeasurer_8h.html" title="This file define classes that execute a given Module and measure its execution time (this is named as..." alt="" coords="345,155,537,197"/>
-</map>

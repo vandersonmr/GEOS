@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['papi_5foption_5ft',['PAPI_option_t',['../unionPAPI__option__t.html',1,'']]],
-  ['profilemodule',['ProfileModule',['../classProfileModule.html',1,'']]]
+  ['machineast',['MachineAST',['../structMachineAST.html',1,'']]],
+  ['machineregisteruse',['MachineRegisterUse',['../structMachineRegisterUse.html',1,'']]]
 ];

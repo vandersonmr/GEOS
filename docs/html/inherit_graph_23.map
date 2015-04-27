@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classCostAnalysis.html" title="CostAnalysis" alt="" coords="5,132,104,159"/>
-<area shape="rect" id="node2" href="$classBranchAnalysis.html" title="Count the amount of unconditional branchs in the code and their execution frequencies. " alt="" coords="181,5,293,32"/>
-<area shape="rect" id="node3" href="$classCallAnalysis.html" title="This function multiply the execution frequency of each call for external function by their costs give..." alt="" coords="191,56,284,83"/>
-<area shape="rect" id="node4" href="$classInstructionCacheAnalysis.html" title="InstructionCacheAnalysis" alt="" coords="153,107,322,133"/>
-<area shape="rect" id="node5" href="$classRegisterUseAnalysis.html" title="RegisterUseAnalysis" alt="" coords="166,157,309,184"/>
-<area shape="rect" id="node6" href="$classStaticInstructionAnalysis.html" title="Return the sum of the cost of all LLVM instruction multiplicated by its the execution frequency..." alt="" coords="154,208,321,235"/>
-<area shape="rect" id="node7" href="$classTTIInstructionAnalysis.html" title="The same as StaticInstruction except that the cost for each LLVM instruction can change based on the ..." alt="" coords="161,259,313,285"/>
-</map>

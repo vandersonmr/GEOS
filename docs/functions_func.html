@@ -87,6 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_g"><span>g</span></a></li>
       <li><a href="#index_h"><span>h</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_j"><span>j</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
@@ -118,6 +119,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>AbstractCacheState()
 : <a class="el" href="structAbstractCacheState.html#a7db8f61aab1414c9e9b587eb6cd999db">AbstractCacheState</a>
 </li>
+<li>add()
+: <a class="el" href="classPassSequence.html#a501167a4c606f92234f9cf212b0c0ce0">PassSequence</a>
+</li>
 <li>addBlockLine()
 : <a class="el" href="classllvm_1_1FileInfo.html#ac42ed71244defdd1edd7ff5de12fdc52">llvm::FileInfo</a>
 </li>
@@ -143,6 +147,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>begin()
+: <a class="el" href="classPassSequence.html#adbda754f08f944c640ac041a7050c733">PassSequence</a>
+</li>
 <li>block_begin()
 : <a class="el" href="classllvm_1_1GCOVFunction.html#a57bdc0dd37b708c2de928873dbf43ce7">llvm::GCOVFunction</a>
 </li>
@@ -156,10 +163,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>cache()
 : <a class="el" href="structAbstractCacheState.html#a894f5b626c7e9445b548a7d05e1a72f8">AbstractCacheState</a>
 , <a class="el" href="classCacheSet.html#ae974943b09f1150a3bb40c57c16b75b8">CacheSet</a>
-, <a class="el" href="classlru_1_1cache.html#a13df5d158bf9cbab4428ba768b71bcca">lru::cache&lt; K, V &gt;</a>
-</li>
-<li>CacheAnalysis()
-: <a class="el" href="classCacheAnalysis.html#a420bd668dca79659c583e79f3a58a9fa">CacheAnalysis</a>
+, <a class="el" href="classlru_1_1cache.html#a4226b6fe29b380eb869e7a0f90b45401">lru::cache&lt; K, V &gt;</a>
 </li>
 <li>CacheSet()
 : <a class="el" href="classCacheSet.html#a447e2653e6fe0f4e5964c6f522df676f">CacheSet</a>
@@ -168,6 +172,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classllvm_1_1GCOVBlock.html#ab87cacce566f8151c1b3eeca2111bdde">llvm::GCOVBlock</a>
 , <a class="el" href="classllvm_1_1GCOVFile.html#a5601ece76ef0a29dc3d1afcd647e1d8c">llvm::GCOVFile</a>
 , <a class="el" href="classllvm_1_1GCOVFunction.html#ac116fe940a686d362bab4ce5bd424eb2">llvm::GCOVFunction</a>
+</li>
+<li>createRuntimeMeasurer()
+: <a class="el" href="classExecutionFactory.html#a6a4e35dd632fa51871cb7003b0774abd">ExecutionFactory</a>
+</li>
+<li>crossOver()
+: <a class="el" href="classPassSequence.html#addef19fc0ef960a9847bbee5d529bb84">PassSequence</a>
 </li>
 </ul>
 
@@ -188,14 +198,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>end()
+: <a class="el" href="classPassSequence.html#af6d32689d1f167df7c75738d4ab16b30">PassSequence</a>
+</li>
 <li>erase()
 : <a class="el" href="classlru_1_1cache.html#a5eb012cd03473a164292302ce3df6fd9">lru::cache&lt; K, V &gt;</a>
 </li>
 <li>estimateCost()
 : <a class="el" href="classBranchAnalysis.html#aba3c36a55385ed437b4ac97a2bdd374c">BranchAnalysis</a>
-, <a class="el" href="classCacheAnalysis.html#a5ec646397aebefb7cbea4585e572a696">CacheAnalysis</a>
 , <a class="el" href="classCallAnalysis.html#acfe54ee4a68b2b10ca49f5b783690fc0">CallAnalysis</a>
 , <a class="el" href="classCostAnalysis.html#a425370475843b8c683cde8693a5578ec">CostAnalysis</a>
+, <a class="el" href="classInstructionCacheAnalysis.html#a7c1d61a82049546ef172a8f87c16734d">InstructionCacheAnalysis</a>
+, <a class="el" href="classRegisterUseAnalysis.html#a96d435feea67a0911426bfcac0637150">RegisterUseAnalysis</a>
 , <a class="el" href="classStaticInstructionAnalysis.html#aa3e6c206738f0326e96ee43cc9c8f06b">StaticInstructionAnalysis</a>
 , <a class="el" href="classTTIInstructionAnalysis.html#ab490ca27ef2c217388a114302f5d89a9">TTIInstructionAnalysis</a>
 </li>
@@ -236,6 +250,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>getAnalysisUsage()
 : <a class="el" href="structMachineAST.html#ae818ebe5984be684082913a954ea2eac">MachineAST</a>
+, <a class="el" href="structMachineRegisterUse.html#a07e468ee00df37608d83c2f627899f3d">MachineRegisterUse</a>
 , <a class="el" href="structStaticProfiling.html#a99fed923deae11457f15dd90fa40ba33">StaticProfiling</a>
 </li>
 <li>getBasicBlockFrequency()
@@ -265,6 +280,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getEntryCount()
 : <a class="el" href="classllvm_1_1GCOVFunction.html#aa555e5a89e0b8f185542c6b9e24b6b50">llvm::GCOVFunction</a>
 </li>
+<li>getExecutionTime()
+: <a class="el" href="classExecutionTimeMeasurer.html#a91cd4b40cbbd4416be9d1497f5c7912b">ExecutionTimeMeasurer</a>
+</li>
 <li>getExitCount()
 : <a class="el" href="classllvm_1_1GCOVFunction.html#a9178a9dd2c0e2beb2705e5f94c6ad58c">llvm::GCOVFunction</a>
 </li>
@@ -273,6 +291,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>getFunctionCost()
 : <a class="el" href="structMachineAST.html#a6a21c7444c5c427d2bd6fb4eb2bfd5dc">MachineAST</a>
+, <a class="el" href="structMachineRegisterUse.html#a0450e0fabd3c394eaf784e3d029b367d">MachineRegisterUse</a>
 </li>
 <li>getID()
 : <a class="el" href="classProfileModule.html#afc23ba15dfb2146631b172285e6cbdc1">ProfileModule</a>
@@ -301,6 +320,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getParent()
 : <a class="el" href="classllvm_1_1GCOVBlock.html#a6b22199885e5262b41f47bd92c0379f7">llvm::GCOVBlock</a>
 </li>
+<li>getPasses()
+: <a class="el" href="classProfileModule.html#aed1f8e3ca9bf2d7c85dc3d43e049155b">ProfileModule</a>
+</li>
 </ul>
 
 
@@ -324,9 +346,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>insert()
 : <a class="el" href="classlru_1_1cache.html#a6fd7220b9c198dd5e9502044d9c0eb11">lru::cache&lt; K, V &gt;</a>
 </li>
+<li>InstructionCacheAnalysis()
+: <a class="el" href="classInstructionCacheAnalysis.html#a9684e9efe40c5497cbc582c9b31d38f7">InstructionCacheAnalysis</a>
+</li>
 <li>isCached()
 : <a class="el" href="structAbstractCacheState.html#a9463918e73f91c51b1aa2f58460f4c91">AbstractCacheState</a>
 , <a class="el" href="classCacheSet.html#a8708b0886355667a9923841c905bec26">CacheSet</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_j"></a>- j -</h3><ul>
+<li>JITExecution()
+: <a class="el" href="classJITExecution.html#a5db919122e884774c0dfb3ed5b432645">JITExecution</a>
 </li>
 </ul>
 
@@ -335,10 +367,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>MachineAST()
 : <a class="el" href="structMachineAST.html#ade5a7abac9dd8358998ab8a2c431e0f7">MachineAST</a>
 </li>
+<li>MachineRegisterUse()
+: <a class="el" href="structMachineRegisterUse.html#aa3e6be0dc22e5e3ba3ed302b661233cf">MachineRegisterUse</a>
+</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>operator!=()
+: <a class="el" href="classPassSequence.html#ac7cb0254936797b2644e5c0d2085d5a6">PassSequence</a>
+</li>
+<li>operator*()
+: <a class="el" href="classPassSequence.html#af5760685a003e424148ef1111f06c671">PassSequence</a>
+</li>
+<li>operator+()
+: <a class="el" href="classPassSequence.html#a5eb0d2f3bfc277b55e92345cacdb14c8">PassSequence</a>
+</li>
+<li>operator==()
+: <a class="el" href="classPassSequence.html#a71d8d685532405f168589d5937d2960c">PassSequence</a>
+</li>
 <li>operator[]()
 : <a class="el" href="classlru_1_1cache.html#a08af941d215ab1a5459d3e5af24e128b">lru::cache&lt; K, V &gt;</a>
 </li>
@@ -346,9 +393,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>populatePassManager()
+: <a class="el" href="classPassSequence.html#a93dfa75e16d9f662a272d516c8c8fa2e">PassSequence</a>
+</li>
 <li>print()
 : <a class="el" href="structformatBranchInfo.html#a4c686aa90545c657a0c4dd2c607b2d94">formatBranchInfo</a>
 , <a class="el" href="classllvm_1_1FileInfo.html#ab7b3f12f2c4c6fc554b6a59a3458ae08">llvm::FileInfo</a>
+, <a class="el" href="classPassSequence.html#a122314150b62158df1a45b3442beebff">PassSequence</a>
 , <a class="el" href="classProfileModule.html#a275910e8a0ec876899d60a68420927e2">ProfileModule</a>
 </li>
 <li>ProfileModule()
@@ -358,6 +409,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>randomize()
+: <a class="el" href="classPassSequence.html#a9a9e873e972da1c00dbb2902f10d951e">PassSequence</a>
+</li>
 <li>readArcTag()
 : <a class="el" href="classllvm_1_1GCOVBuffer.html#a207e31e4a61919491442c2c5f7de9436">llvm::GCOVBuffer</a>
 </li>
@@ -405,6 +459,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>readString()
 : <a class="el" href="classllvm_1_1GCOVBuffer.html#a4a6cc9b52807e27a7ac27bb3ef56f3c7">llvm::GCOVBuffer</a>
 </li>
+<li>RegisterUseAnalysis()
+: <a class="el" href="classRegisterUseAnalysis.html#a9bc9527ff3a6b625fa44a81a9c96698d">RegisterUseAnalysis</a>
+</li>
 <li>repairFunctionProfiling()
 : <a class="el" href="classProfileModule.html#a17cad3a7d951ee78efd7b30cc3a423ce">ProfileModule</a>
 </li>
@@ -416,6 +473,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>runOnFunction()
 : <a class="el" href="structMachineAST.html#a4125760ed1f3c1ba447f05eeabde3d80">MachineAST</a>
+, <a class="el" href="structMachineRegisterUse.html#aeccba5f6ba2ca1997741902fd860cb68">MachineRegisterUse</a>
 , <a class="el" href="structStaticProfiling.html#a2dc949fdbc72bbba74b0ddd21fc61e38">StaticProfiling</a>
 </li>
 </ul>
@@ -431,11 +489,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setCallCost()
 : <a class="el" href="classProfileModule.html#a1101cff67ce6e531ff6cff385a0be6f9">ProfileModule</a>
 </li>
+<li>setOLevel()
+: <a class="el" href="classPassSequence.html#ae864db5c433870ba266e35e3a6e6d851">PassSequence</a>
+</li>
+<li>setOSize()
+: <a class="el" href="classPassSequence.html#a1abcf62b76dd50e2714bbab846265cb7">PassSequence</a>
+</li>
+<li>setPasses()
+: <a class="el" href="classProfileModule.html#aad5c02959dcedf05cab4b18987ca2a22">ProfileModule</a>
+</li>
 <li>setProgramCount()
 : <a class="el" href="classllvm_1_1FileInfo.html#a508588e050463d4cbb7129eeb4af3e46">llvm::FileInfo</a>
 </li>
 <li>setRunCount()
 : <a class="el" href="classllvm_1_1FileInfo.html#a015259ffbbb852c9b40717ee8415d5ca">llvm::FileInfo</a>
+</li>
+<li>size()
+: <a class="el" href="classPassSequence.html#aa39e6e5d557c59a7f0f7b0e0827fffb3">PassSequence</a>
 </li>
 <li>sortDstEdges()
 : <a class="el" href="classllvm_1_1GCOVBlock.html#a252bab0d364fa31e20f8c0fbde181eb6">llvm::GCOVBlock</a>
@@ -460,14 +530,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_~"></a>- ~ -</h3><ul>
+<li>~ExecutionTimeMeasurer()
+: <a class="el" href="classExecutionTimeMeasurer.html#a5ad11ae2a8c8dba076c8c6227107f543">ExecutionTimeMeasurer</a>
+</li>
 <li>~GCOVBlock()
 : <a class="el" href="classllvm_1_1GCOVBlock.html#a90f69447839e933b83fb0bf1b358d01d">llvm::GCOVBlock</a>
+</li>
+<li>~InstructionCacheAnalysis()
+: <a class="el" href="classInstructionCacheAnalysis.html#a73f36e8111a74008e73ed344dc7af713">InstructionCacheAnalysis</a>
+</li>
+<li>~JITExecution()
+: <a class="el" href="classJITExecution.html#af95459089b01861f4d9a3c4f37b2ac08">JITExecution</a>
+</li>
+<li>~RegisterUseAnalysis()
+: <a class="el" href="classRegisterUseAnalysis.html#a4b0f457b5764213a90c053ca0d8b5064">RegisterUseAnalysis</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 1 2015 15:54:25 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 27 2015 00:08:47 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

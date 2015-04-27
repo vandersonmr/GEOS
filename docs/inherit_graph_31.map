@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classInstructionCostEstimator.html" title="InstructionCostEstimator" alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node1" href="$classFunctionPass.html" title="FunctionPass" alt="" coords="6,56,109,83"/>
+<area shape="rect" id="node2" href="$structMachineAST.html" title="MachineAST" alt="" coords="181,5,278,32"/>
+<area shape="rect" id="node3" href="$structMachineRegisterUse.html" title="MachineRegisterUse" alt="" coords="158,56,301,83"/>
+<area shape="rect" id="node4" href="$structStaticProfiling.html" title="StaticProfiling" alt="" coords="178,107,281,133"/>
 </map>

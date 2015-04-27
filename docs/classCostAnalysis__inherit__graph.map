@@ -1,7 +1,8 @@
 <map id="CostAnalysis" name="CostAnalysis">
-<area shape="rect" id="node2" href="$classBranchAnalysis.html" title="Count the amount of unconditional branchs in the code and their execution frequencies. " alt="" coords="180,5,292,32"/>
-<area shape="rect" id="node3" href="$classCacheAnalysis.html" title="TODO: Split this class in two, one for instruction cache and other for registers. ..." alt="" coords="182,56,290,83"/>
-<area shape="rect" id="node4" href="$classCallAnalysis.html" title="This function multiply the execution frequency of each call for external function by their costs give..." alt="" coords="189,107,283,133"/>
-<area shape="rect" id="node5" href="$classStaticInstructionAnalysis.html" title="Return the sum of the cost of all LLVM instruction multiplicated by its the execution frequency..." alt="" coords="153,157,319,184"/>
-<area shape="rect" id="node6" href="$classTTIInstructionAnalysis.html" title="The same as StaticInstruction except that the cost for each LLVM instruction can change based on the ..." alt="" coords="160,208,312,235"/>
+<area shape="rect" id="node2" href="$classBranchAnalysis.html" title="Count the amount of unconditional branchs in the code and their execution frequencies. " alt="" coords="181,5,293,32"/>
+<area shape="rect" id="node3" href="$classCallAnalysis.html" title="This function multiply the execution frequency of each call for external function by their costs give..." alt="" coords="191,56,284,83"/>
+<area shape="rect" id="node4" href="$classInstructionCacheAnalysis.html" title="InstructionCacheAnalysis" alt="" coords="153,107,322,133"/>
+<area shape="rect" id="node5" href="$classRegisterUseAnalysis.html" title="RegisterUseAnalysis" alt="" coords="166,157,309,184"/>
+<area shape="rect" id="node6" href="$classStaticInstructionAnalysis.html" title="Return the sum of the cost of all LLVM instruction multiplicated by its the execution frequency..." alt="" coords="154,208,321,235"/>
+<area shape="rect" id="node7" href="$classTTIInstructionAnalysis.html" title="The same as StaticInstruction except that the cost for each LLVM instruction can change based on the ..." alt="" coords="161,259,313,285"/>
 </map>

@@ -101,14 +101,14 @@ Include dependency graph for CostAnalysis.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="CostAnalysis_8h__incl.png" border="0" usemap="#CostAnalysis_8h" alt=""/></div>
 <map name="CostAnalysis_8h" id="CostAnalysis_8h">
-<area shape="rect" id="node2" href="CostEstimatorOptions_8h.html" title="This file contains declarations of structures that contains options to customize the cost estimation ..." alt="" coords="5,81,195,122"/><area shape="rect" id="node4" href="ProfileModule_8h.html" title="This file contains declarations of the Profile Module, which encapsulate a LLVMModule with profiling ..." alt="" coords="220,88,412,115"/></map>
+<area shape="rect" id="node2" href="CostEstimatorOptions_8h.html" title="This file contains declarations of structures that contains options to customize the cost estimation ..." alt="" coords="5,81,195,122"/><area shape="rect" id="node4" href="ProfileModule_8h.html" title="This file contains declarations of the Profile Module, which encapsulate a LLVMModule with profiling ..." alt="" coords="220,88,412,115"/><area shape="rect" id="node7" href="PassSequence_8h.html" title="This file contains the definition and implementation of a sequence of passes. " alt="" coords="503,171,705,197"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="CostAnalysis_8h__dep__incl.png" border="0" usemap="#CostAnalysis_8hdep" alt=""/></div>
 <map name="CostAnalysis_8hdep" id="CostAnalysis_8hdep">
-<area shape="rect" id="node2" href="BranchAnalysis_8cpp.html" title="This file contains declarations and implementation of unconditional branch analysis. " alt="" coords="5,80,140,107"/><area shape="rect" id="node3" href="CacheAnalysis_8cpp.html" title="This file contains declarations and implementation of the instruction cache analysis and also use of ..." alt="" coords="166,80,297,107"/><area shape="rect" id="node4" href="CallCostAnalysis_8cpp.html" title="This file contains declarations and implementation of Call Cost analysis. " alt="" coords="323,80,467,107"/><area shape="rect" id="node5" href="StaticCostEstimator_8cpp.html" title="This file contains declarations and implementation of an instruction cost anaysis that is NOT sensiti..." alt="" coords="491,80,653,107"/><area shape="rect" id="node6" href="TTIInstructionAnalysis_8cpp.html" title="This file contains declarations and implementation of an instruction cost anaysis that is sensitive t..." alt="" coords="677,80,853,107"/><area shape="rect" id="node7" href="CostEstimator_8cpp.html" title="This file contains the implementation of the program cost analyser. It uses the the AnalysisMethods t..." alt="" coords="877,80,1005,107"/></map>
+<area shape="rect" id="node2" href="BranchAnalysis_8cpp.html" title="This file contains declarations and implementation of unconditional branch analysis. " alt="" coords="5,80,140,107"/><area shape="rect" id="node3" href="InstructionCacheAnalysis_8cpp.html" title="This file contains declarations and implementation of the instruction cache analysis and also use of ..." alt="" coords="166,80,359,107"/><area shape="rect" id="node4" href="RegisterUseAnalysis_8cpp.html" title="This file contains declarations and implementation of the instruction cache analysis and also use of ..." alt="" coords="383,80,549,107"/><area shape="rect" id="node5" href="CallCostAnalysis_8cpp.html" title="This file contains declarations and implementation of Call Cost analysis. " alt="" coords="575,80,719,107"/><area shape="rect" id="node6" href="StaticCostEstimator_8cpp.html" title="This file contains declarations and implementation of an instruction cost anaysis that is NOT sensiti..." alt="" coords="743,80,905,107"/><area shape="rect" id="node7" href="TTIInstructionAnalysis_8cpp.html" title="This file contains declarations and implementation of an instruction cost anaysis that is sensitive t..." alt="" coords="929,80,1105,107"/><area shape="rect" id="node8" href="CostEstimator_8cpp.html" title="This file contains the implementation of the program cost analyser. It uses the the AnalysisMethods t..." alt="" coords="1129,80,1257,107"/></map>
 </div>
 </div>
 <p><a href="CostAnalysis_8h_source.html">Go to the source code of this file.</a></p>
@@ -117,8 +117,9 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCostAnalysis.html">CostAnalysis</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCacheAnalysis.html">CacheAnalysis</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: Split this class in two, one for instruction cache and other for registers.  <a href="classCacheAnalysis.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRegisterUseAnalysis.html">RegisterUseAnalysis</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInstructionCacheAnalysis.html">InstructionCacheAnalysis</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStaticInstructionAnalysis.html">StaticInstructionAnalysis</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the sum of the cost of all LLVM instruction multiplicated by its the execution frequency. The cost is the same for every architecture.  <a href="classStaticInstructionAnalysis.html#details">More...</a><br/></td></tr>
@@ -140,7 +141,7 @@ Classes</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 1 2015 15:54:23 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 27 2015 00:08:47 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

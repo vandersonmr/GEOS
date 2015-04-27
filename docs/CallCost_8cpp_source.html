@@ -116,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="CallCost_8cpp.html#ad78e062f62e0d6e453941fb4ca843e4d">   25</a></span>&#160;<span class="preprocessor">#define DEBUG_TYPE &quot;call-cost&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">struct </span>CallCost : <span class="keyword">public</span> ModulePass {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">struct </span><a class="code" href="GEOSCommandLineParser_8h.html#af9b03efba7b19e7930a027e371e286aa">CallCost</a> : <span class="keyword">public</span> ModulePass {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keywordtype">void</span> addAttributes(Function* F) {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// { &quot;less-precise-fpmad&quot;=&quot;false&quot; &quot;no-frame-pointer-elim&quot;=&quot;true&quot; </span></div>
@@ -215,7 +215,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code" href="PAPI_8cpp.html#af180e926633cde08a05ccbc3af397ee4">ID</a>; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      CallCost() : ModulePass(ID) {}</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <a class="code" href="GEOSCommandLineParser_8h.html#af9b03efba7b19e7930a027e371e286aa">CallCost</a>() : ModulePass(ID) {}</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="keywordtype">bool</span> runOnModule(Module &amp;M)<span class="keyword"> override </span>{</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        declarePAPIFunctions(M);</div>
@@ -242,12 +242,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordtype">char</span> <a class="code" href="PAPI_8cpp.html#af180e926633cde08a05ccbc3af397ee4">CallCost::ID</a> = 0;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">static</span> RegisterPass&lt;CallCost&gt; <a class="code" href="CallCost_8cpp.html#a829312c58888413304f39f84e132c96b">Y</a>(<span class="stringliteral">&quot;call-cost&quot;</span>, <span class="stringliteral">&quot;BB-Prof Basic Block Profiling&quot;</span>);</div>
+<div class="ttc" id="GEOSCommandLineParser_8h_html_af9b03efba7b19e7930a027e371e286aa"><div class="ttname"><a href="GEOSCommandLineParser_8h.html#af9b03efba7b19e7930a027e371e286aa">CallCost</a></div><div class="ttdeci">static cl::opt&lt; std::string &gt; CallCost(&quot;-call&quot;, cl::desc(&quot;defines callcost file.&quot;), cl::value_desc(&quot;CallCost&quot;))</div></div>
 <div class="ttc" id="PAPI_8cpp_html_af180e926633cde08a05ccbc3af397ee4"><div class="ttname"><a href="PAPI_8cpp.html#af180e926633cde08a05ccbc3af397ee4">ID</a></div><div class="ttdeci">int ID</div><div class="ttdef"><b>Definition:</b> <a href="PAPI_8cpp_source.html#l00025">PAPI.cpp:25</a></div></div>
 <div class="ttc" id="CallCost_8cpp_html_a829312c58888413304f39f84e132c96b"><div class="ttname"><a href="CallCost_8cpp.html#a829312c58888413304f39f84e132c96b">Y</a></div><div class="ttdeci">static RegisterPass&lt; CallCost &gt; Y(&quot;call-cost&quot;,&quot;BB-Prof Basic Block Profiling&quot;)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 1 2015 15:54:23 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 27 2015 00:08:47 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

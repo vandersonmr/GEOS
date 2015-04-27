@@ -1,4 +1,5 @@
 <map id="StaticProfiling.cpp" name="StaticProfiling.cpp">
-<area shape="rect" id="node2" href="$StaticProfiling_8h.html" title="This file contains declarations of Profile Loader. It uses static analysis to mensure the execution f..." alt="" coords="113,88,276,115"/>
-<area shape="rect" id="node3" href="$ProfileModule_8h.html" title="This file contains declarations of the Profile Module, which encapsulate a LLVMModule with profiling ..." alt="" coords="119,171,311,197"/>
+<area shape="rect" id="node2" href="$StaticProfiling_8h.html" title="This file contains declarations of Profile Loader. It uses static analysis to mensure the execution f..." alt="" coords="331,88,493,115"/>
+<area shape="rect" id="node3" href="$ProfileModule_8h.html" title="This file contains declarations of the Profile Module, which encapsulate a LLVMModule with profiling ..." alt="" coords="236,171,428,197"/>
+<area shape="rect" id="node6" href="$PassSequence_8h.html" title="This file contains the definition and implementation of a sequence of passes. " alt="" coords="369,245,572,272"/>
 </map>
