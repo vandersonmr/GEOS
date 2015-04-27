@@ -95,29 +95,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Functions</h2></td></tr>
 <tr class="memitem:ae8f4c7f7aa8502a2593a231a54f5d8be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#ae8f4c7f7aa8502a2593a231a54f5d8be">init</a> ()</td></tr>
 <tr class="separator:ae8f4c7f7aa8502a2593a231a54f5d8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2da23a2e03153cc8110acc3564843f81"><td class="memItemLeft" align="right" valign="top">llvm::Pass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a2da23a2e03153cc8110acc3564843f81">getPass</a> (<a class="el" href="GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5">OptimizationKind</a>)</td></tr>
-<tr class="memdesc:a2da23a2e03153cc8110acc3564843f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instanciation of the chosen OptimizationKind.  <a href="#a2da23a2e03153cc8110acc3564843f81">More...</a><br/></td></tr>
-<tr class="separator:a2da23a2e03153cc8110acc3564843f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab70447a5825083c7e87304cff472e13c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classProfileModule.html">ProfileModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#ab70447a5825083c7e87304cff472e13c">applyPassesOnFunction</a> (llvm::StringRef, const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;, llvm::FunctionPassManager &amp;)</td></tr>
-<tr class="memdesc:ab70447a5825083c7e87304cff472e13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like applyPasses this function applies a sequence of passes. But differently from applyPasses this passes are just applied to the function with the name given as parameter.  <a href="#ab70447a5825083c7e87304cff472e13c">More...</a><br/></td></tr>
-<tr class="separator:ab70447a5825083c7e87304cff472e13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64d258559ffb715536bead46681ed475"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classProfileModule.html">ProfileModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a64d258559ffb715536bead46681ed475">applyPasses</a> (const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;, llvm::FunctionPassManager &amp;)</td></tr>
-<tr class="memdesc:a64d258559ffb715536bead46681ed475"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function applies a sequence of passes (Transformations) into a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a>. The passes are not applied into the <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a> given as parameter, actually, all modifications are made in a copy and this copy is returned as parameter. Futher, it ensures the profiling consistency.  <a href="#a64d258559ffb715536bead46681ed475">More...</a><br/></td></tr>
-<tr class="separator:a64d258559ffb715536bead46681ed475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc027c03aefd7369ce275a1f177ecaaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classProfileModule.html">ProfileModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#adc027c03aefd7369ce275a1f177ecaaf">applyPassesModule</a> (const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;, llvm::FunctionPassManager &amp;, llvm::PassManager &amp;)</td></tr>
-<tr class="memdesc:adc027c03aefd7369ce275a1f177ecaaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function works as applyPasses. The only difference is that this one can apply FunctionPasses AND ModulePasses.  <a href="#adc027c03aefd7369ce275a1f177ecaaf">More...</a><br/></td></tr>
-<tr class="separator:adc027c03aefd7369ce275a1f177ecaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7653d1c75e59416cb89638c3a26d5a74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classProfileModule.html">ProfileModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a7653d1c75e59416cb89638c3a26d5a74">applyPassesOnFunction</a> (llvm::StringRef, const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;, <a class="el" href="classPassSequence.html">PassSequence</a> &amp;)</td></tr>
+<tr class="memdesc:a7653d1c75e59416cb89638c3a26d5a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like applyPasses this function applies a sequence of passes. But differently from applyPasses this passes are just applied to the function with the name given as parameter.  <a href="#a7653d1c75e59416cb89638c3a26d5a74">More...</a><br/></td></tr>
+<tr class="separator:a7653d1c75e59416cb89638c3a26d5a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a445aad19602b8cab903f3d6c1972b659"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classProfileModule.html">ProfileModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a445aad19602b8cab903f3d6c1972b659">applyPasses</a> (const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;, <a class="el" href="classPassSequence.html">PassSequence</a> &amp;)</td></tr>
+<tr class="memdesc:a445aad19602b8cab903f3d6c1972b659"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function applies a sequence of passes (Transformations) into a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a>. The passes are not applied into the <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a> given as parameter, actually, all modifications are made in a copy and this copy is returned as parameter. Futher, it ensures the profiling consistency.  <a href="#a445aad19602b8cab903f3d6c1972b659">More...</a><br/></td></tr>
+<tr class="separator:a445aad19602b8cab903f3d6c1972b659"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9bde28a8a87f51d9333282e888682e4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#af9bde28a8a87f51d9333282e888682e4">analyseFunctionCost</a> (llvm::StringRef, const <a class="el" href="classProfileModule.html">ProfileModule</a> *,::CostEstimatorOptions)</td></tr>
 <tr class="memdesc:af9bde28a8a87f51d9333282e888682e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the execution time of a function, that the name is a parameter, using the given AnalysisMethod and options.  <a href="#af9bde28a8a87f51d9333282e888682e4">More...</a><br/></td></tr>
 <tr class="separator:af9bde28a8a87f51d9333282e888682e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a0e4274febe448880c7deefb7e3a60c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a7a0e4274febe448880c7deefb7e3a60c">analyseCost</a> (const <a class="el" href="classProfileModule.html">ProfileModule</a> *,::CostEstimatorOptions)</td></tr>
-<tr class="memdesc:a7a0e4274febe448880c7deefb7e3a60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the execution time of a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a> using the given AnalysisMethod and options.  <a href="#a7a0e4274febe448880c7deefb7e3a60c">More...</a><br/></td></tr>
-<tr class="separator:a7a0e4274febe448880c7deefb7e3a60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85644fe6b4ea0b8c9d97c781812908fe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a85644fe6b4ea0b8c9d97c781812908fe">analyseCost</a> (const <a class="el" href="classProfileModule.html">ProfileModule</a> *, CostEstimatorOptions)</td></tr>
+<tr class="memdesc:a85644fe6b4ea0b8c9d97c781812908fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the execution time of a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a> using the given AnalysisMethod and options.  <a href="#a85644fe6b4ea0b8c9d97c781812908fe">More...</a><br/></td></tr>
+<tr class="separator:a85644fe6b4ea0b8c9d97c781812908fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6223a3d23d523ba00c476d8858325873"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a6223a3d23d523ba00c476d8858325873">getRealExecutionTime</a> (const <a class="el" href="classProfileModule.html">ProfileModule</a> *, <a class="el" href="ExecutionTimeMeasurer_8h.html#a20371b3dbbddbf2349019bf72d76b262">ExecutionKind</a>)</td></tr>
+<tr class="memdesc:a6223a3d23d523ba00c476d8858325873"><td class="mdescLeft">&#160;</td><td class="mdescRight">It runs the llvm code and returns its real runtime.  <a href="#a6223a3d23d523ba00c476d8858325873">More...</a><br/></td></tr>
+<tr class="separator:a6223a3d23d523ba00c476d8858325873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877b06d89128917d4d6cb2e710c8a952"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGEOS.html#a877b06d89128917d4d6cb2e710c8a952">getRealExecutionTimeWithArgs</a> (const <a class="el" href="classProfileModule.html">ProfileModule</a> *, <a class="el" href="ExecutionTimeMeasurer_8h.html#a20371b3dbbddbf2349019bf72d76b262">ExecutionKind</a>, std::vector&lt; std::string &gt;, char *const *)</td></tr>
+<tr class="memdesc:a877b06d89128917d4d6cb2e710c8a952"><td class="mdescLeft">&#160;</td><td class="mdescRight">It runs the llvm code and returns its real runtime. Argv and Envp are parameters.  <a href="#a877b06d89128917d4d6cb2e710c8a952">More...</a><br/></td></tr>
+<tr class="separator:a877b06d89128917d4d6cb2e710c8a952"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This namespace is responsible for applying passes into a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a>, analyse its execution time and make copies of it. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a7a0e4274febe448880c7deefb7e3a60c"></a>
+<a class="anchor" id="a85644fe6b4ea0b8c9d97c781812908fe"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -125,13 +125,13 @@ Functions</h2></td></tr>
           <td class="memname">double GEOS::analyseCost </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classProfileModule.html">ProfileModule</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>PModule</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">::CostEstimatorOptions&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramtype">CostEstimatorOptions&#160;</td>
+          <td class="paramname"><em>Opts</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -142,6 +142,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Estimate the execution time of a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a> using the given AnalysisMethod and options. </p>
+
+<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00145">145</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
+
+<p>References <a class="el" href="CostEstimator_8cpp_source.html#l00023">CostEstimator::getModuleCost()</a>.</p>
 
 </div>
 </div>
@@ -179,21 +183,21 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a64d258559ffb715536bead46681ed475"></a>
+<a class="anchor" id="a445aad19602b8cab903f3d6c1972b659"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classProfileModule.html">ProfileModule</a>* GEOS::applyPasses </td>
+          <td class="memname"><a class="el" href="classProfileModule.html">ProfileModule</a> * GEOS::applyPasses </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>PModule</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">llvm::FunctionPassManager &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramtype"><a class="el" href="classPassSequence.html">PassSequence</a> &amp;&#160;</td>
+          <td class="paramname"><em>PS</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -205,43 +209,13 @@ Functions</h2></td></tr>
 
 <p>This function applies a sequence of passes (Transformations) into a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a>. The passes are not applied into the <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a> given as parameter, actually, all modifications are made in a copy and this copy is returned as parameter. Futher, it ensures the profiling consistency. </p>
 
-</div>
-</div>
-<a class="anchor" id="adc027c03aefd7369ce275a1f177ecaaf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classProfileModule.html">ProfileModule</a>* GEOS::applyPassesModule </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classProfileModule.html">ProfileModule</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">llvm::FunctionPassManager &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">llvm::PassManager &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00109">109</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
 
-<p>This function works as applyPasses. The only difference is that this one can apply FunctionPasses AND ModulePasses. </p>
+<p>References <a class="el" href="TTIInstructionAnalysis_8cpp_source.html#l00033">FPM</a>, <a class="el" href="ProfileModule_8cpp_source.html#l00286">ProfileModule::getCopy()</a>, <a class="el" href="ProfileModule_8cpp_source.html#l00083">ProfileModule::getLLVMModule()</a>, <a class="el" href="InstructionCacheAnalysis_8cpp_source.html#l00244">PM</a>, <a class="el" href="PassSequence_8h_source.html#l00249">PassSequence::populatePassManager()</a>, <a class="el" href="ProfileModule_8cpp_source.html#l00266">ProfileModule::repairProfiling()</a>, and <a class="el" href="ProfileModule_8h_source.html#l00047">ProfileModule::setPasses()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab70447a5825083c7e87304cff472e13c"></a>
+<a class="anchor" id="a7653d1c75e59416cb89638c3a26d5a74"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -260,7 +234,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">llvm::FunctionPassManager &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classPassSequence.html">PassSequence</a> &amp;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -275,25 +249,79 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2da23a2e03153cc8110acc3564843f81"></a>
+<a class="anchor" id="a6223a3d23d523ba00c476d8858325873"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Pass * GEOS::getPass </td>
+          <td class="memname">double GEOS::getRealExecutionTime </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="GEOS_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5">OptimizationKind</a>&#160;</td>
-          <td class="paramname"><em>OptChoosed</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classProfileModule.html">ProfileModule</a> *&#160;</td>
+          <td class="paramname"><em>PModule</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="ExecutionTimeMeasurer_8h.html#a20371b3dbbddbf2349019bf72d76b262">ExecutionKind</a>&#160;</td>
+          <td class="paramname"><em>ExecKind</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the instanciation of the chosen OptimizationKind. </p>
+<p>It runs the llvm code and returns its real runtime. </p>
 
-<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00050">50</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
+<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00150">150</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
 
-<p>References <a class="el" href="GEOS_8h_source.html#l00069">AddDiscriminators</a>, <a class="el" href="GEOS_8h_source.html#l00028">AggressiveDCE</a>, <a class="el" href="GEOS_8h_source.html#l00023">AlignmentFromAssumptions</a>, <a class="el" href="GEOS_8h_source.html#l00048">BreakCriticalEdges</a>, <a class="el" href="GEOS_8h_source.html#l00045">CFGSimplification</a>, <a class="el" href="GEOS_8h_source.html#l00047">CFGStructurization</a>, <a class="el" href="GEOS_8h_source.html#l00059">ConstantHoisting</a>, <a class="el" href="GEOS_8h_source.html#l00022">ConstantPropagation</a>, <a class="el" href="GEOS_8h_source.html#l00026">DeadCodeElimination</a>, <a class="el" href="GEOS_8h_source.html#l00025">DeadInstElimination</a>, <a class="el" href="GEOS_8h_source.html#l00042">DemoteRegisterToMemory</a>, <a class="el" href="GEOS_8h_source.html#l00054">EarlyCSE</a>, <a class="el" href="GEOS_8h_source.html#l00046">FlattenCFG</a>, <a class="el" href="GEOS_8h_source.html#l00056">GVN</a>, <a class="el" href="GEOS_8h_source.html#l00031">InductionVariableSimplify</a>, <a class="el" href="GEOS_8h_source.html#l00032">InstructionCombining</a>, <a class="el" href="GEOS_8h_source.html#l00064">InstructionSimplifier</a>, <a class="el" href="GEOS_8h_source.html#l00044">JumpThreading</a>, <a class="el" href="GEOS_8h_source.html#l00053">LCSSA</a>, <a class="el" href="GEOS_8h_source.html#l00033">LICM</a>, <a class="el" href="GEOS_8h_source.html#l00058">LoopDeletion</a>, <a class="el" href="GEOS_8h_source.html#l00040">LoopIdiom</a>, <a class="el" href="GEOS_8h_source.html#l00038">LoopReroll</a>, <a class="el" href="GEOS_8h_source.html#l00039">LoopRotate</a>, <a class="el" href="GEOS_8h_source.html#l00049">LoopSimplify</a>, <a class="el" href="GEOS_8h_source.html#l00034">LoopStrengthReduce</a>, <a class="el" href="GEOS_8h_source.html#l00037">LoopUnroll</a>, <a class="el" href="GEOS_8h_source.html#l00035">LoopUnswitch</a>, <a class="el" href="GEOS_8h_source.html#l00062">LowerAtomic</a>, <a class="el" href="GEOS_8h_source.html#l00051">LowerSwitch</a>, <a class="el" href="GEOS_8h_source.html#l00057">MemCpyOpt</a>, <a class="el" href="GEOS_8h_source.html#l00055">MergedLoadStoreMotion</a>, <a class="el" href="GEOS_8h_source.html#l00041">PromoteMemoryToRegister</a>, <a class="el" href="GEOS_8h_source.html#l00043">Reassociate</a>, <a class="el" href="GEOS_8h_source.html#l00068">ScalarizerPass</a>, <a class="el" href="GEOS_8h_source.html#l00030">ScalarReplAggregates</a>, <a class="el" href="GEOS_8h_source.html#l00024">SCCP</a>, <a class="el" href="GEOS_8h_source.html#l00070">SeparateConstOffsetFromGEP</a>, <a class="el" href="GEOS_8h_source.html#l00061">Sink</a>, <a class="el" href="GEOS_8h_source.html#l00029">SROA</a>, <a class="el" href="GEOS_8h_source.html#l00050">TailCallElimination</a>, and <a class="el" href="GEOS_8h_source.html#l00063">ValuePropagation</a>.</p>
+<p>References <a class="el" href="ExecutionTimeMeasurer_8h_source.html#l00093">ExecutionFactory::createRuntimeMeasurer()</a>, and <a class="el" href="ExecutionTimeMeasurer_8h_source.html#l00056">ExecutionTimeMeasurer::getExecutionTime()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a877b06d89128917d4d6cb2e710c8a952"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GEOS::getRealExecutionTimeWithArgs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classProfileModule.html">ProfileModule</a> *&#160;</td>
+          <td class="paramname"><em>PModule</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ExecutionTimeMeasurer_8h.html#a20371b3dbbddbf2349019bf72d76b262">ExecutionKind</a>&#160;</td>
+          <td class="paramname"><em>ExecKind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>Argv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *const *&#160;</td>
+          <td class="paramname"><em>Envp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>It runs the llvm code and returns its real runtime. Argv and Envp are parameters. </p>
+
+<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00157">157</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
+
+<p>References <a class="el" href="ExecutionTimeMeasurer_8h_source.html#l00093">ExecutionFactory::createRuntimeMeasurer()</a>, and <a class="el" href="ExecutionTimeMeasurer_8h_source.html#l00056">ExecutionTimeMeasurer::getExecutionTime()</a>.</p>
 
 </div>
 </div>
@@ -310,14 +338,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00027">27</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
+<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00041">41</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 1 2015 15:54:24 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 27 2015 00:08:47 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

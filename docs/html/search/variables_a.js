@@ -1,7 +1,8 @@
 var searchData=
 [
   ['map',['map',['../struct__papi__shared__lib__info.html#a96185f1a5bf09f26ed37575018aa0b26',1,'_papi_shared_lib_info']]],
-  ['mast',['MAST',['../CacheAnalysis_8cpp.html#a7b147e441d742f9aefedf8d7459df9ce',1,'CacheAnalysis.cpp']]],
+  ['mast',['MAST',['../InstructionCacheAnalysis_8cpp.html#a7b147e441d742f9aefedf8d7459df9ce',1,'InstructionCacheAnalysis.cpp']]],
+  ['mast1',['MAST1',['../RegisterUseAnalysis_8cpp.html#ac0c91e80794ccf48a95e8755643fdfea',1,'RegisterUseAnalysis.cpp']]],
   ['max_5fdegree',['max_degree',['../struct__papi__multiplex__option.html#a02c7a9cb956c9c4bdff2bb4d03f2e6ba',1,'_papi_multiplex_option']]],
   ['mem_5fhierarchy',['mem_hierarchy',['../struct__papi__hw__info.html#a54962535c96468143bfa59ee8fea7dac',1,'_papi_hw_info']]],
   ['mhz',['mhz',['../struct__papi__hw__info.html#a21bd1eef703d322d4b2e0d44b4cf3dbf',1,'_papi_hw_info']]],

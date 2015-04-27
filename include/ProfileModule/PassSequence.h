@@ -1,4 +1,4 @@
-//===------- include/ProfileModule.h - The Profile Module  -*- C++ -*------===//
+//===---- include/PassSequence.h - The Pass Sequence Manager  -*- C++ -*---===//
 //
 //              The LLVM Time Cost Analyser Infrastructure
 //
@@ -7,10 +7,12 @@
 //===----------------------------------------------------------------------===//
 ///
 /// \file
-/// \brief This file contains declarations of the Profile Module, which
-/// encapsulate a LLVMModule with profiling information. 
+/// \brief This file contains the definition and implementation of a sequence
+/// of passes. 
 ///
 //===----------------------------------------------------------------------===//
+#ifndef PASSSEQUENCE_H
+#define PASSSEQUENCE_H
 
 #include "llvm/Pass.h"
 #include "llvm/Transforms/IPO/PassManagerBuilder.h"
@@ -20,6 +22,7 @@
 #include <stdio.h>
 #include <vector>
 
+/// \brief List of all possible function pass.
 enum OptimizationKind {
   ConstantPropagation,
   AlignmentFromAssumptions,
@@ -73,28 +76,39 @@ enum OptimizationKind {
   LoadCombine
 };
 
+/// \brief Kind of optimizations. None = O0, Small = O1, Standard = O2 and 
+/// Aggressive = O3.
 enum OptLevel {
   None, Small, Standard, Aggressive, Random
 };
 
+/// \brief The aim of this class is to manage a sequence of optimizations.
 class PassSequence {
   private:
+    /// \brief The sequence itself.
     std::vector<OptimizationKind> Opts;
+    /// \brief Module size optimization level
     OptLevel OSize  = None;
+    /// \brief Module optimization level (Note: not function passes).
     OptLevel OLevel = None;
 
-    int getRandom(int Min, int Max) {
+    /// \brief Returns a number between the min and the max following a uniform
+    /// distribution.
+    int getRandom(int Min, int Max) const {
       std::random_device Rd;
       std::default_random_engine E1(Rd());
       std::uniform_int_distribution<int> uniform_dist(Min, Max);
       return uniform_dist(E1);
     }
 
+    /// \brief Returns a random OptimizationKind.
     OptimizationKind getRandomOptimizationKind() {
       return static_cast<OptimizationKind>(
           getRandom(0, OptimizationKind::LoadCombine));
     }
 
+    /// \brief Given an OptimizationKind it returns a respective instanciation 
+    /// of this optimization (Pass).
     llvm::Pass* getPass(OptimizationKind OptChoosed) {
       switch(OptChoosed) {
         // --------------- Not Working
@@ -206,15 +220,19 @@ class PassSequence {
     void setOSize(OptLevel OS) {
       OSize = OS; 
     }
-
+      
+    /// \brief Inserts at the end an Optimization.
     void add(OptimizationKind P) {
       if (P == LoopRotate) 
         Opts.push_back(LoopReroll);
-//      if (P == InductionVariableSimplify)
-//        Opts.push_back(LoopReroll);
+      if (P == LoopIdiom)
+        Opts.push_back(LoopReroll);
       Opts.push_back(P);
     }
 
+    /// \brief Populate the PassSequence with randomics optimizations.
+    /// \param RandomSize when set as true make the function generate sequences
+    /// with size in the range between 1 to NumOfOptimizations.
     void randomize(unsigned NumOfOptimizations, 
         bool RandomSize = false, OptLevel OL = None, OptLevel OS = None) {
 
@@ -242,8 +260,8 @@ class PassSequence {
           FPM.add(P);
       }
     }    
-
-    unsigned size() {
+  
+    unsigned size() const {
       return Opts.size();
     }
 
@@ -258,4 +276,64 @@ class PassSequence {
       printf(" O%d | OSize = %d", OLevel, OSize);
       printf("\n");
     }
+
+    /// \brief Returns an mix between both PassSequences with the same size. 
+    /// With 50% of chance for each pass to be from the first or se second 
+    /// sequence.  
+    PassSequence crossOver(const PassSequence &Rhs) const {
+      PassSequence Res;
+      auto Irhs = Rhs.begin();
+      for (auto Opt : Opts) { 
+        int i = getRandom(1,10);
+        if (i % 2 == 0) {
+          Res.add(Opt);
+        } else {
+          Res.add(*Irhs);
+        }
+        Irhs++;
+      }
+      return Res;
+    }
+   
+    /// \brief Same as crossOver. 
+    PassSequence operator*(const PassSequence &Rhs) const {
+      return this->crossOver(Rhs);
+    }
+
+    /// \brief Add all the sequences from the second into the first.
+    PassSequence operator+(const PassSequence &Rhs) const {
+      PassSequence Res;
+      for (auto Opt : Opts)
+        Res.add(Opt);
+      for (auto Opt : Rhs) 
+        Res.add(Opt);
+      return Res;
+    }
+
+    /// \brief Returns true if both sequences have the same passes and in the 
+    /// same order.
+    bool operator==(const PassSequence &Rhs) const { 
+      if (Rhs.size() != size()) return false;
+      auto Irhs = Rhs.begin();
+      bool Equal = true;
+      for (auto Opt : Opts) { 
+        Equal &= (*Irhs) == Opt;
+        Irhs++;
+        if (!Equal) return false;
+      }
+      return true;
+    }
+
+    bool operator!=(const PassSequence &Rhs) const { 
+      return !((*this) == Rhs);
+    }
+
+    typedef std::vector<OptimizationKind>::iterator iterator;
+    typedef std::vector<OptimizationKind>::const_iterator const_iterator;
+    iterator begin() { return Opts.begin(); }
+    const_iterator begin() const { return Opts.cbegin(); }
+    iterator end() { return Opts.end(); }
+    const_iterator end() const { return Opts.cend(); }
 };
+
+#endif

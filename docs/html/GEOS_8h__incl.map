@@ -1,4 +1,6 @@
 <map id="GEOS.h" name="GEOS.h">
-<area shape="rect" id="node3" href="$ProfileModule_8h.html" title="This file contains declarations of the Profile Module, which encapsulate a LLVMModule with profiling ..." alt="" coords="169,88,361,115"/>
-<area shape="rect" id="node7" href="$CostEstimatorOptions_8h.html" title="This file contains declarations of structures that contains options to customize the cost estimation ..." alt="" coords="386,81,576,122"/>
+<area shape="rect" id="node3" href="$ProfileModule_8h.html" title="This file contains declarations of the Profile Module, which encapsulate a LLVMModule with profiling ..." alt="" coords="568,171,760,197"/>
+<area shape="rect" id="node6" href="$PassSequence_8h.html" title="This file contains the definition and implementation of a sequence of passes. " alt="" coords="239,245,441,272"/>
+<area shape="rect" id="node12" href="$CostEstimatorOptions_8h.html" title="This file contains declarations of structures that contains options to customize the cost estimation ..." alt="" coords="685,81,875,122"/>
+<area shape="rect" id="node13" href="$ExecutionTimeMeasurer_8h.html" title="This file define classes that execute a given Module and measure its execution time (this is named as..." alt="" coords="899,81,1092,122"/>
 </map>

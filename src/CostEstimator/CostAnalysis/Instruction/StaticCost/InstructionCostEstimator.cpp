@@ -26,7 +26,7 @@ InstructionCostEstimator::getInstructionCost(const llvm::Instruction &I) {
     case llvm::Instruction::Ret:
     case llvm::Instruction::PHI:
     case llvm::Instruction::Br:
-      return Cost::None;
+      return Cost::No;
     case llvm::Instruction::FRem:
     case llvm::Instruction::FAdd:
     case llvm::Instruction::FSub:
@@ -69,7 +69,7 @@ InstructionCostEstimator::getInstructionCost(const llvm::Instruction &I) {
     case llvm::Instruction::FPTrunc:
     case llvm::Instruction::BitCast:
     case llvm::Instruction::AddrSpaceCast:
-      return Cost::None;
+      return Cost::No;
     case llvm::Instruction::ExtractElement:
       return Cost::Low;
     case llvm::Instruction::InsertElement:

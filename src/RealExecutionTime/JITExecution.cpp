@@ -1,4 +1,4 @@
-//===---- include/CostAnalysis.h - Basic Block Cost Estimator -*- C++ -*---===//
+//===------- JITExecution.cpp - JIT Execution Time Measurer -*- C++ -*-----===//
 //
 //              The LLVM Time Cost Analyser Infrastructure
 //
@@ -7,8 +7,9 @@
 //===----------------------------------------------------------------------===//
 ///
 /// \file
-/// \brief This file contains declarations of every method for analysis of the 
-/// execution cost of a LLVM function.
+/// \brief JITExecution calls LLVM JIT to execute a given Module and measure its
+/// execution time (this is named as real execution time, contrasting with the
+/// estimated cost).
 ///
 //===----------------------------------------------------------------------===//
 

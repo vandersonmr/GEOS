@@ -1,6 +1,7 @@
 var searchData=
 [
   ['abstractcachestate',['AbstractCacheState',['../structAbstractCacheState.html#a7db8f61aab1414c9e9b587eb6cd999db',1,'AbstractCacheState']]],
+  ['add',['add',['../classPassSequence.html#a501167a4c606f92234f9cf212b0c0ce0',1,'PassSequence']]],
   ['addblockline',['addBlockLine',['../classllvm_1_1FileInfo.html#ac42ed71244defdd1edd7ff5de12fdc52',1,'llvm::FileInfo']]],
   ['addcount',['addCount',['../classllvm_1_1GCOVBlock.html#aaef95ec4b1afe956037df41fdbb75e11',1,'llvm::GCOVBlock']]],
   ['adddstedge',['addDstEdge',['../classllvm_1_1GCOVBlock.html#a6ee86eab34c19e9e3aab4d129ff5add6',1,'llvm::GCOVBlock']]],
@@ -8,9 +9,10 @@ var searchData=
   ['addline',['addLine',['../classllvm_1_1GCOVBlock.html#a0bc80e6944ef8d4caf1f83ea3b933e36',1,'llvm::GCOVBlock']]],
   ['addsrcedge',['addSrcEdge',['../classllvm_1_1GCOVBlock.html#afbc724027755eeede95ee2bff6848ba2',1,'llvm::GCOVBlock']]],
   ['advancecursor',['advanceCursor',['../classllvm_1_1GCOVBuffer.html#ab4b86f759115f2166ce67fbbf7478308',1,'llvm::GCOVBuffer']]],
-  ['analysecost',['analyseCost',['../namespaceGEOS.html#a7a0e4274febe448880c7deefb7e3a60c',1,'GEOS']]],
+  ['analysecost',['analyseCost',['../namespaceGEOS.html#a85644fe6b4ea0b8c9d97c781812908fe',1,'GEOS']]],
   ['analysefunctioncost',['analyseFunctionCost',['../namespaceGEOS.html#af9bde28a8a87f51d9333282e888682e4',1,'GEOS']]],
-  ['applypasses',['applyPasses',['../namespaceGEOS.html#a64d258559ffb715536bead46681ed475',1,'GEOS']]],
-  ['applypassesmodule',['applyPassesModule',['../namespaceGEOS.html#adc027c03aefd7369ce275a1f177ecaaf',1,'GEOS']]],
-  ['applypassesonfunction',['applyPassesOnFunction',['../namespaceGEOS.html#ab70447a5825083c7e87304cff472e13c',1,'GEOS']]]
+  ['analysis',['Analysis',['../GEOSCommandLineParser_8h.html#a05779d822e36ff088c505ac8748370e5',1,'GEOSCommandLineParser.h']]],
+  ['analysisset',['AnalysisSet',['../GEOSCommandLineParser_8h.html#ae4fb87309c1a2b7723a23664b77d0031',1,'GEOSCommandLineParser.h']]],
+  ['applypasses',['applyPasses',['../namespaceGEOS.html#a445aad19602b8cab903f3d6c1972b659',1,'GEOS']]],
+  ['applypassesonfunction',['applyPassesOnFunction',['../namespaceGEOS.html#a7653d1c75e59416cb89638c3a26d5a74',1,'GEOS']]]
 ];

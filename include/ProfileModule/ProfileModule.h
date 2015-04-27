@@ -15,8 +15,9 @@
 #define PROFILEMODULE_H
 
 #include "llvm/IR/Module.h"
-
 #include "llvm/Support/GCOV.h"
+
+#include "ProfileModule/PassSequence.h"
 
 #include <vector>
 
@@ -24,6 +25,7 @@
 /// LLVM code, make copies of itself, and maintain the consistency of itself.
 class ProfileModule {
   private:
+    PassSequence Passes;
     llvm::Module *LLVMModule;
 
     /// \brief This function uses the predecessors of the given basic block to 
@@ -34,6 +36,18 @@ class ProfileModule {
     /// estimate and update its execution frequency. 
     uint64_t getExecutionFreqUsingSuccessors(llvm::BasicBlock *BB);
   public:
+    /// \brief If this class has been optimized this function will return the
+    /// optimizations used.
+    PassSequence getPasses() {
+      return Passes;
+    }
+
+    /// \brief Don't use this function. It is supposed to be used by the profile
+    /// module.
+    void setPasses(PassSequence P) {
+      Passes = P;
+    }
+
     /// \brief For each basic block in the CFG of the given function, its 
     /// predecessors and successors are used to estimate and update its 
     /// execution frequency.

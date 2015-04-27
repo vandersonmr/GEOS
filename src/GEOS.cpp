@@ -21,9 +21,20 @@
 #include "CostEstimator/CostEstimator.h"
 
 #include <cstdlib>
-#include <sys/types.h> 
-#include <sys/wait.h>  
-#include <unistd.h>    
+#include <signal.h>
+#include <stdio.h>
+#include <setjmp.h>
+
+#define safe(x); \
+ auto stdHandler = signal(SIGSEGV, magicHandler); \
+ auto stdAbrtHandler = signal(SIGABRT, magicHandler); \
+ if(!setjmp(buf)) { \
+   x \
+ } else { \
+  printf("\nSuccessfully recovered! I'm back!!\n\n");\
+ }\
+ signal(SIGSEGV, stdHandler);\
+ signal(SIGSEGV, stdAbrtHandler);
 
 using namespace llvm;
 
@@ -52,6 +63,22 @@ void GEOS::init() {
   initializeRewriteSymbolsPass(*Registry);
 }
 
+jmp_buf buf;
+
+void magicHandler(int s) {
+  switch(s) {
+    case SIGSEGV:
+      printf("\nSegmentation fault signal caught! Attempting recovery..");
+      longjmp(buf, 1);
+      break;
+    case SIGABRT:
+      printf("\nLLVM is trying to abort. But we are attempting recovery..");
+      longjmp(buf, 1);
+      break;
+  }
+  printf("\n Heuston, we have a problem!\n");
+}
+
 ProfileModule*
 GEOS::applyPassesOnFunction(StringRef FuncName, const ProfileModule& PModule,
     PassSequence &PS) {
@@ -72,8 +99,9 @@ GEOS::applyPassesOnFunction(StringRef FuncName, const ProfileModule& PModule,
       && "Trying to access a LLVM Function that don't exist!");
 
   FPM.run(*Func);
-
   ModuleCopy->repairFunctionProfiling(Func);
+
+  ModuleCopy->setPasses(PS);
   return ModuleCopy;
 }
 
@@ -93,6 +121,7 @@ GEOS::applyPasses(const ProfileModule& PModule, PassSequence &PS) {
   PM.run(*MyModule);
   ModuleCopy->repairProfiling();
 
+  ModuleCopy->setPasses(PS);
   return ModuleCopy;
 }
 

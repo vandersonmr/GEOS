@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ttiinstructionanalysis',['TTIInstructionAnalysis',['../classTTIInstructionAnalysis.html',1,'']]]
+  ['registeruseanalysis',['RegisterUseAnalysis',['../classRegisterUseAnalysis.html',1,'']]]
 ];

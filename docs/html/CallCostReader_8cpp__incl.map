@@ -1,4 +1,5 @@
 <map id="CallCostReader.cpp" name="CallCostReader.cpp">
-<area shape="rect" id="node2" href="$CallCostReader_8h.html" title="Profiling/CallCostReader.h" alt="" coords="111,80,283,107"/>
-<area shape="rect" id="node3" href="$ProfileModule_8h.html" title="This file contains declarations of the Profile Module, which encapsulate a LLVMModule with profiling ..." alt="" coords="119,155,311,181"/>
+<area shape="rect" id="node2" href="$CallCostReader_8h.html" title="Profiling/CallCostReader.h" alt="" coords="266,80,437,107"/>
+<area shape="rect" id="node3" href="$ProfileModule_8h.html" title="This file contains declarations of the Profile Module, which encapsulate a LLVMModule with profiling ..." alt="" coords="267,155,459,181"/>
+<area shape="rect" id="node6" href="$PassSequence_8h.html" title="This file contains the definition and implementation of a sequence of passes. " alt="" coords="460,229,663,256"/>
 </map>

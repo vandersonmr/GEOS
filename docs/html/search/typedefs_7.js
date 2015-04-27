@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_5ftype',['value_type',['../classlru_1_1cache.html#a24dea9daf5386df16c83330d826c7657',1,'lru::cache']]]
+  ['map',['map',['../namespacelru.html#a11ae01895cb21fc7046dadeffaf47cc2',1,'lru']]]
 ];

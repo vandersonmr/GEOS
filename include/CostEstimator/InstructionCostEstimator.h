@@ -19,7 +19,7 @@ enum Cost {
   High = 4,
   Medium = 1,
   Low = 1,
-  None = 0
+  No = 0
 };
 
 class InstructionCostEstimator {
