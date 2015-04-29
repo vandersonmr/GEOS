@@ -1,6 +1,8 @@
 var searchData=
 [
   ['random',['Random',['../PassSequence_8h.html#a43f71430e3b7055e1ce934fd6fba4c28a73610a7c860f763790e533887a479868',1,'PassSequence.h']]],
+  ['randomanalysis',['RandomAnalysis',['../classRandomAnalysis.html',1,'']]],
+  ['randomcost_2ecpp',['RandomCost.cpp',['../RandomCost_8cpp.html',1,'']]],
   ['randomize',['randomize',['../classPassSequence.html#a9a9e873e972da1c00dbb2902f10d951e',1,'PassSequence']]],
   ['readarctag',['readArcTag',['../classllvm_1_1GCOVBuffer.html#a207e31e4a61919491442c2c5f7de9436',1,'llvm::GCOVBuffer']]],
   ['readblocktag',['readBlockTag',['../classllvm_1_1GCOVBuffer.html#a0fa2040007c499911f198f3927c46072',1,'llvm::GCOVBuffer']]],
@@ -25,5 +27,5 @@ var searchData=
   ['repairprofiling',['repairProfiling',['../classProfileModule.html#acc69d694de56150b427b9a97218010f4',1,'ProfileModule']]],
   ['resize',['resize',['../classlru_1_1cache.html#a27005d3f78caf496461a29faffa99421',1,'lru::cache']]],
   ['revision',['revision',['../struct__papi__hw__info.html#a133b62a5a4da921fe965a062e2396b5d',1,'_papi_hw_info']]],
-  ['runonfunction',['runOnFunction',['../structMachineAST.html#a4125760ed1f3c1ba447f05eeabde3d80',1,'MachineAST::runOnFunction()'],['../structMachineRegisterUse.html#aeccba5f6ba2ca1997741902fd860cb68',1,'MachineRegisterUse::runOnFunction()'],['../structStaticProfiling.html#a2dc949fdbc72bbba74b0ddd21fc61e38',1,'StaticProfiling::runOnFunction(Function &amp;F)'],['../structStaticProfiling.html#a2dc949fdbc72bbba74b0ddd21fc61e38',1,'StaticProfiling::runOnFunction(Function &amp;F)']]]
+  ['runonfunction',['runOnFunction',['../structMachineAST.html#a4125760ed1f3c1ba447f05eeabde3d80',1,'MachineAST::runOnFunction()'],['../structMachineRegisterUse.html#aeccba5f6ba2ca1997741902fd860cb68',1,'MachineRegisterUse::runOnFunction()'],['../structStaticProfiling.html#a2dc949fdbc72bbba74b0ddd21fc61e38',1,'StaticProfiling::runOnFunction()']]]
 ];

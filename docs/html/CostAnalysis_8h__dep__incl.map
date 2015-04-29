@@ -5,5 +5,6 @@
 <area shape="rect" id="node5" href="$CallCostAnalysis_8cpp.html" title="This file contains declarations and implementation of Call Cost analysis. " alt="" coords="575,80,719,107"/>
 <area shape="rect" id="node6" href="$StaticCostEstimator_8cpp.html" title="This file contains declarations and implementation of an instruction cost anaysis that is NOT sensiti..." alt="" coords="743,80,905,107"/>
 <area shape="rect" id="node7" href="$TTIInstructionAnalysis_8cpp.html" title="This file contains declarations and implementation of an instruction cost anaysis that is sensitive t..." alt="" coords="929,80,1105,107"/>
-<area shape="rect" id="node8" href="$CostEstimator_8cpp.html" title="This file contains the implementation of the program cost analyser. It uses the the AnalysisMethods t..." alt="" coords="1129,80,1257,107"/>
+<area shape="rect" id="node8" href="$RandomCost_8cpp.html" title="Estimate a random cost. " alt="" coords="1130,80,1251,107"/>
+<area shape="rect" id="node9" href="$CostEstimator_8cpp.html" title="This file contains the implementation of the program cost analyser. It uses the the AnalysisMethods t..." alt="" coords="1276,80,1404,107"/>
 </map>

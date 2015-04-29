@@ -143,7 +143,7 @@ Functions</h2></td></tr>
 
 <p>Estimate the execution time of a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a> using the given AnalysisMethod and options. </p>
 
-<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00145">145</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
+<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00136">136</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
 
 <p>References <a class="el" href="CostEstimator_8cpp_source.html#l00023">CostEstimator::getModuleCost()</a>.</p>
 
@@ -209,9 +209,9 @@ Functions</h2></td></tr>
 
 <p>This function applies a sequence of passes (Transformations) into a <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a>. The passes are not applied into the <a class="el" href="classProfileModule.html" title="This class is responsible for encapsulating profile information with LLVM code, make copies of itself...">ProfileModule</a> given as parameter, actually, all modifications are made in a copy and this copy is returned as parameter. Futher, it ensures the profiling consistency. </p>
 
-<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00109">109</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
+<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00086">86</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
 
-<p>References <a class="el" href="TTIInstructionAnalysis_8cpp_source.html#l00033">FPM</a>, <a class="el" href="ProfileModule_8cpp_source.html#l00286">ProfileModule::getCopy()</a>, <a class="el" href="ProfileModule_8cpp_source.html#l00083">ProfileModule::getLLVMModule()</a>, <a class="el" href="InstructionCacheAnalysis_8cpp_source.html#l00244">PM</a>, <a class="el" href="PassSequence_8h_source.html#l00249">PassSequence::populatePassManager()</a>, <a class="el" href="ProfileModule_8cpp_source.html#l00266">ProfileModule::repairProfiling()</a>, and <a class="el" href="ProfileModule_8h_source.html#l00047">ProfileModule::setPasses()</a>.</p>
+<p>References <a class="el" href="TTIInstructionAnalysis_8cpp_source.html#l00033">FPM</a>, <a class="el" href="ProfileModule_8cpp_source.html#l00265">ProfileModule::getCopy()</a>, <a class="el" href="ProfileModule_8cpp_source.html#l00083">ProfileModule::getLLVMModule()</a>, <a class="el" href="InstructionCacheAnalysis_8cpp_source.html#l00244">PM</a>, <a class="el" href="PassSequence_8h_source.html#l00249">PassSequence::populatePassManager()</a>, <a class="el" href="ProfileModule_8cpp_source.html#l00270">ProfileModule::print()</a>, <a class="el" href="ProfileModule_8cpp_source.html#l00245">ProfileModule::repairProfiling()</a>, and <a class="el" href="ProfileModule_8h_source.html#l00047">ProfileModule::setPasses()</a>.</p>
 
 </div>
 </div>
@@ -275,7 +275,7 @@ Functions</h2></td></tr>
 
 <p>It runs the llvm code and returns its real runtime. </p>
 
-<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00150">150</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
+<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00141">141</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
 
 <p>References <a class="el" href="ExecutionTimeMeasurer_8h_source.html#l00093">ExecutionFactory::createRuntimeMeasurer()</a>, and <a class="el" href="ExecutionTimeMeasurer_8h_source.html#l00056">ExecutionTimeMeasurer::getExecutionTime()</a>.</p>
 
@@ -319,7 +319,7 @@ Functions</h2></td></tr>
 
 <p>It runs the llvm code and returns its real runtime. Argv and Envp are parameters. </p>
 
-<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00157">157</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
+<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00148">148</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
 
 <p>References <a class="el" href="ExecutionTimeMeasurer_8h_source.html#l00093">ExecutionFactory::createRuntimeMeasurer()</a>, and <a class="el" href="ExecutionTimeMeasurer_8h_source.html#l00056">ExecutionTimeMeasurer::getExecutionTime()</a>.</p>
 
@@ -338,14 +338,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00041">41</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
+<p>Definition at line <a class="el" href="GEOS_8cpp_source.html#l00034">34</a> of file <a class="el" href="GEOS_8cpp_source.html">GEOS.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 27 2015 00:08:47 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 28 2015 23:05:28 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -76,7 +76,7 @@ enum OptimizationKind {
   LoadCombine
 };
 
-/// \brief Kind of optimizations. None = O0, Small = O1, Standard = O2 and 
+/// \brief Kinds of optimizations. None = O0, Small = O1, Standard = O2 and 
 /// Aggressive = O3.
 enum OptLevel {
   None, Small, Standard, Aggressive, Random
@@ -92,7 +92,7 @@ class PassSequence {
     /// \brief Module optimization level (Note: not function passes).
     OptLevel OLevel = None;
 
-    /// \brief Returns a number between the min and the max following a uniform
+    /// \brief Returns a number between the min and the max following an uniform
     /// distribution.
     int getRandom(int Min, int Max) const {
       std::random_device Rd;
@@ -107,8 +107,8 @@ class PassSequence {
           getRandom(0, OptimizationKind::LoadCombine));
     }
 
-    /// \brief Given an OptimizationKind it returns a respective instanciation 
-    /// of this optimization (Pass).
+    /// \brief Given an OptimizationKind this function returns the respective 
+    /// instanciation for this optimization (Pass).
     llvm::Pass* getPass(OptimizationKind OptChoosed) {
       switch(OptChoosed) {
         // --------------- Not Working
@@ -221,7 +221,7 @@ class PassSequence {
       OSize = OS; 
     }
       
-    /// \brief Inserts at the end an Optimization.
+    /// \brief Inserts an Optimization in the end.
     void add(OptimizationKind P) {
       if (P == LoopRotate) 
         Opts.push_back(LoopReroll);
@@ -230,9 +230,9 @@ class PassSequence {
       Opts.push_back(P);
     }
 
-    /// \brief Populate the PassSequence with randomics optimizations.
+    /// \brief Populates the PassSequence with randomic optimizations.
     /// \param RandomSize when set as true make the function generate sequences
-    /// with size in the range between 1 to NumOfOptimizations.
+    /// with size in the range between 1 and NumOfOptimizations.
     void randomize(unsigned NumOfOptimizations, 
         bool RandomSize = false, OptLevel OL = None, OptLevel OS = None) {
 
@@ -277,9 +277,10 @@ class PassSequence {
       printf("\n");
     }
 
-    /// \brief Returns an mix between both PassSequences with the same size. 
-    /// With 50% of chance for each pass to be from the first or se second 
-    /// sequence.  
+    /// \brief Returns a PassSequence of the same size of both PassSequences 
+    /// (parameter and this). This PassSequences is created by a mix between 
+    /// them. Where there is 50% chance for each pass to be from the first or 
+    /// second sequence.  
     PassSequence crossOver(const PassSequence &Rhs) const {
       PassSequence Res;
       auto Irhs = Rhs.begin();
@@ -300,7 +301,7 @@ class PassSequence {
       return this->crossOver(Rhs);
     }
 
-    /// \brief Add all the sequences from the second into the first.
+    /// \brief Add all sequences from the second into the first.
     PassSequence operator+(const PassSequence &Rhs) const {
       PassSequence Res;
       for (auto Opt : Opts)
@@ -310,8 +311,8 @@ class PassSequence {
       return Res;
     }
 
-    /// \brief Returns true if both sequences have the same passes and in the 
-    /// same order.
+    /// \brief Returns true if both sequences have the same passes and also in 
+    /// the same order.
     bool operator==(const PassSequence &Rhs) const { 
       if (Rhs.size() != size()) return false;
       auto Irhs = Rhs.begin();

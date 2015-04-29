@@ -12,6 +12,6 @@ var searchData=
   ['papi_5fpreset_5fenum_5ftlb',['PAPI_PRESET_ENUM_TLB',['../papi_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae8cc9f92fdf44d3e4eecc0fcea34b6c9',1,'papi.h']]],
   ['papi_5fpwr4_5fenum_5fgroups',['PAPI_PWR4_ENUM_GROUPS',['../papi_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab76b3a49cf4dd8a051cbcfa3f92919a0',1,'papi.h']]],
   ['partiallyinlinelibcalls',['PartiallyInlineLibCalls',['../PassSequence_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5a05079b1e604d6658999fd3fd9d93ae01',1,'PassSequence.h']]],
-  ['permanent',['Permanent',['../StaticProfiling_8cpp.html#ad4318329170d5b87269b3dc0a5c70bd8a8f9a8ba5744b3681ae26713ac799206d',1,'StaticProfiling.cpp']]],
+  ['permanent',['Permanent',['../StaticProfiling_8cpp.html#ad4318329170d5b87269b3dc0a5c70bd8a23adaa457573eeb089c33214c90d3013',1,'StaticProfiling.cpp']]],
   ['promotememorytoregister',['PromoteMemoryToRegister',['../PassSequence_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5aea6c57bb843155160c2e78843349ba1c',1,'PassSequence.h']]]
 ];
