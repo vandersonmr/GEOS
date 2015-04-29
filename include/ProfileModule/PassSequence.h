@@ -221,7 +221,7 @@ class PassSequence {
       OSize = OS; 
     }
       
-    /// \brief Inserts an Optimization in the end.
+    /// \brief Inserts an Optimization at the end.
     void add(OptimizationKind P) {
       if (P == LoopRotate) 
         Opts.push_back(LoopReroll);
