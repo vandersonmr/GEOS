@@ -1,7 +1,6 @@
 var searchData=
 [
   ['s',['S',['../structMachineAST.html#a321a3f441729a25a6ee934342a26bb0a',1,'MachineAST']]],
-  ['safe',['safe',['../GEOS_8cpp.html#adafa77421707b2f99eea558a99577dbb',1,'GEOS.cpp']]],
   ['safediv',['safeDiv',['../GCOV_8cpp.html#ac88d0dde1f310995bf2ce06098ef6c7c',1,'GCOV.cpp']]],
   ['sampleprofilepass',['SampleProfilePass',['../PassSequence_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5ad5bd29ef518c0bcfb699f217e7d9157d',1,'PassSequence.h']]],
   ['scalarizerpass',['ScalarizerPass',['../PassSequence_8h.html#a0133cfbd4caf7074a0e24c6958e40cf5adeb3508f157a29e0161dcebc32466231',1,'PassSequence.h']]],
@@ -34,7 +33,7 @@ var searchData=
   ['start_5fmeasures',['start_measures',['../papi_8h.html#ac0c5b3b825873c410ae294567a1c7e92',1,'start_measures(int):&#160;PAPI.cpp'],['../PAPI_8cpp.html#a44ecf5a0e2ef488d96bf3144e3b30417',1,'start_measures(int Id):&#160;PAPI.cpp']]],
   ['staticcostestimator_2ecpp',['StaticCostEstimator.cpp',['../StaticCostEstimator_8cpp.html',1,'']]],
   ['staticinstructionanalysis',['StaticInstructionAnalysis',['../classStaticInstructionAnalysis.html',1,'']]],
-  ['staticprofiling',['StaticProfiling',['../structStaticProfiling.html',1,'StaticProfiling'],['../structStaticProfiling.html#a859eeedd7777f10b6627198c0e432d4d',1,'StaticProfiling::StaticProfiling(ProfileModule *P)'],['../structStaticProfiling.html#a859eeedd7777f10b6627198c0e432d4d',1,'StaticProfiling::StaticProfiling(ProfileModule *P)']]],
+  ['staticprofiling',['StaticProfiling',['../structStaticProfiling.html',1,'StaticProfiling'],['../structStaticProfiling.html#a859eeedd7777f10b6627198c0e432d4d',1,'StaticProfiling::StaticProfiling()']]],
   ['staticprofiling_2ecpp',['StaticProfiling.cpp',['../StaticProfiling_8cpp.html',1,'']]],
   ['staticprofiling_2eh',['StaticProfiling.h',['../StaticProfiling_8h.html',1,'']]],
   ['sub_5finfo',['sub_info',['../unionPAPI__option__t.html#ae9df504c685131d11f19ff0d14b4f7a9',1,'PAPI_option_t']]],

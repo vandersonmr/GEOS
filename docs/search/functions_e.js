@@ -21,5 +21,5 @@ var searchData=
   ['repairfunctionprofiling',['repairFunctionProfiling',['../classProfileModule.html#a17cad3a7d951ee78efd7b30cc3a423ce',1,'ProfileModule']]],
   ['repairprofiling',['repairProfiling',['../classProfileModule.html#acc69d694de56150b427b9a97218010f4',1,'ProfileModule']]],
   ['resize',['resize',['../classlru_1_1cache.html#a27005d3f78caf496461a29faffa99421',1,'lru::cache']]],
-  ['runonfunction',['runOnFunction',['../structMachineAST.html#a4125760ed1f3c1ba447f05eeabde3d80',1,'MachineAST::runOnFunction()'],['../structMachineRegisterUse.html#aeccba5f6ba2ca1997741902fd860cb68',1,'MachineRegisterUse::runOnFunction()'],['../structStaticProfiling.html#a2dc949fdbc72bbba74b0ddd21fc61e38',1,'StaticProfiling::runOnFunction(Function &amp;F)'],['../structStaticProfiling.html#a2dc949fdbc72bbba74b0ddd21fc61e38',1,'StaticProfiling::runOnFunction(Function &amp;F)']]]
+  ['runonfunction',['runOnFunction',['../structMachineAST.html#a4125760ed1f3c1ba447f05eeabde3d80',1,'MachineAST::runOnFunction()'],['../structMachineRegisterUse.html#aeccba5f6ba2ca1997741902fd860cb68',1,'MachineRegisterUse::runOnFunction()'],['../structStaticProfiling.html#a2dc949fdbc72bbba74b0ddd21fc61e38',1,'StaticProfiling::runOnFunction()']]]
 ];

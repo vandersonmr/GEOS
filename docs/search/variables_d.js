@@ -9,5 +9,5 @@ var searchData=
   ['pr_5fsize',['pr_size',['../struct__papi__sprofil.html#a974ac90a6e1fff4baaf72763290ac3bb',1,'_papi_sprofil']]],
   ['preload',['preload',['../unionPAPI__option__t.html#a1045fd9c46961a629dd5e2d212275cdf',1,'PAPI_option_t']]],
   ['preservepaths',['PreservePaths',['../structllvm_1_1GCOVOptions.html#a9ec0eee633be9d2886e969dfc7df487b',1,'llvm::GCOVOptions']]],
-  ['profile',['Profile',['../structMachineAST.html#aa45051ee49080b3e885e5ad317be001e',1,'MachineAST::Profile()'],['../structMachineRegisterUse.html#af71c73c0a95bab22c7cb25001e066125',1,'MachineRegisterUse::Profile()'],['../structStaticProfiling.html#a6b1007378ae6873a803a27b4181ea2a4',1,'StaticProfiling::Profile()']]]
+  ['profile',['Profile',['../structMachineAST.html#aa45051ee49080b3e885e5ad317be001e',1,'MachineAST::Profile()'],['../structMachineRegisterUse.html#af71c73c0a95bab22c7cb25001e066125',1,'MachineRegisterUse::Profile()'],['../structStaticProfiling.html#adeae6662cd0818c05b2322e860b1e55c',1,'StaticProfiling::Profile()']]]
 ];

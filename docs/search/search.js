@@ -17,7 +17,7 @@ var indexSectionsWithContent =
   7: "cegmo",
   8: "abcdefghijlmnprstv",
   9: "o",
-  10: "cdlpstu"
+  10: "cdlptu"
 };
 
 var indexSectionNames =

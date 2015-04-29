@@ -3,7 +3,6 @@ var searchData=
   ['machineast',['MachineAST',['../structMachineAST.html',1,'MachineAST'],['../structMachineAST.html#ade5a7abac9dd8358998ab8a2c431e0f7',1,'MachineAST::MachineAST()']]],
   ['machinefunctionanalysis_2ecpp',['MachineFunctionAnalysis.cpp',['../MachineFunctionAnalysis_8cpp.html',1,'']]],
   ['machineregisteruse',['MachineRegisterUse',['../structMachineRegisterUse.html',1,'MachineRegisterUse'],['../structMachineRegisterUse.html#aa3e6be0dc22e5e3ba3ed302b661233cf',1,'MachineRegisterUse::MachineRegisterUse()']]],
-  ['magichandler',['magicHandler',['../GEOS_8cpp.html#a4c08689b749052c4d928ce9aa434c894',1,'GEOS.cpp']]],
   ['manglecoveragepath',['mangleCoveragePath',['../GCOV_8cpp.html#a9dc80501043000f0bf75820ebfef69c4',1,'GCOV.cpp']]],
   ['map',['map',['../struct__papi__shared__lib__info.html#a96185f1a5bf09f26ed37575018aa0b26',1,'_papi_shared_lib_info::map()'],['../namespacelru.html#a11ae01895cb21fc7046dadeffaf47cc2',1,'lru::map()']]],
   ['mark',['Mark',['../StaticProfiling_8cpp.html#ad4318329170d5b87269b3dc0a5c70bd8',1,'StaticProfiling.cpp']]],

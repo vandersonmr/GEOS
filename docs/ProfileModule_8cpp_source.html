@@ -246,23 +246,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <span class="keywordflow">if</span> (isa&lt;BranchInst&gt;(Terminator)) {</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">if</span> (cast&lt;BranchInst&gt;(Terminator)-&gt;isUnconditional()) {</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;          PredecessorsWeight += getBasicBlockFrequency(*Predecessor);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        }<span class="comment">/* else {</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">          uint64_t EdgeWeight = getBasicBlockFrequency(*Predecessor);</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">          for (unsigned J = 0; J &lt; Terminator-&gt;getNumSuccessors(); ++J) {</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">            auto SuccPred = Terminator-&gt;getSuccessor(J);</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">            if (SuccPred != BB) {</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">              if (!hasBasicBlockFrequency(*SuccPred) || </span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">                  SuccPred-&gt;getUniquePredecessor() == nullptr ||</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">                  EdgeWeight &lt; getBasicBlockFrequency(*SuccPred)) {</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">                EdgeWeight = 0;</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">                break;</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">              } else {</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">                EdgeWeight -= getBasicBlockFrequency(*SuccPred);</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">              }</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">            }</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">          }</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">          PredecessorsWeight += EdgeWeight;</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">        }*/</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          uint64_t EdgeWeight = getBasicBlockFrequency(*Predecessor);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> J = 0; J &lt; Terminator-&gt;getNumSuccessors(); ++J) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keyword">auto</span> SuccPred = Terminator-&gt;getSuccessor(J);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">if</span> (SuccPred != BB) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;              <span class="keywordflow">if</span> (!hasBasicBlockFrequency(*SuccPred) || </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                  SuccPred-&gt;getUniquePredecessor() == <span class="keyword">nullptr</span> ||</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                  EdgeWeight &lt; getBasicBlockFrequency(*SuccPred)) {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                EdgeWeight = 0;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;              } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                EdgeWeight -= getBasicBlockFrequency(*SuccPred);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;              }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;          }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;          PredecessorsWeight += EdgeWeight;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      }</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  }</div>
@@ -279,153 +279,125 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">if</span> (BB != Successor) { </div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keywordflow">if</span> (Successor-&gt;getSinglePredecessor() == BB) {</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        SuccessorsWeight += getBasicBlockFrequency(*Successor);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      }<span class="comment">/* else {</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">        uint64_t EdgeWeight = getBasicBlockFrequency(*Successor);</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">        for (auto IT = pred_begin(Successor); IT != pred_end(Successor); ++IT) {</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">          BasicBlock* PredSucc = *IT;</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">          if (PredSucc != BB) {</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">            auto PredSuccTerminator = PredSucc-&gt;getTerminator();</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">            if (isa&lt;BranchInst&gt;(PredSuccTerminator) &amp;&amp;</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">                cast&lt;BranchInst&gt;(PredSuccTerminator)-&gt;isUnconditional() &amp;&amp;</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">                hasBasicBlockFrequency(*PredSucc) &amp;&amp; </span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">                EdgeWeight &gt;= getBasicBlockFrequency(*PredSucc)) {</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">              EdgeWeight -= getBasicBlockFrequency(*PredSucc);</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">            } else {</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">              EdgeWeight = 0;</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">              break;</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">            }</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">          }</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">        }</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">        SuccessorsWeight += EdgeWeight;</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">      }*/</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        uint64_t EdgeWeight = getBasicBlockFrequency(*Successor);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> IT = pred_begin(Successor); IT != pred_end(Successor); ++IT) {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;          BasicBlock* PredSucc = *IT;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;          <span class="keywordflow">if</span> (PredSucc != BB) {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <span class="keyword">auto</span> PredSuccTerminator = PredSucc-&gt;getTerminator();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keywordflow">if</span> (isa&lt;BranchInst&gt;(PredSuccTerminator) &amp;&amp;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                cast&lt;BranchInst&gt;(PredSuccTerminator)-&gt;isUnconditional() &amp;&amp;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                hasBasicBlockFrequency(*PredSucc) &amp;&amp; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                EdgeWeight &gt;= getBasicBlockFrequency(*PredSucc)) {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;              EdgeWeight -= getBasicBlockFrequency(*PredSucc);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;              EdgeWeight = 0;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;              <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            }</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;          }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        SuccessorsWeight += EdgeWeight;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      } </div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  }</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordflow">return</span> SuccessorsWeight;</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="structStaticProfiling.html">  219</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structStaticProfiling.html">StaticProfiling</a> : <span class="keyword">public</span> <a class="code" href="classFunctionPass.html">FunctionPass</a> {</div>
-<div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="structStaticProfiling.html#abdbe852c63a8e5fa49c05cea1dd7158d">  220</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code" href="structStaticProfiling.html#abdbe852c63a8e5fa49c05cea1dd7158d">ID</a>;</div>
-<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="structStaticProfiling.html#a6b1007378ae6873a803a27b4181ea2a4">  221</a></span>&#160;  <a class="code" href="classProfileModule.html">ProfileModule</a> *<a class="code" href="structStaticProfiling.html#a6b1007378ae6873a803a27b4181ea2a4">Profile</a>;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="structStaticProfiling.html#a859eeedd7777f10b6627198c0e432d4d">  223</a></span>&#160;  <a class="code" href="structStaticProfiling.html#a859eeedd7777f10b6627198c0e432d4d">StaticProfiling</a>(<a class="code" href="classProfileModule.html">ProfileModule</a> *P) : <a class="code" href="classFunctionPass.html">FunctionPass</a>(<a class="code" href="PAPI_8cpp.html#af180e926633cde08a05ccbc3af397ee4">ID</a>), Profile(P) {};</div>
+<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="classProfileModule.html#a17cad3a7d951ee78efd7b30cc3a423ce">  219</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classProfileModule.html#a17cad3a7d951ee78efd7b30cc3a423ce">ProfileModule::repairFunctionProfiling</a>(Function *Func) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  std::unordered_map&lt;BasicBlock*, bool&gt; HasFreq;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;BB : *Func)</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">if</span> (hasBasicBlockFrequency(BB))</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      HasFreq[&amp;BB] = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="structStaticProfiling.html#a99fed923deae11457f15dd90fa40ba33">  225</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structStaticProfiling.html#a99fed923deae11457f15dd90fa40ba33">getAnalysisUsage</a>(AnalysisUsage &amp;AU)<span class="keyword"> const override </span>{</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    AU.addRequired&lt;BlockFrequencyInfo&gt;();</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    AU.setPreservesAll();</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  }</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="structStaticProfiling.html#a2dc949fdbc72bbba74b0ddd21fc61e38">  230</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structStaticProfiling.html#a2dc949fdbc72bbba74b0ddd21fc61e38">runOnFunction</a>(Function &amp;F) {</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    BlockFrequencyInfo &amp;BFI = getAnalysis&lt;BlockFrequencyInfo&gt;();</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordtype">bool</span> changed = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordflow">while</span>(changed) {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    changed = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;BB : *Func) {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      <span class="keywordflow">if</span> (HasFreq.count(&amp;BB) == 0) {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        uint64_t PredecessorsWeight = getExecutionFreqUsingPredecessors(&amp;BB);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        uint64_t SuccessorsWeight   = getExecutionFreqUsingSuccessors(&amp;BB);</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;BB : F) </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      Profile-&gt;setBasicBlockFrequency(BB, </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;          BFI.getBlockFreq(&amp;BB).getFrequency() / BFI.getEntryFreq());</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  }</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;};</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="classProfileModule.html#a17cad3a7d951ee78efd7b30cc3a423ce">  240</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classProfileModule.html#a17cad3a7d951ee78efd7b30cc3a423ce">ProfileModule::repairFunctionProfiling</a>(Function *Func) {</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  std::unordered_map&lt;BasicBlock*, bool&gt; HasFreq;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;BB : *Func)</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">if</span> (hasBasicBlockFrequency(BB))</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      HasFreq[&amp;BB] = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="keywordtype">bool</span> changed = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keywordflow">while</span>(changed) {</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    changed = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;BB : *Func) {</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      <span class="keywordflow">if</span> (HasFreq.count(&amp;BB) == 0) {</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        uint64_t PredecessorsWeight = getExecutionFreqUsingPredecessors(&amp;BB);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        uint64_t SuccessorsWeight   = getExecutionFreqUsingSuccessors(&amp;BB);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        uint64_t ExecutionFreq = std::max(PredecessorsWeight, SuccessorsWeight);</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keywordflow">if</span> (ExecutionFreq &gt; getBasicBlockFrequency(BB) &amp;&amp;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            ExecutionFreq != 0) { </div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;          setBasicBlockFrequency(BB, ExecutionFreq);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;          changed = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        }</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      }</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  }</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="classProfileModule.html#acc69d694de56150b427b9a97218010f4">  266</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classProfileModule.html#acc69d694de56150b427b9a97218010f4">ProfileModule::repairProfiling</a>() {</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;Func : *LLVMModule) {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;BB : Func) {</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      <span class="keywordflow">if</span> (hasBranchFrequency(BB)) {</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keyword">auto</span> Frequency = 0;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keyword">auto</span> NumSucc = 0;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;BFreq : getBranchFrequency(BB)) {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;          Frequency += BFreq;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;          <span class="keyword">auto</span> Succ = BB.getTerminator()-&gt;getSuccessor(NumSucc);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;          <span class="keywordflow">if</span> (!hasBasicBlockFrequency(*Succ))</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            setBasicBlockFrequency(*Succ, BFreq);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;          ++NumSucc;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        }</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        setBasicBlockFrequency(BB, Frequency);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      }</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    repairFunctionProfiling(&amp;Func);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  }</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;}</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="classProfileModule.html#afed1fbe5ead415d6687dec691376b509">  286</a></span>&#160;<a class="code" href="classProfileModule.html">ProfileModule</a>* <a class="code" href="classProfileModule.html#afed1fbe5ead415d6687dec691376b509">ProfileModule::getCopy</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  Module *NewModule = CloneModule(getLLVMModule());</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classProfileModule.html">ProfileModule</a>(NewModule); </div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;}</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="classProfileModule.html#a275910e8a0ec876899d60a68420927e2">  291</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classProfileModule.html#a275910e8a0ec876899d60a68420927e2">ProfileModule::print</a>(<span class="keyword">const</span> std::string Path)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  std::error_code Err;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  raw_fd_ostream *Out =          </div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keyword">new</span> raw_fd_ostream(Path, Err, llvm::sys::fs::OpenFlags::F_RW);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  WriteBitcodeToFile(getLLVMModule(), *Out);                         </div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  Out-&gt;flush();</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keyword">delete</span> Out;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}           </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        uint64_t ExecutionFreq = std::max(PredecessorsWeight, SuccessorsWeight);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">if</span> (ExecutionFreq &gt; getBasicBlockFrequency(BB) &amp;&amp;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            ExecutionFreq != 0) { </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;          setBasicBlockFrequency(BB, ExecutionFreq);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;          changed = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;}</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="classProfileModule.html#acc69d694de56150b427b9a97218010f4">  245</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classProfileModule.html#acc69d694de56150b427b9a97218010f4">ProfileModule::repairProfiling</a>() {</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;Func : *LLVMModule) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;BB : Func) {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      <span class="keywordflow">if</span> (hasBranchFrequency(BB)) {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keyword">auto</span> Frequency = 0;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keyword">auto</span> NumSucc = 0;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;BFreq : getBranchFrequency(BB)) {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;          Frequency += BFreq;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;          <span class="keyword">auto</span> Succ = BB.getTerminator()-&gt;getSuccessor(NumSucc);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;          <span class="keywordflow">if</span> (!hasBasicBlockFrequency(*Succ))</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            setBasicBlockFrequency(*Succ, BFreq);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;          ++NumSucc;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        setBasicBlockFrequency(BB, Frequency);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    repairFunctionProfiling(&amp;Func);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="classProfileModule.html#afed1fbe5ead415d6687dec691376b509">  265</a></span>&#160;<a class="code" href="classProfileModule.html">ProfileModule</a>* <a class="code" href="classProfileModule.html#afed1fbe5ead415d6687dec691376b509">ProfileModule::getCopy</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  Module *NewModule = CloneModule(getLLVMModule());</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classProfileModule.html">ProfileModule</a>(NewModule); </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;}</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="classProfileModule.html#a275910e8a0ec876899d60a68420927e2">  270</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classProfileModule.html#a275910e8a0ec876899d60a68420927e2">ProfileModule::print</a>(<span class="keyword">const</span> std::string Path)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  std::error_code Err;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  raw_fd_ostream *Out =          </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keyword">new</span> raw_fd_ostream(Path, Err, llvm::sys::fs::OpenFlags::F_RW);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  WriteBitcodeToFile(getLLVMModule(), *Out);   </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  Out-&gt;flush();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keyword">delete</span> Out;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}           </div>
 <div class="ttc" id="classProfileModule_html_abf5c0f33b22a57b0654979126acf6fa2"><div class="ttname"><a href="classProfileModule.html#abf5c0f33b22a57b0654979126acf6fa2">ProfileModule::hasCallCost</a></div><div class="ttdeci">bool hasCallCost(const llvm::CallInst &amp;) const </div><div class="ttdoc">Returns true if the call instruction have a cost, otherwise returns false. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00132">ProfileModule.cpp:132</a></div></div>
 <div class="ttc" id="classProfileModule_html_a2ca657beae7881e8364e57abffc2ce4f"><div class="ttname"><a href="classProfileModule.html#a2ca657beae7881e8364e57abffc2ce4f">ProfileModule::getLLVMModule</a></div><div class="ttdeci">llvm::Module * getLLVMModule() const </div><div class="ttdoc">Returns its LLVM Module. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00083">ProfileModule.cpp:83</a></div></div>
-<div class="ttc" id="structStaticProfiling_html"><div class="ttname"><a href="structStaticProfiling.html">StaticProfiling</a></div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00219">ProfileModule.cpp:219</a></div></div>
-<div class="ttc" id="structStaticProfiling_html_a99fed923deae11457f15dd90fa40ba33"><div class="ttname"><a href="structStaticProfiling.html#a99fed923deae11457f15dd90fa40ba33">StaticProfiling::getAnalysisUsage</a></div><div class="ttdeci">void getAnalysisUsage(AnalysisUsage &amp;AU) const override</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00225">ProfileModule.cpp:225</a></div></div>
 <div class="ttc" id="classProfileModule_html_aa08f1aee243d7a0ab78447999d888398"><div class="ttname"><a href="classProfileModule.html#aa08f1aee243d7a0ab78447999d888398">ProfileModule::hasBasicBlockFrequency</a></div><div class="ttdeci">bool hasBasicBlockFrequency(const llvm::BasicBlock &amp;) const </div><div class="ttdoc">Return true if the execution frequency of the given basic block is known, otherwise returns false...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00115">ProfileModule.cpp:115</a></div></div>
 <div class="ttc" id="classProfileModule_html"><div class="ttname"><a href="classProfileModule.html">ProfileModule</a></div><div class="ttdoc">This class is responsible for encapsulating profile information with LLVM code, make copies of itself...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8h_source.html#l00026">ProfileModule.h:26</a></div></div>
 <div class="ttc" id="classProfileModule_html_a5d66848d9c35e4cfd3837d105c1d72eb"><div class="ttname"><a href="classProfileModule.html#a5d66848d9c35e4cfd3837d105c1d72eb">ProfileModule::hasID</a></div><div class="ttdeci">bool hasID(const llvm::Instruction &amp;I) const </div><div class="ttdoc">Returns true if the instruction have an ID, otherwise returns false. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00050">ProfileModule.cpp:50</a></div></div>
 <div class="ttc" id="ProfileModule_8cpp_html_acf8676d94c23888752c46126eef9d599"><div class="ttname"><a href="ProfileModule_8cpp.html#acf8676d94c23888752c46126eef9d599">setWeight</a></div><div class="ttdeci">void setWeight(Instruction &amp;I, double Weight)</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00043">ProfileModule.cpp:43</a></div></div>
-<div class="ttc" id="structStaticProfiling_html_a859eeedd7777f10b6627198c0e432d4d"><div class="ttname"><a href="structStaticProfiling.html#a859eeedd7777f10b6627198c0e432d4d">StaticProfiling::StaticProfiling</a></div><div class="ttdeci">StaticProfiling(ProfileModule *P)</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00223">ProfileModule.cpp:223</a></div></div>
 <div class="ttc" id="ProfileModule_8cpp_html_a8e427d183ecbd7377c0d0591a86c1fdb"><div class="ttname"><a href="ProfileModule_8cpp.html#a8e427d183ecbd7377c0d0591a86c1fdb">setID</a></div><div class="ttdeci">void setID(Instruction &amp;I, int ID)</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00061">ProfileModule.cpp:61</a></div></div>
 <div class="ttc" id="classProfileModule_html_a6a0a880f04a8a5bbef8d929fe9c149be"><div class="ttname"><a href="classProfileModule.html#a6a0a880f04a8a5bbef8d929fe9c149be">ProfileModule::ProfileModule</a></div><div class="ttdeci">ProfileModule(llvm::Module *)</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00069">ProfileModule.cpp:69</a></div></div>
-<div class="ttc" id="classProfileModule_html_a17cad3a7d951ee78efd7b30cc3a423ce"><div class="ttname"><a href="classProfileModule.html#a17cad3a7d951ee78efd7b30cc3a423ce">ProfileModule::repairFunctionProfiling</a></div><div class="ttdeci">void repairFunctionProfiling(llvm::Function *)</div><div class="ttdoc">For each basic block in the CFG of the given function, its predecessors and successors are used to es...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00240">ProfileModule.cpp:240</a></div></div>
-<div class="ttc" id="classProfileModule_html_acc69d694de56150b427b9a97218010f4"><div class="ttname"><a href="classProfileModule.html#acc69d694de56150b427b9a97218010f4">ProfileModule::repairProfiling</a></div><div class="ttdeci">void repairProfiling()</div><div class="ttdoc">Repair each function in the module. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00266">ProfileModule.cpp:266</a></div></div>
+<div class="ttc" id="classProfileModule_html_a17cad3a7d951ee78efd7b30cc3a423ce"><div class="ttname"><a href="classProfileModule.html#a17cad3a7d951ee78efd7b30cc3a423ce">ProfileModule::repairFunctionProfiling</a></div><div class="ttdeci">void repairFunctionProfiling(llvm::Function *)</div><div class="ttdoc">For each basic block in the CFG of the given function, its predecessors and successors are used to es...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00219">ProfileModule.cpp:219</a></div></div>
+<div class="ttc" id="classProfileModule_html_acc69d694de56150b427b9a97218010f4"><div class="ttname"><a href="classProfileModule.html#acc69d694de56150b427b9a97218010f4">ProfileModule::repairProfiling</a></div><div class="ttdeci">void repairProfiling()</div><div class="ttdoc">Repair each function in the module. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00245">ProfileModule.cpp:245</a></div></div>
 <div class="ttc" id="classProfileModule_html_a1101cff67ce6e531ff6cff385a0be6f9"><div class="ttname"><a href="classProfileModule.html#a1101cff67ce6e531ff6cff385a0be6f9">ProfileModule::setCallCost</a></div><div class="ttdeci">void setCallCost(llvm::CallInst &amp;, double)</div><div class="ttdoc">Sets the cost of a given call instruction. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00143">ProfileModule.cpp:143</a></div></div>
 <div class="ttc" id="classProfileModule_html_ab0322ce93b30592ad0f452082adf1532"><div class="ttname"><a href="classProfileModule.html#ab0322ce93b30592ad0f452082adf1532">ProfileModule::setBasicBlockFrequency</a></div><div class="ttdeci">void setBasicBlockFrequency(llvm::BasicBlock &amp;, uint64_t)</div><div class="ttdoc">Sets the execution frequency of a basic block. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00128">ProfileModule.cpp:128</a></div></div>
 <div class="ttc" id="classProfileModule_html_afc23ba15dfb2146631b172285e6cbdc1"><div class="ttname"><a href="classProfileModule.html#afc23ba15dfb2146631b172285e6cbdc1">ProfileModule::getID</a></div><div class="ttdeci">int getID(const llvm::Instruction &amp;I)</div><div class="ttdoc">Returns the ID of a given instruction. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00054">ProfileModule.cpp:54</a></div></div>
 <div class="ttc" id="ProfileModule_8h_html"><div class="ttname"><a href="ProfileModule_8h.html">ProfileModule.h</a></div><div class="ttdoc">This file contains declarations of the Profile Module, which encapsulate a LLVMModule with profiling ...</div></div>
 <div class="ttc" id="ProfileModule_8cpp_html_a8457ea6fd0865c28d4fabeabce34661e"><div class="ttname"><a href="ProfileModule_8cpp.html#a8457ea6fd0865c28d4fabeabce34661e">getWeight</a></div><div class="ttdeci">double getWeight(const Instruction &amp;I)</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00035">ProfileModule.cpp:35</a></div></div>
-<div class="ttc" id="classFunctionPass_html"><div class="ttname"><a href="classFunctionPass.html">FunctionPass</a></div></div>
 <div class="ttc" id="classProfileModule_html_acf31afe2ff23b29bfdad41f57a4f4bb6"><div class="ttname"><a href="classProfileModule.html#acf31afe2ff23b29bfdad41f57a4f4bb6">ProfileModule::getBasicBlockFrequency</a></div><div class="ttdeci">uint64_t getBasicBlockFrequency(const llvm::BasicBlock &amp;) const </div><div class="ttdoc">Returns the execution frequency of the given basic block, but if it doesn&#39;t have the frequency...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00119">ProfileModule.cpp:119</a></div></div>
 <div class="ttc" id="classProfileModule_html_a68e1b9bc542dfdb865a6584d5d758228"><div class="ttname"><a href="classProfileModule.html#a68e1b9bc542dfdb865a6584d5d758228">ProfileModule::setBranchFrequency</a></div><div class="ttdeci">void setBranchFrequency(llvm::BasicBlock &amp;, std::vector&lt; uint32_t &gt; &amp;)</div><div class="ttdoc">Sets the execution frequency for each path that can be taken by the terminator instruction of the giv...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00094">ProfileModule.cpp:94</a></div></div>
-<div class="ttc" id="structStaticProfiling_html_a6b1007378ae6873a803a27b4181ea2a4"><div class="ttname"><a href="structStaticProfiling.html#a6b1007378ae6873a803a27b4181ea2a4">StaticProfiling::Profile</a></div><div class="ttdeci">ProfileModule * Profile</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00221">ProfileModule.cpp:221</a></div></div>
 <div class="ttc" id="PAPI_8cpp_html_af9d22b8c6cb19e5b0e44b8a78d1cd3d9"><div class="ttname"><a href="PAPI_8cpp.html#af9d22b8c6cb19e5b0e44b8a78d1cd3d9">Freq</a></div><div class="ttdeci">int * Freq</div><div class="ttdef"><b>Definition:</b> <a href="PAPI_8cpp_source.html#l00026">PAPI.cpp:26</a></div></div>
 <div class="ttc" id="InstructionCostEstimator_8h_html_a63eab158c3939d16044f28fedc267267"><div class="ttname"><a href="InstructionCostEstimator_8h.html#a63eab158c3939d16044f28fedc267267">Cost</a></div><div class="ttdeci">Cost</div><div class="ttdef"><b>Definition:</b> <a href="InstructionCostEstimator_8h_source.html#l00018">InstructionCostEstimator.h:18</a></div></div>
 <div class="ttc" id="classProfileModule_html_a1dbb1e0e74bb83990c732a1fb09bfbff"><div class="ttname"><a href="classProfileModule.html#a1dbb1e0e74bb83990c732a1fb09bfbff">ProfileModule::getBranchFrequency</a></div><div class="ttdeci">std::vector&lt; uint32_t &gt; getBranchFrequency(const llvm::BasicBlock &amp;) const </div><div class="ttdoc">Returns a vector with the execution frequency for each possible path that can be taken by the termina...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00101">ProfileModule.cpp:101</a></div></div>
 <div class="ttc" id="classProfileModule_html_a189bfdcde2f50e3d61cd29a40b28588b"><div class="ttname"><a href="classProfileModule.html#a189bfdcde2f50e3d61cd29a40b28588b">ProfileModule::getCallCost</a></div><div class="ttdeci">double getCallCost(const llvm::CallInst &amp;) const </div><div class="ttdoc">Returns the call cost of a given call instruction. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00136">ProfileModule.cpp:136</a></div></div>
 <div class="ttc" id="classProfileModule_html_ad5ea685daffaa49096a5238498100d86"><div class="ttname"><a href="classProfileModule.html#ad5ea685daffaa49096a5238498100d86">ProfileModule::hasBranchFrequency</a></div><div class="ttdeci">bool hasBranchFrequency(const llvm::BasicBlock &amp;) const </div><div class="ttdoc">If the basic block ends with a branch as terminator instruction and the frequencies of this branch ar...</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00089">ProfileModule.cpp:89</a></div></div>
-<div class="ttc" id="classProfileModule_html_a275910e8a0ec876899d60a68420927e2"><div class="ttname"><a href="classProfileModule.html#a275910e8a0ec876899d60a68420927e2">ProfileModule::print</a></div><div class="ttdeci">void print(const std::string) const </div><div class="ttdoc">It saves the LLVM module with all the profiling information in the given path. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00291">ProfileModule.cpp:291</a></div></div>
-<div class="ttc" id="structStaticProfiling_html_a2dc949fdbc72bbba74b0ddd21fc61e38"><div class="ttname"><a href="structStaticProfiling.html#a2dc949fdbc72bbba74b0ddd21fc61e38">StaticProfiling::runOnFunction</a></div><div class="ttdeci">bool runOnFunction(Function &amp;F)</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00230">ProfileModule.cpp:230</a></div></div>
-<div class="ttc" id="structStaticProfiling_html_abdbe852c63a8e5fa49c05cea1dd7158d"><div class="ttname"><a href="structStaticProfiling.html#abdbe852c63a8e5fa49c05cea1dd7158d">StaticProfiling::ID</a></div><div class="ttdeci">static char ID</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00220">ProfileModule.cpp:220</a></div></div>
+<div class="ttc" id="classProfileModule_html_a275910e8a0ec876899d60a68420927e2"><div class="ttname"><a href="classProfileModule.html#a275910e8a0ec876899d60a68420927e2">ProfileModule::print</a></div><div class="ttdeci">void print(const std::string) const </div><div class="ttdoc">It saves the LLVM module with all the profiling information in the given path. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00270">ProfileModule.cpp:270</a></div></div>
 <div class="ttc" id="PAPI_8cpp_html_af180e926633cde08a05ccbc3af397ee4"><div class="ttname"><a href="PAPI_8cpp.html#af180e926633cde08a05ccbc3af397ee4">ID</a></div><div class="ttdeci">int ID</div><div class="ttdef"><b>Definition:</b> <a href="PAPI_8cpp_source.html#l00025">PAPI.cpp:25</a></div></div>
 <div class="ttc" id="ProfileModule_8cpp_html_a3366eb6c938c0ca18abedf5fdcd4c2ac"><div class="ttname"><a href="ProfileModule_8cpp.html#a3366eb6c938c0ca18abedf5fdcd4c2ac">hasWeight</a></div><div class="ttdeci">bool hasWeight(const Instruction &amp;I)</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00031">ProfileModule.cpp:31</a></div></div>
-<div class="ttc" id="classProfileModule_html_afed1fbe5ead415d6687dec691376b509"><div class="ttname"><a href="classProfileModule.html#afed1fbe5ead415d6687dec691376b509">ProfileModule::getCopy</a></div><div class="ttdeci">ProfileModule * getCopy() const </div><div class="ttdoc">Make a copy of the Profiling Module. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00286">ProfileModule.cpp:286</a></div></div>
+<div class="ttc" id="classProfileModule_html_afed1fbe5ead415d6687dec691376b509"><div class="ttname"><a href="classProfileModule.html#afed1fbe5ead415d6687dec691376b509">ProfileModule::getCopy</a></div><div class="ttdeci">ProfileModule * getCopy() const </div><div class="ttdoc">Make a copy of the Profiling Module. </div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00265">ProfileModule.cpp:265</a></div></div>
 <div class="ttc" id="ProfileModule_8cpp_html_abc6ffb3fd409ab969291c1afd05c597e"><div class="ttname"><a href="ProfileModule_8cpp.html#abc6ffb3fd409ab969291c1afd05c597e">BBFreq</a></div><div class="ttdeci">std::unordered_map&lt; std::string, uint64_t &gt; BBFreq</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00087">ProfileModule.cpp:87</a></div></div>
 <div class="ttc" id="ProfileModule_8cpp_html_a9fadc914cd13b569df46bef9756987a5"><div class="ttname"><a href="ProfileModule_8cpp.html#a9fadc914cd13b569df46bef9756987a5">nC</a></div><div class="ttdeci">int nC</div><div class="ttdef"><b>Definition:</b> <a href="ProfileModule_8cpp_source.html#l00068">ProfileModule.cpp:68</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 27 2015 00:08:47 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 28 2015 23:05:28 for GEOS - Guide for Exploration of the Optimization Space by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
