@@ -27,6 +27,9 @@
 #include <stack>
 #include <limits>
 #include <random>
+#include <signal.h>
+#include <stdio.h>
+#include <setjmp.h>
 
 int main(int argc, char** argv) {
   GEOS::init();
@@ -40,12 +43,12 @@ int main(int argc, char** argv) {
     parseIRFile(LLVMFilename.c_str(), Error, Context).release();
 
   ProfileModule *PModule = new ProfileModule(MyModule);
-
+  PModule->print("teste");
   CostEstimatorOptions &Opts = gcl::populatePModule(PModule);
 
   double BestOfBest = 0;
   double BestOfBestEstimation = 0;
-  for(int j = 0; j < 10; j++) {
+  for(int j = 0; j < 5; j++) {
     double Cost = GEOS::analyseCost(PModule, Opts);
     double RealCost = 
       GEOS::getRealExecutionTime(PModule, ExecutionKind::JIT);
@@ -53,11 +56,9 @@ int main(int argc, char** argv) {
     ProfileModule *Best = nullptr;
     double BestSpeedup = 0;
 
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 200; i++) {
       PassSequence Passes;
-      Passes.randomize(30, true, OptLevel::Random, OptLevel::Random);
-      Passes.print();
-      printf("\n");
+      Passes.randomize(10, true, OptLevel::Random, OptLevel::Random);
       ProfileModule *PO = GEOS::applyPasses(*PModule, Passes);
 
       double NewCost = GEOS::analyseCost(PO, Opts);
@@ -66,7 +67,6 @@ int main(int argc, char** argv) {
         delete Best;
         BestSpeedup = Cost/NewCost;
         Best = PO;
-        printf("%lf\n", BestSpeedup);
       } else {
         delete PO;
       }
@@ -81,7 +81,7 @@ int main(int argc, char** argv) {
       BestOfBestEstimation = BestSpeedup;
     }
   }
+  
   printf("\nBEST OF BEST: %lf | %lf \n", BestOfBestEstimation, BestOfBest);
-
   return 0;
 }

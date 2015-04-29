@@ -20,7 +20,8 @@
 namespace {
   /// \brief List of analysis methods
   enum CostAnalysisKind {
-    RegisterUse, InstructionCache, StaticInstruction, TTIInstruction, Branch, Call
+    RegisterUse, InstructionCache, StaticInstruction, TTIInstruction, Branch, 
+    Call, RandomCost
   };
 
   /// \brief This structure contain a vector with analysis and options for 

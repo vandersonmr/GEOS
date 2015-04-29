@@ -155,7 +155,7 @@ ProfileModule::getExecutionFreqUsingPredecessors(BasicBlock *BB) {
       if (isa<BranchInst>(Terminator)) {
         if (cast<BranchInst>(Terminator)->isUnconditional()) {
           PredecessorsWeight += getBasicBlockFrequency(*Predecessor);
-        }/* else {
+        } else {
           uint64_t EdgeWeight = getBasicBlockFrequency(*Predecessor);
           for (unsigned J = 0; J < Terminator->getNumSuccessors(); ++J) {
             auto SuccPred = Terminator->getSuccessor(J);
@@ -171,7 +171,7 @@ ProfileModule::getExecutionFreqUsingPredecessors(BasicBlock *BB) {
             }
           }
           PredecessorsWeight += EdgeWeight;
-        }*/
+        }
       }
     }
   }
@@ -188,7 +188,7 @@ ProfileModule::getExecutionFreqUsingSuccessors(BasicBlock *BB) {
     if (BB != Successor) { 
       if (Successor->getSinglePredecessor() == BB) {
         SuccessorsWeight += getBasicBlockFrequency(*Successor);
-      }/* else {
+      } else {
         uint64_t EdgeWeight = getBasicBlockFrequency(*Successor);
         for (auto IT = pred_begin(Successor); IT != pred_end(Successor); ++IT) {
           BasicBlock* PredSucc = *IT;
@@ -209,33 +209,12 @@ ProfileModule::getExecutionFreqUsingSuccessors(BasicBlock *BB) {
           }
         }
         SuccessorsWeight += EdgeWeight;
-      }*/
+      } 
     }
   }
 
   return SuccessorsWeight;
 }
-
-struct StaticProfiling : public FunctionPass {
-  static char ID;
-  ProfileModule *Profile;
-
-  StaticProfiling(ProfileModule *P) : FunctionPass(ID), Profile(P) {};
-
-  void getAnalysisUsage(AnalysisUsage &AU) const override {
-    AU.addRequired<BlockFrequencyInfo>();
-    AU.setPreservesAll();
-  }
-
-  bool runOnFunction(Function &F) {
-    BlockFrequencyInfo &BFI = getAnalysis<BlockFrequencyInfo>();
-
-    for (auto &BB : F) 
-      Profile->setBasicBlockFrequency(BB, 
-          BFI.getBlockFreq(&BB).getFrequency() / BFI.getEntryFreq());
-    return true;
-  }
-};
 
 void ProfileModule::repairFunctionProfiling(Function *Func) {
   std::unordered_map<BasicBlock*, bool> HasFreq;
@@ -292,7 +271,7 @@ void ProfileModule::print(const std::string Path) const {
   std::error_code Err;
   raw_fd_ostream *Out =          
     new raw_fd_ostream(Path, Err, llvm::sys::fs::OpenFlags::F_RW);
-  WriteBitcodeToFile(getLLVMModule(), *Out);                         
+  WriteBitcodeToFile(getLLVMModule(), *Out);   
   Out->flush();
   delete Out;
 }           

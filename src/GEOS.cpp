@@ -17,24 +17,17 @@
 
 #include "llvm/Support/MemoryBuffer.h"
 #include "llvm/Support/TargetSelect.h"
+#include "llvm/Bitcode/ReaderWriter.h"
+#include "llvm/IRReader/IRReader.h"
+#include "llvm/IR/LLVMContext.h"
+#include "llvm/Support/FileSystem.h"
+#include "llvm/Support/SourceMgr.h"
 
 #include "CostEstimator/CostEstimator.h"
 
 #include <cstdlib>
-#include <signal.h>
-#include <stdio.h>
-#include <setjmp.h>
-
-#define safe(x); \
- auto stdHandler = signal(SIGSEGV, magicHandler); \
- auto stdAbrtHandler = signal(SIGABRT, magicHandler); \
- if(!setjmp(buf)) { \
-   x \
- } else { \
-  printf("\nSuccessfully recovered! I'm back!!\n\n");\
- }\
- signal(SIGSEGV, stdHandler);\
- signal(SIGSEGV, stdAbrtHandler);
+#include <unistd.h>
+#include <sys/wait.h>
 
 using namespace llvm;
 
@@ -61,22 +54,6 @@ void GEOS::init() {
   initializeCodeGenPreparePass(*Registry);
   initializeAtomicExpandPass(*Registry);
   initializeRewriteSymbolsPass(*Registry);
-}
-
-jmp_buf buf;
-
-void magicHandler(int s) {
-  switch(s) {
-    case SIGSEGV:
-      printf("\nSegmentation fault signal caught! Attempting recovery..");
-      longjmp(buf, 1);
-      break;
-    case SIGABRT:
-      printf("\nLLVM is trying to abort. But we are attempting recovery..");
-      longjmp(buf, 1);
-      break;
-  }
-  printf("\n Heuston, we have a problem!\n");
 }
 
 ProfileModule*
@@ -107,22 +84,36 @@ GEOS::applyPassesOnFunction(StringRef FuncName, const ProfileModule& PModule,
 
 ProfileModule*
 GEOS::applyPasses(const ProfileModule& PModule, PassSequence &PS) {
-  ProfileModule *ModuleCopy = PModule.getCopy();
-  Module *MyModule = ModuleCopy->getLLVMModule();
+  pid_t pid = fork();
+  if (pid == 0) { 
+    Module *MyModule = PModule.getLLVMModule();
+    PassManager PM;
+    FunctionPassManager FPM(MyModule);
+    PS.populatePassManager(PM, FPM);
 
-  PassManager PM;
-  FunctionPassManager FPM(MyModule);
-  PS.populatePassManager(PM, FPM);
+    for (auto &Func : *MyModule) 
+      FPM.run(Func);
 
-  for (auto &Func : *MyModule)
-    FPM.run(Func);
+    PM.run(*MyModule);
+    PModule.print(".tmp");
+    exit(0);
+  } 
 
-  ModuleCopy->repairProfiling();
-  PM.run(*MyModule);
-  ModuleCopy->repairProfiling();
-
-  ModuleCopy->setPasses(PS);
-  return ModuleCopy;
+  int ReturnStatus;
+  waitpid(pid, &ReturnStatus, 0);
+  if (ReturnStatus != 0) { 
+    printf("Houston, We've Got a Problem! Our child have died!\n");
+    return PModule.getCopy();
+  } else {
+    LLVMContext &Context = getGlobalContext();
+    SMDiagnostic Error;
+    Module *MyModule = 
+      parseIRFile(".tmp", Error, Context).release();
+    ProfileModule *ModuleCopy = new ProfileModule(MyModule);
+    ModuleCopy->repairProfiling();
+    ModuleCopy->setPasses(PS);
+    return ModuleCopy;
+  }
 }
 
 double GEOS::

@@ -61,6 +61,7 @@ Analysis(cl::desc("Choose one or more analysis method:"),
         "Analyse instruction costs with weights that are plataform sensitive."),
       clEnumVal(Branch, "Analyse branch misprediction cost."),
       clEnumVal(Call, "Analyse extern call costs. (Need profiling)"),
+      clEnumVal(RandomCost, "Random cost."),
       clEnumValEnd));
 
 static cl::opt<CostEstimatorOptionsSet>

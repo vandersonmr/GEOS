@@ -49,7 +49,7 @@ struct StaticProfiling : public FunctionPass {
   }
 }; 
 
-enum Mark { Temporary, Permanent, None};
+enum class Mark { Temporary, Permanent, None};
 
 void visit(CallGraphNode &CallNode, 
     std::unordered_map<Function*, Mark> &Marks, 

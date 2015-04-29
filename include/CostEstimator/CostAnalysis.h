@@ -11,6 +11,8 @@
 /// execution cost of a LLVM function.
 ///
 //===----------------------------------------------------------------------===//
+#ifndef COSTANALYSIS_H
+#define COSTANALYSIS_H
 
 #include "CostEstimator/CostEstimatorOptions.h"
 #include "ProfileModule/ProfileModule.h"
@@ -55,7 +57,6 @@ class InstructionCacheAnalysis : public CostAnalysis {
           CostEstimatorOptions) const;
 };
 
-
 /// \brief Return the sum of the cost of all LLVM instruction multiplicated by 
 /// its the execution frequency. The cost is the same for every architecture.
 class StaticInstructionAnalysis : public CostAnalysis {
@@ -93,12 +94,22 @@ class CallAnalysis : public CostAnalysis {
           CostEstimatorOptions) const;
 };
 
+/// \brief Randomize a cost between 1 and 4 for each basic block.
+class RandomAnalysis : public CostAnalysis {
+  public:
+    double 
+      estimateCost(llvm::StringRef, const ProfileModule*,
+          CostEstimatorOptions) const;
+};
+
 namespace {
   /// \brief Given a kind of analysis and a PModule it returns a instance of
   /// this analysis.
   std::unique_ptr<CostAnalysis> 
     createCostAnalysis(CostAnalysisKind Kind, const ProfileModule *PModule) {
       switch (Kind) {
+        case RandomCost:
+          return std::unique_ptr<CostAnalysis>(new RandomAnalysis());
         case InstructionCache:
           return std::unique_ptr<CostAnalysis>(
               new InstructionCacheAnalysis(PModule));
@@ -117,3 +128,4 @@ namespace {
       }
     } 
 }
+#endif
