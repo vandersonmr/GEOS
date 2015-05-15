@@ -30,6 +30,7 @@
 #include <signal.h>
 #include <stdio.h>
 #include <setjmp.h>
+#include "papi.h"
 
 int main(int argc, char** argv) {
   GEOS::init();
@@ -45,20 +46,22 @@ int main(int argc, char** argv) {
   ProfileModule *PModule = new ProfileModule(MyModule);
   PModule->print("teste");
   CostEstimatorOptions &Opts = gcl::populatePModule(PModule);
+  int PAPIEvents[1] = {PAPI_TOT_CYC};
 
   double BestOfBest = 0;
   double BestOfBestEstimation = 0;
   for(int j = 0; j < 5; j++) {
     double Cost = GEOS::analyseCost(PModule, Opts);
     double RealCost = 
-      GEOS::getRealExecutionTime(PModule, ExecutionKind::JIT);
+      (GEOS::getPAPIProfile(PModule, ExecutionKind::JIT, PAPIEvents, 1))[0];
 
     ProfileModule *Best = nullptr;
+    PassSequence BestSeq;
     double BestSpeedup = 0;
 
     for (int i = 0; i < 200; i++) {
       PassSequence Passes;
-      Passes.randomize(10, true, OptLevel::Random, OptLevel::Random);
+      Passes.randomize(50, true);
       ProfileModule *PO = GEOS::applyPasses(*PModule, Passes);
 
       double NewCost = GEOS::analyseCost(PO, Opts);
@@ -67,12 +70,14 @@ int main(int argc, char** argv) {
         delete Best;
         BestSpeedup = Cost/NewCost;
         Best = PO;
+        BestSeq = Passes;
       } else {
         delete PO;
       }
     }
-    double NewRealCost = 
-      GEOS::getRealExecutionTime(Best, ExecutionKind::JIT);
+    BestSeq.print();
+    double NewRealCost = (double)
+      (GEOS::getPAPIProfile(Best, ExecutionKind::JIT, PAPIEvents, 1))[0];
 
     printf("\nBEST: %lf | %lf \n", BestSpeedup, RealCost/NewRealCost);
 

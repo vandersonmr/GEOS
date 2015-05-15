@@ -151,3 +151,20 @@ getRealExecutionTimeWithArgs(const ProfileModule* PModule,
     ExecutionFactory::createRuntimeMeasurer(ExecKind, PModule);
   return ETM.getExecutionTime(Argv, Envp);
 }
+
+long long int* GEOS::
+getPAPIProfile(const ProfileModule* PModule, ExecutionKind ExecKind, 
+    int* PAPIEvents, int Size) {
+  ExecutionTimeMeasurer &ETM = 
+    ExecutionFactory::createRuntimeMeasurer(ExecKind, PModule);
+  return ETM.getPAPIProfile(PAPIEvents, Size);
+}
+
+long long int* GEOS::
+getPAPIProfileWithArgs(const ProfileModule* PModule, 
+    ExecutionKind ExecKind, std::vector<std::string> Argv, char* const* Envp,
+    int *PAPIEvents, int Size) {
+  ExecutionTimeMeasurer &ETM = 
+    ExecutionFactory::createRuntimeMeasurer(ExecKind, PModule);
+  return ETM.getPAPIProfile(Argv, Envp, PAPIEvents, Size);
+}

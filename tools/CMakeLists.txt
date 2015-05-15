@@ -13,7 +13,7 @@ TARGET_LINK_LIBRARIES(geos-analyser GEOS CostEstimator GCOV STATIC ProfileModule
   LLVMMC LLVMX86Utils LLVMCore LLVMSupport LLVMInstCombine LLVMBitWriter 
   LLVMObjCARCOpts LLVMInstrumentation LLVMVectorize LLVMProfileData LLVMipo
   LLVMMCJIT LLVMRuntimeDyld LLVMInterpreter LLVMExecutionEngine
-  rt dl tinfo atomic pthread z m)
+  rt dl tinfo atomic pthread papi z m)
 
 TARGET_LINK_LIBRARIES(geos-best GEOS CostEstimator GCOV STATIC ProfileModule 
   JITExecution
@@ -26,7 +26,7 @@ TARGET_LINK_LIBRARIES(geos-best GEOS CostEstimator GCOV STATIC ProfileModule
   LLVMMC LLVMX86Utils LLVMCore LLVMSupport LLVMInstCombine LLVMBitWriter 
   LLVMObjCARCOpts LLVMInstrumentation LLVMVectorize LLVMProfileData LLVMipo
   LLVMMCJIT LLVMRuntimeDyld LLVMInterpreter LLVMExecutionEngine
-  rt dl tinfo atomic pthread z m)
+  rt dl tinfo atomic pthread papi z m)
 
 TARGET_LINK_LIBRARIES(geos-random GEOS CostEstimator GCOV STATIC ProfileModule 
   JITExecution
@@ -39,7 +39,7 @@ TARGET_LINK_LIBRARIES(geos-random GEOS CostEstimator GCOV STATIC ProfileModule
   LLVMMC LLVMX86Utils LLVMCore LLVMSupport LLVMInstCombine LLVMBitWriter 
   LLVMObjCARCOpts LLVMInstrumentation LLVMVectorize LLVMProfileData LLVMipo
   LLVMMCJIT LLVMRuntimeDyld LLVMInterpreter LLVMExecutionEngine  
-  rt dl tinfo atomic pthread z m)
+  rt dl tinfo atomic pthread papi z m)
 
 
 INSTALL(TARGETS geos-analyser geos-best geos-random RUNTIME DESTINATION bin)

@@ -55,5 +55,16 @@ namespace GEOS {
     /// Argv and Envp are parameters.
     double getRealExecutionTimeWithArgs(const ProfileModule*, 
         ExecutionKind, std::vector<std::string>, char* const*);
+
+    /// \brief It runs the llvm code and returns profile information caught by
+    /// PAPI. 
+    long long int *getPAPIProfile(const ProfileModule*, ExecutionKind, 
+        int *PAPIEvents, int Size);
+
+    /// \brief It runs the llvm code and returns profile information caught by
+    /// PAPI. 
+    /// Argv and Envp are parameters.
+    long long int* getPAPIProfileWithArgs(const ProfileModule*, ExecutionKind, 
+        std::vector<std::string>, char* const*, int *PAPIEvents, int Size);
   }
 }

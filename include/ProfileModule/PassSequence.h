@@ -18,63 +18,127 @@
 #include "llvm/Transforms/IPO/PassManagerBuilder.h"
 #include "llvm/Transforms/Scalar.h"
 #include "llvm/PassManager.h"
+#include "llvm/PassRegistry.h"
+
+#include "EnumString.h"
 
 #include <stdio.h>
 #include <vector>
+#include <unordered_map>
+#include <cctype>
 
 /// \brief List of all possible function pass.
 enum OptimizationKind {
-  ConstantPropagation,
-  AlignmentFromAssumptions,
-  SCCP,
-  DeadInstElimination,
-  DeadCodeElimination,
-  DeadStoreElimination,
-  AggressiveDCE,
-  SROA,
-  ScalarReplAggregates,
-  InductionVariableSimplify,
-  InstructionCombining,
-  LICM,
-  LoopStrengthReduce,
-  LoopUnswitch,
-  LoopInstSimplify,
-  LoopUnroll,
-  LoopReroll,
-  LoopRotate,
-  LoopIdiom,
-  PromoteMemoryToRegister,
-  DemoteRegisterToMemory,
-  Reassociate,
-  JumpThreading,
-  CFGSimplification,
-  FlattenCFG,
-  CFGStructurization,
-  BreakCriticalEdges,
-  LoopSimplify,
-  TailCallElimination,
-  LowerSwitch,
-  LowerInvoke,
-  LCSSA,
-  EarlyCSE,
-  MergedLoadStoreMotion,
-  GVN,
-  MemCpyOpt,
-  LoopDeletion,
-  ConstantHoisting,
-  InstructionNamer,
-  Sink,
-  LowerAtomic,
-  ValuePropagation,
-  InstructionSimplifier,
-  LowerExpectInstrinsics,
-  PartiallyInlineLibCalls,
-  SampleProfilePass,
-  ScalarizerPass,
-  AddDiscriminators,
-  SeparateConstOffsetFromGEP,
-  LoadCombine
+    adce,
+    alwaysInline,
+    argpromotion,
+    bbVectorize,
+    blockPlacement,
+    breakCritEdges,
+    codegenprepare,
+    constmerge,
+    constprop,
+    dce,
+    deadargelim,
+    deadtypeelim,
+    die,
+    dse,
+    functionattrs,
+    globaldce,
+    globalopt,
+    gvn,
+    indvars,
+    inlining,
+    instcombine,
+    //internalize,
+    ipconstprop,
+    ipsccp,
+    jumpThreading,
+    lcssa,
+    licm,
+    loopDeletion,
+    //loopExtract,
+    //loopExtractSingle,
+    loopReduce,
+    loopRotate,
+    loopSimplify,
+    loopUnroll,
+    loopUnswitch,
+    loweratomic,
+    lowerinvoke,
+    lowerswitch,
+    mem2reg,
+    memcpyopt,
+    mergefunc,
+    mergereturn,
+    partialInliner,
+    pruneEh,
+    reassociate,
+    reg2mem,
+    scalarrepl,
+    sccp,
+    simplifycfg,
+    sink,
+    stripDeadPrototypes,
+    tailcallelim
 };
+
+Begin_Enum_String( OptimizationKind ) 
+{
+  Enum_String( adce );
+  Enum_String( alwaysInline );
+  Enum_String( argpromotion );
+  Enum_String( bbVectorize );
+  Enum_String( blockPlacement );
+  Enum_String( breakCritEdges );
+  Enum_String( codegenprepare );
+  Enum_String( constmerge );
+  Enum_String( constprop );
+  Enum_String( dce );
+  Enum_String( deadargelim );
+  Enum_String( deadtypeelim );
+  Enum_String( die );
+  Enum_String( dse );
+  Enum_String( functionattrs );
+  Enum_String( globaldce );
+  Enum_String( globalopt );
+  Enum_String( gvn );
+  Enum_String( indvars );
+  Enum_String( inlining );
+  Enum_String( instcombine );
+  //Enum_String( internalize );
+  Enum_String( ipconstprop );
+  Enum_String( ipsccp );
+  Enum_String( jumpThreading );
+  Enum_String( lcssa );
+  Enum_String( licm );
+  Enum_String( loopDeletion );
+  //Enum_String( loopExtract );
+  //Enum_String( loopExtractSingle );
+  Enum_String( loopReduce );
+  Enum_String( loopRotate );
+  Enum_String( loopSimplify );
+  Enum_String( loopUnroll );
+  Enum_String( loopUnswitch );
+  Enum_String( loweratomic );
+  Enum_String( lowerinvoke );
+  Enum_String( lowerswitch );
+  Enum_String( mem2reg );
+  Enum_String( memcpyopt );
+  Enum_String( mergefunc );
+  Enum_String( mergereturn );
+  Enum_String( partialInliner );
+  Enum_String( pruneEh );
+  Enum_String( reassociate );
+  Enum_String( reg2mem );
+  Enum_String( scalarrepl );
+  Enum_String( sccp );
+  Enum_String( simplifycfg );
+  Enum_String( sink );
+  Enum_String( stripDeadPrototypes );
+  Enum_String( tailcallelim );
+}
+End_Enum_String;
 
 /// \brief Kinds of optimizations. None = O0, Small = O1, Standard = O2 and 
 /// Aggressive = O3.
@@ -104,115 +168,80 @@ class PassSequence {
     /// \brief Returns a random OptimizationKind.
     OptimizationKind getRandomOptimizationKind() {
       return static_cast<OptimizationKind>(
-          getRandom(0, OptimizationKind::LoadCombine));
+          getRandom(0, static_cast<int>(OptimizationKind::tailcallelim)));
+    }
+
+    std::string getOptimizationName(OptimizationKind OptChoosed) {
+      if (OptChoosed == OptimizationKind::inlining)
+        return std::string("inline");
+      std::string RawName = EnumString<OptimizationKind>::From(OptChoosed); 
+      size_t i = 0;
+      for (;;) {
+        i = RawName.find_first_of("ABCDEFGHIJKLMNOPQRSTUVWXYZ", i);
+        if (i == std::string::npos) {
+          break;
+        }
+        char A[] = { static_cast<char>(tolower(RawName[i])), '\0'};
+        RawName.replace(i, 1, "-"+std::string(A));
+      }
+      return RawName;
+    }
+
+    OptimizationKind getKindByName(std::string OptChoosed) {
+      if (OptChoosed == "inline")
+        return OptimizationKind::inlining;
+
+      // Replaces -a to -A
+      bool isAfterBar = false; // bar = '-'
+      for (auto &C : OptChoosed) {
+        if (C == '-') isAfterBar = true;
+        if (isAfterBar) { 
+          C = toupper(C);
+          isAfterBar = false;
+        }
+      }
+      // Remove all -
+      OptChoosed.erase(
+          std::remove(OptChoosed.begin(), OptChoosed.end(), '-'), 
+          OptChoosed.end());
+
+      OptimizationKind X;
+      EnumString<OptimizationKind>::To(X, OptChoosed); 
+      return X;
     }
 
     /// \brief Given an OptimizationKind this function returns the respective 
     /// instanciation for this optimization (Pass).
-    llvm::Pass* getPass(OptimizationKind OptChoosed) {
-      switch(OptChoosed) {
-        // --------------- Not Working
-        //case sccp:
-        // return createsccppass();
-        //case LoopInstSimplify:
-        // return createLoopInstSimplifyPass();
-        //case PartiallyInlineLibCalls:
-        // return createPartiallyInlineLibCallsPass();
-        //case LoadCombine:
-        // return createLoadCombinePass(); // PreserveCFG
-        //case SeparateConstOffsetFromGEP: // Maybe can change CFG
-        //  return createSeparateConstOffsetFromGEPPass();
-        // case InstructionNamer:
-        //     return createInstructionNamerPass();
-        // ---------------- Change the CFG
-        case SROA:
-          return llvm::createSROAPass();
-        case LoopStrengthReduce:
-          return llvm::createLoopStrengthReducePass();
-        case LoopUnswitch:
-          return llvm::createLoopUnswitchPass();
-        case LoopUnroll:
-          return llvm::createLoopUnrollPass();
-        case LoopReroll:
-          return llvm::createLoopRerollPass();
-        case LoopRotate:
-          return llvm::createLoopRotatePass();
-        case LoopIdiom:
-          return llvm::createLoopIdiomPass();
-        case JumpThreading:
-          return llvm::createJumpThreadingPass();
-        case CFGSimplification:
-          return llvm::createCFGSimplificationPass();
-        case FlattenCFG:
-          return llvm::createFlattenCFGPass();
-        case CFGStructurization:
-          return llvm::createStructurizeCFGPass();
-        case BreakCriticalEdges:
-          return llvm::createBreakCriticalEdgesPass();
-        case LoopSimplify:
-          return llvm::createLoopSimplifyPass();
-        case TailCallElimination: // Maybe can change CFG
-          return llvm::createTailCallEliminationPass();
-        case LowerSwitch: // Maybe can change CFG
-          return llvm::createLowerSwitchPass();
-        case LoopDeletion: // Maybe can change CFG
-          return llvm::createLoopDeletionPass();
-        case ScalarizerPass: // Maybe can change CFG
-          return llvm::createScalarizerPass();
-        case LICM:
-          return llvm::createLICMPass();
-        case SCCP:
-          return llvm::createSCCPPass();
-        case ConstantPropagation:
-          return llvm::createConstantPropagationPass();
-        case AlignmentFromAssumptions:
-          return llvm::createAlignmentFromAssumptionsPass();
-        case DeadInstElimination:
-          return llvm::createDeadInstEliminationPass();
-        case DeadCodeElimination:
-          return llvm::createDeadCodeEliminationPass();
-        case AggressiveDCE:
-          return llvm::createAggressiveDCEPass();
-        case ScalarReplAggregates:
-          return llvm::createScalarReplAggregatesPass(); //PreservesCFG
-        case InductionVariableSimplify:
-          return llvm::createIndVarSimplifyPass();
-        case InstructionCombining:
-          return llvm::createInstructionCombiningPass();
-        case PromoteMemoryToRegister:
-          return llvm::createPromoteMemoryToRegisterPass();
-        case DemoteRegisterToMemory:
-          return llvm::createDemoteRegisterToMemoryPass();
-        case Reassociate:
-          return llvm::createReassociatePass(); // PreservesCFG
-        case LCSSA:
-          return llvm::createLCSSAPass(); // PreservesCFG*/
-        case EarlyCSE:
-          return llvm::createEarlyCSEPass();
-        case MergedLoadStoreMotion:
-          return llvm::createMergedLoadStoreMotionPass();
-        case GVN:
-          return llvm::createGVNPass();
-        case MemCpyOpt:
-          return llvm::createMemCpyOptPass();
-        case ConstantHoisting:
-          return llvm::createConstantHoistingPass();
-        case Sink:
-          return llvm::createSinkingPass(); // PreservesCFG
-        case LowerAtomic:
-          return llvm::createLowerAtomicPass(); // PreservesCFG
-        case ValuePropagation:
-          return llvm::createCorrelatedValuePropagationPass();
-        case InstructionSimplifier:
-          return llvm::createInstructionSimplifierPass();
-        case AddDiscriminators:
-          return llvm::createAddDiscriminatorsPass();
-        default:
-          return nullptr;
-      }
+    llvm::Pass* getOptimization(OptimizationKind OptChoosed) {
+      llvm::PassRegistry *PR = llvm::PassRegistry::getPassRegistry();
+      const llvm::PassInfo *PI = 
+        PR->getPassInfo(getOptimizationName(OptChoosed));
+      if (PI != nullptr)
+        return PI->createPass();
+      else 
+        return nullptr;
     }
 
   public:
+    void loadString(std::string S) {
+      char CharsToRemove[] = "'[] ";
+      for (unsigned int i = 0; i < strlen(CharsToRemove); ++i) {
+        S.erase(remove(S.begin(), S.end(), CharsToRemove[i]), S.end() );
+      }
+
+      std::string Delimiter = ",";
+
+      size_t Pos = 0;
+      std::string Token;
+      while ((Pos = S.find(Delimiter)) != std::string::npos) {
+        Token = S.substr(0, Pos);
+        Token.erase(0, 1);
+        add(getKindByName(Token));
+        S.erase(0, Pos + Delimiter.length());
+      }
+      add(getKindByName(S));
+    }
+
     void setOLevel(OptLevel OL) {
       OLevel = OL;
     }
@@ -223,19 +252,14 @@ class PassSequence {
       
     /// \brief Inserts an Optimization at the end.
     void add(OptimizationKind P) {
-      if (P == LoopRotate) 
-        Opts.push_back(LoopReroll);
-      if (P == LoopIdiom)
-        Opts.push_back(LoopReroll);
       Opts.push_back(P);
     }
 
     /// \brief Populates the PassSequence with randomic optimizations.
     /// \param RandomSize when set as true make the function generate sequences
     /// with size in the range between 1 and NumOfOptimizations.
-    void randomize(unsigned NumOfOptimizations, 
-        bool RandomSize = false, OptLevel OL = None, OptLevel OS = None) {
-
+    void randomize(unsigned NumOfOptimizations, bool RandomSize = false, 
+         OptLevel OL = None, OptLevel OS = None) {
       if (RandomSize) 
         NumOfOptimizations = getRandom(1, NumOfOptimizations); 
 
@@ -255,19 +279,23 @@ class PassSequence {
       Builder.populateModulePassManager(PM);
 
       for (auto Opt : Opts) {
-        auto P = getPass(Opt);
-        if (P != nullptr) 
-          FPM.add(P);
+        auto P = getOptimization(Opt);
+        if (P != nullptr) {
+          if (P->getPassKind() < 4) 
+            FPM.add(P);
+          else 
+            PM.add(P);
+        }
       }
     }    
-  
+
     unsigned size() const {
       return Opts.size();
     }
 
     void print() {
       for (auto Opt : Opts) {
-        auto P = getPass(Opt);
+        auto P = getOptimization(Opt);
         if (P != nullptr) {
           printf("%s | ", P->getPassName());
           delete P;
