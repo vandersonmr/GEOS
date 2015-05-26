@@ -264,7 +264,7 @@ class PassSequence {
         NumOfOptimizations = getRandom(1, NumOfOptimizations); 
 
       setOLevel(OL == Random ? static_cast<OptLevel>(getRandom(1, 3)) : OL);
-      setOSize(OS == Random ? static_cast<OptLevel>(getRandom(1, 3)) : OL);
+      setOSize (OS == Random ? static_cast<OptLevel>(getRandom(1, 3)) : OS);
 
       Opts.clear();
       for (unsigned i = 0; i < NumOfOptimizations; i++) 
