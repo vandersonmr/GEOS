@@ -103,7 +103,7 @@ GEOS::applyPasses(const ProfileModule& PModule, PassSequence &PS) {
   waitpid(pid, &ReturnStatus, 0);
   if (ReturnStatus != 0) { 
     printf("Houston, We've Got a Problem! Our child have died!\n");
-    return PModule.getCopy();
+    return nullptr;
   } else {
     LLVMContext &Context = getGlobalContext();
     SMDiagnostic Error;

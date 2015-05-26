@@ -35,8 +35,10 @@ applyAndGetOCost(ProfileModule* PModule, CostEstimatorOptions &Opts, int O) {
   Passes.setOLevel(static_cast<OptLevel>(O));
   Passes.setOSize(OptLevel::None);
   ProfileModule *PO = GEOS::applyPasses(*PModule, Passes);
-
-  return GEOS::analyseCost(PO, Opts);
+  
+  if (PO != nullptr) 
+    return GEOS::analyseCost(PO, Opts);
+  return LONG_MAX;
 }
 
 int main(int argc, char** argv) {

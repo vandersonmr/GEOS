@@ -61,8 +61,12 @@ int main(int argc, char** argv) {
 
     for (int i = 0; i < 200; i++) {
       PassSequence Passes;
-      Passes.randomize(50, true);
-      ProfileModule *PO = GEOS::applyPasses(*PModule, Passes);
+      ProfileModule *PO = nullptr;
+
+      while (PO == nullptr) {
+        Passes.randomize(50, true);
+        PO = GEOS::applyPasses(*PModule, Passes);
+      }
 
       double NewCost = GEOS::analyseCost(PO, Opts);
 
