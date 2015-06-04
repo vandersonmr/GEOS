@@ -69,7 +69,7 @@ int main(int argc, char** argv) {
   
     ProfileModule *PO = GEOS::applyPasses(*PModule, Passes);
     auto Cost = 0.0;
-    printf("%s %lf %u", Sequence.c_str(), Runtime, NumInstructionsExec);
+    printf("%s] %lf %u", Sequence.c_str(), Runtime, NumInstructionsExec);
 
     if (PO != nullptr) {
       for (int i = 0; i < 7; i++) {
@@ -78,10 +78,8 @@ int main(int argc, char** argv) {
         Cost = GEOS::analyseCost(PO, Opts);
         printf(" %lf", Cost);
       }
-      printf("\n");
-    } else {
-      printf("\n");
     }
+    printf("\n");
   }
   return 0;
 }

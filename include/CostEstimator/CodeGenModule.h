@@ -60,6 +60,7 @@ loadCodeGenPasses(Module *M, const ProfileModule *Profile, PassManager &PM) {
       TargetMachine::CodeGenFileType::CGFT_Null, false, 
       nullptr, nullptr);
 
+  Out->close();
   return Target;
 }
 
