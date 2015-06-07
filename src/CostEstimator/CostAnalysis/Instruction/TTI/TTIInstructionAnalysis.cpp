@@ -21,7 +21,9 @@
 
 using namespace llvm;
 
-CostModelAnalysis *InstructionCostModel; 
+CostModelAnalysis *InstructionCostModel = nullptr; 
+FunctionPassManager *FPM = nullptr;
+
 TTIInstructionAnalysis::TTIInstructionAnalysis() {
   PassRegistry &Registry = *PassRegistry::getPassRegistry();
   initializeAnalysis(Registry);
@@ -30,7 +32,11 @@ TTIInstructionAnalysis::TTIInstructionAnalysis() {
     static_cast<CostModelAnalysis*>(createCostModelAnalysisPass());
 }
 
-FunctionPassManager *FPM;
+TTIInstructionAnalysis::~TTIInstructionAnalysis() {
+  delete FPM;
+  FPM = nullptr;
+}
+
 double TTIInstructionAnalysis::estimateCost(StringRef FuncName, 
     const ProfileModule* Profile, CostEstimatorOptions Opts) const {
 

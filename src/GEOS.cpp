@@ -56,14 +56,14 @@ void GEOS::init() {
   initializeRewriteSymbolsPass(*Registry);
 }
 
-ProfileModule*
-GEOS::applyPassesOnFunction(StringRef FuncName, const ProfileModule& PModule,
-    PassSequence &PS) {
+std::shared_ptr<ProfileModule>
+GEOS::applyPassesOnFunction(StringRef FuncName, 
+    const std::shared_ptr<ProfileModule> PModule, PassSequence &PS) {
 
-  assert(PModule.getLLVMModule()->getFunction(FuncName) != nullptr &&
+  assert(PModule->getLLVMModule()->getFunction(FuncName) != nullptr &&
       "There is no function with this name in the Module.");
 
-  ProfileModule *ModuleCopy = PModule.getCopy();
+  std::shared_ptr<ProfileModule> ModuleCopy(PModule->getCopy());
   Module *MyModule = ModuleCopy->getLLVMModule();
 
   PassManager PM;
@@ -82,11 +82,12 @@ GEOS::applyPassesOnFunction(StringRef FuncName, const ProfileModule& PModule,
   return ModuleCopy;
 }
 
-ProfileModule*
-GEOS::applyPasses(const ProfileModule& PModule, PassSequence &PS) {
+std::shared_ptr<ProfileModule>
+GEOS::applyPasses(const std::shared_ptr<ProfileModule> PModule, 
+    PassSequence &PS) {
   pid_t pid = fork();
   if (pid == 0) { 
-    Module *MyModule = PModule.getLLVMModule();
+    Module *MyModule = PModule->getLLVMModule();
     PassManager PM;
     FunctionPassManager FPM(MyModule);
     PS.populatePassManager(PM, FPM);
@@ -95,7 +96,7 @@ GEOS::applyPasses(const ProfileModule& PModule, PassSequence &PS) {
       FPM.run(Func);
 
     PM.run(*MyModule);
-    PModule.print(".tmp");
+    PModule->print(".tmp");
     exit(0);
   } 
 
@@ -112,12 +113,13 @@ GEOS::applyPasses(const ProfileModule& PModule, PassSequence &PS) {
     ProfileModule *ModuleCopy = new ProfileModule(MyModule);
     ModuleCopy->repairProfiling();
     ModuleCopy->setPasses(PS);
-    return ModuleCopy;
+    return std::shared_ptr<ProfileModule>(ModuleCopy);
   }
 }
 
 double GEOS::
-analyseFunctionCost(StringRef FuncName, const ProfileModule* PModule,
+analyseFunctionCost(StringRef FuncName, 
+    const std::shared_ptr<ProfileModule> PModule, 
     CostEstimatorOptions Opts) {
 
   assert(PModule->getLLVMModule()->getFunction(FuncName) != nullptr &&
@@ -129,42 +131,46 @@ analyseFunctionCost(StringRef FuncName, const ProfileModule* PModule,
   assert(LLVMFunc != nullptr
       && "Trying to access a LLVM Function that don't exist!");
 
-  return CostEstimator::getFunctionCost(FuncName, PModule, Opts);
+  return CostEstimator::getFunctionCost(FuncName, PModule.get(), Opts);
 }
 
 double GEOS::
-analyseCost(const ProfileModule* PModule, CostEstimatorOptions Opts) {
-  return CostEstimator::getModuleCost(PModule, Opts);
+analyseCost(const std::shared_ptr<ProfileModule> PModule, 
+    CostEstimatorOptions Opts) {
+  return CostEstimator::getModuleCost(PModule.get(), Opts);
 }
 
 double GEOS::
-getRealExecutionTime(const ProfileModule* PModule, ExecutionKind ExecKind) {
+getRealExecutionTime(const std::shared_ptr<ProfileModule> PModule, 
+    ExecutionKind ExecKind) {
+
   ExecutionTimeMeasurer &ETM = 
-    ExecutionFactory::createRuntimeMeasurer(ExecKind, PModule);
+    ExecutionFactory::createRuntimeMeasurer(ExecKind, PModule.get());
   return ETM.getExecutionTime();
 }
 
 double GEOS::
-getRealExecutionTimeWithArgs(const ProfileModule* PModule, 
+getRealExecutionTimeWithArgs(const std::shared_ptr<ProfileModule> PModule, 
     ExecutionKind ExecKind, std::vector<std::string> Argv, char* const* Envp) {
   ExecutionTimeMeasurer &ETM = 
-    ExecutionFactory::createRuntimeMeasurer(ExecKind, PModule);
+    ExecutionFactory::createRuntimeMeasurer(ExecKind, PModule.get());
   return ETM.getExecutionTime(Argv, Envp);
 }
 
 long long int* GEOS::
-getPAPIProfile(const ProfileModule* PModule, ExecutionKind ExecKind, 
-    int* PAPIEvents, int Size) {
+getPAPIProfile(const std::shared_ptr<ProfileModule> PModule, 
+    ExecutionKind ExecKind, int* PAPIEvents, int Size) {
   ExecutionTimeMeasurer &ETM = 
-    ExecutionFactory::createRuntimeMeasurer(ExecKind, PModule);
+    ExecutionFactory::createRuntimeMeasurer(ExecKind, PModule.get());
   return ETM.getPAPIProfile(PAPIEvents, Size);
 }
 
 long long int* GEOS::
-getPAPIProfileWithArgs(const ProfileModule* PModule, 
+getPAPIProfileWithArgs(const std::shared_ptr<ProfileModule> PModule, 
     ExecutionKind ExecKind, std::vector<std::string> Argv, char* const* Envp,
     int *PAPIEvents, int Size) {
+
   ExecutionTimeMeasurer &ETM = 
-    ExecutionFactory::createRuntimeMeasurer(ExecKind, PModule);
+    ExecutionFactory::createRuntimeMeasurer(ExecKind, PModule.get());
   return ETM.getPAPIProfile(Argv, Envp, PAPIEvents, Size);
 }

@@ -17,8 +17,6 @@
 #include "CostEstimator/CodeGenModule.h"
 #include "CostEstimator/InstructionCostEstimator.h"
 
-#include <unordered_map>
-
 using namespace llvm;
 
 struct MachineRegisterUse : public FunctionPass {
@@ -73,27 +71,22 @@ void MachineRegisterUse::calculateRegisterCost(MachineFunction &MF) {
 
 char MachineRegisterUse::ID = 0;
 
-MachineRegisterUse *MAST1;
-PassManager *PM1;
+MachineRegisterUse *MRU;
+
 RegisterUseAnalysis::RegisterUseAnalysis(const ProfileModule* P) {
-  PM1 = new PassManager;
+  PM = new PassManager;
   PModule = P;
   Module *M = P->getLLVMModule();
-  TargetMachine *Target = loadCodeGenPasses(M, P, *PM1);
-  MAST1 = new MachineRegisterUse(P, *Target);
-  PM1->add(MAST1);
-  PM1->run(*M);
-  MAST1->getFunctionCost(*(M->getFunction("main")));
+  MRU = runCodeGenPasses<MachineRegisterUse>(M, P, *PM);
 }
 
 RegisterUseAnalysis::~RegisterUseAnalysis() {
-  delete PM1;
-  delete MAST1;
+  delete PM;
 }
 
 double RegisterUseAnalysis::estimateCost(StringRef FuncName, 
     const ProfileModule *Profile, CostEstimatorOptions Opts) const {
 
   Module *M = PModule->getLLVMModule();
-  return MAST1->getFunctionCost(*(M->getFunction(FuncName))) * 0.25;
+  return MRU->getFunctionCost(*(M->getFunction(FuncName))) * 0.25;
 }

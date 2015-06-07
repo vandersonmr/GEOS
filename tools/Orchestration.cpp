@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
   Module *MyModule = 
     parseIRFile(LLVMFilename.c_str(), Error, Context).release();
 
-  ProfileModule *PModule = new ProfileModule(MyModule);
+  std::shared_ptr<ProfileModule> PModule(new ProfileModule(MyModule));
 
   CostEstimatorOptions Opts = gcl::populatePModule(PModule);
 
@@ -67,7 +67,7 @@ int main(int argc, char** argv) {
     PassSequence Passes;
     Passes.loadString(Sequence);
   
-    ProfileModule *PO = GEOS::applyPasses(*PModule, Passes);
+    std::shared_ptr<ProfileModule> PO = GEOS::applyPasses(PModule, Passes);
     auto Cost = 0.0;
     printf("%s] %lf %u", Sequence.c_str(), Runtime, NumInstructionsExec);
 

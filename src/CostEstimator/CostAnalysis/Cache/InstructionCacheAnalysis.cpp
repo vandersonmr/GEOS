@@ -68,7 +68,7 @@ struct AbstractCacheState {
   }
 };
 
-struct MachineAST : public FunctionPass {
+struct MachineInstructionCacheAnalysis : public FunctionPass {
   static char ID;
 
   const unsigned S = 64;
@@ -77,7 +77,7 @@ struct MachineAST : public FunctionPass {
 
   const ProfileModule *Profile;
   const TargetMachine &TM;
-  MachineAST(const ProfileModule *P, const TargetMachine &tm) : 
+  MachineInstructionCacheAnalysis(const ProfileModule *P, const TargetMachine &tm) : 
     FunctionPass(ID), Profile(P), TM(tm) {
   };
 
@@ -91,16 +91,15 @@ struct MachineAST : public FunctionPass {
         !MFCost.count(F.getName().str())) {
 
       if (First) {
-        auto ACS = new AbstractCacheState(S, W, L);
+        std::shared_ptr<AbstractCacheState> ACS(new AbstractCacheState(S, W, L));
         calculateFuncInstanceCost(ACS, *FuncToMachine["main"]);
         First = false;
       }
 
-      if (Visited.count(F.getName().str()) == 0) {
-        if (FuncToMachine[F.getName().str()] != nullptr) {
-          auto ACS = new AbstractCacheState(S, W, L);
-          calculateFuncInstanceCost(ACS, *FuncToMachine[F.getName().str()]);
-        }
+      if (Visited.count(F.getName().str()) == 0 && 
+          FuncToMachine[F.getName().str()] != nullptr) {
+        std::shared_ptr<AbstractCacheState> ACS(new AbstractCacheState(S, W, L));
+        calculateFuncInstanceCost(ACS, *FuncToMachine[F.getName().str()]);
       }
     }
 
@@ -144,19 +143,21 @@ struct MachineAST : public FunctionPass {
   unsigned NextFnNum = 0;
   unsigned Address = 0x400780;
   AddressMap Addresses;
-  std::unordered_map<MachineBasicBlock*, AbstractCacheState*> Outputs;
+  std::unordered_map<MachineBasicBlock*, 
+                     std::shared_ptr<AbstractCacheState>> Outputs;
   std::unordered_map<std::string, MachineFunction*> FuncToMachine;
   std::unordered_map<std::string, bool> CallTabuList;
   std::unordered_map<std::string, bool> Visited;
 
   std::unordered_map<std::string, double> MFCost;
 
-  AbstractCacheState* 
-    calculateFuncInstanceCost(AbstractCacheState*, MachineFunction&);
+  std::shared_ptr<AbstractCacheState> calculateFuncInstanceCost(
+      std::shared_ptr<AbstractCacheState>, MachineFunction&);
 };
 
-AbstractCacheState* MachineAST::
-calculateFuncInstanceCost(AbstractCacheState* EntryState, MachineFunction &MF) {  
+std::shared_ptr<AbstractCacheState> MachineInstructionCacheAnalysis::
+calculateFuncInstanceCost(std::shared_ptr<AbstractCacheState> EntryState, 
+    MachineFunction &MF) {  
   if (MF.size() == 0) return nullptr; 
   Visited[MF.getName().str()] = true;
 
@@ -177,7 +178,8 @@ calculateFuncInstanceCost(AbstractCacheState* EntryState, MachineFunction &MF) {
 
       if (Outputs.count(&MB) == 0) {
         modified = true;
-        Outputs[&MB] = new AbstractCacheState(S, W, L);
+        Outputs[&MB] = 
+          std::shared_ptr<AbstractCacheState>(new AbstractCacheState(S, W, L));
       }
 
       MachineBasicBlock *MostFreqMB = nullptr;
@@ -238,29 +240,24 @@ calculateFuncInstanceCost(AbstractCacheState* EntryState, MachineFunction &MF) {
   return Outputs[&MF.back()];
 }
 
-char MachineAST::ID = 0;
+char MachineInstructionCacheAnalysis::ID = 0;
 
-MachineAST *MAST;
-PassManager *PM;
+MachineInstructionCacheAnalysis *MICA;
+
 InstructionCacheAnalysis::InstructionCacheAnalysis(const ProfileModule* P) {
   PM = new PassManager;
   PModule = P;
   Module *M = P->getLLVMModule();
-  TargetMachine *Target = loadCodeGenPasses(M, P, *PM);
-  MAST = new MachineAST(P, *Target);
-  PM->add(MAST);
-  PM->run(*M);
-  MAST->getFunctionCost(*(M->getFunction("main")));
+  MICA = runCodeGenPasses<MachineInstructionCacheAnalysis>(M, P, *PM);
 }
 
 InstructionCacheAnalysis::~InstructionCacheAnalysis() {
   delete PM;
-  delete MAST;
 }
 
 double InstructionCacheAnalysis::estimateCost(StringRef FuncName, 
     const ProfileModule *Profile, CostEstimatorOptions Opts) const {
 
   Module *M = PModule->getLLVMModule();
-  return MAST->getFunctionCost(*(M->getFunction(FuncName))) * 0.25;
+  return MICA->getFunctionCost(*(M->getFunction(FuncName))) * 0.25;
 }

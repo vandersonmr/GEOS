@@ -17,6 +17,8 @@
 #include "CostEstimator/CostEstimatorOptions.h"
 #include "ProfileModule/ProfileModule.h"
 
+#include "llvm/PassManager.h"
+
 class CostAnalysis {
   public:
     /// \brief This is a interface for implementation of a function for
@@ -27,6 +29,7 @@ class CostAnalysis {
     virtual double 
       estimateCost(llvm::StringRef, const ProfileModule*,
           CostEstimatorOptions) const = 0;
+    virtual ~CostAnalysis() {}
 };
 
 /// This analyis method estimate the cost of the use of registers. Due to the 
@@ -35,6 +38,7 @@ class CostAnalysis {
 class RegisterUseAnalysis : public CostAnalysis {
   private: 
     const ProfileModule *PModule;
+    llvm::PassManager *PM;
   public:
     RegisterUseAnalysis(const ProfileModule*);
     ~RegisterUseAnalysis();
@@ -49,6 +53,7 @@ class RegisterUseAnalysis : public CostAnalysis {
 class InstructionCacheAnalysis : public CostAnalysis {
   private: 
     const ProfileModule *PModule;
+    llvm::PassManager *PM;
   public:
     InstructionCacheAnalysis(const ProfileModule*);
     ~InstructionCacheAnalysis();
@@ -71,6 +76,7 @@ class StaticInstructionAnalysis : public CostAnalysis {
 class TTIInstructionAnalysis : public CostAnalysis {
   public:
     TTIInstructionAnalysis();
+    ~TTIInstructionAnalysis();
     double 
       estimateCost(llvm::StringRef, const ProfileModule*, 
           CostEstimatorOptions) const;

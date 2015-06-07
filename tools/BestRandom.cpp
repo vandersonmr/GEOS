@@ -43,9 +43,9 @@ int main(int argc, char** argv) {
   Module *MyModule = 
     parseIRFile(LLVMFilename.c_str(), Error, Context).release();
 
-  ProfileModule *PModule = new ProfileModule(MyModule);
+  std::shared_ptr<ProfileModule> PModule(new ProfileModule(MyModule));
   PModule->print("teste");
-  CostEstimatorOptions &Opts = gcl::populatePModule(PModule);
+  CostEstimatorOptions Opts = gcl::populatePModule(PModule);
   int PAPIEvents[1] = {PAPI_TOT_CYC};
 
   double BestOfBest = 0;
@@ -55,29 +55,26 @@ int main(int argc, char** argv) {
     double RealCost = 
       (GEOS::getPAPIProfile(PModule, ExecutionKind::JIT, PAPIEvents, 1))[0];
 
-    ProfileModule *Best = nullptr;
+    std::shared_ptr<ProfileModule> Best;
     PassSequence BestSeq;
     double BestSpeedup = 0;
 
     for (int i = 0; i < 200; i++) {
       PassSequence Passes;
-      ProfileModule *PO = nullptr;
+      std::shared_ptr<ProfileModule> PO;
 
-      while (PO == nullptr) {
+      while (!PO) {
         Passes.randomize(50, true);
-        PO = GEOS::applyPasses(*PModule, Passes);
+        PO = GEOS::applyPasses(PModule, Passes);
       }
 
       double NewCost = GEOS::analyseCost(PO, Opts);
 
       if ((Cost/NewCost) > BestSpeedup) {
-        delete Best;
         BestSpeedup = Cost/NewCost;
         Best = PO;
         BestSeq = Passes;
-      } else {
-        delete PO;
-      }
+      } 
     }
     BestSeq.print();
     double NewRealCost = (double)

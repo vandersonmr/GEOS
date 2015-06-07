@@ -78,9 +78,9 @@ namespace gcl {
     cl::ParseCommandLineOptions(argc, argv);
   }
 
-  CostEstimatorOptions& populatePModule(ProfileModule *PModule) {
+  CostEstimatorOptions populatePModule(std::shared_ptr<ProfileModule> PModule) {
     if (GCDAFilename.empty() || GCNOFilename.empty()) {
-      loadStaticProfiling(PModule);
+      loadStaticProfiling(PModule.get());
     } else {
       std::vector<MemoryBuffer*> GCNOList;
       std::vector<MemoryBuffer*> GCDAList;
@@ -94,13 +94,18 @@ namespace gcl {
         ++iGCNO;
       }
 
-      loadGCOV(GCDAList, GCNOList, PModule);
+      loadGCOV(GCDAList, GCNOList, PModule.get());
+
+      for (auto &Buffer : GCNOList)
+        delete Buffer;
+      for (auto &Buffer : GCDAList)
+        delete Buffer;
     }
 
     if (!CallCost.empty())
-      loadCallCost(CallCost, PModule);
+      loadCallCost(CallCost, PModule.get());
 
-    CostEstimatorOptions &Opts = *(new CostEstimatorOptions);
+    CostEstimatorOptions Opts;
 
     if (CPUFreq)
       Opts.CPUClockInGHz = CPUFreq;

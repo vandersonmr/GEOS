@@ -1,3 +1,5 @@
+#include "ProfileModule/ProfileModule.h"
+
 #include "llvm/CodeGen/MachineFunctionAnalysis.h"
 #include "llvm/CodeGen/MachineModuleInfo.h"
 #include "llvm/CodeGen/MachinePostDominators.h"
@@ -11,8 +13,10 @@
 
 using namespace llvm;
 
-static TargetMachine* 
-loadCodeGenPasses(Module *M, const ProfileModule *Profile, PassManager &PM) {
+template<typename T> static T* 
+runCodeGenPasses(Module *M, const ProfileModule *Profile, 
+    PassManager &PM) {
+
   Triple TheTriple;
 
   std::string TargetTriple;
@@ -52,15 +56,19 @@ loadCodeGenPasses(Module *M, const ProfileModule *Profile, PassManager &PM) {
   PM.add(new DataLayoutPass());
 
   std::error_code Err;
-  raw_fd_ostream *Out =          
-    new raw_fd_ostream("/dev/null", Err, llvm::sys::fs::OpenFlags::F_None);
-  formatted_raw_ostream FOS(*Out);
+  raw_fd_ostream Out("/dev/null", Err, llvm::sys::fs::OpenFlags::F_None);
+  formatted_raw_ostream FOS(Out);
 
   Target->addPassesToEmitFile(PM, FOS, 
       TargetMachine::CodeGenFileType::CGFT_Null, false, 
       nullptr, nullptr);
 
-  Out->close();
-  return Target;
+  auto MRU = new T(Profile, *Target);
+  PM.add(MRU);
+  PM.run(*M);
+
+  delete Target;
+
+  return MRU;
 }
 

@@ -51,6 +51,5 @@ bool MachineFunctionAnalysis::runOnFunction(Function &F) {
 }
 
 void MachineFunctionAnalysis::releaseMemory() {
-  //delete MF;
   MF = nullptr;
 }

@@ -25,8 +25,7 @@ using namespace llvm;
 std::vector<GCOVFunction*> 
 readFunctions(GCOVFile& GF, GCOVBuffer &GCNOBuffer, GCOVBuffer &GCDABuffer) {
   GCOV::GCOVVersion Version;
-  std::vector<GCOVFunction*> *Functions = 
-    new std::vector<GCOVFunction*>; 
+  std::vector<GCOVFunction*> Functions; 
 
   uint32_t Checksum;
 
@@ -34,13 +33,13 @@ readFunctions(GCOVFile& GF, GCOVBuffer &GCNOBuffer, GCOVBuffer &GCDABuffer) {
   FileInfo FI(Options);
 
   if (!GCNOBuffer.readGCNOFormat() || !GCDABuffer.readGCDAFormat()) 
-    return *Functions;
+    return Functions;
   if (!GCNOBuffer.readGCOVVersion(Version) || 
       !GCDABuffer.readGCOVVersion(Version)) 
-    return *Functions;
+    return Functions;
 
   if (!GCNOBuffer.readInt(Checksum) || !GCDABuffer.readInt(Checksum)) 
-    return *Functions;
+    return Functions;
 
   while (true) {
     if (!GCNOBuffer.readFunctionTag()) break;
@@ -48,17 +47,17 @@ readFunctions(GCOVFile& GF, GCOVBuffer &GCNOBuffer, GCOVBuffer &GCDABuffer) {
     auto GFun = new GCOVFunction(GF);
     if (!GFun->readGCNO(GCNOBuffer, Version) ||
         !GFun->readGCDA(GCDABuffer, Version))
-      return *Functions;
+      return Functions;
 
     GFun->collectLineCounts(FI);
 
-    Functions->push_back(GFun);
+    Functions.push_back(GFun);
   }
 
   FI.setRunCount(1);
   FI.setProgramCount(1);
 
-  return *Functions;
+  return Functions;
 }
 
 void loadGCOV(std::vector<MemoryBuffer*> GCDAs, 
@@ -96,9 +95,9 @@ void loadGCOV(std::vector<MemoryBuffer*> GCDAs,
         (*MBB)->sortDstEdges();
         std::vector<uint32_t> Freqs;
         for (auto BranchFreq = (*MBB)->dst_begin(); 
-            BranchFreq != (*MBB)->dst_end(); ++BranchFreq) { 
+            BranchFreq != (*MBB)->dst_end(); ++BranchFreq)  
           Freqs.push_back((*BranchFreq)->Count);
-        }
+        
 
         if (Freqs.size() >= 2)  
           Profile->setBranchFrequency(BB, Freqs);
@@ -109,5 +108,8 @@ void loadGCOV(std::vector<MemoryBuffer*> GCDAs,
 
     ++iGCDA;
     ++iGCNO;
+    
+    for (auto &GF : FuncsProfile)
+      delete GF; 
   }
 }

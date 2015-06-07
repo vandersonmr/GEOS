@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
   Module *MyModule = 
     parseIRFile(LLVMFilename.c_str(), Error, Context).release();
 
-  ProfileModule *PModule = new ProfileModule(MyModule);
+  std::shared_ptr<ProfileModule> PModule(new ProfileModule(MyModule));
 
   CostEstimatorOptions Opts = gcl::populatePModule(PModule);
 

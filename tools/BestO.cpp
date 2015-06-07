@@ -30,11 +30,11 @@
 using namespace llvm;
 
 double 
-applyAndGetOCost(ProfileModule* PModule, CostEstimatorOptions &Opts, int O) {
+applyAndGetOCost(std::shared_ptr<ProfileModule> PModule, CostEstimatorOptions &Opts, int O) {
   PassSequence Passes;
   Passes.setOLevel(static_cast<OptLevel>(O));
   Passes.setOSize(OptLevel::None);
-  ProfileModule *PO = GEOS::applyPasses(*PModule, Passes);
+  std::shared_ptr<ProfileModule> PO = GEOS::applyPasses(PModule, Passes);
   
   if (PO != nullptr) 
     return GEOS::analyseCost(PO, Opts);
@@ -52,9 +52,9 @@ int main(int argc, char** argv) {
   Module *MyModule = 
     parseIRFile(LLVMFilename.c_str(), Error, Context).release();
 
-  ProfileModule *PModule = new ProfileModule(MyModule);
+  std::shared_ptr<ProfileModule> PModule(new ProfileModule(MyModule));
   
-  CostEstimatorOptions &Opts = gcl::populatePModule(PModule);
+  CostEstimatorOptions Opts = gcl::populatePModule(PModule);
 
   auto Cost = GEOS::analyseCost(PModule, Opts);
 
