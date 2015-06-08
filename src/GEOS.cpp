@@ -85,6 +85,7 @@ GEOS::applyPassesOnFunction(StringRef FuncName,
 std::shared_ptr<ProfileModule>
 GEOS::applyPasses(const std::shared_ptr<ProfileModule> PModule, 
     PassSequence &PS) {
+  fflush(stdout);
   pid_t pid = fork();
   if (pid == 0) { 
     Module *MyModule = PModule->getLLVMModule();
