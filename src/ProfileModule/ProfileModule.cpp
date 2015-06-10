@@ -275,3 +275,48 @@ void ProfileModule::print(const std::string Path) const {
   Out->flush();
   delete Out;
 }           
+
+ModuleMetric ProfileModule::getMetrics() {
+  uint64_t N = 0;  
+  uint64_t NI = 0;  
+  uint64_t NF = 0;  
+  uint64_t NEI = 0;  
+  uint64_t NEF = 0;  
+  uint64_t Fu = 0;  
+  uint64_t B = 0;  
+  uint64_t L = 0;  
+  uint64_t MF = 0;  
+  uint64_t MB = 0;  
+  uint32_t ML = 0;  
+  bool R = false;  
+
+  for (auto &F : *getLLVMModule()) {
+    MF += getBasicBlockFrequency(F.getEntryBlock());
+    ++Fu;
+    for (auto &BB : F) {
+      MB += getBasicBlockFrequency(BB);
+      ++B;
+      for (auto &I : BB) {
+        ++N;
+        if (I.getType()->isFloatingPointTy()) {
+          ++NF;
+          NEF += getBasicBlockFrequency(BB); 
+        } else {
+          ++NI;
+          NEI += getBasicBlockFrequency(BB); 
+        }
+
+        if (isa<CallInst>(I)) {
+          auto CalledFunc = cast<CallInst>(I).getCalledFunction();
+          if (CalledFunc)
+            if (CalledFunc->getName() == F.getName())
+              R = true;
+        }
+      }
+    }
+  }
+
+  MF /= Fu;
+  MB /= B;
+  return ModuleMetric(N, NI, NF, NEI, NEF, Fu, B, L, MF, MB, ML, R); 
+}

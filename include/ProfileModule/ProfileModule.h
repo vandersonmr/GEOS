@@ -18,6 +18,7 @@
 #include "llvm/Support/GCOV.h"
 
 #include "ProfileModule/PassSequence.h"
+#include "ProfileModule/ModuleMetric.h"
 
 #include <vector>
 
@@ -109,6 +110,10 @@ class ProfileModule {
     /// \brief It saves the LLVM module with all the profiling information
     /// in the given path.
     void print(const std::string) const;
+
+    /// \brief Generates metrics for the ProfileModule allowing comparasion 
+    /// between two ProfileModules.
+    ModuleMetric getMetrics(); 
 };
 
 #endif
