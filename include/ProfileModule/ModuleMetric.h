@@ -28,10 +28,10 @@ class ModuleMetric {
     uint64_t NumExecFloatInstruction = 0;
     uint64_t NumFunctions = 0;
     uint64_t NumBasicBlocks = 0;
-    uint64_t NumLoops = 0;
+    uint64_t NumBranches = 0;
     uint64_t MeanFunctionExecFreq = 0;
     uint64_t MeanBasicBlockExecFreq = 0;
-    uint64_t MeanLoopExecFreq = 0;
+    uint64_t MeanBranchExecFreq = 0;
     bool Recursion = false;
 
     bool isClose(uint64_t A, uint64_t B) {
@@ -50,10 +50,10 @@ class ModuleMetric {
       NumExecFloatInstruction = NEF;
       NumFunctions = F;
       NumBasicBlocks = B;
-      NumLoops = L;
+      NumBranches = L;
       MeanFunctionExecFreq = MF;
       MeanBasicBlockExecFreq = MB;
-      MeanLoopExecFreq = ML;
+      MeanBranchExecFreq = ML;
       Recursion = R;
       Threshold = T; 
     }
@@ -86,8 +86,8 @@ class ModuleMetric {
       return NumBasicBlocks;
     }
 
-    uint64_t getNumLoops() const {
-      return NumLoops;
+    uint64_t getNumBranches() const {
+      return NumBranches;
     }
 
     uint64_t getMeanFunctionsExecFreq() const {
@@ -98,8 +98,8 @@ class ModuleMetric {
       return MeanBasicBlockExecFreq;
     }
 
-    uint64_t getMeanLoopExecFreq() const {
-      return MeanLoopExecFreq;
+    uint64_t getMeanBranchExecFreq() const {
+      return MeanBranchExecFreq;
     }
 
     bool hasRecursion() const {
@@ -124,13 +124,13 @@ class ModuleMetric {
         ++D;
       if (!isClose(getNumBasicBlocks(), M.getNumBasicBlocks())) 
         ++D;
-      if (!isClose(getNumLoops(), M.getNumLoops())) 
+      if (!isClose(getNumBranches(), M.getNumBranches())) 
         ++D;
       if (!isClose(getMeanFunctionsExecFreq(), M.getMeanFunctionsExecFreq())) 
         ++D;
       if (!isClose(getMeanBasicBlocksExecFreq(), M.getMeanBasicBlocksExecFreq())) 
         ++D;
-      if (!isClose(getMeanLoopExecFreq(), M.getMeanLoopExecFreq())) 
+      if (!isClose(getMeanBranchExecFreq(), M.getMeanBranchExecFreq())) 
         ++D;
 
       return D;
@@ -141,8 +141,9 @@ class ModuleMetric {
       sstm << NumInstruction << " " << NumIntInstruction << " " << 
         NumFloatInstruction << " " << NumExecIntInstruction << " " << 
         NumExecFloatInstruction << " " << NumFunctions << " " << NumBasicBlocks
-        << " " << NumLoops << " " << MeanFunctionExecFreq << " " << 
-        MeanBasicBlockExecFreq << " " << MeanLoopExecFreq << std::endl;
+        << " " << NumBranches << " " << MeanFunctionExecFreq << " " << 
+        MeanBasicBlockExecFreq << " " << MeanBranchExecFreq << " " << Recursion  
+        << std::endl;
       return sstm.str();
     }
 };

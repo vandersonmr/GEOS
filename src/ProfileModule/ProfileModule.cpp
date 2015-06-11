@@ -290,10 +290,16 @@ ModuleMetric ProfileModule::getMetrics() {
   uint32_t ML = 0;  
   bool R = false;  
 
+  bool Entry = true;
   for (auto &F : *getLLVMModule()) {
-    MF += getBasicBlockFrequency(F.getEntryBlock());
     ++Fu;
+    Entry = true;
     for (auto &BB : F) {
+      if (Entry) {
+        MF += getBasicBlockFrequency(BB);
+        Entry = false;
+      }
+
       MB += getBasicBlockFrequency(BB);
       ++B;
       for (auto &I : BB) {
@@ -311,7 +317,15 @@ ModuleMetric ProfileModule::getMetrics() {
           if (CalledFunc)
             if (CalledFunc->getName() == F.getName())
               R = true;
-        }
+        } 
+
+        auto PredSuccTerminator = BB.getTerminator();
+
+        if (isa<BranchInst>(PredSuccTerminator) &&
+            cast<BranchInst>(PredSuccTerminator)->isUnconditional()) {
+          ++L;
+          ML += getBasicBlockFrequency(BB); 
+        } 
       }
     }
   }
