@@ -17,10 +17,11 @@
 
 #include <cmath>
 #include <sstream>
+#include <algorithm>
 
 class ModuleMetric {
   private:
-    uint32_t Threshold = 10; // Should be between 0% and 100%
+    uint32_t Threshold = 30; // Should be between 0% and 100%
     uint64_t NumInstruction = 0;
     uint64_t NumIntInstruction = 0;
     uint64_t NumFloatInstruction = 0;
@@ -34,14 +35,21 @@ class ModuleMetric {
     uint64_t MeanBranchExecFreq = 0;
     bool Recursion = false;
 
-    bool isClose(uint64_t A, uint64_t B) {
-      return std::abs((float) (A/B) - 1 >= (float) Threshold/100);
+    double diff(uint64_t A, uint64_t B) {
+      if (B == 0) B = 1;
+      if (A == 0) A = 1;
+      double R = 0;
+      if (A > B) R = A/B;
+      else R = B/A;
+
+      if (R > 100) return 100;
+      else return R;
     }
 
   public:
     ModuleMetric(uint64_t N, uint64_t NI, uint64_t NF, uint64_t NEI, 
         uint64_t NEF, uint64_t F, uint64_t B, uint64_t L, uint64_t MF, 
-        uint64_t MB, uint64_t ML, bool R, uint32_t T = 10) {
+        uint64_t MB, uint64_t ML, bool R, uint32_t T = 30) {
 
       NumInstruction = N;
       NumIntInstruction = NI;
@@ -107,33 +115,28 @@ class ModuleMetric {
     }
 
     uint32_t distance(const ModuleMetric& M) {
-      uint32_t D = 0;
+      double D = 0;
       if (hasRecursion() != M.hasRecursion())
-        ++D;
-      if (!isClose(getNumInstruction(), M.getNumInstruction())) 
-        ++D;
-      if (!isClose(getNumIntInstruction(), M.getNumIntInstruction())) 
-        ++D;
-      if (!isClose(getNumFloatInstruction(), M.getNumFloatInstruction())) 
-        ++D;
-      if (!isClose(getNumExecIntInstruction(), M.getNumExecIntInstruction())) 
-        ++D;
-      if (!isClose(getNumExecFloatInstruction(), M.getNumExecFloatInstruction())) 
-        ++D;
-      if (!isClose(getNumFunctions(), M.getNumFunctions())) 
-        ++D;
-      if (!isClose(getNumBasicBlocks(), M.getNumBasicBlocks())) 
-        ++D;
-      if (!isClose(getNumBranches(), M.getNumBranches())) 
-        ++D;
-      if (!isClose(getMeanFunctionsExecFreq(), M.getMeanFunctionsExecFreq())) 
-        ++D;
-      if (!isClose(getMeanBasicBlocksExecFreq(), M.getMeanBasicBlocksExecFreq())) 
-        ++D;
-      if (!isClose(getMeanBranchExecFreq(), M.getMeanBranchExecFreq())) 
-        ++D;
+        D += 1000;
 
-      return D;
+      D += diff(getNumInstruction(), M.getNumInstruction());
+      D += diff(getNumIntInstruction(), M.getNumIntInstruction());
+      D += 2 * diff(getNumFloatInstruction(), M.getNumFloatInstruction());
+
+      D += 5*diff(getNumExecIntInstruction(), M.getNumExecIntInstruction());
+      D += 10*diff(getNumExecFloatInstruction(), M.getNumExecFloatInstruction()); 
+      D += 20*diff(getNumExecIntInstruction()/getNumExecFloatInstruction(), 
+          M.getNumExecIntInstruction()/M.getNumExecFloatInstruction()); 
+
+      D += diff(getNumFunctions(), M.getNumFunctions())/2; 
+      D += diff(getNumBasicBlocks(), M.getNumBasicBlocks())/2; 
+      D += diff(getNumBranches(), M.getNumBranches())/2;
+
+      D += diff(getMeanFunctionsExecFreq(), M.getMeanFunctionsExecFreq())/10;
+      D += diff(getMeanBasicBlocksExecFreq(), M.getMeanBasicBlocksExecFreq())/10;
+      D += diff(getMeanBranchExecFreq(), M.getMeanBranchExecFreq())/10; 
+
+      return static_cast<uint32_t>(D);
     }
 
     std::string getString() {
