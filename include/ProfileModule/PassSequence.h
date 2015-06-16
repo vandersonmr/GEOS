@@ -358,6 +358,36 @@ class PassSequence {
       return !((*this) == Rhs);
     }
 
+    OptimizationKind operator[](std::size_t idx) { return Opts[idx]; };
+
+    unsigned distance(PassSequence &Rhs) {
+      int S1len = Rhs.size();
+      int S2len = Opts.size();
+
+      auto ColumnStart = (decltype(S1len)) 1;
+
+      auto Column = new decltype(S1len)[S1len + 1];
+      std::iota(Column + ColumnStart, Column + S1len + 1, ColumnStart);
+
+      for (auto X = ColumnStart; X <= S2len; X++) {
+        Column[0] = X;
+        auto LastDiagonal = X - ColumnStart;
+        for (auto Y = ColumnStart; Y <= S1len; Y++) {
+          auto OldDiagonal = Column[Y];
+          auto Possibilities = {
+            Column[Y] + 1,
+            Column[Y - 1] + 1,
+            LastDiagonal + (Rhs[Y - 1] == Opts[X - 1]? 0 : 1)
+          };
+          Column[Y] = std::min(Possibilities);
+          LastDiagonal = OldDiagonal;
+        }
+      }
+      auto Result = Column[S1len];
+      delete[] Column;
+      return Result;
+    }
+
     typedef std::vector<OptimizationKind>::iterator iterator;
     typedef std::vector<OptimizationKind>::const_iterator const_iterator;
     iterator begin() { return Opts.begin(); }
