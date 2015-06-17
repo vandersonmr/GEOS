@@ -21,10 +21,10 @@
 #include <sstream>
 #include <fstream>
 
-#define BaseType std::vector<std::pair<std::string, ModuleMetric>>
+#define MetricBaseT std::vector<std::pair<std::string, ModuleMetric>>
 
-BaseType loadMetricsBase(StringRef Str) {
-  BaseType Base;
+MetricBaseT loadMetricsBase(StringRef Str) {
+  MetricBaseT Base;
   std::ifstream Infile(Str.str().c_str());
   std::string Line;
   while (std::getline(Infile, Line)) {
@@ -53,7 +53,8 @@ BaseType loadMetricsBase(StringRef Str) {
   return Base;
 }
 
-std::string getNearest(std::shared_ptr<ProfileModule> PModule, BaseType& Base) {
+std::string getNearestMetric(std::shared_ptr<ProfileModule> PModule, 
+    MetricBaseT& Base) {
   uint32_t BestDistance = 99;
   std::string BestName; 
   for (auto &I : Base) {

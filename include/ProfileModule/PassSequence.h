@@ -358,7 +358,7 @@ class PassSequence {
       return !((*this) == Rhs);
     }
 
-    OptimizationKind operator[](std::size_t idx) { return Opts[idx]; };
+    OptimizationKind& operator[](std::size_t idx) { return Opts[idx]; };
 
     unsigned distance(PassSequence &Rhs) {
       int S1len = Rhs.size();

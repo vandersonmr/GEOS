@@ -1,6 +1,6 @@
 add_executable (geos-analyser Analyser.cpp)
 add_executable (geos-best BestO.cpp)
-add_executable (geos-random BestRandom.cpp)
+add_executable (geos-random RandomSearch.cpp)
 add_executable (geos-orch Orchestration.cpp)
 add_executable (geos-metric CodeMetric.cpp)
 

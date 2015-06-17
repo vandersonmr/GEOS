@@ -31,6 +31,10 @@
 #include <string>
 #include <fstream>
 
+#include "OfflineLearning/CodeMetricBase.h"
+#include "OfflineLearning/AccuracyBase.h"
+#include "OfflineLearning/CorrectionBase.h"
+
 using namespace llvm;
 using std::string;
 
@@ -40,36 +44,6 @@ BasePath("metrics", cl::desc("Base of metrics"),
     cl::Required);
 static cl::alias 
 BaseAlias("m", cl::desc("Alias for -metrics"), cl::aliasopt(BasePath));
-
-std::vector<std::pair<string, ModuleMetric>> loadMetricsBase(StringRef Str) {
-  std::vector<std::pair<string, ModuleMetric>> Base;
-  std::ifstream Infile(Str.str().c_str());
-  std::string Line;
-  while (std::getline(Infile, Line)) {
-    string Name;
-    uint64_t N  = 0;
-    uint64_t NI = 0;  
-    uint64_t NF = 0;  
-    uint64_t NEI = 0;  
-    uint64_t NEF = 0;  
-    uint64_t Fu = 0;  
-    uint64_t B = 0;  
-    uint64_t L = 0;  
-    uint64_t MF = 0;  
-    uint64_t MB = 0;  
-    uint32_t ML = 0;  
-    bool R = false;  
-
-    std::istringstream Iss(Line);
-    Iss >> Name >> N >> NI >> NF >> NEI >> NEF >> Fu >> B >> L >> MF >> MB >> 
-      ML >> R;
-
-    ModuleMetric MM(N, NI, NF, NEI, NEF, Fu, B, L, MF, MB, ML, R);
-
-    Base.push_back(std::make_pair(Name, MM));
-  }
-  return Base;
-}
 
 int main(int argc, char** argv) {
   GEOS::init();
@@ -88,22 +62,7 @@ int main(int argc, char** argv) {
 
   auto Base = loadMetricsBase(BasePath);
   
-  uint32_t BestDistance = 99;
-  string BestName; 
-  ModuleMetric *BestMetric;
-  for (auto &I : Base) {
-    auto D = PModule->getMetrics().distance(I.second); 
-    if (D < BestDistance) {
-      BestDistance = D;
-      BestName = I.first;
-      BestMetric = &I.second;
-   }
-  }
-
-  printf("%s <=> %s | %u\n", BestName.c_str(), LLVMFilename.c_str(), BestDistance);
-  printf("%s%s\n\n", 
-      PModule->getMetrics().getString().c_str(), 
-      BestMetric->getString().c_str());
+  printf("%s <=> %s\n", getNearestMetric(PModule, Base).c_str(), LLVMFilename.c_str());
 
   return 0;
 }

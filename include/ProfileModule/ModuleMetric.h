@@ -125,8 +125,9 @@ class ModuleMetric {
 
       D += 5*diff(getNumExecIntInstruction(), M.getNumExecIntInstruction());
       D += 10*diff(getNumExecFloatInstruction(), M.getNumExecFloatInstruction()); 
-      D += 20*diff(getNumExecIntInstruction()/getNumExecFloatInstruction(), 
-          M.getNumExecIntInstruction()/M.getNumExecFloatInstruction()); 
+      
+      D += 20*diff(getNumExecIntInstruction()/(getNumExecFloatInstruction()+1), 
+          M.getNumExecIntInstruction()/(M.getNumExecFloatInstruction()+1)); 
 
       D += diff(getNumFunctions(), M.getNumFunctions())/2; 
       D += diff(getNumBasicBlocks(), M.getNumBasicBlocks())/2; 

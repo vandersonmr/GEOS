@@ -21,10 +21,10 @@
 #include <sstream>
 #include <fstream>
 
-#define AccuracyBase std::unordered_map<std::string, std::vector<double>>
+#define AccuracyBaseT std::unordered_map<std::string, std::vector<double>>
 
-AccuracyBase loadAccuracyBase(StringRef Str) {
-  AccuracyBase Base;
+AccuracyBaseT loadAccuracyBase(StringRef Str) {
+  AccuracyBaseT Base;
   std::ifstream Infile(Str.str().c_str());
   std::string Line;
   while (std::getline(Infile, Line)) {
@@ -37,7 +37,12 @@ AccuracyBase loadAccuracyBase(StringRef Str) {
         I != CostAnalysisKind::RandomCost; I++) {
       double C;
       Iss >> C;
-      Base[Name].push_back(C);
+      size_t found;
+      if ((found = Name.find(".")) != std::string::npos) {
+        Base[Name.substr(0, found)].push_back(C);
+      } else {
+        Base[Name].push_back(C);
+      }
     }
   }
 
@@ -45,7 +50,7 @@ AccuracyBase loadAccuracyBase(StringRef Str) {
 }
 
 double getAccuracyFor(std::string& ClosestBench, CostAnalysisKind OptKind, 
-    AccuracyBase& Base) {
+    AccuracyBaseT& Base) {
   return Base[ClosestBench][static_cast<int>(OptKind)];
 }
 
