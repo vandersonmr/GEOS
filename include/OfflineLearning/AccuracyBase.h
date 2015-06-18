@@ -49,9 +49,12 @@ AccuracyBaseT loadAccuracyBase(StringRef Str) {
   return Base;
 }
 
-double getAccuracyFor(std::string& ClosestBench, CostAnalysisKind OptKind, 
+double getAccuracyFor(std::string& ClosestBench, CostEstimatorOptions Opts, 
     AccuracyBaseT& Base) {
-  return Base[ClosestBench][static_cast<int>(OptKind)];
+  double R = 0;
+  for (auto OptKind : Opts.AnalysisActivated) 
+    R += Base[ClosestBench][static_cast<int>(OptKind)];
+  return R/Opts.AnalysisActivated.size();
 }
 
 #endif

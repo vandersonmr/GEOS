@@ -53,6 +53,14 @@ ABasePath("accuracy", cl::desc("Base of Accuracy"),
 static cl::alias 
 ABaseAlias("a", cl::desc("Alias for -accuracy"), cl::aliasopt(ABasePath));
 
+static cl::opt<std::string> 
+CBasePath("correction-folder", cl::desc("Folder with corrections"), 
+    cl::value_desc(".txt"),
+    cl::Required);
+static cl::alias 
+CBaseAlias("cf", cl::desc("Alias for -correction-folder"), cl::aliasopt(CBasePath));
+
+
 PassSequence randomWalk(PassSequence Start, int Alpha) {
   PassSequence Seed;
   Seed.randomize(Alpha);
@@ -80,12 +88,12 @@ int main(int argc, char** argv) {
 
   auto MetricBase   = loadMetricsBase(MBasePath);
   auto AccuracyBase = loadAccuracyBase(ABasePath);
-  double EstimatedAccuracy = 0;
-  for (auto I : Opts.AnalysisActivated) {
-    auto NearestMetricName = getNearestMetric(PModule, MetricBase);
-    EstimatedAccuracy += getAccuracyFor(NearestMetricName, I, AccuracyBase);
-  }
-  EstimatedAccuracy /= Opts.AnalysisActivated.size();
+  auto NearestMetricName = getNearestMetric(PModule, MetricBase);
+  double EstimatedAccuracy = 
+    getAccuracyFor(NearestMetricName, Opts, AccuracyBase);
+
+  auto CorrectionBase = 
+    loadCorrectionBase(CBasePath+"/"+NearestMetricName+".estr");
 
   int PAPIEvents[1] = {PAPI_TOT_CYC};
   double RealInitCost = 
@@ -111,7 +119,8 @@ int main(int argc, char** argv) {
     PassSequence Sequence = randomWalk(Best.first, Alpha);
     auto PO = GEOS::applyPasses(PModule, Sequence);
     if (!PO) continue;
-    auto Cost = GEOS::analyseCost(PO, Opts);
+    auto Cost = GEOS::analyseCost(PO, Opts) * 
+            getCorrectionFor(Sequence, Opts, CorrectionBase);
 
     if (Cost < Best.second) {
       BestSequences.push_front(std::pair<PassSequence, double>(Sequence, Cost));

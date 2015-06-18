@@ -22,10 +22,10 @@
 #include <sstream>
 #include <fstream>
 
-#define CorrectionBase std::vector<std::pair<PassSequence, std::vector<double>>>
+#define CorrectionBaseT std::vector<std::pair<PassSequence, std::vector<double>>>
 
-CorrectionBase loadCorrectionBase(StringRef Str) {
-  CorrectionBase Base;
+CorrectionBaseT loadCorrectionBase(StringRef Str) {
+  CorrectionBaseT Base;
   std::ifstream Infile(Str.str().c_str());
   std::string Line;
   while (std::getline(Infile, Line)) {
@@ -54,8 +54,8 @@ CorrectionBase loadCorrectionBase(StringRef Str) {
   return Base;
 }
 
-double getCorrectionFor(PassSequence& P, CostAnalysisKind OptKind,
-    CorrectionBase& Base) {
+double getCorrectionFor(PassSequence& P, CostEstimatorOptions Opts,
+    CorrectionBaseT& Base) {
 
   double Correction = 1;
   unsigned NearestDistance = 10000;
@@ -63,7 +63,10 @@ double getCorrectionFor(PassSequence& P, CostAnalysisKind OptKind,
     auto D = I.first.distance(P);
     if (D < NearestDistance) {
       NearestDistance = D;
-      Correction = I.second[OptKind];
+      Correction = 0;
+      for (auto OptKind : Opts.AnalysisActivated) 
+        Correction += I.second[OptKind];
+      Correction /= Opts.AnalysisActivated.size();
     }
   }
 
