@@ -26,6 +26,7 @@
 #include "OfflineLearning/CodeMetricBase.h"
 #include "OfflineLearning/AccuracyBase.h"
 #include "OfflineLearning/CorrectionBase.h"
+#include "OfflineLearning/OptAccuracyBase.h"
 
 #include <vector>
 #include <limits>
@@ -60,6 +61,12 @@ CBasePath("correction-folder", cl::desc("Folder with corrections"),
 static cl::alias 
 CBaseAlias("cf", cl::desc("Alias for -correction-folder"), cl::aliasopt(CBasePath));
 
+static cl::opt<std::string> 
+OABasePath("opt-accuracy-folder", cl::desc("Folder with accuracy for each otimization"), 
+    cl::value_desc(".txt"),
+    cl::Required);
+static cl::alias 
+OABaseAlias("oaf", cl::desc("Alias for -opt-accuracy"), cl::aliasopt(OABasePath));
 
 PassSequence randomWalk(PassSequence Start, int Alpha) {
   PassSequence Seed;
@@ -69,7 +76,7 @@ PassSequence randomWalk(PassSequence Start, int Alpha) {
   return Start;
 }
 
-#define SIZE 35
+#define SIZE 70
 
 int main(int argc, char** argv) {
   std::srand(std::time(0));
@@ -94,6 +101,8 @@ int main(int argc, char** argv) {
 
   auto CorrectionBase = 
     loadCorrectionBase(CBasePath+"/"+NearestMetricName+".estr");
+  auto OptAccuracyBase = 
+    loadOptAccuracyBase(OABasePath+"/"+NearestMetricName+".ocor");
 
   int PAPIEvents[1] = {PAPI_TOT_CYC};
   double RealInitCost = 
@@ -106,7 +115,7 @@ int main(int argc, char** argv) {
 
   std::list<std::pair<PassSequence, double> > BestSequences;
   BestSequences.push_back(
-      std::pair<PassSequence, double>(BestSequence, InitCost));
+      std::pair<PassSequence, double>(BestSequence, InitCost*10000));
 
   unsigned MaxSize = 9 / (EstimatedAccuracy  + 2);
   printf("MaxSize: %u\n", MaxSize);
@@ -119,8 +128,10 @@ int main(int argc, char** argv) {
     PassSequence Sequence = randomWalk(Best.first, Alpha);
     auto PO = GEOS::applyPasses(PModule, Sequence);
     if (!PO) continue;
-    auto Cost = GEOS::analyseCost(PO, Opts) * 
+    auto CostB = GEOS::analyseCost(PO, Opts) * 
             getCorrectionFor(Sequence, Opts, CorrectionBase);
+    auto Cost = CostB * 
+            (getPassSequenceAccuracy(Sequence, Opts, OptAccuracyBase));
 
     if (Cost < Best.second) {
       BestSequences.push_front(std::pair<PassSequence, double>(Sequence, Cost));
@@ -135,7 +146,7 @@ int main(int argc, char** argv) {
       Miss++;
       if (Miss > 5) {
         Miss = 0;
-        if (Alpha < SIZE)
+        if (Alpha < SIZE/2)
           Alpha++;
         else 
           break;
@@ -151,7 +162,7 @@ int main(int argc, char** argv) {
         (GEOS::getPAPIProfile(PO, ExecutionKind::JIT, PAPIEvents, 1))[0];
     if (RealInitCost/RealBestCost > SpeedupReal) {
       SpeedupReal = RealInitCost/RealBestCost;
-      SpeedupEstimated = InitCost/I.second;
+      SpeedupEstimated = InitCost/GEOS::analyseCost(PO, Opts);
     }
   }
 
