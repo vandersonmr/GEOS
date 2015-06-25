@@ -105,21 +105,27 @@ int main(int argc, char** argv) {
     loadOptAccuracyBase(OABasePath+"/"+NearestMetricName+".ocor");
 
   int PAPIEvents[1] = {PAPI_TOT_CYC};
+  GEOS::getPAPIProfile(PModule, ExecutionKind::JIT, PAPIEvents, 1);
   double RealInitCost = 
       (GEOS::getPAPIProfile(PModule, ExecutionKind::JIT, PAPIEvents, 1))[0];
 
-  auto InitCost = GEOS::analyseCost(PModule, Opts);
+  auto InitCost = GEOS::analyseCost(PModule, Opts); 
 
   PassSequence BestSequence;
   BestSequence.randomize(SIZE);
 
+  auto InitPO = GEOS::applyPasses(PModule, BestSequence);
+  auto InitBestSequenceCost = GEOS::analyseCost(InitPO, Opts) *
+                getCorrectionFor(BestSequence, Opts, CorrectionBase) *
+                getPassSequenceAccuracy(BestSequence, Opts, OptAccuracyBase);
+
   std::list<std::pair<PassSequence, double> > BestSequences;
   BestSequences.push_back(
-      std::pair<PassSequence, double>(BestSequence, InitCost*10000));
+      std::pair<PassSequence, double>(BestSequence, InitBestSequenceCost));
 
   unsigned MaxSize = 9 / (EstimatedAccuracy  + 2);
-  printf("MaxSize: %u\n", MaxSize);
 
+  int t = 1;
   int Alpha = 10;
   int Miss = 0;
 
@@ -128,10 +134,9 @@ int main(int argc, char** argv) {
     PassSequence Sequence = randomWalk(Best.first, Alpha);
     auto PO = GEOS::applyPasses(PModule, Sequence);
     if (!PO) continue;
-    auto CostB = GEOS::analyseCost(PO, Opts) * 
-            getCorrectionFor(Sequence, Opts, CorrectionBase);
-    auto Cost = CostB * 
-            (getPassSequenceAccuracy(Sequence, Opts, OptAccuracyBase));
+    auto Cost = (GEOS::analyseCost(PO, Opts) /
+            getCorrectionFor(Sequence, Opts, CorrectionBase)) *
+            getPassSequenceAccuracy(Sequence, Opts, OptAccuracyBase);
 
     if (Cost < Best.second) {
       BestSequences.push_front(std::pair<PassSequence, double>(Sequence, Cost));
@@ -152,6 +157,7 @@ int main(int argc, char** argv) {
           break;
       }
     }
+    t++;
   }
 
   double SpeedupReal = 0; 
@@ -160,16 +166,15 @@ int main(int argc, char** argv) {
     auto PO = GEOS::applyPasses(PModule, I.first);
     double RealBestCost = 
         (GEOS::getPAPIProfile(PO, ExecutionKind::JIT, PAPIEvents, 1))[0];
+
     if (RealInitCost/RealBestCost > SpeedupReal) {
       SpeedupReal = RealInitCost/RealBestCost;
       SpeedupEstimated = InitCost/GEOS::analyseCost(PO, Opts);
     }
   }
 
-  printf("\nEstimated Speedup: %f\nReal Speedup: %f\n\n", SpeedupEstimated,
+  printf("\n%f %f\n", SpeedupEstimated,
       SpeedupReal);
-
-  BestSequence.print();
 
   return 0;
 }
