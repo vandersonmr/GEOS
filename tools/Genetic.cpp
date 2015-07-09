@@ -147,13 +147,13 @@ class CompareSolution {
   }
 
   public:
-    CompareSolution(const double A = 1.0) { 
-      Accuracy = (A + 1.0)/2; 
-    }
-    
-    bool operator()(Solution S1, Solution S2) const {
-      return ((S1.Cost > S2.Cost) == getJudgement());
-    }
+  CompareSolution(const double A = 1.0) { 
+    Accuracy = (A + 1.0)/2; 
+  }
+
+  bool operator()(Solution S1, Solution S2) const {
+    return ((S1.Cost > S2.Cost) == getJudgement());
+  }
 };
 
 typedef std::vector<Solution> PopT;
@@ -195,10 +195,10 @@ void evaluatePopulation(PopT &Population,
     CorrectionBaseT CorrectionBase, OptAccuracyBaseT OptAccuracyBase,
     BestSeqT &BestSequences, std::shared_ptr<ProfileModule> PModule, 
     CostEstimatorOptions Opts, double EstimatedAccuracy) {
-  
+
   BestSeqT OrderedPop((CompareSolution(EstimatedAccuracy)));
   BestSequences = BestSeqT(CompareSolution(EstimatedAccuracy));
-  
+
   for (auto &I : Population) {
     evaluate(I, CorrectionBase, OptAccuracyBase, PModule, Opts);
     OrderedPop.push(I);
@@ -260,7 +260,6 @@ void mutation(PopT &Population) {
 
 bool isFinished(time_t Start, int Cycles) { 
   time_t total = time(0) - Start;
-  printf("Time:%ld\n", total);
   if (CYCLE_MAX && TIME_MAX)
     return (total >= (int)TIME_MAX || Cycles >= (int)CYCLE_MAX);
   else if (TIME_MAX)
@@ -311,7 +310,7 @@ int main(int argc, char** argv) {
   int PAPIEvents[1] = {PAPI_TOT_CYC};
   double RealInitCost =
     (GEOS::getPAPIProfile(PModule, ExecutionKind::JIT, PAPIEvents, 1))[0];
-  
+
   double InitCost;
   if (Randomness)
     InitCost = (rand() % 10) + 1;
@@ -325,7 +324,6 @@ int main(int argc, char** argv) {
   BestSeqT GlobalBest((CompareSolution(EstimatedAccuracy)));
   PopT Population;
 
-  printf("Starting genetic...\n");
 
   initializePopulation(Population);
   evaluatePopulation(Population, CorrectionBase, OptAccuracyBase,
@@ -356,38 +354,19 @@ int main(int argc, char** argv) {
       GlobalBest.push(Aux.top());
       Aux.pop();
     }
-
     Cycles += 1;
-    printf("Cycles: %d - ", Cycles);
   }
 
   double BestRealSpeedUp = 0;
   double BestEstSpeedUp = 0;
   Solution BestSolution;
-  while (BestSequences.size() != 0) {
-    auto B = BestSequences.top();
-    auto PO = GEOS::applyPasses(PModule, B.Sequence);
-    double RealFinalCost = 
-      (GEOS::getPAPIProfile(PO, ExecutionKind::JIT, PAPIEvents, 1))[0];
-    double FinalCost;
-    if (Randomness) FinalCost = (rand() % 10) + 1;
-    else FinalCost = GEOS::analyseCost(PO, Opts);
-
-    if ((RealInitCost/RealFinalCost) > BestRealSpeedUp) {
-      BestRealSpeedUp = RealInitCost/RealFinalCost;
-      BestEstSpeedUp = InitCost/FinalCost;
-      BestSolution = B;
-    }
-
-    BestSequences.pop();
-  }
-
   while (GlobalBest.size() != 0) {
     auto B = GlobalBest.top();
     auto PO = GEOS::applyPasses(PModule, B.Sequence);
     double RealFinalCost = 
       (GEOS::getPAPIProfile(PO, ExecutionKind::JIT, PAPIEvents, 1))[0];
     double FinalCost;
+
     if (Randomness) FinalCost = (rand() % 10) + 1;
     else FinalCost = GEOS::analyseCost(PO, Opts);
 
@@ -398,7 +377,8 @@ int main(int argc, char** argv) {
       BestSolution = B;
     }
 
-    GlobalBest.pop();
+    if (Randomness) GlobalBest = BestSeqT();
+    else GlobalBest.pop();
   }
 
   printf("\n%f %f\n", BestEstSpeedUp,
