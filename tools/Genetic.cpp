@@ -45,29 +45,25 @@
 
 static cl::opt<std::string> 
 MBasePath("metrics", cl::desc("Base of metrics"), 
-    cl::value_desc(".txt"),
-    cl::Required);
+    cl::value_desc(".txt"));
 static cl::alias 
 MBaseAlias("m", cl::desc("Alias for -metrics"), cl::aliasopt(MBasePath));
 
 static cl::opt<std::string> 
 ABasePath("accuracy", cl::desc("Base of Accuracy"), 
-    cl::value_desc(".txt"),
-    cl::Required);
+    cl::value_desc(".txt"));
 static cl::alias 
 ABaseAlias("a", cl::desc("Alias for -accuracy"), cl::aliasopt(ABasePath));
 
 static cl::opt<std::string> 
 CBasePath("correction-folder", cl::desc("Folder with corrections"), 
-    cl::value_desc(".txt"),
-    cl::Required);
+    cl::value_desc(".txt"));
 static cl::alias 
 CBaseAlias("cf", cl::desc("Alias for -correction-folder"), cl::aliasopt(CBasePath));
 
 static cl::opt<std::string> 
 OABasePath("opt-accuracy-folder", cl::desc("Folder with accuracy for each otimization"), 
-    cl::value_desc(".txt"),
-    cl::Required);
+    cl::value_desc(".txt"));
 static cl::alias 
 OABaseAlias("oaf", cl::desc("Alias for -opt-accuracy"), cl::aliasopt(OABasePath));
 
@@ -75,9 +71,13 @@ static cl::opt<unsigned> SIZE("pop-size", cl::desc("Size of population"));
 static cl::alias SIZEAlias("s", cl::desc("Alias for -pop-size"), 
     cl::aliasopt(SIZE));
 
-static cl::opt<unsigned> BSIZE("opt-list-size", cl::desc("Max total time (in seconds)"));
-static cl::alias BSIZEAlias("ols", cl::desc("Alias for time-max"), 
+static cl::opt<unsigned> BSIZE("opt-list-size", cl::desc("Max size of best sequence list"));
+static cl::alias BSIZEAlias("ols", cl::desc("Alias for best-sequence size"), 
     cl::aliasopt(BSIZE));
+
+static cl::opt<unsigned> TSIZE("tournament-size", cl::desc("Max size of tournament"));
+static cl::alias TSIZEAlias("ts", cl::desc("Alias for tournament size"), 
+    cl::aliasopt(TSIZE));
 
 static cl::opt<unsigned> NOPT("length-solution", cl::desc("Max total time (in seconds)"));
 static cl::alias NOPTAlias("len", cl::desc("Alias for time-max"), 
@@ -99,9 +99,14 @@ static cl::opt<double> CrossoverRate("cross-rate", cl::desc("Max total time (in 
 static cl::alias CrossoverRateAlias("pc", cl::desc("Alias for time-max"), 
     cl::aliasopt(CrossoverRate));
 
+static cl::opt<int> Randomness("randomness", cl::desc("RandomCost"));
+static cl::alias RandomnessAlias("rc", cl::desc("Alias for randomness"), 
+    cl::aliasopt(Randomness));
+
 #define SIZE_STD 100
 #define NOPT_STD 70
 #define BSIZE_STD 5
+#define TSIZE_STD 5
 #define TIME_MAX_STD 300
 #define CYCLE_MAX_STD 50
 
@@ -168,31 +173,34 @@ bool evaluate(Solution &S,
     std::shared_ptr<ProfileModule> PModule, CostEstimatorOptions Opts) {
   if (S.isCalculated) return true;
 
-  auto PO = GEOS::applyPasses(PModule, S.Sequence);
-  if (!PO) return false;
+  auto NewCost = (rand() % 10) + 1;
+  if (!Randomness) {
+    auto PO = GEOS::applyPasses(PModule, S.Sequence);
+    if (!PO) return false;
+    NewCost = GEOS::analyseCost(PO, Opts); 
+  }  
 
-  auto OptAccuracy = getPassSequenceAccuracy
-    (S.Sequence, Opts, OptAccuracyBase);
-  auto NewCost = GEOS::analyseCost(PO, Opts); 
-    getCorrectionFor(S.Sequence, Opts, CorrectionBase);
-  NewCost *= OptAccuracy;
+  if (MBasePath.empty()) {
+    auto OptAccuracy = getPassSequenceAccuracy
+      (S.Sequence, Opts, OptAccuracyBase);
+    NewCost /= getCorrectionFor(S.Sequence, Opts, CorrectionBase);
+    NewCost *= OptAccuracy;
+  }
+
   S.setCost(NewCost);
   return true;
 }
 
-double evaluatePopulation(PopT &Population, 
+void evaluatePopulation(PopT &Population, 
     CorrectionBaseT CorrectionBase, OptAccuracyBaseT OptAccuracyBase,
     BestSeqT &BestSequences, std::shared_ptr<ProfileModule> PModule, 
     CostEstimatorOptions Opts, double EstimatedAccuracy) {
-  double TotalCost = 0;
-  int NotCalculated = 0;
+  
   BestSeqT OrderedPop((CompareSolution(EstimatedAccuracy)));
-
   BestSequences = BestSeqT(CompareSolution(EstimatedAccuracy));
+  
   for (auto &I : Population) {
-    if (evaluate(I, CorrectionBase, OptAccuracyBase, PModule, Opts))
-      TotalCost += I.Cost;
-    else NotCalculated++;
+    evaluate(I, CorrectionBase, OptAccuracyBase, PModule, Opts);
     OrderedPop.push(I);
   }
 
@@ -200,25 +208,25 @@ double evaluatePopulation(PopT &Population,
     BestSequences.push(OrderedPop.top());
     OrderedPop.pop();
   }
-  return TotalCost/(Population.size() - NotCalculated);
 }
 
-PopT selection(PopT Population, double Mean) {
+PopT selection(PopT Population, double EstimatedAccuracy) {
+  unsigned MSize = Population.size()/2, PSize = Population.size();
   PopT MatingPool;
-  for (auto S : Population) {
-    int Sample = (int)(S.Cost/Mean);
-    double Prob = (S.Cost/Mean) - Sample;
-    for (auto i = 0; i < Sample; i++)
-      MatingPool.push_back(S);
-    if (Prob >= getRandomDouble())
-      MatingPool.push_back(S);
+  while (MatingPool.size() < MSize) {
+    BestSeqT Tournament((CompareSolution(EstimatedAccuracy)));
+    for (unsigned i = 0; i < TSIZE; i++) {
+      int Gene = rand() % PSize;
+      Tournament.push(Population[Gene]);
+    }
+    MatingPool.push_back(Tournament.top());
   }
   return MatingPool;
 }
 
 PopT crossover(PopT MatingPool) {
   PopT NewPopulation;
-  int MSize = MatingPool.size();
+  int MSize = (int)MatingPool.size();
   while (NewPopulation.size() <= SIZE) {
     int ParentI = rand() % MSize;
     int ParentJ = rand() % MSize;
@@ -274,6 +282,7 @@ int main(int argc, char** argv) {
 
   if (!SIZE) SIZE = SIZE_STD;
   if (!BSIZE) BSIZE = BSIZE_STD;
+  if (!TSIZE) TSIZE = TSIZE_STD;
   if (!NOPT) NOPT = NOPT_STD;
   if (!TIME_MAX && !CYCLE_MAX) TIME_MAX = TIME_MAX_STD;
   if (!MutationRate) MutationRate = MRATE_STD;
@@ -282,25 +291,34 @@ int main(int argc, char** argv) {
   std::shared_ptr<ProfileModule> PModule(new ProfileModule(MyModule));
   CostEstimatorOptions Opts = gcl::populatePModule(PModule);
 
-  auto MetricBase = loadMetricsBase(MBasePath);
-  auto AccuracyBase = loadAccuracyBase(ABasePath);
-  auto NearestMetricName = getNearestMetric(PModule, MetricBase);
-  double EstimatedAccuracy = 
-    getAccuracyFor(NearestMetricName, Opts, AccuracyBase);
+  double EstimatedAccuracy = 1;
+  OptAccuracyBaseT OptAccuracyBase;
+  CorrectionBaseT CorrectionBase;
+  if (!MBasePath.empty() && !ABasePath.empty() && !CBasePath.empty() && !OABasePath.empty()) {
+    auto MetricBase = loadMetricsBase(MBasePath);
+    auto AccuracyBase = loadAccuracyBase(ABasePath);
+    auto NearestMetricName = getNearestMetric(PModule, MetricBase);
+    EstimatedAccuracy = 
+      getAccuracyFor(NearestMetricName, Opts, AccuracyBase);
 
-  auto CorrectionBase =
-    loadCorrectionBase(CBasePath+"/"+NearestMetricName+".estr");
-  auto OptAccuracyBase =
-    loadOptAccuracyBase(OABasePath+"/"+NearestMetricName+".ocor");
+    CorrectionBase =
+      loadCorrectionBase(CBasePath+"/"+NearestMetricName+".estr");
+    OptAccuracyBase =
+      loadOptAccuracyBase(OABasePath+"/"+NearestMetricName+".ocor");
+  }
 
 
   int PAPIEvents[1] = {PAPI_TOT_CYC};
   double RealInitCost =
     (GEOS::getPAPIProfile(PModule, ExecutionKind::JIT, PAPIEvents, 1))[0];
-  auto InitCost = GEOS::analyseCost(PModule, Opts);
+  
+  double InitCost;
+  if (Randomness)
+    InitCost = (rand() % 10) + 1;
+  else
+    InitCost = GEOS::analyseCost(PModule, Opts);
 
   int Cycles = 0;
-  double FitnessMean;
   CompareSolution CompSolVar(EstimatedAccuracy);
 
   BestSeqT BestSequences((CompareSolution(EstimatedAccuracy)));
@@ -310,18 +328,18 @@ int main(int argc, char** argv) {
   printf("Starting genetic...\n");
 
   initializePopulation(Population);
-  FitnessMean = evaluatePopulation(Population, CorrectionBase, OptAccuracyBase,
+  evaluatePopulation(Population, CorrectionBase, OptAccuracyBase,
       BestSequences, PModule, Opts, EstimatedAccuracy);
 
   time_t Start = time(0);
   while (!isFinished(Start, Cycles)) {
     PopT MatingPool = 
-      selection(Population, FitnessMean);
+      selection(Population, EstimatedAccuracy);
     Population = 
       crossover(MatingPool);
     mutation(Population);
 
-    FitnessMean = evaluatePopulation(Population, CorrectionBase, OptAccuracyBase,
+    evaluatePopulation(Population, CorrectionBase, OptAccuracyBase,
         BestSequences, PModule, Opts, EstimatedAccuracy);
 
     BestSeqT Aux((CompareSolution(EstimatedAccuracy)));
@@ -351,7 +369,9 @@ int main(int argc, char** argv) {
     auto PO = GEOS::applyPasses(PModule, B.Sequence);
     double RealFinalCost = 
       (GEOS::getPAPIProfile(PO, ExecutionKind::JIT, PAPIEvents, 1))[0];
-    double FinalCost = GEOS::analyseCost(PO, Opts);
+    double FinalCost;
+    if (Randomness) FinalCost = (rand() % 10) + 1;
+    else FinalCost = GEOS::analyseCost(PO, Opts);
 
     if ((RealInitCost/RealFinalCost) > BestRealSpeedUp) {
       BestRealSpeedUp = RealInitCost/RealFinalCost;
@@ -367,7 +387,10 @@ int main(int argc, char** argv) {
     auto PO = GEOS::applyPasses(PModule, B.Sequence);
     double RealFinalCost = 
       (GEOS::getPAPIProfile(PO, ExecutionKind::JIT, PAPIEvents, 1))[0];
-    double FinalCost = GEOS::analyseCost(PO, Opts);
+    double FinalCost;
+    if (Randomness) FinalCost = (rand() % 10) + 1;
+    else FinalCost = GEOS::analyseCost(PO, Opts);
+
 
     if ((RealInitCost/RealFinalCost) > BestRealSpeedUp) {
       BestRealSpeedUp = RealInitCost/RealFinalCost;
@@ -378,9 +401,7 @@ int main(int argc, char** argv) {
     GlobalBest.pop();
   }
 
-  printf("\nEstimated Speedup: %f\nReal Speedup: %f\n\nCycles: %d\n", BestEstSpeedUp,
-      BestRealSpeedUp, Cycles);
-
-  BestSolution.Sequence.print();
+  printf("\n%f %f\n", BestEstSpeedUp,
+      BestRealSpeedUp);
   return 0;
 }
