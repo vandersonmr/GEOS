@@ -191,23 +191,35 @@ bool evaluate(Solution &S,
   return true;
 }
 
-void evaluatePopulation(PopT &Population, 
+Solution evaluatePopulation(PopT &Population, 
     CorrectionBaseT CorrectionBase, OptAccuracyBaseT OptAccuracyBase,
-    BestSeqT &BestSequences, std::shared_ptr<ProfileModule> PModule, 
+    BestSeqT &GlobalBest, std::shared_ptr<ProfileModule> PModule, 
     CostEstimatorOptions Opts, double EstimatedAccuracy) {
 
+  Solution Best;
   BestSeqT OrderedPop((CompareSolution(EstimatedAccuracy)));
-  BestSequences = BestSeqT(CompareSolution(EstimatedAccuracy));
+  BestSeqT Aux((CompareSolution(EstimatedAccuracy)));
+
+  Aux = GlobalBest;
+  GlobalBest = BestSeqT(CompareSolution(EstimatedAccuracy));
 
   for (auto &I : Population) {
     evaluate(I, CorrectionBase, OptAccuracyBase, PModule, Opts);
     OrderedPop.push(I);
   }
 
-  for (unsigned i = 0; i < BSIZE; i++) {
-    BestSequences.push(OrderedPop.top());
+  Best = OrderedPop.top();
+  while (OrderedPop.size() != 0) {
+    Aux.push(OrderedPop.top());
     OrderedPop.pop();
   }
+
+  for (unsigned i = 0; i < BSIZE; i++) {
+    GlobalBest.push(Aux.top());
+    Aux.pop();
+  }
+
+  return Best;
 }
 
 PopT selection(PopT Population, double EstimatedAccuracy) {
@@ -320,14 +332,13 @@ int main(int argc, char** argv) {
   int Cycles = 0;
   CompareSolution CompSolVar(EstimatedAccuracy);
 
-  BestSeqT BestSequences((CompareSolution(EstimatedAccuracy)));
   BestSeqT GlobalBest((CompareSolution(EstimatedAccuracy)));
   PopT Population;
-
+  Solution Best;
 
   initializePopulation(Population);
-  evaluatePopulation(Population, CorrectionBase, OptAccuracyBase,
-      BestSequences, PModule, Opts, EstimatedAccuracy);
+  Best = evaluatePopulation(Population, CorrectionBase, OptAccuracyBase,
+      GlobalBest, PModule, Opts, EstimatedAccuracy);
 
   time_t Start = time(0);
   while (!isFinished(Start, Cycles)) {
@@ -337,49 +348,47 @@ int main(int argc, char** argv) {
       crossover(MatingPool);
     mutation(Population);
 
-    evaluatePopulation(Population, CorrectionBase, OptAccuracyBase,
-        BestSequences, PModule, Opts, EstimatedAccuracy);
+    Best = evaluatePopulation(Population, CorrectionBase, OptAccuracyBase,
+        GlobalBest, PModule, Opts, EstimatedAccuracy);
 
-    BestSeqT Aux((CompareSolution(EstimatedAccuracy)));
-    for (unsigned i = 0; i < BSIZE; i++) {
-      Aux.push(BestSequences.top());
-      BestSequences.pop();
-      if (GlobalBest.size()) {
-        Aux.push(GlobalBest.top());
-        GlobalBest.pop();
-      }
-    }
-    GlobalBest = BestSeqT(CompareSolution(EstimatedAccuracy));
-    for (unsigned i = 0; i < BSIZE; i++) {
-      GlobalBest.push(Aux.top());
-      Aux.pop();
-    }
     Cycles += 1;
   }
 
   double BestRealSpeedUp = 0;
   double BestEstSpeedUp = 0;
   Solution BestSolution;
-  while (GlobalBest.size() != 0) {
-    auto B = GlobalBest.top();
-    auto PO = GEOS::applyPasses(PModule, B.Sequence);
-    double RealFinalCost = 
-      (GEOS::getPAPIProfile(PO, ExecutionKind::JIT, PAPIEvents, 1))[0];
-    double FinalCost;
 
-    if (Randomness) FinalCost = (rand() % 10) + 1;
-    else FinalCost = GEOS::analyseCost(PO, Opts);
-
-
-    if ((RealInitCost/RealFinalCost) > BestRealSpeedUp) {
-      BestRealSpeedUp = RealInitCost/RealFinalCost;
-      BestEstSpeedUp = InitCost/FinalCost;
-      BestSolution = B;
+  {
+    auto PO = GEOS::applyPasses(PModule, Best.Sequence);
+    if (PO) {
+    BestRealSpeedUp = (RealInitCost /
+        (GEOS::getPAPIProfile(PO, ExecutionKind::JIT, PAPIEvents, 1))[0]);
+    BestEstSpeedUp = InitCost/Best.Cost;
     }
-
-    if (Randomness) GlobalBest = BestSeqT();
-    else GlobalBest.pop();
   }
+
+  if (!Randomness || BestRealSpeedUp == 0)
+    while (GlobalBest.size() != 0) {
+      auto B = GlobalBest.top();
+      auto PO = GEOS::applyPasses(PModule, B.Sequence);
+      if (!PO) continue;
+      double RealFinalCost = 
+        (GEOS::getPAPIProfile(PO, ExecutionKind::JIT, PAPIEvents, 1))[0];
+      double FinalCost;
+
+      if (Randomness) FinalCost = (rand() % 10) + 1;
+      else FinalCost = GEOS::analyseCost(PO, Opts);
+
+
+      if ((RealInitCost/RealFinalCost) > BestRealSpeedUp) {
+        BestRealSpeedUp = RealInitCost/RealFinalCost;
+        BestEstSpeedUp = InitCost/FinalCost;
+        BestSolution = B;
+      }
+      
+      if (Randomness) GlobalBest = BestSeqT();
+      else GlobalBest.pop();
+    }
 
   printf("\n%f %f\n", BestEstSpeedUp,
       BestRealSpeedUp);
