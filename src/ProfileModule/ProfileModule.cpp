@@ -24,8 +24,6 @@
 #include "llvm/Support/FileSystem.h"
 #include "llvm/Transforms/Utils/Cloning.h"
 
-#include <unordered_map>
-
 using namespace llvm;
 
 bool hasWeight(const Instruction &I) {
@@ -84,8 +82,6 @@ Module* ProfileModule::getLLVMModule() const {
   return LLVMModule;
 }
 
-std::unordered_map<std::string, uint64_t> BBFreq;
-
 bool ProfileModule::hasBranchFrequency(const BasicBlock &BB) const {
   return BB.getTerminator()->getMetadata("prof") != nullptr;
 }
@@ -117,11 +113,9 @@ bool ProfileModule::hasBasicBlockFrequency(const BasicBlock &BB) const {
 }
 
 uint64_t ProfileModule::getBasicBlockFrequency(const BasicBlock &BB) const {
-  if (hasBasicBlockFrequency(BB)) {
-    return BBFreq[BB.getName().str()];
-  } else { 
-    return 0; 
-  } 
+  if (hasBasicBlockFrequency(BB)) 
+    return (BBFreq.find(BB.getName().str()))->second;
+  return 0; 
 }
 
 void 

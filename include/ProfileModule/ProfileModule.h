@@ -21,6 +21,7 @@
 #include "ProfileModule/ModuleMetric.h"
 
 #include <vector>
+#include <unordered_map>
 
 /// \brief This class is responsible for encapsulating profile information with
 /// LLVM code, make copies of itself, and maintain the consistency of itself.
@@ -28,6 +29,7 @@ class ProfileModule {
   private:
     PassSequence Passes;
     llvm::Module *LLVMModule;
+    std::unordered_map<std::string, uint64_t> BBFreq;
 
     /// \brief This function uses the predecessors of the given basic block to 
     /// estimate and update its execution frequency. 
