@@ -109,18 +109,18 @@ ProfileModule::getBranchFrequency(const BasicBlock &BB) const {
 }
 
 bool ProfileModule::hasBasicBlockFrequency(const BasicBlock &BB) const {
-  return BBFreq.count(BB.getName().str()) != 0;
+  return this->BBFreq.count(BB.getName().str()) != 0;
 }
 
 uint64_t ProfileModule::getBasicBlockFrequency(const BasicBlock &BB) const {
   if (hasBasicBlockFrequency(BB)) 
-    return (BBFreq.find(BB.getName().str()))->second;
+    return (this->BBFreq.find(BB.getName().str()))->second;
   return 0; 
 }
 
 void 
 ProfileModule::setBasicBlockFrequency(BasicBlock &BB, uint64_t Freq) {
-  BBFreq[BB.getName().str()] = Freq;
+  this->BBFreq[BB.getName().str()] = Freq;
 }
 
 bool ProfileModule::hasCallCost(const CallInst &I) const {

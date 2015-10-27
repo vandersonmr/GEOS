@@ -29,7 +29,6 @@ class ProfileModule {
   private:
     PassSequence Passes;
     llvm::Module *LLVMModule;
-    std::unordered_map<std::string, uint64_t> BBFreq;
 
     /// \brief This function uses the predecessors of the given basic block to 
     /// estimate and update its execution frequency. 
@@ -39,6 +38,8 @@ class ProfileModule {
     /// estimate and update its execution frequency. 
     uint64_t getExecutionFreqUsingSuccessors(llvm::BasicBlock *BB);
   public:
+    std::unordered_map<std::string, uint64_t> BBFreq;
+
     /// \brief If this class has been optimized this function will return the
     /// optimizations used.
     PassSequence getPasses() {

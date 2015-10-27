@@ -112,6 +112,7 @@ GEOS::applyPasses(const std::shared_ptr<ProfileModule> PModule,
     Module *MyModule = 
       parseIRFile(".tmp", Error, Context).release();
     ProfileModule *ModuleCopy = new ProfileModule(MyModule);
+    ModuleCopy->BBFreq.insert(PModule->BBFreq.begin(), PModule->BBFreq.end());
     ModuleCopy->repairProfiling();
     ModuleCopy->setPasses(PS);
     return std::shared_ptr<ProfileModule>(ModuleCopy);
