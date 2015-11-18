@@ -17,7 +17,7 @@
 #include "llvm/Pass.h"
 #include "llvm/Transforms/IPO/PassManagerBuilder.h"
 #include "llvm/Transforms/Scalar.h"
-#include "llvm/PassManager.h"
+#include "llvm/IR/LegacyPassManager.h"
 #include "llvm/PassRegistry.h"
 
 #include "EnumString.h"
@@ -271,8 +271,8 @@ class PassSequence {
         add(getRandomOptimizationKind());
     }
 
-    void populatePassManager(llvm::PassManager &PM, 
-        llvm::FunctionPassManager &FPM) {
+    void populatePassManager(llvm::legacy::PassManager &PM, 
+        llvm::legacy::FunctionPassManager &FPM) {
       llvm::PassManagerBuilder Builder;
       Builder.SizeLevel = static_cast<int>(OSize)  - 1;
       Builder.OptLevel  = static_cast<int>(OLevel) - 1;

@@ -13,7 +13,7 @@
 ///
 //===----------------------------------------------------------------------===//
 
-#include "llvm/PassManager.h"
+#include "llvm/IR/LegacyPassManager.h"
 
 #include "ProfileModule/ProfileModule.h"
 #include "CostEstimator/CostEstimatorOptions.h"

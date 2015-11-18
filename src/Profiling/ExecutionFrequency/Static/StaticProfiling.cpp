@@ -20,7 +20,7 @@
 #include "llvm/Analysis/Passes.h"
 #include "llvm/IR/Instructions.h"
 #include "llvm/IR/Module.h"
-#include "llvm/PassManager.h"
+#include "llvm/IR/LegacyPassManager.h"
 #include "llvm/Pass.h"
 
 #include <list>
@@ -133,7 +133,7 @@ void loadStaticProfiling(ProfileModule *Profile) {
     for (auto &BB : Func) 
       BB.setName(std::to_string(I++));
 
-  PassManager PM;
+  legacy::PassManager PM;
   StaticProfiling *Static = new StaticProfiling(Profile);
   PM.add(Static);
   PM.run(*Profile->getLLVMModule());

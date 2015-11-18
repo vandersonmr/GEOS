@@ -3,11 +3,11 @@
 #include "llvm/CodeGen/MachineFunctionAnalysis.h"
 #include "llvm/CodeGen/MachineModuleInfo.h"
 #include "llvm/CodeGen/MachinePostDominators.h"
-#include "llvm/PassManager.h"
+#include "llvm/IR/LegacyPassManager.h"
 #include "llvm/Support/TargetRegistry.h"
 #include "llvm/Support/FileSystem.h"
 #include "llvm/Support/FormattedStream.h"
-#include "llvm/Target/TargetLibraryInfo.h"
+#include "llvm/Analysis/TargetLibraryInfo.h"
 #include "llvm/Target/TargetMachine.h"
 #include "llvm/Target/TargetSubtargetInfo.h"
 
@@ -15,7 +15,7 @@ using namespace llvm;
 
 template<typename T> static T* 
 runCodeGenPasses(Module *M, const ProfileModule *Profile, 
-    PassManager &PM) {
+    legacy::PassManager &PM) {
 
   Triple TheTriple;
 
@@ -48,18 +48,16 @@ runCodeGenPasses(Module *M, const ProfileModule *Profile,
       OLvl);
   assert(Target && "Could not allocate target machine!");
 
-  TargetLibraryInfo *TLI = new TargetLibraryInfo(TheTriple);
-  PM.add(TLI);
+  TargetLibraryInfoWrapperPass *TLIWP = 
+    new TargetLibraryInfoWrapperPass(TheTriple);
+  PM.add(TLIWP);
 
-  if (const DataLayout *DL = Target->getSubtargetImpl()->getDataLayout())
-    M->setDataLayout(DL);
-  PM.add(new DataLayoutPass());
+  M->setDataLayout(Target->createDataLayout());
 
   std::error_code Err;
   raw_fd_ostream Out("/dev/null", Err, llvm::sys::fs::OpenFlags::F_None);
-  formatted_raw_ostream FOS(Out);
 
-  Target->addPassesToEmitFile(PM, FOS, 
+  Target->addPassesToEmitFile(PM, Out, 
       TargetMachine::CodeGenFileType::CGFT_Null, false, 
       nullptr, nullptr);
 

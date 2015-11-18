@@ -1,1 +1,1 @@
-add_library(GCOV GCOV.cpp GCOVReader.cpp)
+add_library(GCOV GCOVReader.cpp)

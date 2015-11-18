@@ -17,7 +17,7 @@
 #include "CostEstimator/CostEstimatorOptions.h"
 #include "ProfileModule/ProfileModule.h"
 
-#include "llvm/PassManager.h"
+#include "llvm/IR/LegacyPassManager.h"
 
 class CostAnalysis {
   public:
@@ -38,7 +38,7 @@ class CostAnalysis {
 class RegisterUseAnalysis : public CostAnalysis {
   private: 
     const ProfileModule *PModule;
-    llvm::PassManager *PM;
+    llvm::legacy::PassManager *PM;
   public:
     RegisterUseAnalysis(const ProfileModule*);
     ~RegisterUseAnalysis();
@@ -53,7 +53,7 @@ class RegisterUseAnalysis : public CostAnalysis {
 class InstructionCacheAnalysis : public CostAnalysis {
   private: 
     const ProfileModule *PModule;
-    llvm::PassManager *PM;
+    llvm::legacy::PassManager *PM;
   public:
     InstructionCacheAnalysis(const ProfileModule*);
     ~InstructionCacheAnalysis();

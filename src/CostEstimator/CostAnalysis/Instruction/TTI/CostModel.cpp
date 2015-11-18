@@ -42,7 +42,7 @@ namespace {
 
   public:
     static char ID; // Class identification, replacement for typeinfo
-    CostModelAnalysis() : FunctionPass(ID), F(nullptr), TTI(nullptr) {
+    CostModelAnalysis() : FunctionPass(ID), F(nullptr), TTIWP(nullptr) {
       initializeCostModelAnalysisPass(
         *PassRegistry::getPassRegistry());
     }
@@ -51,17 +51,17 @@ namespace {
     /// Returns -1 if the cost is unknown.
     /// Note, this method does not cache the cost calculation and it
     /// can be expensive in some cases.
-    unsigned getInstructionCost(const Instruction *I) const;
+    unsigned getInstructionCost(const Instruction *I);
 
   private:
     void getAnalysisUsage(AnalysisUsage &AU) const override;
     bool runOnFunction(Function &F) override;
-    void print(raw_ostream &OS, const Module*) const override;
+    void print(raw_ostream &OS, const Module*);
 
     /// The function that we analyze.
     Function *F;
     /// Target information.
-    const TargetTransformInfo *TTI;
+    TargetTransformInfoWrapperPass *TTIWP;
   };
 }  // End of anonymous namespace
 
@@ -77,14 +77,14 @@ FunctionPass *llvm::createCostModelAnalysisPass() {
 
 void
 CostModelAnalysis::getAnalysisUsage(AnalysisUsage &AU) const {
-  AU.addRequired<TargetTransformInfo>();
+  AU.addRequired<TargetTransformInfoWrapperPass>();
   AU.setPreservesAll();
 }
 
 bool
 CostModelAnalysis::runOnFunction(Function &F) {
  this->F = &F;
- TTI = getAnalysisIfAvailable<TargetTransformInfo>();
+ TTIWP = getAnalysisIfAvailable<TargetTransformInfoWrapperPass>();
 
  return false;
 }
@@ -378,20 +378,22 @@ static bool matchVectorSplittingReduction(const ExtractElementInst *ReduxRoot,
   return true;
 }
 
-unsigned CostModelAnalysis::getInstructionCost(const Instruction *I) const {
-  if (!TTI)
+unsigned CostModelAnalysis::getInstructionCost(const Instruction *I) {
+  if (!TTIWP)
     return -1;
+
+  TargetTransformInfo &TTI = TTIWP->getTTI(*F);
 
   switch (I->getOpcode()) {
   case Instruction::GetElementPtr:{
     Type *ValTy = I->getOperand(0)->getType()->getPointerElementType();
-    return TTI->getAddressComputationCost(ValTy);
+    return TTI.getAddressComputationCost(ValTy);
   }
 
   case Instruction::Ret:
   case Instruction::PHI:
   case Instruction::Br: {
-    return TTI->getCFInstrCost(I->getOpcode());
+    return TTI.getCFInstrCost(I->getOpcode());
   }
   case Instruction::Add:
   case Instruction::FAdd:
@@ -415,29 +417,29 @@ unsigned CostModelAnalysis::getInstructionCost(const Instruction *I) const {
       getOperandInfo(I->getOperand(0));
     TargetTransformInfo::OperandValueKind Op2VK =
       getOperandInfo(I->getOperand(1));
-    return TTI->getArithmeticInstrCost(I->getOpcode(), I->getType(), Op1VK,
+    return TTI.getArithmeticInstrCost(I->getOpcode(), I->getType(), Op1VK,
                                        Op2VK);
   }
   case Instruction::Select: {
     const SelectInst *SI = cast<SelectInst>(I);
     Type *CondTy = SI->getCondition()->getType();
-    return TTI->getCmpSelInstrCost(I->getOpcode(), I->getType(), CondTy);
+    return TTI.getCmpSelInstrCost(I->getOpcode(), I->getType(), CondTy);
   }
   case Instruction::ICmp:
   case Instruction::FCmp: {
     Type *ValTy = I->getOperand(0)->getType();
-    return TTI->getCmpSelInstrCost(I->getOpcode(), ValTy);
+    return TTI.getCmpSelInstrCost(I->getOpcode(), ValTy);
   }
   case Instruction::Store: {
     const StoreInst *SI = cast<StoreInst>(I);
     Type *ValTy = SI->getValueOperand()->getType();
-    return TTI->getMemoryOpCost(I->getOpcode(), ValTy,
+    return TTI.getMemoryOpCost(I->getOpcode(), ValTy,
                                  SI->getAlignment(),
                                  SI->getPointerAddressSpace());
   }
   case Instruction::Load: {
     const LoadInst *LI = cast<LoadInst>(I);
-    return TTI->getMemoryOpCost(I->getOpcode(), I->getType(),
+    return TTI.getMemoryOpCost(I->getOpcode(), I->getType(),
                                  LI->getAlignment(),
                                  LI->getPointerAddressSpace());
   }
@@ -455,7 +457,7 @@ unsigned CostModelAnalysis::getInstructionCost(const Instruction *I) const {
   case Instruction::BitCast:
   case Instruction::AddrSpaceCast: {
     Type *SrcTy = I->getOperand(0)->getType();
-    return TTI->getCastInstrCost(I->getOpcode(), I->getType(), SrcTy);
+    return TTI.getCastInstrCost(I->getOpcode(), I->getType(), SrcTy);
   }
   case Instruction::ExtractElement: {
     const ExtractElementInst * EEI = cast<ExtractElementInst>(I);
@@ -470,11 +472,11 @@ unsigned CostModelAnalysis::getInstructionCost(const Instruction *I) const {
     Type *ReduxType;
 
     if (matchVectorSplittingReduction(EEI, ReduxOpCode, ReduxType))
-      return TTI->getReductionCost(ReduxOpCode, ReduxType, false);
+      return TTI.getReductionCost(ReduxOpCode, ReduxType, false);
     else if (matchPairwiseReduction(EEI, ReduxOpCode, ReduxType))
-      return TTI->getReductionCost(ReduxOpCode, ReduxType, true);
+      return TTI.getReductionCost(ReduxOpCode, ReduxType, true);
 
-    return TTI->getVectorInstrCost(I->getOpcode(),
+    return TTI.getVectorInstrCost(I->getOpcode(),
                                    EEI->getOperand(0)->getType(), Idx);
   }
   case Instruction::InsertElement: {
@@ -483,7 +485,7 @@ unsigned CostModelAnalysis::getInstructionCost(const Instruction *I) const {
     unsigned Idx = -1;
     if (CI)
       Idx = CI->getZExtValue();
-    return TTI->getVectorInstrCost(I->getOpcode(),
+    return TTI.getVectorInstrCost(I->getOpcode(),
                                    IE->getType(), Idx);
   }
   case Instruction::ShuffleVector: {
@@ -494,10 +496,10 @@ unsigned CostModelAnalysis::getInstructionCost(const Instruction *I) const {
 
     if (NumVecElems == Mask.size()) {
       if (isReverseVectorMask(Mask))
-        return TTI->getShuffleCost(TargetTransformInfo::SK_Reverse, VecTypOp0,
+        return TTI.getShuffleCost(TargetTransformInfo::SK_Reverse, VecTypOp0,
                                    0, nullptr);
       if (isAlternateVectorMask(Mask))
-        return TTI->getShuffleCost(TargetTransformInfo::SK_Alternate,
+        return TTI.getShuffleCost(TargetTransformInfo::SK_Alternate,
                                    VecTypOp0, 0, nullptr);
     }
 
@@ -509,7 +511,7 @@ unsigned CostModelAnalysis::getInstructionCost(const Instruction *I) const {
       for (unsigned J = 0, JE = II->getNumArgOperands(); J != JE; ++J)
         Tys.push_back(II->getArgOperand(J)->getType());
 
-      return TTI->getIntrinsicInstrCost(II->getIntrinsicID(), II->getType(),
+      return TTI.getIntrinsicInstrCost(II->getIntrinsicID(), II->getType(),
                                         Tys);
     }
     return -1;
@@ -519,7 +521,7 @@ unsigned CostModelAnalysis::getInstructionCost(const Instruction *I) const {
   }
 }
 
-void CostModelAnalysis::print(raw_ostream &OS, const Module*) const {
+void CostModelAnalysis::print(raw_ostream &OS, const Module*) {
   if (!F)
     return;
 
