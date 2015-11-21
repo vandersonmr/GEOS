@@ -4,7 +4,7 @@ The Guide for Exploration of the Optimization Space is a LLVM tool designed for 
 
 ### Source code
 
-* Get the sources: `git clone https://github.com/vandersonmr/GEOS`
+* Get the sources: `git clone https://github.com/vandersonmr/GEOS; git checkout v1.0`
 
 ### Dependences
 
