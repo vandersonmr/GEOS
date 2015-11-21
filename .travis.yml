@@ -11,7 +11,7 @@ addons:
   apt:
     sources:
     - ubuntu-toolchain-r-test
-
+    - llvm-toolchain-precise-3.6
     packages:
     - libc6
     - multiarch-support 
@@ -21,6 +21,8 @@ addons:
     - g++-5
     - gcc-5-multilib
     - g++-5-multilib
+    - llvm-3.6
+    - llvm-3.6-dev
 
 install:
   - if [ "${TRAVIS_OS_NAME}" = "linux" ]; then export CC="gcc-5"; export CXX="g++-5"; fi
@@ -36,11 +38,6 @@ script:
   - wget http://mirrors.kernel.org/ubuntu/pool/universe/p/papi/libpapi-dev_5.3.0-3_amd64.deb
   - sudo dpkg -i *.deb
   - sudo apt-get install -qq cmake
-  - git clone https://github.com/llvm-mirror/llvm
-  - cd llvm
-  - git checkout origin/release_36
-  - mkdir build; cd build; cmake ..; sudo make -j4 install; 
-  - cd ../..
   - mkdir build
   - cd build
   - cmake ..
