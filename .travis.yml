@@ -6,10 +6,6 @@ env:
 compiler: 
   - gcc
 
-branches:
-  only:
-    - master
-
 addons:
   apt:
     sources:
