@@ -49,6 +49,6 @@ script:
   - make -j4
 
 notifications:
-  -  email:
-    -    on_success: never
-    -    on_failure: never
+  email:
+    on_success: never
+    on_failure: never
