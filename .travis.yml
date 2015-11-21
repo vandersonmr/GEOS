@@ -18,16 +18,10 @@ addons:
     packages:
     - libconfig++8-dev
     - gdb
-    - gcc-4.9
-    - g++-4.9
-    - gcc-4.9-multilib
-    - g++-4.9-multilib
-    - gcc-multilib
-    - g++-multilib
-    - linux-libc-dev:i386
-    - libcurl3:i386
-    - libedit2
-    - libedit-dev
+    - gcc-5
+    - g++-5
+    - gcc-5-multilib
+    - g++-5-multilib
     - llvm-3.6
     - llvm-3.6-dev
       #- llvm-3.7
@@ -36,7 +30,7 @@ addons:
       #- llvm-3.8-dev
 
 install:
-  - if [ "${TRAVIS_OS_NAME}" = "linux" ]; then export CC="gcc-4.9"; export CXX="g++-4.9"; fi
+  - if [ "${TRAVIS_OS_NAME}" = "linux" ]; then export CC="gcc-5"; export CXX="g++-5"; fi
 
 os:
   - linux
