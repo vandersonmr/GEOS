@@ -38,7 +38,7 @@ script:
   - sudo apt-get install -qq cmake
   - git clone https://github.com/llvm-mirror/llvm
   - cd llvm
-  - git fetch origin remotes/origin/release_36:remotes/origin/release_36
+  - git checkout origin/release_36
   - mkdir build; cd build; cmake ..; sudo make -j4 install;  - cd ../..;
   - mkdir build
   - cd build
