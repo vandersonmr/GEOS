@@ -38,6 +38,7 @@ script:
   - wget http://mirrors.kernel.org/ubuntu/pool/universe/p/papi/libpapi-dev_5.3.0-3_amd64.deb
   - sudo dpkg -i *.deb
   - sudo apt-get install -qq cmake
+  - llvm-config --version
   - mkdir build
   - cd build
   - cmake ..
