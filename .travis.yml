@@ -10,7 +10,7 @@ branches:
 addons:
   apt:
     sources:
-    - llvm-toolchain-3.6
+    - llvm-toolchain-precise-3.6
       #- llvm-toolchain-precise-3.7
     - ubuntu-toolchain-r-test
     packages:
