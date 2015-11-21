@@ -39,7 +39,8 @@ script:
   - git clone https://github.com/llvm-mirror/llvm
   - cd llvm
   - git checkout origin/release_36
-  - mkdir build; cd build; cmake ..; sudo make -j4 install;  - cd ../..;
+  - mkdir build; cd build; cmake ..; sudo make -j4 install; 
+  - cd ../..
   - mkdir build
   - cd build
   - cmake ..
