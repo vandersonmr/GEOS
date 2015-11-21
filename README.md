@@ -56,4 +56,3 @@ If needed the [documentation](https://vandersonmr.github.io/GEOS/docs/namespaceG
 ## License
 
 GEOS is licensed under the [MIT license](LICENSE.txt).
-
