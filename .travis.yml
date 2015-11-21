@@ -16,6 +16,8 @@ addons:
       #- llvm-toolchain-precise-3.7
     - ubuntu-toolchain-r-test
     packages:
+    - libc6
+    - multiarch-support
     - libconfig++8-dev
     - gdb
     - gcc-5
@@ -38,8 +40,17 @@ os:
 script: 
   - echo "yes" | sudo add-apt-repository ppa:kalakris/cmake
   - sudo apt-get update -qq
-  - sudo apt-get install -qq cmake libpapi-dev
+  - wget http://mirrors.kernel.org/ubuntu/pool/universe/libp/libpfm4/libpfm4_4.4.0+git47-g71166e2-1_amd64.deb
+  - wget http://mirrors.kernel.org/ubuntu/pool/universe/p/papi/libpapi5.3_5.3.0-3_amd64.deb 
+  - wget http://mirrors.kernel.org/ubuntu/pool/universe/p/papi/libpapi-dev_5.3.0-3_amd64.deb
+  - sudo dpkg -i *.deb
+  - sudo apt-get install -qq cmake
   - mkdir build
   - cd build
   - cmake ..
   - make -j2
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
