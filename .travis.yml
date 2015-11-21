@@ -9,10 +9,6 @@ branches:
 
 addons:
   apt:
-    sources:
-    - llvm-toolchain-precise-3.6
-      #- llvm-toolchain-precise-3.7
-    - ubuntu-toolchain-r-test
     packages:
     - libc6
     - multiarch-support
@@ -24,10 +20,6 @@ addons:
     - g++-5-multilib
     - llvm-3.6
     - llvm-3.6-dev
-      #- llvm-3.7
-      #- llvm-3.7-dev
-      #- llvm-3.8
-      #- llvm-3.8-dev
 
 install:
   - if [ "${TRAVIS_OS_NAME}" = "linux" ]; then export CC="gcc-5"; export CXX="g++-5"; fi
