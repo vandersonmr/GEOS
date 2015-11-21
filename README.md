@@ -4,11 +4,11 @@ The Guide for Exploration of the Optimization Space is a LLVM tool designed for 
 
 ### Source code
 
-* Get the sources: `git clone https://github.com/vandersonmr/GEOS`
+* Get the sources: `git clone https://github.com/vandersonmr/GEOS; git checkout v1.0-port3.7`
 
 ### Dependences
 
-* GEOS 2.0 needs LLVM 3.8 and Clang 3.8.
+* GEOS 2.0 needs LLVM 3.7 and Clang 3.7.
 
 ### Building
 
