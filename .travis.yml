@@ -17,6 +17,8 @@ addons:
     - multiarch-support 
     - libconfig++8-dev
     - gdb
+    - clang-3.6
+    - clang-3.6-dev
     - gcc-5
     - g++-5
     - gcc-5-multilib
