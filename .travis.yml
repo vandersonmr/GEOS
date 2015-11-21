@@ -16,6 +16,7 @@ addons:
       #- llvm-toolchain-precise-3.7
     - ubuntu-toolchain-r-test
     packages:
+    - libpapi-dev
     - libconfig++8-dev
     - gdb
     - gcc-5
