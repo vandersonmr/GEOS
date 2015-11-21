@@ -6,6 +6,8 @@ compiler:
 branches:
   only:
     - master
+    - v1.0-port3.7
+
 
 addons:
   apt:
