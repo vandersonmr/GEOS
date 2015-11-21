@@ -1,0 +1,46 @@
+language: cpp
+
+compiler: 
+  - gcc
+  - clang
+
+branches:
+  only:
+    - master
+
+addons:
+  apt:
+    sources:
+    - llvm-toolchain-precise
+    - llvm-toolchain-precise-3.6
+      #- llvm-toolchain-precise-3.7
+    - ubuntu-toolchain-r-test
+    packages:
+    - libconfig++8-dev
+    - gdb
+    - gcc-4.9
+    - g++-4.9
+    - gcc-4.9-multilib
+    - g++-4.9-multilib
+    - gcc-multilib
+    - g++-multilib
+    - linux-libc-dev:i386
+    - libcurl3:i386
+    - libedit2
+    - libedit-dev
+    - llvm-3.6
+    - llvm-3.6-dev
+      #- llvm-3.7
+      #- llvm-3.7-dev
+      #- llvm-3.8
+      #- llvm-3.8-dev
+
+install:
+  - if [ "${TRAVIS_OS_NAME}" = "linux" ]; then export CC="gcc-4.9"; export CXX="g++-4.9"; fi
+
+os:
+  - linux
+
+script: 
+  - cmake
+  - make -j2
