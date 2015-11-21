@@ -1,3 +1,4 @@
+sudo: false
 language: cpp
 
 compiler: 
@@ -42,5 +43,7 @@ os:
   - linux
 
 script: 
-  - cmake
+  - mkdir build
+  - cd build
+  - cmake ..
   - make -j2
