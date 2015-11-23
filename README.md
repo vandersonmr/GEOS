@@ -1,4 +1,5 @@
-# Guide for Exploration of the Optimization Space (GEOS) 
+# Guide for Exploration of the Optimization Space (GEOS)  [![Build Status](https://travis-ci.org/vandersonmr/GEOS.svg?branch=master)](https://travis-ci.org/vandersonmr/GEOS)   [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.txt)
+
 The Guide for Exploration of the Optimization Space is a LLVM tool designed for be used by heuristics in the search for good optimization sequences. This tool, which is also known as GEOS, provides a set of analysis that can mensure the execution time of a LLVM code. By invoking GEOS the heuristic can be guided without executing the code, what can be seriously faster.
 
 ### Source code
@@ -7,7 +8,7 @@ The Guide for Exploration of the Optimization Space is a LLVM tool designed for 
 
 ### Dependences
 
-* GEOS 1.0 needs LLVM 3.6 and Clang 3.6.
+* GEOS 2.0 needs LLVM 3.8 and Clang 3.8.
 
 ### Building
 
