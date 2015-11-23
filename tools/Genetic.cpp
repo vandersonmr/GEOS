@@ -176,7 +176,10 @@ bool evaluate(Solution &S,
   auto NewCost = (rand() % 10) + 1;
   if (!Randomness) {
     auto PO = GEOS::applyPasses(PModule, S.Sequence);
-    if (!PO) return false;
+    if (!PO) {
+      S.setCost(DBL_MAX);
+      return false;
+    }
     NewCost = GEOS::analyseCost(PO, Opts); 
   }  
 
