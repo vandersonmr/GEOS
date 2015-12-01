@@ -96,7 +96,7 @@ class ExecutionTimeMeasurer {
       return getPAPIProfile(Argv, nullptr, PAPIEvents, Size);
     }
 
-    ~ExecutionTimeMeasurer() {};
+    virtual ~ExecutionTimeMeasurer() {};
 };
 
 /// \brief This class implements a ExecutionTimeMeasurer using a JIT compiler.
