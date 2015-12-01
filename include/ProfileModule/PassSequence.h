@@ -28,12 +28,19 @@
 #include <cctype>
 
 /// \brief List of all possible function pass.
+// Optimizations which raise errors when applied by 
+// themselves (issue #5):
+//  - blockPlacement
+//  - dse
+//  - gvn
+//  - instcombine
+//  - sink
 enum OptimizationKind {
     adce,
     alwaysInline,
     argpromotion,
     bbVectorize,
-    //blockPlacement,
+    //blockPlacement,  
     breakCritEdges,
     codegenprepare,
     constmerge,
@@ -42,7 +49,7 @@ enum OptimizationKind {
     deadargelim,
     deadtypeelim,
     die,
-    //dse,
+    //dse,              
     functionattrs,
     globaldce,
     globalopt,
@@ -293,7 +300,7 @@ class PassSequence {
     unsigned size() const {
       return Opts.size();
     }
-
+    
     void print() {
       for (auto Opt : Opts) {
         auto P = getOptimization(Opt);
@@ -303,6 +310,15 @@ class PassSequence {
         }
       }
       printf(" O%d | OSize = %d", OLevel, OSize);
+      printf("\n");
+    }
+
+    void printIntVec() {
+      for (auto Opt : Opts) {
+        int OptNum = static_cast<int>(Opt);
+        int Plus = 0;
+        printf("|%d", OptNum+Plus);
+      }
       printf("\n");
     }
 
