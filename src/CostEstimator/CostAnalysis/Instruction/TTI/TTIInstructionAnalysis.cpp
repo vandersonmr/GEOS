@@ -59,14 +59,14 @@ double TTIInstructionAnalysis::estimateCost(StringRef FuncName,
     for (auto &I : BB) {
       unsigned InstCost = InstructionCostModel->getInstructionCost(&I);
 
-      if (InstCost != (unsigned) - 1)                                                                     
-        BBCost += InstCost;                                                                               
-      else                                                                                                
+      if (InstCost != (unsigned) - 1)
+        BBCost += InstCost;
+      else
         BBCost += 1; 
     }
 
     Cost += Profile->getBasicBlockFrequency(BB) * BBCost;
   }
-  
-  return Cost * 0.9 * 0.25;   
+
+  return (Cost * 0.9 * 0.25) / Opts.CPUClockInGHz;
 }

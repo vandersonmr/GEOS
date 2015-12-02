@@ -35,5 +35,5 @@ double StaticInstructionAnalysis::estimateCost(StringRef FuncName,
     Cost += Profile->getBasicBlockFrequency(BB) * BBCost;
   }
   
-  return Cost;   
+  return Cost / Opts.CPUClockInGHz;
 } 
