@@ -30,5 +30,5 @@ double RandomAnalysis::estimateCost(StringRef FuncName,
   for (auto &BB : *Func) 
     Cost += uniform_dist(E1) * Profile->getBasicBlockFrequency(BB);
   
-  return Cost;   
+  return Cost / Opts.CPUClockInGHz;
 }

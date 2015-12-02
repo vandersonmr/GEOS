@@ -55,7 +55,7 @@ class ExecutionTimeMeasurer {
     /// \brief Call and measure the execution time of the run function passing
     /// the arguments argv and evnp to the module's main function.
     double getExecutionTime(std::vector<std::string>& Argv, 
-        char* const* Envp, const int PAPIEvent = -1) {
+        char* const* Envp) {
       flushCache();
       timestampType T0, T1;
       T0 = getTimestamp();
@@ -96,7 +96,7 @@ class ExecutionTimeMeasurer {
       return getPAPIProfile(Argv, nullptr, PAPIEvents, Size);
     }
 
-    ~ExecutionTimeMeasurer() {};
+    virtual ~ExecutionTimeMeasurer() {};
 };
 
 /// \brief This class implements a ExecutionTimeMeasurer using a JIT compiler.

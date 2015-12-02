@@ -130,8 +130,8 @@ analyseFunctionCost(StringRef FuncName,
   Module *MyModule = PModule->getLLVMModule();
   Function *LLVMFunc = MyModule->getFunction(FuncName);
 
-  assert(LLVMFunc != nullptr
-      && "Trying to access a LLVM Function that don't exist!");
+  if (LLVMFunc != nullptr)
+    assert(false && "Trying to access a LLVM Function that don't exist!");
 
   return CostEstimator::getFunctionCost(FuncName, PModule.get(), Opts);
 }
