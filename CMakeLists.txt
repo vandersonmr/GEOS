@@ -10,7 +10,7 @@ execute_process (COMMAND llvm-config --cxxflags --ldflags
 string (REPLACE "\n" " " LLVM_CONFIG "${LLVM_CONFIG_N}")
 
 set (CMAKE_CXX_FLAGS 
-  "-std=c++14 -fno-rtti -Wall -Wextra -Werror -Wno-ignored-qualifiers -Wno-unused-function -Wno-unused-parameter -g ${LLVM_CONFIG} -O3")
+  "-std=c++14 -fno-rtti -Wall -Wextra -Werror -Wno-ignored-qualifiers -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable -g ${LLVM_CONFIG} -O0")
 
 add_subdirectory (src)
 add_subdirectory (tools)
