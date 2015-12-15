@@ -49,6 +49,8 @@ int main(int argc, char** argv) {
   std::shared_ptr<ProfileModule> PModule(new ProfileModule(MyModule));
   CostEstimatorOptions Opts = gcl::populatePModule(PModule);
 
+  int PAPIEvents[1] = {PAPI_TOT_CYC};
+
   std::vector<PassSequence> Seqs;
 
   for (auto S : Sequences) {
@@ -73,18 +75,12 @@ int main(int argc, char** argv) {
     Seqs.push_back(PSeq);
   }
 
-  for (auto &F : *(PModule->getLLVMModule())) {
-    printf("Function: %s\n", F.getName().str().c_str());
-    for (auto &BB : F)
-      printf("%s - %ld\n", BB.getName().str().c_str(),
-          PModule->getBasicBlockFrequency(BB));
-  }
-  printf("==========================================\n");
   for (auto PSeq : Seqs) {
     auto PO = GEOS::applyPasses(PModule, PSeq);
     if (PO) {
       double Cost = GEOS::analyseCost(PO, Opts);
-      PSeq.printIntVec();
+      double RealCost = 
+        (GEOS::getPAPIProfile(PO, ExecutionKind::JIT, PAPIEvents, 1))[0];
       if (Cost < 0.01)
         for (auto &F : *(PO->getLLVMModule())) {
           printf("Function: %s\n", F.getName().str().c_str());
@@ -92,9 +88,16 @@ int main(int argc, char** argv) {
             printf("%s - %ld\n", BB.getName().str().c_str(),
                 PO->getBasicBlockFrequency(BB));
         }
-      printf("Cost: %lf\n", Cost);
+      PSeq.printIntVec();
+      printf("Cost: %lf\nRealCost: %lf\n", Cost, RealCost);
     }
   }
+
+  printf("----------------------------\n");
+  double Cost = GEOS::analyseCost(PModule, Opts);
+  double RealCost = 
+    (GEOS::getPAPIProfile(PModule, ExecutionKind::JIT, PAPIEvents, 1))[0];
+  printf("Cost: %lf\nRealCost: %lf\n", Cost, RealCost);
   return 0;
 }
 
