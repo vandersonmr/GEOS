@@ -56,7 +56,7 @@ enum OptimizationKind {
     gvn,
     indvars,
     inlining,
-    instcombine,
+    //instcombine,
     //internalize,
     ipconstprop,
     ipsccp,
@@ -112,7 +112,7 @@ Begin_Enum_String( OptimizationKind )
   Enum_String( gvn );
   Enum_String( indvars );
   Enum_String( inlining );
-  Enum_String( instcombine );
+  //Enum_String( instcombine );
   //Enum_String( internalize );
   Enum_String( ipconstprop );
   Enum_String( ipsccp );
