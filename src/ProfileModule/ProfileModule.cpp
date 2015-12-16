@@ -82,6 +82,31 @@ Module* ProfileModule::getLLVMModule() const {
   return LLVMModule;
 }
 
+bool ProfileModule::hasInstructionFrequency(const Instruction &Inst) const {
+  return Inst.getMetadata("ifreq") != nullptr;
+}
+
+void 
+ProfileModule::setInstructionFrequency(Instruction &Inst, uint64_t Freq) {
+  MDBuilder MDB(Inst.getContext());
+
+  SmallVector<Metadata*, 4> Val(1);
+  Type *Int64Ty = Type::getInt64Ty(Inst.getContext());
+  Val[0] = MDB.createConstant(ConstantInt::get(Int64Ty, Freq));
+  MDNode *Node = MDNode::get(Inst.getContext(), Val);
+  Inst.setMetadata("ifreq", Node);
+}
+
+uint64_t
+ProfileModule::getInstructionFrequency(const Instruction &Inst) const {
+  uint64_t Freq = 0;
+  if (hasInstructionFrequency(Inst))
+    Freq = cast<ConstantInt>(cast<ConstantAsMetadata>(
+          Inst.getMetadata("ifreq")->getOperand(0))->getValue())
+      ->getSExtValue();
+  return Freq;
+}
+
 bool ProfileModule::hasBranchFrequency(const BasicBlock &BB) const {
   return BB.getTerminator()->getMetadata("prof") != nullptr;
 }
@@ -236,10 +261,25 @@ void ProfileModule::repairFunctionProfiling(Function *Func) {
   }
 }
 
+void ProfileModule::propagateInstToBasicBlock() {
+  for (auto &Func : *LLVMModule) 
+    for (auto &BBlock : Func) {
+      if (hasBasicBlockFrequency(BBlock)) continue;
+
+      uint64_t Freq = 0;
+      for (auto &Inst : BBlock)
+        Freq = (getInstructionFrequency(Inst) > Freq) ?
+          getInstructionFrequency(Inst) : Freq;
+      setBasicBlockFrequency(BBlock, Freq);
+    }
+}
+
 void ProfileModule::repairProfiling() {
+  propagateInstToBasicBlock();
   for (auto &Func : *LLVMModule) {
     for (auto &BB : Func) {
-      if (hasBranchFrequency(BB)) {
+      if (hasBranchFrequency(BB) && getBranchFrequency(BB).size() == 
+          BB.getTerminator()->getNumSuccessors()) {
         auto Frequency = 0;
         auto NumSucc = 0;
         for (auto &BFreq : getBranchFrequency(BB)) {

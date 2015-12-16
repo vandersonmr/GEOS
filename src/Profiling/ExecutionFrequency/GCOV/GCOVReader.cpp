@@ -92,6 +92,9 @@ void loadGCOV(std::vector<MemoryBuffer*> GCDAs,
       ++MBB;
       for(auto &BB : *LLVMFunc) {
         Profile->setBasicBlockFrequency(BB, (*MBB).get()->getCount());  
+        for (auto &I : BB)
+          Profile->setInstructionFrequency(I, (*MBB).get()->getCount());
+
         (*MBB)->sortDstEdges();
         std::vector<uint32_t> Freqs;
         for (auto BranchFreq = (*MBB)->dst_begin(); 

@@ -60,6 +60,21 @@ class ProfileModule {
     /// \brief Repair each function in the module.
     void repairProfiling();
 
+    /// \brief Propagates the frequency stored in each instruction to its 
+    /// basic block (if it doesn't already have a frequency).
+    void propagateInstToBasicBlock();
+    
+    /// \brief Return true if the execution frequency of the given instruction
+    /// is known, otherwise returns false.
+    bool hasInstructionFrequency(const llvm::Instruction&) const;
+
+    /// \brief Returns the execution frequency of the given instruction, but if 
+    /// it doesn't have the frequency, it will return 0.
+    uint64_t getInstructionFrequency(const llvm::Instruction&) const; 
+
+    /// \brief Sets the execution frequency of a instruction.
+    void setInstructionFrequency(llvm::Instruction&, uint64_t); 
+
     /// \brief Return true if the execution frequency of the given basic block
     /// is known, otherwise returns false.
     bool hasBasicBlockFrequency(const llvm::BasicBlock&) const;
