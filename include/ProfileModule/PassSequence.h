@@ -49,20 +49,20 @@ enum OptimizationKind {
     deadargelim,
     deadtypeelim,
     die,
-    //dse,              
+    dse,              
     functionattrs,
     globaldce,
     globalopt,
-    //gvn,
+    gvn,
     indvars,
     inlining,
-    //instcombine,
+    instcombine,
     //internalize,
     ipconstprop,
     ipsccp,
     jumpThreading,
     lcssa,
-    //licm,
+    licm,
     loopDeletion,
     //loopExtract,
     //loopExtractSingle,
@@ -85,7 +85,7 @@ enum OptimizationKind {
     scalarrepl,
     sccp,
     simplifycfg,
-    //sink,
+    sink,
     stripDeadPrototypes,
     tailcallelim
 };
@@ -105,20 +105,20 @@ Begin_Enum_String( OptimizationKind )
   Enum_String( deadargelim );
   Enum_String( deadtypeelim );
   Enum_String( die );
-  //Enum_String( dse );
+  Enum_String( dse );
   Enum_String( functionattrs );
   Enum_String( globaldce );
   Enum_String( globalopt );
-  //Enum_String( gvn );
+  Enum_String( gvn );
   Enum_String( indvars );
   Enum_String( inlining );
-  //Enum_String( instcombine );
+  Enum_String( instcombine );
   //Enum_String( internalize );
   Enum_String( ipconstprop );
   Enum_String( ipsccp );
   Enum_String( jumpThreading );
   Enum_String( lcssa );
-  //Enum_String( licm );
+  Enum_String( licm );
   Enum_String( loopDeletion );
   //Enum_String( loopExtract );
   //Enum_String( loopExtractSingle );
@@ -141,7 +141,7 @@ Begin_Enum_String( OptimizationKind )
   Enum_String( scalarrepl );
   Enum_String( sccp );
   Enum_String( simplifycfg );
-  //Enum_String( sink );
+  Enum_String( sink );
   Enum_String( stripDeadPrototypes );
   Enum_String( tailcallelim );
 }
@@ -280,11 +280,13 @@ class PassSequence {
 
     void populatePassManager(llvm::legacy::PassManager &PM, 
         llvm::legacy::FunctionPassManager &FPM) {
-      llvm::PassManagerBuilder Builder;
-      Builder.SizeLevel = static_cast<int>(OSize)  - 1;
-      Builder.OptLevel  = static_cast<int>(OLevel) - 1;
-      Builder.populateFunctionPassManager(FPM);
-      Builder.populateModulePassManager(PM);
+      if (OSize != None && OLevel != None) {
+        llvm::PassManagerBuilder Builder;
+        Builder.SizeLevel = static_cast<int>(OSize)  - 1;
+        Builder.OptLevel  = static_cast<int>(OLevel) - 1;
+        Builder.populateFunctionPassManager(FPM);
+        Builder.populateModulePassManager(PM);
+      }
 
       for (auto Opt : Opts) {
         auto P = getOptimization(Opt);
