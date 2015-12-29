@@ -29,52 +29,47 @@ struct MachineRegisterUse : public FunctionPass {
   };
 
   void getAnalysisUsage(AnalysisUsage &AU) const {
+    AU.setPreservesAll();
     AU.addRequired<MachineFunctionAnalysis>();
   }
 
   bool First = true;
   double getFunctionCost(Function &F) {
-    if (FuncToMachine[F.getName().str()] != 0 && 
-        !MFCost.count(F.getName().str())) {
-
-      calculateRegisterCost(*FuncToMachine[F.getName().str()]);
-    }
-
     return MFCost[F.getName().str()];
   }
 
   virtual bool runOnFunction(Function &F) {
-    FuncToMachine[F.getName().str()] = 
-      &getAnalysis<MachineFunctionAnalysis>().getMF();
+    MachineFunction *MF = &getAnalysis<MachineFunctionAnalysis>().getMF();
+    StringRef FunName(F.getName());
+
+    MFCost[FunName.str()] = 0.0;
+    for (auto &MB : *MF) {
+      int MBCost = 0;
+      for (auto &MI : MB) 
+        if (MI.mayLoadOrStore())
+          MBCost += 1;
+
+      MFCost[FunName.str()] += 
+        Profile->getBasicBlockFrequency(*(MB.getBasicBlock())) * MBCost * 1.3;
+
+    }
+
     return false;
   }
 
   private:
   unsigned NextFnNum = 0;
-  std::unordered_map<std::string, MachineFunction*> FuncToMachine;
   std::unordered_map<std::string, double> MFCost;
 
-  void calculateRegisterCost(MachineFunction&); 
+  void calculateRegisterCost(StringRef); 
 };
-
-void MachineRegisterUse::calculateRegisterCost(MachineFunction &MF) {
-  for (auto &MB : MF) {
-    int MBCost = 0;
-    for (auto &MI : MB)  
-      if (MI.mayLoad() || MI.mayStore())
-        MBCost += 1;
-    
-    MFCost[MF.getName().str()] += 
-      Profile->getBasicBlockFrequency(*(MB.getBasicBlock())) * MBCost * 1.3;
-  }
-}
 
 char MachineRegisterUse::ID = 0;
 
 MachineRegisterUse *MRU;
 
 RegisterUseAnalysis::RegisterUseAnalysis(const ProfileModule* P) {
-  PM = new PassManager;
+  PM = new legacy::PassManager;
   PModule = P;
   Module *M = P->getLLVMModule();
   MRU = runCodeGenPasses<MachineRegisterUse>(M, P, *PM);
@@ -87,6 +82,7 @@ RegisterUseAnalysis::~RegisterUseAnalysis() {
 double RegisterUseAnalysis::estimateCost(StringRef FuncName, 
     const ProfileModule *Profile, CostEstimatorOptions Opts) const {
 
-  Module *M = PModule->getLLVMModule();
-  return MRU->getFunctionCost(*(M->getFunction(FuncName))) * 0.25;
+  Module   *M = PModule->getLLVMModule();
+  Function *F = M->getFunction(FuncName);
+  return MRU->getFunctionCost(*F) * 0.25;
 }

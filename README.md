@@ -8,7 +8,7 @@ The Guide for Exploration of the Optimization Space is a LLVM tool designed for 
 
 ### Dependences
 
-* GEOS 2.0 needs LLVM 3.8 and Clang 3.8.
+* GEOS 2.0 needs LLVM 3.7 and Clang 3.7.
 
 ### Building
 

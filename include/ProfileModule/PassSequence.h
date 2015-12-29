@@ -17,7 +17,7 @@
 #include "llvm/Pass.h"
 #include "llvm/Transforms/IPO/PassManagerBuilder.h"
 #include "llvm/Transforms/Scalar.h"
-#include "llvm/PassManager.h"
+#include "llvm/IR/LegacyPassManager.h"
 #include "llvm/PassRegistry.h"
 
 #include "EnumString.h"
@@ -28,12 +28,19 @@
 #include <cctype>
 
 /// \brief List of all possible function pass.
+// Optimizations which raise errors when applied by 
+// themselves (issue #5):
+//  - blockPlacement
+//  - dse
+//  - gvn
+//  - instcombine
+//  - sink
 enum OptimizationKind {
     adce,
     alwaysInline,
     argpromotion,
     bbVectorize,
-    blockPlacement,
+    //blockPlacement,  
     breakCritEdges,
     codegenprepare,
     constmerge,
@@ -42,14 +49,14 @@ enum OptimizationKind {
     deadargelim,
     deadtypeelim,
     die,
-    dse,
+    dse,              
     functionattrs,
     globaldce,
     globalopt,
     gvn,
     indvars,
     inlining,
-    instcombine,
+    //instcombine,
     //internalize,
     ipconstprop,
     ipsccp,
@@ -89,7 +96,7 @@ Begin_Enum_String( OptimizationKind )
   Enum_String( alwaysInline );
   Enum_String( argpromotion );
   Enum_String( bbVectorize );
-  Enum_String( blockPlacement );
+  //Enum_String( blockPlacement );
   Enum_String( breakCritEdges );
   Enum_String( codegenprepare );
   Enum_String( constmerge );
@@ -105,7 +112,7 @@ Begin_Enum_String( OptimizationKind )
   Enum_String( gvn );
   Enum_String( indvars );
   Enum_String( inlining );
-  Enum_String( instcombine );
+  //Enum_String( instcombine );
   //Enum_String( internalize );
   Enum_String( ipconstprop );
   Enum_String( ipsccp );
@@ -271,13 +278,15 @@ class PassSequence {
         add(getRandomOptimizationKind());
     }
 
-    void populatePassManager(llvm::PassManager &PM, 
-        llvm::FunctionPassManager &FPM) {
-      llvm::PassManagerBuilder Builder;
-      Builder.SizeLevel = static_cast<int>(OSize)  - 1;
-      Builder.OptLevel  = static_cast<int>(OLevel) - 1;
-      Builder.populateFunctionPassManager(FPM);
-      Builder.populateModulePassManager(PM);
+    void populatePassManager(llvm::legacy::PassManager &PM, 
+        llvm::legacy::FunctionPassManager &FPM) {
+      if (OSize != None && OLevel != None) {
+        llvm::PassManagerBuilder Builder;
+        Builder.SizeLevel = static_cast<int>(OSize)  - 1;
+        Builder.OptLevel  = static_cast<int>(OLevel) - 1;
+        Builder.populateFunctionPassManager(FPM);
+        Builder.populateModulePassManager(PM);
+      }
 
       for (auto Opt : Opts) {
         auto P = getOptimization(Opt);
@@ -293,7 +302,7 @@ class PassSequence {
     unsigned size() const {
       return Opts.size();
     }
-
+    
     void print() {
       for (auto Opt : Opts) {
         auto P = getOptimization(Opt);

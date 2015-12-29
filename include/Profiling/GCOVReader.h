@@ -13,7 +13,7 @@
 #include "llvm/Support/MemoryBuffer.h"
 
 #include "ProfileModule/ProfileModule.h"
-#include "Profiling/GCOV.h"
+#include "llvm/Support/GCOV.h"
 
 #include <vector>
 

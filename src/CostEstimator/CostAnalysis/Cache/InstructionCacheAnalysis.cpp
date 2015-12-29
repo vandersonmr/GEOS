@@ -245,7 +245,7 @@ char MachineInstructionCacheAnalysis::ID = 0;
 MachineInstructionCacheAnalysis *MICA;
 
 InstructionCacheAnalysis::InstructionCacheAnalysis(const ProfileModule* P) {
-  PM = new PassManager;
+  PM = new legacy::PassManager;
   PModule = P;
   Module *M = P->getLLVMModule();
   MICA = runCodeGenPasses<MachineInstructionCacheAnalysis>(M, P, *PM);

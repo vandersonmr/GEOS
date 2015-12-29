@@ -97,5 +97,5 @@ TARGET_LINK_LIBRARIES(geos-fmm GEOS CostEstimator GCOV STATIC GEOSProf
   LLVMMCJIT LLVMRuntimeDyld LLVMInterpreter LLVMExecutionEngine  
   rt dl tinfo atomic pthread papi z m)
 
-INSTALL(TARGETS geos-orch geos-random geos-best geos-metric geos-analyser geos-fmm
-        RUNTIME DESTINATION bin)
+INSTALL(TARGETS geos-orch geos-random geos-best geos-metric geos-analyser geos-genetic geos-fmm
+  RUNTIME DESTINATION bin)

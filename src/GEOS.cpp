@@ -38,6 +38,7 @@ void GEOS::init() {
   PassRegistry *Registry = PassRegistry::getPassRegistry();
   initializeCore(*Registry);
   initializeCodeGen(*Registry);
+  initializeMachineDominatorTreePass(*Registry);
   initializeLoopStrengthReducePass(*Registry);
   initializeLowerIntrinsicsPass(*Registry);
   initializeUnreachableBlockElimPass(*Registry);
@@ -66,8 +67,8 @@ GEOS::applyPassesOnFunction(StringRef FuncName,
   std::shared_ptr<ProfileModule> ModuleCopy(PModule->getCopy());
   Module *MyModule = ModuleCopy->getLLVMModule();
 
-  PassManager PM;
-  FunctionPassManager FPM(MyModule);
+  legacy::PassManager PM;
+  legacy::FunctionPassManager FPM(MyModule);
   PS.populatePassManager(PM, FPM);
 
   Function *Func = MyModule->getFunction(FuncName);
@@ -89,8 +90,8 @@ GEOS::applyPasses(const std::shared_ptr<ProfileModule> PModule,
   pid_t pid = fork();
   if (pid == 0) { 
     Module *MyModule = PModule->getLLVMModule();
-    PassManager PM;
-    FunctionPassManager FPM(MyModule);
+    legacy::PassManager PM;
+    legacy::FunctionPassManager FPM(MyModule);
     PS.populatePassManager(PM, FPM);
 
     for (auto &Func : *MyModule) 

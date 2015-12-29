@@ -1,7 +1,7 @@
 language: cpp
 
 env:
-  - LLVMVER=3.6
+  - LLVMVER=3.7
 
 compiler: 
   - gcc
@@ -10,20 +10,20 @@ addons:
   apt:
     sources:
     - ubuntu-toolchain-r-test
-    - llvm-toolchain-precise-3.6
+    - llvm-toolchain-precise-3.7
     packages:
     - libc6
     - multiarch-support 
     - libconfig++8-dev
     - gdb
-    - clang-3.6
-    - clang-3.6-dev
+    - clang-3.7
+    - clang-3.7-dev
     - gcc-5
     - g++-5
     - gcc-5-multilib
     - g++-5-multilib
-    - llvm-3.6
-    - llvm-3.6-dev
+    - llvm-3.7
+    - llvm-3.7-dev
 
 install:
   - if [ "${TRAVIS_OS_NAME}" = "linux" ]; then export CC="gcc-5"; export CXX="g++-5"; fi
@@ -39,7 +39,7 @@ script:
   - wget http://mirrors.kernel.org/ubuntu/pool/universe/p/papi/libpapi-dev_5.3.0-3_amd64.deb
   - sudo dpkg -i *.deb
   - sudo apt-get install -qq cmake
-  - PATH=/usr/lib/llvm-3.6/bin:$PATH
+  - PATH=/usr/lib/llvm-3.7/bin:$PATH
   - llvm-config --version
   - mkdir build
   - cd build

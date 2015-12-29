@@ -14,7 +14,7 @@
 
 #include "CostEstimator/CostAnalysis.h"
 
-#include "llvm/PassManager.h"
+#include "llvm/IR/LegacyPassManager.h"
 #include "llvm/Support/TargetSelect.h"
 
 #include "./CostModel.cpp"
@@ -22,7 +22,7 @@
 using namespace llvm;
 
 CostModelAnalysis *InstructionCostModel = nullptr; 
-FunctionPassManager *FPM = nullptr;
+legacy::FunctionPassManager *FPM = nullptr;
 
 TTIInstructionAnalysis::TTIInstructionAnalysis() {
   PassRegistry &Registry = *PassRegistry::getPassRegistry();
@@ -46,7 +46,7 @@ double TTIInstructionAnalysis::estimateCost(StringRef FuncName,
   auto Func = M->getFunction(FuncName);
 
   if (FPM == nullptr) { 
-    FPM = new FunctionPassManager(M);
+    FPM = new legacy::FunctionPassManager(M);
     FPM->add(InstructionCostModel);
     FPM->doInitialization(); 
   }
