@@ -1,1 +1,3 @@
-add_library(GCOV GCOVReader.cpp)
+add_library(GEOSCov GCOVReader.cpp)
+
+install(TARGETS GEOSCov ARCHIVE DESTINATION lib)

@@ -1,3 +1,3 @@
-add_library(JITExecution JITExecution.cpp)
+add_library(GEOSJITExecution JITExecution.cpp)
 
 INSTALL(FILES saferun DESTINATION bin)

@@ -1,1 +1,3 @@
-add_library(STATIC StaticProfiling.cpp)
+add_library(GEOSStatic StaticProfiling.cpp)
+
+install(TARGETS GEOSStatic ARCHIVE DESTINATION lib)

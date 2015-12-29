@@ -1,6 +1,6 @@
 add_subdirectory(CostAnalysis)
 
-add_library(CostEstimator CostEstimator.cpp 
+add_library(GEOSCostEstimator CostEstimator.cpp 
   $<TARGET_OBJECTS:RandomCost>
   $<TARGET_OBJECTS:BranchAnalysis>
   $<TARGET_OBJECTS:CallAnalysis>
@@ -8,3 +8,5 @@ add_library(CostEstimator CostEstimator.cpp
   $<TARGET_OBJECTS:StaticInstructionAnalysis>
   $<TARGET_OBJECTS:TTIAnalysis>
   )
+
+install(TARGETS GEOSCostEstimator ARCHIVE DESTINATION lib)
