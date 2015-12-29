@@ -315,15 +315,6 @@ class PassSequence {
       printf("\n");
     }
 
-    void printIntVec() {
-      for (auto Opt : Opts) {
-        int OptNum = static_cast<int>(Opt);
-        int Plus = 0;
-        printf("|%d", OptNum+Plus);
-      }
-      printf("\n");
-    }
-
     /// \brief Returns a PassSequence of the same size of both PassSequences 
     /// (parameter and this). This PassSequences is created by a mix between 
     /// them. Where there is 50% chance for each pass to be from the first or 
