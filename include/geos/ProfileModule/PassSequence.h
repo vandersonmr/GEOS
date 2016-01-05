@@ -280,7 +280,7 @@ class PassSequence {
 
     void populatePassManager(llvm::legacy::PassManager &PM, 
         llvm::legacy::FunctionPassManager &FPM) {
-      if (OSize != None && OLevel != None) {
+      if (OSize != None || OLevel != None) {
         llvm::PassManagerBuilder Builder;
         Builder.SizeLevel = static_cast<int>(OSize)  - 1;
         Builder.OptLevel  = static_cast<int>(OLevel) - 1;
