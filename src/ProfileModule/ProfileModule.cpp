@@ -24,6 +24,8 @@
 #include "llvm/Support/FileSystem.h"
 #include "llvm/Transforms/Utils/Cloning.h"
 
+#include <limits.h>
+
 using namespace llvm;
 
 bool hasWeight(const Instruction &I) {
@@ -266,10 +268,14 @@ void ProfileModule::propagateInstToBasicBlock() {
     for (auto &BBlock : Func) {
       if (hasBasicBlockFrequency(BBlock)) continue;
 
-      uint64_t Freq = 0;
-      for (auto &Inst : BBlock)
-        Freq = (getInstructionFrequency(Inst) > Freq) ?
+      uint64_t Freq = ULLONG_MAX;
+      for (auto &Inst : BBlock) {
+        auto instFreq = getInstructionFrequency(Inst);
+        Freq = (instFreq != 0 && instFreq < Freq) ?
           getInstructionFrequency(Inst) : Freq;
+      }
+
+      if (Freq == ULLONG_MAX) Freq = 0;
       setBasicBlockFrequency(BBlock, Freq);
     }
 }
