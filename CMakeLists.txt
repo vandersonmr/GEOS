@@ -14,3 +14,5 @@ set (CMAKE_CXX_FLAGS
 
 add_subdirectory (src)
 add_subdirectory (tools)
+
+install (DIRECTORY "${PROJECT_SOURCE_DIR}/include/geos" DESTINATION include) 

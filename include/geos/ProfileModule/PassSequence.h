@@ -20,7 +20,7 @@
 #include "llvm/IR/LegacyPassManager.h"
 #include "llvm/PassRegistry.h"
 
-#include "EnumString.h"
+#include "geos/EnumString.h"
 
 #include <stdio.h>
 #include <vector>

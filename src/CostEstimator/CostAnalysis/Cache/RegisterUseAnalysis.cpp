@@ -12,10 +12,10 @@
 ///
 //===----------------------------------------------------------------------===//
 
-#include "CostEstimator/CostAnalysis.h"
+#include "geos/CostEstimator/CostAnalysis.h"
 
-#include "CostEstimator/CodeGenModule.h"
-#include "CostEstimator/InstructionCostEstimator.h"
+#include "geos/CostEstimator/CodeGenModule.h"
+#include "geos/CostEstimator/InstructionCostEstimator.h"
 
 using namespace llvm;
 

@@ -15,7 +15,7 @@
 
 #include "llvm/ExecutionEngine/MCJIT.h"
 
-#include "RealExecutionTime/ExecutionTimeMeasurer.h"
+#include "geos/RealExecutionTime/ExecutionTimeMeasurer.h"
 
 using namespace llvm;
 

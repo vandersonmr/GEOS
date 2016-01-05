@@ -15,10 +15,10 @@
 
 #include "llvm/IR/LegacyPassManager.h"
 
-#include "ProfileModule/ProfileModule.h"
-#include "CostEstimator/CostEstimatorOptions.h"
-#include "RealExecutionTime/ExecutionTimeMeasurer.h"
-#include "ProfileModule/PassSequence.h"
+#include "geos/ProfileModule/ProfileModule.h"
+#include "geos/CostEstimator/CostEstimatorOptions.h"
+#include "geos/RealExecutionTime/ExecutionTimeMeasurer.h"
+#include "geos/ProfileModule/PassSequence.h"
 
 /// \brief This namespace is responsible for applying passes into a 
 /// ProfileModule, analyse its execution time and make copies of it.

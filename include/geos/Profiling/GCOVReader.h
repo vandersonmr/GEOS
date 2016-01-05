@@ -12,7 +12,7 @@
 
 #include "llvm/Support/MemoryBuffer.h"
 
-#include "ProfileModule/ProfileModule.h"
+#include "geos/ProfileModule/ProfileModule.h"
 #include "llvm/Support/GCOV.h"
 
 #include <vector>

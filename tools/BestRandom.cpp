@@ -13,7 +13,7 @@
 ///
 //===----------------------------------------------------------------------===//
 
-#include "GEOS.h"
+#include "geos/GEOS.h"
 
 #include "llvm/Bitcode/ReaderWriter.h"
 #include "llvm/IRReader/IRReader.h"   
@@ -22,7 +22,7 @@
 #include "llvm/Support/SourceMgr.h"
 #include "llvm/IR/LLVMContext.h"
 
-#include "GEOSCommandLineParser.h"
+#include "geos/GEOSCommandLineParser.h"
 
 #include <stack>
 #include <limits>

@@ -10,7 +10,7 @@
 //
 //===----------------------------------------------------------------------===//
 
-#include "ProfileModule/ProfileModule.h"
+#include "geos/ProfileModule/ProfileModule.h"
 
 /// \brief This function loads from a file the execution cost of external
 /// function calls and adds this information in the ProfileModule. The first

@@ -12,7 +12,7 @@
 ///
 //===----------------------------------------------------------------------===//
 
-#include "ProfileModule/ProfileModule.h"
+#include "geos/ProfileModule/ProfileModule.h"
 
 #include "llvm/Analysis/Passes.h"
 #include "llvm/Analysis/BlockFrequencyInfo.h"

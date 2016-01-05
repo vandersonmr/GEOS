@@ -12,7 +12,7 @@
 ///
 //===----------------------------------------------------------------------===//
 
-#include "ProfileModule/ProfileModule.h"
+#include "geos/ProfileModule/ProfileModule.h"
 
 /// \brief This function estimate the execution frequency of each branch and
 /// add this information in the Profile Module.

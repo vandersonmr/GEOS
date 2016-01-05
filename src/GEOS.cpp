@@ -13,7 +13,7 @@
 ///
 //===----------------------------------------------------------------------===//
 
-#include "GEOS.h"
+#include "geos/GEOS.h"
 
 #include "llvm/Support/MemoryBuffer.h"
 #include "llvm/Support/TargetSelect.h"
@@ -23,7 +23,7 @@
 #include "llvm/Support/FileSystem.h"
 #include "llvm/Support/SourceMgr.h"
 
-#include "CostEstimator/CostEstimator.h"
+#include "geos/CostEstimator/CostEstimator.h"
 
 #include <cstdlib>
 #include <unistd.h>

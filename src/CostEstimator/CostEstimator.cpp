@@ -13,9 +13,9 @@
 ///
 //===----------------------------------------------------------------------===//
 
-#include "CostEstimator/CostEstimator.h"
+#include "geos/CostEstimator/CostEstimator.h"
 
-#include "CostEstimator/CostAnalysis.h"
+#include "geos/CostEstimator/CostAnalysis.h"
 
 using namespace llvm;
 

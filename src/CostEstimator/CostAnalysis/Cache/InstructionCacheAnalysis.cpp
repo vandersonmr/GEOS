@@ -16,11 +16,11 @@
 //  * Follow more the algorithm
 //===----------------------------------------------------------------------===//
 
-#include "CostEstimator/CostAnalysis.h"
+#include "geos/CostEstimator/CostAnalysis.h"
 
-#include "CostEstimator/CodeGenModule.h"
-#include "CostEstimator/InstructionCostEstimator.h"
-#include "CostEstimator/LRUCache.h"
+#include "geos/CostEstimator/CodeGenModule.h"
+#include "geos/CostEstimator/InstructionCostEstimator.h"
+#include "geos/CostEstimator/LRUCache.h"
 
 #include <unordered_map>
 

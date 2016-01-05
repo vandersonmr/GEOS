@@ -16,7 +16,7 @@
 #include "llvm/IR/IntrinsicInst.h"
 #include "llvm/IR/Value.h"
 
-#include "CostEstimator/InstructionCostEstimator.h"
+#include "geos/CostEstimator/InstructionCostEstimator.h"
 
 unsigned 
 InstructionCostEstimator::getInstructionCost(const llvm::Instruction &I) {

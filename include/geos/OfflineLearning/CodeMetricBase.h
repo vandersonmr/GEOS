@@ -15,7 +15,7 @@
 #ifndef CODEMETRICBASE_H
 #define CODEMETRICBASE_H
 
-#include "ProfileModule/ProfileModule.h"
+#include "geos/ProfileModule/ProfileModule.h"
 #include <string>
 #include <vector>
 #include <sstream>

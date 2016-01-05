@@ -17,7 +17,7 @@
 #include "llvm/IR/Instructions.h"
 #include "llvm/Transforms/Utils/Cloning.h"
 
-#include "Profiling/GEOSProfiler.h"
+#include "geos/Profiling/GEOSProfiler.h"
 
 #define llu long long unsigned
 
