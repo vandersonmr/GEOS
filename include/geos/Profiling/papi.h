@@ -288,7 +288,7 @@ read the documentation carefully.  */
 	a few other headers, and doesn't understand signals. - dkt
 */
 #ifdef _WIN32                   /* Windows specific definitions are included below */
-#include "win_extras.h"
+#include "geos/win_extras.h"
 #else                           /* This stuff is specific to Linux/Unix */
 #include <signal.h>
 #define long_long long long

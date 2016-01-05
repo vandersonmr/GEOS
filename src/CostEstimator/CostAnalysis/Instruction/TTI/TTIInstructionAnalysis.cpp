@@ -12,7 +12,7 @@
 ///
 //===----------------------------------------------------------------------===//
 
-#include "CostEstimator/CostAnalysis.h"
+#include "geos/CostEstimator/CostAnalysis.h"
 
 #include "llvm/IR/LegacyPassManager.h"
 #include "llvm/Support/TargetSelect.h"

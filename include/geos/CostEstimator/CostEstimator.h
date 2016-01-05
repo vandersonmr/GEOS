@@ -11,8 +11,8 @@
 ///
 //===----------------------------------------------------------------------===//
 
-#include "CostEstimator/CostEstimatorOptions.h"
-#include "ProfileModule/ProfileModule.h"
+#include "geos/CostEstimator/CostEstimatorOptions.h"
+#include "geos/ProfileModule/ProfileModule.h"
 
 namespace CostEstimator {
   extern "C" {

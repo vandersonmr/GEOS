@@ -17,8 +17,8 @@
 #include "llvm/IR/Module.h"
 #include "llvm/Support/GCOV.h"
 
-#include "ProfileModule/PassSequence.h"
-#include "ProfileModule/ModuleMetric.h"
+#include "geos/ProfileModule/PassSequence.h"
+#include "geos/ProfileModule/ModuleMetric.h"
 
 #include <vector>
 #include <unordered_map>

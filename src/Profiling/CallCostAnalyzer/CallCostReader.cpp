@@ -14,7 +14,7 @@
 /// opt -strip-debug -load /usr/local/lib/libLLVMCallCost.so -call-cost test.ll
 //
 //===----------------------------------------------------------------------===//
-#include "Profiling/CallCostReader.h"
+#include "geos/Profiling/CallCostReader.h"
 
 #include "llvm/IR/Module.h"
 #include "llvm/IR/Instructions.h"

@@ -12,30 +12,28 @@
 /// two ProfileModules with the distance function; 
 ///
 //===----------------------------------------------------------------------===//
-#ifndef CORRECTIONBASE_H
-#define CORRECTIONBASE_H
+#ifndef OPTACCURACYBASE_H
+#define OPTACCURACYBASE_H
 
-#include "ProfileModule/PassSequence.h"
+#include "geos/ProfileModule/PassSequence.h"
 
 #include <vector>
+#include <unordered_map>
 #include <string>
 #include <sstream>
 #include <fstream>
 
-#define CorrectionBaseT std::vector<std::pair<PassSequence, std::vector<double>>>
+#define OptAccuracyBaseT std::unordered_map<int, std::vector<double>>
 
-CorrectionBaseT loadCorrectionBase(StringRef Str) {
-  CorrectionBaseT Base;
+OptAccuracyBaseT loadOptAccuracyBase(StringRef Str) {
+  OptAccuracyBaseT Base;
   std::ifstream Infile(Str.str().c_str());
   std::string Line;
   while (std::getline(Infile, Line)) {
-    std::string Sequence;
+    std::string Optimization;
     std::istringstream Iss(Line);
-    std::getline(Iss, Sequence, ']');
+    Iss >> Optimization;
 
-    char Aux;
-    Iss >> Aux;
-    
     std::vector<double> Corrections;
     for (int I = CostAnalysisKind::RegisterUse; 
         I != CostAnalysisKind::RandomCost; I++) {
@@ -44,33 +42,29 @@ CorrectionBaseT loadCorrectionBase(StringRef Str) {
       Corrections.push_back(C);
     }
 
-    PassSequence Passes;
-    Passes.loadString(Sequence);
+    PassSequence P;
+    P.loadString(Optimization);
 
-    Base.push_back(
-        std::pair<PassSequence, std::vector<double>>(Passes, Corrections));
+    Base[P[0]] = Corrections;
   }
 
   return Base;
 }
 
-double getCorrectionFor(PassSequence& P, CostEstimatorOptions Opts,
-    CorrectionBaseT& Base) {
+double getPassSequenceAccuracy(PassSequence& P, CostEstimatorOptions Opts,
+    OptAccuracyBaseT& Base) {
 
-  double Correction = 1;
-  unsigned NearestDistance = 10000;
-  for (auto &I : Base) {
-    auto D = I.first.distance(P);
-    if (D < NearestDistance) {
-      NearestDistance = D;
-      Correction = 0;
-      for (auto OptKind : Opts.AnalysisActivated) 
-        Correction += I.second[OptKind];
-      Correction /= Opts.AnalysisActivated.size();
+  double OCor = 0;
+  for (auto O : P) {
+    double Aux = 0;
+    for (auto OptKind : Opts.AnalysisActivated) {
+      if (Base.count(static_cast<int>(O)))
+        Aux += Base[static_cast<int>(O)][static_cast<int>(OptKind)];
     }
+    OCor += (Aux/Opts.AnalysisActivated.size());
   }
 
-  return Correction;
+  return 2-(OCor/P.size());
 }
 
 #endif

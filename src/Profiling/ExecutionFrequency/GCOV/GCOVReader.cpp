@@ -15,7 +15,7 @@
 //
 //===----------------------------------------------------------------------===//
 
-#include "Profiling/GCOVReader.h"
+#include "geos/Profiling/GCOVReader.h"
 
 #include "llvm/IR/Module.h"
 #include "llvm/IR/InstrTypes.h"

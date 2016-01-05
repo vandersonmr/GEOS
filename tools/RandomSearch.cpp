@@ -13,7 +13,7 @@
 ///
 //===----------------------------------------------------------------------===//
 
-#include "GEOS.h"
+#include "geos/GEOS.h"
 
 #include "llvm/Bitcode/ReaderWriter.h"
 #include "llvm/IRReader/IRReader.h"   
@@ -22,11 +22,11 @@
 #include "llvm/Support/SourceMgr.h"
 #include "llvm/IR/LLVMContext.h"
 
-#include "GEOSCommandLineParser.h"
-#include "OfflineLearning/CodeMetricBase.h"
-#include "OfflineLearning/AccuracyBase.h"
-#include "OfflineLearning/CorrectionBase.h"
-#include "OfflineLearning/OptAccuracyBase.h"
+#include "geos/GEOSCommandLineParser.h"
+#include "geos/OfflineLearning/CodeMetricBase.h"
+#include "geos/OfflineLearning/AccuracyBase.h"
+#include "geos/OfflineLearning/CorrectionBase.h"
+#include "geos/OfflineLearning/OptAccuracyBase.h"
 
 #include <vector>
 #include <limits>

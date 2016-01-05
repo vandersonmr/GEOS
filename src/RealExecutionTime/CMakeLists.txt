@@ -1,3 +1,4 @@
 add_library(GEOSJITExecution JITExecution.cpp)
 
+INSTALL(TARGETS GEOSJITExecution ARCHIVE DESTINATION lib)
 INSTALL(FILES saferun DESTINATION bin)

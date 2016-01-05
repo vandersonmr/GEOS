@@ -14,8 +14,8 @@
 #ifndef COSTANALYSIS_H
 #define COSTANALYSIS_H
 
-#include "CostEstimator/CostEstimatorOptions.h"
-#include "ProfileModule/ProfileModule.h"
+#include "geos/CostEstimator/CostEstimatorOptions.h"
+#include "geos/ProfileModule/ProfileModule.h"
 
 #include "llvm/IR/LegacyPassManager.h"
 

@@ -15,7 +15,7 @@
 
 #include "llvm/IR/Function.h"
 
-#include "ProfileModule/ProfileModule.h"
+#include "geos/ProfileModule/ProfileModule.h"
 
 #include <sys/time.h>
 #include <vector>

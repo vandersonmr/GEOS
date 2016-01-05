@@ -1,9 +1,9 @@
 #include "llvm/Support/CommandLine.h"
 
-#include "CostEstimator/CostEstimatorOptions.h" 
-#include "Profiling/GCOVReader.h" 
-#include "Profiling/StaticProfiling.h" 
-#include "Profiling/CallCostReader.h" 
+#include "geos/CostEstimator/CostEstimatorOptions.h" 
+#include "geos/Profiling/GCOVReader.h" 
+#include "geos/Profiling/StaticProfiling.h" 
+#include "geos/Profiling/CallCostReader.h" 
 
 using namespace llvm;
 
