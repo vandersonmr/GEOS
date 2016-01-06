@@ -39,6 +39,7 @@ class ProfileModule {
     uint64_t getExecutionFreqUsingSuccessors(llvm::BasicBlock *BB);
   public:
     std::unordered_map<std::string, uint64_t> BBFreq;
+    std::vector<std::string> Argv;
 
     /// \brief If this class has been optimized this function will return the
     /// optimizations used.
@@ -50,6 +51,11 @@ class ProfileModule {
     /// module.
     void setPasses(PassSequence P) {
       Passes = P;
+    }
+
+    /// \brief Returns true if there are arguments for this program.
+    bool hasArgs() {
+      return !Argv.empty();
     }
 
     /// \brief For each basic block in the CFG of the given function, its 
