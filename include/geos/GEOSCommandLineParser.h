@@ -5,6 +5,9 @@
 #include "geos/Profiling/StaticProfiling.h" 
 #include "geos/Profiling/CallCostReader.h" 
 
+#include <string>
+#include <sstream>
+
 using namespace llvm;
 
 static cl::opt<std::string> 
@@ -73,6 +76,11 @@ AnalysisSet(cl::desc("Choose an analysis set:"),
         "Set of analysis that does changes for diferents architectures."),
       clEnumValEnd));
 
+static cl::opt<std::string> 
+ArgsString("-arguments", cl::desc("The arguments of the program."));
+static cl::alias 
+ArgsStringAlias("argv", cl::desc("Alias for -arguments"), cl::aliasopt(ArgsString));
+
 namespace gcl {
   void GEOSParseCommandLineOptions(int argc, char** argv) {
     cl::ParseCommandLineOptions(argc, argv);
@@ -92,6 +100,15 @@ namespace gcl {
         GCDAList.push_back(MemoryBuffer::getFile(*iGCDA).get().release()); 
         ++iGCDA;
         ++iGCNO;
+      }
+
+      if (!ArgsString.empty()) {
+        PModule->Argv.push_back(LLVMFilename);
+        std::stringstream Stream(ArgsString);
+        std::string Arg;
+        while (std::getline(Stream, Arg, ' '))
+          if (!Arg.empty())
+            PModule->Argv.push_back(Arg);
       }
 
       loadGCOV(GCDAList, GCNOList, PModule.get());

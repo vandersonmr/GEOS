@@ -17,7 +17,7 @@
 #include <stdio.h>
 #include <cstdlib>
 
-#include "../../../../include/Profiling/papi.h"
+#include "../../../../include/geos/Profiling/papi.h"
 #include <cmath>
 
 #define TIME 100

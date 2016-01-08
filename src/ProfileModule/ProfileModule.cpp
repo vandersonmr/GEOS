@@ -303,8 +303,14 @@ void ProfileModule::repairProfiling() {
 }
 
 ProfileModule* ProfileModule::getCopy() const {
-  Module *NewModule = CloneModule(getLLVMModule());
-  return new ProfileModule(NewModule); 
+  Module *NewModule    = CloneModule(getLLVMModule());
+  ProfileModule *NewPM = new ProfileModule(NewModule);
+
+  if (!Argv.empty())
+    NewPM->Argv.insert(NewPM->Argv.begin(), Argv.begin(), Argv.end());
+  if (!BBFreq.empty())
+    NewPM->BBFreq.insert(BBFreq.begin(), BBFreq.end());
+  return NewPM;
 }
 
 void ProfileModule::print(const std::string Path) const {

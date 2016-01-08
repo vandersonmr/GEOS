@@ -113,6 +113,8 @@ GEOS::applyPasses(const std::shared_ptr<ProfileModule> PModule,
     Module *MyModule = 
       parseIRFile(".tmp", Error, Context).release();
     ProfileModule *ModuleCopy = new ProfileModule(MyModule);
+    ModuleCopy->Argv.insert(ModuleCopy->Argv.begin(), 
+        PModule->Argv.begin(), PModule->Argv.end());
     ModuleCopy->BBFreq.insert(PModule->BBFreq.begin(), PModule->BBFreq.end());
     ModuleCopy->repairProfiling();
     ModuleCopy->setPasses(PS);
@@ -149,7 +151,14 @@ getRealExecutionTime(const std::shared_ptr<ProfileModule> PModule,
 
   ExecutionTimeMeasurer &ETM = 
     ExecutionFactory::createRuntimeMeasurer(ExecKind, PModule.get());
-  return ETM.getExecutionTime();
+
+  double ExTime;
+  if (PModule->hasArgs())
+    ExTime = ETM.getExecutionTime(PModule->Argv, nullptr);
+  else
+    ExTime = ETM.getExecutionTime();
+
+  return ExTime;
 }
 
 double GEOS::
@@ -165,7 +174,14 @@ getPAPIProfile(const std::shared_ptr<ProfileModule> PModule,
     ExecutionKind ExecKind, int* PAPIEvents, int Size) {
   ExecutionTimeMeasurer &ETM = 
     ExecutionFactory::createRuntimeMeasurer(ExecKind, PModule.get());
-  return ETM.getPAPIProfile(PAPIEvents, Size);
+
+  long long int *RetVal;
+  if (PModule->hasArgs())
+    RetVal = ETM.getPAPIProfile(PModule->Argv, nullptr, PAPIEvents, Size);
+  else
+    RetVal = ETM.getPAPIProfile(PAPIEvents, Size);
+
+  return RetVal;
 }
 
 long long int* GEOS::
