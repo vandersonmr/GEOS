@@ -38,7 +38,7 @@ class ProfileModule {
     /// estimate and update its execution frequency. 
     uint64_t getExecutionFreqUsingSuccessors(llvm::BasicBlock *BB);
   public:
-    std::unordered_map<std::string, uint64_t> BBFreq;
+    std::unordered_map<llvm::BasicBlock*, uint64_t> BBFreq;
     std::vector<std::string> Argv;
 
     /// \brief If this class has been optimized this function will return the
@@ -128,8 +128,12 @@ class ProfileModule {
     /// \brief Returns its LLVM Module.
     llvm::Module* getLLVMModule() const;
 
-    /// \brief Make a copy of the Profiling Module.
-    ProfileModule* getCopy() const;
+    /// \brief Sets the @a llvm::Module.
+    void setLLVMModule(llvm::Module*);
+
+    /// \brief Make a copy of the Profiling Module. If @a Clone is true,
+    /// the @a llvm::Module owned is also copied.
+    ProfileModule* getCopy(bool Clone = true) const;
 
     /// \brief It saves the LLVM module with all the profiling information
     /// in the given path.

@@ -47,6 +47,10 @@ void setWeight(Instruction &I, double Weight) {
   I.setMetadata("Weight", N);
 }
 
+void ProfileModule::setLLVMModule(Module *M) {
+  LLVMModule = M;
+}
+
 bool ProfileModule::hasID(const Instruction &I) const {
   return I.getMetadata("ID") != nullptr;
 }
@@ -136,18 +140,19 @@ ProfileModule::getBranchFrequency(const BasicBlock &BB) const {
 }
 
 bool ProfileModule::hasBasicBlockFrequency(const BasicBlock &BB) const {
-  return this->BBFreq.count(BB.getName().str()) != 0;
+  return BBFreq.count(const_cast<BasicBlock*>(&BB)) != 0;
 }
 
 uint64_t ProfileModule::getBasicBlockFrequency(const BasicBlock &BB) const {
   if (hasBasicBlockFrequency(BB)) 
-    return (this->BBFreq.find(BB.getName().str()))->second;
+    return (BBFreq.find(const_cast<BasicBlock*>(&BB)))->second;
   return 0; 
 }
 
 void 
 ProfileModule::setBasicBlockFrequency(BasicBlock &BB, uint64_t Freq) {
-  this->BBFreq[BB.getName().str()] = Freq;
+  if (hasBasicBlockFrequency(BB)) BBFreq[&BB] = Freq;
+  else BBFreq.insert(std::make_pair(&BB, Freq));
 }
 
 bool ProfileModule::hasCallCost(const CallInst &I) const {
@@ -302,8 +307,12 @@ void ProfileModule::repairProfiling() {
   }
 }
 
-ProfileModule* ProfileModule::getCopy() const {
-  Module *NewModule    = CloneModule(getLLVMModule());
+ProfileModule* ProfileModule::getCopy(bool Clone) const {
+  Module *NewModule;
+
+  if (Clone) NewModule = CloneModule(getLLVMModule());
+  else NewModule = getLLVMModule();
+
   ProfileModule *NewPM = new ProfileModule(NewModule);
 
   if (!Argv.empty())

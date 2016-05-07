@@ -37,13 +37,12 @@ TTIInstructionAnalysis::~TTIInstructionAnalysis() {
   FPM = nullptr;
 }
 
-double TTIInstructionAnalysis::estimateCost(StringRef FuncName, 
+double TTIInstructionAnalysis::estimateCost(Function &Func, 
     const ProfileModule* Profile, CostEstimatorOptions Opts) const {
 
   double Cost = 0;
 
   auto M = Profile->getLLVMModule();
-  auto Func = M->getFunction(FuncName);
 
   if (FPM == nullptr) { 
     FPM = new legacy::FunctionPassManager(M);
@@ -51,9 +50,9 @@ double TTIInstructionAnalysis::estimateCost(StringRef FuncName,
     FPM->doInitialization(); 
   }
 
-  FPM->run(*Func);
+  FPM->run(Func);
 
-  for (auto &BB : *Func) {
+  for (auto &BB : Func) {
     double BBCost = 0; 
 
     for (auto &I : BB) {

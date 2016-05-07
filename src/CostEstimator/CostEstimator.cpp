@@ -30,7 +30,7 @@ CostEstimator::getModuleCost(const ProfileModule *Profile,
       createCostAnalysis(AnalysisKind, Profile);
     
     for (auto &Func : *Profile->getLLVMModule())
-      CostEstimated += Analyse->estimateCost(Func.getName(), Profile, Opts);
+      CostEstimated += Analyse->estimateCost(Func, Profile, Opts);
   }
 
   return CostEstimated / (Opts.CPUClockInGHz * std::pow(10, 9));
@@ -46,7 +46,8 @@ CostEstimator::getFunctionCost(StringRef FuncName, const ProfileModule *Profile,
     std::unique_ptr<CostAnalysis> Analyse = 
       createCostAnalysis(AnalysisKind, Profile);
 
-    CostEstimated += Analyse->estimateCost(FuncName, Profile, Opts);
+    llvm::Function *F = Profile->getLLVMModule()->getFunction(FuncName);
+    CostEstimated += Analyse->estimateCost(*F, Profile, Opts);
   }
 
   return CostEstimated / (Opts.CPUClockInGHz * std::pow(10, 9));

@@ -18,15 +18,14 @@
 
 using namespace llvm;
 
-double StaticInstructionAnalysis::estimateCost(StringRef FuncName, 
+double StaticInstructionAnalysis::estimateCost(Function &Func, 
     const ProfileModule* Profile, CostEstimatorOptions Opts) const {
 
   double Cost = 0;
 
   auto M = Profile->getLLVMModule();
-  auto Func = M->getFunction(FuncName);
 
-  for (auto &BB : *Func) {
+  for (auto &BB : Func) {
     double BBCost = 0; 
 
     for (auto &I : BB)

@@ -20,15 +20,14 @@
 
 using namespace llvm;
 
-double CallAnalysis::estimateCost(StringRef FuncName, 
+double CallAnalysis::estimateCost(Function &Func, 
     const ProfileModule* Profile, CostEstimatorOptions Opts) const {
 
   double Cost = 0;
 
   auto M = Profile->getLLVMModule();
-  auto Func = M->getFunction(FuncName);
 
-  for (auto &BB : *Func) {
+  for (auto &BB : Func) {
     double BBCost = 0; 
     for (auto &I : BB) {
       if (isa<CallInst>(I)) { 
