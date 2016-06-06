@@ -115,7 +115,6 @@ GEOS::applyPasses(const std::shared_ptr<ProfileModule> PModule,
     ProfileModule *ModuleCopy = new ProfileModule(MyModule);
     ModuleCopy->Argv.insert(ModuleCopy->Argv.begin(), 
         PModule->Argv.begin(), PModule->Argv.end());
-    ModuleCopy->BBFreq.insert(PModule->BBFreq.begin(), PModule->BBFreq.end());
     ModuleCopy->repairProfiling();
     ModuleCopy->setPasses(PS);
     return std::shared_ptr<ProfileModule>(ModuleCopy);

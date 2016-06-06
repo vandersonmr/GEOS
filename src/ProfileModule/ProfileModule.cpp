@@ -153,6 +153,9 @@ void
 ProfileModule::setBasicBlockFrequency(BasicBlock &BB, uint64_t Freq) {
   if (hasBasicBlockFrequency(BB)) BBFreq[&BB] = Freq;
   else BBFreq.insert(std::make_pair(&BB, Freq));
+
+  for (auto &I : BB)
+    setInstructionFrequency(I, Freq); 
 }
 
 bool ProfileModule::hasCallCost(const CallInst &I) const {
@@ -317,8 +320,6 @@ ProfileModule* ProfileModule::getCopy(bool Clone) const {
 
   if (!Argv.empty())
     NewPM->Argv.insert(NewPM->Argv.begin(), Argv.begin(), Argv.end());
-  if (!BBFreq.empty())
-    NewPM->BBFreq.insert(BBFreq.begin(), BBFreq.end());
   return NewPM;
 }
 
