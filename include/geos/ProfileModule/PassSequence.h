@@ -23,6 +23,8 @@
 #include "geos/EnumString.h"
 
 #include <stdio.h>
+#include <random>
+#include <numeric>
 #include <vector>
 #include <unordered_map>
 #include <cctype>
