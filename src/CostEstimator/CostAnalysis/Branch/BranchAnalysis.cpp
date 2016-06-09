@@ -18,18 +18,17 @@
 
 using namespace llvm;
 
-double BranchAnalysis::estimateCost(StringRef FuncName, 
+double BranchAnalysis::estimateCost(Function &Func, 
     const ProfileModule* Profile, CostEstimatorOptions Opts) const {
 
   double Cost = 0;
 
   auto M = Profile->getLLVMModule();
-  auto Func = M->getFunction(FuncName);
 
   double BranchMispredictionWeight = Opts.BranchMispredictionFrequency *
     Opts.BranchMispredictionCost;
 
-  for (auto &BB : *Func) {
+  for (auto &BB : Func) {
     auto Terminator = BB.getTerminator();              
     if (isa<IndirectBrInst>(Terminator)) { 
       Cost += (Profile->getBasicBlockFrequency(BB) * 

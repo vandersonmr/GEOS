@@ -255,9 +255,9 @@ InstructionCacheAnalysis::~InstructionCacheAnalysis() {
   delete PM;
 }
 
-double InstructionCacheAnalysis::estimateCost(StringRef FuncName, 
+double InstructionCacheAnalysis::estimateCost(Function &Func, 
     const ProfileModule *Profile, CostEstimatorOptions Opts) const {
 
   Module *M = PModule->getLLVMModule();
-  return MICA->getFunctionCost(*(M->getFunction(FuncName))) * 0.25;
+  return MICA->getFunctionCost(Func) * 0.25;
 }

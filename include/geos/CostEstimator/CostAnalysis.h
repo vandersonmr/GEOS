@@ -27,7 +27,7 @@ class CostAnalysis {
     /// \param The parameters are the name of the function, the ProfileModule, 
     /// and the options.
     virtual double 
-      estimateCost(llvm::StringRef, const ProfileModule*,
+      estimateCost(llvm::Function&, const ProfileModule*,
           CostEstimatorOptions) const = 0;
     virtual ~CostAnalysis() {}
 };
@@ -43,7 +43,7 @@ class RegisterUseAnalysis : public CostAnalysis {
     RegisterUseAnalysis(const ProfileModule*);
     ~RegisterUseAnalysis();
     double 
-      estimateCost(llvm::StringRef, const ProfileModule*, 
+      estimateCost(llvm::Function&, const ProfileModule*, 
           CostEstimatorOptions) const;
 };
 
@@ -58,7 +58,7 @@ class InstructionCacheAnalysis : public CostAnalysis {
     InstructionCacheAnalysis(const ProfileModule*);
     ~InstructionCacheAnalysis();
     double 
-      estimateCost(llvm::StringRef, const ProfileModule*, 
+      estimateCost(llvm::Function&, const ProfileModule*, 
           CostEstimatorOptions) const;
 };
 
@@ -67,7 +67,7 @@ class InstructionCacheAnalysis : public CostAnalysis {
 class StaticInstructionAnalysis : public CostAnalysis {
   public:
     double 
-      estimateCost(llvm::StringRef, const ProfileModule*, 
+      estimateCost(llvm::Function&, const ProfileModule*, 
           CostEstimatorOptions) const;
 };
 
@@ -78,7 +78,7 @@ class TTIInstructionAnalysis : public CostAnalysis {
     TTIInstructionAnalysis();
     ~TTIInstructionAnalysis();
     double 
-      estimateCost(llvm::StringRef, const ProfileModule*, 
+      estimateCost(llvm::Function&, const ProfileModule*, 
           CostEstimatorOptions) const;
 };
 
@@ -87,7 +87,7 @@ class TTIInstructionAnalysis : public CostAnalysis {
 class BranchAnalysis : public CostAnalysis {
   public:
     double 
-      estimateCost(llvm::StringRef, const ProfileModule*, 
+      estimateCost(llvm::Function&, const ProfileModule*, 
           CostEstimatorOptions) const;
 };
 
@@ -96,7 +96,7 @@ class BranchAnalysis : public CostAnalysis {
 class CallAnalysis : public CostAnalysis {
   public:
     double 
-      estimateCost(llvm::StringRef, const ProfileModule*,
+      estimateCost(llvm::Function&, const ProfileModule*,
           CostEstimatorOptions) const;
 };
 
@@ -104,7 +104,7 @@ class CallAnalysis : public CostAnalysis {
 class RandomAnalysis : public CostAnalysis {
   public:
     double 
-      estimateCost(llvm::StringRef, const ProfileModule*,
+      estimateCost(llvm::Function&, const ProfileModule*,
           CostEstimatorOptions) const;
 };
 

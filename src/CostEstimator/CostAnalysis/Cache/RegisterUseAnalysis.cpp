@@ -79,10 +79,9 @@ RegisterUseAnalysis::~RegisterUseAnalysis() {
   delete PM;
 }
 
-double RegisterUseAnalysis::estimateCost(StringRef FuncName, 
+double RegisterUseAnalysis::estimateCost(Function &Func, 
     const ProfileModule *Profile, CostEstimatorOptions Opts) const {
 
   Module   *M = PModule->getLLVMModule();
-  Function *F = M->getFunction(FuncName);
-  return MRU->getFunctionCost(*F) * 0.25;
+  return MRU->getFunctionCost(Func) * 0.25;
 }
