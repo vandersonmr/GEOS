@@ -17,29 +17,29 @@
 
 #include <vector>
 
+/// \brief List of analysis methods
+enum CostAnalysisKind {
+  RegisterUse, InstructionCache, StaticInstruction, TTIInstruction, Branch, 
+  Call, RandomCost
+};
+
+/// \brief This structure contain a vector with analysis and options for 
+/// them. It is used to inform to the CostEstimator how and which analysis 
+/// do.
+typedef struct CostEstimatorOptions {
+  double BranchMispredictionFrequency = 0.1; 
+  double BranchMispredictionCost = 40; 
+  double CPUClockInGHz = 1;
+
+  std::vector<CostAnalysisKind> AnalysisActivated;
+} CostEstimatorOptions;
+
+/// \brief List of groups of analysis.
+enum CostEstimatorOptionsSet {
+  NonArchSensitive, ArchSensitive
+};
+
 namespace {
-  /// \brief List of analysis methods
-  enum CostAnalysisKind {
-    RegisterUse, InstructionCache, StaticInstruction, TTIInstruction, Branch, 
-    Call, RandomCost
-  };
-
-  /// \brief This structure contain a vector with analysis and options for 
-  /// them. It is used to inform to the CostEstimator how and which analysis 
-  /// do.
-  typedef struct CostEstimatorOptions {
-    double BranchMispredictionFrequency = 0.1; 
-    double BranchMispredictionCost = 40; 
-    double CPUClockInGHz = 1;
-
-    std::vector<CostAnalysisKind> AnalysisActivated;
-  } CostEstimatorOptions;
-
-  /// \brief List of groups of analysis.
-  enum CostEstimatorOptionsSet {
-     NonArchSensitive, ArchSensitive
-  };
-
   /// \brief Given a type of group of analysis it returns a vector with all the 
   /// analysis from this group.
   std::vector<CostAnalysisKind> getAnalysisFor(CostEstimatorOptionsSet S) {
