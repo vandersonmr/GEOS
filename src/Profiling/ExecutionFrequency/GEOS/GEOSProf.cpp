@@ -97,7 +97,13 @@ unsigned GEOSProfiler::getNumberOfBasicBlocks(Module &M) {
   return numBB;
 }
 
-void GEOSProfiler::populateFrequency(ProfileModule *PMod, Module *GEOSPLib) {
+void GEOSProfiler::populateFrequency(ProfileModule *PMod, Module *GEOSProfLib) {
+  std::vector<std::string> Args = { "geos-fmm" };
+  populateFrequency(PMod, Args, GEOSProfLib);
+}
+
+void GEOSProfiler::populateFrequency(ProfileModule *PMod, std::vector<std::string> Args, 
+    Module *GEOSPLib) {
   ProfileModule *PModule = PMod->getCopy();
   Module *Mod = PModule->getLLVMModule();
   Module *GEOSProfLib = CloneModule(GEOSPLib);
@@ -118,7 +124,6 @@ void GEOSProfiler::populateFrequency(ProfileModule *PMod, Module *GEOSPLib) {
 
   EE->finalizeObject();
 
-  std::vector<std::string> Args = {"geos-fmm"};
   EE->runFunctionAsMain(Mod->getFunction("main"), Args, nullptr);
 
   Function *GetResults = Mod->getFunction("get_results");

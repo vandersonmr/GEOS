@@ -28,4 +28,5 @@ class GEOSProfiler {
   /// execution frequency of each basic block. By the end, its populate the
   /// ProfileModule with this information.
   void populateFrequency(ProfileModule*, llvm::Module*);
+  void populateFrequency(ProfileModule*, std::vector<std::string>, llvm::Module*);
 };
