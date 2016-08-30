@@ -5,8 +5,9 @@ project (GEOS2.0)
 include_directories ("${PROJECT_SOURCE_DIR}/include")
 
 execute_process (COMMAND llvm-config --cxxflags --ldflags 
-  OUTPUT_VARIABLE LLVM_CONFIG_N)
+  OUTPUT_VARIABLE LLVM_CONFIG_WALL)
 
+string (REPLACE "-Wcovered-switch-default" " " LLVM_CONFIG_N "${LLVM_CONFIG_WALL}")
 string (REPLACE "\n" " " LLVM_CONFIG "${LLVM_CONFIG_N}")
 
 set (CMAKE_CXX_FLAGS 
