@@ -47,11 +47,11 @@ namespace {
       default:
       case NonArchSensitive:
         return {CostAnalysisKind::StaticInstruction, 
-            CostAnalysisKind::Call, CostAnalysisKind::Branch};
+          CostAnalysisKind::Call, CostAnalysisKind::Branch};
       case ArchSensitive:
         return {CostAnalysisKind::TTIInstruction, 
-            CostAnalysisKind::Call, CostAnalysisKind::Branch, 
-            CostAnalysisKind::RegisterUse};  
+          CostAnalysisKind::Call, CostAnalysisKind::Branch, 
+          CostAnalysisKind::RegisterUse};  
     }
   } 
 }
