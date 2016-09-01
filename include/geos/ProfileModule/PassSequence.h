@@ -28,6 +28,7 @@
 #include <vector>
 #include <unordered_map>
 #include <cctype>
+#include <random>
 
 /// \brief List of all possible function pass.
 // Optimizations which raise errors when applied by 
